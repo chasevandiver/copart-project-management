@@ -1,0 +1,575 @@
+{
+  "meta": {
+    "owner": "Chase",
+    "role": "Digital Engagement Manager, supporting Ken Rion (SVP of Dealer Sales)",
+    "last_updated": "2026-09-29"
+  },
+  "projects": [
+    {
+      "id": "rt",
+      "name": "Route Tracker",
+      "status": "Blocked",
+      "summary": "Rebuilt Leo's Route Tracker with a real server side so data is captured securely. Same app as Leo's, more secure. Live on my Coolify in the app/ folder. Started building VIN capture (Price Check).",
+      "built": [
+        "Name sign-in with team passcode; admin, rep and viewer roles enforced by the server",
+        "One shared database so notes and visits sync across phones",
+        "Offline queue with retry; photos stored on the server",
+        "All 60 Fort Worth and Grand Prairie dealers with labels, confidence flags, caveats and pitch text",
+        "16 automated checks that must pass before each deploy",
+        "CDS Handoff tab and PLAUD intake exist in the app (parked for now)",
+        "PLAUD can fill the Zapier Table using the keyword \"Dealer Visit\" to log the visit summary"
+      ],
+      "links": [
+        { "label": "Live app", "where": "Chase's Coolify, app/ folder (separate repo, tracked only)" }
+      ],
+      "blockers": [
+        "Work Claude hit its API limit, so build work is paused",
+        "IT servers block the PLAUD API, so full PLAUD to Zapier automation does not run",
+        "No real weekly sales file yet, which blocks Price Check and most next steps"
+      ],
+      "next_steps": [
+        "Re-send the landing page / seamless sign-in task to Work Claude (rt-01)",
+        "Price Check milestone 1: sales importer plus backtest (rt-02)",
+        "Real dealer map pins (rt-03)",
+        "Yard picker (rt-04)",
+        "Close gaps from the old Route Tracker (rt-05)"
+      ]
+    },
+    {
+      "id": "cdd",
+      "name": "Copart Dealer Digital",
+      "status": "In Progress",
+      "summary": "Lead tracker site for dealer sales. Live and merged to main. Public data only.",
+      "built": [
+        "AEO baseline: how often Claude, ChatGPT and Gemini mention Copart on dealer questions, with a summary report",
+        "DFW dealer map: 36 independent dealers with inventory snapshots, seller/buyer scores, pitch drafts; pre-call briefs for the top 3",
+        "TxDMV statewide pull: 20,935 licenses in 16,272 locations; 15,287 leads with play, score, reasons and tier (1,614 A, 3,796 B, 9,877 C)",
+        "12 region call lists plus master workbook; 303 dealer groups covering 2,041 stores",
+        "Map with all but 2 locations placed, miles to nearest Copart yard and competitor auction",
+        "173 new licenses in last 30 days (116 new dealers, 57 adding a license); 555 wholesaler locations on their own list",
+        "Change tracking on each TxDMV refresh; excludes Copart locations, other auctions, retail chains and expired licenses",
+        "Excel books per region plus master with tracker columns; site in Copart blue (PMS 300), mobile friendly, CSV on every list, no scripts or call coaching"
+      ],
+      "links": [
+        { "label": "Live site", "url": "https://dfw-dealer-digital.vercel.app", "where": "Password is in Vercel project settings" },
+        { "label": "Repo", "where": "dfw-dealer-digital (separate repo, tracked only)" }
+      ],
+      "blockers": [],
+      "next_steps": [
+        "Revoke old Anthropic and OpenAI keys (cdd-01, urgent)",
+        "Legal check before any bulk email (cdd-02, urgent)",
+        "Second DFW inventory snapshot on or after Oct 4 (cdd-03)",
+        "Weekly TxDMV refresh (cdd-04, recurring)"
+      ]
+    },
+    {
+      "id": "pm",
+      "name": "PM Tracker",
+      "status": "In Progress",
+      "summary": "This repo. Single source of truth for Chase's work (tracker.json), a change log, and a password-protected board on Vercel.",
+      "built": [
+        "tracker.json seeded from Sep 29 notes",
+        "CLAUDE.md with data model and UPDATE protocol",
+        "Next.js board: kanban, projects, waiting on, this week, people"
+      ],
+      "links": [
+        { "label": "Repo", "url": "https://github.com/chasevandiver/copart-project-management" }
+      ],
+      "blockers": [],
+      "next_steps": [
+        "Deploy the board to Vercel with a password (pm-02)"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "rt-01",
+      "project_id": "rt",
+      "title": "Re-send task: match Leo's landing page and drop the passcode for seamless sign-in",
+      "status": "Blocked",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "high",
+      "notes": "Last attempt failed with \"Invalid request\" before any changes. Blocked by Work Claude API limit. Without a passcode anyone with the link can tap any name, so only do this if the app is network/VPN-only (see decision d-rt-02).",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "rt-02",
+      "project_id": "rt",
+      "title": "Price Check milestone 1: sales importer plus backtest",
+      "status": "Waiting",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "high",
+      "notes": "VIN tool: scan, decode, comparable sales, price range, counter and outcome. Milestone 1 proves whether past sales predict prices well enough before building screens. Needs the weekly sales file (rt-06) and approval to use sales data (rt-07).",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "rt-03",
+      "project_id": "rt",
+      "title": "Real dealer map pins",
+      "status": "Waiting",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "normal",
+      "notes": "Today every dealer uses its neighborhood center, so nearest dealer, Fix pin and Next stop don't work. Waiting on OK to use the free US Census geocoder (decision d-rt-03).",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "rt-04",
+      "project_id": "rt",
+      "title": "Yard picker",
+      "status": "Next",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "normal",
+      "notes": "Dealers are grouped by route, not yard. Small change.",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "rt-05",
+      "project_id": "rt",
+      "title": "Close gaps from the old Route Tracker",
+      "status": "Backlog",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "normal",
+      "notes": "\"By distance\" toggle, save contact to phone, the two CSV export formats.",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "rt-06",
+      "project_id": "rt",
+      "title": "Get a real weekly sales file, ideally 3 to 6 months of history",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "urgent",
+      "notes": "Unblocks everything on Route Tracker. The file itself stays out of this repo.",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "rt-07",
+      "project_id": "rt",
+      "title": "Get approval to use Copart sales data in a field tool",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Internal only until approved. Approver not yet named.",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "rt-08",
+      "project_id": "rt",
+      "title": "Hand over the old tests/ folder to the work session",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Files: app.test.js, profiles.js, stubs.js, extract.js, run-all.sh.",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "rt-09",
+      "project_id": "rt",
+      "title": "Get the Connecticut app from Leo",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "rt-10",
+      "project_id": "rt",
+      "title": "PLAUD to Zapier automation",
+      "status": "Blocked",
+      "owner": "IT",
+      "due": null,
+      "priority": "normal",
+      "notes": "IT servers block the PLAUD API. Workaround today: PLAUD fills the Zapier Table using the keyword \"Dealer Visit\" to log the summary. PLAUD intake tab in the app is parked.",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "cdd-01",
+      "project_id": "cdd",
+      "title": "Revoke old Anthropic and OpenAI keys committed in .env.example",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "urgent",
+      "notes": "Keys are still in git history of dfw-dealer-digital. Revoke in each provider console. Do not paste keys here.",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "cdd-02",
+      "project_id": "cdd",
+      "title": "Legal check before any bulk email",
+      "status": "Next",
+      "owner": "Legal",
+      "due": null,
+      "priority": "urgent",
+      "notes": "Many TxDMV emails are owners' personal addresses. Kept off the site and git, but they are in the Excel books. No bulk email until Legal clears it.",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "cdd-03",
+      "project_id": "cdd",
+      "title": "Take the second DFW inventory snapshot",
+      "status": "Next",
+      "owner": "Claude Code",
+      "due": "2026-10-04",
+      "priority": "urgent",
+      "notes": "On or after Oct 4. Turns on the \"aged inventory\" signal.",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "cdd-04",
+      "project_id": "cdd",
+      "title": "Weekly TxDMV refresh",
+      "status": "Next",
+      "owner": "Claude Code",
+      "due": null,
+      "priority": "normal",
+      "notes": "Recurring weekly. Run the four commands in docs/txdmv-leads.md and redeploy. First refresh produces the first statewide \"what changed\" report.",
+      "recurring": "weekly",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "cdd-05",
+      "project_id": "cdd",
+      "title": "Fix territory count in docs: 2,724 should be 2,926",
+      "status": "Next",
+      "owner": "Claude Code",
+      "due": null,
+      "priority": "low",
+      "notes": "docs/monday-demo.md and docs/weekend-status.md.",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "cdd-06",
+      "project_id": "cdd",
+      "title": "Confirm TxDMV's \"first licensed\" date with TxDMV",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "The new-license bonus in scoring depends on it.",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "cdd-07",
+      "project_id": "cdd",
+      "title": "Add tow and vehicle storage lots from TDLR",
+      "status": "Backlog",
+      "owner": "Claude Code",
+      "due": null,
+      "priority": "normal",
+      "notes": "New vehicle source. No leads of this type yet.",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "cdd-08",
+      "project_id": "cdd",
+      "title": "Real inventory counts for ~2,000 group stores from their websites",
+      "status": "Backlog",
+      "owner": "Claude Code",
+      "due": null,
+      "priority": "normal",
+      "notes": "Fixes small lot vs big lot scoring.",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "cdd-09",
+      "project_id": "cdd",
+      "title": "Market size per county from Census business counts",
+      "status": "Backlog",
+      "owner": "Claude Code",
+      "due": null,
+      "priority": "low",
+      "notes": "",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "cdd-10",
+      "project_id": "cdd",
+      "title": "Business status from the state comptroller to flag likely closed dealers",
+      "status": "Backlog",
+      "owner": "Claude Code",
+      "due": null,
+      "priority": "low",
+      "notes": "",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "gen-01",
+      "project_id": "general",
+      "title": "Meet with Kyle (Director of Marketing); Ken joins",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-02",
+      "priority": "high",
+      "notes": "Kyle asked to meet this week. Ken wants to be in the meeting.",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "gen-02",
+      "project_id": "general",
+      "title": "Talk to IT about elevated access on my current tools",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "gen-03",
+      "project_id": "general",
+      "title": "Talk to IT about more Claude tokens per week",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Work Claude hitting its limit is what blocks Route Tracker right now.",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "gen-04",
+      "project_id": "general",
+      "title": "Get onto Salesforce for digital campaigns",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Plan from Sep 29 meeting with Rama and Leo: I set up the campaign and how I want it, and it delegates the jobs to people on the Marketing team.",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "gen-05",
+      "project_id": "general",
+      "title": "Build a contact list for every relevant department",
+      "status": "In Progress",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Marketing, IT, Sales, and others as they come up. Lives in the people section of this tracker.",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "gen-06",
+      "project_id": "general",
+      "title": "Digital marketing audit of the public Copart website, focused on Dealer Sales",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Include how hard it is to find CDS. Leo and I found CDS is very hard to find on the site.",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "pm-01",
+      "project_id": "pm",
+      "title": "Build the PM tracker and move all current work into it",
+      "status": "Done",
+      "owner": "Claude Code",
+      "due": null,
+      "priority": "normal",
+      "notes": "tracker.json, CLAUDE.md, log.md and the board built on Sep 29.",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "pm-02",
+      "project_id": "pm",
+      "title": "Deploy the board to Vercel with a password",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Steps in README.md. Set BOARD_PASSWORD in Vercel.",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    }
+  ],
+  "waiting_on": [
+    {
+      "id": "w-01",
+      "what": "Network/VPN-only access for the Route Tracker",
+      "from_whom": "IT",
+      "project_id": "rt",
+      "since": "2026-09-29",
+      "priority": "high",
+      "notes": "Priority because passcodes are coming out."
+    },
+    {
+      "id": "w-02",
+      "what": "OK to store dealer Tax IDs and pass them through Zapier",
+      "from_whom": "IT",
+      "project_id": "rt",
+      "since": "2026-09-29",
+      "priority": "high",
+      "notes": "Priority because passcodes are coming out."
+    },
+    {
+      "id": "w-03",
+      "what": "Who owns the Zapier account",
+      "from_whom": "IT",
+      "project_id": "rt",
+      "since": "2026-09-29",
+      "priority": "normal",
+      "notes": ""
+    },
+    {
+      "id": "w-04",
+      "what": "Who handles backups",
+      "from_whom": "IT",
+      "project_id": "rt",
+      "since": "2026-09-29",
+      "priority": "normal",
+      "notes": ""
+    },
+    {
+      "id": "w-05",
+      "what": "Route Tracker build work resumes when the API limit resets or more tokens are approved",
+      "from_whom": "Work Claude",
+      "project_id": "rt",
+      "since": "2026-09-29",
+      "priority": "high",
+      "notes": "See gen-03 for the token request."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "d-rt-01",
+      "project_id": "rt",
+      "question": "Extend the Route Tracker app or build a second app for new features?",
+      "options": ["Extend this app", "Build a second app"],
+      "raised": "2026-09-29",
+      "status": "resolved",
+      "answer": "Extend this app. One link, one database, one redeploy.",
+      "resolved": "2026-09-29"
+    },
+    {
+      "id": "d-rt-02",
+      "project_id": "rt",
+      "question": "Drop the passcode for seamless sign-in?",
+      "options": ["Drop it once the app is network/VPN-only", "Keep the passcode", "Replace with a stronger sign-in"],
+      "raised": "2026-09-29",
+      "status": "open",
+      "answer": null,
+      "resolved": null
+    },
+    {
+      "id": "d-rt-03",
+      "project_id": "rt",
+      "question": "OK to use the free US Census geocoder for dealer map pins?",
+      "options": ["Yes", "No, use another geocoder"],
+      "raised": "2026-09-29",
+      "status": "open",
+      "answer": null,
+      "resolved": null
+    },
+    {
+      "id": "d-cdd-01",
+      "project_id": "cdd",
+      "question": "Remove pitch lines and pre-call briefs from the DFW map to match the Leads section?",
+      "options": ["Remove", "Keep"],
+      "raised": "2026-09-29",
+      "status": "open",
+      "answer": null,
+      "resolved": null
+    },
+    {
+      "id": "d-cdd-02",
+      "project_id": "cdd",
+      "question": "OK to keep business phone numbers in the private repo for click-to-call?",
+      "options": ["Yes", "No"],
+      "raised": "2026-09-29",
+      "status": "open",
+      "answer": null,
+      "resolved": null
+    },
+    {
+      "id": "d-cdd-03",
+      "project_id": "cdd",
+      "question": "Split region books further, one per rep, once team sizes are known?",
+      "options": ["Yes, one book per rep", "No, keep region books"],
+      "raised": "2026-09-29",
+      "status": "open",
+      "answer": null,
+      "resolved": null
+    }
+  ],
+  "people": [
+    {
+      "name": "Ken Rion",
+      "title": "SVP of Dealer Sales",
+      "department": "Sales",
+      "relationship": "My direct partner on this role",
+      "contact": ""
+    },
+    {
+      "name": "Kyle",
+      "title": "Director of Marketing",
+      "department": "Marketing",
+      "relationship": "Wants to meet this week; Ken joining",
+      "contact": ""
+    },
+    {
+      "name": "Rama",
+      "title": "",
+      "department": "Marketing",
+      "relationship": "Marketing tools; Salesforce onboarding",
+      "contact": ""
+    },
+    {
+      "name": "Leo",
+      "title": "",
+      "department": "",
+      "relationship": "Built the original Route Tracker and the Connecticut app",
+      "contact": ""
+    }
+  ],
+  "notes": [
+    {
+      "date": "2026-09-29",
+      "title": "Meeting with Rama and Leo on marketing tools (3:30pm)",
+      "project_id": "general",
+      "body": [
+        "Plan is to get me onto Salesforce for digital campaigns. I set up the campaign and how I want it, and it delegates the jobs to people on the Marketing team.",
+        "Leo and I found that CDS is very hard to find on the Copart website. We'll need to work on that.",
+        "Kyle, Director of Marketing, wants to meet with me this week. Ken wants to be in that meeting.",
+        "I need to talk to IT about elevating access on my tools and getting more Claude tokens per week."
+      ]
+    }
+  ]
+}
