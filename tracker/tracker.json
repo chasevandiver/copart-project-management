@@ -86,7 +86,7 @@
         "AEO side test (not in baseline): Claude Code agents with web search named Copart 88% of the time, but position it as the place for damaged and salvage cars, not general wholesale",
         "DFW dealer dataset: 36 independent dealers in data/dealers.json, every field sourced, all still verified: false; 2,414 units in the Sep 27 inventory snapshot",
         "Two scores: seller fit (older, high-mileage stock, sell-your-car page, buy here pay here) and buyer fit (newer license, smaller lot, lower prices). 14 dealers unscored because their inventory pages are drawn by script",
-        "Map app (/map): password protected and refuses access if no password is set; works on a phone; seller/buyer toggle; each dealer shows score reasons, sources, brief and pitch draft; Resources section with prompts, demo script and AEO summary",
+        "Map app (/map), deployed and live: password protected and refuses access if no password is set; works on a phone; seller/buyer toggle; each dealer shows score reasons, sources, brief and pitch draft; Resources section with prompts, demo script and AEO summary",
         "Top 20 lead list in leads/dfw-top-20.csv and .md. Top 3: CityWide Motors, Lone Star Motors II, L&C Auto Sales",
         "Three draft pre-call briefs in briefs/: Gulliver (large), Lone Star Motors II (mid), CityWide (small). Each sourced, ends with suggested fixes to the brief prompt",
         "Supporting docs: Monday demo script, 30/60/90 plan, research brief, week one questions for Ken and IT, deploy doc",
@@ -104,6 +104,11 @@
           "label": "Live site",
           "url": "https://dfw-dealer-digital.vercel.app",
           "where": "Password is in Vercel project settings"
+        },
+        {
+          "label": "Dealer map",
+          "url": "https://dfw-dealer-digital.vercel.app/map",
+          "where": "Same password as the site, in Vercel project settings"
         },
         {
           "label": "Repo",

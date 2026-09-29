@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-09-29 (deploy confirmed)
+- Source: Chase confirmed the site is live and the dealer map is deployed
+- Changed: cdd built list marks /map as deployed and live; added Dealer map link
+- No deploy task added
+
 ## 2026-09-29 (pre-start rundown)
 - Source: Chase's full rundown of pre-start work on Copart Dealer Digital (AEO, dealer map, TxDMV leads)
 - Changed: cdd built list rewritten with AEO results, dealer map and scoring, statewide leads; summary and next steps updated
@@ -11,7 +16,7 @@ Newest entry first.
 - Added: cdd-11 "Spot-check the top 3 dealers" (Me), cdd-12 "Weekly AEO re-run" (Claude Code), cdd-13 "Inventory for 14 unscored dealers" (Claude Code)
 - Added: audit-06 "Brief the positioning gap" (Me), gen-07 "Close week one questions with Ken and IT" (Me, due 2026-10-02)
 - Added decision: d-cdd-04 Gemini paid key vs two-day AEO runs
-- Not applied: "Deploy to Vercel when you say go" (tracker already shows the site live; confirm)
+- Not applied: "Deploy to Vercel when you say go" (confirmed below: already live)
 
 ## 2026-09-29 (goals and audit)
 - Source: Chase's request for goals plus UPDATE on the Copart Dealer Sales Digital Presence Audit
