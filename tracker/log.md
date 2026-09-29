@@ -2,6 +2,17 @@
 
 Newest entry first.
 
+## 2026-09-29 (pre-start rundown)
+- Source: Chase's full rundown of pre-start work on Copart Dealer Digital (AEO, dealer map, TxDMV leads)
+- Changed: cdd built list rewritten with AEO results, dealer map and scoring, statewide leads; summary and next steps updated
+- Changed: cdd-01 widened to rotate Anthropic, OpenAI and Gemini keys plus the map password (commit b6a17b4)
+- Changed: cdd-03 notes (aged inventory is the biggest seller-fit weight), cdd-05 notes (2,926 vs 2,999 territory count to confirm), cdd-06 retitled to ActiveDate
+- Changed: audit-04 notes with AEO findings
+- Added: cdd-11 "Spot-check the top 3 dealers" (Me), cdd-12 "Weekly AEO re-run" (Claude Code), cdd-13 "Inventory for 14 unscored dealers" (Claude Code)
+- Added: audit-06 "Brief the positioning gap" (Me), gen-07 "Close week one questions with Ken and IT" (Me, due 2026-10-02)
+- Added decision: d-cdd-04 Gemini paid key vs two-day AEO runs
+- Not applied: "Deploy to Vercel when you say go" (tracker already shows the site live; confirm)
+
 ## 2026-09-29 (goals and audit)
 - Source: Chase's request for goals plus UPDATE on the Copart Dealer Sales Digital Presence Audit
 - Added: goals split into AI Tools and Marketing Efforts; every project now has a category

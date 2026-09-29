@@ -76,16 +76,28 @@
       "id": "cdd",
       "name": "Copart Dealer Digital",
       "status": "In Progress",
-      "summary": "Lead tracker site for dealer sales. Live and merged to main. Public data only.",
+      "summary": "Lead tracker site for dealer sales, built from pre-start work: AEO baseline, DFW dealer map and scoring, and statewide TxDMV leads. Live and merged to main. Public data only.",
       "built": [
-        "AEO baseline: how often Claude, ChatGPT and Gemini mention Copart on dealer questions, with a summary report",
-        "DFW dealer map: 36 independent dealers with inventory snapshots, seller/buyer scores, pitch drafts; pre-call briefs for the top 3",
-        "TxDMV statewide pull: 20,935 licenses in 16,272 locations; 15,287 leads with play, score, reasons and tier (1,614 A, 3,796 B, 9,877 C)",
-        "12 region call lists plus master workbook; 303 dealer groups covering 2,041 stores",
-        "Map with all but 2 locations placed, miles to nearest Copart yard and competitor auction",
-        "173 new licenses in last 30 days (116 new dealers, 57 adding a license); 555 wholesaler locations on their own list",
-        "Change tracking on each TxDMV refresh; excludes Copart locations, other auctions, retail chains and expired licenses",
-        "Excel books per region plus master with tracker columns; site in Copart blue (PMS 300), mobile friendly, CSV on every list, no scripts or call coaching"
+        "AEO baseline (Sep 27): 25 dealer questions through the ChatGPT, Claude and Gemini APIs. Results in aeo/runs/2026-09-27/summary.md",
+        "AEO headline: Copart named in 50% of answers to the 20 unbranded questions (30 of 60). All questions: Copart 60%, Manheim 61%, ACV 52%",
+        "AEO by engine: Claude 68%, ChatGPT 60%, Gemini 52%. By stage: Awareness 56%, Compare 94%, Membership 67%, Selling 33% (weakest on every engine)",
+        "AEO biggest gaps: \"Best dealer-only auctions in Texas\" and \"Online auction vs wholesaler for trade-ins\" (Copart missing on all 3 engines), plus other trade-in selling questions. Most cited sites: copart.com, acvauctions.com, iaai.com",
+        "AEO runner now uses a higher length limit by default (8 Claude answers were cut off and re-run)",
+        "AEO side test (not in baseline): Claude Code agents with web search named Copart 88% of the time, but position it as the place for damaged and salvage cars, not general wholesale",
+        "DFW dealer dataset: 36 independent dealers in data/dealers.json, every field sourced, all still verified: false; 2,414 units in the Sep 27 inventory snapshot",
+        "Two scores: seller fit (older, high-mileage stock, sell-your-car page, buy here pay here) and buyer fit (newer license, smaller lot, lower prices). 14 dealers unscored because their inventory pages are drawn by script",
+        "Map app (/map): password protected and refuses access if no password is set; works on a phone; seller/buyer toggle; each dealer shows score reasons, sources, brief and pitch draft; Resources section with prompts, demo script and AEO summary",
+        "Top 20 lead list in leads/dfw-top-20.csv and .md. Top 3: CityWide Motors, Lone Star Motors II, L&C Auto Sales",
+        "Three draft pre-call briefs in briefs/: Gulliver (large), Lone Star Motors II (mid), CityWide (small). Each sourced, ends with suggested fixes to the brief prompt",
+        "Supporting docs: Monday demo script, 30/60/90 plan, research brief, week one questions for Ken and IT, deploy doc",
+        "TxDMV statewide list: 20,935 licenses at 16,272 locations; 2,999 in the Dallas, Tarrant and Collin territory (Collin added so Plano lots match); 1,080 first licensed in the last 12 months",
+        "Lead books: 15,287 leads in A/B/C tiers (1,614 A, 3,796 B, 9,877 C) across 12 regions. DFW has 3,803 leads, 373 tier A. One category per lead sets base points. Scoring explained in docs/lead-playbook.md",
+        "Key accounts: 303 dealer groups covering 2,041 rooftops",
+        "Leads section: overview, call list per region with filters and CSV, key accounts, new licenses (last 30 days: 173, 116 new dealers, 57 adding a license), wholesalers (555 locations), weekly changes page, statewide map with distance to nearest Copart and competitor auction. Copart blue (PMS 300), mobile friendly",
+        "Weekly change tracking: data/license_changes.py compares each TxDMV snapshot to the last. First comparison (Sep 27 to 29): 1 new license, 1 dropped. Excludes Copart locations, other auctions, retail chains and expired licenses",
+        "Excel books per region plus master with tracker columns",
+        "Opening lines and call guidance removed from the site and books at Chase's request. The data stays",
+        "Contact info is not in git: phone and email files live in leads/txdmv/ (gitignored). Only counts are committed"
       ],
       "links": [
         {
@@ -100,10 +112,11 @@
       ],
       "blockers": [],
       "next_steps": [
-        "Revoke old Anthropic and OpenAI keys (cdd-01, urgent)",
+        "Rotate all exposed secrets (cdd-01, urgent)",
         "Legal check before any bulk email (cdd-02, urgent)",
         "Second DFW inventory snapshot on or after Oct 4 (cdd-03)",
-        "Weekly TxDMV refresh (cdd-04, recurring)"
+        "Verify the top 3 dealers and rerun the lead export (cdd-11)",
+        "Weekly TxDMV refresh (cdd-04) and weekly AEO re-run (cdd-12)"
       ],
       "category": "AI Tools"
     },
@@ -288,12 +301,12 @@
     {
       "id": "cdd-01",
       "project_id": "cdd",
-      "title": "Revoke old Anthropic and OpenAI keys committed in .env.example",
+      "title": "Rotate exposed secrets: Anthropic, OpenAI and Gemini keys, and the map password",
       "status": "Next",
       "owner": "Me",
       "due": null,
       "priority": "urgent",
-      "notes": "Keys are still in git history of dfw-dealer-digital. Revoke in each provider console. Do not paste keys here.",
+      "notes": "All are in dfw-dealer-digital git history. Anthropic and OpenAI keys were in .env.example; the Gemini key and map password are in commit b6a17b4. Revoke keys in each provider console and set a new map password in Vercel. Do not paste any of them here.",
       "created": "2026-09-29",
       "updated": "2026-09-29"
     },
@@ -317,7 +330,7 @@
       "owner": "Claude Code",
       "due": "2026-10-04",
       "priority": "urgent",
-      "notes": "On or after Oct 4. Turns on the \"aged inventory\" signal.",
+      "notes": "On or after Oct 4. Turns on the \"aged inventory\" signal, the biggest seller-fit weight. Pin colors are relative until then.",
       "created": "2026-09-29",
       "updated": "2026-09-29"
     },
@@ -342,19 +355,19 @@
       "owner": "Claude Code",
       "due": null,
       "priority": "low",
-      "notes": "docs/monday-demo.md and docs/weekend-status.md.",
+      "notes": "docs/monday-demo.md and docs/weekend-status.md say 2,724. Seed notes said 2,926; the Sep 29 rundown says 2,999 with Collin included. Confirm the current number before editing.",
       "created": "2026-09-29",
       "updated": "2026-09-29"
     },
     {
       "id": "cdd-06",
       "project_id": "cdd",
-      "title": "Confirm TxDMV's \"first licensed\" date with TxDMV",
+      "title": "Confirm with TxDMV that ActiveDate is the first license date",
       "status": "Next",
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "The new-license bonus in scoring depends on it.",
+      "notes": "The \"new license\" lead category and bonus depend on it.",
       "created": "2026-09-29",
       "updated": "2026-09-29"
     },
@@ -546,7 +559,7 @@
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Use the AEO baseline from Copart Dealer Digital (how often Claude, ChatGPT and Gemini mention Copart on dealer questions).",
+      "notes": "Use the Sep 27 AEO baseline from Copart Dealer Digital: Copart in 50% of unbranded answers; Selling stage weakest at 33% on every engine; missing on all 3 engines for \"best dealer-only auctions in Texas\" and \"online auction vs wholesaler for trade-ins\". Perplexity not measured yet.",
       "created": "2026-09-29",
       "updated": "2026-09-29"
     },
@@ -559,6 +572,66 @@
       "due": null,
       "priority": "normal",
       "notes": "Pulls together audit-01 to audit-04.",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "cdd-11",
+      "project_id": "cdd",
+      "title": "Spot-check the top 3 dealers against their own sites, set verified: true, rerun the lead export",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "CityWide Motors, Lone Star Motors II, L&C Auto Sales. All 36 dealers are still verified: false.",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "cdd-12",
+      "project_id": "cdd",
+      "title": "Set up a weekly AEO re-run",
+      "status": "Backlog",
+      "owner": "Claude Code",
+      "due": null,
+      "priority": "normal",
+      "notes": "Gemini free tier caps at about 20 answers a day, so a run needs a paid key or two days (see d-cdd-04). Add Perplexity if we get a key.",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "cdd-13",
+      "project_id": "cdd",
+      "title": "Get script-drawn inventory for the 14 unscored dealers",
+      "status": "Backlog",
+      "owner": "Claude Code",
+      "due": null,
+      "priority": "low",
+      "notes": "Only if their robots.txt and terms allow it.",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "audit-06",
+      "project_id": "audit",
+      "title": "Brief the positioning gap: Copart seen as damaged and salvage only",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "From the AEO side test: Claude names Copart 88% of the time with web search, but as the place for damaged and salvage cars, not a general wholesale option. Brief content that fixes this, starting with the selling and trade-in questions.",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "gen-07",
+      "project_id": "general",
+      "title": "Close the week one questions with Ken and IT",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-02",
+      "priority": "high",
+      "notes": "Questions list is in the dfw-dealer-digital docs. Overlaps with the open IT items (w-01 to w-04) and gen-02, gen-03.",
       "created": "2026-09-29",
       "updated": "2026-09-29"
     }
@@ -684,6 +757,19 @@
       "options": [
         "Yes, one book per rep",
         "No, keep region books"
+      ],
+      "raised": "2026-09-29",
+      "status": "open",
+      "answer": null,
+      "resolved": null
+    },
+    {
+      "id": "d-cdd-04",
+      "project_id": "cdd",
+      "question": "How to run the weekly AEO check given Gemini's free-tier cap?",
+      "options": [
+        "Pay for a Gemini key",
+        "Split each run over two days"
       ],
       "raised": "2026-09-29",
       "status": "open",
