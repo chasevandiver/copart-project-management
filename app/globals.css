@@ -139,3 +139,6 @@ button {
 
 .person { display: flex; flex-direction: column; gap: 2px; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; font-size: 12px; }
+.chip.idea { background: var(--col-in-progress); color: #fff; }
+.goal { border-left: 4px solid var(--brand); }
+h1 .chip, h3 .chip { margin-left: 4px; vertical-align: middle; }

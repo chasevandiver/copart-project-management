@@ -11,7 +11,7 @@ export const metadata = {
 const NAV = [
   ["/", "Board"],
   ["/week", "This week"],
-  ["/projects", "Projects"],
+  ["/projects", "Goals"],
   ["/waiting", "Waiting on"],
   ["/people", "People"],
 ];

@@ -11,6 +11,10 @@ Project tracker for Chase, Digital Engagement Manager at Copart, supporting Ken 
 
 Plain and direct. No em dashes (use a period, comma, colon or parentheses). Short task titles that start with a verb where possible.
 
+## Terms
+
+- CDS means Copart Dealer Sales. Always write it out as "Copart Dealer Sales" in tracker.json, the board and replies.
+
 ## Guardrails
 
 - This repo tracks work. It never holds Copart sales data, TxDMV owner emails, dealer Tax IDs, passwords or API keys. Reference where they live instead (for example "password is in Vercel project settings").
@@ -25,8 +29,11 @@ Dates are `YYYY-MM-DD`. Use `null` for unknown dates, not guesses.
 - Status (tasks and projects): `Backlog`, `Next`, `In Progress`, `Waiting`, `Blocked`, `Done`
 - Priority: `urgent`, `high`, `normal`, `low`
 - Owner: `Me`, `Work Claude`, `Claude Code`, `IT`, `Leo`, `Legal`, or a name from `people` (full name or first name)
+- Category (goals and projects): `AI Tools`, `Marketing Efforts`
 
-**projects[]**: `id` (short slug: `rt`, `cdd`, `pm`), `name`, `status`, `summary`, `built[]` (what exists so far), `links[]` (`{label, url?, where?}`), `blockers[]`, `next_steps[]`
+**goals[]**: `id` (`g-NN`), `category`, `title`, `summary`, `status`, `project_ids[]` (projects that serve the goal; a project can serve more than one goal), `created`, `updated`. Goals are Chase's big outcomes, grouped by category. Every project belongs to one category.
+
+**projects[]**: `id` (short slug: `rt`, `cdd`, `pm`, `hub`, `audit`), `name`, `category`, `status`, optional `idea: true` (an idea being shaped, nothing committed), `summary`, `built[]` (what exists so far), `links[]` (`{label, url?, where?}`), `blockers[]`, `next_steps[]`, optional `dependencies[]` (things it needs that are not hard blockers)
 
 **tasks[]**: `id` (`<project>-NN`, `gen-NN` for general), `project_id` (a project id or `"general"`), `title`, `status`, `owner`, `due`, `priority`, `notes`, optional `recurring` (e.g. `"weekly"`), `created`, `updated`
 
@@ -45,7 +52,7 @@ Dates are `YYYY-MM-DD`. Use `null` for unknown dates, not guesses.
 When Chase sends a message starting with `UPDATE:` (often messy notes or a paste from another Claude session):
 
 1. Read tracker.json in full.
-2. Parse the message into: new tasks, task changes (status, owner, due, priority, notes), waiting-on items added or cleared, decisions raised or resolved, people added or changed, project summary/blocker/next-step changes, and dated notes.
+2. Parse the message into: goals, new tasks, task changes (status, owner, due, priority, notes), waiting-on items added or cleared, decisions raised or resolved, people added or changed, project summary/blocker/next-step changes, and dated notes.
 3. Match to existing items by meaning, not exact wording. Update instead of creating duplicates. When a task finishes, set it to `Done` (do not delete).
 4. If something is ambiguous (which project, who owns it, a due date), ask ONE question before writing anything.
 5. Show a short summary of the changes (a few bullets), then apply them.
@@ -79,7 +86,8 @@ Keep it short.
 
 ## Board
 
-- `app/page.tsx` kanban (filter by project and owner)
+- `app/page.tsx` kanban (filter by area, project and owner)
+- `app/projects` goals and projects, grouped by category
 - `app/projects/[id]` per-project page
 - `app/waiting` waiting on, grouped by person
 - `app/week` due in the next 7 days, overdue, or urgent

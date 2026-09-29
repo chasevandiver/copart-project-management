@@ -7,12 +7,13 @@ import { todayISO } from "@/lib/dates";
 
 type Props = {
   tasks: Task[];
-  projects: { id: string; name: string }[];
+  projects: { id: string; name: string; category: string | null }[];
 };
 
 const STORE = "pm-board-filters";
 
 export default function Kanban({ tasks, projects }: Props) {
+  const [area, setArea] = useState("all");
   const [project, setProject] = useState("all");
   const [owner, setOwner] = useState("all");
   const [showNotes, setShowNotes] = useState(false);
@@ -22,6 +23,7 @@ export default function Kanban({ tasks, projects }: Props) {
     setToday(todayISO());
     try {
       const saved = JSON.parse(localStorage.getItem(STORE) ?? "{}");
+      if (saved.area) setArea(saved.area);
       if (saved.project) setProject(saved.project);
       if (saved.owner) setOwner(saved.owner);
       if (saved.showNotes) setShowNotes(true);
@@ -30,25 +32,48 @@ export default function Kanban({ tasks, projects }: Props) {
 
   useEffect(() => {
     try {
-      localStorage.setItem(STORE, JSON.stringify({ project, owner, showNotes }));
+      localStorage.setItem(STORE, JSON.stringify({ area, project, owner, showNotes }));
     } catch {}
-  }, [project, owner, showNotes]);
+  }, [area, project, owner, showNotes]);
 
   const owners = useMemo(() => [...new Set(tasks.map((t) => t.owner))].sort(), [tasks]);
   const names = useMemo(() => Object.fromEntries(projects.map((p) => [p.id, p.name])), [projects]);
+  const areaOf = useMemo(() => Object.fromEntries(projects.map((p) => [p.id, p.category ?? "General"])), [projects]);
+  const areas = useMemo(() => [...new Set(projects.map((p) => p.category ?? "General"))], [projects]);
+  const projectChoices = projects.filter((p) => area === "all" || (p.category ?? "General") === area);
 
   const shown = tasks.filter(
-    (t) => (project === "all" || t.project_id === project) && (owner === "all" || t.owner === owner)
+    (t) =>
+      (area === "all" || areaOf[t.project_id] === area) &&
+      (project === "all" || t.project_id === project) &&
+      (owner === "all" || t.owner === owner)
   );
 
   return (
     <>
       <div className="filters">
         <label>
+          Area
+          <select
+            value={area}
+            onChange={(e) => {
+              setArea(e.target.value);
+              setProject("all");
+            }}
+          >
+            <option value="all">All</option>
+            {areas.map((a) => (
+              <option key={a} value={a}>
+                {a}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label>
           Project
           <select value={project} onChange={(e) => setProject(e.target.value)}>
             <option value="all">All</option>
-            {projects.map((p) => (
+            {projectChoices.map((p) => (
               <option key={p.id} value={p.id}>
                 {p.name}
               </option>

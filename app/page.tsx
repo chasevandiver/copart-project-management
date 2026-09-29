@@ -3,8 +3,8 @@ import { tracker } from "@/lib/tracker";
 
 export default function BoardPage() {
   const projects = [
-    ...tracker.projects.map((p) => ({ id: p.id, name: p.name })),
-    { id: "general", name: "General" },
+    ...tracker.projects.map((p) => ({ id: p.id, name: p.name, category: p.category as string | null })),
+    { id: "general", name: "General", category: null },
   ];
   return (
     <>

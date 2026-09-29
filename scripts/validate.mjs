@@ -17,9 +17,10 @@ try {
 const STATUSES = ["Backlog", "Next", "In Progress", "Waiting", "Blocked", "Done"];
 const PRIORITIES = ["urgent", "high", "normal", "low"];
 const FIXED_OWNERS = ["Me", "Work Claude", "Claude Code", "IT", "Leo", "Legal"];
+const CATEGORIES = ["AI Tools", "Marketing Efforts"];
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
 
-for (const key of ["meta", "projects", "tasks", "waiting_on", "decisions", "people", "notes"]) {
+for (const key of ["meta", "goals", "projects", "tasks", "waiting_on", "decisions", "people", "notes"]) {
   if (!(key in t)) errors.push(`missing top-level "${key}"`);
 }
 
@@ -46,9 +47,22 @@ const checkId = (where, id) => {
 for (const p of t.projects ?? []) {
   checkId(`project ${p.name}`, p.id);
   if (!STATUSES.includes(p.status)) errors.push(`project ${p.id}: bad status "${p.status}"`);
+  if (!CATEGORIES.includes(p.category)) errors.push(`project ${p.id}: category must be one of ${CATEGORIES.join(", ")}`);
+  if (p.dependencies && !Array.isArray(p.dependencies)) errors.push(`project ${p.id}: "dependencies" must be an array`);
   for (const k of ["built", "links", "blockers", "next_steps"]) {
     if (!Array.isArray(p[k])) errors.push(`project ${p.id}: "${k}" must be an array`);
   }
+}
+
+for (const g of t.goals ?? []) {
+  const w = `goal ${g.id}`;
+  checkId(w, g.id);
+  if (!g.title) errors.push(`${w}: missing title`);
+  if (!CATEGORIES.includes(g.category)) errors.push(`${w}: category must be one of ${CATEGORIES.join(", ")}`);
+  if (!STATUSES.includes(g.status)) errors.push(`${w}: bad status "${g.status}"`);
+  for (const id of g.project_ids ?? []) if (!projectIds.has(id)) errors.push(`${w}: unknown project "${id}"`);
+  checkDate(w + " created", g.created, false);
+  checkDate(w + " updated", g.updated, false);
 }
 
 for (const x of t.tasks ?? []) {
@@ -117,6 +131,6 @@ if (errors.length) {
   process.exit(1);
 }
 console.log(
-  `tracker.json OK: ${t.projects.length} projects, ${t.tasks.length} tasks, ${t.waiting_on.length} waiting, ` +
+  `tracker.json OK: ${t.goals.length} goals, ${t.projects.length} projects, ${t.tasks.length} tasks, ${t.waiting_on.length} waiting, ` +
     `${t.decisions.filter((d) => d.status === "open").length} open decisions, ${t.people.length} people`
 );

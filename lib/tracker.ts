@@ -6,17 +6,34 @@ export type Status = (typeof STATUSES)[number];
 export const PRIORITIES = ["urgent", "high", "normal", "low"] as const;
 export type Priority = (typeof PRIORITIES)[number];
 
+export const CATEGORIES = ["AI Tools", "Marketing Efforts"] as const;
+export type Category = (typeof CATEGORIES)[number];
+
+export type Goal = {
+  id: string;
+  category: Category;
+  title: string;
+  summary: string;
+  status: Status;
+  project_ids: string[];
+  created: string;
+  updated: string;
+};
+
 export type Link = { label: string; url?: string; where?: string };
 
 export type Project = {
   id: string;
   name: string;
+  category: Category;
   status: Status;
+  idea?: boolean;
   summary: string;
   built: string[];
   links: Link[];
   blockers: string[];
   next_steps: string[];
+  dependencies?: string[];
 };
 
 export type Task = {
@@ -71,6 +88,8 @@ export type Note = {
 
 export type Tracker = {
   meta: { owner: string; role: string; last_updated: string };
+  categories: Category[];
+  goals: Goal[];
   projects: Project[];
   tasks: Task[];
   waiting_on: WaitingOn[];

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import TaskCard from "@/components/TaskCard";
 import Decisions from "@/components/Decisions";
@@ -20,12 +21,22 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
   const resolved = decisions.filter((d) => d.status === "resolved");
   const waiting = tracker.waiting_on.filter((w) => w.project_id === id);
   const notes = tracker.notes.filter((n) => n.project_id === id);
+  const goals = tracker.goals.filter((g) => g.project_ids.includes(id));
 
   return (
     <>
       <h1>
         {p.name} <span className={`chip status col-${statusSlug(p.status)}`}>{p.status}</span>
+        {p.idea && <span className="chip idea">Idea, not committed</span>}
       </h1>
+      <div className="meta-row" style={{ marginBottom: 8 }}>
+        <span className="chip">{p.category}</span>
+        {goals.map((g) => (
+          <Link key={g.id} className="chip" href="/projects">
+            Goal: {g.title}
+          </Link>
+        ))}
+      </div>
       <p>{p.summary}</p>
       {p.links.length > 0 && (
         <p className="small">
@@ -56,6 +67,12 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
             <p className="section-empty">None.</p>
           )}
         </div>
+        {p.dependencies && p.dependencies.length > 0 && (
+          <div className="card">
+            <h3>Dependencies</h3>
+            <ul>{p.dependencies.map((b, i) => <li key={i}>{b}</li>)}</ul>
+          </div>
+        )}
         <div className="card">
           <h3>Waiting on</h3>
           {waiting.length ? (

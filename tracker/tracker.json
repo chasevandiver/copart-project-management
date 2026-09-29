@@ -4,6 +4,39 @@
     "role": "Digital Engagement Manager, supporting Ken Rion (SVP of Dealer Sales)",
     "last_updated": "2026-09-29"
   },
+  "categories": [
+    "AI Tools",
+    "Marketing Efforts"
+  ],
+  "goals": [
+    {
+      "id": "g-01",
+      "category": "AI Tools",
+      "title": "Build a Copart Dealer Sales Tools and Agents hub",
+      "summary": "One cohesive spot for every tool and agent that Leo, I and anyone else build, with redirects to each tool.",
+      "status": "Backlog",
+      "project_ids": [
+        "hub",
+        "rt",
+        "cdd",
+        "pm"
+      ],
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "g-02",
+      "category": "Marketing Efforts",
+      "title": "Increase Copart Dealer Sales digital visibility",
+      "summary": "Know what Copart Dealer Sales does digitally today and put effort where it raises visibility.",
+      "status": "Backlog",
+      "project_ids": [
+        "audit"
+      ],
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    }
+  ],
   "projects": [
     {
       "id": "rt",
@@ -16,11 +49,14 @@
         "Offline queue with retry; photos stored on the server",
         "All 60 Fort Worth and Grand Prairie dealers with labels, confidence flags, caveats and pitch text",
         "16 automated checks that must pass before each deploy",
-        "CDS Handoff tab and PLAUD intake exist in the app (parked for now)",
+        "Copart Dealer Sales Handoff tab and PLAUD intake exist in the app (parked for now)",
         "PLAUD can fill the Zapier Table using the keyword \"Dealer Visit\" to log the visit summary"
       ],
       "links": [
-        { "label": "Live app", "where": "Chase's Coolify, app/ folder (separate repo, tracked only)" }
+        {
+          "label": "Live app",
+          "where": "Chase's Coolify, app/ folder (separate repo, tracked only)"
+        }
       ],
       "blockers": [
         "Work Claude hit its API limit, so build work is paused",
@@ -33,7 +69,8 @@
         "Real dealer map pins (rt-03)",
         "Yard picker (rt-04)",
         "Close gaps from the old Route Tracker (rt-05)"
-      ]
+      ],
+      "category": "AI Tools"
     },
     {
       "id": "cdd",
@@ -51,8 +88,15 @@
         "Excel books per region plus master with tracker columns; site in Copart blue (PMS 300), mobile friendly, CSV on every list, no scripts or call coaching"
       ],
       "links": [
-        { "label": "Live site", "url": "https://dfw-dealer-digital.vercel.app", "where": "Password is in Vercel project settings" },
-        { "label": "Repo", "where": "dfw-dealer-digital (separate repo, tracked only)" }
+        {
+          "label": "Live site",
+          "url": "https://dfw-dealer-digital.vercel.app",
+          "where": "Password is in Vercel project settings"
+        },
+        {
+          "label": "Repo",
+          "where": "dfw-dealer-digital (separate repo, tracked only)"
+        }
       ],
       "blockers": [],
       "next_steps": [
@@ -60,7 +104,8 @@
         "Legal check before any bulk email (cdd-02, urgent)",
         "Second DFW inventory snapshot on or after Oct 4 (cdd-03)",
         "Weekly TxDMV refresh (cdd-04, recurring)"
-      ]
+      ],
+      "category": "AI Tools"
     },
     {
       "id": "pm",
@@ -73,11 +118,49 @@
         "Next.js board: kanban, projects, waiting on, this week, people"
       ],
       "links": [
-        { "label": "Repo", "url": "https://github.com/chasevandiver/copart-project-management" }
+        {
+          "label": "Repo",
+          "url": "https://github.com/chasevandiver/copart-project-management"
+        }
       ],
       "blockers": [],
       "next_steps": [
         "Deploy the board to Vercel with a password (pm-02)"
+      ],
+      "category": "AI Tools"
+    },
+    {
+      "id": "hub",
+      "name": "Copart Dealer Sales Tools and Agents Hub",
+      "category": "AI Tools",
+      "status": "Backlog",
+      "summary": "One cohesive home for every tool and agent built for Copart Dealer Sales (by me, Leo and anyone else), with links out to each tool.",
+      "built": [],
+      "links": [],
+      "blockers": [],
+      "next_steps": [
+        "Define the hub: which tools and agents go in, where it lives, who can get in (hub-01)"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "audit",
+      "name": "Copart Dealer Sales Digital Presence Audit",
+      "category": "Marketing Efforts",
+      "status": "Backlog",
+      "idea": true,
+      "summary": "Full review of what Copart Dealer Sales is doing digitally today, and where we should put effort to increase visibility. Idea in progress; nothing committed yet.",
+      "built": [],
+      "links": [],
+      "blockers": [],
+      "next_steps": [
+        "Raise with Kyle and Ken at this week's meeting (gen-01)",
+        "Find who owns email and social in Marketing (gen-05)"
+      ],
+      "dependencies": [
+        "Department contacts, Marketing especially, to find out who owns email and social (gen-05)",
+        "Salesforce access, for existing campaign history (gen-04)",
+        "Good topic for the meeting with Kyle and Ken this week (gen-01)"
       ]
     }
   ],
@@ -331,7 +414,7 @@
       "owner": "Me",
       "due": "2026-10-02",
       "priority": "high",
-      "notes": "Kyle asked to meet this week. Ken wants to be in the meeting.",
+      "notes": "Kyle asked to meet this week. Ken wants to be in the meeting. Topic: the Copart Dealer Sales Digital Presence Audit (audit project).",
       "created": "2026-09-29",
       "updated": "2026-09-29"
     },
@@ -384,14 +467,14 @@
       "updated": "2026-09-29"
     },
     {
-      "id": "gen-06",
-      "project_id": "general",
-      "title": "Digital marketing audit of the public Copart website, focused on Dealer Sales",
+      "id": "audit-03",
+      "project_id": "audit",
+      "title": "Website: audit the Dealer Sales experience on copart.com",
       "status": "Backlog",
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Include how hard it is to find CDS. Leo and I found CDS is very hard to find on the site.",
+      "notes": "Start with how hard Copart Dealer Sales is to find on the site (flagged in the Sep 29 meeting with Rama and Leo). Formerly gen-06.",
       "created": "2026-09-29",
       "updated": "2026-09-29"
     },
@@ -416,6 +499,66 @@
       "due": null,
       "priority": "normal",
       "notes": "Steps in README.md. Set BOARD_PASSWORD in Vercel.",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "hub-01",
+      "project_id": "hub",
+      "title": "Define the hub: tools and agents to include, where it lives, who can get in",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Starting list: Route Tracker, Copart Dealer Digital, Leo's Connecticut app, this PM Board. Idea stage.",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "audit-01",
+      "project_id": "audit",
+      "title": "Email: inventory current Copart Dealer Sales email campaigns",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Who sends them, audience, frequency, content, results if available. Needs Marketing contacts (gen-05) and Salesforce campaign history (gen-04).",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "audit-02",
+      "project_id": "audit",
+      "title": "Social: inventory Copart Dealer Sales activity on each channel",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Accounts, posting cadence, content types, engagement. Needs Marketing contacts (gen-05).",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "audit-04",
+      "project_id": "audit",
+      "title": "Search and AI visibility: tie in the AEO baseline",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Use the AEO baseline from Copart Dealer Digital (how often Claude, ChatGPT and Gemini mention Copart on dealer questions).",
+      "created": "2026-09-29",
+      "updated": "2026-09-29"
+    },
+    {
+      "id": "audit-05",
+      "project_id": "audit",
+      "title": "Gaps and opportunities: summarize where Copart Dealer Sales is weak and recommend where to focus",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Pulls together audit-01 to audit-04.",
       "created": "2026-09-29",
       "updated": "2026-09-29"
     }
@@ -472,7 +615,10 @@
       "id": "d-rt-01",
       "project_id": "rt",
       "question": "Extend the Route Tracker app or build a second app for new features?",
-      "options": ["Extend this app", "Build a second app"],
+      "options": [
+        "Extend this app",
+        "Build a second app"
+      ],
       "raised": "2026-09-29",
       "status": "resolved",
       "answer": "Extend this app. One link, one database, one redeploy.",
@@ -482,7 +628,11 @@
       "id": "d-rt-02",
       "project_id": "rt",
       "question": "Drop the passcode for seamless sign-in?",
-      "options": ["Drop it once the app is network/VPN-only", "Keep the passcode", "Replace with a stronger sign-in"],
+      "options": [
+        "Drop it once the app is network/VPN-only",
+        "Keep the passcode",
+        "Replace with a stronger sign-in"
+      ],
       "raised": "2026-09-29",
       "status": "open",
       "answer": null,
@@ -492,7 +642,10 @@
       "id": "d-rt-03",
       "project_id": "rt",
       "question": "OK to use the free US Census geocoder for dealer map pins?",
-      "options": ["Yes", "No, use another geocoder"],
+      "options": [
+        "Yes",
+        "No, use another geocoder"
+      ],
       "raised": "2026-09-29",
       "status": "open",
       "answer": null,
@@ -502,7 +655,10 @@
       "id": "d-cdd-01",
       "project_id": "cdd",
       "question": "Remove pitch lines and pre-call briefs from the DFW map to match the Leads section?",
-      "options": ["Remove", "Keep"],
+      "options": [
+        "Remove",
+        "Keep"
+      ],
       "raised": "2026-09-29",
       "status": "open",
       "answer": null,
@@ -512,7 +668,10 @@
       "id": "d-cdd-02",
       "project_id": "cdd",
       "question": "OK to keep business phone numbers in the private repo for click-to-call?",
-      "options": ["Yes", "No"],
+      "options": [
+        "Yes",
+        "No"
+      ],
       "raised": "2026-09-29",
       "status": "open",
       "answer": null,
@@ -522,7 +681,10 @@
       "id": "d-cdd-03",
       "project_id": "cdd",
       "question": "Split region books further, one per rep, once team sizes are known?",
-      "options": ["Yes, one book per rep", "No, keep region books"],
+      "options": [
+        "Yes, one book per rep",
+        "No, keep region books"
+      ],
       "raised": "2026-09-29",
       "status": "open",
       "answer": null,
@@ -566,7 +728,7 @@
       "project_id": "general",
       "body": [
         "Plan is to get me onto Salesforce for digital campaigns. I set up the campaign and how I want it, and it delegates the jobs to people on the Marketing team.",
-        "Leo and I found that CDS is very hard to find on the Copart website. We'll need to work on that.",
+        "Leo and I found that Copart Dealer Sales is very hard to find on the Copart website. We'll need to work on that.",
         "Kyle, Director of Marketing, wants to meet with me this week. Ken wants to be in that meeting.",
         "I need to talk to IT about elevating access on my tools and getting more Claude tokens per week."
       ]
