@@ -4,7 +4,7 @@ Project tracker for Chase, Digital Engagement Manager at Copart, supporting Ken 
 
 - `tracker/tracker.json` is the single source of truth. Edit it by hand; there is no database.
 - `tracker/log.md` has one dated entry per update.
-- The board (Next.js at the repo root) reads tracker.json at build time. Pushing to the production branch redeploys it on Vercel.
+- The board (Next.js at the repo root) reads tracker.json at build time. Pushing to `main` redeploys it on Vercel. Tracker updates commit straight to `main`.
 - `npm run validate` checks tracker.json. Run it before every commit. It also runs before every build.
 
 ## Writing style

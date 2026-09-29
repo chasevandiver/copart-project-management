@@ -16,9 +16,9 @@ npm run dev          # http://localhost:3000, open locally unless BOARD_PASSWORD
 2. Framework preset: Next.js. Root directory: repo root. Build settings: defaults.
 3. Environment Variables: add `BOARD_PASSWORD` for Production and Preview. Use a new password, not the dfw-dealer-digital one.
 4. Deploy. Open the URL and enter the password. The cookie lasts 30 days. Sign out at `/api/logout`.
-5. Settings > Git > Production Branch: the branch you want live (`main` once this branch is merged).
+5. Production branch is `main` (Vercel's default). Nothing to change.
 
-After that, every push to the production branch redeploys the board in about a minute. If `BOARD_PASSWORD` is missing in production, the site returns 503 instead of opening up.
+After that, every push to `main` redeploys the board in about a minute. If `BOARD_PASSWORD` is missing in production, the site returns 503 instead of opening up.
 
 ## Files
 
