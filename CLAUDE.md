@@ -86,14 +86,15 @@ Keep it short.
 
 ## Board
 
-- `app/page.tsx` kanban (filter by area, project and owner)
+- `app/page.tsx` home dashboard: stat tiles, project cards by area (click through), needs attention, waiting on
+- `app/board` kanban (filter by area, project and owner)
 - `app/projects` goals and projects, grouped by category
 - `app/projects/[id]` per-project page
 - `app/waiting` waiting on, grouped by person
 - `app/week` due in the next 7 days, overdue, or urgent
 - `app/people` directory by department
 - `middleware.ts` password gate using the `BOARD_PASSWORD` env var
-- `lib/tracker.ts` types and loader
+- `lib/tracker.ts` types and loader; `lib/stats.ts` per-project counts
 - `scripts/validate.mjs` validator
 
 Keep the board simple. New fields in tracker.json should be added to `lib/tracker.ts` and the validator in the same commit.

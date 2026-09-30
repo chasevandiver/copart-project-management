@@ -4,6 +4,8 @@ import TaskCard from "@/components/TaskCard";
 import Decisions from "@/components/Decisions";
 import { STATUSES, sortTasks, statusSlug, tracker } from "@/lib/tracker";
 import { shortDate } from "@/lib/dates";
+import { projectStats } from "@/lib/stats";
+import Progress from "@/components/Progress";
 
 export function generateStaticParams() {
   return tracker.projects.map((p) => ({ id: p.id }));
@@ -22,33 +24,45 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
   const waiting = tracker.waiting_on.filter((w) => w.project_id === id);
   const notes = tracker.notes.filter((n) => n.project_id === id);
   const goals = tracker.goals.filter((g) => g.project_ids.includes(id));
+  const s = projectStats(p);
 
   return (
     <>
-      <h1>
-        {p.name} <span className={`chip status col-${statusSlug(p.status)}`}>{p.status}</span>
-        {p.idea && <span className="chip idea">Idea, not committed</span>}
-      </h1>
-      <div className="meta-row" style={{ marginBottom: 8 }}>
-        <span className="chip">{p.category}</span>
-        {goals.map((g) => (
-          <Link key={g.id} className="chip" href="/projects">
-            Goal: {g.title}
-          </Link>
-        ))}
-      </div>
-      <p>{p.summary}</p>
-      {p.links.length > 0 && (
-        <p className="small">
-          {p.links.map((l, i) => (
-            <span key={i}>
-              {i > 0 && " · "}
-              {l.url ? <a href={l.url} target="_blank" rel="noreferrer">{l.label}</a> : <strong>{l.label}</strong>}
-              {l.where && <span className="muted"> ({l.where})</span>}
-            </span>
+      <Link href="/" className="back">&larr; Dashboard</Link>
+      <div className="phead">
+        <h1>
+          {p.name} <span className={`pill col-${statusSlug(p.status)}`}>{p.status}</span>
+          {p.idea && <span className="chip idea">Idea, not committed</span>}
+        </h1>
+        <div className="meta-row">
+          <span className="chip">{p.category}</span>
+          {goals.map((g) => (
+            <Link key={g.id} className="chip" href="/projects">
+              Goal: {g.title}
+            </Link>
           ))}
-        </p>
-      )}
+        </div>
+        <p>{p.summary}</p>
+        {p.links.length > 0 && (
+          <p className="small">
+            {p.links.map((l, i) => (
+              <span key={i}>
+                {i > 0 && " · "}
+                {l.url ? <a href={l.url} target="_blank" rel="noreferrer">{l.label}</a> : <strong>{l.label}</strong>}
+                {l.where && <span className="muted"> ({l.where})</span>}
+              </span>
+            ))}
+          </p>
+        )}
+        <Progress done={s.done} total={s.total} />
+        <div className="pstats">
+          <div className="pstat"><b>{s.open}</b><span>open tasks</span></div>
+          <div className={`pstat${s.urgent ? " bad" : ""}`}><b>{s.urgent}</b><span>urgent</span></div>
+          <div className={`pstat${s.blocked ? " bad" : ""}`}><b>{s.blocked}</b><span>blocked</span></div>
+          <div className="pstat"><b>{s.waitingOn}</b><span>waiting on others</span></div>
+          <div className="pstat"><b>{s.decisions}</b><span>open decisions</span></div>
+        </div>
+      </div>
 
       <div className="grid">
         <div className="card">
