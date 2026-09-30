@@ -669,6 +669,18 @@
       "idea": true,
       "created": "2026-09-30",
       "updated": "2026-09-30"
+    },
+    {
+      "id": "rt-12",
+      "project_id": "rt",
+      "title": "Get Indianapolis metro dealerships added to the Route Tracker",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "",
+      "created": "2026-09-30",
+      "updated": "2026-09-30"
     }
   ],
   "waiting_on": [
