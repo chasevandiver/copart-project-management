@@ -818,6 +818,16 @@
       "answer": null,
       "raised": "2026-09-30",
       "answered": null
+    },
+    {
+      "id": "q-02",
+      "question": "how does the Dealer process work once they are set up on the Copart website - what does it look like on their side - do they even go on the website. Need the full prospect to sale process",
+      "ask": "Leo",
+      "project_id": "general",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-09-30",
+      "answered": null
     }
   ],
   "decisions": [
