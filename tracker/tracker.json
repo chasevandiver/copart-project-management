@@ -656,6 +656,19 @@
       "created": "2026-09-30",
       "updated": "2026-09-30",
       "completed": "2026-09-30"
+    },
+    {
+      "id": "rt-11",
+      "project_id": "rt",
+      "title": "Add a recommended dealer stop if rep has hit all of the stops already",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "",
+      "idea": true,
+      "created": "2026-09-30",
+      "updated": "2026-09-30"
     }
   ],
   "waiting_on": [
