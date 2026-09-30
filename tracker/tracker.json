@@ -117,7 +117,6 @@
       ],
       "blockers": [],
       "next_steps": [
-        "Rotate all exposed secrets (cdd-01, urgent)",
         "Legal check before any bulk email (cdd-02, urgent)",
         "Second DFW inventory snapshot on or after Oct 4 (cdd-03)",
         "Verify the top 3 dealers and rerun the lead export (cdd-11)",
@@ -129,7 +128,7 @@
       "id": "pm",
       "name": "PM Tracker",
       "status": "In Progress",
-      "summary": "This repo. Single source of truth for Chase's work (tracker.json), a change log, and a password-protected board on Vercel.",
+      "summary": "This repo. Single source of truth for Chase's work (tracker.json), a change log, and a live, editable board on Vercel.",
       "built": [
         "tracker.json seeded from Sep 29 notes",
         "CLAUDE.md with data model and UPDATE protocol",
@@ -146,8 +145,7 @@
       ],
       "blockers": [],
       "next_steps": [
-        "Deploy the board to Vercel with a password (pm-02)",
-        "Add GITHUB_TOKEN in Vercel to turn on editing (pm-03)"
+        "Use the board daily; send UPDATE: notes for bigger changes"
       ],
       "category": "AI Tools"
     },

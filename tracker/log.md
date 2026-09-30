@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-09-30 (board live)
+- Source: Chase confirmed GITHUB_TOKEN is set and the board is live and editable
+- Board edits so far: cdd-01, pm-02, pm-03 marked Done
+- Changed: PM Tracker summary and next steps; removed the secrets step from Copart Dealer Digital next steps
+
 ## 2026-09-30
 - Source: Chase asked for checkboxes, adding action items and ideas, and a schedule view
 - Board: editing on the site (saved as "Board:" commits), Schedule page, quick add, ideas per project, decision buttons, "Got it" on waiting items
