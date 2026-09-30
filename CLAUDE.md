@@ -4,7 +4,7 @@ Project tracker for Chase, Digital Engagement Manager at Copart, supporting Ken 
 
 - `tracker/tracker.json` is the single source of truth. Edit it by hand; there is no database.
 - `tracker/log.md` has one dated entry per update.
-- The board (Next.js at the repo root) reads tracker.json live from GitHub on every request. Chase can also edit from the board (check off, add action items and ideas, set dates, resolve decisions, clear waiting-on). Those edits are committed to `main` as `Board: ...` commits.
+- The board (Next.js at the repo root) reads tracker.json live from GitHub on every request. Chase can also edit from the board (check off, add action items, ideas, notes and questions, set dates, answer questions, resolve decisions, mark waiting-on received). Those edits are committed to `main` as `Board: ...` commits.
 - Tracker updates commit straight to `main`. **Always `git pull origin main` before editing tracker.json**, because the board may have committed since your last pull.
 - `npm run validate` checks tracker.json. Run it before every commit. It also runs before every build.
 
@@ -38,13 +38,15 @@ Dates are `YYYY-MM-DD`. Use `null` for unknown dates, not guesses.
 
 **tasks[]**: `id` (`<project>-NN`, `gen-NN` for general), `project_id` (a project id or `"general"`), `title`, `status`, `owner`, `due`, `priority`, `notes`, optional `recurring` (only `"weekly"`; checking it off rolls `due` forward 7 days instead of closing it), optional `idea: true` (an idea, not committed work; excluded from counts, board and schedule), optional `completed` (date it was marked Done), `created`, `updated`
 
-**waiting_on[]**: `id` (`w-NN`), `what`, `from_whom`, `project_id`, `since`, `priority`, `notes`. These are things Chase is waiting on from others. Things others are waiting on from Chase are tasks owned by `Me`. Remove an item (and log it) once it arrives; if it creates work, add a task.
+**waiting_on[]**: `id` (`w-NN`), `what`, `from_whom`, `project_id`, `since`, `priority`, `notes`, optional `received` (date it arrived). These are things Chase is waiting on from others. Things others are waiting on from Chase are tasks owned by `Me`. When an item arrives, set `received` to the date (do not delete it; it feeds the Progress page). If it creates work, add a task.
+
+**questions[]**: `id` (`q-NN`), `question`, `ask` (who to ask: a name from `people`, an owner like `IT`, or any name), `project_id`, `status` (`open` or `answered`), `answer`, `raised`, `answered` (date). Use these for "ask X about Y". Answer in place; do not delete answered ones. If a question names someone new, consider adding them to `people`.
 
 **decisions[]**: `id` (`d-<project>-NN`), `project_id`, `question`, `options[]`, `raised`, `status` (`open` or `resolved`), `answer`, `resolved` (date). Resolve in place; never delete.
 
 **people[]**: `name`, `title`, `department`, `relationship`, `contact`
 
-**notes[]**: `date`, `title`, `project_id`, `body[]` (one string per point). Newest last.
+**notes[]**: `id` (`n-NN`), `date`, `title`, `project_id`, `body[]` (one string per point). Notes attach to a project (or `general`). Newest last.
 
 **meta.last_updated**: set to today on every update.
 
@@ -53,7 +55,7 @@ Dates are `YYYY-MM-DD`. Use `null` for unknown dates, not guesses.
 When Chase sends a message starting with `UPDATE:` (often messy notes or a paste from another Claude session):
 
 1. `git pull origin main`, then read tracker.json in full.
-2. Parse the message into: goals, new tasks, task changes (status, owner, due, priority, notes), waiting-on items added or cleared, decisions raised or resolved, people added or changed, project summary/blocker/next-step changes, and dated notes.
+2. Parse the message into: goals, new tasks, questions (who to ask what), task changes (status, owner, due, priority, notes), waiting-on items added or cleared, decisions raised or resolved, people added or changed, project summary/blocker/next-step changes, and dated notes.
 3. Match to existing items by meaning, not exact wording. Update instead of creating duplicates. When a task finishes, set it to `Done` (do not delete).
 4. If something is ambiguous (which project, who owns it, a due date), ask ONE question before writing anything.
 5. Show a short summary of the changes (a few bullets), then apply them.
@@ -82,19 +84,21 @@ Newest entry first. Multiple updates on one day get separate entries with a time
 When Chase asks "where are we", reply in chat (no file changes):
 - One or two lines per project: status, main blocker, next step
 - Urgent items and anything overdue or due in the next 7 days
-- Open waiting-on items older than a week
+- Open waiting-on items older than a week, and open questions by person
 Keep it short.
 
 ## Board
 
-- `app/page.tsx` home dashboard: quick add, stat tiles, project cards by area (click through), needs attention (checkable), waiting on
+Top-level pages (the nav): Home, Schedule, Projects, People, Everything, Progress.
+- `app/page.tsx` Home: capture box (action item, idea, note, question), focus list, ask next, recent notes, this week so far, projects
 - `app/schedule` agenda: overdue, today, each day this week, next week, later, no date (Mine / Everyone)
-- `app/board` kanban (filter by area, project and owner)
-- `app/projects` goals and projects, grouped by category
-- `app/projects/[id]` per-project page
-- `app/waiting` waiting on, grouped by person
-- `app/week` redirects to `/schedule`
-- `app/people` directory by department
+- `app/projects` goals and projects by category, plus general items; links to `app/board` (kanban)
+- `app/projects/[id]` project with tabs: Overview, Action items, Ideas, Notes, Questions, Decisions & waiting (`?tab=`)
+- `app/people` one card per person: questions to ask them, waiting on them, what they own
+- `app/items` Everything: every item, filter by type, project, person, open/done, search, group by
+- `app/progress` what got done, decided, answered, received and noted, by day, week or month (`lib/activity.ts` derives it from item dates)
+- `app/waiting` and `app/week` still work (waiting list; week redirects to schedule)
+- `components/Capture.tsx` the one capture box used everywhere
 - `middleware.ts` password gate using the `BOARD_PASSWORD` env var
 - `lib/tracker.ts` types and pure helpers; `lib/stats.ts` per-project counts
 - `lib/store.ts` load and save (GitHub via `GITHUB_TOKEN` in production, disk in local dev, read-only otherwise)

@@ -1,5 +1,5 @@
 import Schedule from "@/components/Schedule";
-import QuickAdd from "@/components/QuickAdd";
+import Capture from "@/components/Capture";
 import { getTracker } from "@/lib/store";
 
 export default async function SchedulePage() {
@@ -7,7 +7,9 @@ export default async function SchedulePage() {
   return (
     <div className="page">
       <h1>Schedule</h1>
-      <QuickAdd />
+      <div className="panel pad capture-panel">
+        <Capture kinds={["task"]} />
+      </div>
       <Schedule tasks={t.tasks} />
     </div>
   );

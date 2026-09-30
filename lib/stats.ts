@@ -23,7 +23,7 @@ export function projectStats(t: Tracker, p: Project): ProjectStats {
     urgent: open.filter((x) => x.priority === "urgent").length,
     blocked: open.filter((x) => x.status === "Blocked").length,
     waitingTasks: open.filter((x) => x.status === "Waiting").length,
-    waitingOn: t.waiting_on.filter((w) => w.project_id === p.id).length,
+    waitingOn: t.waiting_on.filter((w) => w.project_id === p.id && !w.received).length,
     decisions: t.decisions.filter((d) => d.project_id === p.id && d.status === "open").length,
     ideas: all.length - tasks.length,
   };

@@ -1,85 +1,94 @@
 import Link from "next/link";
 import Progress from "@/components/Progress";
-import { Attention, Greeting, Tiles } from "@/components/HomeLive";
-import QuickAdd from "@/components/QuickAdd";
-import { CATEGORIES, statusSlug, workTasks, type Project, type Tracker } from "@/lib/tracker";
+import Capture from "@/components/Capture";
+import QuestionItem from "@/components/QuestionItem";
+import { Attention, Greeting, Tiles, WeekSoFar } from "@/components/HomeLive";
+import { CATEGORIES, openWaiting, statusSlug, workTasks, type Project, type Tracker } from "@/lib/tracker";
 import { projectStats } from "@/lib/stats";
-import { shortDate } from "@/lib/dates";
+import { activity } from "@/lib/activity";
+import { longDate } from "@/lib/dates";
 import { getTracker } from "@/lib/store";
 
-function ProjectTile({ t, p }: { t: Tracker; p: Project }) {
+function ProjectRow({ t, p }: { t: Tracker; p: Project }) {
   const s = projectStats(t, p);
-  const next = p.next_steps[0];
+  const openQ = t.questions.filter((q) => q.project_id === p.id && q.status === "open").length;
+  const notes = t.notes.filter((n) => n.project_id === p.id).length;
   return (
-    <Link href={`/projects/${p.id}`} className="ptile">
-      <div className="ptile-head">
+    <Link href={`/projects/${p.id}`} className="prow">
+      <div className="prow-head">
         <span className="ptile-name">{p.name}</span>
         <span className={`pill col-${statusSlug(p.status)}`}>{p.status}</span>
       </div>
-      {p.idea && <span className="ptile-idea">Idea, not committed</span>}
-      <p className="ptile-summary">{p.summary}</p>
       {p.blockers[0] ? (
         <p className="ptile-line bad">
           <strong>Blocked:</strong> {p.blockers[0]}
         </p>
-      ) : next ? (
+      ) : p.next_steps[0] ? (
         <p className="ptile-line">
-          <strong>Next:</strong> {next}
+          <strong>Next:</strong> {p.next_steps[0]}
         </p>
       ) : null}
       <Progress done={s.done} total={s.total} />
       <div className="ptile-stats">
         <span>{s.open} open</span>
         {s.urgent > 0 && <span className="bad">{s.urgent} urgent</span>}
-        {s.blocked > 0 && <span className="bad">{s.blocked} blocked</span>}
-        {s.waitingOn > 0 && <span>{s.waitingOn} waiting</span>}
-        {s.decisions > 0 && <span>{s.decisions} decisions</span>}
+        {openQ > 0 && <span>{openQ} to ask</span>}
         {s.ideas > 0 && <span>{s.ideas} ideas</span>}
+        {notes > 0 && <span>{notes} notes</span>}
       </div>
     </Link>
   );
 }
 
 export default async function Home() {
-  const tracker = await getTracker();
-  const openDecisions = tracker.decisions.filter((d) => d.status === "open").length;
-  const waiting = [...tracker.waiting_on].sort((a, b) => a.since.localeCompare(b.since));
-  const byWho = new Map<string, number>();
-  for (const w of waiting) byWho.set(w.from_whom, (byWho.get(w.from_whom) ?? 0) + 1);
+  const t = await getTracker();
+  const openQ = t.questions.filter((q) => q.status === "open").sort((a, b) => a.raised.localeCompare(b.raised));
+  const askPeople = new Set(openQ.map((q) => q.ask)).size;
+  const waiting = openWaiting(t);
+  const recentNotes = [...t.notes].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3);
+  const pname = (id: string) => (id === "general" ? "General" : t.projects.find((p) => p.id === id)?.name ?? id);
 
   return (
     <div className="home">
       <div className="home-head">
         <div>
           <Greeting />
-          <h1>Dashboard</h1>
+          <h1>Home</h1>
         </div>
-        <span className="muted small">Tracker updated {shortDate(tracker.meta.last_updated)}</span>
       </div>
 
-      <QuickAdd />
+      <div className="panel pad capture-panel">
+        <Capture />
+      </div>
 
-      <Tiles tasks={workTasks(tracker)} waiting={tracker.waiting_on} openDecisions={openDecisions} />
+      <Tiles tasks={workTasks(t)} waiting={waiting} openQuestions={openQ.length} askPeople={askPeople} />
 
       <div className="home-grid">
-        <div>
+        <div className="stack">
+          <section className="panel">
+            <div className="panel-head">
+              <h2>Focus</h2>
+              <Link href="/schedule" className="small">
+                Full schedule
+              </Link>
+            </div>
+            <Attention tasks={workTasks(t)} />
+          </section>
+
           {CATEGORIES.map((c) => {
-            const projects = tracker.projects.filter((p) => p.category === c);
-            const goals = tracker.goals.filter((g) => g.category === c);
+            const projects = t.projects.filter((p) => p.category === c);
             if (!projects.length) return null;
             return (
               <section key={c} className="area">
                 <div className="area-head">
                   <h2>{c}</h2>
-                  {goals.map((g) => (
-                    <span key={g.id} className="area-goal">
-                      Goal: {g.title}
-                    </span>
-                  ))}
+                  <Link href="/projects" className="small">
+                    All projects
+                  </Link>
                 </div>
                 <div className="ptiles">
                   {projects.map((p) => (
-                    <ProjectTile key={p.id} t={tracker} p={p} />
+                    <ProjectRow key={p.id} t={t} p={p} />
                   ))}
                 </div>
               </section>
@@ -90,40 +99,57 @@ export default async function Home() {
         <aside className="side">
           <section className="panel">
             <div className="panel-head">
-              <h2>Needs attention</h2>
-              <Link href="/schedule" className="small">
-                Schedule
+              <h2>Ask next</h2>
+              <Link href="/people" className="small">
+                People
               </Link>
             </div>
-            <Attention tasks={workTasks(tracker)} />
+            {openQ.length ? (
+              <div className="list-rows tight">
+                {openQ.slice(0, 6).map((q) => (
+                  <QuestionItem key={q.id} q={q} />
+                ))}
+              </div>
+            ) : (
+              <p className="section-empty panel-body">No open questions. Add one above with Question.</p>
+            )}
           </section>
 
           <section className="panel">
             <div className="panel-head">
-              <h2>Waiting on</h2>
-              <Link href="/waiting" className="small">
-                All
+              <h2>Recent notes</h2>
+              <Link href="/items?type=note" className="small">
+                All notes
               </Link>
             </div>
-            <ul className="rows">
-              {[...byWho.entries()].map(([who, n]) => (
-                <li key={who}>
-                  <Link href="/waiting" className="row">
-                    <span className="row-main">
-                      <span className="row-title">{who}</span>
-                      <span className="row-sub">
-                        {waiting
-                          .filter((w) => w.from_whom === who)
-                          .map((w) => w.what)
-                          .slice(0, 2)
-                          .join("; ")}
+            {recentNotes.length ? (
+              <ul className="rows">
+                {recentNotes.map((n) => (
+                  <li key={n.id}>
+                    <Link href={n.project_id === "general" ? "/items?type=note" : `/projects/${n.project_id}?tab=notes`} className="row">
+                      <span className="row-main">
+                        <span className="row-title">{n.title}</span>
+                        <span className="row-sub">
+                          {longDate(n.date)} · {pname(n.project_id)}
+                        </span>
                       </span>
-                    </span>
-                    <span className="row-count">{n}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="section-empty panel-body">No notes yet.</p>
+            )}
+          </section>
+
+          <section className="panel">
+            <div className="panel-head">
+              <h2>This week so far</h2>
+              <Link href="/progress" className="small">
+                Progress
+              </Link>
+            </div>
+            <WeekSoFar events={activity(t)} />
           </section>
         </aside>
       </div>

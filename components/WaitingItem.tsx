@@ -10,10 +10,11 @@ export function WaitingItem({ w, showProject = true }: { w: WaitingOn; showProje
   const { projects, today, save, canEdit } = useApp();
   const [busy, setBusy] = useState(false);
   const days = today ? daysBetween(w.since, today) : 0;
+  const received = !!w.received;
   const project = projects.find((p) => p.id === w.project_id)?.name ?? "General";
 
   return (
-    <div className={`ti ti-row p-${w.priority}`}>
+    <div className={`ti ti-row p-${w.priority}${received ? " is-done" : ""}`}>
       <div className="ti-main">
         <div className="ti-title static">{w.what}</div>
         <div className="ti-meta">
@@ -22,10 +23,14 @@ export function WaitingItem({ w, showProject = true }: { w: WaitingOn; showProje
               {project}
             </Link>
           )}
-          <span className={days > 7 ? "warn" : undefined}>
-            Since {shortDate(w.since)}
-            {days > 0 && ` · ${days} ${days === 1 ? "day" : "days"}`}
-          </span>
+          {received && w.received ? (
+            <span>Received {shortDate(w.received)}</span>
+          ) : (
+            <span className={days > 7 ? "warn" : undefined}>
+              Since {shortDate(w.since)}
+              {days > 0 && ` · ${days} ${days === 1 ? "day" : "days"}`}
+            </span>
+          )}
           {w.priority === "high" && <span className="warn">High</span>}
           {w.priority === "urgent" && <span className="bad">Urgent</span>}
         </div>
@@ -37,11 +42,12 @@ export function WaitingItem({ w, showProject = true }: { w: WaitingOn; showProje
         disabled={busy || !canEdit}
         onClick={async () => {
           setBusy(true);
-          await save({ type: "waiting.clear", id: w.id }, `Received from ${w.from_whom}`);
+          if (received) await save({ type: "waiting.reopen", id: w.id }, "Back on waiting");
+          else await save({ type: "waiting.clear", id: w.id }, `Received from ${w.from_whom}`);
           setBusy(false);
         }}
       >
-        Got it
+        {received ? "Still waiting" : "Got it"}
       </button>
     </div>
   );

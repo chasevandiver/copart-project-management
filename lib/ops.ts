@@ -14,6 +14,15 @@ export type Op =
   | { type: "idea.drop"; id: string }
   | { type: "waiting.add"; what: string; from_whom: string; project_id: string }
   | { type: "waiting.clear"; id: string }
+  | { type: "waiting.reopen"; id: string }
+  | { type: "note.add"; project_id: string; title: string; text: string; date?: string }
+  | { type: "note.update"; id: string; project_id: string; title: string; text: string; date?: string }
+  | { type: "note.delete"; id: string }
+  | { type: "question.add"; question: string; ask: string; project_id: string }
+  | { type: "question.update"; id: string; question: string; ask: string; project_id: string }
+  | { type: "question.answer"; id: string; answer: string }
+  | { type: "question.reopen"; id: string }
+  | { type: "question.delete"; id: string }
   | { type: "decision.resolve"; id: string; answer: string };
 
 export class OpError extends Error {}
@@ -44,9 +53,25 @@ function nextId(t: Tracker, projectId: string): string {
   return `${prefix}-${String(n).padStart(2, "0")}`;
 }
 
-function nextWaitingId(t: Tracker): string {
-  const nums = t.waiting_on.map((w) => parseInt(w.id.slice(2), 10)).filter((n) => !Number.isNaN(n));
-  return `w-${String((nums.length ? Math.max(...nums) : 0) + 1).padStart(2, "0")}`;
+function nextSimpleId(ids: string[], prefix: string): string {
+  const nums = ids
+    .filter((id) => id.startsWith(prefix + "-"))
+    .map((id) => parseInt(id.slice(prefix.length + 1), 10))
+    .filter((n) => !Number.isNaN(n));
+  return `${prefix}-${String((nums.length ? Math.max(...nums) : 0) + 1).padStart(2, "0")}`;
+}
+
+function checkProject(t: Tracker, id: string) {
+  if (id !== "general" && !t.projects.some((p) => p.id === id)) throw new OpError("Unknown project");
+}
+
+/** Note text: keeps line breaks, one body entry per non-empty line. */
+function noteBody(text: unknown): string[] {
+  if (typeof text !== "string") throw new OpError("Expected text");
+  if (text.length > 10000) throw new OpError("Note too long (max 10,000 characters)");
+  const lines = text.split(/\r?\n/).map((l) => l.replace(/^\s*[-*\u2022]\s+/, "").trimEnd()).filter((l) => l.trim());
+  if (!lines.length) throw new OpError("Note is empty");
+  return lines;
 }
 
 function sanitizeFields(t: Tracker, f: TaskFields): TaskFields {
@@ -166,17 +191,91 @@ export function applyOp(input: Tracker, op: Op, today: string): { tracker: Track
       const what = clean(op.what, 200);
       const from_whom = clean(op.from_whom, 60);
       if (!what || !from_whom) throw new OpError("Say what you're waiting on and from whom");
-      if (op.project_id !== "general" && !t.projects.some((p) => p.id === op.project_id)) throw new OpError("Unknown project");
-      const id = nextWaitingId(t);
+      checkProject(t, op.project_id);
+      const id = nextSimpleId(t.waiting_on.map((w) => w.id), "w");
       t.waiting_on.push({ id, what, from_whom, project_id: op.project_id, since: today, priority: "normal", notes: "" });
       summary = `waiting on ${from_whom} (${id})`;
       break;
     }
     case "waiting.clear": {
       const w = t.waiting_on.find((x) => x.id === op.id);
-      if (!w) throw new OpError("Already cleared. Refresh the page.");
-      t.waiting_on = t.waiting_on.filter((x) => x.id !== op.id);
+      if (!w || w.received) throw new OpError("Already received. Refresh the page.");
+      w.received = today;
       summary = `received ${op.id} from ${w.from_whom}`;
+      break;
+    }
+    case "waiting.reopen": {
+      const w = t.waiting_on.find((x) => x.id === op.id);
+      if (!w) throw new OpError("Not found");
+      w.received = null;
+      summary = `still waiting ${op.id}`;
+      break;
+    }
+    case "note.add":
+    case "note.update": {
+      checkProject(t, op.project_id);
+      const title = clean(op.title ?? "", 200);
+      const body = noteBody(op.text);
+      const date = op.date && DATE.test(op.date) ? op.date : today;
+      const fields = { title: title || body[0].slice(0, 80), body, project_id: op.project_id, date };
+      if (op.type === "note.add") {
+        const id = nextSimpleId(t.notes.map((n) => n.id), "n");
+        t.notes.push({ id, ...fields });
+        summary = `add note ${id}`;
+      } else {
+        const n = t.notes.find((x) => x.id === op.id);
+        if (!n) throw new OpError("Note not found. Refresh the page.");
+        Object.assign(n, fields);
+        summary = `edit note ${n.id}`;
+      }
+      break;
+    }
+    case "note.delete": {
+      if (!t.notes.some((n) => n.id === op.id)) throw new OpError("Note not found");
+      t.notes = t.notes.filter((n) => n.id !== op.id);
+      summary = `delete note ${op.id}`;
+      break;
+    }
+    case "question.add":
+    case "question.update": {
+      checkProject(t, op.project_id);
+      const question = clean(op.question, 300);
+      const ask = clean(op.ask, 60);
+      if (!question) throw new OpError("Write the question");
+      if (!ask) throw new OpError("Say who to ask");
+      if (op.type === "question.add") {
+        const id = nextSimpleId(t.questions.map((q) => q.id), "q");
+        t.questions.push({ id, question, ask, project_id: op.project_id, status: "open", answer: null, raised: today, answered: null });
+        summary = `ask ${ask} (${id})`;
+      } else {
+        const q = t.questions.find((x) => x.id === op.id);
+        if (!q) throw new OpError("Question not found. Refresh the page.");
+        Object.assign(q, { question, ask, project_id: op.project_id });
+        summary = `edit question ${q.id}`;
+      }
+      break;
+    }
+    case "question.answer": {
+      const q = t.questions.find((x) => x.id === op.id);
+      if (!q) throw new OpError("Question not found");
+      const answer = typeof op.answer === "string" ? op.answer.trim() : "";
+      if (!answer) throw new OpError("Write the answer");
+      if (answer.length > 2000) throw new OpError("Answer too long (max 2000 characters)");
+      Object.assign(q, { status: "answered", answer, answered: today });
+      summary = `answered ${q.id}`;
+      break;
+    }
+    case "question.reopen": {
+      const q = t.questions.find((x) => x.id === op.id);
+      if (!q) throw new OpError("Question not found");
+      Object.assign(q, { status: "open", answer: null, answered: null });
+      summary = `reopen ${q.id}`;
+      break;
+    }
+    case "question.delete": {
+      if (!t.questions.some((q) => q.id === op.id)) throw new OpError("Question not found");
+      t.questions = t.questions.filter((q) => q.id !== op.id);
+      summary = `delete question ${op.id}`;
       break;
     }
     case "decision.resolve": {

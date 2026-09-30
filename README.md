@@ -1,6 +1,6 @@
 # Copart PM Board
 
-Chase's project tracker. Data lives in `tracker/tracker.json`. The board is a small Next.js app that reads it at build time. See CLAUDE.md for the data model and the UPDATE protocol.
+Chase's project tracker. Data lives in `tracker/tracker.json`. The board is a small Next.js app that reads it live and saves edits back as commits. See CLAUDE.md for the data model and the UPDATE protocol.
 
 ## Local
 

@@ -9,7 +9,7 @@ import path from "node:path";
 import bundled from "../tracker/tracker.json";
 import { validateTracker } from "./validate-core.mjs";
 import { applyOp, OpError, type Op } from "./ops";
-import type { Tracker } from "./tracker";
+import { normalize, type Tracker } from "./tracker";
 
 const REPO = process.env.GITHUB_REPO || "chasevandiver/copart-project-management";
 const BRANCH = process.env.GITHUB_BRANCH || "main";
@@ -54,7 +54,7 @@ async function ghRead(): Promise<{ tracker: Tracker; sha: string }> {
   if (!res.ok) throw new Error(`GitHub read failed (${res.status})`);
   const body = (await res.json()) as { content: string; sha: string };
   const text = Buffer.from(body.content, "base64").toString("utf8");
-  return { tracker: JSON.parse(text) as Tracker, sha: body.sha };
+  return { tracker: normalize(JSON.parse(text) as Tracker), sha: body.sha };
 }
 
 async function ghWrite(t: Tracker, sha: string, message: string): Promise<"ok" | "conflict"> {
@@ -78,11 +78,11 @@ export async function getTracker(): Promise<Tracker> {
     } catch (e) {
       // Keep the site up if GitHub is down or the token is wrong. Saves will still report the error.
       console.error(e);
-      return bundled as Tracker;
+      return normalize(structuredClone(bundled) as Tracker);
     }
   }
-  if (mode === "local") return JSON.parse(await readFile(localPath(), "utf8")) as Tracker;
-  return bundled as Tracker;
+  if (mode === "local") return normalize(JSON.parse(await readFile(localPath(), "utf8")) as Tracker);
+  return normalize(structuredClone(bundled) as Tracker);
 }
 
 function check(t: Tracker) {
@@ -97,7 +97,7 @@ export async function runOp(op: Op): Promise<{ tracker: Tracker; summary: string
   if (mode === "readonly") throw new OpError("Editing is off. Set GITHUB_TOKEN in Vercel to turn it on.");
 
   if (mode === "local") {
-    const current = JSON.parse(await readFile(localPath(), "utf8")) as Tracker;
+    const current = normalize(JSON.parse(await readFile(localPath(), "utf8")) as Tracker);
     const result = applyOp(current, op, today);
     check(result.tracker);
     await writeFile(localPath(), JSON.stringify(result.tracker, null, 2) + "\n");

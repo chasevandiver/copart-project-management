@@ -2,6 +2,12 @@
 
 Newest entry first.
 
+## 2026-09-30 (notes, questions, progress)
+- Source: Chase asked for notes on projects, questions assigned to people, cleaner organization, and a view of what got done by day, week and month
+- Board: new nav (Home, Schedule, Projects, People, Everything, Progress); one capture box for action items, ideas, notes and questions; project tabs; People shows who to ask what; Everything lists all items with filters; Progress shows completed, decided, answered, received and notes by day, week or month
+- Data: added `questions` list; notes now have ids (n-01); waiting-on items keep a `received` date instead of being deleted
+- Changed: PM Tracker built list
+
 ## 2026-09-30 (board live)
 - Source: Chase confirmed GITHUB_TOKEN is set and the board is live and editable
 - Board edits so far: cdd-01, pm-02, pm-03 marked Done

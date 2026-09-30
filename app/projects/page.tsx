@@ -1,6 +1,8 @@
 import Link from "next/link";
 import TaskItem from "@/components/TaskItem";
-import QuickAdd from "@/components/QuickAdd";
+import QuestionItem from "@/components/QuestionItem";
+import NoteItem from "@/components/NoteItem";
+import Capture from "@/components/Capture";
 import { CATEGORIES, projectName, sortTasks, statusSlug, type Project, type Tracker } from "@/lib/tracker";
 import { getTracker } from "@/lib/store";
 
@@ -8,7 +10,8 @@ function ProjectCard({ tracker, p }: { tracker: Tracker; p: Project }) {
   const open = tracker.tasks.filter((t) => t.project_id === p.id && t.status !== "Done" && !t.idea);
   const urgent = open.filter((t) => t.priority === "urgent").length;
   const decisions = tracker.decisions.filter((d) => d.project_id === p.id && d.status === "open").length;
-  const waiting = tracker.waiting_on.filter((w) => w.project_id === p.id).length;
+  const waiting = tracker.waiting_on.filter((w) => w.project_id === p.id && !w.received).length;
+  const questions = tracker.questions.filter((q) => q.project_id === p.id && q.status === "open").length;
   return (
     <Link href={`/projects/${p.id}`} className="card" style={{ color: "inherit" }}>
       <h3>
@@ -21,6 +24,7 @@ function ProjectCard({ tracker, p }: { tracker: Tracker; p: Project }) {
         {urgent > 0 && <span className="chip urgent">{urgent} urgent</span>}
         {decisions > 0 && <span className="chip">{decisions} open decisions</span>}
         {waiting > 0 && <span className="chip">{waiting} waiting on</span>}
+        {questions > 0 && <span className="chip">{questions} to ask</span>}
         {p.blockers.length > 0 && <span className="chip overdue">{p.blockers.length} blockers</span>}
       </div>
     </Link>
@@ -30,9 +34,16 @@ function ProjectCard({ tracker, p }: { tracker: Tracker; p: Project }) {
 export default async function ProjectsPage() {
   const tracker = await getTracker();
   const general = sortTasks(tracker.tasks.filter((t) => t.project_id === "general" && t.status !== "Done"));
+  const generalQ = tracker.questions.filter((q) => q.project_id === "general" && q.status === "open");
+  const generalNotes = tracker.notes.filter((n) => n.project_id === "general").sort((a, b) => b.date.localeCompare(a.date));
   return (
-    <>
-      <h1>Goals and projects</h1>
+    <div className="page">
+      <div className="home-head">
+        <h1>Projects</h1>
+        <Link href="/board" className="small">
+          Board view (all action items by status) &rarr;
+        </Link>
+      </div>
       {CATEGORIES.map((c) => {
         const goals = tracker.goals.filter((g) => g.category === c);
         const projects = tracker.projects.filter((p) => p.category === c);
@@ -67,13 +78,30 @@ export default async function ProjectsPage() {
           </section>
         );
       })}
-      <h2>General tasks</h2>
-      <QuickAdd projectId="general" />
+      <h2>General (not tied to a project)</h2>
+      <div className="panel pad capture-panel">
+        <Capture projectId="general" />
+      </div>
       <div className="list-rows">
         {general.map((t) => (
           <TaskItem key={t.id} task={t} showProject={false} showNotes />
         ))}
+        {generalQ.map((q) => (
+          <QuestionItem key={q.id} q={q} showProject={false} />
+        ))}
       </div>
-    </>
+      {generalNotes.length > 0 && (
+        <details className="group">
+          <summary>
+            General notes <span className="muted">{generalNotes.length}</span>
+          </summary>
+          <div className="notes-list">
+            {generalNotes.map((n) => (
+              <NoteItem key={n.id} note={n} showProject={false} />
+            ))}
+          </div>
+        </details>
+      )}
+    </div>
   );
 }

@@ -5,12 +5,14 @@ import { useEffect, useState } from "react";
 import { sortTasks, type Task, type WaitingOn } from "@/lib/tracker";
 import TaskItem from "./TaskItem";
 import { useApp } from "./App";
-import { daysBetween, shortDate } from "@/lib/dates";
+import { addDaysISO, daysBetween, mondayIndex, shortDate } from "@/lib/dates";
+import type { ActivityEvent } from "@/lib/activity";
 
 type TileProps = {
   tasks: Task[];
   waiting: WaitingOn[];
-  openDecisions: number;
+  openQuestions: number;
+  askPeople: number;
 };
 
 const DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -26,7 +28,7 @@ export function Greeting() {
   return <p className="home-date">{label || " "}</p>;
 }
 
-export function Tiles({ tasks, waiting, openDecisions }: TileProps) {
+export function Tiles({ tasks, waiting, openQuestions, askPeople }: TileProps) {
   const { today } = useApp();
   const open = tasks.filter((t) => t.status !== "Done" && !t.idea);
   const urgent = open.filter((t) => t.priority === "urgent").length;
@@ -37,26 +39,55 @@ export function Tiles({ tasks, waiting, openDecisions }: TileProps) {
   return (
     <div className="tiles">
       <Link href="/schedule" className="tile">
+        <span className="tile-label">Due in 7 days</span>
+        <span className="tile-value">{soon ?? "\u2013"}</span>
+        <span className={`tile-sub${overdue ? " bad" : ""}`}>{overdue ? `${overdue} overdue` : "nothing overdue"}</span>
+      </Link>
+      <Link href="/schedule" className="tile">
         <span className="tile-label">Urgent</span>
         <span className="tile-value">{urgent}</span>
         <span className="tile-sub">open, top priority</span>
       </Link>
-      <Link href="/schedule" className="tile">
-        <span className="tile-label">Due in 7 days</span>
-        <span className="tile-value">{soon ?? "–"}</span>
-        <span className={`tile-sub${overdue ? " bad" : ""}`}>{overdue ? `${overdue} overdue` : "nothing overdue"}</span>
+      <Link href="/people" className="tile">
+        <span className="tile-label">Questions to ask</span>
+        <span className="tile-value">{openQuestions}</span>
+        <span className="tile-sub">{askPeople ? `across ${askPeople} ${askPeople === 1 ? "person" : "people"}` : "none open"}</span>
       </Link>
-      <Link href="/waiting" className="tile">
+      <Link href="/people" className="tile">
         <span className="tile-label">Waiting on others</span>
         <span className="tile-value">{waiting.length}</span>
         <span className="tile-sub">{oldest > 1 ? `oldest ${oldest} days` : oldest === 1 ? "oldest 1 day" : "all new today"}</span>
       </Link>
-      <Link href="/projects" className="tile">
-        <span className="tile-label">Open decisions</span>
-        <span className="tile-value">{openDecisions}</span>
-        <span className="tile-sub">need a call from me</span>
-      </Link>
     </div>
+  );
+}
+
+export function WeekSoFar({ events }: { events: ActivityEvent[] }) {
+  const { today } = useApp();
+  if (!today) return null;
+  const monday = addDaysISO(today, -mondayIndex(today));
+  const week = events.filter((e) => e.date >= monday && e.date <= today);
+  const n = (k: ActivityEvent["kind"]) => week.filter((e) => e.kind === k).length;
+  const rows: [string, number][] = [
+    ["Completed", n("done")],
+    ["Notes", n("note")],
+    ["Questions answered", n("answered")],
+    ["Decisions", n("decided")],
+    ["Items added", n("added") + n("idea") + n("asked")],
+  ];
+  return (
+    <ul className="rows">
+      {rows.map(([label, v]) => (
+        <li key={label}>
+          <Link href="/progress" className="row">
+            <span className="row-main">
+              <span className="row-title">{label}</span>
+            </span>
+            <span className="row-count">{v}</span>
+          </Link>
+        </li>
+      ))}
+    </ul>
   );
 }
 

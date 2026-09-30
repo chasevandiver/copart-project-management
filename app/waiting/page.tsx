@@ -1,11 +1,11 @@
 import { WaitingAdd, WaitingItem } from "@/components/WaitingItem";
-import { PRIORITY_RANK } from "@/lib/tracker";
+import { PRIORITY_RANK, openWaiting } from "@/lib/tracker";
 import { getTracker } from "@/lib/store";
 
 export default async function WaitingPage() {
   const t = await getTracker();
   const groups = new Map<string, typeof t.waiting_on>();
-  for (const w of t.waiting_on) {
+  for (const w of openWaiting(t)) {
     groups.set(w.from_whom, [...(groups.get(w.from_whom) ?? []), w]);
   }
   const sorted = [...groups.entries()].sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]));
@@ -32,6 +32,20 @@ export default async function WaitingPage() {
           </section>
         ))}
       </div>
+      {t.waiting_on.some((w) => w.received) && (
+        <details className="group">
+          <summary>
+            Received <span className="muted">{t.waiting_on.filter((w) => w.received).length}</span>
+          </summary>
+          <div className="list-rows">
+            {t.waiting_on
+              .filter((w) => w.received)
+              .map((w) => (
+                <WaitingItem key={w.id} w={w} />
+              ))}
+          </div>
+        </details>
+      )}
     </div>
   );
 }

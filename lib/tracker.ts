@@ -62,6 +62,20 @@ export type WaitingOn = {
   since: string;
   priority: Priority;
   notes: string;
+  /** Date it arrived. Received items stay for history but drop off open lists. */
+  received?: string | null;
+};
+
+export type Question = {
+  id: string;
+  question: string;
+  /** Who to ask: an owner name, a person's name, or anyone. */
+  ask: string;
+  project_id: string;
+  status: "open" | "answered";
+  answer: string | null;
+  raised: string;
+  answered: string | null;
 };
 
 export type Decision = {
@@ -84,6 +98,7 @@ export type Person = {
 };
 
 export type Note = {
+  id: string;
   date: string;
   title: string;
   project_id: string;
@@ -97,6 +112,7 @@ export type Tracker = {
   projects: Project[];
   tasks: Task[];
   waiting_on: WaitingOn[];
+  questions: Question[];
   decisions: Decision[];
   people: Person[];
   notes: Note[];
@@ -115,6 +131,18 @@ export function projectNames(t: Tracker): Record<string, string> {
 
 export function owners(t: Tracker): string[] {
   return [...FIXED_OWNERS, ...t.people.map((p) => p.name).filter((n) => !FIXED_OWNERS.includes(n))];
+}
+
+/** Waiting-on items that have not arrived yet. */
+export function openWaiting(t: Tracker): WaitingOn[] {
+  return t.waiting_on.filter((w) => !w.received);
+}
+
+/** Fills fields older files may lack, so pages never crash on an older tracker.json. */
+export function normalize(t: Tracker): Tracker {
+  t.questions ??= [];
+  t.notes = (t.notes ?? []).map((n, i) => ({ ...n, id: n.id ?? `n-legacy-${i + 1}` }));
+  return t;
 }
 
 /** Real work items: tasks that are not ideas. */

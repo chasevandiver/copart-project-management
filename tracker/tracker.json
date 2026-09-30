@@ -135,7 +135,8 @@
         "Next.js board: kanban, projects, waiting on, this week, people",
         "Home dashboard with quick add and checkable needs-attention list",
         "Editing on the board: check off, add action items and ideas, edit any task, resolve decisions, clear waiting-on; saved as commits to main",
-        "Schedule view: overdue, today, each day this week, next week, later, no date"
+        "Schedule view: overdue, today, each day this week, next week, later, no date",
+        "Notes and questions (who to ask what) on every project, People view, Everything view, Progress by day, week and month"
       ],
       "links": [
         {
@@ -767,6 +768,7 @@
       "notes": "See gen-03 for the token request."
     }
   ],
+  "questions": [],
   "decisions": [
     {
       "id": "d-rt-01",
@@ -893,6 +895,7 @@
   ],
   "notes": [
     {
+      "id": "n-01",
       "date": "2026-09-29",
       "title": "Meeting with Rama and Leo on marketing tools (3:30pm)",
       "project_id": "general",

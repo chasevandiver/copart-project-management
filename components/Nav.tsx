@@ -6,10 +6,10 @@ import { usePathname } from "next/navigation";
 const NAV = [
   ["/", "Home"],
   ["/schedule", "Schedule"],
-  ["/board", "Board"],
-  ["/projects", "Goals"],
-  ["/waiting", "Waiting on"],
+  ["/projects", "Projects"],
   ["/people", "People"],
+  ["/items", "Everything"],
+  ["/progress", "Progress"],
 ];
 
 export default function Nav() {
@@ -17,7 +17,8 @@ export default function Nav() {
   return (
     <nav>
       {NAV.map(([href, label]) => {
-        const active = href === "/" ? path === "/" : path.startsWith(href);
+        const active =
+          href === "/" ? path === "/" : path.startsWith(href) || (href === "/projects" && path.startsWith("/board")) || (href === "/people" && path.startsWith("/waiting"));
         return (
           <Link key={href} href={href} className={active ? "active" : undefined}>
             {label}
