@@ -1,4 +1,4 @@
-import data from "../tracker/tracker.json";
+// Types, constants and pure helpers. Safe to import from client and server.
 
 export const STATUSES = ["Backlog", "Next", "In Progress", "Waiting", "Blocked", "Done"] as const;
 export type Status = (typeof STATUSES)[number];
@@ -8,6 +8,8 @@ export type Priority = (typeof PRIORITIES)[number];
 
 export const CATEGORIES = ["AI Tools", "Marketing Efforts"] as const;
 export type Category = (typeof CATEGORIES)[number];
+
+export const FIXED_OWNERS = ["Me", "Work Claude", "Claude Code", "IT", "Leo", "Legal"];
 
 export type Goal = {
   id: string;
@@ -46,6 +48,8 @@ export type Task = {
   priority: Priority;
   notes: string;
   recurring?: string;
+  idea?: boolean;
+  completed?: string | null;
   created: string;
   updated: string;
 };
@@ -98,11 +102,24 @@ export type Tracker = {
   notes: Note[];
 };
 
-export const tracker = data as Tracker;
-
-export function projectName(id: string): string {
+export function projectName(t: Tracker, id: string): string {
   if (id === "general") return "General";
-  return tracker.projects.find((p) => p.id === id)?.name ?? id;
+  return t.projects.find((p) => p.id === id)?.name ?? id;
+}
+
+export function projectNames(t: Tracker): Record<string, string> {
+  const names: Record<string, string> = { general: "General" };
+  for (const p of t.projects) names[p.id] = p.name;
+  return names;
+}
+
+export function owners(t: Tracker): string[] {
+  return [...FIXED_OWNERS, ...t.people.map((p) => p.name).filter((n) => !FIXED_OWNERS.includes(n))];
+}
+
+/** Real work items: tasks that are not ideas. */
+export function workTasks(t: Tracker): Task[] {
+  return t.tasks.filter((x) => !x.idea);
 }
 
 export const PRIORITY_RANK: Record<Priority, number> = { urgent: 0, high: 1, normal: 2, low: 3 };
@@ -118,4 +135,8 @@ export function sortTasks(tasks: Task[]): Task[] {
 
 export function statusSlug(s: string): string {
   return s.toLowerCase().replace(/\s+/g, "-");
+}
+
+export function projectHref(id: string): string {
+  return id === "general" ? "/projects" : `/projects/${id}`;
 }

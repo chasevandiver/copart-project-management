@@ -8,6 +8,7 @@ Chase's project tracker. Data lives in `tracker/tracker.json`. The board is a sm
 npm install
 npm run validate
 npm run dev          # http://localhost:3000, open locally unless BOARD_PASSWORD is set
+                     # with no GITHUB_TOKEN, edits save to tracker/tracker.json on disk
 ```
 
 ## Deploy to Vercel (one time)
@@ -18,11 +19,15 @@ npm run dev          # http://localhost:3000, open locally unless BOARD_PASSWORD
 4. Deploy. Open the URL and enter the password. The cookie lasts 30 days. Sign out at `/api/logout`.
 5. Production branch is `main` (Vercel's default). Nothing to change.
 
-After that, every push to `main` redeploys the board in about a minute. If `BOARD_PASSWORD` is missing in production, the site returns 503 instead of opening up.
+6. Turn on editing (checkboxes, adding items, decisions): create a GitHub fine-grained token at github.com > Settings > Developer settings > Fine-grained tokens. Repository access: only `chasevandiver/copart-project-management`. Permissions: Contents, Read and write. Add it in Vercel as `GITHUB_TOKEN` (Production), then redeploy. Without it the board is read-only and says so.
+
+Code pushes to `main` redeploy the board in about a minute. Edits made on the board are saved as `Board: ...` commits to `tracker/tracker.json`; `vercel.json` skips rebuilding for those because pages read the file live from GitHub. If `BOARD_PASSWORD` is missing in production, the site returns 503 instead of opening up.
 
 ## Files
 
 - `tracker/tracker.json` source of truth
 - `tracker/log.md` change log, newest first
 - `scripts/validate.mjs` schema and guardrail checks (runs before every build)
-- `app/` pages, `components/` UI, `lib/` data loader and helpers, `middleware.ts` password gate
+- `app/` pages, `components/` UI, `middleware.ts` password gate
+- `lib/store.ts` reads and saves tracker.json (GitHub in production, disk locally)
+- `lib/ops.ts` every edit the board can make; `lib/validate-core.mjs` shared checks

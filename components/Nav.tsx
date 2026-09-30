@@ -5,8 +5,8 @@ import { usePathname } from "next/navigation";
 
 const NAV = [
   ["/", "Home"],
+  ["/schedule", "Schedule"],
   ["/board", "Board"],
-  ["/week", "This week"],
   ["/projects", "Goals"],
   ["/waiting", "Waiting on"],
   ["/people", "People"],

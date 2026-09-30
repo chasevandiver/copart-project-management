@@ -1,26 +1,24 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import TaskCard from "./TaskCard";
+import TaskItem from "./TaskItem";
+import { useApp } from "./App";
 import { STATUSES, sortTasks, statusSlug, type Task } from "@/lib/tracker";
-import { todayISO } from "@/lib/dates";
 
 type Props = {
   tasks: Task[];
-  projects: { id: string; name: string; category: string | null }[];
 };
 
 const STORE = "pm-board-filters";
 
-export default function Kanban({ tasks, projects }: Props) {
+export default function Kanban({ tasks }: Props) {
+  const { projects } = useApp();
   const [area, setArea] = useState("all");
   const [project, setProject] = useState("all");
   const [owner, setOwner] = useState("all");
   const [showNotes, setShowNotes] = useState(false);
-  const [today, setToday] = useState<string>();
 
   useEffect(() => {
-    setToday(todayISO());
     try {
       const saved = JSON.parse(localStorage.getItem(STORE) ?? "{}");
       if (saved.area) setArea(saved.area);
@@ -37,7 +35,6 @@ export default function Kanban({ tasks, projects }: Props) {
   }, [area, project, owner, showNotes]);
 
   const owners = useMemo(() => [...new Set(tasks.map((t) => t.owner))].sort(), [tasks]);
-  const names = useMemo(() => Object.fromEntries(projects.map((p) => [p.id, p.name])), [projects]);
   const areaOf = useMemo(() => Object.fromEntries(projects.map((p) => [p.id, p.category ?? "General"])), [projects]);
   const areas = useMemo(() => [...new Set(projects.map((p) => p.category ?? "General"))], [projects]);
   const projectChoices = projects.filter((p) => area === "all" || (p.category ?? "General") === area);
@@ -107,7 +104,7 @@ export default function Kanban({ tasks, projects }: Props) {
                 <span className="muted">{col.length}</span>
               </div>
               {col.map((t) => (
-                <TaskCard key={t.id} task={t} projectName={names[t.project_id]} today={today} />
+                <TaskItem key={t.id} task={t} variant="card" showNotes={showNotes} />
               ))}
             </section>
           );

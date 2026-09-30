@@ -2,6 +2,12 @@
 
 Newest entry first.
 
+## 2026-09-30
+- Source: Chase asked for checkboxes, adding action items and ideas, and a schedule view
+- Board: editing on the site (saved as "Board:" commits), Schedule page, quick add, ideas per project, decision buttons, "Got it" on waiting items
+- Added: pm-03 "Add GITHUB_TOKEN in Vercel to turn on board editing" (Me, high)
+- Changed: PM Tracker built list and next steps
+
 ## 2026-09-29 (deploy confirmed)
 - Source: Chase confirmed the site is live and the dealer map is deployed
 - Changed: cdd built list marks /map as deployed and live; added Dealer map link

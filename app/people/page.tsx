@@ -1,6 +1,7 @@
-import { tracker } from "@/lib/tracker";
+import { getTracker } from "@/lib/store";
 
-export default function PeoplePage() {
+export default async function PeoplePage() {
+  const tracker = await getTracker();
   const byDept = new Map<string, typeof tracker.people>();
   for (const p of tracker.people) {
     const d = p.department || "Department not set";

@@ -4,7 +4,8 @@ Project tracker for Chase, Digital Engagement Manager at Copart, supporting Ken 
 
 - `tracker/tracker.json` is the single source of truth. Edit it by hand; there is no database.
 - `tracker/log.md` has one dated entry per update.
-- The board (Next.js at the repo root) reads tracker.json at build time. Pushing to `main` redeploys it on Vercel. Tracker updates commit straight to `main`.
+- The board (Next.js at the repo root) reads tracker.json live from GitHub on every request. Chase can also edit from the board (check off, add action items and ideas, set dates, resolve decisions, clear waiting-on). Those edits are committed to `main` as `Board: ...` commits.
+- Tracker updates commit straight to `main`. **Always `git pull origin main` before editing tracker.json**, because the board may have committed since your last pull.
 - `npm run validate` checks tracker.json. Run it before every commit. It also runs before every build.
 
 ## Writing style
@@ -35,7 +36,7 @@ Dates are `YYYY-MM-DD`. Use `null` for unknown dates, not guesses.
 
 **projects[]**: `id` (short slug: `rt`, `cdd`, `pm`, `hub`, `audit`), `name`, `category`, `status`, optional `idea: true` (an idea being shaped, nothing committed), `summary`, `built[]` (what exists so far), `links[]` (`{label, url?, where?}`), `blockers[]`, `next_steps[]`, optional `dependencies[]` (things it needs that are not hard blockers)
 
-**tasks[]**: `id` (`<project>-NN`, `gen-NN` for general), `project_id` (a project id or `"general"`), `title`, `status`, `owner`, `due`, `priority`, `notes`, optional `recurring` (e.g. `"weekly"`), `created`, `updated`
+**tasks[]**: `id` (`<project>-NN`, `gen-NN` for general), `project_id` (a project id or `"general"`), `title`, `status`, `owner`, `due`, `priority`, `notes`, optional `recurring` (only `"weekly"`; checking it off rolls `due` forward 7 days instead of closing it), optional `idea: true` (an idea, not committed work; excluded from counts, board and schedule), optional `completed` (date it was marked Done), `created`, `updated`
 
 **waiting_on[]**: `id` (`w-NN`), `what`, `from_whom`, `project_id`, `since`, `priority`, `notes`. These are things Chase is waiting on from others. Things others are waiting on from Chase are tasks owned by `Me`. Remove an item (and log it) once it arrives; if it creates work, add a task.
 
@@ -51,7 +52,7 @@ Dates are `YYYY-MM-DD`. Use `null` for unknown dates, not guesses.
 
 When Chase sends a message starting with `UPDATE:` (often messy notes or a paste from another Claude session):
 
-1. Read tracker.json in full.
+1. `git pull origin main`, then read tracker.json in full.
 2. Parse the message into: goals, new tasks, task changes (status, owner, due, priority, notes), waiting-on items added or cleared, decisions raised or resolved, people added or changed, project summary/blocker/next-step changes, and dated notes.
 3. Match to existing items by meaning, not exact wording. Update instead of creating duplicates. When a task finishes, set it to `Done` (do not delete).
 4. If something is ambiguous (which project, who owns it, a due date), ask ONE question before writing anything.
@@ -74,7 +75,7 @@ If the message includes anything the guardrails forbid (a key, a password, an ow
 - Waiting on: cleared w-03 (Zapier owner is ...)
 ```
 
-Newest entry first. Multiple updates on one day get separate entries with a time or short label.
+Newest entry first. Multiple updates on one day get separate entries with a time or short label. Edits Chase makes on the board are not logged in log.md; `git log --grep '^Board:'` shows them. When asked "where are we", include recent board edits.
 
 ## "Where are we"
 
@@ -86,15 +87,18 @@ Keep it short.
 
 ## Board
 
-- `app/page.tsx` home dashboard: stat tiles, project cards by area (click through), needs attention, waiting on
+- `app/page.tsx` home dashboard: quick add, stat tiles, project cards by area (click through), needs attention (checkable), waiting on
+- `app/schedule` agenda: overdue, today, each day this week, next week, later, no date (Mine / Everyone)
 - `app/board` kanban (filter by area, project and owner)
 - `app/projects` goals and projects, grouped by category
 - `app/projects/[id]` per-project page
 - `app/waiting` waiting on, grouped by person
-- `app/week` due in the next 7 days, overdue, or urgent
+- `app/week` redirects to `/schedule`
 - `app/people` directory by department
 - `middleware.ts` password gate using the `BOARD_PASSWORD` env var
-- `lib/tracker.ts` types and loader; `lib/stats.ts` per-project counts
-- `scripts/validate.mjs` validator
+- `lib/tracker.ts` types and pure helpers; `lib/stats.ts` per-project counts
+- `lib/store.ts` load and save (GitHub via `GITHUB_TOKEN` in production, disk in local dev, read-only otherwise)
+- `lib/ops.ts` every edit the board can make; `app/api/tracker` runs them, validates, commits
+- `lib/validate-core.mjs` checks shared by `scripts/validate.mjs` and the save API (guardrails block keys and Tax IDs from the UI too)
 
 Keep the board simple. New fields in tracker.json should be added to `lib/tracker.ts` and the validator in the same commit.

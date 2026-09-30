@@ -1,9 +1,11 @@
 import Link from "next/link";
-import TaskCard from "@/components/TaskCard";
-import { CATEGORIES, projectName, sortTasks, statusSlug, tracker, type Project } from "@/lib/tracker";
+import TaskItem from "@/components/TaskItem";
+import QuickAdd from "@/components/QuickAdd";
+import { CATEGORIES, projectName, sortTasks, statusSlug, type Project, type Tracker } from "@/lib/tracker";
+import { getTracker } from "@/lib/store";
 
-function ProjectCard({ p }: { p: Project }) {
-  const open = tracker.tasks.filter((t) => t.project_id === p.id && t.status !== "Done");
+function ProjectCard({ tracker, p }: { tracker: Tracker; p: Project }) {
+  const open = tracker.tasks.filter((t) => t.project_id === p.id && t.status !== "Done" && !t.idea);
   const urgent = open.filter((t) => t.priority === "urgent").length;
   const decisions = tracker.decisions.filter((d) => d.project_id === p.id && d.status === "open").length;
   const waiting = tracker.waiting_on.filter((w) => w.project_id === p.id).length;
@@ -25,7 +27,8 @@ function ProjectCard({ p }: { p: Project }) {
   );
 }
 
-export default function ProjectsPage() {
+export default async function ProjectsPage() {
+  const tracker = await getTracker();
   const general = sortTasks(tracker.tasks.filter((t) => t.project_id === "general" && t.status !== "Done"));
   return (
     <>
@@ -48,7 +51,7 @@ export default function ProjectsPage() {
                     <div className="meta-row">
                       {g.project_ids.map((id) => (
                         <Link key={id} className="chip" href={`/projects/${id}`}>
-                          {projectName(id)}
+                          {projectName(tracker, id)}
                         </Link>
                       ))}
                     </div>
@@ -58,16 +61,17 @@ export default function ProjectsPage() {
             )}
             <div className="grid">
               {projects.map((p) => (
-                <ProjectCard key={p.id} p={p} />
+                <ProjectCard key={p.id} tracker={tracker} p={p} />
               ))}
             </div>
           </section>
         );
       })}
       <h2>General tasks</h2>
-      <div className="list">
+      <QuickAdd projectId="general" />
+      <div className="list-rows">
         {general.map((t) => (
-          <TaskCard key={t.id} task={t} showStatus />
+          <TaskItem key={t.id} task={t} showProject={false} showNotes />
         ))}
       </div>
     </>

@@ -1,15 +1,13 @@
 import Kanban from "@/components/Kanban";
-import { tracker } from "@/lib/tracker";
+import { getTracker } from "@/lib/store";
+import { workTasks } from "@/lib/tracker";
 
-export default function BoardPage() {
-  const projects = [
-    ...tracker.projects.map((p) => ({ id: p.id, name: p.name, category: p.category as string | null })),
-    { id: "general", name: "General", category: null },
-  ];
+export default async function BoardPage() {
+  const t = await getTracker();
   return (
     <>
       <h1>Board</h1>
-      <Kanban tasks={tracker.tasks} projects={projects} />
+      <Kanban tasks={workTasks(t)} />
     </>
   );
 }

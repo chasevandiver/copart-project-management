@@ -2,7 +2,7 @@
   "meta": {
     "owner": "Chase",
     "role": "Digital Engagement Manager, supporting Ken Rion (SVP of Dealer Sales)",
-    "last_updated": "2026-09-29"
+    "last_updated": "2026-09-30"
   },
   "categories": [
     "AI Tools",
@@ -133,7 +133,10 @@
       "built": [
         "tracker.json seeded from Sep 29 notes",
         "CLAUDE.md with data model and UPDATE protocol",
-        "Next.js board: kanban, projects, waiting on, this week, people"
+        "Next.js board: kanban, projects, waiting on, this week, people",
+        "Home dashboard with quick add and checkable needs-attention list",
+        "Editing on the board: check off, add action items and ideas, edit any task, resolve decisions, clear waiting-on; saved as commits to main",
+        "Schedule view: overdue, today, each day this week, next week, later, no date"
       ],
       "links": [
         {
@@ -143,7 +146,8 @@
       ],
       "blockers": [],
       "next_steps": [
-        "Deploy the board to Vercel with a password (pm-02)"
+        "Deploy the board to Vercel with a password (pm-02)",
+        "Add GITHUB_TOKEN in Vercel to turn on editing (pm-03)"
       ],
       "category": "AI Tools"
     },
@@ -639,6 +643,18 @@
       "notes": "Questions list is in the dfw-dealer-digital docs. Overlaps with the open IT items (w-01 to w-04) and gen-02, gen-03.",
       "created": "2026-09-29",
       "updated": "2026-09-29"
+    },
+    {
+      "id": "pm-03",
+      "project_id": "pm",
+      "title": "Add GITHUB_TOKEN in Vercel to turn on board editing",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Fine-grained token, only this repo, Contents read and write. Steps in README.md. Until then the board is read-only.",
+      "created": "2026-09-30",
+      "updated": "2026-09-30"
     }
   ],
   "waiting_on": [

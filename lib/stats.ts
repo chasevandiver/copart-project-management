@@ -1,4 +1,4 @@
-import { tracker, type Project } from "./tracker";
+import type { Project, Tracker } from "./tracker";
 
 export type ProjectStats = {
   total: number;
@@ -9,19 +9,22 @@ export type ProjectStats = {
   waitingTasks: number;
   waitingOn: number;
   decisions: number;
+  ideas: number;
 };
 
-export function projectStats(p: Project): ProjectStats {
-  const tasks = tracker.tasks.filter((t) => t.project_id === p.id);
-  const open = tasks.filter((t) => t.status !== "Done");
+export function projectStats(t: Tracker, p: Project): ProjectStats {
+  const all = t.tasks.filter((x) => x.project_id === p.id);
+  const tasks = all.filter((x) => !x.idea);
+  const open = tasks.filter((x) => x.status !== "Done");
   return {
     total: tasks.length,
     done: tasks.length - open.length,
     open: open.length,
-    urgent: open.filter((t) => t.priority === "urgent").length,
-    blocked: open.filter((t) => t.status === "Blocked").length,
-    waitingTasks: open.filter((t) => t.status === "Waiting").length,
-    waitingOn: tracker.waiting_on.filter((w) => w.project_id === p.id).length,
-    decisions: tracker.decisions.filter((d) => d.project_id === p.id && d.status === "open").length,
+    urgent: open.filter((x) => x.priority === "urgent").length,
+    blocked: open.filter((x) => x.status === "Blocked").length,
+    waitingTasks: open.filter((x) => x.status === "Waiting").length,
+    waitingOn: t.waiting_on.filter((w) => w.project_id === p.id).length,
+    decisions: t.decisions.filter((d) => d.project_id === p.id && d.status === "open").length,
+    ideas: all.length - tasks.length,
   };
 }

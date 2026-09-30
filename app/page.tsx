@@ -1,12 +1,14 @@
 import Link from "next/link";
 import Progress from "@/components/Progress";
 import { Attention, Greeting, Tiles } from "@/components/HomeLive";
-import { CATEGORIES, statusSlug, tracker, type Project } from "@/lib/tracker";
+import QuickAdd from "@/components/QuickAdd";
+import { CATEGORIES, statusSlug, workTasks, type Project, type Tracker } from "@/lib/tracker";
 import { projectStats } from "@/lib/stats";
 import { shortDate } from "@/lib/dates";
+import { getTracker } from "@/lib/store";
 
-function ProjectTile({ p }: { p: Project }) {
-  const s = projectStats(p);
+function ProjectTile({ t, p }: { t: Tracker; p: Project }) {
+  const s = projectStats(t, p);
   const next = p.next_steps[0];
   return (
     <Link href={`/projects/${p.id}`} className="ptile">
@@ -32,14 +34,14 @@ function ProjectTile({ p }: { p: Project }) {
         {s.blocked > 0 && <span className="bad">{s.blocked} blocked</span>}
         {s.waitingOn > 0 && <span>{s.waitingOn} waiting</span>}
         {s.decisions > 0 && <span>{s.decisions} decisions</span>}
+        {s.ideas > 0 && <span>{s.ideas} ideas</span>}
       </div>
     </Link>
   );
 }
 
-export default function Home() {
-  const names: Record<string, string> = { general: "General" };
-  for (const p of tracker.projects) names[p.id] = p.name;
+export default async function Home() {
+  const tracker = await getTracker();
   const openDecisions = tracker.decisions.filter((d) => d.status === "open").length;
   const waiting = [...tracker.waiting_on].sort((a, b) => a.since.localeCompare(b.since));
   const byWho = new Map<string, number>();
@@ -55,7 +57,9 @@ export default function Home() {
         <span className="muted small">Tracker updated {shortDate(tracker.meta.last_updated)}</span>
       </div>
 
-      <Tiles tasks={tracker.tasks} waiting={tracker.waiting_on} openDecisions={openDecisions} />
+      <QuickAdd />
+
+      <Tiles tasks={workTasks(tracker)} waiting={tracker.waiting_on} openDecisions={openDecisions} />
 
       <div className="home-grid">
         <div>
@@ -75,7 +79,7 @@ export default function Home() {
                 </div>
                 <div className="ptiles">
                   {projects.map((p) => (
-                    <ProjectTile key={p.id} p={p} />
+                    <ProjectTile key={p.id} t={tracker} p={p} />
                   ))}
                 </div>
               </section>
@@ -87,11 +91,11 @@ export default function Home() {
           <section className="panel">
             <div className="panel-head">
               <h2>Needs attention</h2>
-              <Link href="/week" className="small">
-                This week
+              <Link href="/schedule" className="small">
+                Schedule
               </Link>
             </div>
-            <Attention tasks={tracker.tasks} names={names} />
+            <Attention tasks={workTasks(tracker)} />
           </section>
 
           <section className="panel">
