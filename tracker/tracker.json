@@ -517,13 +517,14 @@
       "id": "pm-02",
       "project_id": "pm",
       "title": "Deploy the board to Vercel with a password",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "normal",
       "notes": "Steps in README.md. Set BOARD_PASSWORD in Vercel.",
       "created": "2026-09-29",
-      "updated": "2026-09-29"
+      "updated": "2026-09-30",
+      "completed": "2026-09-30"
     },
     {
       "id": "hub-01",
