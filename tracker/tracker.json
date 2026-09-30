@@ -792,7 +792,8 @@
       "project_id": "rt",
       "since": "2026-09-29",
       "priority": "high",
-      "notes": "See gen-03 for the token request."
+      "notes": "See gen-03 for the token request.",
+      "received": "2026-09-30"
     }
   ],
   "questions": [
