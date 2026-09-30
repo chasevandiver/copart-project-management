@@ -458,13 +458,14 @@
       "id": "gen-03",
       "project_id": "general",
       "title": "Talk to IT about more Claude tokens per week",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "high",
       "notes": "Work Claude hitting its limit is what blocks Route Tracker right now.",
       "created": "2026-09-29",
-      "updated": "2026-09-29"
+      "updated": "2026-09-30",
+      "completed": "2026-09-30"
     },
     {
       "id": "gen-04",
