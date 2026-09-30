@@ -681,6 +681,18 @@
       "notes": "",
       "created": "2026-09-30",
       "updated": "2026-09-30"
+    },
+    {
+      "id": "gen-08",
+      "project_id": "general",
+      "title": "Notes for Leo: Adding Indiana to the leads page, getting Leo's leads files to combine with mine.",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "",
+      "created": "2026-09-30",
+      "updated": "2026-09-30"
     }
   ],
   "waiting_on": [
