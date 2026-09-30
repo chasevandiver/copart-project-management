@@ -705,6 +705,19 @@
       "notes": "",
       "created": "2026-09-30",
       "updated": "2026-09-30"
+    },
+    {
+      "id": "rt-13",
+      "project_id": "rt",
+      "title": "Add the Weekly Dossier section through Plaud and Through the route tracker for a weekly meeting on when best to call the dealer",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "",
+      "idea": true,
+      "created": "2026-09-30",
+      "updated": "2026-09-30"
     }
   ],
   "waiting_on": [
