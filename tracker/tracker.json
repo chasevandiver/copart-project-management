@@ -757,19 +757,6 @@
       "notes": "",
       "created": "2026-09-30",
       "updated": "2026-09-30"
-    },
-    {
-      "id": "rt-17",
-      "project_id": "rt",
-      "title": "Recommended Dealer by location",
-      "status": "Backlog",
-      "owner": "Me",
-      "due": null,
-      "priority": "normal",
-      "notes": "",
-      "idea": true,
-      "created": "2026-09-30",
-      "updated": "2026-09-30"
     }
   ],
   "waiting_on": [
