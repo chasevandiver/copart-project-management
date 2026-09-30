@@ -687,13 +687,14 @@
       "id": "gen-08",
       "project_id": "general",
       "title": "Notes for Leo: Adding Indiana to the leads page, getting Leo's leads files to combine with mine.",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "I've added Indiana to my leads tracker - Lets combine his current project with mine. Is there a current list of a dealer prospect list?",
+      "notes": "I've added Indiana to my leads tracker - Lets combine his current project with mine. Is there a current list of a dealer prospect list? Converted to note n-02 and question q-01 for Leo (Copart Dealer Digital).",
       "created": "2026-09-30",
-      "updated": "2026-09-30"
+      "updated": "2026-09-30",
+      "completed": "2026-09-30"
     },
     {
       "id": "gen-09",
@@ -768,7 +769,18 @@
       "notes": "See gen-03 for the token request."
     }
   ],
-  "questions": [],
+  "questions": [
+    {
+      "id": "q-01",
+      "question": "Is there a current dealer prospect list? Can you share your leads files so we can combine them with mine?",
+      "ask": "Leo",
+      "project_id": "cdd",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-09-30",
+      "answered": null
+    }
+  ],
   "decisions": [
     {
       "id": "d-rt-01",
@@ -904,6 +916,17 @@
         "Leo and I found that Copart Dealer Sales is very hard to find on the Copart website. We'll need to work on that.",
         "Kyle, Director of Marketing, wants to meet with me this week. Ken wants to be in that meeting.",
         "I need to talk to IT about elevating access on my tools and getting more Claude tokens per week."
+      ]
+    },
+    {
+      "id": "n-02",
+      "date": "2026-09-30",
+      "title": "Leo: Indiana leads",
+      "project_id": "cdd",
+      "body": [
+        "Added Indiana to my leads tracker.",
+        "Plan: combine Leo's current project with mine.",
+        "Get Leo's leads files to combine with my leads."
       ]
     }
   ]

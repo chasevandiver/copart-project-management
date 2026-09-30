@@ -2,6 +2,12 @@
 
 Newest entry first.
 
+## 2026-09-30 (gen-08 converted)
+- Source: Chase asked to convert gen-08 into a note and a question
+- Added: note n-02 "Leo: Indiana leads" (Copart Dealer Digital)
+- Added: question q-01 for Leo, "Is there a current dealer prospect list? Can you share your leads files...?" (Copart Dealer Digital)
+- Changed: gen-08 Next -> Done (converted)
+
 ## 2026-09-30 (notes, questions, progress)
 - Source: Chase asked for notes on projects, questions assigned to people, cleaner organization, and a view of what got done by day, week and month
 - Board: new nav (Home, Schedule, Projects, People, Everything, Progress); one capture box for action items, ideas, notes and questions; project tabs; People shows who to ask what; Everything lists all items with filters; Progress shows completed, decided, answered, received and notes by day, week or month
