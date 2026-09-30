@@ -255,9 +255,9 @@
       "owner": "Me",
       "due": null,
       "priority": "urgent",
-      "notes": "Unblocks everything on Route Tracker. The file itself stays out of this repo.",
+      "notes": "Unblocks everything on Route Tracker. The file itself stays out of this repo. THIS IS PURELY FOR THE VIN SCAN COMPARE ENGINE",
       "created": "2026-09-29",
-      "updated": "2026-09-29"
+      "updated": "2026-09-30"
     },
     {
       "id": "rt-07",
