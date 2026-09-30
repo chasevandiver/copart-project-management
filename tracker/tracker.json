@@ -977,6 +977,16 @@
         "Plan: combine Leo's current project with mine.",
         "Get Leo's leads files to combine with my leads."
       ]
+    },
+    {
+      "id": "n-03",
+      "title": "AI Meeting Notes",
+      "body": [
+        "Reach out to security team for zapier. Work with Nathan.",
+        "Igor for the dns enabling - for the domain certificate"
+      ],
+      "project_id": "general",
+      "date": "2026-09-30"
     }
   ]
 }
