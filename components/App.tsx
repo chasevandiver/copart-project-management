@@ -5,11 +5,13 @@
 import { createContext, useCallback, useContext, useEffect, useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import type { Op } from "@/lib/ops";
+import type { Tracker } from "@/lib/tracker";
 import { todayISO } from "@/lib/dates";
 
 type ProjectRef = { id: string; name: string; category: string | null };
 
 type AppState = {
+  tracker: Tracker;
   projects: ProjectRef[];
   owners: string[];
   canEdit: boolean;
@@ -29,18 +31,23 @@ export function useApp(): AppState {
 type Toast = { id: number; text: string; bad?: boolean };
 
 export function AppProvider({
+  tracker,
   projects,
   owners,
   canEdit,
+  initialToday,
   children,
 }: {
+  tracker: Tracker;
   projects: ProjectRef[];
   owners: string[];
   canEdit: boolean;
+  /** Server's date (Chase's time zone) so the first render matches the server HTML. */
+  initialToday?: string;
   children: React.ReactNode;
 }) {
   const router = useRouter();
-  const [today, setToday] = useState<string>();
+  const [today, setToday] = useState<string | undefined>(initialToday);
   const [toasts, setToasts] = useState<Toast[]>([]);
   const [pending, startTransition] = useTransition();
 
@@ -81,7 +88,7 @@ export function AppProvider({
   );
 
   return (
-    <Ctx.Provider value={{ projects, owners, canEdit, today, save, pending }}>
+    <Ctx.Provider value={{ tracker, projects, owners, canEdit, today, save, pending }}>
       {children}
       <div className="toasts" aria-live="polite">
         {toasts.map((t) => (

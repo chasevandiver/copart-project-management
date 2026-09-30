@@ -89,20 +89,25 @@ Keep it short.
 
 ## Board
 
-Top-level pages (the nav): Home, Schedule, Projects, People, Everything, Progress.
-- `app/page.tsx` Home: capture box (action item, idea, note, question), focus list, ask next, recent notes, this week so far, projects
-- `app/schedule` agenda: overdue, today, each day this week, next week, later, no date (Mine / Everyone)
-- `app/projects` goals and projects by category, plus general items; links to `app/board` (kanban)
-- `app/projects/[id]` project with tabs: Overview, Action items, Ideas, Notes, Questions, Decisions & waiting (`?tab=`)
-- `app/people` one card per person: questions to ask them, waiting on them, what they own
-- `app/items` Everything: every item, filter by type, project, person, open/done, search, group by
-- `app/progress` what got done, decided, answered, received and noted, by day, week or month (`lib/activity.ts` derives it from item dates)
-- `app/waiting` and `app/week` still work (waiting list; week redirects to schedule)
-- `components/Capture.tsx` the one capture box used everywhere
+Sidebar layout (like Things or Todoist): sidebar on the left, one list in the middle, a detail panel on the right for whatever item is open (`?item=task:cdd-03`). The old screens live at `/classic`.
+
+Sidebar views (`app/(app)/`):
+- Inbox (`/inbox`): items with `project_id: "general"`
+- Today (`/`): my overdue, due today, coming up this week, urgent or in progress
+- Upcoming (`/upcoming`): my dated to-dos for 14 days, then undated by project
+- Ask, Waiting on, Decide, Delegated (`/ask`, `/waiting`, `/decide`, `/delegated`): open loops. Delegated is open tasks owned by anyone but `Me`; they stay out of Today and Upcoming.
+- Ideas, Notes, Logbook (`/ideas`, `/notes`, `/logbook`)
+- Projects (`/projects/[id]`): one scrolling page (to do, others are on it, questions, decisions, waiting, ideas, notes, done). `/projects` lists all.
+- Search (`/search?q=`)
+
+Code:
+- `lib/views.ts` builds every view (pure); `components/shell/` has Sidebar, Row, Groups, Detail, QuickAdd
+- `lib/parse.ts` quick-add parser: `?` question, `@name`, `#project`, `fri` / `oct 4` / `tomorrow`, `!` high, `!!` urgent, `idea:` and `note:` prefixes
+- `components/App.tsx` client context (tracker, save, toasts), provided only inside signed-in layouts (`lib/provider-props.ts`), never on the login page
 - `middleware.ts` password gate using the `BOARD_PASSWORD` env var
-- `lib/tracker.ts` types and pure helpers; `lib/stats.ts` per-project counts
 - `lib/store.ts` load and save (GitHub via `GITHUB_TOKEN` in production, disk in local dev, read-only otherwise)
 - `lib/ops.ts` every edit the board can make; `app/api/tracker` runs them, validates, commits
 - `lib/validate-core.mjs` checks shared by `scripts/validate.mjs` and the save API (guardrails block keys and Tax IDs from the UI too)
+- `app/classic/` the previous screens, kept for comparison; remove once Chase is happy with the sidebar version
 
 Keep the board simple. New fields in tracker.json should be added to `lib/tracker.ts` and the validator in the same commit.

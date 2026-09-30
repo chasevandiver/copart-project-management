@@ -4,12 +4,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const NAV = [
-  ["/", "Home"],
-  ["/schedule", "Schedule"],
-  ["/projects", "Projects"],
-  ["/people", "People"],
-  ["/items", "Everything"],
-  ["/progress", "Progress"],
+  ["/classic", "Home"],
+  ["/classic/schedule", "Schedule"],
+  ["/classic/projects", "Projects"],
+  ["/classic/people", "People"],
+  ["/classic/items", "Everything"],
+  ["/classic/progress", "Progress"],
 ];
 
 export default function Nav() {
@@ -18,7 +18,7 @@ export default function Nav() {
     <nav>
       {NAV.map(([href, label]) => {
         const active =
-          href === "/" ? path === "/" : path.startsWith(href) || (href === "/projects" && path.startsWith("/board")) || (href === "/people" && path.startsWith("/waiting"));
+          href === "/classic" ? path === "/classic" : path.startsWith(href) || (href === "/projects" && path.startsWith("/classic/board")) || (href === "/people" && path.startsWith("/classic/waiting"));
         return (
           <Link key={href} href={href} className={active ? "active" : undefined}>
             {label}

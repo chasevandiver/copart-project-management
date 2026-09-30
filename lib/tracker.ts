@@ -119,12 +119,12 @@ export type Tracker = {
 };
 
 export function projectName(t: Tracker, id: string): string {
-  if (id === "general") return "General";
+  if (id === "general") return "Inbox";
   return t.projects.find((p) => p.id === id)?.name ?? id;
 }
 
 export function projectNames(t: Tracker): Record<string, string> {
-  const names: Record<string, string> = { general: "General" };
+  const names: Record<string, string> = { general: "Inbox" };
   for (const p of t.projects) names[p.id] = p.name;
   return names;
 }
@@ -166,5 +166,5 @@ export function statusSlug(s: string): string {
 }
 
 export function projectHref(id: string): string {
-  return id === "general" ? "/projects" : `/projects/${id}`;
+  return id === "general" ? "/inbox" : `/projects/${id}`;
 }

@@ -136,7 +136,8 @@
         "Home dashboard with quick add and checkable needs-attention list",
         "Editing on the board: check off, add action items and ideas, edit any task, resolve decisions, clear waiting-on; saved as commits to main",
         "Schedule view: overdue, today, each day this week, next week, later, no date",
-        "Notes and questions (who to ask what) on every project, People view, Everything view, Progress by day, week and month"
+        "Notes and questions (who to ask what) on every project, People view, Everything view, Progress by day, week and month",
+        "Sidebar redesign: Inbox, Today, Upcoming, Ask, Waiting on, Decide, Delegated, Ideas, Notes, Logbook, one page per project, detail panel, quick add with @name #project and dates"
       ],
       "links": [
         {

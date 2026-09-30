@@ -14,7 +14,7 @@ function ProjectRow({ t, p }: { t: Tracker; p: Project }) {
   const openQ = t.questions.filter((q) => q.project_id === p.id && q.status === "open").length;
   const notes = t.notes.filter((n) => n.project_id === p.id).length;
   return (
-    <Link href={`/projects/${p.id}`} className="prow">
+    <Link href={`/classic/projects/${p.id}`} className="prow">
       <div className="prow-head">
         <span className="ptile-name">{p.name}</span>
         <span className={`pill col-${statusSlug(p.status)}`}>{p.status}</span>
@@ -68,7 +68,7 @@ export default async function Home() {
           <section className="panel">
             <div className="panel-head">
               <h2>Focus</h2>
-              <Link href="/schedule" className="small">
+              <Link href="/classic/schedule" className="small">
                 Full schedule
               </Link>
             </div>
@@ -82,7 +82,7 @@ export default async function Home() {
               <section key={c} className="area">
                 <div className="area-head">
                   <h2>{c}</h2>
-                  <Link href="/projects" className="small">
+                  <Link href="/classic/projects" className="small">
                     All projects
                   </Link>
                 </div>
@@ -100,7 +100,7 @@ export default async function Home() {
           <section className="panel">
             <div className="panel-head">
               <h2>Ask next</h2>
-              <Link href="/people" className="small">
+              <Link href="/classic/people" className="small">
                 People
               </Link>
             </div>
@@ -118,7 +118,7 @@ export default async function Home() {
           <section className="panel">
             <div className="panel-head">
               <h2>Recent notes</h2>
-              <Link href="/items?type=note" className="small">
+              <Link href="/classic/items?type=note" className="small">
                 All notes
               </Link>
             </div>
@@ -145,7 +145,7 @@ export default async function Home() {
           <section className="panel">
             <div className="panel-head">
               <h2>This week so far</h2>
-              <Link href="/progress" className="small">
+              <Link href="/classic/progress" className="small">
                 Progress
               </Link>
             </div>

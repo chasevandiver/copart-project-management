@@ -15,6 +15,7 @@ export type Op =
   | { type: "waiting.add"; what: string; from_whom: string; project_id: string }
   | { type: "waiting.clear"; id: string }
   | { type: "waiting.reopen"; id: string }
+  | { type: "waiting.update"; id: string; what: string; from_whom: string; project_id: string; notes: string }
   | { type: "note.add"; project_id: string; title: string; text: string; date?: string }
   | { type: "note.update"; id: string; project_id: string; title: string; text: string; date?: string }
   | { type: "note.delete"; id: string }
@@ -202,6 +203,17 @@ export function applyOp(input: Tracker, op: Op, today: string): { tracker: Track
       if (!w || w.received) throw new OpError("Already received. Refresh the page.");
       w.received = today;
       summary = `received ${op.id} from ${w.from_whom}`;
+      break;
+    }
+    case "waiting.update": {
+      const w = t.waiting_on.find((x) => x.id === op.id);
+      if (!w) throw new OpError("Not found. Refresh the page.");
+      checkProject(t, op.project_id);
+      const what = clean(op.what, 200);
+      const from_whom = clean(op.from_whom, 60);
+      if (!what || !from_whom) throw new OpError("Say what you're waiting on and from whom");
+      Object.assign(w, { what, from_whom, project_id: op.project_id, notes: cleanNotes(op.notes ?? "") });
+      summary = `edit ${w.id}`;
       break;
     }
     case "waiting.reopen": {

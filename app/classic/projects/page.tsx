@@ -13,7 +13,7 @@ function ProjectCard({ tracker, p }: { tracker: Tracker; p: Project }) {
   const waiting = tracker.waiting_on.filter((w) => w.project_id === p.id && !w.received).length;
   const questions = tracker.questions.filter((q) => q.project_id === p.id && q.status === "open").length;
   return (
-    <Link href={`/projects/${p.id}`} className="card" style={{ color: "inherit" }}>
+    <Link href={`/classic/projects/${p.id}`} className="card" style={{ color: "inherit" }}>
       <h3>
         {p.name} <span className={`chip status col-${statusSlug(p.status)}`}>{p.status}</span>
         {p.idea && <span className="chip idea">Idea</span>}
@@ -40,7 +40,7 @@ export default async function ProjectsPage() {
     <div className="page">
       <div className="home-head">
         <h1>Projects</h1>
-        <Link href="/board" className="small">
+        <Link href="/classic/board" className="small">
           Board view (all action items by status) &rarr;
         </Link>
       </div>
@@ -61,7 +61,7 @@ export default async function ProjectsPage() {
                     <p className="small muted" style={{ margin: "4px 0" }}>{g.summary}</p>
                     <div className="meta-row">
                       {g.project_ids.map((id) => (
-                        <Link key={id} className="chip" href={`/projects/${id}`}>
+                        <Link key={id} className="chip" href={`/classic/projects/${id}`}>
                           {projectName(tracker, id)}
                         </Link>
                       ))}

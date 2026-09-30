@@ -2,6 +2,12 @@
 
 Newest entry first.
 
+## 2026-09-30 (sidebar redesign)
+- Source: Chase said the board was still confusing and approved the sidebar design
+- Board: new sidebar layout (Inbox, Today, Upcoming, Ask, Waiting on, Decide, Delegated, Ideas, Notes, Logbook, projects); detail panel for any item; quick add (N) with @name, #project, dates and ! priority; your lists show only your work, others' work sits in Delegated; old screens kept at /classic
+- Fixed: login page no longer carries any tracker data
+- Changed: PM Tracker built list
+
 ## 2026-09-30 (gen-08 converted)
 - Source: Chase asked to convert gen-08 into a note and a question
 - Added: note n-02 "Leo: Indiana leads" (Copart Dealer Digital)

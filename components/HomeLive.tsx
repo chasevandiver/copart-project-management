@@ -38,22 +38,22 @@ export function Tiles({ tasks, waiting, openQuestions, askPeople }: TileProps) {
 
   return (
     <div className="tiles">
-      <Link href="/schedule" className="tile">
+      <Link href="/classic/schedule" className="tile">
         <span className="tile-label">Due in 7 days</span>
         <span className="tile-value">{soon ?? "\u2013"}</span>
         <span className={`tile-sub${overdue ? " bad" : ""}`}>{overdue ? `${overdue} overdue` : "nothing overdue"}</span>
       </Link>
-      <Link href="/schedule" className="tile">
+      <Link href="/classic/schedule" className="tile">
         <span className="tile-label">Urgent</span>
         <span className="tile-value">{urgent}</span>
         <span className="tile-sub">open, top priority</span>
       </Link>
-      <Link href="/people" className="tile">
+      <Link href="/classic/people" className="tile">
         <span className="tile-label">Questions to ask</span>
         <span className="tile-value">{openQuestions}</span>
         <span className="tile-sub">{askPeople ? `across ${askPeople} ${askPeople === 1 ? "person" : "people"}` : "none open"}</span>
       </Link>
-      <Link href="/people" className="tile">
+      <Link href="/classic/people" className="tile">
         <span className="tile-label">Waiting on others</span>
         <span className="tile-value">{waiting.length}</span>
         <span className="tile-sub">{oldest > 1 ? `oldest ${oldest} days` : oldest === 1 ? "oldest 1 day" : "all new today"}</span>
@@ -79,7 +79,7 @@ export function WeekSoFar({ events }: { events: ActivityEvent[] }) {
     <ul className="rows">
       {rows.map(([label, v]) => (
         <li key={label}>
-          <Link href="/progress" className="row">
+          <Link href="/classic/progress" className="row">
             <span className="row-main">
               <span className="row-title">{label}</span>
             </span>
@@ -121,7 +121,7 @@ export function Attention({ tasks }: { tasks: Task[] }) {
         <TaskItem key={t.id} task={t} tag={{ text, level }} />
       ))}
       {flagged.length > 8 && (
-        <Link href="/schedule" className="row more">
+        <Link href="/classic/schedule" className="row more">
           {flagged.length - 8} more on Schedule
         </Link>
       )}

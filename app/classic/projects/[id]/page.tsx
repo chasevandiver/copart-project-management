@@ -63,11 +63,11 @@ export default async function ProjectPage({
     questions: `Questions ${openQ.length}`,
     more: `Decisions & waiting ${openDecisions.length + openW.length}`,
   };
-  const href = (x: Tab) => (x === "overview" ? `/projects/${id}` : `/projects/${id}?tab=${x}`);
+  const href = (x: Tab) => (x === "overview" ? `/classic/projects/${id}` : `/classic/projects/${id}?tab=${x}`);
 
   return (
     <div className="page">
-      <Link href="/projects" className="back">
+      <Link href="/classic/projects" className="back">
         &larr; All projects
       </Link>
       <div className="phead">
@@ -78,7 +78,7 @@ export default async function ProjectPage({
         <div className="meta-row">
           <span className="chip">{p.category}</span>
           {goals.map((g) => (
-            <Link key={g.id} className="chip" href="/projects">
+            <Link key={g.id} className="chip" href="/classic/projects">
               Goal: {g.title}
             </Link>
           ))}

@@ -44,3 +44,13 @@ export function longDate(iso: string): string {
 export function mondayIndex(iso: string): number {
   return (utc(iso).getUTCDay() + 6) % 7;
 }
+
+/** Friendly due label: "Today", "Tomorrow", "Fri", "Oct 12". */
+export function dueLabel(due: string, today: string): { text: string; overdue: boolean; soon: boolean } {
+  const d = daysBetween(today, due);
+  if (d < 0) return { text: d === -1 ? "Yesterday" : shortDate(due), overdue: true, soon: false };
+  if (d === 0) return { text: "Today", overdue: false, soon: true };
+  if (d === 1) return { text: "Tomorrow", overdue: false, soon: true };
+  if (d < 7) return { text: weekday(due).slice(0, 3), overdue: false, soon: d <= 3 };
+  return { text: shortDate(due), overdue: false, soon: false };
+}
