@@ -649,13 +649,14 @@
       "id": "pm-03",
       "project_id": "pm",
       "title": "Add GITHUB_TOKEN in Vercel to turn on board editing",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "high",
       "notes": "Fine-grained token, only this repo, Contents read and write. Steps in README.md. Until then the board is read-only.",
       "created": "2026-09-30",
-      "updated": "2026-09-30"
+      "updated": "2026-09-30",
+      "completed": "2026-09-30"
     }
   ],
   "waiting_on": [
