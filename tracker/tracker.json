@@ -311,13 +311,14 @@
       "id": "cdd-01",
       "project_id": "cdd",
       "title": "Rotate exposed secrets: Anthropic, OpenAI and Gemini keys, and the map password",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "urgent",
       "notes": "All are in dfw-dealer-digital git history. Anthropic and OpenAI keys were in .env.example; the Gemini key and map password are in commit b6a17b4. Revoke keys in each provider console and set a new map password in Vercel. Do not paste any of them here.",
       "created": "2026-09-29",
-      "updated": "2026-09-29"
+      "updated": "2026-09-30",
+      "completed": "2026-09-30"
     },
     {
       "id": "cdd-02",
