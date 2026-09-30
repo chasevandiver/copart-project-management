@@ -693,6 +693,18 @@
       "notes": "I've added Indiana to my leads tracker - Lets combine his current project with mine.",
       "created": "2026-09-30",
       "updated": "2026-09-30"
+    },
+    {
+      "id": "gen-09",
+      "project_id": "general",
+      "title": "Find out if there is a one pager for what CDS does and separates CDS from the Pack. If not one, work to create one",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "",
+      "created": "2026-09-30",
+      "updated": "2026-09-30"
     }
   ],
   "waiting_on": [
