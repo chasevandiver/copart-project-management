@@ -2,6 +2,16 @@
 
 Newest entry first.
 
+## 2026-10-01 (leads map: 28 states plus DC)
+- Source: Chase's recap of today's Leads work on the Copart Dealer Digital site
+- Changed: Copart Dealer Digital summary, built list (28 states plus DC, 92,492 leads, All states page, Indiana merge, new filters, dark mode), links and next steps
+- Changed: US Dealer Map built list and next steps; gen-14 notes (active Copart dealer exclusion still to do)
+- Added: cdd-14 "Save New Mexico's dealer table (12 pages) for the pipeline" (Me, Next), cdd-15 "Try browser exports for Louisiana, Minnesota and Michigan" (Me), cdd-16 "Add Colorado salvage and powersports listings" (Me), cdd-17 "Add Leo's credit-union repo estimates and tow fleet sizes as Indiana columns" (Claude Code)
+- Added: decision d-cdd-05 (rebuild the lead score from license data only)
+- Added: question q-03 for IT or Legal (business phones and emails in the repo before the move to the work setup)
+- Answered: q-01 Leo shared his Indiana lists, merged Oct 1
+- Added: note n-09 "Leads map: 28 states plus DC"
+
 ## 2026-10-01 (GitHub access clarified)
 - Source: Chase explained the build repo is a Copart GitHub connected to Coolify; no direct access, but Work Claude can create and edit files there
 - Changed: rt-37 Next -> Done (not needed, build goes through Work Claude)

@@ -82,7 +82,7 @@
       "id": "cdd",
       "name": "Copart Dealer Digital",
       "status": "In Progress",
-      "summary": "Lead tracker site for dealer sales, built from pre-start work: AEO baseline, DFW dealer map and scoring, and statewide TxDMV leads. Live and merged to main. Public data only.",
+      "summary": "Lead tracker site for dealer sales, built from pre-start work: AEO baseline, DFW dealer map and scoring, and state dealer license leads. Leads now cover 28 states plus DC (92,492 leads), focused on car and wholesale dealers. Live on Vercel. Public data only.",
       "built": [
         "AEO baseline (Sep 27): 25 dealer questions through the ChatGPT, Claude and Gemini APIs. Results in aeo/runs/2026-09-27/summary.md",
         "AEO headline: Copart named in 50% of answers to the 20 unbranded questions (30 of 60). All questions: Copart 60%, Manheim 61%, ACV 52%",
@@ -103,7 +103,15 @@
         "Weekly change tracking: data/license_changes.py compares each TxDMV snapshot to the last. First comparison (Sep 27 to 29): 1 new license, 1 dropped. Excludes Copart locations, other auctions, retail chains and expired licenses",
         "Excel books per region plus master with tracker columns",
         "Opening lines and call guidance removed from the site and books at Chase's request. The data stays",
-        "Contact info is not in git: phone and email files live in leads/txdmv/ (gitignored). Only counts are committed"
+        "Contact info is not in git: phone and email files live in leads/txdmv/ (gitignored). Only counts are committed",
+        "All 50 states plus DC checked and logged (Oct 1). 28 states plus DC built with 92,492 dealer leads. Added Oct 1: Arkansas, Colorado, Delaware, Mississippi (franchise stores only), Nebraska, Nevada, North Dakota, Rhode Island, South Dakota, Tennessee, Utah, Virginia, DC. Colorado, Rhode Island, Tennessee and Utah came from hand-downloaded files; the rest the pipeline pulls on its own",
+        "22 states have no usable public list: 9 no public list, 6 one-dealer-at-a-time lookup only, 5 state sells the list, 2 newest list too old",
+        "All states page under Leads: US tile map plus a row per state with source, date, lead count, and for states without leads, what was checked and the by-hand next step",
+        "Indiana merged with Leo's lists: added 113 credit unions (all 8 of ours were on his) and 421 tow, rental, salvage and dealer companies (69 strong matches, 35 weak left off, 4 competitor auctions and officer names left off). Indiana went from 3,865 to 4,396 leads. Both comparison CSVs are with Chase",
+        "Lead tables rebuilt around facts: the state's own license types (lines of business) replaced \"play\"; scores and tiers hidden on every Leads page (still calculated for checking against Copart Dealer Sales results later); quick filters All, Car dealers, Wholesale, Specialty, plus Has phone and Has email; every column sorts, plus a Sort menu (distance, miles to Copart, newest license, first licensed, units sold, group size); region lists include wholesale-only dealers",
+        "Fixed: two leads sharing a license number made rows jump or open in pairs",
+        "Look and feel: lead maps on a light gray background, dots colored by type (wholesale gold, car dealers blue, other gray); dark mode across the site with an Auto, Light and Dark picker",
+        "Records: docs/decisions.md and the change log in docs/handoff-leads.md cover every change. Oct 1: 14 commits, 7 production deploys"
       ],
       "links": [
         {
@@ -119,13 +127,20 @@
         {
           "label": "Repo",
           "where": "dfw-dealer-digital (separate repo, tracked only)"
+        },
+        {
+          "label": "All states page",
+          "url": "https://dfw-dealer-digital.vercel.app",
+          "where": "Leads > All states. Same password as the site, in Vercel project settings"
         }
       ],
       "blockers": [],
       "next_steps": [
         "Legal check before any bulk email (cdd-02, urgent)",
+        "Check with IT or Legal on business phones and emails in the repo before the leads move to the work setup (q-03)",
         "Second DFW inventory snapshot on or after Oct 4 (cdd-03)",
-        "Verify the top 3 dealers and rerun the lead export (cdd-11)",
+        "More states by hand, starting with New Mexico (cdd-14, cdd-15)",
+        "Decide on the lead score rebuild (d-cdd-05)",
         "Weekly TxDMV refresh (cdd-04) and weekly AEO re-run (cdd-12)"
       ],
       "category": "AI Tools"
@@ -208,10 +223,15 @@
       "category": "AI Tools",
       "status": "Next",
       "summary": "Get all of the dealers that I've been pulling on the Dealer Digital Page and compare that with Leo's current Lead Setup page. Make custom landing pages and sign-ins for different teams to give a certain number of leads per day/week/etc. Also compare with current copart business to look at inactive dealers, dealers that are only sellers, current copart dealers so leads don't overlap.",
-      "built": [],
+      "built": [
+        "Copart Dealer Digital Leads section covers 28 states plus DC (92,492 leads), every state logged on the All states page (Oct 1)",
+        "Indiana compared and merged with Leo's lists (Oct 1)"
+      ],
       "links": [],
       "blockers": [],
-      "next_steps": []
+      "next_steps": [
+        "Exclude active Copart dealers so leads don't overlap (gen-14)"
+      ]
     }
   ],
   "tasks": [
@@ -1127,7 +1147,55 @@
       "owner": "Me",
       "due": "2026-10-02",
       "priority": "urgent",
-      "notes": "",
+      "notes": "Oct 1: leads map expanded to 28 states plus DC (92,492 leads), filters for car and wholesale dealers, scores hidden. Still to do: exclude active Copart dealers, Digital Marketing Audit and tools.",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
+    },
+    {
+      "id": "cdd-14",
+      "project_id": "cdd",
+      "title": "Save New Mexico's dealer table (12 pages) for the pipeline",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Easiest next state to add by hand. Save all 12 pages of the table, then Claude Code builds the leads.",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
+    },
+    {
+      "id": "cdd-15",
+      "project_id": "cdd",
+      "title": "Try browser exports for Louisiana, Minnesota and Michigan",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "low",
+      "notes": "These might export from a browser. Each state's row on the All states page has what was checked and the by-hand next step.",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
+    },
+    {
+      "id": "cdd-16",
+      "project_id": "cdd",
+      "title": "Add Colorado salvage and powersports listings",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "low",
+      "notes": "Would round out Colorado. Download by hand like the Colorado dealer file.",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
+    },
+    {
+      "id": "cdd-17",
+      "project_id": "cdd",
+      "title": "Add Leo's credit-union repo estimates and tow fleet sizes as Indiana columns",
+      "status": "Backlog",
+      "owner": "Claude Code",
+      "due": null,
+      "priority": "low",
+      "notes": "From Leo's Indiana lists. Make them sortable columns.",
       "created": "2026-10-01",
       "updated": "2026-10-01"
     }
@@ -1187,10 +1255,10 @@
       "question": "Is there a current dealer prospect list? Can you share your leads files so we can combine them with mine?",
       "ask": "Leo",
       "project_id": "cdd",
-      "status": "open",
-      "answer": null,
+      "status": "answered",
+      "answer": "Leo shared his Indiana lists (credit unions; tow, rental, salvage and dealer companies). Compared and merged into the Indiana leads Oct 1.",
       "raised": "2026-09-30",
-      "answered": null
+      "answered": "2026-10-01"
     },
     {
       "id": "q-02",
@@ -1200,6 +1268,16 @@
       "status": "open",
       "answer": null,
       "raised": "2026-09-30",
+      "answered": null
+    },
+    {
+      "id": "q-03",
+      "question": "OK to keep business phones and emails for leads in the repo when the leads move to my work setup? (Handoff doc checklist item; see d-cdd-02)",
+      "ask": "IT or Legal",
+      "project_id": "cdd",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-01",
       "answered": null
     }
   ],
@@ -1328,6 +1406,19 @@
       "options": [
         "Fold both into existing stages",
         "Give \"Account open\" its own stage"
+      ],
+      "raised": "2026-10-01",
+      "status": "open",
+      "answer": null,
+      "resolved": null
+    },
+    {
+      "id": "d-cdd-05",
+      "project_id": "cdd",
+      "question": "Rebuild the lead score from license data only, once we know what Copart Dealer Sales actually wins?",
+      "options": [
+        "Rebuild from license data only",
+        "Keep the current score"
       ],
       "raised": "2026-10-01",
       "status": "open",
@@ -1482,6 +1573,20 @@
       ],
       "project_id": "general",
       "date": "2026-10-01"
+    },
+    {
+      "id": "n-09",
+      "date": "2026-10-01",
+      "title": "Leads map: 28 states plus DC",
+      "project_id": "cdd",
+      "body": [
+        "Took the Leads section from 16 states to 28 states plus DC, with 92,492 dealer leads. Every state and DC checked and logged. Live at dfw-dealer-digital.vercel.app.",
+        "Six research agents re-checked the 35 states and DC not yet built. 13 added; 22 have no usable public list (9 none, 6 one-at-a-time lookup, 5 sold by the state, 2 too old).",
+        "Leads pages reworked around what Copart Dealer Sales wants: car and wholesale dealers. License types replace \"play\", scores and tiers hidden, new filters and sorts.",
+        "Indiana: compared and merged Leo's lists. 3,865 to 4,396 leads.",
+        "Open: New Mexico and other by-hand states, Colorado salvage and powersports, Leo's extra Indiana columns, score rebuild decision, IT or Legal check on phones and emails before moving to the work setup.",
+        "Separately: several design-plugin connectors (Asana, Atlassian, Figma, Intercom, Linear, Notion, Slack) need authorizing in claude.ai connector settings. Asana fails to connect. Not needed for this work."
+      ]
     }
   ]
 }
