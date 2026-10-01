@@ -753,13 +753,14 @@
       "id": "rt-16",
       "project_id": "rt",
       "title": "DNS Entry for this app for the site to have the correct security certificate - Find out who to talk to",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "urgent",
       "notes": "",
       "created": "2026-09-30",
-      "updated": "2026-09-30"
+      "updated": "2026-10-01",
+      "completed": "2026-10-01"
     },
     {
       "id": "gen-10",
