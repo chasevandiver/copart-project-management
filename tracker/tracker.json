@@ -481,14 +481,15 @@
     {
       "id": "gen-01",
       "project_id": "general",
-      "title": "Meet with Kyle (Director of Marketing); Ken joins",
-      "status": "Next",
+      "title": "Meet with Kyle and Noelle; Ken joins",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-01",
       "priority": "high",
-      "notes": "Kyle asked to meet this week. Ken wants to be in the meeting. Topic: CDS-Marketing Sync Up. Learning more about my role and working with Marketing/CDS.\n\nWith Kyle Cochran - Director of Business Development\nWith Noelle Goodman - Director of Marketing",
+      "notes": "Copart Dealer Sales and Marketing sync. With Kyle Cochran (Director of Business Development) and Noelle Goodman (Director of Marketing). Summary in note n-08.",
       "created": "2026-09-29",
-      "updated": "2026-10-01"
+      "updated": "2026-10-01",
+      "completed": "2026-10-01"
     },
     {
       "id": "gen-02",
@@ -1198,6 +1199,78 @@
       "notes": "From Leo's Indiana lists. Make them sortable columns.",
       "created": "2026-10-01",
       "updated": "2026-10-01"
+    },
+    {
+      "id": "gen-15",
+      "project_id": "general",
+      "title": "Contact Justin Alexander about FullStory access",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Product team owns FullStory. Session recordings and heatmaps for the site. From the Oct 1 sync (n-08).",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
+    },
+    {
+      "id": "gen-16",
+      "project_id": "general",
+      "title": "Contact Tyler Amos and Pushkaraj Jadhav about data access",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Ask about database access and what down-funnel data exists, to query myself or through their team. From the Oct 1 sync (n-08).",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
+    },
+    {
+      "id": "gen-17",
+      "project_id": "general",
+      "title": "Meet Lauren Harrington about past and current seller and buyer campaigns",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "She runs digital for seller and buyer campaigns. From the Oct 1 sync (n-08).",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
+    },
+    {
+      "id": "gen-18",
+      "project_id": "general",
+      "title": "Learn the Copart GO app",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "The seller app dealers use to list vehicles. Copart Dealer Sales agent reviews of it on the App Store came up in my research.",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
+    },
+    {
+      "id": "gen-19",
+      "project_id": "general",
+      "title": "Draft an outline for field offers plus SMS and email, and review it with Ken",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Ken wants offers reps can take to dealerships. Three-prong approach (see q-04). Data rules in q-06.",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
+    },
+    {
+      "id": "gen-20",
+      "project_id": "general",
+      "title": "Get Noelle's list of contacts for events, content and creative",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Add them to people as they come in.",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
     }
   ],
   "waiting_on": [
@@ -1275,6 +1348,36 @@
       "question": "OK to keep business phones and emails for leads in the repo when the leads move to my work setup? (Handoff doc checklist item; see d-cdd-02)",
       "ask": "IT or Legal",
       "project_id": "cdd",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-01",
+      "answered": null
+    },
+    {
+      "id": "q-04",
+      "question": "What is the third prong of the field offers plus SMS and email approach?",
+      "ask": "Ken Rion",
+      "project_id": "general",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-01",
+      "answered": null
+    },
+    {
+      "id": "q-05",
+      "question": "Who owns paid media and paid social access, and is there a budget?",
+      "ask": "Noelle Goodman",
+      "project_id": "general",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-01",
+      "answered": null
+    },
+    {
+      "id": "q-06",
+      "question": "What are the rules for using customer data in SMS and email (consent, legal review)?",
+      "ask": "Legal",
+      "project_id": "general",
       "status": "open",
       "answer": null,
       "raised": "2026-10-01",
@@ -1435,10 +1538,10 @@
       "contact": ""
     },
     {
-      "name": "Kyle",
-      "title": "Director of Marketing",
+      "name": "Kyle Cochran",
+      "title": "Director of Business Development",
       "department": "Marketing",
-      "relationship": "Wants to meet this week; Ken joining",
+      "relationship": "Met Oct 1 in the Copart Dealer Sales and Marketing sync",
       "contact": ""
     },
     {
@@ -1460,6 +1563,41 @@
       "title": "Field Sales Manager",
       "department": "CDS",
       "relationship": "",
+      "contact": ""
+    },
+    {
+      "name": "Noelle Goodman",
+      "title": "Director of Marketing",
+      "department": "Marketing",
+      "relationship": "First stop for any question while I onboard; points me to the right person",
+      "contact": ""
+    },
+    {
+      "name": "Lauren Harrington",
+      "title": "Strategy Marketing",
+      "department": "Marketing",
+      "relationship": "Runs digital for seller and buyer campaigns; knows what's been tried",
+      "contact": ""
+    },
+    {
+      "name": "Justin Alexander",
+      "title": "",
+      "department": "Product",
+      "relationship": "Owns FullStory",
+      "contact": ""
+    },
+    {
+      "name": "Tyler Amos",
+      "title": "Director, Strategic Analytics",
+      "department": "Strategic Analytics",
+      "relationship": "Database access and down-funnel data",
+      "contact": ""
+    },
+    {
+      "name": "Pushkaraj Jadhav",
+      "title": "Sales Pod Manager",
+      "department": "Strategic Analytics",
+      "relationship": "Day-to-day analytics contact for sales",
       "contact": ""
     }
   ],
@@ -1555,21 +1693,20 @@
     },
     {
       "id": "n-08",
-      "title": "CDS/Marketing Sync",
+      "title": "Copart Dealer Sales and Marketing sync: meeting summary",
       "body": [
-        "Lauren Harrington - Strategy Marketing and has done a lot with whats happened what theyve tried - Lauren is digital is for sellers campaigns and buyers.",
-        "Tools I will need - my digital analytic tools - Full Story is managed by the Product team - Justin Alexander - report user sessions, its like googleanalytics on steroids. What do they scroll over what their and what they do. Also have access to heatmaps.",
-        "Paid Media, Digital Campaigns",
-        "Ken wants to do offers in the field that we can take to dealerships in the field - SMS and email marketing on a three prong approach. Accessing data into the communications joureny with an ad hoc messagine jersey.",
-        "Go app - figure out what this is.",
-        "Setting up infrastructural work with the marketing team to help the approach.",
-        "Creating product videos - how we can get involved on paid socials with targeted searches. Run the whole gambit - to do broadbrush type advertising and marketing.",
-        "Partner with some people in the marketing department to get people to work faster as I onboard reach out to Noelle with questions and she'll direct me to the right person.",
-        "Dipping into the social media influencers - how we can",
-        "Reach out to Strategic Analzyers name - director of strat - How they can get me access to dsatabases and anything downfunnell data I could get - Have all the data there that they can make queireies - If its different roles with events, content, etc, creative teams.",
-        "Not very deep brand standards - and have them check the brand standards as we go.",
-        "Strategic Analytics Sales Pod manager: Pushkaraj Jadhav",
-        "Strategic Analytics director: Tyler Amos"
+        "Attendees: Ken Rion (Dealer Sales), Kyle Cochran (Director of Business Development), Noelle Goodman (Director of Marketing), Chase Vandiver (Digital Engagement Manager).",
+        "Purpose: introductions, how my role works with Marketing, and what access I need.",
+        "Key contacts: Noelle (Director of Marketing) is the first stop for any question while I onboard; she'll point me to the right person. Lauren Harrington (Strategy Marketing) runs digital for seller and buyer campaigns and knows what's been tried. Justin Alexander (Product) owns FullStory. Tyler Amos (Director, Strategic Analytics) for database access and down-funnel data. Pushkaraj Jadhav (Strategic Analytics, Sales Pod manager) is the day-to-day analytics contact for sales.",
+        "Access needed: FullStory via Justin Alexander (session recordings and heatmaps: what users scroll over, look at and click on the site). Analytics data via Tyler Amos and Pushkaraj Jadhav (database access and down-funnel data, to query myself or through their team). Paid media and digital campaign tools (owner not named in the meeting).",
+        "Field offers: Ken wants offers that reps can take to dealerships in the field.",
+        "SMS and email: a three-prong approach, using data to build the communications journey and ad hoc messaging. The third prong wasn't named (field offers?).",
+        "Marketing infrastructure: set up groundwork with the Marketing team to support this approach.",
+        "Video and paid social: product videos plus paid social with targeted searches, covering the full range up to broad brand advertising.",
+        "Influencers: look into how social media influencers could work for Copart Dealer Sales.",
+        "Speed: partner with people in Marketing to move faster. Different teams own events, content and creative.",
+        "Brand standards aren't very deep. Marketing will check work against them as we go.",
+        "Action items: gen-15 to gen-20. Open questions: q-04 to q-06."
       ],
       "project_id": "general",
       "date": "2026-10-01"

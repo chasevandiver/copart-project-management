@@ -2,6 +2,15 @@
 
 Newest entry first.
 
+## 2026-10-01 (Copart Dealer Sales and Marketing sync)
+- Source: Chase's meeting summary of the sync with Ken, Kyle and Noelle
+- Changed: note n-08 rewritten as the full meeting summary
+- Changed: gen-01 Next -> Done (meeting held)
+- Changed: Kyle is Kyle Cochran, Director of Business Development (was Director of Marketing)
+- Added: people Noelle Goodman, Lauren Harrington, Justin Alexander, Tyler Amos, Pushkaraj Jadhav
+- Added: gen-15 "Contact Justin Alexander about FullStory access", gen-16 "Contact Tyler Amos and Pushkaraj Jadhav about data access", gen-17 "Meet Lauren Harrington about past and current seller and buyer campaigns", gen-18 "Learn the Copart GO app", gen-19 "Draft an outline for field offers plus SMS and email, and review it with Ken" (high), gen-20 "Get Noelle's list of contacts for events, content and creative" (all Me)
+- Added: questions q-04 (third prong, Ken Rion), q-05 (paid media and paid social owner and budget, Noelle Goodman), q-06 (customer data rules for SMS and email, Legal)
+
 ## 2026-10-01 (leads map: 28 states plus DC)
 - Source: Chase's recap of today's Leads work on the Copart Dealer Digital site
 - Changed: Copart Dealer Digital summary, built list (28 states plus DC, 92,492 leads, All states page, Indiana merge, new filters, dark mode), links and next steps
