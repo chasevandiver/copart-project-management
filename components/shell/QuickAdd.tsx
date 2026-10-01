@@ -10,7 +10,7 @@ import { useApp } from "../App";
 import { Icon } from "./Icon";
 
 export type AddKind = DraftKind | "project";
-type Opts = { kind?: AddKind; project?: string };
+type Opts = { kind?: AddKind; project?: string; who?: string };
 const Ctx = createContext<(o?: Opts) => void>(() => {});
 export const useQuickAdd = () => useContext(Ctx);
 
@@ -57,7 +57,7 @@ function QuickAddModal({ opts, onClose }: { opts: Opts; onClose: () => void }) {
   // Explicit picks override what the text parser guessed.
   const [kind, setKind] = useState<AddKind | null>(opts.kind ?? null);
   const [project, setProject] = useState<string | null>(opts.project ?? null);
-  const [who, setWho] = useState<string | null>(null);
+  const [who, setWho] = useState<string | null>(opts.who ?? null);
   const [due, setDue] = useState<string | null>(null);
   const [priority, setPriority] = useState<Priority | null>(null);
   const [busy, setBusy] = useState(false);

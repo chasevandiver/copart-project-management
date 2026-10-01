@@ -50,6 +50,12 @@ const PATHS: Record<string, React.ReactNode> = {
   project: <circle cx="8" cy="8" r="5.5" />,
   close: <path d="M4 4l8 8M12 4l-8 8" />,
   menu: <path d="M2.5 4h11M2.5 8h11M2.5 12h11" />,
+  person: (
+    <>
+      <circle cx="8" cy="5.5" r="2.7" />
+      <path d="M2.8 14c.6-2.8 2.7-4.3 5.2-4.3s4.6 1.5 5.2 4.3" />
+    </>
+  ),
   grid: (
     <>
       <rect x="2" y="2" width="5" height="5" rx="1" />

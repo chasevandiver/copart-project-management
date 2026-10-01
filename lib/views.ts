@@ -1,7 +1,7 @@
 // Builds each sidebar view from the tracker. Pure, so server pages and counts share it.
 // "Mine" means owner "Me". Work owned by others lives in Delegated.
 import { addDaysISO, daysBetween } from "./dates";
-import { sortTasks, type Decision, type Note, type Question, type Task, type Tracker, type WaitingOn } from "./tracker";
+import { sortTasks, type Decision, type Note, type Person, type Question, type Task, type Tracker, type WaitingOn } from "./tracker";
 
 export type Entry =
   | { kind: "task"; v: Task }
@@ -208,6 +208,71 @@ export function searchView(t: Tracker, q: string): Group[] {
     { key: "notes", title: "Notes", entries: t.notes.filter((x) => hit(x.title, ...x.body)).map((v) => ({ kind: "note" as const, v })) },
     { key: "waiting", title: "Waiting on", entries: t.waiting_on.filter((x) => hit(x.what, x.from_whom, x.notes)).map((v) => ({ kind: "waiting" as const, v })) },
     { key: "decisions", title: "Decisions", entries: t.decisions.filter((x) => hit(x.question, x.answer, ...x.options)).map((v) => ({ kind: "decision" as const, v })) },
+  ].filter((g) => g.entries.length);
+}
+
+// People: one page per person in the directory. Owners, question targets and
+// waiting-on sources match by full or first name; notes and to-dos match when
+// they mention the first name as a whole word.
+const firstName = (n: string) => n.split(" ")[0];
+const samePerson = (a: string, b: string) => a === b || a === firstName(b) || firstName(a) === b;
+
+export function personSlug(name: string): string {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
+export function findPerson(t: Tracker, slug: string): Person | undefined {
+  return t.people.find((p) => personSlug(p.name) === slug);
+}
+
+function mentions(name: string) {
+  const re = new RegExp(`\\b${firstName(name).replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i");
+  return (...s: (string | null | undefined)[]) => s.some((x) => !!x && re.test(x));
+}
+
+function personOpen(t: Tracker, name: string) {
+  return {
+    questions: t.questions.filter((q) => q.status === "open" && samePerson(q.ask, name)),
+    waiting: t.waiting_on.filter((w) => !w.received && samePerson(w.from_whom, name)),
+    owns: t.tasks.filter((x) => isOpen(x) && samePerson(x.owner, name)),
+  };
+}
+
+export function personOpenCount(t: Tracker, name: string): number {
+  const o = personOpen(t, name);
+  return o.questions.length + o.waiting.length + o.owns.length;
+}
+
+export function personNotes(t: Tracker, name: string): Note[] {
+  const hit = mentions(name);
+  return t.notes.filter((n) => hit(n.title, ...n.body)).sort((a, b) => b.date.localeCompare(a.date));
+}
+
+export function personView(t: Tracker, name: string): Group[] {
+  const first = firstName(name);
+  const hit = mentions(name);
+  const o = personOpen(t, name);
+  const related = t.tasks.filter((x) => (isOpen(x) || x.idea) && !samePerson(x.owner, name) && hit(x.title, x.notes));
+  const answered = t.questions
+    .filter((q) => q.status === "answered" && samePerson(q.ask, name))
+    .sort((a, b) => (b.answered ?? "").localeCompare(a.answered ?? ""));
+  const done = t.tasks
+    .filter((x) => !x.idea && x.status === "Done" && (samePerson(x.owner, name) || hit(x.title, x.notes)))
+    .sort((a, b) => (b.completed ?? b.updated).localeCompare(a.completed ?? a.updated));
+  const received = t.waiting_on.filter((w) => w.received && samePerson(w.from_whom, name));
+  return [
+    { key: "ask", title: `Ask ${first}`, entries: o.questions.map((v) => ({ kind: "question" as const, v })) },
+    { key: "waiting", title: `Waiting on ${first}`, entries: o.waiting.map((v) => ({ kind: "waiting" as const, v })) },
+    { key: "owns", title: `${first} is on it`, entries: sortTasks(o.owns).map(T) },
+    { key: "related", title: `To-dos that mention ${first}`, entries: sortTasks(related).map(T) },
+    { key: "notes", title: "Notes", entries: personNotes(t, name).map((v) => ({ kind: "note" as const, v })) },
+    { key: "answered", title: "Answered", collapsed: true, entries: answered.map((v) => ({ kind: "question" as const, v })) },
+    {
+      key: "done",
+      title: "Done and received",
+      collapsed: true,
+      entries: [...done.map(T), ...received.map((v) => ({ kind: "waiting" as const, v }))],
+    },
   ].filter((g) => g.entries.length);
 }
 

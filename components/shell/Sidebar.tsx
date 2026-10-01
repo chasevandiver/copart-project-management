@@ -8,6 +8,7 @@ import { Icon } from "./Icon";
 import { useQuickAdd } from "./QuickAdd";
 
 type P = { id: string; name: string; category: string; status: string };
+type Who = { slug: string; name: string; open: number };
 
 const MAIN: [string, string, string, keyof Counts | null][] = [
   ["/inbox", "Inbox", "inbox", "inbox"],
@@ -26,7 +27,7 @@ const LIB: [string, string, string, keyof Counts | null][] = [
   ["/logbook", "Logbook", "logbook", null],
 ];
 
-export default function Sidebar({ counts, projects, readonly }: { counts: Counts; projects: P[]; readonly: boolean }) {
+export default function Sidebar({ counts, projects, people, readonly }: { counts: Counts; projects: P[]; people: Who[]; readonly: boolean }) {
   const path = usePathname();
   const params = useSearchParams();
   const router = useRouter();
@@ -37,7 +38,9 @@ export default function Sidebar({ counts, projects, readonly }: { counts: Counts
   useEffect(() => setOpen(false), [path]);
 
   const item = (href: string, label: string, icon: string, count?: number) => {
-    const active = href === "/" ? path === "/" : path === href || path.startsWith(href + "/");
+    // List pages ("All projects", "All people") light up only on themselves, not on a project or person page.
+    const exact = href === "/" || href === "/projects" || href === "/people";
+    const active = exact ? path === href : path === href || path.startsWith(href + "/");
     return (
       <Link key={href} href={href} className={`s-nav${active ? " on" : ""}`}>
         <Icon name={icon} className="s-nav-icon" />
@@ -93,6 +96,12 @@ export default function Sidebar({ counts, projects, readonly }: { counts: Counts
           {list(LOOPS)}
         </div>
         <div className="s-nav-group">{list(LIB)}</div>
+
+        <div className="s-nav-group">
+          <div className="s-nav-heading">People</div>
+          {people.map((p) => item(`/people/${p.slug}`, p.name, "person", p.open))}
+          {item("/people", "All people", "grid")}
+        </div>
 
         {areas.map((a) => (
           <div key={a} className="s-nav-group">
