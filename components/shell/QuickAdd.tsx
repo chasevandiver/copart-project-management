@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useContext, useEffect, useMemo, useRef, useState } from "react";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { parseQuick, type DraftKind } from "@/lib/parse";
 import { suggestProjectId } from "@/lib/ops";
 import { CATEGORIES, PRIORITIES, STATUSES, type Priority } from "@/lib/tracker";
@@ -52,7 +52,6 @@ export function QuickAddProvider({ children }: { children: React.ReactNode }) {
 
 function QuickAddModal({ opts, onClose }: { opts: Opts; onClose: () => void }) {
   const { projects, owners, today, save, canEdit } = useApp();
-  const router = useRouter();
   const [text, setText] = useState("");
   const [body, setBody] = useState("");
   // Explicit picks override what the text parser guessed.
@@ -103,7 +102,9 @@ function QuickAddModal({ opts, onClose }: { opts: Opts; onClose: () => void }) {
       setBusy(false);
       if (ok) {
         onClose();
-        router.push(`/projects/${projectId}`);
+        // Full load, not router.push: a client navigation races the refresh save()
+        // started and the sidebar keeps the old project list.
+        window.location.assign(`/projects/${projectId}`);
       }
       return;
     }
