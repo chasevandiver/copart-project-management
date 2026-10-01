@@ -184,6 +184,17 @@
         "Salesforce access, for existing campaign history (gen-04)",
         "Good topic for the meeting with Kyle and Ken this week (gen-01)"
       ]
+    },
+    {
+      "id": "pa",
+      "name": "Plaud AI",
+      "category": "AI Tools",
+      "status": "Next",
+      "summary": "AI notetaking app to be connected with other apps",
+      "built": [],
+      "links": [],
+      "blockers": [],
+      "next_steps": []
     }
   ],
   "tasks": [
