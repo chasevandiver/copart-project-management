@@ -1003,6 +1003,21 @@
       ],
       "project_id": "general",
       "date": "2026-09-30"
+    },
+    {
+      "id": "n-04",
+      "title": "Potential Agents to Add:",
+      "body": [
+        "Pre-visit briefing agent. Each morning, it builds a short card for each stop on today's leg: past notes, who to ask for, which pitch to lead with, and what's on the dealer's lot from their own website. It saves reps from scrolling notes in the parking lot.",
+        "Weekly digest agent. It reads the sync log and emails Ken or the team lead a summary of stops visited per rep, hot leads, dealers that went quiet, and anything flagged for a return visit. It's cheap to build because the data already exists.",
+        "CDS handoff agent. When a visit is marked as interested, it drafts the handoff to the CDS rep with everything gathered so far. It can also draft a follow-up text for the field rep to send.",
+        "For scaling to new yards",
+        "Route builder agent. You give it a yard address and it researches about 30 dealers, checks each address and phone against real sources, groups them into legs, and outputs the dealer list with confidence flags and caveats. This replaces the most manual part of the project. It has to follow the \"never invent dealer data\" rule: every entry cites its source, and a person approves the list before it ships.",
+        "Freshness checker. Once a month, it re-verifies every dealer on active routes for closures, phone changes, or new owners, then flags changes for review instead of overwriting them. The sourcing doc already says lists go stale.",
+        "Road-added dealer enrichment. When a rep adds a dealer they spotted on the road, with just a name and a GPS pin, the agent looks up the address, phone, and website. It fills the gaps marked \"Verify first\" and never presents its guesses as confirmed."
+      ],
+      "project_id": "rt",
+      "date": "2026-10-01"
     }
   ]
 }
