@@ -2,7 +2,7 @@
   "meta": {
     "owner": "Chase",
     "role": "Digital Engagement Manager, supporting Ken Rion (SVP of Dealer Sales)",
-    "last_updated": "2026-09-30"
+    "last_updated": "2026-10-01"
   },
   "categories": [
     "AI Tools",
@@ -740,13 +740,14 @@
       "id": "rt-15",
       "project_id": "rt",
       "title": "When going to the website on the phone - the webpage says site not secure - need to update that ASAP",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "urgent",
       "notes": "",
       "created": "2026-09-30",
-      "updated": "2026-09-30"
+      "updated": "2026-10-01",
+      "completed": "2026-10-01"
     },
     {
       "id": "rt-16",
