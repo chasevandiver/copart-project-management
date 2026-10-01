@@ -2,6 +2,17 @@
 
 Newest entry first.
 
+## 2026-10-01 (Route Tracker plan approved)
+- Source: Chase's approved plan for the Route Tracker at-dealer flow, assignments and handoff
+- Resolved: d-rt-04 Phone mail share sheet now, company SMTP later
+- Resolved: d-rt-05 Automatic stages: Not Visited > Visited > Information Obtained > Assignments Obtained > Handed Off > Car Received
+- Changed: rt-25, rt-30, rt-31 Next/Backlog -> Done (settled in the plan)
+- Changed: rt-18 to rt-24, rt-26 to rt-28 Backlog -> Next, notes updated with plan details; rt-29 now covers rosters and emails for 26 teams
+- Added: rt-32 "Migrate existing handoff rows", rt-33 "Raise four points with Genie", rt-34 "Get a company SMTP account", rt-35 "Fix the Zap URL to /api/plaud-intake and retest", rt-36 "Confirm reps can reach the app on cell data without VPN", rt-37 "Get GitHub access" (Me, high)
+- Added: decision d-rt-06 ("Decision-maker identified" mapping, "Account open" stage)
+- Added: note n-07 with the full plan
+- Changed: Route Tracker summary, next steps and blockers
+
 ## 2026-10-01 (Route Tracker at-dealer flow)
 - Source: Chase's notes after pitching the Route Tracker to the field team
 - Added: rt-17 to rt-28, the at-dealer flow build (Me, high; rt-17 "Map the current handoff tab, pipeline and PLAUD intake" is Next, the rest Backlog)
