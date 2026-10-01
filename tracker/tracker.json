@@ -828,13 +828,14 @@
       "id": "rt-17",
       "project_id": "rt",
       "title": "Map the current handoff tab, pipeline and PLAUD intake before changes",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "high",
       "notes": "Pre go-live, at-dealer flow (prompt drafted for Copart Genie). Do this first so nothing existing breaks.",
       "created": "2026-10-01",
-      "updated": "2026-10-01"
+      "updated": "2026-10-01",
+      "completed": "2026-10-01"
     },
     {
       "id": "rt-18",
