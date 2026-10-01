@@ -111,4 +111,6 @@ Code:
 - `lib/validate-core.mjs` checks shared by `scripts/validate.mjs` and the save API (guardrails block keys and Tax IDs from the UI too)
 - `app/classic/` the previous screens, kept for comparison; remove once Chase is happy with the sidebar version
 
+Never start a code commit message with `Board:`. `vercel.json` skips the Vercel build for those commits, so the change would not deploy. Use `Fix:`, `Feature:` or similar.
+
 Keep the board simple. New fields in tracker.json should be added to `lib/tracker.ts` and the validator in the same commit.
