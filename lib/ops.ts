@@ -25,7 +25,8 @@ export type Op =
   | { type: "question.reopen"; id: string }
   | { type: "question.delete"; id: string }
   | { type: "decision.resolve"; id: string; answer: string }
-  | { type: "project.add"; id: string; name: string; category: string; status?: string; summary?: string; idea?: boolean };
+  | { type: "project.add"; id: string; name: string; category: string; status?: string; summary?: string; idea?: boolean }
+  | { type: "person.add"; name: string; title?: string; department?: string; relationship?: string };
 
 export class OpError extends Error {}
 
@@ -336,6 +337,22 @@ export function applyOp(input: Tracker, op: Op, today: string): { tracker: Track
         next_steps: [],
       });
       summary = `add project ${id}`;
+      break;
+    }
+    case "person.add": {
+      const name = clean(op.name, 60);
+      if (!name) throw new OpError("Give the person a name");
+      const key = (n: string) => n.toLowerCase().replace(/[^a-z0-9]+/g, "");
+      if (t.people.some((p) => key(p.name) === key(name))) throw new OpError(`${name} is already in People`);
+      // Contact stays blank: it is only filled in by hand, once Chase gives a work contact.
+      t.people.push({
+        name,
+        title: clean(op.title ?? "", 100),
+        department: clean(op.department ?? "", 60),
+        relationship: clean(op.relationship ?? "", 200),
+        contact: "",
+      });
+      summary = `add person ${name}`;
       break;
     }
     default:

@@ -7,7 +7,7 @@ export default async function PeoplePage() {
   const t = await getTracker();
   return (
     <>
-      <PageHead icon="person" title="People" sub="Everyone you work with. Open a person for what to ask them, what they owe you, what they own, and every note that mentions them." add={false} />
+      <PageHead icon="person" title="People" sub="Everyone you work with. Open a person for what to ask them, what they owe you, what they own, and every note that mentions them." add={{ kind: "person", label: "Add person" }} />
       {t.people.length ? (
         <div className="s-cards">
           {t.people.map((p) => {
@@ -31,7 +31,7 @@ export default async function PeoplePage() {
           })}
         </div>
       ) : (
-        <p className="s-empty">No people yet. Add them in tracker.json.</p>
+        <p className="s-empty">No people yet. Press Add person.</p>
       )}
     </>
   );

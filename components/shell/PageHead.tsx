@@ -11,7 +11,7 @@ export default function PageHead({
   icon?: string;
   title: string;
   sub?: string;
-  add?: { kind?: "task" | "idea" | "note" | "question" | "project"; project?: string; who?: string; label?: string } | false;
+  add?: { kind?: "task" | "idea" | "note" | "question" | "project" | "person"; project?: string; who?: string; label?: string } | false;
   children?: React.ReactNode;
 }) {
   return (

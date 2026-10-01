@@ -4,12 +4,13 @@ import { createContext, useContext, useEffect, useMemo, useRef, useState } from 
 import { usePathname } from "next/navigation";
 import { parseQuick, type DraftKind } from "@/lib/parse";
 import { suggestProjectId } from "@/lib/ops";
+import { personSlug } from "@/lib/views";
 import { CATEGORIES, PRIORITIES, STATUSES, type Priority } from "@/lib/tracker";
 import { longDate } from "@/lib/dates";
 import { useApp } from "../App";
 import { Icon } from "./Icon";
 
-export type AddKind = DraftKind | "project";
+export type AddKind = DraftKind | "project" | "person";
 type Opts = { kind?: AddKind; project?: string; who?: string };
 const Ctx = createContext<(o?: Opts) => void>(() => {});
 export const useQuickAdd = () => useContext(Ctx);
@@ -20,6 +21,7 @@ const KINDS: { k: AddKind; label: string; icon: string }[] = [
   { k: "idea", label: "Idea", icon: "idea" },
   { k: "note", label: "Note", icon: "note" },
   { k: "project", label: "Project", icon: "grid" },
+  { k: "person", label: "Person", icon: "person" },
 ];
 
 export function QuickAddProvider({ children }: { children: React.ReactNode }) {
@@ -66,6 +68,10 @@ function QuickAddModal({ opts, onClose }: { opts: Opts; onClose: () => void }) {
   const [category, setCategory] = useState<string>(projects.find((x) => x.id === opts.project)?.category ?? CATEGORIES[0]);
   const [pstatus, setPstatus] = useState<string>("Next");
   const [pidea, setPidea] = useState(false);
+  // New person fields
+  const [ptitle, setPtitle] = useState("");
+  const [pdept, setPdept] = useState("");
+  const [prel, setPrel] = useState("");
   const input = useRef<HTMLInputElement>(null);
 
   useEffect(() => input.current?.focus(), []);
@@ -87,7 +93,7 @@ function QuickAddModal({ opts, onClose }: { opts: Opts; onClose: () => void }) {
   const title = draft.title;
   const projectName = text.replace(/\s+/g, " ").trim();
   const projectId = pid ?? suggestProjectId(projectName, projects.map((x) => x.id));
-  const ready = k === "project" ? !!projectName && !!projectId : k === "note" ? !!(title || body.trim()) : k === "question" ? !!title && !!w : !!title;
+  const ready = k === "person" ? !!projectName : k === "project" ? !!projectName && !!projectId : k === "note" ? !!(title || body.trim()) : k === "question" ? !!title && !!w : !!title;
 
   async function submit() {
     if (!ready || busy) return;
@@ -105,6 +111,15 @@ function QuickAddModal({ opts, onClose }: { opts: Opts; onClose: () => void }) {
         // Full load, not router.push: a client navigation races the refresh save()
         // started and the sidebar keeps the old project list.
         window.location.assign(`/projects/${projectId}`);
+      }
+      return;
+    }
+    if (k === "person") {
+      ok = await save({ type: "person.add", name: projectName, title: ptitle, department: pdept, relationship: prel }, "Person added");
+      setBusy(false);
+      if (ok) {
+        onClose();
+        window.location.assign(`/people/${personSlug(projectName)}`);
       }
       return;
     }
@@ -140,13 +155,15 @@ function QuickAddModal({ opts, onClose }: { opts: Opts; onClose: () => void }) {
           value={text}
           onChange={(e) => setText(e.target.value)}
           onKeyDown={(e) => {
-            if (e.key === "Enter" && k !== "note" && k !== "project") {
+            if (e.key === "Enter" && k !== "note" && k !== "project" && k !== "person") {
               e.preventDefault();
               submit();
             }
           }}
           placeholder={
-            k === "project"
+            k === "person"
+              ? "Name, e.g. Nathan Lee"
+              : k === "project"
               ? "Project name, e.g. Dealer Newsletter"
               : k === "question"
               ? "Question for someone, e.g. Is there an Indiana prospect list? @Leo"
@@ -182,7 +199,22 @@ function QuickAddModal({ opts, onClose }: { opts: Opts; onClose: () => void }) {
           />
         )}
 
-        {k === "project" ? (
+        {k === "person" ? (
+          <div className="s-fields">
+            <label>
+              <span>Title</span>
+              <input value={ptitle} onChange={(e) => setPtitle(e.target.value)} placeholder="e.g. Security Engineer" maxLength={100} />
+            </label>
+            <label>
+              <span>Department</span>
+              <input value={pdept} onChange={(e) => setPdept(e.target.value)} placeholder="e.g. IT" maxLength={60} />
+            </label>
+            <label className="s-wide">
+              <span>How you work together</span>
+              <input value={prel} onChange={(e) => setPrel(e.target.value)} placeholder="e.g. Zapier security review" maxLength={200} />
+            </label>
+          </div>
+        ) : k === "project" ? (
           <div className="s-fields">
             <label>
               <span>Goal area</span>
@@ -258,14 +290,14 @@ function QuickAddModal({ opts, onClose }: { opts: Opts; onClose: () => void }) {
 
         <div className="s-modal-foot">
           <span className="s-hint">
-            Shortcuts: <kbd>@name</kbd> <kbd>#project</kbd> <kbd>fri</kbd> <kbd>oct 4</kbd> <kbd>!</kbd> high <kbd>!!</kbd> urgent. End with <kbd>?</kbd> for a question.
+            {k !== "person" && k !== "project" && <>Shortcuts: <kbd>@name</kbd> <kbd>#project</kbd> <kbd>fri</kbd> <kbd>oct 4</kbd> <kbd>!</kbd> high <kbd>!!</kbd> urgent. End with <kbd>?</kbd> for a question.</>}
           </span>
           <div className="s-modal-actions">
             <button type="button" className="s-btn ghost" onClick={onClose}>
               Cancel
             </button>
             <button type="button" className="s-btn primary" onClick={submit} disabled={!ready || busy || !canEdit}>
-              {k === "note" ? "Save note" : k === "project" ? "Create project" : "Add"}
+              {k === "note" ? "Save note" : k === "project" ? "Create project" : k === "person" ? "Add person" : "Add"}
             </button>
           </div>
         </div>
