@@ -1449,6 +1449,25 @@
         "One-time migration of existing handoff rows. Nothing deleted.",
         "Build scope: server.js (assignments bucket, migration, send endpoint, server-side pipeline, PLAUD sets seller code and assignments); hoparse.js (read \"Seller code:\" from PLAUD summaries); index.html (Home tab, Visit screen, car cards, evening review, tracker, new stages, team email field); sw.js (cache bump); tests (migration, stages, sends, teams, seller code, notes)."
       ]
+    },
+    {
+      "id": "n-08",
+      "title": "CDS/Marketing Sync",
+      "body": [
+        "Lauren Harrington - Strategy Marketing and has done a lot with whats happened what theyve tried - Lauren is digital is for sellers campaigns and buyers.",
+        "Tools I will need - my digital analytic tools - Full Story is managed by the Product team - Justin Alexander - report user sessions, its like googleanalytics on steroids. What do they scroll over what their and what they do. Also have access to heatmaps.",
+        "Paid Media, Digital Campaigns",
+        "Ken wants to do offers in the field that we can take to dealerships in the field - SMS and email marketing on a three prong approach. Accessing data into the communications joureny with an ad hoc messagine jersey.",
+        "Go app - figure out what this is.",
+        "Setting up infrastructural work with the marketing team to help the approach.",
+        "Creating product videos - how we can get involved on paid socials with targeted searches. Run the whole gambit - to do broadbrush type advertising and marketing.",
+        "Partner with some people in the marketing department to get people to work faster as I onboard reach out to Noelle with questions and she'll direct me to the right person.",
+        "Dipping into the social media influencers - how we can",
+        "Reach out to Strategic Analzyers name - director of strat - How they can get me access to dsatabases and anything downfunnell data I could get - Have all the data there that they can make queireies - If its different roles with events, content, etc, creative teams.",
+        "Not very deep brand standards - and have them check the brand standards as we go."
+      ],
+      "project_id": "general",
+      "date": "2026-10-01"
     }
   ]
 }
