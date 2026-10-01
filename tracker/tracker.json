@@ -1285,6 +1285,15 @@
         "Everything should be captured and ready to go before the next stop.",
         "Design around three moments: at the dealer, at the hotel (evening), at the office."
       ]
+    },
+    {
+      "id": "n-06",
+      "title": "Manager Ken Meeting",
+      "body": [
+        "Add a dealer nearby option to hit if not listed that at the end of the route - Plug a name into the route tracker to either match the route of the week or add it to the end of the of the week."
+      ],
+      "project_id": "rt",
+      "date": "2026-10-01"
     }
   ]
 }
