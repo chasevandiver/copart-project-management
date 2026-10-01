@@ -1310,6 +1310,18 @@
       "notes": "Built Oct 1: hot dealer, title front and back, license photos, sales.NN team emails, live \"N sent\" counts. 51 of 51 tests pass, 375px preview checked. The push was blocked, so it is not deployed.",
       "created": "2026-10-01",
       "updated": "2026-10-01"
+    },
+    {
+      "id": "gen-21",
+      "project_id": "general",
+      "title": "Send a chat to Leo thanking him for guiding me through first week",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-02",
+      "priority": "high",
+      "notes": "",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
     }
   ],
   "waiting_on": [
