@@ -786,8 +786,8 @@
       "updated": "2026-09-30"
     },
     {
-      "id": "gen-11",
-      "project_id": "general",
+      "id": "pa-02",
+      "project_id": "pa",
       "title": "Plaud: Set up an easier to-do, action items, requests for Ken's Plaud. Work on integration with Outlook",
       "status": "Next",
       "owner": "Me",
