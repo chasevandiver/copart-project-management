@@ -201,6 +201,17 @@
       "links": [],
       "blockers": [],
       "next_steps": []
+    },
+    {
+      "id": "udm",
+      "name": "US Dealer Map",
+      "category": "AI Tools",
+      "status": "Next",
+      "summary": "Get all of the dealers that I've been pulling on the Dealer Digital Page and compare that with Leo's current Lead Setup page. Make custom landing pages and sign-ins for different teams to give a certain number of leads per day/week/etc. Also compare with current copart business to look at inactive dealers, dealers that are only sellers, current copart dealers so leads don't overlap.",
+      "built": [],
+      "links": [],
+      "blockers": [],
+      "next_steps": []
     }
   ],
   "tasks": [
