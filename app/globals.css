@@ -537,6 +537,7 @@ ul.note-body { padding-left: 18px; white-space: normal; }
 /* Page head */
 .s-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 18px; }
 .s-head-main { min-width: 0; flex: 1; }
+.s-head-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
 .s-head h1 { display: flex; align-items: center; gap: 10px; font-size: 26px; letter-spacing: -0.015em; margin: 0; }
 .s-head-icon { color: var(--brand); }
 .s-head-sub { margin: 6px 0 0; color: var(--muted); font-size: 14px; max-width: 70ch; }

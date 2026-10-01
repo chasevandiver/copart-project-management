@@ -26,7 +26,8 @@ export type Op =
   | { type: "question.delete"; id: string }
   | { type: "decision.resolve"; id: string; answer: string }
   | { type: "project.add"; id: string; name: string; category: string; status?: string; summary?: string; idea?: boolean }
-  | { type: "person.add"; name: string; title?: string; department?: string; relationship?: string };
+  | { type: "person.add"; name: string; title?: string; department?: string; relationship?: string }
+  | { type: "person.update"; name: string; fields: { name: string; title: string; department: string; relationship: string; contact: string } };
 
 export class OpError extends Error {}
 
@@ -353,6 +354,29 @@ export function applyOp(input: Tracker, op: Op, today: string): { tracker: Track
         contact: "",
       });
       summary = `add person ${name}`;
+      break;
+    }
+    case "person.update": {
+      const p = t.people.find((x) => x.name === op.name);
+      if (!p) throw new OpError("Person not found");
+      const name = clean(op.fields.name, 60);
+      if (!name) throw new OpError("Give the person a name");
+      const key = (n: string) => n.toLowerCase().replace(/[^a-z0-9]+/g, "");
+      if (t.people.some((x) => x !== p && key(x.name) === key(name))) throw new OpError(`${name} is already in People`);
+      if (name !== p.name) {
+        // Keep their questions, waiting-on items and tasks attached after a rename.
+        const first = (n: string) => n.split(" ")[0];
+        const was = (n: string) => n === p.name || n === first(p.name) || first(n) === p.name;
+        for (const x of t.tasks) if (was(x.owner)) x.owner = name;
+        for (const q of t.questions) if (was(q.ask)) q.ask = name;
+        for (const w of t.waiting_on) if (was(w.from_whom)) w.from_whom = name;
+      }
+      p.name = name;
+      p.title = clean(op.fields.title, 100);
+      p.department = clean(op.fields.department, 60);
+      p.relationship = clean(op.fields.relationship, 200);
+      p.contact = clean(op.fields.contact, 100);
+      summary = `edit person ${name}`;
       break;
     }
     default:

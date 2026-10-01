@@ -97,7 +97,7 @@ Sidebar views (`app/(app)/`):
 - Upcoming (`/upcoming`): my dated to-dos for 14 days, then undated by project
 - Ask, Waiting on, Decide, Delegated (`/ask`, `/waiting`, `/decide`, `/delegated`): open loops. Delegated is open tasks owned by anyone but `Me`; they stay out of Today and Upcoming.
 - Ideas, Notes, Logbook (`/ideas`, `/notes`, `/logbook`)
-- People (`/people/[slug]`, slug from the name, e.g. `ken-rion`): one page per person in `people`: questions to ask them, waiting on them, what they own, to-dos and notes that mention their first name, then answered and done. `/people` lists everyone. Add a person from New (Person) or the Add person button; contact stays blank until set by hand.
+- People (`/people/[slug]`, slug from the name, e.g. `ken-rion`): one page per person in `people`: questions to ask them, waiting on them, what they own, to-dos and notes that mention their first name, then answered and done. `/people` lists everyone. Add a person from New (Person) or the Add person button; edit (including rename and contact) with Edit on their page. A rename moves their tasks, questions and waiting-on items to the new name.
 - Projects (`/projects/[id]`): one scrolling page (to do, others are on it, questions, decisions, waiting, ideas, notes, done). `/projects` lists all.
 - Search (`/search?q=`)
 

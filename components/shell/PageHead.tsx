@@ -6,12 +6,14 @@ export default function PageHead({
   title,
   sub,
   add,
+  actions,
   children,
 }: {
   icon?: string;
   title: string;
   sub?: string;
   add?: { kind?: "task" | "idea" | "note" | "question" | "project" | "person"; project?: string; who?: string; label?: string } | false;
+  actions?: React.ReactNode;
   children?: React.ReactNode;
 }) {
   return (
@@ -24,7 +26,12 @@ export default function PageHead({
         {sub && <p className="s-head-sub">{sub}</p>}
         {children}
       </div>
-      {add !== false && <AddButton kind={add?.kind} project={add?.project} who={add?.who} label={add?.label} />}
+      {(actions || add !== false) && (
+        <div className="s-head-actions">
+          {actions}
+          {add !== false && <AddButton kind={add?.kind} project={add?.project} who={add?.who} label={add?.label} />}
+        </div>
+      )}
     </header>
   );
 }
