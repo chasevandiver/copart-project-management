@@ -2,6 +2,14 @@
 
 Newest entry first.
 
+## 2026-10-01 (Route Tracker at-dealer flow)
+- Source: Chase's notes after pitching the Route Tracker to the field team
+- Added: rt-17 to rt-28, the at-dealer flow build (Me, high; rt-17 "Map the current handoff tab, pipeline and PLAUD intake" is Next, the rest Backlog)
+- Added: rt-29 "Get the team list with Team # and email", rt-30 "Confirm which PLAUD fields come through Zapier", rt-31 "Confirm the seller code format" (Me, high)
+- Added: decisions d-rt-04 (how assignment emails get sent) and d-rt-05 (final pipeline stages and triggers)
+- Added: note n-05 with the field team feedback and goal
+- Changed: Route Tracker blockers (GitHub access for Copart Genie / Coolify; Zapier can't reach Google Sheets or Excel) and next steps
+
 ## 2026-09-30 (sidebar redesign)
 - Source: Chase said the board was still confusing and approved the sidebar design
 - Board: new sidebar layout (Inbox, Today, Upcoming, Ask, Waiting on, Decide, Delegated, Ideas, Notes, Logbook, projects); detail panel for any item; quick add (N) with @name, #project, dates and ! priority; your lists show only your work, others' work sits in Delegated; old screens kept at /classic

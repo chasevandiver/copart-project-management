@@ -61,9 +61,12 @@
       "blockers": [
         "Work Claude hit its API limit, so build work is paused",
         "IT servers block the PLAUD API, so full PLAUD to Zapier automation does not run",
-        "No real weekly sales file yet, which blocks Price Check and most next steps"
+        "No real weekly sales file yet, which blocks Price Check and most next steps",
+        "GitHub access needed before building through Copart Genie / Coolify",
+        "Zapier can't connect to Google Sheets or Excel on my machine"
       ],
       "next_steps": [
+        "At-dealer flow update before go-live (rt-17 to rt-28). Start by mapping the current handoff, pipeline and PLAUD intake (rt-17)",
         "Re-send the landing page / seamless sign-in task to Work Claude (rt-01)",
         "Price Check milestone 1: sales importer plus backtest (rt-02)",
         "Real dealer map pins (rt-03)",
@@ -820,6 +823,186 @@
       "notes": "",
       "created": "2026-10-01",
       "updated": "2026-10-01"
+    },
+    {
+      "id": "rt-17",
+      "project_id": "rt",
+      "title": "Map the current handoff tab, pipeline and PLAUD intake before changes",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Pre go-live, at-dealer flow (prompt drafted for Copart Genie). Do this first so nothing existing breaks.",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
+    },
+    {
+      "id": "rt-18",
+      "project_id": "rt",
+      "title": "Build the at-dealer capture screen: PLAUD summary, seller code, number of assignments, notes",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Pre go-live, at-dealer flow (prompt drafted for Copart Genie).",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
+    },
+    {
+      "id": "rt-19",
+      "project_id": "rt",
+      "title": "Add assignment records: one per car, with title and vehicle photos grouped per car",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Pre go-live, at-dealer flow (prompt drafted for Copart Genie).",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
+    },
+    {
+      "id": "rt-20",
+      "project_id": "rt",
+      "title": "Add team routing: pick a team per assignment, \"Send to team\" emails the full assignment",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Pre go-live, at-dealer flow (prompt drafted for Copart Genie). Needs the team list (rt-29) and the email decision (d-rt-04).",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
+    },
+    {
+      "id": "rt-21",
+      "project_id": "rt",
+      "title": "Add a hot flag: hot assignments send now, the rest batch into the evening handoff",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Pre go-live, at-dealer flow (prompt drafted for Copart Genie).",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
+    },
+    {
+      "id": "rt-22",
+      "project_id": "rt",
+      "title": "Build the evening handoff: review the day and send all ready assignments in one tap",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Pre go-live, at-dealer flow (prompt drafted for Copart Genie).",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
+    },
+    {
+      "id": "rt-23",
+      "project_id": "rt",
+      "title": "Build an assignments tracker: every assignment from the route trackers with team and status",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Pre go-live, at-dealer flow (prompt drafted for Copart Genie).",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
+    },
+    {
+      "id": "rt-24",
+      "project_id": "rt",
+      "title": "Make the pipeline update itself as fields fill in, including from PLAUD",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Pre go-live, at-dealer flow (prompt drafted for Copart Genie). No manual stage moves. Depends on the PLAUD fields (rt-30) and the stage list (d-rt-05).",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
+    },
+    {
+      "id": "rt-25",
+      "project_id": "rt",
+      "title": "Rename pipeline stages to team language",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Pre go-live, at-dealer flow (prompt drafted for Copart Genie). At least \"Information Obtained\" and \"Assignments Obtained\". Final list in d-rt-05.",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
+    },
+    {
+      "id": "rt-26",
+      "project_id": "rt",
+      "title": "Redo the first screen: handoff fully visible, plus a notes summary of today's dealers, open items, and ready or hot assignments",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Pre go-live, at-dealer flow (prompt drafted for Copart Genie).",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
+    },
+    {
+      "id": "rt-27",
+      "project_id": "rt",
+      "title": "Let reps add notes during or after a visit and reopen everything from the office",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Pre go-live, at-dealer flow (prompt drafted for Copart Genie).",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
+    },
+    {
+      "id": "rt-28",
+      "project_id": "rt",
+      "title": "Test on phone and confirm no existing rep data is lost",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Pre go-live, at-dealer flow (prompt drafted for Copart Genie). Last step before go-live.",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
+    },
+    {
+      "id": "rt-29",
+      "project_id": "rt",
+      "title": "Get the team list with Team # and email for each",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Needed for team routing (rt-20). Store where the team list lives, not the emails, in this tracker.",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
+    },
+    {
+      "id": "rt-30",
+      "project_id": "rt",
+      "title": "Confirm which PLAUD fields come through Zapier",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Needed for pipeline auto-updates (rt-24).",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
+    },
+    {
+      "id": "rt-31",
+      "project_id": "rt",
+      "title": "Confirm the seller code format",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Needed for the at-dealer capture screen (rt-18).",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
     }
   ],
   "waiting_on": [
@@ -985,6 +1168,30 @@
       "status": "open",
       "answer": null,
       "resolved": null
+    },
+    {
+      "id": "d-rt-04",
+      "project_id": "rt",
+      "question": "How do assignment emails get sent?",
+      "options": [
+        "From the app",
+        "Zapier",
+        "Outlook"
+      ],
+      "raised": "2026-10-01",
+      "status": "open",
+      "answer": null,
+      "resolved": null
+    },
+    {
+      "id": "d-rt-05",
+      "project_id": "rt",
+      "question": "What is the final pipeline stage list, and what triggers each stage?",
+      "options": [],
+      "raised": "2026-10-01",
+      "status": "open",
+      "answer": null,
+      "resolved": null
     }
   ],
   "people": [
@@ -1065,6 +1272,19 @@
       ],
       "project_id": "rt",
       "date": "2026-10-01"
+    },
+    {
+      "id": "n-05",
+      "date": "2026-10-01",
+      "title": "Route Tracker pitch: field team feedback on the at-dealer flow",
+      "project_id": "rt",
+      "body": [
+        "Source: field team app walkthrough, late Sept 2026. Status: scoped, not started. Prompt drafted for Copart Genie.",
+        "Goal: make it fast for a rep to capture everything at one dealer and send assignments out before driving to the next stop. Must be done before go-live.",
+        "The flow needs to be much easier while standing at the dealer.",
+        "Everything should be captured and ready to go before the next stop.",
+        "Design around three moments: at the dealer, at the hotel (evening), at the office."
+      ]
     }
   ]
 }
