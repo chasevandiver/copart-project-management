@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-01 (GitHub access clarified)
+- Source: Chase explained the build repo is a Copart GitHub connected to Coolify; no direct access, but Work Claude can create and edit files there
+- Changed: rt-37 Next -> Done (not needed, build goes through Work Claude)
+- Changed: removed the GitHub access blocker from Route Tracker; added a "Build repo" link noting where it lives
+
 ## 2026-10-01 (Route Tracker plan approved)
 - Source: Chase's approved plan for the Route Tracker at-dealer flow, assignments and handoff
 - Resolved: d-rt-04 Phone mail share sheet now, company SMTP later

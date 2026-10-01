@@ -56,13 +56,16 @@
         {
           "label": "Live app",
           "where": "Chase's Coolify, app/ folder (separate repo, tracked only)"
+        },
+        {
+          "label": "Build repo",
+          "where": "Copart GitHub, connected directly to Coolify. No direct access for me; Work Claude creates and edits files there."
         }
       ],
       "blockers": [
         "Work Claude hit its API limit, so build work is paused",
         "IT servers block the PLAUD API, so full PLAUD to Zapier automation does not run",
         "No real weekly sales file yet, which blocks Price Check and most next steps",
-        "GitHub access needed before building through Copart Genie / Coolify (rt-37)",
         "Zapier can't connect to Google Sheets or Excel on my machine"
       ],
       "next_steps": [
@@ -1071,14 +1074,15 @@
     {
       "id": "rt-37",
       "project_id": "rt",
-      "title": "Get GitHub access for building through Copart Genie / Coolify",
-      "status": "Next",
+      "title": "Sort out GitHub access for building through Copart Genie / Coolify",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Blocks the build.",
+      "notes": "Not needed. The repo is a Copart GitHub that connects Coolify directly to Copart. I don't have direct access, but Work Claude can create and edit files there, so the build goes through Work Claude.",
       "created": "2026-10-01",
-      "updated": "2026-10-01"
+      "updated": "2026-10-01",
+      "completed": "2026-10-01"
     }
   ],
   "waiting_on": [
