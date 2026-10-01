@@ -41,16 +41,20 @@
     {
       "id": "rt",
       "name": "Route Tracker",
-      "status": "Blocked",
-      "summary": "Rebuilt Leo's Route Tracker with a real server side so data is captured securely. Same app as Leo's, more secure. Live on my Coolify in the app/ folder. Started building VIN capture (Price Check). At-dealer flow, assignments and handoff plan approved; ready for build in Copart Genie before go-live.",
+      "status": "In Progress",
+      "summary": "Rebuilt Leo's Route Tracker with a real server side so data is captured securely. Same app as Leo's, more secure. Lives on my Coolify in the app/ folder. Started building VIN capture (Price Check). At-dealer flow and walkthrough fixes built Oct 1; waiting on deploy.",
       "built": [
         "Name sign-in with team passcode; admin, rep and viewer roles enforced by the server",
         "One shared database so notes and visits sync across phones",
         "Offline queue with retry; photos stored on the server",
         "All 60 Fort Worth and Grand Prairie dealers with labels, confidence flags, caveats and pitch text",
-        "16 automated checks that must pass before each deploy",
         "Copart Dealer Sales Handoff tab and PLAUD intake exist in the app (parked for now)",
-        "PLAUD can fill the Zapier Table using the keyword \"Dealer Visit\" to log the visit summary"
+        "PLAUD can fill the Zapier Table using the keyword \"Dealer Visit\" to log the visit summary",
+        "At-dealer flow (Oct 1): Home tab, visit screen, car cards with a team picker, share-sheet send, evening Review and send, and a Cars tab",
+        "Automatic pipeline stages, editable and deletable notes, and teams 1 to 26 (Oct 1)",
+        "Fixed two phone-size bugs: the search box text and the Team 2 sort order (Oct 1)",
+        "Walkthrough fixes (Oct 1, not deployed): hot dealer, title front and back, license photos, sales.NN team emails, live \"N sent\" counts",
+        "51 automated tests, all passing; 375px preview checked"
       ],
       "links": [
         {
@@ -63,18 +67,21 @@
         }
       ],
       "blockers": [
-        "Work Claude hit its API limit, so build work is paused",
+        "Coolify's certificate showed as expired, so the Oct 1 deploy is unconfirmed (rt-40)",
+        "Walkthrough fixes push was blocked; not deployed (rt-41)",
+        "App URL only resolves on the Copart VPN, so Zapier can't reach it. PLAUD summaries get pasted in for now (d-rt-08)",
         "IT servers block the PLAUD API, so full PLAUD to Zapier automation does not run",
-        "No real weekly sales file yet, which blocks Price Check and most next steps",
+        "No real weekly sales file yet, which blocks Price Check",
         "Zapier can't connect to Google Sheets or Excel on my machine"
       ],
       "next_steps": [
-        "Build the at-dealer flow in Copart Genie before go-live (rt-18 to rt-28, rt-32). Raise the four Genie points first (rt-33)",
-        "Re-send the landing page / seamless sign-in task to Work Claude (rt-01)",
+        "Fix the Coolify certificate and confirm the deploy (rt-40)",
+        "Push and deploy the walkthrough fixes (rt-41)",
+        "Leo and Keon walk through the deployed app (rt-38, rt-39)",
+        "Phone test and data-loss check (rt-28); confirm hot send and the office tracker (rt-21, rt-23)",
+        "Decide on Google Places for \"Dealers near you\" (d-rt-07)",
         "Price Check milestone 1: sales importer plus backtest (rt-02)",
-        "Real dealer map pins (rt-03)",
-        "Yard picker (rt-04)",
-        "Close gaps from the old Route Tracker (rt-05)"
+        "Real dealer map pins (rt-03), yard picker (rt-04), old Route Tracker gaps (rt-05)"
       ],
       "category": "AI Tools"
     },
@@ -352,9 +359,9 @@
       "owner": "IT",
       "due": null,
       "priority": "normal",
-      "notes": "IT servers block the PLAUD API. Workaround today: PLAUD fills the Zapier Table using the keyword \"Dealer Visit\" to log the summary. PLAUD intake tab in the app is parked.",
+      "notes": "IT servers block the PLAUD API. Workaround today: PLAUD fills the Zapier Table using the keyword \"Dealer Visit\" to log the summary. PLAUD intake tab in the app is parked. Oct 1: Zapier also can't reach the app URL (VPN only). Agreed path for now is pasting the PLAUD summary into the app, so sensitive PLAUD data is not exposed publicly (d-rt-08).",
       "created": "2026-09-29",
-      "updated": "2026-09-29"
+      "updated": "2026-10-01"
     },
     {
       "id": "cdd-01",
@@ -718,10 +725,10 @@
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "",
+      "notes": "Oct 1: Work Claude tested a \"Dealers near you\" list in the Add a stop form. OpenStreetMap failed: none of the 20 independent lots on the Grand Prairie route came back, and only 9 of 72 results had phone numbers. Recommends Google Places (d-rt-07).",
       "idea": true,
       "created": "2026-09-30",
-      "updated": "2026-09-30"
+      "updated": "2026-10-01"
     },
     {
       "id": "rt-12",
@@ -876,47 +883,50 @@
       "id": "rt-18",
       "project_id": "rt",
       "title": "Build the at-dealer capture screen: PLAUD summary, seller code, number of assignments, notes",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Pre go-live, at-dealer flow. Plan approved, ready for build in Copart Genie. New Visit screen. Seller code is letters and numbers, auto-uppercased. PLAUD fills seller code and assignments.",
+      "notes": "Pre go-live, at-dealer flow. Plan approved, ready for build in Copart Genie. New Visit screen. Seller code is letters and numbers, auto-uppercased. PLAUD fills seller code and assignments. Oct 1: built by Work Claude and pushed; deploy not confirmed (Coolify certificate showed as expired).",
       "created": "2026-10-01",
-      "updated": "2026-10-01"
+      "updated": "2026-10-01",
+      "completed": "2026-10-01"
     },
     {
       "id": "rt-19",
       "project_id": "rt",
       "title": "Add assignment records: one per car, with title and vehicle photos grouped per car",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Pre go-live, at-dealer flow. Plan approved, ready for build in Copart Genie. Each assignment is its own record: Draft > Ready > Sent > Received, with Title and Vehicle photos per car. Confirm before lowering the car count if a card has photos.",
+      "notes": "Pre go-live, at-dealer flow. Plan approved, ready for build in Copart Genie. Each assignment is its own record: Draft > Ready > Sent > Received, with Title and Vehicle photos per car. Confirm before lowering the car count if a card has photos. Oct 1: built by Work Claude and pushed; deploy not confirmed (Coolify certificate showed as expired).",
       "created": "2026-10-01",
-      "updated": "2026-10-01"
+      "updated": "2026-10-01",
+      "completed": "2026-10-01"
     },
     {
       "id": "rt-20",
       "project_id": "rt",
       "title": "Add team routing: pick a team per assignment, \"Send to team\" emails the full assignment",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Pre go-live, at-dealer flow. Plan approved, ready for build in Copart Genie. Teams 1 to 26 seeded; existing Team 2 kept. Team email field added. Sends through the phone mail share sheet (photos attached, team email copied to clipboard). Company SMTP later (rt-34). Rosters and emails still needed (rt-29).",
+      "notes": "Pre go-live, at-dealer flow. Plan approved, ready for build in Copart Genie. Teams 1 to 26 seeded; existing Team 2 kept. Team email field added. Sends through the phone mail share sheet (photos attached, team email copied to clipboard). Company SMTP later (rt-34). Rosters and emails still needed (rt-29). Oct 1: built by Work Claude and pushed; deploy not confirmed (Coolify certificate showed as expired).",
       "created": "2026-10-01",
-      "updated": "2026-10-01"
+      "updated": "2026-10-01",
+      "completed": "2026-10-01"
     },
     {
       "id": "rt-21",
       "project_id": "rt",
       "title": "Add a hot flag: hot assignments send now, the rest batch into the evening handoff",
-      "status": "Next",
+      "status": "In Progress",
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Pre go-live, at-dealer flow. Plan approved, ready for build in Copart Genie. Hot send needs a tap to open the share sheet; preload the photos.",
+      "notes": "Pre go-live, at-dealer flow. Plan approved, ready for build in Copart Genie. Hot send needs a tap to open the share sheet; preload the photos. Oct 1: a hot dealer flag was built (not deployed yet). Confirm it covers hot assignments sending now and the rest batching into the evening handoff.",
       "created": "2026-10-01",
       "updated": "2026-10-01"
     },
@@ -924,23 +934,24 @@
       "id": "rt-22",
       "project_id": "rt",
       "title": "Build the evening handoff: review the day and send all ready assignments in one tap",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Pre go-live, at-dealer flow. Plan approved, ready for build in Copart Genie. Evening review screen in index.html.",
+      "notes": "Pre go-live, at-dealer flow. Plan approved, ready for build in Copart Genie. Evening review screen in index.html. Oct 1: built by Work Claude and pushed; deploy not confirmed (Coolify certificate showed as expired).",
       "created": "2026-10-01",
-      "updated": "2026-10-01"
+      "updated": "2026-10-01",
+      "completed": "2026-10-01"
     },
     {
       "id": "rt-23",
       "project_id": "rt",
       "title": "Build an assignments tracker: every assignment from the route trackers with team and status",
-      "status": "Next",
+      "status": "In Progress",
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Pre go-live, at-dealer flow. Plan approved, ready for build in Copart Genie. Office view with filters and Mark Received.",
+      "notes": "Pre go-live, at-dealer flow. Plan approved, ready for build in Copart Genie. Office view with filters and Mark Received. Oct 1: a Cars tab was built and pushed. Confirm it covers the office tracker (filters, Mark Received).",
       "created": "2026-10-01",
       "updated": "2026-10-01"
     },
@@ -948,13 +959,14 @@
       "id": "rt-24",
       "project_id": "rt",
       "title": "Make the pipeline update itself as fields fill in, including from PLAUD",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Pre go-live, at-dealer flow. Plan approved, ready for build in Copart Genie. Server-side pipeline, automatic only. Stage buttons removed. Dealers never move backward. Stages in d-rt-05. PLAUD \"assignments promised\" should not move the stage without rep confirmation.",
+      "notes": "Pre go-live, at-dealer flow. Plan approved, ready for build in Copart Genie. Server-side pipeline, automatic only. Stage buttons removed. Dealers never move backward. Stages in d-rt-05. PLAUD \"assignments promised\" should not move the stage without rep confirmation. Oct 1: built by Work Claude and pushed; deploy not confirmed (Coolify certificate showed as expired).",
       "created": "2026-10-01",
-      "updated": "2026-10-01"
+      "updated": "2026-10-01",
+      "completed": "2026-10-01"
     },
     {
       "id": "rt-25",
@@ -973,35 +985,37 @@
       "id": "rt-26",
       "project_id": "rt",
       "title": "Redo the first screen: handoff fully visible, plus a notes summary of today's dealers, open items, and ready or hot assignments",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Pre go-live, at-dealer flow. Plan approved, ready for build in Copart Genie. New Home tab is the rep's first screen: \"I'm at...\" banner, handoff panel, today's notes summary.",
+      "notes": "Pre go-live, at-dealer flow. Plan approved, ready for build in Copart Genie. New Home tab is the rep's first screen: \"I'm at...\" banner, handoff panel, today's notes summary. Oct 1: built by Work Claude and pushed; deploy not confirmed (Coolify certificate showed as expired).",
       "created": "2026-10-01",
-      "updated": "2026-10-01"
+      "updated": "2026-10-01",
+      "completed": "2026-10-01"
     },
     {
       "id": "rt-27",
       "project_id": "rt",
       "title": "Let reps add notes during or after a visit and reopen everything from the office",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Pre go-live, at-dealer flow. Plan approved, ready for build in Copart Genie. Notes become editable and deletable by their author.",
+      "notes": "Pre go-live, at-dealer flow. Plan approved, ready for build in Copart Genie. Notes become editable and deletable by their author. Oct 1: built by Work Claude and pushed; deploy not confirmed (Coolify certificate showed as expired).",
       "created": "2026-10-01",
-      "updated": "2026-10-01"
+      "updated": "2026-10-01",
+      "completed": "2026-10-01"
     },
     {
       "id": "rt-28",
       "project_id": "rt",
       "title": "Test on phone and confirm no existing rep data is lost",
-      "status": "Next",
+      "status": "In Progress",
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Pre go-live, at-dealer flow. Plan approved, ready for build in Copart Genie. Tests: migration, stages, sends, teams, seller code, notes. Bump the sw.js cache.",
+      "notes": "Pre go-live, at-dealer flow. Plan approved, ready for build in Copart Genie. Tests: migration, stages, sends, teams, seller code, notes. Bump the sw.js cache. Oct 1: 44 tests passed on the flow build, 51 of 51 on the walkthrough fixes, plus a 375px preview check. Still to do: test on a real phone after deploy and confirm no rep data was lost.",
       "created": "2026-10-01",
       "updated": "2026-10-01"
     },
@@ -1013,7 +1027,7 @@
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Teams 1 to 26 are seeded in the app; rosters and emails still to come. Needed for team routing (rt-20). Keep the emails in the app, not in this tracker.",
+      "notes": "Teams 1 to 26 are seeded in the app; rosters and emails still to come. Needed for team routing (rt-20). Keep the emails in the app, not in this tracker. Oct 1: team emails now follow the sales.NN pattern in the app. Rosters still needed.",
       "created": "2026-10-01",
       "updated": "2026-10-01"
     },
@@ -1083,13 +1097,14 @@
       "id": "rt-35",
       "project_id": "rt",
       "title": "Fix the Zap URL to /api/plaud-intake and retest",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "",
+      "notes": "Oct 1: retested. Zapier can't reach the new URL (ENOTFOUND) because it only resolves on the Copart VPN. Superseded: reps paste the PLAUD summary into the app for now (d-rt-08).",
       "created": "2026-10-01",
-      "updated": "2026-10-01"
+      "updated": "2026-10-01",
+      "completed": "2026-10-01"
     },
     {
       "id": "rt-36",
@@ -1099,7 +1114,7 @@
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Check against the network/VPN-only access from IT (w-01).",
+      "notes": "Check against the network/VPN-only access from IT (w-01). Oct 1: the app URL only resolves on the Copart VPN (Zapier got ENOTFOUND), so reps on cell data likely need the VPN.",
       "created": "2026-10-01",
       "updated": "2026-10-01"
     },
@@ -1269,6 +1284,30 @@
       "due": null,
       "priority": "normal",
       "notes": "Add them to people as they come in.",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
+    },
+    {
+      "id": "rt-40",
+      "project_id": "rt",
+      "title": "Fix the expired Coolify certificate and confirm the deploy",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "urgent",
+      "notes": "The flow build was pushed Oct 1 but the deploy couldn't be confirmed because Coolify's certificate showed as expired. Igor handles DNS enabling for the domain certificate (n-03). Leo and Keon's walkthroughs (rt-38, rt-39) need the deploy.",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
+    },
+    {
+      "id": "rt-41",
+      "project_id": "rt",
+      "title": "Push and deploy the walkthrough fixes",
+      "status": "Next",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "urgent",
+      "notes": "Built Oct 1: hot dealer, title front and back, license photos, sales.NN team emails, live \"N sent\" counts. 51 of 51 tests pass, 375px preview checked. The push was blocked, so it is not deployed.",
       "created": "2026-10-01",
       "updated": "2026-10-01"
     }
@@ -1527,6 +1566,32 @@
       "status": "open",
       "answer": null,
       "resolved": null
+    },
+    {
+      "id": "d-rt-07",
+      "project_id": "rt",
+      "question": "Use Google Places for the \"Dealers near you\" list in Add a stop?",
+      "options": [
+        "Yes, get a Google Cloud key and check with Copart first",
+        "No, drop the idea for now"
+      ],
+      "raised": "2026-10-01",
+      "status": "open",
+      "answer": null,
+      "resolved": null
+    },
+    {
+      "id": "d-rt-08",
+      "project_id": "rt",
+      "question": "How should PLAUD summaries reach the app, given Zapier can't reach the VPN-only URL?",
+      "options": [
+        "Paste the PLAUD summary into the app",
+        "Expose a public webhook"
+      ],
+      "raised": "2026-10-01",
+      "status": "resolved",
+      "answer": "Paste the PLAUD summary into the app for now. Sensitive PLAUD data stays off the public internet. Maybe ask IT or security about approved tools later.",
+      "resolved": "2026-10-01"
     }
   ],
   "people": [
@@ -1723,6 +1788,20 @@
         "Indiana: compared and merged Leo's lists. 3,865 to 4,396 leads.",
         "Open: New Mexico and other by-hand states, Colorado salvage and powersports, Leo's extra Indiana columns, score rebuild decision, IT or Legal check on phones and emails before moving to the work setup.",
         "Separately: several design-plugin connectors (Asana, Atlassian, Figma, Intercom, Linear, Notion, Slack) need authorizing in claude.ai connector settings. Asana fails to connect. Not needed for this work."
+      ]
+    },
+    {
+      "id": "n-10",
+      "date": "2026-10-01",
+      "title": "Route Tracker: Work Claude day summary",
+      "project_id": "rt",
+      "body": [
+        "Five Work Claude sessions today: flow redesign, dealership recommendations, Zapier webhook, plan edits, and building the walkthrough fixes.",
+        "Flow redesign: Home tab, visit screen, car cards with a team picker, share-sheet send, evening Review and send, and a Cars tab. Automatic pipeline stages, editable and deletable notes, teams 1 to 26. Fixed the search box text and Team 2 sort order on phones. 44 tests passed, pushed to GitHub. Deploy not confirmed because Coolify's certificate showed as expired.",
+        "Recommended dealerships: idea is a \"Dealers near you\" list in Add a stop. OpenStreetMap test failed (none of the 20 independent Grand Prairie lots came back; 9 of 72 results had phones). Recommends Google Places, which needs a Google Cloud key and a check with Copart first.",
+        "Zapier webhook: Zapier can't reach the new URL (ENOTFOUND) because it only resolves on the Copart VPN. Sensitive PLAUD data should not be exposed publicly, so for now reps paste the PLAUD summary into the app. Possible IT or security question about approved tools later.",
+        "Plan edits: mapped the code and wrote the walkthrough-fixes plan.",
+        "Walkthrough fixes built: hot dealer, title front and back, license photos, sales.NN team emails, live \"N sent\" counts. 51 of 51 tests pass, 375px preview checked. Not deployed; the push was blocked."
       ]
     }
   ]

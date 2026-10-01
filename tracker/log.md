@@ -2,6 +2,18 @@
 
 Newest entry first.
 
+## 2026-10-01 (Route Tracker build day)
+- Source: Work Claude's summary of five Route Tracker sessions today
+- Changed: rt-18, rt-19, rt-20, rt-22, rt-24, rt-26, rt-27 Next -> Done (built and pushed, deploy unconfirmed)
+- Changed: rt-21, rt-23, rt-28 Next -> In Progress (built, need confirming or a phone test)
+- Changed: rt-35 Next -> Done (superseded: Zapier can't reach the VPN-only URL)
+- Changed: notes on rt-10, rt-11, rt-29, rt-36
+- Changed: Route Tracker Blocked -> In Progress; summary, built list, blockers (removed the Work Claude API limit) and next steps
+- Added: rt-40 "Fix the expired Coolify certificate and confirm the deploy" (Me, urgent), rt-41 "Push and deploy the walkthrough fixes" (Work Claude, urgent)
+- Added: decision d-rt-07 (Google Places for "Dealers near you")
+- Resolved: d-rt-08 Paste the PLAUD summary into the app for now
+- Added: note n-10 "Route Tracker: Work Claude day summary"
+
 ## 2026-10-01 (Copart Dealer Sales and Marketing sync)
 - Source: Chase's meeting summary of the sync with Ken, Kyle and Noelle
 - Changed: note n-08 rewritten as the full meeting summary
