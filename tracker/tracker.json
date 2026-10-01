@@ -1322,6 +1322,19 @@
       "notes": "",
       "created": "2026-10-01",
       "updated": "2026-10-01"
+    },
+    {
+      "id": "gen-22",
+      "project_id": "general",
+      "title": "Send Ken the weekly update",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-01",
+      "priority": "high",
+      "notes": "Board > Weekly update. Check the highlights with Edit, then Copy text into an email or use Print or PDF.",
+      "recurring": "weekly",
+      "created": "2026-10-01",
+      "updated": "2026-10-01"
     }
   ],
   "waiting_on": [
@@ -1814,6 +1827,28 @@
         "Zapier webhook: Zapier can't reach the new URL (ENOTFOUND) because it only resolves on the Copart VPN. Sensitive PLAUD data should not be exposed publicly, so for now reps paste the PLAUD summary into the app. Possible IT or security question about approved tools later.",
         "Plan edits: mapped the code and wrote the walkthrough-fixes plan.",
         "Walkthrough fixes built: hot dealer, title front and back, license photos, sales.NN team emails, live \"N sent\" counts. 51 of 51 tests pass, 375px preview checked. Not deployed; the push was blocked."
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "week_ending": "2026-10-01",
+      "headline": "First week in the role: a 28-state dealer leads map, a field-ready Route Tracker build, and Marketing partners lined up.",
+      "wins": [
+        "Built a dealer leads site covering 28 states plus DC: 92,492 dealer leads focused on car and wholesale dealers, with every state checked and logged.",
+        "Merged Leo's Indiana lists into the leads. Indiana grew from 3,865 to 4,396 leads, including 113 credit unions.",
+        "Built the Route Tracker at-dealer flow from field team feedback: capture at the dealer, send assignments to the right team, and review in the evening. 51 automated tests passing.",
+        "Set a baseline for how ChatGPT, Claude and Gemini answer dealer questions: Copart named in 60% of answers, with selling questions the biggest gap.",
+        "Met with Marketing (Kyle Cochran and Noelle Goodman) and lined up contacts for FullStory, analytics data and campaigns."
+      ],
+      "next": [
+        "Get the Route Tracker deployed and walked through with Leo and Keon",
+        "Set up FullStory and analytics data access",
+        "Draft the field offers plus SMS and email outline for your review",
+        "Take the second DFW inventory snapshot so aged-inventory scoring turns on"
+      ],
+      "asks": [
+        "Point me to who can approve using Copart sales data in a field tool (Route Tracker Price Check)"
       ]
     }
   ]

@@ -48,6 +48,8 @@ Dates are `YYYY-MM-DD`. Use `null` for unknown dates, not guesses.
 
 **notes[]**: `id` (`n-NN`), `date`, `title`, `project_id`, `body[]` (one string per point). Notes attach to a project (or `general`). Newest last.
 
+**reports[]** (optional): `week_ending` (the Thursday it goes out), `headline`, `wins[]`, `next[]`, `asks[]`. Chase's own words for the weekly update to Ken. One per week. Everything else on the update is built from the tracker.
+
 **meta.last_updated**: set to today on every update.
 
 ## UPDATE protocol
@@ -95,6 +97,7 @@ Sidebar views (`app/(app)/`):
 - Inbox (`/inbox`): items with `project_id: "general"`
 - Today (`/`): my overdue, due today, coming up this week, urgent or in progress
 - Upcoming (`/upcoming`): my dated to-dos for 14 days, then undated by project
+- Weekly update (`/report?week=`): the Thursday update for Ken. Week runs Friday to Thursday. Chase's highlights, next week and asks (Edit, stored in `reports[]`), plus counts, project cards, decisions and open questions for Ken built from the tracker. Copy text and Print or PDF. Built in `lib/report.ts`
 - Ask, Waiting on, Decide, Delegated (`/ask`, `/waiting`, `/decide`, `/delegated`): open loops. Delegated is open tasks owned by anyone but `Me`; they stay out of Today and Upcoming.
 - Ideas, Notes, Logbook (`/ideas`, `/notes`, `/logbook`)
 - People (`/people/[slug]`, slug from the name, e.g. `ken-rion`): one page per person in `people`: questions to ask them, waiting on them, what they own, to-dos and notes that mention their first name, then answered and done. `/people` lists everyone. Add a person from New (Person) or the Add person button; edit (including rename and contact) with Edit on their page. A rename moves their tasks, questions and waiting-on items to the new name.

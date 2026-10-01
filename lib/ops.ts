@@ -26,6 +26,7 @@ export type Op =
   | { type: "question.delete"; id: string }
   | { type: "decision.resolve"; id: string; answer: string }
   | { type: "project.add"; id: string; name: string; category: string; status?: string; summary?: string; idea?: boolean }
+  | { type: "report.save"; week_ending: string; headline: string; wins: string; next: string; asks: string }
   | { type: "person.add"; name: string; title?: string; department?: string; relationship?: string }
   | { type: "person.update"; name: string; fields: { name: string; title: string; department: string; relationship: string; contact: string } };
 
@@ -338,6 +339,18 @@ export function applyOp(input: Tracker, op: Op, today: string): { tracker: Track
         next_steps: [],
       });
       summary = `add project ${id}`;
+      break;
+    }
+    case "report.save": {
+      if (!DATE.test(op.week_ending)) throw new OpError("Bad week");
+      const lines = (s: unknown) => (typeof s === "string" && s.trim() ? noteBody(s).slice(0, 20).map((l) => clean(l, 400)) : []);
+      const fields = { headline: clean(op.headline ?? "", 300), wins: lines(op.wins), next: lines(op.next), asks: lines(op.asks) };
+      t.reports ??= [];
+      const r = t.reports.find((x) => x.week_ending === op.week_ending);
+      if (r) Object.assign(r, fields);
+      else t.reports.push({ week_ending: op.week_ending, ...fields });
+      t.reports.sort((a, b) => a.week_ending.localeCompare(b.week_ending));
+      summary = `edit weekly update ${op.week_ending}`;
       break;
     }
     case "person.add": {

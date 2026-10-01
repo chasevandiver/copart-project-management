@@ -14,6 +14,7 @@ const MAIN: [string, string, string, keyof Counts | null][] = [
   ["/inbox", "Inbox", "inbox", "inbox"],
   ["/", "Today", "today", "today"],
   ["/upcoming", "Upcoming", "upcoming", null],
+  ["/report", "Weekly update", "report", null],
 ];
 const LOOPS: [string, string, string, keyof Counts | null][] = [
   ["/ask", "Ask", "question", "ask"],

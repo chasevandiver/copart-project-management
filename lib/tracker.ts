@@ -105,6 +105,15 @@ export type Note = {
   body: string[];
 };
 
+/** Chase's own words for the weekly update to Ken. One per week, keyed by the Thursday it goes out. */
+export type Report = {
+  week_ending: string;
+  headline: string;
+  wins: string[];
+  next: string[];
+  asks: string[];
+};
+
 export type Tracker = {
   meta: { owner: string; role: string; last_updated: string };
   categories: Category[];
@@ -116,6 +125,7 @@ export type Tracker = {
   decisions: Decision[];
   people: Person[];
   notes: Note[];
+  reports?: Report[];
 };
 
 export function projectName(t: Tracker, id: string): string {

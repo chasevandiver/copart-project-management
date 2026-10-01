@@ -2,6 +2,12 @@
 
 Newest entry first.
 
+## 2026-10-01 (weekly update for Ken)
+- Source: Chase asked for a Thursday update for Ken on the board
+- Board: new Weekly update page (sidebar, /report): headline, highlights, numbers for the week, project cards, decisions, next week and where Ken can help; Copy text and Print or PDF; Edit saves to the new reports[] list
+- Added: report for the week ending 2026-10-01 (draft highlights for Chase to check)
+- Added: gen-22 "Send Ken the weekly update" (Me, high, weekly, due 2026-10-01)
+
 ## 2026-10-01 (Route Tracker build day)
 - Source: Work Claude's summary of five Route Tracker sessions today
 - Changed: rt-18, rt-19, rt-20, rt-22, rt-24, rt-26, rt-27 Next -> Done (built and pushed, deploy unconfirmed)

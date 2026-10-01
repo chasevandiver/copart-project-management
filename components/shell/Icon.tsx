@@ -46,6 +46,26 @@ const PATHS: Record<string, React.ReactNode> = {
       <path d="m10.5 10.5 3.5 3.5" />
     </>
   ),
+  report: (
+    <>
+      <path d="M2.5 13.5h11" />
+      <path d="M4.5 11V7.5M8 11V4M11.5 11V6" />
+    </>
+  ),
+  star: <path d="m8 1.8 1.9 3.9 4.3.6-3.1 3 .7 4.3L8 11.6l-3.8 2 .7-4.3-3.1-3 4.3-.6z" />,
+  check: <path d="m3.5 8.5 3 3 6-7" />,
+  copy: (
+    <>
+      <rect x="5" y="5" width="8.5" height="8.5" rx="1.5" />
+      <path d="M11 5V3.5A1 1 0 0 0 10 2.5H3.5a1 1 0 0 0-1 1V10a1 1 0 0 0 1 1H5" />
+    </>
+  ),
+  print: (
+    <>
+      <path d="M4.5 6V2.5h7V6M4.5 11.5h-2v-5h11v5h-2" />
+      <rect x="4.5" y="9.5" width="7" height="4" />
+    </>
+  ),
   plus: <path d="M8 3v10M3 8h10" />,
   project: <circle cx="8" cy="8" r="5.5" />,
   close: <path d="M4 4l8 8M12 4l-8 8" />,
