@@ -2,7 +2,7 @@
 // Server runs these on the latest tracker.json before committing, so a retry after a
 // conflict just re-applies the op to the newer file.
 import { addDaysISO } from "./dates";
-import { PRIORITIES, STATUSES, type Priority, type Status, type Task, type Tracker } from "./tracker";
+import { CATEGORIES, PRIORITIES, STATUSES, type Category, type Priority, type Status, type Task, type Tracker } from "./tracker";
 
 export type TaskFields = Partial<Pick<Task, "title" | "project_id" | "status" | "owner" | "priority" | "due" | "notes">>;
 
@@ -24,7 +24,8 @@ export type Op =
   | { type: "question.answer"; id: string; answer: string }
   | { type: "question.reopen"; id: string }
   | { type: "question.delete"; id: string }
-  | { type: "decision.resolve"; id: string; answer: string };
+  | { type: "decision.resolve"; id: string; answer: string }
+  | { type: "project.add"; id: string; name: string; category: string; status?: string; summary?: string; idea?: boolean };
 
 export class OpError extends Error {}
 
@@ -60,6 +61,18 @@ function nextSimpleId(ids: string[], prefix: string): string {
     .map((id) => parseInt(id.slice(prefix.length + 1), 10))
     .filter((n) => !Number.isNaN(n));
   return `${prefix}-${String((nums.length ? Math.max(...nums) : 0) + 1).padStart(2, "0")}`;
+}
+
+/** Short project id from a name: initials of each word ("Dealer Hub" -> "dh"), unique. */
+export function suggestProjectId(name: string, taken: string[]): string {
+  const words = name.toLowerCase().replace(/[^a-z0-9\s]/g, " ").split(/\s+/).filter(Boolean);
+  let base = words.length > 1 ? words.map((w) => w[0]).join("") : (words[0] ?? "").slice(0, 4);
+  base = base.slice(0, 12) || "proj";
+  if (base.length < 2) base = (words[0] ?? "p").slice(0, 3).padEnd(2, "x");
+  const used = new Set([...taken, "general", "gen"]);
+  let id = base;
+  for (let n = 2; used.has(id); n++) id = `${base}${n}`;
+  return id;
 }
 
 function checkProject(t: Tracker, id: string) {
@@ -299,6 +312,30 @@ export function applyOp(input: Tracker, op: Op, today: string): { tracker: Track
       d.answer = answer;
       d.resolved = today;
       summary = `resolve ${d.id}`;
+      break;
+    }
+    case "project.add": {
+      const id = clean(op.id, 12).toLowerCase();
+      if (!/^[a-z][a-z0-9]{1,11}$/.test(id)) throw new OpError("Short id: 2 to 12 letters or numbers, starting with a letter");
+      if (id === "general" || id === "gen" || t.projects.some((p) => p.id === id)) throw new OpError(`Id "${id}" is taken. Pick another.`);
+      const name = clean(op.name, 100);
+      if (!name) throw new OpError("Give the project a name");
+      if (!CATEGORIES.includes(op.category as Category)) throw new OpError("Pick a goal area");
+      const status = (op.status ?? (op.idea ? "Backlog" : "Next")) as Status;
+      if (!STATUSES.includes(status)) throw new OpError("Unknown status");
+      t.projects.push({
+        id,
+        name,
+        category: op.category as Category,
+        status,
+        ...(op.idea ? { idea: true } : {}),
+        summary: cleanNotes(op.summary ?? ""),
+        built: [],
+        links: [],
+        blockers: [],
+        next_steps: [],
+      });
+      summary = `add project ${id}`;
       break;
     }
     default:

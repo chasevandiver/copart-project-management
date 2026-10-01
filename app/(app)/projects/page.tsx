@@ -9,7 +9,7 @@ export default async function ProjectsPage() {
   const t = await getTracker();
   return (
     <>
-      <PageHead icon="grid" title="All projects" sub="Grouped by goal area. Open one for its to-dos, questions, ideas and notes." add={false}>
+      <PageHead icon="grid" title="All projects" sub="Grouped by goal area. Open one for its to-dos, questions, ideas and notes." add={{ kind: "project", label: "New project" }}>
         <Link href="/classic/board" className="s-textlink">
           Kanban board view &rarr;
         </Link>

@@ -4,7 +4,7 @@ Project tracker for Chase, Digital Engagement Manager at Copart, supporting Ken 
 
 - `tracker/tracker.json` is the single source of truth. Edit it by hand; there is no database.
 - `tracker/log.md` has one dated entry per update.
-- The board (Next.js at the repo root) reads tracker.json live from GitHub on every request. Chase can also edit from the board (check off, add action items, ideas, notes and questions, set dates, answer questions, resolve decisions, mark waiting-on received). Those edits are committed to `main` as `Board: ...` commits.
+- The board (Next.js at the repo root) reads tracker.json live from GitHub on every request. Chase can also edit from the board (check off, add projects, action items, ideas, notes and questions, set dates, answer questions, resolve decisions, mark waiting-on received). Those edits are committed to `main` as `Board: ...` commits.
 - Tracker updates commit straight to `main`. **Always `git pull origin main` before editing tracker.json**, because the board may have committed since your last pull.
 - `npm run validate` checks tracker.json. Run it before every commit. It also runs before every build.
 
