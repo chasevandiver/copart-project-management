@@ -708,13 +708,14 @@
       "id": "gen-07",
       "project_id": "general",
       "title": "Close the week one questions with Ken and IT",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-02",
       "priority": "high",
       "notes": "Questions list is in the dfw-dealer-digital docs. Overlaps with the open IT items (w-01 to w-04) and gen-02, gen-03.",
       "created": "2026-09-29",
-      "updated": "2026-09-29"
+      "updated": "2026-10-02",
+      "completed": "2026-10-02"
     },
     {
       "id": "pm-03",
