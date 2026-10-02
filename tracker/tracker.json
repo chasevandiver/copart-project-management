@@ -1405,14 +1405,14 @@
       "id": "gen-24",
       "project_id": "general",
       "title": "Susan can send me any reports needed",
-      "status": "Next",
+      "status": "Done",
       "owner": "Susan Truett",
       "due": null,
       "priority": "normal",
       "notes": "",
       "created": "2026-10-02",
       "updated": "2026-10-02",
-      "completed": null
+      "completed": "2026-10-02"
     }
   ],
   "waiting_on": [
