@@ -1334,13 +1334,14 @@
       "id": "gen-21",
       "project_id": "general",
       "title": "Send a chat to Leo thanking him for guiding me through first week",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-02",
       "priority": "high",
       "notes": "",
       "created": "2026-10-01",
-      "updated": "2026-10-01"
+      "updated": "2026-10-02",
+      "completed": "2026-10-02"
     },
     {
       "id": "gen-22",
