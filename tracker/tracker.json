@@ -948,13 +948,14 @@
       "id": "rt-23",
       "project_id": "rt",
       "title": "Build an assignments tracker: every assignment from the route trackers with team and status",
-      "status": "In Progress",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "high",
       "notes": "Pre go-live, at-dealer flow. Plan approved, ready for build in Copart Genie. Office view with filters and Mark Received. Oct 1: a Cars tab was built and pushed. Confirm it covers the office tracker (filters, Mark Received).",
       "created": "2026-10-01",
-      "updated": "2026-10-01"
+      "updated": "2026-10-02",
+      "completed": "2026-10-02"
     },
     {
       "id": "rt-24",
