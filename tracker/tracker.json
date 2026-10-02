@@ -1964,6 +1964,33 @@
       ],
       "project_id": "rt",
       "date": "2026-10-02"
+    },
+    {
+      "id": "n-13",
+      "title": "Checking Route Locations",
+      "body": [
+        "I went through to verify if these spots were open and either dealers or wholesalers, I have the notes before on the planned lists before the overflow content. Some on the list are not dealers. I also want it to pull the last  assignment date from the excel sheet to show when the last assignment was on inactive copart status dealers.",
+        "Monday:",
+        "Oak Motors (Inactive Seller, No assignments in last 5 years)",
+        "Tuesday:",
+        "Motowise (Inactive Seller, 2/25/2025)",
+        "Pete's Service Center - Auto Repair Shop",
+        "Pull-A-Part - Auto Parts Store",
+        "Reyes Auto Sales - Permanently Closed",
+        "Wednesday:",
+        "465 Auto Sales - (Inactive Seller, 6/27/2023)",
+        "RC Auto Sales - (Inactive Seller, No Assignment in 5 Years)",
+        "Butler Auto Group's former dealerships in Indianapolis were acquired and rebranded by larger automotive groups, such as Ed Napleton Auto Group and Asbury Automotive Group",
+        "Arctic Cars (Test) - is not a real dealer",
+        "title assistance program indianapolis - not a real dealer",
+        "Thursday:",
+        "The Car Vault - Car Restoration Service",
+        "Titus Transmissions - Transmission Shop (Inactive Seller/No assignment 5 years)",
+        "Curtis Auto Sales - (Inactive Seller, Last Assign 11/12/2024)",
+        "Speed Automotive - (Auto repair Shop)"
+      ],
+      "project_id": "rt",
+      "date": "2026-10-02"
     }
   ],
   "reports": [
