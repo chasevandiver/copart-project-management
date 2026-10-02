@@ -1025,13 +1025,14 @@
       "id": "rt-29",
       "project_id": "rt",
       "title": "Get team rosters and emails for all 26 teams",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "high",
       "notes": "Teams 1 to 26 are seeded in the app; rosters and emails still to come. Needed for team routing (rt-20). Keep the emails in the app, not in this tracker. Oct 1: team emails now follow the sales.NN pattern in the app. Rosters still needed.",
       "created": "2026-10-01",
-      "updated": "2026-10-01"
+      "updated": "2026-10-02",
+      "completed": "2026-10-02"
     },
     {
       "id": "rt-30",
