@@ -858,13 +858,14 @@
       "id": "pa-01",
       "project_id": "pa",
       "title": "Set up Keyword Phrase or Safeguard that if person being recorded does not give consent",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-01",
       "priority": "urgent",
       "notes": "",
       "created": "2026-10-01",
-      "updated": "2026-10-01"
+      "updated": "2026-10-02",
+      "completed": "2026-10-02"
     },
     {
       "id": "gen-13",
