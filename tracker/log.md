@@ -2,6 +2,12 @@
 
 Newest entry first.
 
+## 2026-10-02 (weekly view for Oct 5 to 9)
+- Source: Chase asked to add the other ideas and plan the week as a whole, not day by day
+- Changed: rt-42, gen-15, gen-16, hub-02, udm-01, gen-17, audit-07, hub-01, gen-19 due 2026-10-09 (were spread Oct 5 to 8)
+- Changed: gen-18, gen-20, gen-09 due 2026-10-09; audit-01, audit-02 Backlog -> Next, due 2026-10-09
+- Added: note n-11 "Plan for the week of Oct 5 (Ken out Mon to Thu)"
+
 ## 2026-10-02 (plan for Ken's field week)
 - Source: Chase asked for action items for Oct 5 to 9 while Ken is out Mon to Thu using the Route Tracker
 - Added: rt-42 "Support Ken's field week on the Route Tracker" (Me, high, due 2026-10-05)

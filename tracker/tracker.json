@@ -593,7 +593,7 @@
       "title": "Define the hub: tools and agents to include, where it lives, who can get in",
       "status": "Next",
       "owner": "Me",
-      "due": "2026-10-08",
+      "due": "2026-10-09",
       "priority": "normal",
       "notes": "Starting list: Route Tracker, Copart Dealer Digital, Leo's Connecticut app, this PM Board. Idea stage. Oct 2: draft it from the list made with Leo (hub-02).",
       "created": "2026-09-29",
@@ -603,25 +603,25 @@
       "id": "audit-01",
       "project_id": "audit",
       "title": "Email: inventory current Copart Dealer Sales email campaigns",
-      "status": "Backlog",
+      "status": "Next",
       "owner": "Me",
-      "due": null,
+      "due": "2026-10-09",
       "priority": "normal",
       "notes": "Who sends them, audience, frequency, content, results if available. Needs Marketing contacts (gen-05) and Salesforce campaign history (gen-04).",
       "created": "2026-09-29",
-      "updated": "2026-09-29"
+      "updated": "2026-10-02"
     },
     {
       "id": "audit-02",
       "project_id": "audit",
       "title": "Social: inventory Copart Dealer Sales activity on each channel",
-      "status": "Backlog",
+      "status": "Next",
       "owner": "Me",
-      "due": null,
+      "due": "2026-10-09",
       "priority": "normal",
       "notes": "Accounts, posting cadence, content types, engagement. Needs Marketing contacts (gen-05).",
       "created": "2026-09-29",
-      "updated": "2026-09-29"
+      "updated": "2026-10-02"
     },
     {
       "id": "audit-04",
@@ -764,11 +764,11 @@
       "title": "Find out if there is a one pager for what CDS does and separates CDS from the Pack. If not one, work to create one",
       "status": "Next",
       "owner": "Me",
-      "due": null,
+      "due": "2026-10-09",
       "priority": "normal",
-      "notes": "",
+      "notes": "Oct 2: week of Oct 5, if time.",
       "created": "2026-09-30",
-      "updated": "2026-09-30"
+      "updated": "2026-10-02"
     },
     {
       "id": "rt-13",
@@ -1227,7 +1227,7 @@
       "title": "Contact Justin Alexander about FullStory access",
       "status": "Next",
       "owner": "Me",
-      "due": "2026-10-05",
+      "due": "2026-10-09",
       "priority": "high",
       "notes": "Product team owns FullStory. Session recordings and heatmaps for the site. From the Oct 1 sync (n-08). Oct 2: needed for the FullStory review next week (audit-07).",
       "created": "2026-10-01",
@@ -1239,7 +1239,7 @@
       "title": "Contact Tyler Amos and Pushkaraj Jadhav about data access",
       "status": "Next",
       "owner": "Me",
-      "due": "2026-10-05",
+      "due": "2026-10-09",
       "priority": "high",
       "notes": "Ask about database access and what down-funnel data exists, to query myself or through their team. From the Oct 1 sync (n-08). Oct 2: first ask is the active and inactive Copart dealer list for the lead match (udm-01).",
       "created": "2026-10-01",
@@ -1251,7 +1251,7 @@
       "title": "Meet Lauren Harrington about past and current seller and buyer campaigns",
       "status": "Next",
       "owner": "Me",
-      "due": "2026-10-07",
+      "due": "2026-10-09",
       "priority": "normal",
       "notes": "She runs digital for seller and buyer campaigns. From the Oct 1 sync (n-08).",
       "created": "2026-10-01",
@@ -1263,11 +1263,11 @@
       "title": "Learn the Copart GO app",
       "status": "Next",
       "owner": "Me",
-      "due": null,
+      "due": "2026-10-09",
       "priority": "normal",
-      "notes": "The seller app dealers use to list vehicles. Copart Dealer Sales agent reviews of it on the App Store came up in my research.",
+      "notes": "The seller app dealers use to list vehicles. Copart Dealer Sales agent reviews of it on the App Store came up in my research. Oct 2: week of Oct 5. Helps with the field offers outline (gen-19).",
       "created": "2026-10-01",
-      "updated": "2026-10-01"
+      "updated": "2026-10-02"
     },
     {
       "id": "gen-19",
@@ -1275,7 +1275,7 @@
       "title": "Draft an outline for field offers plus SMS and email, and review it with Ken",
       "status": "Next",
       "owner": "Me",
-      "due": "2026-10-08",
+      "due": "2026-10-09",
       "priority": "high",
       "notes": "Ken wants offers reps can take to dealerships. Three-prong approach (see q-04). Data rules in q-06. Oct 2: draft while Ken is out, review with him Friday Oct 9 (gen-23).",
       "created": "2026-10-01",
@@ -1287,11 +1287,11 @@
       "title": "Get Noelle's list of contacts for events, content and creative",
       "status": "Next",
       "owner": "Me",
-      "due": null,
+      "due": "2026-10-09",
       "priority": "normal",
       "notes": "Add them to people as they come in.",
       "created": "2026-10-01",
-      "updated": "2026-10-01"
+      "updated": "2026-10-02"
     },
     {
       "id": "rt-40",
@@ -1348,7 +1348,7 @@
       "title": "Support Ken's field week on the Route Tracker: check in daily and log his feedback",
       "status": "Next",
       "owner": "Me",
-      "due": "2026-10-05",
+      "due": "2026-10-09",
       "priority": "high",
       "notes": "Ken is out Mon to Thu (Oct 5 to 8) using the Route Tracker. Quick check-in each day: what worked, what broke, what he wished it did. Log fixes as rt tasks for Work Claude. Bring the list to the Friday debrief (gen-23).",
       "created": "2026-10-02",
@@ -1360,7 +1360,7 @@
       "title": "Match US leads to Copart dealer status: active, inactive, or no status",
       "status": "Next",
       "owner": "Me",
-      "due": "2026-10-07",
+      "due": "2026-10-09",
       "priority": "high",
       "notes": "Three buckets so leads don't overlap: active Copart dealers (exclude or upsell), inactive (win-back), no status (new prospects). Needs the Copart dealer list from Tyler Amos or Pushkaraj Jadhav (gen-16). Copart dealer data stays on the work setup: do not put it in this repo or on the public dfw-dealer-digital site (see q-03). Picks up the active-dealer exclusion from gen-14.",
       "created": "2026-10-02",
@@ -1372,7 +1372,7 @@
       "title": "Dig into FullStory: how dealers use the Copart Dealer Sales pages",
       "status": "Next",
       "owner": "Me",
-      "due": "2026-10-08",
+      "due": "2026-10-09",
       "priority": "high",
       "notes": "Follow-up to the Oct 1 Marketing and Copart Dealer Sales sync (n-08). Watch session recordings and heatmaps: where dealers scroll, click, and drop off on sign-up and the dealer pages. Write the top 3 to 5 findings for the Friday debrief (gen-23). Needs access from Justin Alexander (gen-15). Feeds the website audit (audit-03).",
       "created": "2026-10-02",
@@ -1384,7 +1384,7 @@
       "title": "Meet Leo to list every AI tool we've each built for the hub",
       "status": "Next",
       "owner": "Me",
-      "due": "2026-10-06",
+      "due": "2026-10-09",
       "priority": "high",
       "notes": "One list: tool, what it does, who built it, where it lives, who uses it. Mine: Route Tracker, Copart Dealer Digital, PM Board, Plaud setup. Leo's: Connecticut app, lead setup page, landing page, anything else. Also covers gen-10 (compare lead sites).",
       "created": "2026-10-02",
@@ -1893,6 +1893,24 @@
         "Zapier webhook: Zapier can't reach the new URL (ENOTFOUND) because it only resolves on the Copart VPN. Sensitive PLAUD data should not be exposed publicly, so for now reps paste the PLAUD summary into the app. Possible IT or security question about approved tools later.",
         "Plan edits: mapped the code and wrote the walkthrough-fixes plan.",
         "Walkthrough fixes built: hot dealer, title front and back, license photos, sales.NN team emails, live \"N sent\" counts. 51 of 51 tests pass, 375px preview checked. Not deployed; the push was blocked."
+      ]
+    },
+    {
+      "id": "n-11",
+      "date": "2026-10-02",
+      "title": "Plan for the week of Oct 5 (Ken out Mon to Thu)",
+      "project_id": "general",
+      "body": [
+        "Ken is in the field Mon to Thu using the Route Tracker. Everything below is due by Fri Oct 9, when he's back.",
+        "Before Monday: Coolify certificate and walkthrough fixes deployed so Ken has the latest app (rt-40, rt-41).",
+        "Route Tracker: check in with Ken during the week and log his feedback (rt-42).",
+        "Leads: get the active and inactive Copart dealer list from Tyler Amos or Pushkaraj Jadhav (gen-16), then match US leads to active, inactive or no status (udm-01). Copart dealer data stays on the work setup.",
+        "FullStory: get access from Justin Alexander (gen-15), then review how dealers use the Copart Dealer Sales pages and write the top findings (audit-07).",
+        "Tools hub: meet Leo to list every tool we've each built (hub-02), then draft the hub definition (hub-01).",
+        "Marketing groundwork: meet Lauren Harrington (gen-17), get Noelle's contacts for events, content and creative (gen-20), inventory Copart Dealer Sales email and social (audit-01, audit-02).",
+        "Field offers: learn the Copart GO app (gen-18) and draft the field offers plus SMS and email outline (gen-19).",
+        "If time: one pager on what Copart Dealer Sales does and how it differs (gen-09).",
+        "Friday: debrief Ken on all of the above (gen-23)."
       ]
     }
   ],
