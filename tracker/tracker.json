@@ -2,7 +2,7 @@
   "meta": {
     "owner": "Chase",
     "role": "Digital Engagement Manager, supporting Ken Rion (SVP of Dealer Sales)",
-    "last_updated": "2026-10-01"
+    "last_updated": "2026-10-02"
   },
   "categories": [
     "AI Tools",
@@ -922,13 +922,14 @@
       "id": "rt-21",
       "project_id": "rt",
       "title": "Add a hot flag: hot assignments send now, the rest batch into the evening handoff",
-      "status": "In Progress",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "high",
       "notes": "Pre go-live, at-dealer flow. Plan approved, ready for build in Copart Genie. Hot send needs a tap to open the share sheet; preload the photos. Oct 1: a hot dealer flag was built (not deployed yet). Confirm it covers hot assignments sending now and the rest batching into the evening handoff.",
       "created": "2026-10-01",
-      "updated": "2026-10-01"
+      "updated": "2026-10-02",
+      "completed": "2026-10-02"
     },
     {
       "id": "rt-22",
