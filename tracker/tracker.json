@@ -240,6 +240,17 @@
         "Get the active and inactive Copart dealer list from Tyler Amos or Pushkaraj Jadhav (gen-16)",
         "Match leads to Copart dealer status: active, inactive, no status (udm-01)"
       ]
+    },
+    {
+      "id": "cceib",
+      "name": "Cars & Cocktails Event in Boston",
+      "category": "AI Tools",
+      "status": "Next",
+      "summary": "Email going out on the event in Boston for Dealers. On the current flyer get something like a pre-event survey on any questions they would want to ask at the event, when they last worked with Copart if so - any other survey questions to gather information and materials from an event perspective since most of cds team will be there.",
+      "built": [],
+      "links": [],
+      "blockers": [],
+      "next_steps": []
     }
   ],
   "tasks": [
