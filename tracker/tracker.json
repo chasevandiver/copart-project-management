@@ -1944,6 +1944,15 @@
         "If time: one pager on what Copart Dealer Sales does and how it differs (gen-09).",
         "Friday: debrief Ken on all of the above (gen-23)."
       ]
+    },
+    {
+      "id": "n-12",
+      "title": "- Route Tracker Walk Through",
+      "body": [
+        "Lets add an edit field once the Plaud fills in the notes. Lets make it to where you can undo or back track - let's make the buttons easier to discern if something is clicked on once the Plaud summary is filled out it seems a little discombobulated if you just paste the plaud and the next steps to do."
+      ],
+      "project_id": "rt",
+      "date": "2026-10-02"
     }
   ],
   "reports": [
