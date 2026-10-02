@@ -1400,6 +1400,18 @@
       "notes": "Friday Oct 9. Route Tracker field feedback (rt-42), lead match by Copart dealer status (udm-01), FullStory findings (audit-07), tools hub list with Leo (hub-01, hub-02), field offers outline (gen-19), and q-04 (third prong).",
       "created": "2026-10-02",
       "updated": "2026-10-02"
+    },
+    {
+      "id": "gen-24",
+      "project_id": "general",
+      "title": "Susan can send me any reports needed",
+      "status": "Next",
+      "owner": "Susan Truett",
+      "due": null,
+      "priority": "normal",
+      "notes": "",
+      "created": "2026-10-02",
+      "updated": "2026-10-02"
     }
   ],
   "waiting_on": [
