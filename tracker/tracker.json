@@ -42,7 +42,7 @@
       "id": "rt",
       "name": "Route Tracker",
       "status": "In Progress",
-      "summary": "Rebuilt Leo's Route Tracker with a real server side so data is captured securely. Same app as Leo's, more secure. Lives on my Coolify in the app/ folder. Started building VIN capture (Price Check). At-dealer flow and walkthrough fixes built Oct 1; waiting on deploy.",
+      "summary": "Rebuilt Leo's Route Tracker with a real server side so data is captured securely. Same app as Leo's, more secure. Lives on my Coolify in the app/ folder. Started building VIN capture (Price Check). At-dealer flow and walkthrough fixes built Oct 1. Coolify certificate fixed Oct 2; walkthrough fixes still to deploy.",
       "built": [
         "Name sign-in with team passcode; admin, rep and viewer roles enforced by the server",
         "One shared database so notes and visits sync across phones",
@@ -67,7 +67,6 @@
         }
       ],
       "blockers": [
-        "Coolify's certificate showed as expired, so the Oct 1 deploy is unconfirmed (rt-40)",
         "Walkthrough fixes push was blocked; not deployed (rt-41)",
         "App URL only resolves on the Copart VPN, so Zapier can't reach it. PLAUD summaries get pasted in for now (d-rt-08)",
         "IT servers block the PLAUD API, so full PLAUD to Zapier automation does not run",
@@ -75,8 +74,7 @@
         "Zapier can't connect to Google Sheets or Excel on my machine"
       ],
       "next_steps": [
-        "Fix the Coolify certificate and confirm the deploy (rt-40)",
-        "Push and deploy the walkthrough fixes (rt-41)",
+        "Push and deploy the walkthrough fixes, and confirm the live app (rt-41)",
         "Leo and Keon walk through the deployed app (rt-38, rt-39)",
         "Phone test and data-loss check (rt-28); confirm hot send and the office tracker (rt-21, rt-23)",
         "Decide on Google Places for \"Dealers near you\" (d-rt-07)",
@@ -1297,13 +1295,14 @@
       "id": "rt-40",
       "project_id": "rt",
       "title": "Fix the expired Coolify certificate and confirm the deploy",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-04",
       "priority": "urgent",
-      "notes": "The flow build was pushed Oct 1 but the deploy couldn't be confirmed because Coolify's certificate showed as expired. Igor handles DNS enabling for the domain certificate (n-03). Leo and Keon's walkthroughs (rt-38, rt-39) need the deploy. Oct 2: needs to be live before Ken takes the app into the field Oct 5 to 8.",
+      "notes": "The flow build was pushed Oct 1 but the deploy couldn't be confirmed because Coolify's certificate showed as expired. Igor handles DNS enabling for the domain certificate (n-03). Leo and Keon's walkthroughs (rt-38, rt-39) need the deploy. Oct 2: needs to be live before Ken takes the app into the field Oct 5 to 8. Oct 2: Chase fixed the certificate. Confirm the deploy along with the walkthrough fixes (rt-41).",
       "created": "2026-10-01",
-      "updated": "2026-10-02"
+      "updated": "2026-10-02",
+      "completed": "2026-10-02"
     },
     {
       "id": "rt-41",
@@ -1313,7 +1312,7 @@
       "owner": "Work Claude",
       "due": "2026-10-04",
       "priority": "urgent",
-      "notes": "Built Oct 1: hot dealer, title front and back, license photos, sales.NN team emails, live \"N sent\" counts. 51 of 51 tests pass, 375px preview checked. The push was blocked, so it is not deployed. Oct 2: needs to be live before Ken's field week (Oct 5 to 8).",
+      "notes": "Built Oct 1: hot dealer, title front and back, license photos, sales.NN team emails, live \"N sent\" counts. 51 of 51 tests pass, 375px preview checked. The push was blocked, so it is not deployed. Oct 2: needs to be live before Ken's field week (Oct 5 to 8). Oct 2: Coolify certificate fixed (rt-40), so this is clear to deploy. Confirm the live app shows the fixes before Ken's field week.",
       "created": "2026-10-01",
       "updated": "2026-10-02"
     },

@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-10-02 (Coolify certificate)
+- Source: Chase fixed the Coolify certificate
+- Changed: rt-40 Next -> Done; rt-41 notes (clear to deploy); Route Tracker summary, blockers and next steps
+
 ## 2026-10-02 (weekly view for Oct 5 to 9)
 - Source: Chase asked to add the other ideas and plan the week as a whole, not day by day
 - Changed: rt-42, gen-15, gen-16, hub-02, udm-01, gen-17, audit-07, hub-01, gen-19 due 2026-10-09 (were spread Oct 5 to 8)
