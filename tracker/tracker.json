@@ -1413,6 +1413,18 @@
       "created": "2026-10-02",
       "updated": "2026-10-02",
       "completed": "2026-10-02"
+    },
+    {
+      "id": "rt-43",
+      "project_id": "rt",
+      "title": "Day by day Plans: 4040 office plaza blvd indianapolis, IN - yard - arrive 1:25pm Monday. Divide by day - out of the field by 4pm Thursday.",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "urgent",
+      "notes": "",
+      "created": "2026-10-02",
+      "updated": "2026-10-02"
     }
   ],
   "waiting_on": [
