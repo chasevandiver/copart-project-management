@@ -1176,13 +1176,14 @@
       "id": "gen-14",
       "project_id": "general",
       "title": "Todos to Ken before he leaves. Get the leads map ready; active copart dealers excluded; Digital Marketing Audit & tools",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-02",
       "priority": "urgent",
       "notes": "Oct 1: leads map expanded to 28 states plus DC (92,492 leads), filters for car and wholesale dealers, scores hidden. Still to do: exclude active Copart dealers, Digital Marketing Audit and tools. Oct 2: active, inactive and no-status matching moved to udm-01 for next week.",
       "created": "2026-10-01",
-      "updated": "2026-10-02"
+      "updated": "2026-10-02",
+      "completed": "2026-10-02"
     },
     {
       "id": "cdd-14",
