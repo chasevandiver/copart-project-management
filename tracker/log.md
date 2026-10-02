@@ -2,6 +2,17 @@
 
 Newest entry first.
 
+## 2026-10-02 (plan for Ken's field week)
+- Source: Chase asked for action items for Oct 5 to 9 while Ken is out Mon to Thu using the Route Tracker
+- Added: rt-42 "Support Ken's field week on the Route Tracker" (Me, high, due 2026-10-05)
+- Added: udm-01 "Match US leads to Copart dealer status: active, inactive, or no status" (Me, high, due 2026-10-07)
+- Added: audit-07 "Dig into FullStory: how dealers use the Copart Dealer Sales pages" (Me, high, due 2026-10-08)
+- Added: hub-02 "Meet Leo to list every AI tool we've each built for the hub" (Me, high, due 2026-10-06)
+- Added: gen-23 "Debrief Ken when he's back" (Me, high, due 2026-10-09)
+- Changed: rt-40, rt-41 due 2026-10-04 (live before Ken's field week); gen-15, gen-16 due 2026-10-05, normal -> high; gen-17 due 2026-10-07; gen-19 due 2026-10-08; hub-01 Backlog -> Next, due 2026-10-08
+- Changed: gen-10 folded into hub-02; gen-14 note (dealer status match moved to udm-01)
+- Changed: Tools and Agents Hub Backlog -> Next; US Dealer Map Next -> In Progress; next steps on hub, udm and audit
+
 ## 2026-10-01 (weekly update for Ken)
 - Source: Chase asked for a Thursday update for Ken on the board
 - Board: new Weekly update page (sidebar, /report): headline, highlights, numbers for the week, project cards, decisions, next week and where Ken can help; Copy text and Print or PDF; Edit saves to the new reports[] list
