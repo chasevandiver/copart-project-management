@@ -734,14 +734,13 @@
       "id": "rt-11",
       "project_id": "rt",
       "title": "Add a recommended dealer stop if rep has hit all of the stops already",
-      "status": "Backlog",
+      "status": "Next",
       "owner": "Me",
       "due": null,
       "priority": "normal",
       "notes": "Oct 1: Work Claude tested a \"Dealers near you\" list in the Add a stop form. OpenStreetMap failed: none of the 20 independent lots on the Grand Prairie route came back, and only 9 of 72 results had phone numbers. Recommends Google Places (d-rt-07).",
-      "idea": true,
       "created": "2026-09-30",
-      "updated": "2026-10-01"
+      "updated": "2026-10-05"
     },
     {
       "id": "rt-12",
