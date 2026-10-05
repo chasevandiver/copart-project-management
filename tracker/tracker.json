@@ -2,7 +2,7 @@
   "meta": {
     "owner": "Chase",
     "role": "Digital Engagement Manager, supporting Ken Rion (SVP of Dealer Sales)",
-    "last_updated": "2026-10-02"
+    "last_updated": "2026-10-05"
   },
   "categories": [
     "AI Tools",
@@ -1027,13 +1027,14 @@
       "id": "rt-28",
       "project_id": "rt",
       "title": "Test on phone and confirm no existing rep data is lost",
-      "status": "In Progress",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "high",
       "notes": "Pre go-live, at-dealer flow. Plan approved, ready for build in Copart Genie. Tests: migration, stages, sends, teams, seller code, notes. Bump the sw.js cache. Oct 1: 44 tests passed on the flow build, 51 of 51 on the walkthrough fixes, plus a 375px preview check. Still to do: test on a real phone after deploy and confirm no rep data was lost.",
       "created": "2026-10-01",
-      "updated": "2026-10-01"
+      "updated": "2026-10-05",
+      "completed": "2026-10-05"
     },
     {
       "id": "rt-29",
