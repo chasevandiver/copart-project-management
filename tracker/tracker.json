@@ -1481,6 +1481,18 @@
       "notes": "",
       "created": "2026-10-02",
       "updated": "2026-10-02"
+    },
+    {
+      "id": "gen-26",
+      "project_id": "general",
+      "title": "Get a spreadsheet of all copart dealers and non copart dealers for each state",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-06",
+      "priority": "urgent",
+      "notes": "",
+      "created": "2026-10-05",
+      "updated": "2026-10-05"
     }
   ],
   "waiting_on": [
