@@ -1251,13 +1251,14 @@
       "id": "gen-16",
       "project_id": "general",
       "title": "Contact Tyler Amos and Pushkaraj Jadhav about data access",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "high",
       "notes": "Ask about database access and what down-funnel data exists, to query myself or through their team. From the Oct 1 sync (n-08). Oct 2: first ask is the active and inactive Copart dealer list for the lead match (udm-01).",
       "created": "2026-10-01",
-      "updated": "2026-10-02"
+      "updated": "2026-10-05",
+      "completed": "2026-10-05"
     },
     {
       "id": "gen-17",
