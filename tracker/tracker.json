@@ -1238,13 +1238,14 @@
       "id": "gen-15",
       "project_id": "general",
       "title": "Contact Justin Alexander about FullStory access",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "high",
       "notes": "Product team owns FullStory. Session recordings and heatmaps for the site. From the Oct 1 sync (n-08). Oct 2: needed for the FullStory review next week (audit-07).",
       "created": "2026-10-01",
-      "updated": "2026-10-02"
+      "updated": "2026-10-05",
+      "completed": "2026-10-05"
     },
     {
       "id": "gen-16",
