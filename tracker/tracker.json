@@ -442,13 +442,14 @@
       "id": "cdd-06",
       "project_id": "cdd",
       "title": "Confirm with TxDMV that ActiveDate is the first license date",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "normal",
       "notes": "The \"new license\" lead category and bonus depend on it.",
       "created": "2026-09-29",
-      "updated": "2026-09-29"
+      "updated": "2026-10-06",
+      "completed": "2026-10-06"
     },
     {
       "id": "cdd-07",
