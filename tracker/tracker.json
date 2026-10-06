@@ -2,7 +2,7 @@
   "meta": {
     "owner": "Chase",
     "role": "Digital Engagement Manager, supporting Ken Rion (SVP of Dealer Sales)",
-    "last_updated": "2026-10-05"
+    "last_updated": "2026-10-06"
   },
   "categories": [
     "AI Tools",
@@ -2048,6 +2048,18 @@
       ],
       "project_id": "rt",
       "date": "2026-10-02"
+    },
+    {
+      "id": "n-14",
+      "title": "Ken and Keon Morning Check in",
+      "body": [
+        "Called asking about the Plaud app as they were using Ken's Plaud on Monday with Keon's phone - Plaud notes should auto-transfer next time Ken has the Plaud app in range and open up the Plaud app on his phone.",
+        "The leads that Ken is getting is going to give to me to take over to hit them more organically.",
+        "Filled Ken in on digital audit I did yesterday as well as requesting access to Full Story via the IT ticket which I forwarded him.",
+        "Walked Keon through the process on how to paste Plaud notes. Route Tracker is updating on the server side now."
+      ],
+      "project_id": "general",
+      "date": "2026-10-06"
     }
   ],
   "reports": [
