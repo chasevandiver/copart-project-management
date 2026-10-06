@@ -627,13 +627,14 @@
       "id": "audit-02",
       "project_id": "audit",
       "title": "Social: inventory Copart Dealer Sales activity on each channel",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "normal",
       "notes": "Accounts, posting cadence, content types, engagement. Needs Marketing contacts (gen-05).",
       "created": "2026-09-29",
-      "updated": "2026-10-02"
+      "updated": "2026-10-06",
+      "completed": "2026-10-06"
     },
     {
       "id": "audit-04",
