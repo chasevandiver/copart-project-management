@@ -355,13 +355,14 @@
       "id": "rt-09",
       "project_id": "rt",
       "title": "Get the Connecticut app from Leo",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "normal",
       "notes": "",
       "created": "2026-09-29",
-      "updated": "2026-09-29"
+      "updated": "2026-10-06",
+      "completed": "2026-10-06"
     },
     {
       "id": "rt-10",
