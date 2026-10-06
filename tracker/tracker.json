@@ -640,13 +640,14 @@
       "id": "audit-04",
       "project_id": "audit",
       "title": "Search and AI visibility: tie in the AEO baseline",
-      "status": "Backlog",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "normal",
       "notes": "Use the Sep 27 AEO baseline from Copart Dealer Digital: Copart in 50% of unbranded answers; Selling stage weakest at 33% on every engine; missing on all 3 engines for \"best dealer-only auctions in Texas\" and \"online auction vs wholesaler for trade-ins\". Perplexity not measured yet.",
       "created": "2026-09-29",
-      "updated": "2026-09-29"
+      "updated": "2026-10-06",
+      "completed": "2026-10-06"
     },
     {
       "id": "audit-05",
