@@ -2,6 +2,14 @@
 
 Newest entry first.
 
+## 2026-10-06 (Route Tracker ownership, hub access)
+- Source: Chase on the hub, the Route Tracker and Leo's process recording
+- Changed: rt-38 -> Done (not needed; Route Tracker is fully Chase's project); rt-42, hub-01 notes; rt and hub summary, blockers and next steps; Leo's relationship in people
+- Added: gen-27 "Write up the Copart Dealer Sales process from Leo's recording" (Me)
+- Resolved: d-hub-01 Add Chase's tools to Leo's hub
+- Answered: q-02 Leo recorded the process walkthrough (write-up is gen-27)
+- Waiting on: added w-07 collaborator access on Leo's repos (Coolify admin)
+
 ## 2026-10-06 (field offers draft)
 - Source: Chase asked to start the field offers outline
 - Changed: gen-19 Next -> In Progress, notes link the Field Offers Outline doc

@@ -42,7 +42,7 @@
       "id": "rt",
       "name": "Route Tracker",
       "status": "In Progress",
-      "summary": "Rebuilt Leo's Route Tracker with a real server side so data is captured securely. Same app as Leo's, more secure. Lives on my Coolify in the app/ folder. Started building VIN capture (Price Check). At-dealer flow and walkthrough fixes built Oct 1. Coolify certificate fixed Oct 2; walkthrough fixes still to deploy.",
+      "summary": "Chase's project now (it started as Leo's Route Tracker). Rebuilt with a real server side so data is captured securely. Lives on my Coolify in the app/ folder. Started building VIN capture (Price Check). Walkthrough fixes live Oct 6; live field test with Ken and Keon in Indianapolis the week of Oct 5.",
       "built": [
         "Name sign-in with team passcode; admin, rep and viewer roles enforced by the server",
         "One shared database so notes and visits sync across phones",
@@ -73,7 +73,7 @@
         "Zapier can't connect to Google Sheets or Excel on my machine"
       ],
       "next_steps": [
-        "Leo walks through the deployed app (rt-38)",
+        "Log Ken and Keon's field test feedback for the Friday debrief (rt-42)",
         "Phone test and data-loss check (rt-28); confirm hot send and the office tracker (rt-21, rt-23)",
         "Decide on Google Places for \"Dealers near you\" (d-rt-07)",
         "Price Check milestone 1: sales importer plus backtest (rt-02)",
@@ -197,10 +197,13 @@
           "where": "Leo's hosted site (URL not recorded yet)"
         }
       ],
-      "blockers": [],
+      "blockers": [
+        "Need collaborator access on Leo's repos from the Coolify admin to add my tools (w-07)"
+      ],
       "next_steps": [
-        "Decide whether Leo's hub becomes the home for all tools (d-hub-01)",
-        "Define the hub: which tools go in, where it lives, who can get in (hub-01)"
+        "Get collaborator access on Leo's repos (w-07)",
+        "Add my tools to Leo's hub: Copart Dealer Digital, US Dealer Map, PM Board, Route Tracker",
+        "Define who can get in (hub-01)"
       ],
       "dependencies": []
     },
@@ -620,7 +623,7 @@
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "normal",
-      "notes": "Starting list: Route Tracker, Copart Dealer Digital, this PM Board. Idea stage. Oct 2: draft it from the list made with Leo (hub-02). Oct 6: it is a Copart Dealer Sales tools hub. Chase is sending the list of what exists now. Oct 6: Leo's hub already has 4 live tools and 3 in build (see the hub project's built list). Chase's tools are not on it yet except the Route Tracker. The Connecticut app became the Route Tracker. Leo's lead setup and landing pages stay off the hub.",
+      "notes": "Starting list: Route Tracker, Copart Dealer Digital, this PM Board. Idea stage. Oct 2: draft it from the list made with Leo (hub-02). Oct 6: it is a Copart Dealer Sales tools hub. Chase is sending the list of what exists now. Oct 6: Leo's hub already has 4 live tools and 3 in build (see the hub project's built list). Chase's tools are not on it yet except the Route Tracker. The Connecticut app became the Route Tracker. Leo's lead setup and landing pages stay off the hub. Oct 6: Chase's tools go on Leo's hub (d-hub-01), once the Coolify admin adds Chase as a collaborator on Leo's repos (w-07).",
       "created": "2026-09-29",
       "updated": "2026-10-06"
     },
@@ -1174,13 +1177,14 @@
       "id": "rt-38",
       "project_id": "rt",
       "title": "Go through route tracker app once it deploys",
-      "status": "Next",
+      "status": "Done",
       "owner": "Leo",
       "due": "2026-10-01",
       "priority": "urgent",
-      "notes": "",
+      "notes": "Oct 6: not needed. The Route Tracker is fully Chase's project now, and Ken and Keon have had their run-through.",
       "created": "2026-10-01",
-      "updated": "2026-10-01"
+      "updated": "2026-10-06",
+      "completed": "2026-10-06"
     },
     {
       "id": "rt-39",
@@ -1391,7 +1395,7 @@
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "high",
-      "notes": "Ken is out Mon to Thu (Oct 5 to 8) using the Route Tracker. Quick check-in each day: what worked, what broke, what he wished it did. Log fixes as rt tasks for Work Claude. Bring the list to the Friday debrief (gen-23). Oct 6: Plaud is having trouble picking up notes (see n-14).",
+      "notes": "Ken is out Mon to Thu (Oct 5 to 8) using the Route Tracker. Quick check-in each day: what worked, what broke, what he wished it did. Log fixes as rt tasks for Work Claude. Bring the list to the Friday debrief (gen-23). Oct 6: Plaud is having trouble picking up notes (see n-14). Oct 6: live test underway with Ken and Keon in Indianapolis.",
       "created": "2026-10-02",
       "updated": "2026-10-06"
     },
@@ -1530,6 +1534,18 @@
       "notes": "Oct 6: Chase is building it on Work Claude.",
       "created": "2026-10-06",
       "updated": "2026-10-06"
+    },
+    {
+      "id": "gen-27",
+      "project_id": "general",
+      "title": "Write up the Copart Dealer Sales process from Leo's recording",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Oct 6: Leo recorded an audio walkthrough of the process from prospect to sale (answers q-02). A written version feeds the field offers outline (gen-19) and the one pager (gen-09).",
+      "created": "2026-10-06",
+      "updated": "2026-10-06"
     }
   ],
   "waiting_on": [
@@ -1588,6 +1604,15 @@
       "since": "2026-10-06",
       "priority": "high",
       "notes": "Ken approved the IT request Oct 6. Needed for audit-07."
+    },
+    {
+      "id": "w-07",
+      "what": "Collaborator access on Leo's repos, to add Chase's tools to his hub",
+      "from_whom": "Coolify admin",
+      "project_id": "hub",
+      "since": "2026-10-06",
+      "priority": "normal",
+      "notes": ""
     }
   ],
   "questions": [
@@ -1606,10 +1631,10 @@
       "question": "how does the Dealer process work once they are set up on the Copart website - what does it look like on their side - do they even go on the website. Need the full prospect to sale process",
       "ask": "Leo",
       "project_id": "general",
-      "status": "open",
-      "answer": null,
+      "status": "answered",
+      "answer": "Leo recorded an audio walkthrough of the process. Chase has the recording; write-up is gen-27.",
       "raised": "2026-09-30",
-      "answered": null
+      "answered": "2026-10-06"
     },
     {
       "id": "q-03",
@@ -1832,9 +1857,9 @@
         "Merge into a new shared hub both own"
       ],
       "raised": "2026-10-06",
-      "status": "open",
-      "answer": null,
-      "resolved": null
+      "status": "resolved",
+      "answer": "Add Chase's tools to Leo's hub. Needs collaborator access on Leo's repos from the Coolify admin (w-07).",
+      "resolved": "2026-10-06"
     }
   ],
   "people": [
@@ -1863,7 +1888,7 @@
       "name": "Leo",
       "title": "",
       "department": "",
-      "relationship": "Built the original Route Tracker (it started as his one-off Connecticut app) and runs the Copart Dealer Sales Hub",
+      "relationship": "Built the original Route Tracker (now Chase's project) and runs the Copart Dealer Sales Hub",
       "contact": ""
     },
     {
