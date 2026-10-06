@@ -2,6 +2,12 @@
 
 Newest entry first.
 
+## 2026-10-06 (Leo's suggestions are ideas)
+- Source: Chase said Leo's suggestions are suggestions, not fact; the process is what matters
+- Changed: n-15 rewritten as process facts, with Leo's suggestions in one line marked as ideas
+- Changed: udm-03, udm-04 turned into ideas (Backlog, normal); udm next steps
+- Removed: w-08 (Texas sellers list) and q-07 (spiff), both added earlier today from Leo's suggestions
+
 ## 2026-10-06 (Leo's process recording)
 - Source: transcript of Leo walking through the Copart Dealer Sales process
 - Added: note n-15 (the process from lead to first sale, fees, Leo's outreach and ideas)

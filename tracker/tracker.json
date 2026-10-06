@@ -253,10 +253,8 @@
       "blockers": [],
       "next_steps": [
         "Get the Copart and non-Copart dealer spreadsheets at the marketing sync Oct 7 (gen-26)",
-        "Texas first: clean the leads against Leo's active sellers list (udm-03, w-08)",
         "Build the US leads dealer map on Work Claude (udm-02)",
-        "Match leads to Copart dealer status: active, inactive, no status (udm-01)",
-        "Team lead pages, 20 leads at a time (udm-04)"
+        "Match leads to Copart dealer status: active, inactive, no status (udm-01)"
       ]
     },
     {
@@ -1545,7 +1543,7 @@
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Oct 6: Leo recorded an audio walkthrough of the process from prospect to sale (answers q-02). A written version feeds the field offers outline (gen-19) and the one pager (gen-09). Done Oct 6: written up in n-15.",
+      "notes": "Oct 6: Leo recorded an audio walkthrough of the process from prospect to sale (answers q-02). A written version feeds the field offers outline (gen-19) and the one pager (gen-09). Done Oct 6: written up in n-15 (process facts; Leo's suggestions listed separately as ideas).",
       "created": "2026-10-06",
       "updated": "2026-10-06",
       "completed": "2026-10-06"
@@ -1553,24 +1551,26 @@
     {
       "id": "udm-03",
       "project_id": "udm",
-      "title": "Clean the Texas leads against Leo's active sellers list",
-      "status": "Next",
+      "title": "Clean the Texas leads against active Texas sellers",
+      "status": "Backlog",
       "owner": "Me",
       "due": null,
-      "priority": "high",
-      "notes": "From Leo's recording (n-15). Remove active Texas sellers from the Texas leads (about 20,000), flag dealers who buy from Copart but don't sell (warmest leads). Needs the list from Leo (w-08). Copart dealer data stays on the work setup, not in this repo.",
+      "priority": "normal",
+      "idea": true,
+      "notes": "Leo's suggestion (n-15), not decided. Remove active sellers, flag dealers who buy from Copart but don't sell. Copart dealer data stays on the work setup.",
       "created": "2026-10-06",
       "updated": "2026-10-06"
     },
     {
       "id": "udm-04",
       "project_id": "udm",
-      "title": "Build a lead page per team: 20 leads at a time with status and notes",
-      "status": "Next",
-      "owner": "Work Claude",
+      "title": "Build a lead page per team, 20 leads at a time",
+      "status": "Backlog",
+      "owner": "Me",
       "due": null,
-      "priority": "high",
-      "notes": "From Leo's recording (n-15). Each team gets its own link and about 20 leads. Status: called, contacted, interested, not interested. Notes and car count. Refresh with new leads as they work the list.",
+      "priority": "normal",
+      "idea": true,
+      "notes": "Leo's suggestion (n-15), not decided. Status per lead (called, contacted, interested, not interested), notes, car count.",
       "created": "2026-10-06",
       "updated": "2026-10-06"
     }
@@ -1640,15 +1640,6 @@
       "since": "2026-10-06",
       "priority": "normal",
       "notes": ""
-    },
-    {
-      "id": "w-08",
-      "what": "List of active Copart sellers in Texas",
-      "from_whom": "Leo",
-      "project_id": "udm",
-      "since": "2026-10-06",
-      "priority": "high",
-      "notes": "Leo offered to send it (n-15). For udm-03."
     }
   ],
   "questions": [
@@ -1710,16 +1701,6 @@
       "status": "open",
       "answer": null,
       "raised": "2026-10-01",
-      "answered": null
-    },
-    {
-      "id": "q-07",
-      "question": "Is the new-dealer spiff happening, and when do the 250 newly licensed dealer leads go to the teams?",
-      "ask": "Ken Rion",
-      "project_id": "general",
-      "status": "open",
-      "answer": null,
-      "raised": "2026-10-06",
       "answered": null
     }
   ],
@@ -2233,17 +2214,15 @@
       "title": "Copart Dealer Sales process, from Leo's recording",
       "project_id": "general",
       "body": [
+        "The Copart Dealer Sales process, from Leo's walkthrough.",
         "Where leads come from today: the seller hotline, the website form (Brad prints these and walks them to the teams), field referrals, Edmunds, and cold calls. Beyond that, teams find their own.",
         "First call: ask if they've done business with Copart. Many have a buyer account but have never sold. Then the pitch, then pricing, then what it takes to open an account.",
         "Opening an account is free and needs one car to list. Ask what kind of business they run (for example trailers only) so the setup fits them.",
         "Setup: Brenda's seller form goes out by email, the dealer fills it in and sends it back. Admins create the seller code in 24 to 48 hours.",
         "First car: picked up within 24 hours, or the dealer drops it off. The yard takes photos. Original title at the yard, or a copy to start. Then it's on sale.",
         "Fees: nothing upfront. Pickup is $25 for the first 25 miles on a clean title. All fees come out of the proceeds after the sale. No arbitration on the seller side.",
-        "Payment: Leo recommends setting every dealer up on ACH direct deposit, paid once the original title is in.",
-        "Get the decision maker's cell, not the main line. Offers expire fast and the dealer is often out on the lot.",
-        "Leo's own outreach: flyers and business cards to yard GMs, a Monday 8am Power Automate email to his inactive sellers, and at one point texting about 10,000 a day through RingCentral.",
-        "Ken is holding about 250 leads from dealers licensed in the last 30 days. Likely waiting on the pay plan change and a spiff (commission bonus) for new dealers signed.",
-        "Leo's idea: take Texas active sellers off the Texas leads (about 20,000), flag dealers who buy from Copart but don't sell, and give each team about 20 leads at a time on its own page with a status (called, contacted, interested, not interested), notes and car count. Refresh as they work through them."
+        "Payment: by check or ACH direct deposit, paid once the original title is in.",
+        "Leo's suggestions (ideas only, nothing decided): get the decision maker's cell rather than the main line; set dealers up on ACH; clean the Texas leads against active sellers and flag buy-only dealers; give each team about 20 leads at a time on its own page. He also mentioned Ken is holding about 250 new-license leads and guessed a new-dealer spiff may be coming."
       ]
     }
   ],
