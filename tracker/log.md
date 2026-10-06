@@ -2,6 +2,18 @@
 
 Newest entry first.
 
+## 2026-10-06 (next steps check-in)
+- Source: Chase's replies to "what should my next steps be"
+- Changed: rt-41, rt-39, gen-10 -> Done (walkthrough fixes live; Ken and Keon walked through)
+- Changed: gen-26 due 2026-10-07 (spreadsheets at the marketing sync); gen-17 due 2026-10-08 (Lauren meeting Thursday)
+- Changed: cdd-03 Next -> Waiting, no date (waits on the marketing prospecting spreadsheets); audit-07 Next -> Waiting, no date (FullStory access)
+- Changed: gen-13 renamed "Set up a meeting with Copart's AI lead" (Druv is not his name), no date
+- Changed: notes on rt-42 (Plaud pickup issues), gen-19, hub-01, udm-01, cdd-02 (Legal after Oct 7 and Oct 8 meetings)
+- Changed: next steps on rt, cdd, hub, audit, udm; rt blocker for rt-41 removed
+- Added: udm-02 "Build the US leads dealer map" (Work Claude, In Progress)
+- Answered: q-04 the three prongs are email outreach, SMS and field offers
+- Waiting on: added w-06 FullStory access (IT, Ken approved); w-02, w-03, w-04 on hold until the field week ends
+
 ## 2026-10-02 (Coolify certificate)
 - Source: Chase fixed the Coolify certificate
 - Changed: rt-40 Next -> Done; rt-41 notes (clear to deploy); Route Tracker summary, blockers and next steps

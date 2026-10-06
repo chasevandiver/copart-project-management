@@ -53,7 +53,7 @@
         "At-dealer flow (Oct 1): Home tab, visit screen, car cards with a team picker, share-sheet send, evening Review and send, and a Cars tab",
         "Automatic pipeline stages, editable and deletable notes, and teams 1 to 26 (Oct 1)",
         "Fixed two phone-size bugs: the search box text and the Team 2 sort order (Oct 1)",
-        "Walkthrough fixes (Oct 1, not deployed): hot dealer, title front and back, license photos, sales.NN team emails, live \"N sent\" counts",
+        "Walkthrough fixes (live Oct 6): hot dealer, title front and back, license photos, sales.NN team emails, live \"N sent\" counts",
         "51 automated tests, all passing; 375px preview checked"
       ],
       "links": [
@@ -67,15 +67,13 @@
         }
       ],
       "blockers": [
-        "Walkthrough fixes push was blocked; not deployed (rt-41)",
         "App URL only resolves on the Copart VPN, so Zapier can't reach it. PLAUD summaries get pasted in for now (d-rt-08)",
         "IT servers block the PLAUD API, so full PLAUD to Zapier automation does not run",
         "No real weekly sales file yet, which blocks Price Check",
         "Zapier can't connect to Google Sheets or Excel on my machine"
       ],
       "next_steps": [
-        "Push and deploy the walkthrough fixes, and confirm the live app (rt-41)",
-        "Leo and Keon walk through the deployed app (rt-38, rt-39)",
+        "Leo walks through the deployed app (rt-38)",
         "Phone test and data-loss check (rt-28); confirm hot send and the office tracker (rt-21, rt-23)",
         "Decide on Google Places for \"Dealers near you\" (d-rt-07)",
         "Price Check milestone 1: sales importer plus backtest (rt-02)",
@@ -143,7 +141,7 @@
       "next_steps": [
         "Legal check before any bulk email (cdd-02, urgent)",
         "Check with IT or Legal on business phones and emails in the repo before the leads move to the work setup (q-03)",
-        "Second DFW inventory snapshot on or after Oct 4 (cdd-03)",
+        "Second DFW inventory snapshot once the marketing prospecting spreadsheets arrive (cdd-03)",
         "More states by hand, starting with New Mexico (cdd-14, cdd-15)",
         "Decide on the lead score rebuild (d-cdd-05)",
         "Weekly TxDMV refresh (cdd-04) and weekly AEO re-run (cdd-12)"
@@ -187,8 +185,8 @@
       "links": [],
       "blockers": [],
       "next_steps": [
-        "Meet Leo to list both our tools (hub-02)",
-        "Define the hub: which tools and agents go in, where it lives, who can get in (hub-01)"
+        "Chase sends the list of tools built so far",
+        "Define the hub: which tools go in, where it lives, who can get in (hub-01)"
       ],
       "dependencies": []
     },
@@ -203,7 +201,7 @@
       "links": [],
       "blockers": [],
       "next_steps": [
-        "Get FullStory access from Justin Alexander (gen-15)",
+        "FullStory access from IT, approved by Ken Oct 6 (w-06)",
         "FullStory review of the Copart Dealer Sales pages (audit-07)",
         "Website audit of the Dealer Sales experience on copart.com (audit-03)"
       ],
@@ -237,7 +235,8 @@
       "links": [],
       "blockers": [],
       "next_steps": [
-        "Get the active and inactive Copart dealer list from Tyler Amos or Pushkaraj Jadhav (gen-16)",
+        "Get the Copart and non-Copart dealer spreadsheets at the marketing sync Oct 7 (gen-26)",
+        "Build the US leads dealer map on Work Claude (udm-02)",
         "Match leads to Copart dealer status: active, inactive, no status (udm-01)"
       ]
     },
@@ -397,21 +396,21 @@
       "owner": "Legal",
       "due": null,
       "priority": "urgent",
-      "notes": "Many TxDMV emails are owners' personal addresses. Kept off the site and git, but they are in the Excel books. No bulk email until Legal clears it.",
+      "notes": "Many TxDMV emails are owners' personal addresses. Kept off the site and git, but they are in the Excel books. No bulk email until Legal clears it. Oct 6: holding until after the marketing sync (Oct 7) and the Lauren Harrington meeting (Oct 8, gen-17).",
       "created": "2026-09-29",
-      "updated": "2026-09-29"
+      "updated": "2026-10-06"
     },
     {
       "id": "cdd-03",
       "project_id": "cdd",
       "title": "Take the second DFW inventory snapshot",
-      "status": "Next",
+      "status": "Waiting",
       "owner": "Claude Code",
-      "due": "2026-10-04",
+      "due": null,
       "priority": "urgent",
-      "notes": "On or after Oct 4. Turns on the \"aged inventory\" signal, the biggest seller-fit weight. Pin colors are relative until then.",
+      "notes": "On or after Oct 4. Turns on the \"aged inventory\" signal, the biggest seller-fit weight. Pin colors are relative until then. Oct 6: on hold. No second run until the prospecting spreadsheets arrive from marketing (gen-26).",
       "created": "2026-09-29",
-      "updated": "2026-09-29"
+      "updated": "2026-10-06"
     },
     {
       "id": "cdd-04",
@@ -607,9 +606,9 @@
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "normal",
-      "notes": "Starting list: Route Tracker, Copart Dealer Digital, Leo's Connecticut app, this PM Board. Idea stage. Oct 2: draft it from the list made with Leo (hub-02).",
+      "notes": "Starting list: Route Tracker, Copart Dealer Digital, Leo's Connecticut app, this PM Board. Idea stage. Oct 2: draft it from the list made with Leo (hub-02). Oct 6: it is a Copart Dealer Sales tools hub. Chase is sending the list of what exists now.",
       "created": "2026-09-29",
-      "updated": "2026-10-02"
+      "updated": "2026-10-06"
     },
     {
       "id": "audit-01",
@@ -842,13 +841,14 @@
       "id": "gen-10",
       "project_id": "general",
       "title": "Get with to compare lead sites, route tracker updates, any CDS materials",
-      "status": "Next",
+      "status": "Done",
       "owner": "Leo",
       "due": "2026-10-01",
       "priority": "high",
-      "notes": "Oct 2: folded into the tools hub meeting with Leo (hub-02, Tue Oct 6).",
+      "notes": "Oct 2: folded into the tools hub meeting with Leo (hub-02, Tue Oct 6). Oct 6: done.",
       "created": "2026-09-30",
-      "updated": "2026-10-02"
+      "updated": "2026-10-06",
+      "completed": "2026-10-06"
     },
     {
       "id": "pa-02",
@@ -878,14 +878,14 @@
     {
       "id": "gen-13",
       "project_id": "general",
-      "title": "Set up a meeting with Druv - AI guy for Copart",
+      "title": "Set up a meeting with Copart's AI lead",
       "status": "Next",
       "owner": "Me",
-      "due": "2026-10-01",
+      "due": null,
       "priority": "normal",
-      "notes": "",
+      "notes": "Oct 6: Druv is not his name. Finding the right contact first.",
       "created": "2026-10-01",
-      "updated": "2026-10-01"
+      "updated": "2026-10-06"
     },
     {
       "id": "rt-17",
@@ -1172,13 +1172,14 @@
       "id": "rt-39",
       "project_id": "rt",
       "title": "Go through updated Route Tracker app on his phone.",
-      "status": "Next",
+      "status": "Done",
       "owner": "Keon Moore",
       "due": "2026-10-01",
       "priority": "urgent",
-      "notes": "",
+      "notes": "Oct 6: Keon and Ken both got a walkthrough.",
       "created": "2026-10-01",
-      "updated": "2026-10-01"
+      "updated": "2026-10-06",
+      "completed": "2026-10-06"
     },
     {
       "id": "gen-14",
@@ -1273,11 +1274,11 @@
       "title": "Meet Lauren Harrington about past and current seller and buyer campaigns",
       "status": "Next",
       "owner": "Me",
-      "due": "2026-10-09",
+      "due": "2026-10-08",
       "priority": "normal",
-      "notes": "She runs digital for seller and buyer campaigns. From the Oct 1 sync (n-08).",
+      "notes": "She runs digital for seller and buyer campaigns. From the Oct 1 sync (n-08). Oct 6: meeting set for Thu Oct 8 to go over all the digital campaigns.",
       "created": "2026-10-01",
-      "updated": "2026-10-02"
+      "updated": "2026-10-06"
     },
     {
       "id": "gen-18",
@@ -1299,9 +1300,9 @@
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "high",
-      "notes": "Ken wants offers reps can take to dealerships. Three-prong approach (see q-04). Data rules in q-06. Oct 2: draft while Ken is out, review with him Friday Oct 9 (gen-23).",
+      "notes": "Ken wants offers reps can take to dealerships. Three-prong approach (see q-04). Data rules in q-06. Oct 2: draft while Ken is out, review with him Friday Oct 9 (gen-23). Oct 6: the three prongs are email outreach, SMS and field offers (q-04). Next: draft the field offers.",
       "created": "2026-10-01",
-      "updated": "2026-10-02"
+      "updated": "2026-10-06"
     },
     {
       "id": "gen-20",
@@ -1332,13 +1333,14 @@
       "id": "rt-41",
       "project_id": "rt",
       "title": "Push and deploy the walkthrough fixes",
-      "status": "Next",
+      "status": "Done",
       "owner": "Work Claude",
       "due": "2026-10-04",
       "priority": "urgent",
-      "notes": "Built Oct 1: hot dealer, title front and back, license photos, sales.NN team emails, live \"N sent\" counts. 51 of 51 tests pass, 375px preview checked. The push was blocked, so it is not deployed. Oct 2: needs to be live before Ken's field week (Oct 5 to 8). Oct 2: Coolify certificate fixed (rt-40), so this is clear to deploy. Confirm the live app shows the fixes before Ken's field week.",
+      "notes": "Built Oct 1: hot dealer, title front and back, license photos, sales.NN team emails, live \"N sent\" counts. 51 of 51 tests pass, 375px preview checked. The push was blocked, so it is not deployed. Oct 2: needs to be live before Ken's field week (Oct 5 to 8). Oct 2: Coolify certificate fixed (rt-40), so this is clear to deploy. Confirm the live app shows the fixes before Ken's field week. Oct 6: live. Confirmed from Ken and Keon's field check-ins.",
       "created": "2026-10-01",
-      "updated": "2026-10-02"
+      "updated": "2026-10-06",
+      "completed": "2026-10-06"
     },
     {
       "id": "gen-21",
@@ -1375,9 +1377,9 @@
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "high",
-      "notes": "Ken is out Mon to Thu (Oct 5 to 8) using the Route Tracker. Quick check-in each day: what worked, what broke, what he wished it did. Log fixes as rt tasks for Work Claude. Bring the list to the Friday debrief (gen-23).",
+      "notes": "Ken is out Mon to Thu (Oct 5 to 8) using the Route Tracker. Quick check-in each day: what worked, what broke, what he wished it did. Log fixes as rt tasks for Work Claude. Bring the list to the Friday debrief (gen-23). Oct 6: Plaud is having trouble picking up notes (see n-14).",
       "created": "2026-10-02",
-      "updated": "2026-10-02"
+      "updated": "2026-10-06"
     },
     {
       "id": "udm-01",
@@ -1387,21 +1389,21 @@
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "high",
-      "notes": "Three buckets so leads don't overlap: active Copart dealers (exclude or upsell), inactive (win-back), no status (new prospects). Needs the Copart dealer list from Tyler Amos or Pushkaraj Jadhav (gen-16). Copart dealer data stays on the work setup: do not put it in this repo or on the public dfw-dealer-digital site (see q-03). Picks up the active-dealer exclusion from gen-14.",
+      "notes": "Three buckets so leads don't overlap: active Copart dealers (exclude or upsell), inactive (win-back), no status (new prospects). Needs the Copart dealer list from Tyler Amos or Pushkaraj Jadhav (gen-16). Copart dealer data stays on the work setup: do not put it in this repo or on the public dfw-dealer-digital site (see q-03). Picks up the active-dealer exclusion from gen-14. Oct 6: the dealer list comes from the marketing sync Oct 7 (gen-26).",
       "created": "2026-10-02",
-      "updated": "2026-10-02"
+      "updated": "2026-10-06"
     },
     {
       "id": "audit-07",
       "project_id": "audit",
       "title": "Dig into FullStory: how dealers use the Copart Dealer Sales pages",
-      "status": "Next",
+      "status": "Waiting",
       "owner": "Me",
-      "due": "2026-10-09",
+      "due": null,
       "priority": "high",
-      "notes": "Follow-up to the Oct 1 Marketing and Copart Dealer Sales sync (n-08). Watch session recordings and heatmaps: where dealers scroll, click, and drop off on sign-up and the dealer pages. Write the top 3 to 5 findings for the Friday debrief (gen-23). Needs access from Justin Alexander (gen-15). Feeds the website audit (audit-03).",
+      "notes": "Follow-up to the Oct 1 Marketing and Copart Dealer Sales sync (n-08). Watch session recordings and heatmaps: where dealers scroll, click, and drop off on sign-up and the dealer pages. Write the top 3 to 5 findings for the Friday debrief (gen-23). Needs access from Justin Alexander (gen-15). Feeds the website audit (audit-03). Oct 6: Ken approved IT access. It will take time to come through (w-06), so this likely slips past Friday.",
       "created": "2026-10-02",
-      "updated": "2026-10-02"
+      "updated": "2026-10-06"
     },
     {
       "id": "hub-02",
@@ -1497,11 +1499,23 @@
       "title": "Get a spreadsheet of all copart dealers and non copart dealers for each state",
       "status": "Next",
       "owner": "Me",
-      "due": "2026-10-06",
+      "due": "2026-10-07",
       "priority": "urgent",
-      "notes": "",
+      "notes": "Oct 6: coming from the marketing sync Wed Oct 7 (afternoon). Feeds udm-01 and cdd-03.",
       "created": "2026-10-05",
-      "updated": "2026-10-05"
+      "updated": "2026-10-06"
+    },
+    {
+      "id": "udm-02",
+      "project_id": "udm",
+      "title": "Build the US leads dealer map",
+      "status": "In Progress",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "high",
+      "notes": "Oct 6: Chase is building it on Work Claude.",
+      "created": "2026-10-06",
+      "updated": "2026-10-06"
     }
   ],
   "waiting_on": [
@@ -1522,7 +1536,7 @@
       "project_id": "rt",
       "since": "2026-09-29",
       "priority": "high",
-      "notes": "Priority because passcodes are coming out."
+      "notes": "Priority because passcodes are coming out. Oct 6: holding until Ken's field week ends. No automation changes while the team is in the field."
     },
     {
       "id": "w-03",
@@ -1531,7 +1545,7 @@
       "project_id": "rt",
       "since": "2026-09-29",
       "priority": "normal",
-      "notes": ""
+      "notes": "Oct 6: holding until Ken's field week ends. No automation changes while the team is in the field."
     },
     {
       "id": "w-04",
@@ -1540,7 +1554,7 @@
       "project_id": "rt",
       "since": "2026-09-29",
       "priority": "normal",
-      "notes": ""
+      "notes": "Oct 6: holding until Ken's field week ends. No automation changes while the team is in the field."
     },
     {
       "id": "w-05",
@@ -1551,6 +1565,15 @@
       "priority": "high",
       "notes": "See gen-03 for the token request.",
       "received": "2026-09-30"
+    },
+    {
+      "id": "w-06",
+      "what": "FullStory access",
+      "from_whom": "IT",
+      "project_id": "audit",
+      "since": "2026-10-06",
+      "priority": "high",
+      "notes": "Ken approved the IT request Oct 6. Needed for audit-07."
     }
   ],
   "questions": [
@@ -1589,10 +1612,10 @@
       "question": "What is the third prong of the field offers plus SMS and email approach?",
       "ask": "Ken Rion",
       "project_id": "general",
-      "status": "open",
-      "answer": null,
+      "status": "answered",
+      "answer": "Email outreach, SMS and field offers (Chase's understanding; confirm with Ken at the debrief).",
       "raised": "2026-10-01",
-      "answered": null
+      "answered": "2026-10-06"
     },
     {
       "id": "q-05",
