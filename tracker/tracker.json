@@ -181,11 +181,25 @@
       "category": "AI Tools",
       "status": "Next",
       "summary": "One cohesive home for every tool and agent built for Copart Dealer Sales (by me, Leo and anyone else), with links out to each tool.",
-      "built": [],
-      "links": [],
+      "built": [
+        "Leo's Copart Dealer Sales Hub is live: one page for the sales floor's day-to-day tools. Each tool takes a report the team already pulls and runs in the browser (no file leaves the PC). Has a feedback form that emails Leo",
+        "Leo, live: Title Chase Dashboard. Upload the InventoryTool export; aging buckets, seller rollups, follow-up drafts, week-over-week movement",
+        "Leo, live: Owner Retain Pickup Tracker. Daily Lots Pending Owner Retained report, filtered by team, worked seller by seller around the day-8 storage clock",
+        "Leo, live: Copart Locations. Nearest 3 yards for any address or ZIP, tow cost estimate, heavy-duty toggle, international directory",
+        "Leo, live: Counterbid Management. Drop in the Copart Dealer Sales Portal counterbid PDF, work the top 3 bidders per lot, prefilled call, text and email, expiry tracking",
+        "Leo, in build on his hub: Route Tracker, Facilities Tracker, Proceeds Follow Up",
+        "Leo, separate site: SEMA Show 2026 lead capture for the Las Vegas event",
+        "Chase: Route Tracker (in build, also listed on Leo's hub), Copart Dealer Digital, US Dealer Map (in build), PM Board, Plaud setup"
+      ],
+      "links": [
+        {
+          "label": "Leo's Copart Dealer Sales Hub",
+          "where": "Leo's hosted site (URL not recorded yet)"
+        }
+      ],
       "blockers": [],
       "next_steps": [
-        "Chase sends the list of tools built so far",
+        "Decide whether Leo's hub becomes the home for all tools (d-hub-01)",
         "Define the hub: which tools go in, where it lives, who can get in (hub-01)"
       ],
       "dependencies": []
@@ -606,7 +620,7 @@
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "normal",
-      "notes": "Starting list: Route Tracker, Copart Dealer Digital, Leo's Connecticut app, this PM Board. Idea stage. Oct 2: draft it from the list made with Leo (hub-02). Oct 6: it is a Copart Dealer Sales tools hub. Chase is sending the list of what exists now.",
+      "notes": "Starting list: Route Tracker, Copart Dealer Digital, Leo's Connecticut app, this PM Board. Idea stage. Oct 2: draft it from the list made with Leo (hub-02). Oct 6: it is a Copart Dealer Sales tools hub. Chase is sending the list of what exists now. Oct 6: Leo's hub already has 4 live tools and 3 in build (see the hub project's built list). Chase's tools are not on it yet except the Route Tracker.",
       "created": "2026-09-29",
       "updated": "2026-10-06"
     },
@@ -1807,6 +1821,20 @@
       "status": "resolved",
       "answer": "Paste the PLAUD summary into the app for now. Sensitive PLAUD data stays off the public internet. Maybe ask IT or security about approved tools later.",
       "resolved": "2026-10-01"
+    },
+    {
+      "id": "d-hub-01",
+      "project_id": "hub",
+      "question": "Use Leo's Copart Dealer Sales Hub as the one home and add Chase's tools to it, or build a separate hub?",
+      "options": [
+        "Add Chase's tools to Leo's hub",
+        "Build a separate hub that links to Leo's",
+        "Merge into a new shared hub both own"
+      ],
+      "raised": "2026-10-06",
+      "status": "open",
+      "answer": null,
+      "resolved": null
     }
   ],
   "people": [

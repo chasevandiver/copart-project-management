@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-06 (Leo's tools)
+- Source: Chase pasted Leo's hub page and his SEMA Show 2026 lead capture site
+- Changed: hub project built list (Leo's 4 live tools, 3 in build, SEMA site, Chase's tools), link and next steps; hub-01 notes
+- Added: decision d-hub-01 (Leo's hub as the one home, or a separate hub)
+
 ## 2026-10-06 (next steps check-in)
 - Source: Chase's replies to "what should my next steps be"
 - Changed: rt-41, rt-39, gen-10 -> Done (walkthrough fixes live; Ken and Keon walked through)
