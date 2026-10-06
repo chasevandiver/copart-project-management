@@ -620,7 +620,7 @@
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "normal",
-      "notes": "Starting list: Route Tracker, Copart Dealer Digital, Leo's Connecticut app, this PM Board. Idea stage. Oct 2: draft it from the list made with Leo (hub-02). Oct 6: it is a Copart Dealer Sales tools hub. Chase is sending the list of what exists now. Oct 6: Leo's hub already has 4 live tools and 3 in build (see the hub project's built list). Chase's tools are not on it yet except the Route Tracker.",
+      "notes": "Starting list: Route Tracker, Copart Dealer Digital, this PM Board. Idea stage. Oct 2: draft it from the list made with Leo (hub-02). Oct 6: it is a Copart Dealer Sales tools hub. Chase is sending the list of what exists now. Oct 6: Leo's hub already has 4 live tools and 3 in build (see the hub project's built list). Chase's tools are not on it yet except the Route Tracker. The Connecticut app became the Route Tracker. Leo's lead setup and landing pages stay off the hub.",
       "created": "2026-09-29",
       "updated": "2026-10-06"
     },
@@ -1863,7 +1863,7 @@
       "name": "Leo",
       "title": "",
       "department": "",
-      "relationship": "Built the original Route Tracker and the Connecticut app",
+      "relationship": "Built the original Route Tracker (it started as his one-off Connecticut app) and runs the Copart Dealer Sales Hub",
       "contact": ""
     },
     {

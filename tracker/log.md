@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-10-06 (hub scope)
+- Source: Chase on Leo's other projects
+- Changed: hub-01 notes (Connecticut app became the Route Tracker; lead setup and landing pages stay off the hub); Leo's relationship in people
+
 ## 2026-10-06 (Leo's tools)
 - Source: Chase pasted Leo's hub page and his SEMA Show 2026 lead capture site
 - Changed: hub project built list (Leo's 4 live tools, 3 in build, SEMA site, Chase's tools), link and next steps; hub-01 notes
