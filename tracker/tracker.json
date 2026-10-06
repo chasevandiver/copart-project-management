@@ -1310,11 +1310,11 @@
       "id": "gen-19",
       "project_id": "general",
       "title": "Draft an outline for field offers plus SMS and email, and review it with Ken",
-      "status": "Next",
+      "status": "In Progress",
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "high",
-      "notes": "Ken wants offers reps can take to dealerships. Three-prong approach (see q-04). Data rules in q-06. Oct 2: draft while Ken is out, review with him Friday Oct 9 (gen-23). Oct 6: the three prongs are email outreach, SMS and field offers (q-04). Next: draft the field offers.",
+      "notes": "Ken wants offers reps can take to dealerships. Three-prong approach (see q-04). Data rules in q-06. Oct 2: draft while Ken is out, review with him Friday Oct 9 (gen-23). Oct 6: the three prongs are email outreach, SMS and field offers (q-04). Next: draft the field offers. Oct 6: first draft is the Field Offers Outline doc (https://claude.ai/code/artifact/be504938-e521-467a-b780-c59dea7ff303): 6 candidate offers, rep rules, SMS and email, measures, a 4-week pilot, and the asks for Ken.",
       "created": "2026-10-01",
       "updated": "2026-10-06"
     },

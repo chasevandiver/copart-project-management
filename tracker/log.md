@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-10-06 (field offers draft)
+- Source: Chase asked to start the field offers outline
+- Changed: gen-19 Next -> In Progress, notes link the Field Offers Outline doc
+
 ## 2026-10-06 (hub scope)
 - Source: Chase on Leo's other projects
 - Changed: hub-01 notes (Connecticut app became the Route Tracker; lead setup and landing pages stay off the hub); Leo's relationship in people
