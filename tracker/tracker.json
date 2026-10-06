@@ -565,13 +565,14 @@
       "id": "audit-03",
       "project_id": "audit",
       "title": "Website: audit the Dealer Sales experience on copart.com",
-      "status": "Backlog",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "normal",
       "notes": "Start with how hard Copart Dealer Sales is to find on the site (flagged in the Sep 29 meeting with Rama and Leo). Formerly gen-06.",
       "created": "2026-09-29",
-      "updated": "2026-09-29"
+      "updated": "2026-10-06",
+      "completed": "2026-10-06"
     },
     {
       "id": "pm-01",
