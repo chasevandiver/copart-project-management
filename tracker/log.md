@@ -2,6 +2,14 @@
 
 Newest entry first.
 
+## 2026-10-06 (Leo's process recording)
+- Source: transcript of Leo walking through the Copart Dealer Sales process
+- Added: note n-15 (the process from lead to first sale, fees, Leo's outreach and ideas)
+- Added: udm-03 "Clean the Texas leads against Leo's active sellers list" (Me, high), udm-04 "Build a lead page per team" (Work Claude, high)
+- Added: q-07 for Ken (new-dealer spiff and the 250 new-license leads); people Brenda and Brad
+- Changed: gen-27 -> Done; gen-19 notes; udm next steps
+- Waiting on: added w-08 Texas active sellers list (Leo)
+
 ## 2026-10-06 (Route Tracker ownership, hub access)
 - Source: Chase on the hub, the Route Tracker and Leo's process recording
 - Changed: rt-38 -> Done (not needed; Route Tracker is fully Chase's project); rt-42, hub-01 notes; rt and hub summary, blockers and next steps; Leo's relationship in people
