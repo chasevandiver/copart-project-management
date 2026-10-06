@@ -1407,13 +1407,14 @@
       "id": "hub-02",
       "project_id": "hub",
       "title": "Meet Leo to list every AI tool we've each built for the hub",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "high",
       "notes": "One list: tool, what it does, who built it, where it lives, who uses it. Mine: Route Tracker, Copart Dealer Digital, PM Board, Plaud setup. Leo's: Connecticut app, lead setup page, landing page, anything else. Also covers gen-10 (compare lead sites).",
       "created": "2026-10-02",
-      "updated": "2026-10-02"
+      "updated": "2026-10-06",
+      "completed": "2026-10-06"
     },
     {
       "id": "gen-23",
