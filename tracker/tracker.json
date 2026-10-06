@@ -1854,6 +1854,13 @@
       "department": "",
       "relationship": "Susan can send me any reports needed",
       "contact": ""
+    },
+    {
+      "name": "Darren Nylec",
+      "title": "Creative Director",
+      "department": "Marketing",
+      "relationship": "",
+      "contact": ""
     }
   ],
   "notes": [
