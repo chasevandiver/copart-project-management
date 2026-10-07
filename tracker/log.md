@@ -2,6 +2,12 @@
 
 Newest entry first.
 
+## 2026-10-07 (forms owner)
+- Source: Chase confirmed Lauren Harrington is in charge of the forms list
+- Changed: Lauren Harrington relationship; gen-17 notes (bring q-11 to the Oct 8 meeting)
+- Changed: q-09 narrowed to FullStory (page definition, which domains are captured); form routing moved to Lauren
+- Added: q-11 for Lauren Harrington (where seller forms send submissions, blank Email Source, QA test emails in the lead inbox)
+
 ## 2026-10-07 (Marketing contact list)
 - Source: Chase's Marketing contact list
 - Done: gen-20 "Get Noelle's list of contacts for events, content and creative"

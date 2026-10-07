@@ -1297,9 +1297,9 @@
       "owner": "Me",
       "due": "2026-10-08",
       "priority": "normal",
-      "notes": "She runs digital for seller and buyer campaigns. From the Oct 1 sync (n-08). Oct 6: meeting set for Thu Oct 8 to go over all the digital campaigns.",
+      "notes": "She runs digital for seller and buyer campaigns. From the Oct 1 sync (n-08). Oct 6: meeting set for Thu Oct 8 to go over all the digital campaigns. Oct 7: Lauren is in charge of the forms list. Bring q-11 (form routing, blank Email Source, QA test emails) to this meeting.",
       "created": "2026-10-01",
-      "updated": "2026-10-06"
+      "updated": "2026-10-07"
     },
     {
       "id": "gen-18",
@@ -1732,7 +1732,7 @@
     },
     {
       "id": "q-09",
-      "question": "Can Product define the Copart Dealer Sales landing page as a Page in FullStory, and confirm the form (its id is influencerPolicy) sends submissions to Brad and the teams?",
+      "question": "Can Product define the Copart Dealer Sales landing page as a Page in FullStory, and which Copart domains does FullStory capture (are the QA sites like c-g2-auction-qa4.copart.com captured)?",
       "ask": "Justin Alexander",
       "project_id": "audit",
       "status": "open",
@@ -1744,6 +1744,16 @@
       "id": "q-10",
       "question": "The landing page says \"Copart Dealer Services\". Is that the official name, or should it say Copart Dealer Sales?",
       "ask": "Ken Rion",
+      "project_id": "audit",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-07",
+      "answered": null
+    },
+    {
+      "id": "q-11",
+      "question": "Where does each seller form send its submissions (the Copart Dealer Sales landing page form and How to Sell Business)? Why is \"Email Source\" blank on them, and do QA test submissions reach the real lead inbox?",
+      "ask": "Lauren Harrington",
       "project_id": "audit",
       "status": "open",
       "answer": null,
@@ -1983,7 +1993,7 @@
       "name": "Lauren Harrington",
       "title": "Brand Manager",
       "department": "Marketing",
-      "relationship": "Runs digital for seller and buyer campaigns; knows what's been tried; great for copy and brand messaging",
+      "relationship": "Runs digital for seller and buyer campaigns; knows what's been tried; great for copy and brand messaging; in charge of the website forms list (confirmed Oct 7)",
       "contact": ""
     },
     {
