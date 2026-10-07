@@ -2,7 +2,7 @@
   "meta": {
     "owner": "Chase",
     "role": "Digital Engagement Manager, supporting Ken Rion (SVP of Dealer Sales)",
-    "last_updated": "2026-10-06"
+    "last_updated": "2026-10-07"
   },
   "categories": [
     "AI Tools",
@@ -2224,6 +2224,18 @@
         "Payment: by check or ACH direct deposit, paid once the original title is in.",
         "Leo's suggestions (ideas only, nothing decided): get the decision maker's cell rather than the main line; set dealers up on ACH; clean the Texas leads against active sellers and flag buy-only dealers; give each team about 20 leads at a time on its own page. He also mentioned Ken is holding about 250 new-license leads and guessed a new-dealer spiff may be coming."
       ]
+    },
+    {
+      "id": "n-16",
+      "title": "10.7 Route Tracker Feedback",
+      "body": [
+        "Plaud isn't picking up the right information and numbers are being spelled out instead of in numerical value on phone numbers/emails.",
+        "Gotta get Plaud automated with the Route Tracker app so that they don't have to do anything manual.",
+        "Add a \"export spreadsheet button\" that has a list of the dealer visit and all relevant info that Keon can send to Ken.",
+        "Add a business card reader image so it easily logs contacts through that - instead of relying on Plaud picking up contact info."
+      ],
+      "project_id": "rt",
+      "date": "2026-10-07"
     }
   ],
   "reports": [
