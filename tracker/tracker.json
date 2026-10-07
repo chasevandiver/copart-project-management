@@ -2236,6 +2236,18 @@
       ],
       "project_id": "rt",
       "date": "2026-10-07"
+    },
+    {
+      "id": "n-17",
+      "title": "10.7 Ideas Automation and Update Ideas",
+      "body": [
+        "Potentially use power automate where Plaud Auto-sends an email and gets put into spreadsheet where the app can then extract the fields.",
+        "Or scrap Plaud all together except for a summary of meeting notes - have dealers fill out information on an easy fillable form either on the reps phone or the dealer form.",
+        "Prefill the forms as much as possible already.",
+        "Create a pre-visit email where the Field rep can email the dealer/call the dealer before the visit to see if whoever is there is the right contact to reach and if they will be in that day. Build out a smart prospecting tab that tracks these pre-visit contact touchpoints to build the route each day based on who is in/who is not in. Look at Power Automate for this via email as well or log by phone call."
+      ],
+      "project_id": "rt",
+      "date": "2026-10-07"
     }
   ],
   "reports": [
