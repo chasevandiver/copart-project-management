@@ -576,9 +576,9 @@
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Marketing, IT, Sales, and others as they come up. Lives in the people section of this tracker.",
+      "notes": "Marketing, IT, Sales, and others as they come up. Lives in the people section of this tracker. Oct 7: Marketing list in from Noelle (brand, influencer, events, social, analytics, graphic design).",
       "created": "2026-09-29",
-      "updated": "2026-09-29"
+      "updated": "2026-10-07"
     },
     {
       "id": "audit-03",
@@ -1329,13 +1329,14 @@
       "id": "gen-20",
       "project_id": "general",
       "title": "Get Noelle's list of contacts for events, content and creative",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "normal",
-      "notes": "Add them to people as they come in.",
+      "notes": "Add them to people as they come in. Oct 7: list received; all eight are in people.",
       "created": "2026-10-01",
-      "updated": "2026-10-02"
+      "updated": "2026-10-07",
+      "completed": "2026-10-07"
     },
     {
       "id": "rt-40",
@@ -1498,7 +1499,7 @@
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Oct 7 FullStory (n-18): the number (888-616-1237, in the form header and Contact Us Now) got no taps on mobile in 30 days and 9 people clicked it on desktop. Likely plain text, not tap-to-call. Oct 7: Chase called it from the form. The number is right (rang to the right place), but the line was a little crackly, and on mobile it is not tap-to-call (had to highlight, copy, then dial). Fix: make it a tap-to-call link (tel:).",
+      "notes": "Oct 7 FullStory (n-18): the number (888-616-1237, in the form header and Contact Us Now) got no taps on mobile in 30 days and 9 people clicked it on desktop. Likely plain text, not tap-to-call. Oct 7: Chase called it from the form. The number is right (rang to the right place), but the line was a little crackly, and on mobile it is not tap-to-call (had to highlight, copy, then dial). Fix: make it a tap-to-call link (tel:). Who makes the site change is still being found out; not assigned yet.",
       "created": "2026-10-02",
       "updated": "2026-10-07"
     },
@@ -1951,10 +1952,10 @@
       "contact": ""
     },
     {
-      "name": "Rama",
+      "name": "Rama Manyam",
       "title": "",
       "department": "Marketing",
-      "relationship": "Marketing tools; Salesforce onboarding",
+      "relationship": "Analytics; marketing tools; Salesforce onboarding",
       "contact": ""
     },
     {
@@ -1973,16 +1974,16 @@
     },
     {
       "name": "Noelle Goodman",
-      "title": "Director of Marketing",
+      "title": "Brand Director",
       "department": "Marketing",
       "relationship": "First stop for any question while I onboard; points me to the right person",
       "contact": ""
     },
     {
       "name": "Lauren Harrington",
-      "title": "Strategy Marketing",
+      "title": "Brand Manager",
       "department": "Marketing",
-      "relationship": "Runs digital for seller and buyer campaigns; knows what's been tried",
+      "relationship": "Runs digital for seller and buyer campaigns; knows what's been tried; great for copy and brand messaging",
       "contact": ""
     },
     {
@@ -2017,21 +2018,35 @@
       "name": "Darren Nylec",
       "title": "Creative Director",
       "department": "Marketing",
-      "relationship": "",
+      "relationship": "Graphic design",
       "contact": ""
     },
     {
       "name": "Chase Lee",
       "title": "Marketing Manager",
       "department": "Marketing",
-      "relationship": "",
+      "relationship": "Influencer marketing",
       "contact": ""
     },
     {
       "name": "Andrew Peska",
       "title": "Marketing Specialist",
       "department": "Marketing",
-      "relationship": "",
+      "relationship": "Event marketing",
+      "contact": ""
+    },
+    {
+      "name": "David Bansigan",
+      "title": "",
+      "department": "Marketing",
+      "relationship": "Social media",
+      "contact": ""
+    },
+    {
+      "name": "Morgan Tseng",
+      "title": "",
+      "department": "Marketing",
+      "relationship": "Analytics",
       "contact": ""
     },
     {

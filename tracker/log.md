@@ -2,6 +2,12 @@
 
 Newest entry first.
 
+## 2026-10-07 (Marketing contact list)
+- Source: Chase's Marketing contact list
+- Done: gen-20 "Get Noelle's list of contacts for events, content and creative"
+- People: added David Bansigan (social media), Morgan Tseng (analytics); Rama is now Rama Manyam (analytics); Noelle Goodman title Brand Director; Lauren Harrington title Brand Manager (copy and brand messaging); focus areas set for Chase Lee (influencer), Andrew Peska (events), Darren Nylec (graphic design)
+- Changed: gen-05 notes; audit-08 notes (who makes the site change is still being found out)
+
 ## 2026-10-07 (landing page number test call)
 - Source: Chase called the number on the Copart Dealer Sales form
 - Changed: audit-08 renamed "Make the phone number on the Copart Dealer Sales landing page tap-to-call", notes (number is correct, line a little crackly, not tap-to-call on mobile)
