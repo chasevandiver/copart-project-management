@@ -2,6 +2,16 @@
 
 Newest entry first.
 
+## 2026-10-07 (FullStory findings)
+- Source: Chase's FullStory exports (traffic, desktop and mobile click maps of the landing page)
+- Added: note n-18 (FullStory findings for the landing page)
+- Changed: audit-07 Waiting -> In Progress, due 2026-10-09; gen-23 notes
+- Changed: audit-08 renamed "Fix the phone number on the Copart Dealer Sales landing page", notes; audit-09 renamed "Revamp the Copart Dealer Sales landing page and the nav to it", notes with fix ideas
+- Changed: audit project built list and next steps
+- Added: audit-10 "Check where the mobile \"Sell your car\" button goes from the landing page" (Me, high, due 2026-10-09)
+- Added: questions q-08 (monthly form leads, Brad), q-09 (FullStory page definition and form routing, Justin Alexander), q-10 (Copart Dealer Services vs Copart Dealer Sales, Ken Rion)
+- Waiting on: w-06 FullStory access received
+
 ## 2026-10-06 (Leo's suggestions are ideas)
 - Source: Chase said Leo's suggestions are suggestions, not fact; the process is what matters
 - Changed: n-15 rewritten as process facts, with Leo's suggestions in one line marked as ideas

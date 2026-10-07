@@ -214,13 +214,16 @@
       "status": "Backlog",
       "idea": true,
       "summary": "Full review of what Copart Dealer Sales is doing digitally today, and where we should put effort to increase visibility. Idea in progress; nothing committed yet.",
-      "built": [],
+      "built": [
+        "FullStory click maps of the landing page, desktop and mobile, with findings (n-18)"
+      ],
       "links": [],
       "blockers": [],
       "next_steps": [
-        "FullStory access from IT, approved by Ken Oct 6 (w-06)",
-        "FullStory review of the Copart Dealer Sales pages (audit-07)",
-        "Website audit of the Dealer Sales experience on copart.com (audit-03)"
+        "Finish the FullStory review: mobile scroll map, form check, Journeys (audit-07)",
+        "Check where the mobile \"Sell your car\" button goes (audit-10)",
+        "Fix the landing page phone number (audit-08)",
+        "Draft the landing page revamp (audit-09)"
       ],
       "dependencies": [
         "Department contacts, Marketing especially, to find out who owns email and social (gen-05)",
@@ -1415,13 +1418,13 @@
       "id": "audit-07",
       "project_id": "audit",
       "title": "Dig into FullStory: how dealers use the Copart Dealer Sales pages",
-      "status": "Waiting",
+      "status": "In Progress",
       "owner": "Me",
-      "due": null,
+      "due": "2026-10-09",
       "priority": "high",
-      "notes": "Follow-up to the Oct 1 Marketing and Copart Dealer Sales sync (n-08). Watch session recordings and heatmaps: where dealers scroll, click, and drop off on sign-up and the dealer pages. Write the top 3 to 5 findings for the Friday debrief (gen-23). Needs access from Justin Alexander (gen-15). Feeds the website audit (audit-03). Oct 6: Ken approved IT access. It will take time to come through (w-06), so this likely slips past Friday.",
+      "notes": "Follow-up to the Oct 1 Marketing and Copart Dealer Sales sync (n-08). Watch session recordings and heatmaps: where dealers scroll, click, and drop off on sign-up and the dealer pages. Write the top 3 to 5 findings for the Friday debrief (gen-23). Needs access from Justin Alexander (gen-15). Feeds the website audit (audit-03). Oct 6: Ken approved IT access. It will take time to come through (w-06), so this likely slips past Friday. Oct 7: access came through. Desktop and mobile click maps for the landing page done; findings in n-18. Still to pull: mobile scroll map (percent who reach the form), confirm mobile form taps (search Mobile + clicked #first_name), Journeys from the page, Abandoned Form search.",
       "created": "2026-10-02",
-      "updated": "2026-10-06"
+      "updated": "2026-10-07"
     },
     {
       "id": "hub-02",
@@ -1444,9 +1447,9 @@
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "high",
-      "notes": "Friday Oct 9. Route Tracker field feedback (rt-42), lead match by Copart dealer status (udm-01), FullStory findings (audit-07), tools hub list with Leo (hub-01, hub-02), field offers outline (gen-19), and q-04 (third prong).",
+      "notes": "Friday Oct 9. Route Tracker field feedback (rt-42), lead match by Copart dealer status (udm-01), FullStory findings (audit-07), tools hub list with Leo (hub-01, hub-02), field offers outline (gen-19), and q-04 (third prong). Oct 7: FullStory findings ready (n-18).",
       "created": "2026-10-02",
-      "updated": "2026-10-02"
+      "updated": "2026-10-07"
     },
     {
       "id": "gen-24",
@@ -1490,26 +1493,26 @@
     {
       "id": "audit-08",
       "project_id": "audit",
-      "title": "Phone Number on CDS Landing Page is no Good",
+      "title": "Fix the phone number on the Copart Dealer Sales landing page",
       "status": "Next",
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "",
+      "notes": "Oct 7 FullStory (n-18): the number (888-616-1237, in the form header and Contact Us Now) got no taps on mobile in 30 days and 9 people clicked it on desktop. Likely plain text, not tap-to-call. Fix: correct number, make it a tap-to-call link.",
       "created": "2026-10-02",
-      "updated": "2026-10-02"
+      "updated": "2026-10-07"
     },
     {
       "id": "audit-09",
       "project_id": "audit",
-      "title": "Look at revamping the CDS landing page and Nav to CDS page",
+      "title": "Revamp the Copart Dealer Sales landing page and the nav to it",
       "status": "Next",
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "",
+      "notes": "Oct 7 FullStory (n-18): median visit 9 to 12 seconds, form almost unused on mobile (69% of visitors). Ideas: on mobile, a \"Get a call back\" button in the hero that jumps to the form; cut the form to name, phone and zip (plus dealer name); point the header \"Sell your car\" button on this page at the form; tap-to-call number (audit-08); a dealer-only line at the top so buyers self-select out; 3-step \"how it works\" (list one car, pickup in 24 hours, paid after the sale) and proof (results, a dealer quote) above the fold; sticky call and call-back bar on mobile.",
       "created": "2026-10-02",
-      "updated": "2026-10-02"
+      "updated": "2026-10-07"
     },
     {
       "id": "gen-26",
@@ -1573,6 +1576,18 @@
       "notes": "Leo's suggestion (n-15), not decided. Status per lead (called, contacted, interested, not interested), notes, car count.",
       "created": "2026-10-06",
       "updated": "2026-10-06"
+    },
+    {
+      "id": "audit-10",
+      "project_id": "audit",
+      "title": "Check where the mobile \"Sell your car\" button goes from the landing page",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-09",
+      "priority": "high",
+      "notes": "Most-tapped element on the mobile landing page (1.3K people in 30 days, n-18). If it leaves the page for the general sell flow, dealer sellers never see the form. Tap it on a phone, or run Journeys from the page in FullStory.",
+      "created": "2026-10-07",
+      "updated": "2026-10-07"
     }
   ],
   "waiting_on": [
@@ -1630,7 +1645,8 @@
       "project_id": "audit",
       "since": "2026-10-06",
       "priority": "high",
-      "notes": "Ken approved the IT request Oct 6. Needed for audit-07."
+      "notes": "Ken approved the IT request Oct 6. Needed for audit-07. Oct 7: access came through.",
+      "received": "2026-10-07"
     },
     {
       "id": "w-07",
@@ -1701,6 +1717,36 @@
       "status": "open",
       "answer": null,
       "raised": "2026-10-01",
+      "answered": null
+    },
+    {
+      "id": "q-08",
+      "question": "How many website form leads come in a month? (FullStory shows about 50 Submit clicks a month on the landing page)",
+      "ask": "Brad",
+      "project_id": "audit",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-07",
+      "answered": null
+    },
+    {
+      "id": "q-09",
+      "question": "Can Product define the Copart Dealer Sales landing page as a Page in FullStory, and confirm the form (its id is influencerPolicy) sends submissions to Brad and the teams?",
+      "ask": "Justin Alexander",
+      "project_id": "audit",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-07",
+      "answered": null
+    },
+    {
+      "id": "q-10",
+      "question": "The landing page says \"Copart Dealer Services\". Is that the official name, or should it say Copart Dealer Sales?",
+      "ask": "Ken Rion",
+      "project_id": "audit",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-07",
       "answered": null
     }
   ],
@@ -2248,6 +2294,24 @@
       ],
       "project_id": "rt",
       "date": "2026-10-07"
+    },
+    {
+      "id": "n-18",
+      "date": "2026-10-07",
+      "title": "FullStory: Copart Dealer Sales landing page, Sep 8 to Oct 7",
+      "project_id": "audit",
+      "body": [
+        "Traffic: about 6.2K people a month (200 to 260 a day). 69% mobile (4.3K), 30% desktop (1.9K). 77% arrive from Google; some arrive from Google and Apple sign-in (likely existing members).",
+        "Time on page: median 12.0s on desktop, 8.9s on mobile. About 37% of desktop and 35% of mobile visitors leave without clicking anything.",
+        "Desktop: the header nav is the top click (574 people, 47% of clickers). Search bar 80, Search Inventory 73, Sign-In 47, Help Center 51. Much of the traffic looks like buyers.",
+        "Mobile: the header \"Sell your car\" button is the most-tapped element (1.3K people, 47% of tappers, about 30% of mobile visitors). It likely sends sellers away from the dealer form (audit-10). Search bar 647, Search Inventory 484.",
+        "Lead form: desktop 76 people started it and 46 clicked Submit. Mobile: no form field or Submit in the top 25 (4 taps or fewer each). About 80 starts and 50 Submit clicks a month overall, about 1.3% of visitors.",
+        "On mobile the hero fills the first screen, so the form starts below the fold. The form has 7 required fields plus a consent box.",
+        "Phone number: no taps on mobile, 9 people on desktop. Probably not tap-to-call, and the number is wrong (audit-08).",
+        "Below the form (Copart Difference, pricing, Contact Us Now) gets almost no clicks on either device.",
+        "Checks: the page says \"Copart Dealer Services\" (q-10); the form's id is influencerPolicy (q-09); the page is not a defined Page in FullStory (q-09); compare Submit clicks with Brad's monthly form leads (q-08).",
+        "Source: FullStory click map exports and the Sep 8 to Oct 7 traffic export, kept on Chase's work machine, not in this repo."
+      ]
     }
   ],
   "reports": [
