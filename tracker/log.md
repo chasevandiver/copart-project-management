@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-07 (landing page number test call)
+- Source: Chase called the number on the Copart Dealer Sales form
+- Changed: audit-08 renamed "Make the phone number on the Copart Dealer Sales landing page tap-to-call", notes (number is correct, line a little crackly, not tap-to-call on mobile)
+- Changed: audit project next step for audit-08
+
 ## 2026-10-07 (FullStory findings)
 - Source: Chase's FullStory exports (traffic, desktop and mobile click maps of the landing page)
 - Added: note n-18 (FullStory findings for the landing page)

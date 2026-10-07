@@ -222,7 +222,7 @@
       "next_steps": [
         "Finish the FullStory review: mobile scroll map, form check, Journeys (audit-07)",
         "Check where the mobile \"Sell your car\" button goes (audit-10)",
-        "Fix the landing page phone number (audit-08)",
+        "Make the landing page phone number tap-to-call (audit-08)",
         "Draft the landing page revamp (audit-09)"
       ],
       "dependencies": [
@@ -1493,12 +1493,12 @@
     {
       "id": "audit-08",
       "project_id": "audit",
-      "title": "Fix the phone number on the Copart Dealer Sales landing page",
+      "title": "Make the phone number on the Copart Dealer Sales landing page tap-to-call",
       "status": "Next",
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Oct 7 FullStory (n-18): the number (888-616-1237, in the form header and Contact Us Now) got no taps on mobile in 30 days and 9 people clicked it on desktop. Likely plain text, not tap-to-call. Fix: correct number, make it a tap-to-call link.",
+      "notes": "Oct 7 FullStory (n-18): the number (888-616-1237, in the form header and Contact Us Now) got no taps on mobile in 30 days and 9 people clicked it on desktop. Likely plain text, not tap-to-call. Oct 7: Chase called it from the form. The number is right (rang to the right place), but the line was a little crackly, and on mobile it is not tap-to-call (had to highlight, copy, then dial). Fix: make it a tap-to-call link (tel:).",
       "created": "2026-10-02",
       "updated": "2026-10-07"
     },
