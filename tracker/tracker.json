@@ -294,13 +294,14 @@
       "id": "rt-01",
       "project_id": "rt",
       "title": "Re-send task: match Leo's landing page and drop the passcode for seamless sign-in",
-      "status": "Blocked",
+      "status": "Done",
       "owner": "Work Claude",
       "due": null,
       "priority": "high",
       "notes": "Last attempt failed with \"Invalid request\" before any changes. Blocked by Work Claude API limit. Without a passcode anyone with the link can tap any name, so only do this if the app is network/VPN-only (see decision d-rt-02).",
       "created": "2026-09-29",
-      "updated": "2026-09-29"
+      "updated": "2026-10-08",
+      "completed": "2026-10-08"
     },
     {
       "id": "rt-02",
