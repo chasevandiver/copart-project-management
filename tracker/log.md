@@ -2,6 +2,16 @@
 
 Newest entry first.
 
+## 2026-10-08 (Lauren call)
+- Source: Chase's handwritten notes from the Oct 8 call with Lauren Harrington
+- Done: gen-17 "Meet Lauren Harrington about past and current seller and buyer campaigns"
+- Added: note n-19 (Lauren call 10/8)
+- Answered: q-11 (Tech owns the forms on the website pages)
+- Added: q-12 for IT (who on Tech owns the forms, routing, blank Email Source, QA emails); q-13 for Lauren Harrington (are the old event pages being taken down?)
+- Changed: audit-09 renamed "Remake the Copart Dealer Sales landing page (SEO and AEO friendly) and the nav to it", notes (whole page, SEO and AEO, Creative 2 weeks lead time)
+- Changed: audit-08 notes (part of the remake, Tech owns forms); audit-01 and audit-05 notes (no campaigns aimed at prospective dealers)
+- Changed: Lauren Harrington relationship (mostly member campaigns, Copart Dealer Sales ad hoc only); audit project next steps and dependencies
+
 ## 2026-10-07 (forms owner)
 - Source: Chase confirmed Lauren Harrington is in charge of the forms list
 - Changed: Lauren Harrington relationship; gen-17 notes (bring q-11 to the Oct 8 meeting)

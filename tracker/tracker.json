@@ -2,7 +2,7 @@
   "meta": {
     "owner": "Chase",
     "role": "Digital Engagement Manager, supporting Ken Rion (SVP of Dealer Sales)",
-    "last_updated": "2026-10-07"
+    "last_updated": "2026-10-08"
   },
   "categories": [
     "AI Tools",
@@ -222,13 +222,15 @@
       "next_steps": [
         "Finish the FullStory review: mobile scroll map, form check, Journeys (audit-07)",
         "Check where the mobile \"Sell your car\" button goes (audit-10)",
-        "Make the landing page phone number tap-to-call (audit-08)",
-        "Draft the landing page revamp (audit-09)"
+        "Plan the landing page remake as one piece: SEO and AEO friendly, form, tap-to-call number (audit-09, audit-08)",
+        "Ask IT who on Tech owns the website forms and where submissions go (q-12)"
       ],
       "dependencies": [
         "Department contacts, Marketing especially, to find out who owns email and social (gen-05)",
         "Salesforce access, for existing campaign history (gen-04)",
-        "Good topic for the meeting with Kyle and Ken this week (gen-01)"
+        "Good topic for the meeting with Kyle and Ken this week (gen-01)",
+        "Tech owns the forms on the website pages (Lauren, Oct 8)",
+        "Creative team needs 2 weeks lead time for anything they make"
       ]
     },
     {
@@ -638,9 +640,9 @@
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "normal",
-      "notes": "Who sends them, audience, frequency, content, results if available. Needs Marketing contacts (gen-05) and Salesforce campaign history (gen-04).",
+      "notes": "Who sends them, audience, frequency, content, results if available. Needs Marketing contacts (gen-05) and Salesforce campaign history (gen-04). Oct 8, Lauren: no campaigns are aimed at prospective dealers. Copart Dealer Sales marketing is mostly reactive and ad hoc; her campaigns are mostly for members (n-19).",
       "created": "2026-09-29",
-      "updated": "2026-10-02"
+      "updated": "2026-10-08"
     },
     {
       "id": "audit-02",
@@ -676,9 +678,9 @@
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Pulls together audit-01 to audit-04.",
+      "notes": "Pulls together audit-01 to audit-04. Oct 8: include Lauren's point that nothing targets prospective dealers (n-19).",
       "created": "2026-09-29",
-      "updated": "2026-09-29"
+      "updated": "2026-10-08"
     },
     {
       "id": "cdd-11",
@@ -1293,13 +1295,14 @@
       "id": "gen-17",
       "project_id": "general",
       "title": "Meet Lauren Harrington about past and current seller and buyer campaigns",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-08",
       "priority": "normal",
-      "notes": "She runs digital for seller and buyer campaigns. From the Oct 1 sync (n-08). Oct 6: meeting set for Thu Oct 8 to go over all the digital campaigns. Oct 7: Lauren is in charge of the forms list. Bring q-11 (form routing, blank Email Source, QA test emails) to this meeting.",
+      "notes": "She runs digital for seller and buyer campaigns. From the Oct 1 sync (n-08). Oct 6: meeting set for Thu Oct 8 to go over all the digital campaigns. Oct 7: Lauren is in charge of the forms list. Bring q-11 (form routing, blank Email Source, QA test emails) to this meeting. Oct 8: met. Notes in n-19.",
       "created": "2026-10-01",
-      "updated": "2026-10-07"
+      "updated": "2026-10-08",
+      "completed": "2026-10-08"
     },
     {
       "id": "gen-18",
@@ -1499,21 +1502,21 @@
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Oct 7 FullStory (n-18): the number (888-616-1237, in the form header and Contact Us Now) got no taps on mobile in 30 days and 9 people clicked it on desktop. Likely plain text, not tap-to-call. Oct 7: Chase called it from the form. The number is right (rang to the right place), but the line was a little crackly, and on mobile it is not tap-to-call (had to highlight, copy, then dial). Fix: make it a tap-to-call link (tel:). Who makes the site change is still being found out; not assigned yet.",
+      "notes": "Oct 7 FullStory (n-18): the number (888-616-1237, in the form header and Contact Us Now) got no taps on mobile in 30 days and 9 people clicked it on desktop. Likely plain text, not tap-to-call. Oct 7: Chase called it from the form. The number is right (rang to the right place), but the line was a little crackly, and on mobile it is not tap-to-call (had to highlight, copy, then dial). Fix: make it a tap-to-call link (tel:). Oct 8, Lauren: Tech owns the forms on the website pages, and changes to the dealer page should look at the whole page. Do this as part of the remake (audit-09), not as a one-off.",
       "created": "2026-10-02",
-      "updated": "2026-10-07"
+      "updated": "2026-10-08"
     },
     {
       "id": "audit-09",
       "project_id": "audit",
-      "title": "Revamp the Copart Dealer Sales landing page and the nav to it",
+      "title": "Remake the Copart Dealer Sales landing page (SEO and AEO friendly) and the nav to it",
       "status": "Next",
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Oct 7 FullStory (n-18): median visit 9 to 12 seconds, form almost unused on mobile (69% of visitors). Ideas: on mobile, a \"Get a call back\" button in the hero that jumps to the form; cut the form to name, phone and zip (plus dealer name); point the header \"Sell your car\" button on this page at the form; tap-to-call number (audit-08); a dealer-only line at the top so buyers self-select out; 3-step \"how it works\" (list one car, pickup in 24 hours, paid after the sale) and proof (results, a dealer quote) above the fold; sticky call and call-back bar on mobile.",
+      "notes": "Oct 7 FullStory (n-18): median visit 9 to 12 seconds, form almost unused on mobile (69% of visitors). Ideas: on mobile, a \"Get a call back\" button in the hero that jumps to the form; cut the form to name, phone and zip (plus dealer name); point the header \"Sell your car\" button on this page at the form; tap-to-call number (audit-08); a dealer-only line at the top so buyers self-select out; 3-step \"how it works\" (list one car, pickup in 24 hours, paid after the sale) and proof (results, a dealer quote) above the fold; sticky call and call-back bar on mobile. Oct 8, Lauren (n-19): look at the whole page, not piecemeal changes; remake it to be SEO and AEO friendly; Tech owns the forms; the Creative team needs 2 weeks lead time.",
       "created": "2026-10-02",
-      "updated": "2026-10-07"
+      "updated": "2026-10-08"
     },
     {
       "id": "gen-26",
@@ -1755,9 +1758,29 @@
       "question": "Where does each seller form send its submissions (the Copart Dealer Sales landing page form and How to Sell Business)? Why is \"Email Source\" blank on them, and do QA test submissions reach the real lead inbox?",
       "ask": "Lauren Harrington",
       "project_id": "audit",
+      "status": "answered",
+      "answer": "Oct 8, Lauren: Tech owns the forms on the website pages. Routing, the blank Email Source and QA test emails go to Tech (q-12).",
+      "raised": "2026-10-07",
+      "answered": "2026-10-08"
+    },
+    {
+      "id": "q-12",
+      "question": "Who on Tech owns the forms on the Copart Dealer Sales website pages? Where does each seller form send its submissions, why is \"Email Source\" blank, and do QA test submissions reach the real lead inbox?",
+      "ask": "IT",
+      "project_id": "audit",
       "status": "open",
       "answer": null,
-      "raised": "2026-10-07",
+      "raised": "2026-10-08",
+      "answered": null
+    },
+    {
+      "id": "q-13",
+      "question": "Are the old event pages being taken down?",
+      "ask": "Lauren Harrington",
+      "project_id": "audit",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-08",
       "answered": null
     }
   ],
@@ -1993,7 +2016,7 @@
       "name": "Lauren Harrington",
       "title": "Brand Manager",
       "department": "Marketing",
-      "relationship": "Runs digital for seller and buyer campaigns; knows what's been tried; great for copy and brand messaging; in charge of the website forms list (confirmed Oct 7)",
+      "relationship": "Runs digital campaigns, mostly for members; handles Copart Dealer Sales only reactively, ad hoc, with no campaigns aimed at prospective dealers (Oct 8). Knows what's been tried; great for copy and brand messaging; in charge of the website forms list (confirmed Oct 7)",
       "contact": ""
     },
     {
@@ -2336,6 +2359,21 @@
         "Below the form (Copart Difference, pricing, Contact Us Now) gets almost no clicks on either device.",
         "Checks: the page says \"Copart Dealer Services\" (q-10); the form's id is influencerPolicy (q-09); the page is not a defined Page in FullStory (q-09); compare Submit clicks with Brad's monthly form leads (q-08).",
         "Source: FullStory click map exports and the Sep 8 to Oct 7 traffic export, kept on Chase's work machine, not in this repo."
+      ]
+    },
+    {
+      "id": "n-19",
+      "date": "2026-10-08",
+      "title": "Lauren Harrington call 10/8",
+      "project_id": "audit",
+      "body": [
+        "Lauren runs Copart's digital campaigns, mostly for members. She works on Copart Dealer Sales only reactively, as one-off asks. There are no campaigns aimed at prospective dealers.",
+        "Copart Dealer Sales marketing is mostly reactive, and less of it reaches dealers.",
+        "Tech owns the forms on the website pages.",
+        "Any change to the dealer page should look at the whole page, not piecemeal fixes.",
+        "Remake the page to be SEO and AEO friendly.",
+        "The Creative team needs 2 weeks lead time.",
+        "Open: are the old event pages being taken down? (q-13)"
       ]
     }
   ],
