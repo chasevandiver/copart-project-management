@@ -1409,13 +1409,14 @@
       "id": "rt-42",
       "project_id": "rt",
       "title": "Support Ken's field week on the Route Tracker: check in daily and log his feedback",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "high",
       "notes": "Ken is out Mon to Thu (Oct 5 to 8) using the Route Tracker. Quick check-in each day: what worked, what broke, what he wished it did. Log fixes as rt tasks for Work Claude. Bring the list to the Friday debrief (gen-23). Oct 6: Plaud is having trouble picking up notes (see n-14). Oct 6: live test underway with Ken and Keon in Indianapolis.",
       "created": "2026-10-02",
-      "updated": "2026-10-06"
+      "updated": "2026-10-08",
+      "completed": "2026-10-08"
     },
     {
       "id": "udm-01",
