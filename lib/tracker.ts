@@ -6,7 +6,7 @@ export type Status = (typeof STATUSES)[number];
 export const PRIORITIES = ["urgent", "high", "normal", "low"] as const;
 export type Priority = (typeof PRIORITIES)[number];
 
-export const CATEGORIES = ["AI Tools", "Marketing Efforts"] as const;
+export const CATEGORIES = ["AI Tools", "Marketing Efforts", "Campaigns"] as const;
 export type Category = (typeof CATEGORIES)[number];
 
 export const FIXED_OWNERS = ["Me", "Work Claude", "Claude Code", "IT", "Leo", "Legal"];

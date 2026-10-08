@@ -2,6 +2,15 @@
 
 Newest entry first.
 
+## 2026-10-08 (Campaigns section)
+- Source: Chase expects several campaign projects and wants them in their own section, apart from AI tools and marketing
+- Added: category Campaigns; goal g-03 "Win prospective dealers through campaigns"
+- Added: project cmp "Campaign setup" (groundwork every campaign shares) and project pdo "Prospective dealer outreach" (idea, the first campaign)
+- Changed: cceib (Cars & Cocktails Event in Boston) Marketing Efforts -> Campaigns, moved from g-02 to g-03
+- Moved and renumbered: gen-04 -> cmp-01 (Salesforce), gen-19 -> cmp-02 (field offers plus SMS and email), audit-13 -> cmp-03 (campaign calendar), gen-09 -> cmp-04 (one pager), audit-11 -> pdo-01 (Kyle review), d-audit-01 -> d-pdo-01 (Austin). References updated across the tracker.
+- Moved: q-05 and q-06 to cmp; note n-20 to pdo
+- Changed: audit project next steps and dependencies (campaign items moved out)
+
 ## 2026-10-08 (marketing notes sorted)
 - Source: Chase asked to keep AI tools and marketing work apart
 - Changed: notes n-01 (Rama and Leo on marketing tools) and n-08 (Copart Dealer Sales and Marketing sync) moved from general to audit

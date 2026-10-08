@@ -6,7 +6,8 @@
   },
   "categories": [
     "AI Tools",
-    "Marketing Efforts"
+    "Marketing Efforts",
+    "Campaigns"
   ],
   "goals": [
     {
@@ -31,10 +32,23 @@
       "summary": "Know what Copart Dealer Sales does digitally today and put effort where it raises visibility.",
       "status": "Backlog",
       "project_ids": [
-        "audit",
-        "cceib"
+        "audit"
       ],
       "created": "2026-09-29",
+      "updated": "2026-10-08"
+    },
+    {
+      "id": "g-03",
+      "category": "Campaigns",
+      "title": "Win prospective dealers through campaigns",
+      "summary": "Run campaigns that reach dealers who don't work with Copart yet, reviewed by Kyle, and measured by leads and meetings booked.",
+      "status": "Next",
+      "project_ids": [
+        "cmp",
+        "pdo",
+        "cceib"
+      ],
+      "created": "2026-10-08",
       "updated": "2026-10-08"
     }
   ],
@@ -230,21 +244,19 @@
       "blockers": [],
       "next_steps": [
         "Check where the mobile \"Sell your car\" button goes (audit-10)",
-        "Ken at the Friday debrief: the name (q-10), Austin (d-audit-01), which campaigns stay with Dealer Sales (gen-23)",
+        "Ken at the Friday debrief: the name (q-10), Austin (d-pdo-01), which campaigns stay with Dealer Sales (gen-23)",
         "Finish the FullStory review: mobile scroll map, form check, Journeys (audit-07)",
         "Write the one-page remake brief for Tech and Creative (audit-12), then plan the remake (audit-09, audit-08)",
         "Ask IT who on Tech owns the website forms and where submissions go (q-12)",
-        "Before campaigns: legal (cdd-02), prospects-only match (udm-01), campaign calendar (audit-13), form lead baseline (q-08, q-12)",
-        "Review prospective dealer campaign ideas with Kyle (audit-11)",
-        "Turn on the weekly AEO re-run and the fee check (cdd-12)"
+        "Turn on the weekly AEO re-run and the fee check (cdd-12)",
+        "Campaign work now lives in the Campaigns section (cmp, pdo)"
       ],
       "dependencies": [
         "Department contacts, Marketing especially, to find out who owns email and social (gen-05)",
-        "Salesforce access, for existing campaign history (gen-04)",
+        "Salesforce access, for existing campaign history (cmp-01)",
         "Good topic for the meeting with Kyle and Ken this week (gen-01)",
         "Tech owns the forms on the website pages (Lauren, Oct 8)",
-        "Creative team needs 2 weeks lead time for anything they make",
-        "Kyle Cochran reviews every digital campaign before it runs (brand, messaging, saturation)"
+        "Creative team needs 2 weeks lead time for anything they make"
       ]
     },
     {
@@ -280,13 +292,65 @@
     {
       "id": "cceib",
       "name": "Cars & Cocktails Event in Boston",
-      "category": "Marketing Efforts",
+      "category": "Campaigns",
       "status": "Next",
       "summary": "Email going out on the event in Boston for Dealers. On the current flyer get something like a pre-event survey on any questions they would want to ask at the event, when they last worked with Copart if so - any other survey questions to gather information and materials from an event perspective since most of cds team will be there.",
       "built": [],
       "links": [],
       "blockers": [],
       "next_steps": []
+    },
+    {
+      "id": "cmp",
+      "name": "Campaign setup",
+      "category": "Campaigns",
+      "status": "In Progress",
+      "summary": "The groundwork every Copart Dealer Sales campaign shares: tools (Salesforce), rules (Kyle reviews every campaign, Creative needs 2 weeks, Tech owns forms and pages, legal on contact data), the dealer and member campaign calendar, paid media, offers and collateral.",
+      "built": [
+        "Campaign ground rules, in the Digital audit's Campaign ideas page (docs/audit/08-campaigns.md in Copart Dealer Digital)"
+      ],
+      "links": [],
+      "blockers": [],
+      "next_steps": [
+        "Draft the field offers plus SMS and email outline and review it with Ken (cmp-02)",
+        "Get the dealer and member campaign calendar from Kyle or Lauren (cmp-03)",
+        "Get onto Salesforce for digital campaigns (cmp-01)",
+        "Find out who owns paid media and the budget (q-05) and the data rules for SMS and email (q-06)"
+      ],
+      "dependencies": [
+        "Kyle Cochran reviews every digital campaign before it runs (brand, messaging, saturation)",
+        "Creative needs 2 weeks lead time for anything designed",
+        "Legal check before any bulk email (cdd-02)"
+      ]
+    },
+    {
+      "id": "pdo",
+      "name": "Prospective dealer outreach",
+      "category": "Campaigns",
+      "status": "Next",
+      "idea": true,
+      "summary": "First campaign: rep-led, one-to-one outreach to dealers who don't work with Copart yet, built on the dealer leads list. Nobody at Copart markets to them today (Lauren, Oct 8). Eight ideas ranked in the Digital audit's Campaign ideas page; start with a heads-up before route days, a welcome for newly licensed dealers, and aged-unit calls. Nothing runs until Ken and Kyle agree.",
+      "built": [
+        "Campaign ideas, ranked (docs/audit/08-campaigns.md in Copart Dealer Digital, Oct 8)"
+      ],
+      "links": [
+        {
+          "label": "Campaign ideas",
+          "where": "Copart Dealer Digital site, Digital audit tab, Campaign ideas (/audit/campaigns)"
+        }
+      ],
+      "blockers": [],
+      "next_steps": [
+        "Ask Ken which campaigns stay with Dealer Sales (gen-23)",
+        "Review the ideas with Kyle (pdo-01)",
+        "Clear the gates: legal (cdd-02), prospects-only match (udm-01), campaign calendar (cmp-03), form lead baseline (q-08, q-12)",
+        "Decide on Austin, Nov 1 to 3 (d-pdo-01)"
+      ],
+      "dependencies": [
+        "Dealer leads list (cdd, udm)",
+        "Route Tracker, for the route-day campaign (rt)",
+        "Campaign setup (cmp)"
+      ]
     }
   ],
   "tasks": [
@@ -434,7 +498,7 @@
       "owner": "Legal",
       "due": null,
       "priority": "urgent",
-      "notes": "Many TxDMV emails are owners' personal addresses. Kept off the site and git, but they are in the Excel books. No bulk email until Legal clears it. Oct 6: holding until after the marketing sync (Oct 7) and the Lauren Harrington meeting (Oct 8, gen-17). Oct 8: also gates the prospective dealer campaigns (audit-11).",
+      "notes": "Many TxDMV emails are owners' personal addresses. Kept off the site and git, but they are in the Excel books. No bulk email until Legal clears it. Oct 6: holding until after the marketing sync (Oct 7) and the Lauren Harrington meeting (Oct 8, gen-17). Oct 8: also gates the prospective dealer campaigns (pdo-01).",
       "created": "2026-09-29",
       "updated": "2026-10-08"
     },
@@ -575,16 +639,16 @@
       "completed": "2026-09-30"
     },
     {
-      "id": "gen-04",
-      "project_id": "general",
+      "id": "cmp-01",
+      "project_id": "cmp",
       "title": "Get onto Salesforce for digital campaigns",
       "status": "Next",
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Plan from Sep 29 meeting with Rama and Leo: I set up the campaign and how I want it, and it delegates the jobs to people on the Marketing team.",
+      "notes": "Plan from Sep 29 meeting with Rama and Leo: I set up the campaign and how I want it, and it delegates the jobs to people on the Marketing team. Formerly gen-04.",
       "created": "2026-09-29",
-      "updated": "2026-09-29"
+      "updated": "2026-10-08"
     },
     {
       "id": "gen-05",
@@ -656,7 +720,7 @@
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "normal",
-      "notes": "Who sends them, audience, frequency, content, results if available. Needs Marketing contacts (gen-05) and Salesforce campaign history (gen-04). Oct 8, Lauren: no campaigns are aimed at prospective dealers. Copart Dealer Sales marketing is mostly reactive and ad hoc; her campaigns are mostly for members (n-19).",
+      "notes": "Who sends them, audience, frequency, content, results if available. Needs Marketing contacts (gen-05) and Salesforce campaign history (cmp-01). Oct 8, Lauren: no campaigns are aimed at prospective dealers. Copart Dealer Sales marketing is mostly reactive and ad hoc; her campaigns are mostly for members (n-19).",
       "created": "2026-09-29",
       "updated": "2026-10-08"
     },
@@ -812,16 +876,16 @@
       "completed": "2026-09-30"
     },
     {
-      "id": "gen-09",
-      "project_id": "general",
+      "id": "cmp-04",
+      "project_id": "cmp",
       "title": "Find out if there is a one pager for what CDS does and separates CDS from the Pack. If not one, work to create one",
       "status": "Next",
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "normal",
-      "notes": "Oct 2: week of Oct 5, if time.",
+      "notes": "Oct 2: week of Oct 5, if time. Formerly gen-09.",
       "created": "2026-09-30",
-      "updated": "2026-10-02"
+      "updated": "2026-10-08"
     },
     {
       "id": "rt-13",
@@ -1328,21 +1392,21 @@
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "normal",
-      "notes": "The seller app dealers use to list vehicles. Copart Dealer Sales agent reviews of it on the App Store came up in my research. Oct 2: week of Oct 5. Helps with the field offers outline (gen-19).",
+      "notes": "The seller app dealers use to list vehicles. Copart Dealer Sales agent reviews of it on the App Store came up in my research. Oct 2: week of Oct 5. Helps with the field offers outline (cmp-02).",
       "created": "2026-10-01",
       "updated": "2026-10-02"
     },
     {
-      "id": "gen-19",
-      "project_id": "general",
+      "id": "cmp-02",
+      "project_id": "cmp",
       "title": "Draft an outline for field offers plus SMS and email, and review it with Ken",
       "status": "In Progress",
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "high",
-      "notes": "Ken wants offers reps can take to dealerships. Three-prong approach (see q-04). Data rules in q-06. Oct 2: draft while Ken is out, review with him Friday Oct 9 (gen-23). Oct 6: the three prongs are email outreach, SMS and field offers (q-04). Next: draft the field offers. Oct 6: first draft is the Field Offers Outline doc (https://claude.ai/code/artifact/be504938-e521-467a-b780-c59dea7ff303): 6 candidate offers, rep rules, SMS and email, measures, a 4-week pilot, and the asks for Ken. Oct 6: revised with the process from Leo's recording (n-15).",
+      "notes": "Ken wants offers reps can take to dealerships. Three-prong approach (see q-04). Data rules in q-06. Oct 2: draft while Ken is out, review with him Friday Oct 9 (gen-23). Oct 6: the three prongs are email outreach, SMS and field offers (q-04). Next: draft the field offers. Oct 6: first draft is the Field Offers Outline doc (https://claude.ai/code/artifact/be504938-e521-467a-b780-c59dea7ff303): 6 candidate offers, rep rules, SMS and email, measures, a 4-week pilot, and the asks for Ken. Oct 6: revised with the process from Leo's recording (n-15). Formerly gen-19.",
       "created": "2026-10-01",
-      "updated": "2026-10-06"
+      "updated": "2026-10-08"
     },
     {
       "id": "gen-20",
@@ -1431,7 +1495,7 @@
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "high",
-      "notes": "Three buckets so leads don't overlap: active Copart dealers (exclude or upsell), inactive (win-back), no status (new prospects). Needs the Copart dealer list from Tyler Amos or Pushkaraj Jadhav (gen-16). Copart dealer data stays on the work setup: do not put it in this repo or on the public dfw-dealer-digital site (see q-03). Picks up the active-dealer exclusion from gen-14. Oct 6: the dealer list comes from the marketing sync Oct 7 (gen-26). Oct 8: also makes campaign lists prospects only (audit-11).",
+      "notes": "Three buckets so leads don't overlap: active Copart dealers (exclude or upsell), inactive (win-back), no status (new prospects). Needs the Copart dealer list from Tyler Amos or Pushkaraj Jadhav (gen-16). Copart dealer data stays on the work setup: do not put it in this repo or on the public dfw-dealer-digital site (see q-03). Picks up the active-dealer exclusion from gen-14. Oct 6: the dealer list comes from the marketing sync Oct 7 (gen-26). Oct 8: also makes campaign lists prospects only (pdo-01).",
       "created": "2026-10-02",
       "updated": "2026-10-08"
     },
@@ -1468,7 +1532,7 @@
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "high",
-      "notes": "Friday Oct 9. Route Tracker field feedback (rt-42), lead match by Copart dealer status (udm-01), FullStory findings (audit-07), tools hub list with Leo (hub-01, hub-02), field offers outline (gen-19), and q-04 (third prong). Oct 7: FullStory findings ready (n-18). Oct 8: also bring audit-10 (where the mobile \"Sell your car\" button goes), q-10 (Copart Dealer Services or Copart Dealer Sales, needed for the page remake), d-audit-01 (Austin, Nov 1 to 3) and which campaigns stay with Dealer Sales before anything goes to Kyle (audit-11).",
+      "notes": "Friday Oct 9. Route Tracker field feedback (rt-42), lead match by Copart dealer status (udm-01), FullStory findings (audit-07), tools hub list with Leo (hub-01, hub-02), field offers outline (cmp-02), and q-04 (third prong). Oct 7: FullStory findings ready (n-18). Oct 8: also bring audit-10 (where the mobile \"Sell your car\" button goes), q-10 (Copart Dealer Services or Copart Dealer Sales, needed for the page remake), d-pdo-01 (Austin, Nov 1 to 3) and which campaigns stay with Dealer Sales before anything goes to Kyle (pdo-01).",
       "created": "2026-10-02",
       "updated": "2026-10-08"
     },
@@ -1567,7 +1631,7 @@
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Oct 6: Leo recorded an audio walkthrough of the process from prospect to sale (answers q-02). A written version feeds the field offers outline (gen-19) and the one pager (gen-09). Done Oct 6: written up in n-15 (process facts; Leo's suggestions listed separately as ideas).",
+      "notes": "Oct 6: Leo recorded an audio walkthrough of the process from prospect to sale (answers q-02). A written version feeds the field offers outline (cmp-02) and the one pager (cmp-04). Done Oct 6: written up in n-15 (process facts; Leo's suggestions listed separately as ideas).",
       "created": "2026-10-06",
       "updated": "2026-10-06",
       "completed": "2026-10-06"
@@ -1611,14 +1675,14 @@
       "updated": "2026-10-08"
     },
     {
-      "id": "audit-11",
-      "project_id": "audit",
+      "id": "pdo-01",
+      "project_id": "pdo",
       "title": "Review prospective dealer campaign ideas with Kyle Cochran",
       "status": "Next",
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Kyle asked on Oct 8 to be looped in on any digital campaign (brand, messaging, saturation). Ideas in the Digital audit, docs/audit/08-campaigns.md (n-20). Check with Ken first which campaigns stay with Dealer Sales. Draft note to Kyle is in docs/audit/asks.md. Oct 8: ask Ken first which campaigns stay with Dealer Sales (gen-23). Gates before anything runs: legal (cdd-02), prospects-only match (udm-01), the campaign calendar from Kyle or Lauren (audit-13), and a form lead baseline (q-08, q-12).",
+      "notes": "Kyle asked on Oct 8 to be looped in on any digital campaign (brand, messaging, saturation). Ideas in the Digital audit, docs/audit/08-campaigns.md (n-20). Check with Ken first which campaigns stay with Dealer Sales. Draft note to Kyle is in docs/audit/asks.md. Oct 8: ask Ken first which campaigns stay with Dealer Sales (gen-23). Gates before anything runs: legal (cdd-02), prospects-only match (udm-01), the campaign calendar from Kyle or Lauren (cmp-03), and a form lead baseline (q-08, q-12). Formerly audit-11.",
       "created": "2026-10-08",
       "updated": "2026-10-08"
     },
@@ -1648,14 +1712,14 @@
       "updated": "2026-10-08"
     },
     {
-      "id": "audit-13",
-      "project_id": "audit",
+      "id": "cmp-03",
+      "project_id": "cmp",
       "title": "Get the dealer and member campaign calendar from Kyle or Lauren",
       "status": "Next",
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "So prospective dealer campaigns don't stack on messages dealers already get (Kyle's saturation point, Oct 8). Gate for audit-11.",
+      "notes": "So prospective dealer campaigns don't stack on messages dealers already get (Kyle's saturation point, Oct 8). Gate for pdo-01. Formerly audit-13.",
       "created": "2026-10-08",
       "updated": "2026-10-08"
     }
@@ -1773,7 +1837,7 @@
       "id": "q-05",
       "question": "Who owns paid media and paid social access, and is there a budget?",
       "ask": "Noelle Goodman",
-      "project_id": "general",
+      "project_id": "cmp",
       "status": "open",
       "answer": null,
       "raised": "2026-10-01",
@@ -1783,7 +1847,7 @@
       "id": "q-06",
       "question": "What are the rules for using customer data in SMS and email (consent, legal review)?",
       "ask": "Legal",
-      "project_id": "general",
+      "project_id": "cmp",
       "status": "open",
       "answer": null,
       "raised": "2026-10-01",
@@ -2035,8 +2099,8 @@
       "resolved": "2026-10-06"
     },
     {
-      "id": "d-audit-01",
-      "project_id": "audit",
+      "id": "d-pdo-01",
+      "project_id": "pdo",
       "question": "Send a rep to the NIADA BHPH Dealer Forum in Austin, Nov 1 to 3?",
       "options": [
         "Yes, registration only (sponsorships are sold out); pitch repo selling to buy here pay here dealers and meet The Independent Dealer Podcast hosts",
@@ -2327,8 +2391,8 @@
         "FullStory: get access from Justin Alexander (gen-15), then review how dealers use the Copart Dealer Sales pages and write the top findings (audit-07).",
         "Tools hub: meet Leo to list every tool we've each built (hub-02), then draft the hub definition (hub-01).",
         "Marketing groundwork: meet Lauren Harrington (gen-17), get Noelle's contacts for events, content and creative (gen-20), inventory Copart Dealer Sales email and social (audit-01, audit-02).",
-        "Field offers: learn the Copart GO app (gen-18) and draft the field offers plus SMS and email outline (gen-19).",
-        "If time: one pager on what Copart Dealer Sales does and how it differs (gen-09).",
+        "Field offers: learn the Copart GO app (gen-18) and draft the field offers plus SMS and email outline (cmp-02).",
+        "If time: one pager on what Copart Dealer Sales does and how it differs (cmp-04).",
         "Friday: debrief Ken on all of the above (gen-23)."
       ]
     },
@@ -2459,7 +2523,7 @@
       "id": "n-20",
       "date": "2026-10-08",
       "title": "Marketing: the prospective dealer opening",
-      "project_id": "audit",
+      "project_id": "pdo",
       "body": [
         "Huge opportunity for prospective dealer leads. Per Lauren Harrington (Oct 8), Copart runs no campaigns aimed at prospective dealers; campaigns are mostly for members and Copart Dealer Sales gets help only reactively.",
         "The dealer list Chase is building (public license leads in Copart Dealer Digital, plus the US Dealer Map) is a prospect list nobody is marketing to yet.",

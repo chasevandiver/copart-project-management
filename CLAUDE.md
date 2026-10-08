@@ -30,7 +30,7 @@ Dates are `YYYY-MM-DD`. Use `null` for unknown dates, not guesses.
 - Status (tasks and projects): `Backlog`, `Next`, `In Progress`, `Waiting`, `Blocked`, `Done`
 - Priority: `urgent`, `high`, `normal`, `low`
 - Owner: `Me`, `Work Claude`, `Claude Code`, `IT`, `Leo`, `Legal`, or a name from `people` (full name or first name)
-- Category (goals and projects): `AI Tools`, `Marketing Efforts`
+- Category (goals and projects): `AI Tools`, `Marketing Efforts`, `Campaigns` (one project per campaign, plus `cmp` for the groundwork every campaign shares)
 
 **goals[]**: `id` (`g-NN`), `category`, `title`, `summary`, `status`, `project_ids[]` (projects that serve the goal; a project can serve more than one goal), `created`, `updated`. Goals are Chase's big outcomes, grouped by category. Every project belongs to one category.
 
