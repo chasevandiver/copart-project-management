@@ -2,6 +2,14 @@
 
 Newest entry first.
 
+## 2026-10-08 (audit next steps)
+- Source: Chase asked to add the missing digital audit next steps to the tracker and the audit
+- Added: audit-12 "Write a one-page remake brief for Tech and Creative" (Me, high); audit-13 "Get the dealer and member campaign calendar from Kyle or Lauren" (Me)
+- Added: decision d-audit-01 (send a rep to the NIADA BHPH Dealer Forum in Austin, Nov 1 to 3?)
+- Changed: cdd-12 Backlog -> Next, notes (add the fee check)
+- Changed: gen-23 notes (audit-10, q-10, d-audit-01, Ken before Kyle on campaigns); audit-11 notes (Ken first, campaign gates); audit-07, audit-09, audit-10, cdd-02, udm-01 notes; audit project next steps
+- Copart Dealer Digital: audit next steps grouped on the overview, README, plan, campaign gates and Ken one-pager updated
+
 ## 2026-10-08 (prospective dealer campaigns)
 - Source: Chase on the prospective dealer opening, campaign ideas, the dealer map and Route Tracker loop, and Kyle's ask to be looped in on campaigns
 - Added: note n-20 (Marketing: the prospective dealer opening)

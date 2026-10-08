@@ -228,11 +228,14 @@
       ],
       "blockers": [],
       "next_steps": [
-        "Finish the FullStory review: mobile scroll map, form check, Journeys (audit-07)",
         "Check where the mobile \"Sell your car\" button goes (audit-10)",
-        "Plan the landing page remake as one piece: SEO and AEO friendly, form, tap-to-call number (audit-09, audit-08)",
+        "Ken at the Friday debrief: the name (q-10), Austin (d-audit-01), which campaigns stay with Dealer Sales (gen-23)",
+        "Finish the FullStory review: mobile scroll map, form check, Journeys (audit-07)",
+        "Write the one-page remake brief for Tech and Creative (audit-12), then plan the remake (audit-09, audit-08)",
         "Ask IT who on Tech owns the website forms and where submissions go (q-12)",
-        "Review prospective dealer campaign ideas with Kyle (audit-11)"
+        "Before campaigns: legal (cdd-02), prospects-only match (udm-01), campaign calendar (audit-13), form lead baseline (q-08, q-12)",
+        "Review prospective dealer campaign ideas with Kyle (audit-11)",
+        "Turn on the weekly AEO re-run and the fee check (cdd-12)"
       ],
       "dependencies": [
         "Department contacts, Marketing especially, to find out who owns email and social (gen-05)",
@@ -429,9 +432,9 @@
       "owner": "Legal",
       "due": null,
       "priority": "urgent",
-      "notes": "Many TxDMV emails are owners' personal addresses. Kept off the site and git, but they are in the Excel books. No bulk email until Legal clears it. Oct 6: holding until after the marketing sync (Oct 7) and the Lauren Harrington meeting (Oct 8, gen-17).",
+      "notes": "Many TxDMV emails are owners' personal addresses. Kept off the site and git, but they are in the Excel books. No bulk email until Legal clears it. Oct 6: holding until after the marketing sync (Oct 7) and the Lauren Harrington meeting (Oct 8, gen-17). Oct 8: also gates the prospective dealer campaigns (audit-11).",
       "created": "2026-09-29",
-      "updated": "2026-10-06"
+      "updated": "2026-10-08"
     },
     {
       "id": "cdd-03",
@@ -709,13 +712,13 @@
       "id": "cdd-12",
       "project_id": "cdd",
       "title": "Set up a weekly AEO re-run",
-      "status": "Backlog",
+      "status": "Next",
       "owner": "Claude Code",
       "due": null,
       "priority": "normal",
-      "notes": "Gemini free tier caps at about 20 answers a day, so a run needs a paid key or two days (see d-cdd-04). Add Perplexity if we get a key.",
+      "notes": "Gemini free tier caps at about 20 answers a day, so a run needs a paid key or two days (see d-cdd-04). Add Perplexity if we get a key. Oct 8: added to the Digital audit's next steps. Also run aeo/fee_check.py (stale 2017 CDS fees) so the December comparison holds.",
       "created": "2026-09-29",
-      "updated": "2026-09-29"
+      "updated": "2026-10-08"
     },
     {
       "id": "cdd-13",
@@ -1426,9 +1429,9 @@
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "high",
-      "notes": "Three buckets so leads don't overlap: active Copart dealers (exclude or upsell), inactive (win-back), no status (new prospects). Needs the Copart dealer list from Tyler Amos or Pushkaraj Jadhav (gen-16). Copart dealer data stays on the work setup: do not put it in this repo or on the public dfw-dealer-digital site (see q-03). Picks up the active-dealer exclusion from gen-14. Oct 6: the dealer list comes from the marketing sync Oct 7 (gen-26).",
+      "notes": "Three buckets so leads don't overlap: active Copart dealers (exclude or upsell), inactive (win-back), no status (new prospects). Needs the Copart dealer list from Tyler Amos or Pushkaraj Jadhav (gen-16). Copart dealer data stays on the work setup: do not put it in this repo or on the public dfw-dealer-digital site (see q-03). Picks up the active-dealer exclusion from gen-14. Oct 6: the dealer list comes from the marketing sync Oct 7 (gen-26). Oct 8: also makes campaign lists prospects only (audit-11).",
       "created": "2026-10-02",
-      "updated": "2026-10-06"
+      "updated": "2026-10-08"
     },
     {
       "id": "audit-07",
@@ -1438,9 +1441,9 @@
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "high",
-      "notes": "Follow-up to the Oct 1 Marketing and Copart Dealer Sales sync (n-08). Watch session recordings and heatmaps: where dealers scroll, click, and drop off on sign-up and the dealer pages. Write the top 3 to 5 findings for the Friday debrief (gen-23). Needs access from Justin Alexander (gen-15). Feeds the website audit (audit-03). Oct 6: Ken approved IT access. It will take time to come through (w-06), so this likely slips past Friday. Oct 7: access came through. Desktop and mobile click maps for the landing page done; findings in n-18. Still to pull: mobile scroll map (percent who reach the form), confirm mobile form taps (search Mobile + clicked #first_name), Journeys from the page, Abandoned Form search.",
+      "notes": "Follow-up to the Oct 1 Marketing and Copart Dealer Sales sync (n-08). Watch session recordings and heatmaps: where dealers scroll, click, and drop off on sign-up and the dealer pages. Write the top 3 to 5 findings for the Friday debrief (gen-23). Needs access from Justin Alexander (gen-15). Feeds the website audit (audit-03). Oct 6: Ken approved IT access. It will take time to come through (w-06), so this likely slips past Friday. Oct 7: access came through. Desktop and mobile click maps for the landing page done; findings in n-18. Still to pull: mobile scroll map (percent who reach the form), confirm mobile form taps (search Mobile + clicked #first_name), Journeys from the page, Abandoned Form search. Oct 8: findings feed the remake brief (audit-12).",
       "created": "2026-10-02",
-      "updated": "2026-10-07"
+      "updated": "2026-10-08"
     },
     {
       "id": "hub-02",
@@ -1463,9 +1466,9 @@
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "high",
-      "notes": "Friday Oct 9. Route Tracker field feedback (rt-42), lead match by Copart dealer status (udm-01), FullStory findings (audit-07), tools hub list with Leo (hub-01, hub-02), field offers outline (gen-19), and q-04 (third prong). Oct 7: FullStory findings ready (n-18).",
+      "notes": "Friday Oct 9. Route Tracker field feedback (rt-42), lead match by Copart dealer status (udm-01), FullStory findings (audit-07), tools hub list with Leo (hub-01, hub-02), field offers outline (gen-19), and q-04 (third prong). Oct 7: FullStory findings ready (n-18). Oct 8: also bring audit-10 (where the mobile \"Sell your car\" button goes), q-10 (Copart Dealer Services or Copart Dealer Sales, needed for the page remake), d-audit-01 (Austin, Nov 1 to 3) and which campaigns stay with Dealer Sales before anything goes to Kyle (audit-11).",
       "created": "2026-10-02",
-      "updated": "2026-10-07"
+      "updated": "2026-10-08"
     },
     {
       "id": "gen-24",
@@ -1526,7 +1529,7 @@
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Oct 7 FullStory (n-18): median visit 9 to 12 seconds, form almost unused on mobile (69% of visitors). Ideas: on mobile, a \"Get a call back\" button in the hero that jumps to the form; cut the form to name, phone and zip (plus dealer name); point the header \"Sell your car\" button on this page at the form; tap-to-call number (audit-08); a dealer-only line at the top so buyers self-select out; 3-step \"how it works\" (list one car, pickup in 24 hours, paid after the sale) and proof (results, a dealer quote) above the fold; sticky call and call-back bar on mobile. Oct 8, Lauren (n-19): look at the whole page, not piecemeal changes; remake it to be SEO and AEO friendly; Tech owns the forms; the Creative team needs 2 weeks lead time.",
+      "notes": "Oct 7 FullStory (n-18): median visit 9 to 12 seconds, form almost unused on mobile (69% of visitors). Ideas: on mobile, a \"Get a call back\" button in the hero that jumps to the form; cut the form to name, phone and zip (plus dealer name); point the header \"Sell your car\" button on this page at the form; tap-to-call number (audit-08); a dealer-only line at the top so buyers self-select out; 3-step \"how it works\" (list one car, pickup in 24 hours, paid after the sale) and proof (results, a dealer quote) above the fold; sticky call and call-back bar on mobile. Oct 8, Lauren (n-19): look at the whole page, not piecemeal changes; remake it to be SEO and AEO friendly; Tech owns the forms; the Creative team needs 2 weeks lead time. Oct 8: starts with a one-page remake brief (audit-12). Needs the name settled (q-10) and the FullStory review finished (audit-07).",
       "created": "2026-10-02",
       "updated": "2026-10-08"
     },
@@ -1601,9 +1604,9 @@
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "high",
-      "notes": "Most-tapped element on the mobile landing page (1.3K people in 30 days, n-18). If it leaves the page for the general sell flow, dealer sellers never see the form. Tap it on a phone, or run Journeys from the page in FullStory.",
+      "notes": "Most-tapped element on the mobile landing page (1.3K people in 30 days, n-18). If it leaves the page for the general sell flow, dealer sellers never see the form. Tap it on a phone, or run Journeys from the page in FullStory. Oct 8: added to the audit's next steps and the Friday debrief.",
       "created": "2026-10-07",
-      "updated": "2026-10-07"
+      "updated": "2026-10-08"
     },
     {
       "id": "audit-11",
@@ -1613,7 +1616,7 @@
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Kyle asked on Oct 8 to be looped in on any digital campaign (brand, messaging, saturation). Ideas in the Digital audit, docs/audit/08-campaigns.md (n-20). Check with Ken first which campaigns stay with Dealer Sales. Draft note to Kyle is in docs/audit/asks.md.",
+      "notes": "Kyle asked on Oct 8 to be looped in on any digital campaign (brand, messaging, saturation). Ideas in the Digital audit, docs/audit/08-campaigns.md (n-20). Check with Ken first which campaigns stay with Dealer Sales. Draft note to Kyle is in docs/audit/asks.md. Oct 8: ask Ken first which campaigns stay with Dealer Sales (gen-23). Gates before anything runs: legal (cdd-02), prospects-only match (udm-01), the campaign calendar from Kyle or Lauren (audit-13), and a form lead baseline (q-08, q-12).",
       "created": "2026-10-08",
       "updated": "2026-10-08"
     },
@@ -1627,6 +1630,30 @@
       "priority": "normal",
       "idea": true,
       "notes": "Getting ahead of things. One loop from the dealer map to the Route Tracker: outreach, prospecting, lead and route suggestions, route building, route tracking, live tracking of visited routes, and a summary and follow-up for each visited dealer. First step is one shared dealer record both tools can read (sketch in docs/audit/08-campaigns.md in Copart Dealer Digital). Touches rt and cdd too.",
+      "created": "2026-10-08",
+      "updated": "2026-10-08"
+    },
+    {
+      "id": "audit-12",
+      "project_id": "audit",
+      "title": "Write a one-page remake brief for Tech and Creative",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Pulls the landing page fixes into one page, per Lauren (change the page as a whole): crawler-readable, no \"Salvage\" title, FAQ schema, a short form that routes to a rep, tap-to-call (audit-08), a top nav entry, the mobile \"Sell your car\" button (audit-10), and the field agent and global buyers story. Uses FullStory (audit-07, n-18) and docs/audit/03-website.md and 06-positioning-brief.md. Needs the name settled (q-10). Creative needs 2 weeks.",
+      "created": "2026-10-08",
+      "updated": "2026-10-08"
+    },
+    {
+      "id": "audit-13",
+      "project_id": "audit",
+      "title": "Get the dealer and member campaign calendar from Kyle or Lauren",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "So prospective dealer campaigns don't stack on messages dealers already get (Kyle's saturation point, Oct 8). Gate for audit-11.",
       "created": "2026-10-08",
       "updated": "2026-10-08"
     }
@@ -2004,6 +2031,19 @@
       "status": "resolved",
       "answer": "Add Chase's tools to Leo's hub. Needs collaborator access on Leo's repos from the Coolify admin (w-07).",
       "resolved": "2026-10-06"
+    },
+    {
+      "id": "d-audit-01",
+      "project_id": "audit",
+      "question": "Send a rep to the NIADA BHPH Dealer Forum in Austin, Nov 1 to 3?",
+      "options": [
+        "Yes, registration only (sponsorships are sold out); pitch repo selling to buy here pay here dealers and meet The Independent Dealer Podcast hosts",
+        "No, skip this year"
+      ],
+      "raised": "2026-10-08",
+      "status": "open",
+      "answer": null,
+      "resolved": null
     }
   ],
   "people": [
