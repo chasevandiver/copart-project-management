@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-08 (marketing notes sorted)
+- Source: Chase asked to keep AI tools and marketing work apart
+- Changed: notes n-01 (Rama and Leo on marketing tools) and n-08 (Copart Dealer Sales and Marketing sync) moved from general to audit
+- Changed: cceib (Cars & Cocktails Event in Boston) category AI Tools -> Marketing Efforts, added to goal g-02
+
 ## 2026-10-08 (audit next steps)
 - Source: Chase asked to add the missing digital audit next steps to the tracker and the audit
 - Added: audit-12 "Write a one-page remake brief for Tech and Creative" (Me, high); audit-13 "Get the dealer and member campaign calendar from Kyle or Lauren" (Me)

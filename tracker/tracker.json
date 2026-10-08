@@ -31,10 +31,11 @@
       "summary": "Know what Copart Dealer Sales does digitally today and put effort where it raises visibility.",
       "status": "Backlog",
       "project_ids": [
-        "audit"
+        "audit",
+        "cceib"
       ],
       "created": "2026-09-29",
-      "updated": "2026-09-29"
+      "updated": "2026-10-08"
     }
   ],
   "projects": [
@@ -279,7 +280,7 @@
     {
       "id": "cceib",
       "name": "Cars & Cocktails Event in Boston",
-      "category": "AI Tools",
+      "category": "Marketing Efforts",
       "status": "Next",
       "summary": "Email going out on the event in Boston for Dealers. On the current flyer get something like a pre-event survey on any questions they would want to ask at the event, when they last worked with Copart if so - any other survey questions to gather information and materials from an event perspective since most of cds team will be there.",
       "built": [],
@@ -2179,7 +2180,7 @@
       "id": "n-01",
       "date": "2026-09-29",
       "title": "Meeting with Rama and Leo on marketing tools (3:30pm)",
-      "project_id": "general",
+      "project_id": "audit",
       "body": [
         "Plan is to get me onto Salesforce for digital campaigns. I set up the campaign and how I want it, and it delegates the jobs to people on the Marketing team.",
         "Leo and I found that Copart Dealer Sales is very hard to find on the Copart website. We'll need to work on that.",
@@ -2281,7 +2282,7 @@
         "Brand standards aren't very deep. Marketing will check work against them as we go.",
         "Action items: gen-15 to gen-20. Open questions: q-04 to q-06."
       ],
-      "project_id": "general",
+      "project_id": "audit",
       "date": "2026-10-01"
     },
     {
