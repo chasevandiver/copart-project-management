@@ -2,6 +2,13 @@
 
 Newest entry first.
 
+## 2026-10-08 (prospective dealer campaigns)
+- Source: Chase on the prospective dealer opening, campaign ideas, the dealer map and Route Tracker loop, and Kyle's ask to be looped in on campaigns
+- Added: note n-20 (Marketing: the prospective dealer opening)
+- Added: audit-11 "Review prospective dealer campaign ideas with Kyle Cochran" (Me, high); udm-05 idea "Connect the dealer map and the Route Tracker"
+- Changed: Kyle Cochran relationship (loop him in on any digital campaign); audit-05 notes; audit project built, links, next steps, dependencies; udm next steps
+- Copart Dealer Digital: audit docs updated with the Oct 7 phone test and Oct 8 Lauren call, new 08-campaigns.md, Digital audit tab redesigned
+
 ## 2026-10-08 (Lauren call)
 - Source: Chase's handwritten notes from the Oct 8 call with Lauren Harrington
 - Done: gen-17 "Meet Lauren Harrington about past and current seller and buyer campaigns"

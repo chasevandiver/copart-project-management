@@ -215,22 +215,32 @@
       "idea": true,
       "summary": "Full review of what Copart Dealer Sales is doing digitally today, and where we should put effort to increase visibility. Idea in progress; nothing committed yet.",
       "built": [
-        "FullStory click maps of the landing page, desktop and mobile, with findings (n-18)"
+        "FullStory click maps of the landing page, desktop and mobile, with findings (n-18)",
+        "Digital audit tab rebuilt as an overview page plus easier-to-read section pages (Oct 8)",
+        "Campaign ideas for prospective dealers, with the plan to connect the dealer map and Route Tracker (docs/audit/08-campaigns.md, Oct 8)",
+        "Audit docs updated with the Oct 7 phone test and the Oct 8 Lauren call"
       ],
-      "links": [],
+      "links": [
+        {
+          "label": "Digital audit",
+          "where": "Copart Dealer Digital site, Digital audit tab (/audit)"
+        }
+      ],
       "blockers": [],
       "next_steps": [
         "Finish the FullStory review: mobile scroll map, form check, Journeys (audit-07)",
         "Check where the mobile \"Sell your car\" button goes (audit-10)",
         "Plan the landing page remake as one piece: SEO and AEO friendly, form, tap-to-call number (audit-09, audit-08)",
-        "Ask IT who on Tech owns the website forms and where submissions go (q-12)"
+        "Ask IT who on Tech owns the website forms and where submissions go (q-12)",
+        "Review prospective dealer campaign ideas with Kyle (audit-11)"
       ],
       "dependencies": [
         "Department contacts, Marketing especially, to find out who owns email and social (gen-05)",
         "Salesforce access, for existing campaign history (gen-04)",
         "Good topic for the meeting with Kyle and Ken this week (gen-01)",
         "Tech owns the forms on the website pages (Lauren, Oct 8)",
-        "Creative team needs 2 weeks lead time for anything they make"
+        "Creative team needs 2 weeks lead time for anything they make",
+        "Kyle Cochran reviews every digital campaign before it runs (brand, messaging, saturation)"
       ]
     },
     {
@@ -259,7 +269,8 @@
       "next_steps": [
         "Get the Copart and non-Copart dealer spreadsheets at the marketing sync Oct 7 (gen-26)",
         "Build the US leads dealer map on Work Claude (udm-02)",
-        "Match leads to Copart dealer status: active, inactive, no status (udm-01)"
+        "Match leads to Copart dealer status: active, inactive, no status (udm-01)",
+        "Idea: connect the dealer map and the Route Tracker into one loop (udm-05)"
       ]
     },
     {
@@ -678,7 +689,7 @@
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Pulls together audit-01 to audit-04. Oct 8: include Lauren's point that nothing targets prospective dealers (n-19).",
+      "notes": "Pulls together audit-01 to audit-04. Oct 8: include Lauren's point that nothing targets prospective dealers (n-19). Oct 8: campaign ideas for prospective dealers drafted (docs/audit/08-campaigns.md).",
       "created": "2026-09-29",
       "updated": "2026-10-08"
     },
@@ -1592,6 +1603,31 @@
       "notes": "Most-tapped element on the mobile landing page (1.3K people in 30 days, n-18). If it leaves the page for the general sell flow, dealer sellers never see the form. Tap it on a phone, or run Journeys from the page in FullStory.",
       "created": "2026-10-07",
       "updated": "2026-10-07"
+    },
+    {
+      "id": "audit-11",
+      "project_id": "audit",
+      "title": "Review prospective dealer campaign ideas with Kyle Cochran",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Kyle asked on Oct 8 to be looped in on any digital campaign (brand, messaging, saturation). Ideas in the Digital audit, docs/audit/08-campaigns.md (n-20). Check with Ken first which campaigns stay with Dealer Sales. Draft note to Kyle is in docs/audit/asks.md.",
+      "created": "2026-10-08",
+      "updated": "2026-10-08"
+    },
+    {
+      "id": "udm-05",
+      "project_id": "udm",
+      "title": "Connect the dealer map and the Route Tracker",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "idea": true,
+      "notes": "Getting ahead of things. One loop from the dealer map to the Route Tracker: outreach, prospecting, lead and route suggestions, route building, route tracking, live tracking of visited routes, and a summary and follow-up for each visited dealer. First step is one shared dealer record both tools can read (sketch in docs/audit/08-campaigns.md in Copart Dealer Digital). Touches rt and cdd too.",
+      "created": "2026-10-08",
+      "updated": "2026-10-08"
     }
   ],
   "waiting_on": [
@@ -1981,7 +2017,7 @@
       "name": "Kyle Cochran",
       "title": "Director of Business Development",
       "department": "Marketing",
-      "relationship": "Met Oct 1 in the Copart Dealer Sales and Marketing sync",
+      "relationship": "Met Oct 1 in the Copart Dealer Sales and Marketing sync. Oct 8: asked to be looped in on any digital campaign Chase wants to run, to stay on brand and on message and avoid saturating dealers",
       "contact": ""
     },
     {
@@ -2374,6 +2410,20 @@
         "Remake the page to be SEO and AEO friendly.",
         "The Creative team needs 2 weeks lead time.",
         "Open: are the old event pages being taken down? (q-13)"
+      ]
+    },
+    {
+      "id": "n-20",
+      "date": "2026-10-08",
+      "title": "Marketing: the prospective dealer opening",
+      "project_id": "audit",
+      "body": [
+        "Huge opportunity for prospective dealer leads. Per Lauren Harrington (Oct 8), Copart runs no campaigns aimed at prospective dealers; campaigns are mostly for members and Copart Dealer Sales gets help only reactively.",
+        "The dealer list Chase is building (public license leads in Copart Dealer Digital, plus the US Dealer Map) is a prospect list nobody is marketing to yet.",
+        "Kyle Cochran (Oct 8): loop him in on any digital campaign before it runs, for brand, messaging and saturation.",
+        "Campaign ideas drafted in the Digital audit (docs/audit/08-campaigns.md). Start with rep-led, one-to-one ones: a heads-up before a rep's route day, a welcome for newly licensed dealers, and calls to dealers with aged units.",
+        "Ground rules: Kyle first, Creative needs 2 weeks, Tech owns forms and pages, legal before any bulk email (cdd-02), take current Copart dealers off prospect lists in the work setup.",
+        "Later: connect the dealer map and the Route Tracker so prospecting, outreach, lead and route suggestions, route building, route tracking, live tracking of visited routes, visit summaries and follow-up work as one loop (udm-05)."
       ]
     }
   ],
