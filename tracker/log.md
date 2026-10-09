@@ -2,6 +2,17 @@
 
 Newest entry first.
 
+## 2026-10-09 (after Ken debrief)
+- Source: Chase's status after the Friday debrief with Ken
+- Changed: gen-23 Next -> Done (Ken debriefed)
+- Answered: q-10 Copart Dealer Services is the official name; q-04 the three prongs are email, phone and the dealer visit (not SMS)
+- Resolved: d-pdo-01 Not going to Austin for now, nothing planned
+- Changed: gen-26 and udm-01 Next -> Waiting (Copart member reports); pa-02 Next -> In Progress (with Copilot)
+- Changed: due dates cleared on cmp-02, gen-26, udm-01, pa-02, audit-01, gen-18 (campaigns, field offers and Salesforce pick up the week of Oct 12)
+- Added: audit-14 "Add the FullStory numbers to the Digital audit" (Me)
+- Waiting on: added w-08 Copart member reports (several people, since Oct 7)
+- Changed: hub-01 notes (have Leo's tool list), rt next steps (Work Claude building field test fixes)
+
 ## 2026-10-09 (Kyle note)
 - Source: Chase asked to add the draft note to Kyle to the prospective dealer outreach project
 - Added: note n-22 "Draft note to Kyle Cochran: prospective dealer campaigns"

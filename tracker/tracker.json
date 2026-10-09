@@ -88,7 +88,7 @@
         "Zapier can't connect to Google Sheets or Excel on my machine"
       ],
       "next_steps": [
-        "Log Ken and Keon's field test feedback for the Friday debrief (rt-42)",
+        "Work Claude is building fixes from Ken and Keon's field test feedback",
         "Phone test and data-loss check (rt-28); confirm hot send and the office tracker (rt-21, rt-23)",
         "Decide on Google Places for \"Dealers near you\" (d-rt-07)",
         "Price Check milestone 1: sales importer plus backtest (rt-02)",
@@ -350,8 +350,7 @@
         "Ask Ken which campaigns stay with Dealer Sales (gen-23)",
         "Review the ideas with Kyle (pdo-01)",
         "Take the pre-visit tab spec to the Route Tracker build (rt-44)",
-        "Clear the gates: legal (cdd-02), prospects-only match (udm-01), campaign calendar (cmp-03), form lead baseline (q-08, q-12)",
-        "Decide on Austin, Nov 1 to 3 (d-pdo-01)"
+        "Clear the gates: legal (cdd-02), prospects-only match (udm-01), campaign calendar (cmp-03), form lead baseline (q-08, q-12)"
       ],
       "dependencies": [
         "Dealer leads list (cdd, udm)",
@@ -653,9 +652,9 @@
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Plan from Sep 29 meeting with Rama and Leo: I set up the campaign and how I want it, and it delegates the jobs to people on the Marketing team. Formerly gen-04.",
+      "notes": "Plan from Sep 29 meeting with Rama and Leo: I set up the campaign and how I want it, and it delegates the jobs to people on the Marketing team. Formerly gen-04. Oct 9: getting access or a walkthrough the week of Oct 12.",
       "created": "2026-09-29",
-      "updated": "2026-10-08"
+      "updated": "2026-10-09"
     },
     {
       "id": "gen-05",
@@ -715,9 +714,9 @@
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "normal",
-      "notes": "Starting list: Route Tracker, Copart Dealer Digital, this PM Board. Idea stage. Oct 2: draft it from the list made with Leo (hub-02). Oct 6: it is a Copart Dealer Sales tools hub. Chase is sending the list of what exists now. Oct 6: Leo's hub already has 4 live tools and 3 in build (see the hub project's built list). Chase's tools are not on it yet except the Route Tracker. The Connecticut app became the Route Tracker. Leo's lead setup and landing pages stay off the hub. Oct 6: Chase's tools go on Leo's hub (d-hub-01), once the Coolify admin adds Chase as a collaborator on Leo's repos (w-07).",
+      "notes": "Starting list: Route Tracker, Copart Dealer Digital, this PM Board. Idea stage. Oct 2: draft it from the list made with Leo (hub-02). Oct 6: it is a Copart Dealer Sales tools hub. Chase is sending the list of what exists now. Oct 6: Leo's hub already has 4 live tools and 3 in build (see the hub project's built list). Chase's tools are not on it yet except the Route Tracker. The Connecticut app became the Route Tracker. Leo's lead setup and landing pages stay off the hub. Oct 6: Chase's tools go on Leo's hub (d-hub-01), once the Coolify admin adds Chase as a collaborator on Leo's repos (w-07). Oct 9: have Leo's list of tools from his hub.",
       "created": "2026-09-29",
-      "updated": "2026-10-06"
+      "updated": "2026-10-09"
     },
     {
       "id": "audit-01",
@@ -725,11 +724,11 @@
       "title": "Email: inventory current Copart Dealer Sales email campaigns",
       "status": "Next",
       "owner": "Me",
-      "due": "2026-10-09",
+      "due": null,
       "priority": "normal",
-      "notes": "Who sends them, audience, frequency, content, results if available. Needs Marketing contacts (gen-05) and Salesforce campaign history (cmp-01). Oct 8, Lauren: no campaigns are aimed at prospective dealers. Copart Dealer Sales marketing is mostly reactive and ad hoc; her campaigns are mostly for members (n-19).",
+      "notes": "Who sends them, audience, frequency, content, results if available. Needs Marketing contacts (gen-05) and Salesforce campaign history (cmp-01). Oct 8, Lauren: no campaigns are aimed at prospective dealers. Copart Dealer Sales marketing is mostly reactive and ad hoc; her campaigns are mostly for members (n-19). Oct 9: waits on Salesforce access or a walkthrough, week of Oct 12 (cmp-01).",
       "created": "2026-09-29",
-      "updated": "2026-10-08"
+      "updated": "2026-10-09"
     },
     {
       "id": "audit-02",
@@ -963,13 +962,13 @@
       "id": "pa-02",
       "project_id": "pa",
       "title": "Plaud: Set up an easier to-do, action items, requests for Ken's Plaud. Work on integration with Outlook",
-      "status": "Next",
+      "status": "In Progress",
       "owner": "Me",
-      "due": "2026-10-01",
+      "due": null,
       "priority": "normal",
-      "notes": "",
+      "notes": "Oct 9: working on it with Copilot.",
       "created": "2026-10-01",
-      "updated": "2026-10-01"
+      "updated": "2026-10-09"
     },
     {
       "id": "pa-01",
@@ -1397,11 +1396,11 @@
       "title": "Learn the Copart GO app",
       "status": "Next",
       "owner": "Me",
-      "due": "2026-10-09",
+      "due": null,
       "priority": "normal",
-      "notes": "The seller app dealers use to list vehicles. Copart Dealer Sales agent reviews of it on the App Store came up in my research. Oct 2: week of Oct 5. Helps with the field offers outline (cmp-02).",
+      "notes": "The seller app dealers use to list vehicles. Copart Dealer Sales agent reviews of it on the App Store came up in my research. Oct 2: week of Oct 5. Helps with the field offers outline (cmp-02). Oct 9: general reading done. Still need to use the app hands-on.",
       "created": "2026-10-01",
-      "updated": "2026-10-02"
+      "updated": "2026-10-09"
     },
     {
       "id": "cmp-02",
@@ -1409,11 +1408,11 @@
       "title": "Draft an outline for field offers plus SMS and email, and review it with Ken",
       "status": "In Progress",
       "owner": "Me",
-      "due": "2026-10-09",
+      "due": null,
       "priority": "high",
-      "notes": "Ken wants offers reps can take to dealerships. Three-prong approach (see q-04). Data rules in q-06. Oct 2: draft while Ken is out, review with him Friday Oct 9 (gen-23). Oct 6: the three prongs are email outreach, SMS and field offers (q-04). Next: draft the field offers. Oct 6: first draft is the Field Offers Outline doc (https://claude.ai/code/artifact/be504938-e521-467a-b780-c59dea7ff303): 6 candidate offers, rep rules, SMS and email, measures, a 4-week pilot, and the asks for Ken. Oct 6: revised with the process from Leo's recording (n-15). Formerly gen-19.",
+      "notes": "Ken wants offers reps can take to dealerships. Three-prong approach (see q-04). Data rules in q-06. Oct 2: draft while Ken is out, review with him Friday Oct 9 (gen-23). Oct 6: the three prongs are email outreach, SMS and field offers (q-04). Next: draft the field offers. Oct 6: first draft is the Field Offers Outline doc (https://claude.ai/code/artifact/be504938-e521-467a-b780-c59dea7ff303): 6 candidate offers, rep rules, SMS and email, measures, a 4-week pilot, and the asks for Ken. Oct 6: revised with the process from Leo's recording (n-15). Formerly gen-19. Oct 9: debriefed Ken. The three prongs are email, phone and the dealer visit (q-04), so SMS is not a prong. Field offers work picks up the week of Oct 12.",
       "created": "2026-10-01",
-      "updated": "2026-10-08"
+      "updated": "2026-10-09"
     },
     {
       "id": "gen-20",
@@ -1498,13 +1497,13 @@
       "id": "udm-01",
       "project_id": "udm",
       "title": "Match US leads to Copart dealer status: active, inactive, or no status",
-      "status": "Next",
+      "status": "Waiting",
       "owner": "Me",
-      "due": "2026-10-09",
+      "due": null,
       "priority": "high",
-      "notes": "Three buckets so leads don't overlap: active Copart dealers (exclude or upsell), inactive (win-back), no status (new prospects). Needs the Copart dealer list from Tyler Amos or Pushkaraj Jadhav (gen-16). Copart dealer data stays on the work setup: do not put it in this repo or on the public dfw-dealer-digital site (see q-03). Picks up the active-dealer exclusion from gen-14. Oct 6: the dealer list comes from the marketing sync Oct 7 (gen-26). Oct 8: also makes campaign lists prospects only (pdo-01).",
+      "notes": "Three buckets so leads don't overlap: active Copart dealers (exclude or upsell), inactive (win-back), no status (new prospects). Needs the Copart dealer list from Tyler Amos or Pushkaraj Jadhav (gen-16). Copart dealer data stays on the work setup: do not put it in this repo or on the public dfw-dealer-digital site (see q-03). Picks up the active-dealer exclusion from gen-14. Oct 6: the dealer list comes from the marketing sync Oct 7 (gen-26). Oct 8: also makes campaign lists prospects only (pdo-01). Oct 9: waiting on the Copart member reports (gen-26, w-08).",
       "created": "2026-10-02",
-      "updated": "2026-10-08"
+      "updated": "2026-10-09"
     },
     {
       "id": "audit-07",
@@ -1536,13 +1535,14 @@
       "id": "gen-23",
       "project_id": "general",
       "title": "Debrief Ken when he's back",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "high",
-      "notes": "Friday Oct 9. Route Tracker field feedback (rt-42), lead match by Copart dealer status (udm-01), FullStory findings (audit-07), tools hub list with Leo (hub-01, hub-02), field offers outline (cmp-02), and q-04 (third prong). Oct 7: FullStory findings ready (n-18). Oct 8: also bring audit-10 (where the mobile \"Sell your car\" button goes), q-10 (Copart Dealer Services or Copart Dealer Sales, needed for the page remake), d-pdo-01 (Austin, Nov 1 to 3) and which campaigns stay with Dealer Sales before anything goes to Kyle (pdo-01). Oct 9: also bring q-14 (can reps still offer the free run, and which tow terms) and the Pre-Visit Campaign Drafts doc, so the Kyle note (n-22) can go out.",
+      "notes": "Friday Oct 9. Route Tracker field feedback (rt-42), lead match by Copart dealer status (udm-01), FullStory findings (audit-07), tools hub list with Leo (hub-01, hub-02), field offers outline (cmp-02), and q-04 (third prong). Oct 7: FullStory findings ready (n-18). Oct 8: also bring audit-10 (where the mobile \"Sell your car\" button goes), q-10 (Copart Dealer Services or Copart Dealer Sales, needed for the page remake), d-pdo-01 (Austin, Nov 1 to 3) and which campaigns stay with Dealer Sales before anything goes to Kyle (pdo-01). Oct 9: also bring q-14 (can reps still offer the free run, and which tow terms) and the Pre-Visit Campaign Drafts doc, so the Kyle note (n-22) can go out. Oct 9: done. Debriefed Ken.",
       "created": "2026-10-02",
-      "updated": "2026-10-09"
+      "updated": "2026-10-09",
+      "completed": "2026-10-09"
     },
     {
       "id": "gen-24",
@@ -1611,13 +1611,13 @@
       "id": "gen-26",
       "project_id": "general",
       "title": "Get a spreadsheet of all copart dealers and non copart dealers for each state",
-      "status": "Next",
+      "status": "Waiting",
       "owner": "Me",
-      "due": "2026-10-07",
+      "due": null,
       "priority": "urgent",
-      "notes": "Oct 6: coming from the marketing sync Wed Oct 7 (afternoon). Feeds udm-01 and cdd-03.",
+      "notes": "Oct 6: coming from the marketing sync Wed Oct 7 (afternoon). Feeds udm-01 and cdd-03. Oct 9: still waiting on the Copart member reports from several people (w-08).",
       "created": "2026-10-05",
-      "updated": "2026-10-06"
+      "updated": "2026-10-09"
     },
     {
       "id": "udm-02",
@@ -1690,7 +1690,7 @@
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Kyle asked on Oct 8 to be looped in on any digital campaign (brand, messaging, saturation). Ideas in the Digital audit, docs/audit/08-campaigns.md (n-20). Check with Ken first which campaigns stay with Dealer Sales. Draft note to Kyle is in docs/audit/asks.md. Oct 8: ask Ken first which campaigns stay with Dealer Sales (gen-23). Gates before anything runs: legal (cdd-02), prospects-only match (udm-01), the campaign calendar from Kyle or Lauren (cmp-03), and a form lead baseline (q-08, q-12). Formerly audit-11. Oct 9: drafts for the first three campaigns, built around the free run offer, are in the Pre-Visit Campaign Drafts doc. Draft note to Kyle is n-22 (replaces the one in docs/audit/asks.md).",
+      "notes": "Kyle asked on Oct 8 to be looped in on any digital campaign (brand, messaging, saturation). Ideas in the Digital audit, docs/audit/08-campaigns.md (n-20). Check with Ken first which campaigns stay with Dealer Sales. Draft note to Kyle is in docs/audit/asks.md. Oct 8: ask Ken first which campaigns stay with Dealer Sales (gen-23). Gates before anything runs: legal (cdd-02), prospects-only match (udm-01), the campaign calendar from Kyle or Lauren (cmp-03), and a form lead baseline (q-08, q-12). Formerly audit-11. Oct 9: drafts for the first three campaigns, built around the free run offer, are in the Pre-Visit Campaign Drafts doc. Draft note to Kyle is n-22 (replaces the one in docs/audit/asks.md). Oct 9: campaign work picks up the week of Oct 12. Drafts are made.",
       "created": "2026-10-08",
       "updated": "2026-10-09"
     },
@@ -1740,6 +1740,18 @@
       "due": null,
       "priority": "normal",
       "notes": "For the pre-visit route campaign (pdo). Spec in the Pre-Visit Campaign Drafts doc: pre-visit status per dealer, touch log (date, channel, campaign tag, rep, outcome, contact), visit window, text and email permission, offer and expiry, tap-to-open message drafts (share sheet, like d-rt-04), day-before list, weekly export for Ken. This is the smart prospecting tab from n-17. Waits on Ken and Kyle agreeing to the campaign.",
+      "created": "2026-10-09",
+      "updated": "2026-10-09"
+    },
+    {
+      "id": "audit-14",
+      "project_id": "audit",
+      "title": "Add the FullStory numbers to the Digital audit",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "FullStory findings are done (audit-07, n-18). Put all the numbers into the Digital audit in Copart Dealer Digital (the website section and the gaps page).",
       "created": "2026-10-09",
       "updated": "2026-10-09"
     }
@@ -1810,6 +1822,15 @@
       "since": "2026-10-06",
       "priority": "normal",
       "notes": ""
+    },
+    {
+      "id": "w-08",
+      "what": "Copart member reports (Copart and non-Copart dealers by state)",
+      "from_whom": "Several people (asked more than one)",
+      "project_id": "udm",
+      "since": "2026-10-07",
+      "priority": "high",
+      "notes": "Feeds gen-26, udm-01 and cdd-03. Oct 9: still waiting."
     }
   ],
   "questions": [
@@ -1849,9 +1870,9 @@
       "ask": "Ken Rion",
       "project_id": "general",
       "status": "answered",
-      "answer": "Email outreach, SMS and field offers (Chase's understanding; confirm with Ken at the debrief).",
+      "answer": "Email, phone and the dealer visit (Ken, Oct 9 debrief). SMS is not one of the three prongs.",
       "raised": "2026-10-01",
-      "answered": "2026-10-06"
+      "answered": "2026-10-09"
     },
     {
       "id": "q-05",
@@ -1898,10 +1919,10 @@
       "question": "The landing page says \"Copart Dealer Services\". Is that the official name, or should it say Copart Dealer Sales?",
       "ask": "Ken Rion",
       "project_id": "audit",
-      "status": "open",
-      "answer": null,
+      "status": "answered",
+      "answer": "Copart Dealer Services is the official name (Ken, Oct 9).",
       "raised": "2026-10-07",
-      "answered": null
+      "answered": "2026-10-09"
     },
     {
       "id": "q-11",
@@ -2137,9 +2158,9 @@
         "No, skip this year"
       ],
       "raised": "2026-10-08",
-      "status": "open",
-      "answer": null,
-      "resolved": null
+      "status": "resolved",
+      "answer": "Not going for now. Nothing is planned for Austin that Chase knows of (Oct 9).",
+      "resolved": "2026-10-09"
     }
   ],
   "people": [
