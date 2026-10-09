@@ -220,8 +220,7 @@
       ],
       "next_steps": [
         "Get collaborator access on Leo's repos (w-07)",
-        "Add my tools to Leo's hub: Copart Dealer Digital, US Dealer Map, PM Board, Route Tracker",
-        "Define who can get in (hub-01)"
+        "Add my tools to Leo's hub: Copart Dealer Digital, US Dealer Map, PM Board, Route Tracker"
       ],
       "dependencies": []
     },
@@ -714,13 +713,14 @@
       "id": "hub-01",
       "project_id": "hub",
       "title": "Define the hub: tools and agents to include, where it lives, who can get in",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "normal",
-      "notes": "Starting list: Route Tracker, Copart Dealer Digital, this PM Board. Idea stage. Oct 2: draft it from the list made with Leo (hub-02). Oct 6: it is a Copart Dealer Services tools hub. Chase is sending the list of what exists now. Oct 6: Leo's hub already has 4 live tools and 3 in build (see the hub project's built list). Chase's tools are not on it yet except the Route Tracker. The Connecticut app became the Route Tracker. Leo's lead setup and landing pages stay off the hub. Oct 6: Chase's tools go on Leo's hub (d-hub-01), once the Coolify admin adds Chase as a collaborator on Leo's repos (w-07). Oct 9: have Leo's list of tools from his hub. Leo's six live tools are in the hub project's built list.",
+      "notes": "Starting list: Route Tracker, Copart Dealer Digital, this PM Board. Idea stage. Oct 2: draft it from the list made with Leo (hub-02). Oct 6: it is a Copart Dealer Services tools hub. Chase is sending the list of what exists now. Oct 6: Leo's hub already has 4 live tools and 3 in build (see the hub project's built list). Chase's tools are not on it yet except the Route Tracker. The Connecticut app became the Route Tracker. Leo's lead setup and landing pages stay off the hub. Oct 6: Chase's tools go on Leo's hub (d-hub-01), once the Coolify admin adds Chase as a collaborator on Leo's repos (w-07). Oct 9: have Leo's list of tools from his hub. Leo's six live tools are in the hub project's built list. Oct 9: defined. The tools are listed in the hub project, and Chase's tools go on Leo's hub (d-hub-01).",
       "created": "2026-09-29",
-      "updated": "2026-10-09"
+      "updated": "2026-10-09",
+      "completed": "2026-10-09"
     },
     {
       "id": "audit-01",
@@ -1678,13 +1678,14 @@
       "id": "audit-10",
       "project_id": "audit",
       "title": "Check where the mobile \"Sell your car\" button goes from the landing page",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "high",
-      "notes": "Most-tapped element on the mobile landing page (1.3K people in 30 days, n-18). If it leaves the page for the general sell flow, dealer sellers never see the form. Tap it on a phone, or run Journeys from the page in FullStory. Oct 8: added to the audit's next steps and the Friday debrief.",
+      "notes": "Most-tapped element on the mobile landing page (1.3K people in 30 days, n-18). If it leaves the page for the general sell flow, dealer sellers never see the form. Tap it on a phone, or run Journeys from the page in FullStory. Oct 8: added to the audit's next steps and the Friday debrief. Oct 9: checked on a phone. It lands on the Copart Dealer Services landing page, where the hero image (a big logo) fills almost the whole first screen with no cue to scroll, so visitors think that is the whole page. Below it: the seller form, a \"Who is Copart\" image, the Copart Difference, a global competitive difference image, a \"Why sell locally when you can sell globally\" hero image, then contact info. Added to the Digital audit.",
       "created": "2026-10-07",
-      "updated": "2026-10-08"
+      "updated": "2026-10-09",
+      "completed": "2026-10-09"
     },
     {
       "id": "pdo-01",
@@ -1719,7 +1720,7 @@
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Pulls the landing page fixes into one page, per Lauren (change the page as a whole): crawler-readable, no \"Salvage\" title, FAQ schema, a short form that routes to a rep, tap-to-call (audit-08), a top nav entry, the mobile \"Sell your car\" button (audit-10), and the field agent and global buyers story. Uses FullStory (audit-07, n-18) and docs/audit/03-website.md and 06-positioning-brief.md. Needs the name settled (q-10). Creative needs 2 weeks. Oct 9, Ken: add a \"Request a meeting\" button so a prospective dealer can book a call with a Copart Dealer Services manager or senior person to learn more or become a seller (q-16).",
+      "notes": "Pulls the landing page fixes into one page, per Lauren (change the page as a whole): crawler-readable, no \"Salvage\" title, FAQ schema, a short form that routes to a rep, tap-to-call (audit-08), a top nav entry, the mobile \"Sell your car\" button (audit-10), and the field agent and global buyers story. Uses FullStory (audit-07, n-18) and docs/audit/03-website.md and 06-positioning-brief.md. Needs the name settled (q-10). Creative needs 2 weeks. Oct 9, Ken: add a \"Request a meeting\" button so a prospective dealer can book a call with a Copart Dealer Services manager or senior person to learn more or become a seller (q-16). Oct 9: lead with the first screen. Replace the full-screen logo hero with what the page is for, plus the short form, call-back and meeting buttons (or a clear cue to scroll), and have the mobile \"Sell your car\" button jump to the form (audit-10).",
       "created": "2026-10-08",
       "updated": "2026-10-09"
     },
@@ -1743,7 +1744,7 @@
       "owner": "Work Claude",
       "due": null,
       "priority": "normal",
-      "notes": "For the pre-visit route campaign (pdo). Spec in the Pre-Visit Campaign Drafts doc: pre-visit status per dealer, touch log (date, channel, campaign tag, rep, outcome, contact), visit window, text and email permission, offer and expiry, tap-to-open message drafts (share sheet, like d-rt-04), day-before list, weekly export for Ken. This is the smart prospecting tab from n-17. Waits on Ken and Kyle agreeing to the campaign. Oct 9: Chase is building the pre-visit, at-dealer and follow-up upgrade on Work Claude now. Ken: add the exclusive offer email Copart Dealer Services already has (the free run, n-21) to the pre-visit step. Keon: a video sales pitch in the pre-visit email (rt-51).",
+      "notes": "For the pre-visit route campaign (pdo). Spec in the Pre-Visit Campaign Drafts doc: pre-visit status per dealer, touch log (date, channel, campaign tag, rep, outcome, contact), visit window, text and email permission, offer and expiry, tap-to-open message drafts (share sheet, like d-rt-04), day-before list, weekly export for Ken. This is the smart prospecting tab from n-17. Waits on Ken and Kyle agreeing to the campaign. Oct 9: Chase is building the pre-visit, at-dealer and follow-up upgrade on Work Claude now. Ken: add the exclusive offer email Copart Dealer Services already has (the free run, n-21) to the pre-visit step. Keon: a video sales pitch in the pre-visit email (rt-51). Oct 9: Chase has a copy of the exclusive offer invitation email to use in the pre-visit step.",
       "created": "2026-10-09",
       "updated": "2026-10-09"
     },
@@ -1945,7 +1946,7 @@
       "project_id": "udm",
       "since": "2026-10-07",
       "priority": "high",
-      "notes": "Feeds gen-26, udm-01 and cdd-03. Oct 9: still waiting."
+      "notes": "Feeds gen-26, udm-01 and cdd-03. Oct 9: still waiting. Oct 9: both people asked are out of the office. Nudge when they are back."
     },
     {
       "id": "w-09",

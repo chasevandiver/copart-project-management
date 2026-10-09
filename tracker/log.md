@@ -2,6 +2,13 @@
 
 Newest entry first.
 
+## 2026-10-09 (end of day)
+- Source: Chase's phone check of the "Sell your car" button and end-of-day status
+- Changed: audit-10 Next -> Done (lands on the Copart Dealer Services page; the full-screen logo hero hides the form). Finding added to the Digital audit; audit-12 notes updated
+- Changed: hub-01 Next -> Done (tools listed, Chase's tools go on Leo's hub)
+- Changed: rt-44 notes (Chase has the exclusive offer invitation email)
+- Waiting on: w-08 both people are out of the office
+
 ## 2026-10-09 (Brenda date, FullStory findings)
 - Source: Chase set the Brenda follow-up for Monday and chose findings only for FullStory on the Digital audit
 - Changed: hub-03 due 2026-10-12
