@@ -14,7 +14,7 @@ Plain and direct. No em dashes (use a period, comma, colon or parentheses). Shor
 
 ## Terms
 
-- CDS means Copart Dealer Sales. Always write it out as "Copart Dealer Sales" in tracker.json, the board and replies.
+- CDS means Copart Dealer Services (the official name, per Ken on 2026-10-09). Always write it out as "Copart Dealer Services" in tracker.json, the board and replies. "Dealer Sales" on its own is Ken's sales team and stays as is.
 
 ## Guardrails
 

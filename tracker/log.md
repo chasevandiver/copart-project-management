@@ -2,6 +2,13 @@
 
 Newest entry first.
 
+## 2026-10-09 (Copart Dealer Services rename)
+- Source: Chase confirmed the official name and asked to rename it everywhere; Leo's tool list; one pager; Ken debrief gaps
+- Changed: "Copart Dealer Sales" and "CDS" -> "Copart Dealer Services" across tracker.json (54 fields; q-10 keeps its original wording). CLAUDE.md terms updated. Earlier log entries are left as written.
+- Changed: cmp-04 retitled "Create a one pager on what Copart Dealer Services does and what sets it apart" (none exists; ties into the website remake, audit-09 and audit-12), due cleared
+- Changed: hub built list adds Leo's MAO Offers Worklist and VIN Type Tool (six live tools)
+- Added: q-15 Ken Rion, which campaigns stay with Dealer Sales and which go to Marketing (did not come up at the debrief, nor did q-14)
+
 ## 2026-10-09 (after Ken debrief)
 - Source: Chase's status after the Friday debrief with Ken
 - Changed: gen-23 Next -> Done (Ken debriefed)

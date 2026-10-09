@@ -13,7 +13,7 @@
     {
       "id": "g-01",
       "category": "AI Tools",
-      "title": "Build a Copart Dealer Sales Tools and Agents hub",
+      "title": "Build a Copart Dealer Services Tools and Agents hub",
       "summary": "One cohesive spot for every tool and agent that Leo, I and anyone else build, with redirects to each tool.",
       "status": "Backlog",
       "project_ids": [
@@ -28,8 +28,8 @@
     {
       "id": "g-02",
       "category": "Marketing Efforts",
-      "title": "Increase Copart Dealer Sales digital visibility",
-      "summary": "Know what Copart Dealer Sales does digitally today and put effort where it raises visibility.",
+      "title": "Increase Copart Dealer Services digital visibility",
+      "summary": "Know what Copart Dealer Services does digitally today and put effort where it raises visibility.",
       "status": "Backlog",
       "project_ids": [
         "audit"
@@ -63,7 +63,7 @@
         "One shared database so notes and visits sync across phones",
         "Offline queue with retry; photos stored on the server",
         "All 60 Fort Worth and Grand Prairie dealers with labels, confidence flags, caveats and pitch text",
-        "Copart Dealer Sales Handoff tab and PLAUD intake exist in the app (parked for now)",
+        "Copart Dealer Services Handoff tab and PLAUD intake exist in the app (parked for now)",
         "PLAUD can fill the Zapier Table using the keyword \"Dealer Visit\" to log the visit summary",
         "At-dealer flow (Oct 1): Home tab, visit screen, car cards with a team picker, share-sheet send, evening Review and send, and a Cars tab",
         "Automatic pipeline stages, editable and deletable notes, and teams 1 to 26 (Oct 1)",
@@ -126,7 +126,7 @@
         "22 states have no usable public list: 9 no public list, 6 one-dealer-at-a-time lookup only, 5 state sells the list, 2 newest list too old",
         "All states page under Leads: US tile map plus a row per state with source, date, lead count, and for states without leads, what was checked and the by-hand next step",
         "Indiana merged with Leo's lists: added 113 credit unions (all 8 of ours were on his) and 421 tow, rental, salvage and dealer companies (69 strong matches, 35 weak left off, 4 competitor auctions and officer names left off). Indiana went from 3,865 to 4,396 leads. Both comparison CSVs are with Chase",
-        "Lead tables rebuilt around facts: the state's own license types (lines of business) replaced \"play\"; scores and tiers hidden on every Leads page (still calculated for checking against Copart Dealer Sales results later); quick filters All, Car dealers, Wholesale, Specialty, plus Has phone and Has email; every column sorts, plus a Sort menu (distance, miles to Copart, newest license, first licensed, units sold, group size); region lists include wholesale-only dealers",
+        "Lead tables rebuilt around facts: the state's own license types (lines of business) replaced \"play\"; scores and tiers hidden on every Leads page (still calculated for checking against Copart Dealer Services results later); quick filters All, Car dealers, Wholesale, Specialty, plus Has phone and Has email; every column sorts, plus a Sort menu (distance, miles to Copart, newest license, first licensed, units sold, group size); region lists include wholesale-only dealers",
         "Fixed: two leads sharing a license number made rows jump or open in pairs",
         "Look and feel: lead maps on a light gray background, dots colored by type (wholesale gold, car dealers blue, other gray); dark mode across the site with an Auto, Light and Dark picker",
         "Records: docs/decisions.md and the change log in docs/handoff-leads.md cover every change. Oct 1: 14 commits, 7 production deploys"
@@ -192,23 +192,25 @@
     },
     {
       "id": "hub",
-      "name": "Copart Dealer Sales Tools and Agents Hub",
+      "name": "Copart Dealer Services Tools and Agents Hub",
       "category": "AI Tools",
       "status": "Next",
-      "summary": "One cohesive home for every tool and agent built for Copart Dealer Sales (by me, Leo and anyone else), with links out to each tool.",
+      "summary": "One cohesive home for every tool and agent built for Copart Dealer Services (by me, Leo and anyone else), with links out to each tool.",
       "built": [
-        "Leo's Copart Dealer Sales Hub is live: one page for the sales floor's day-to-day tools. Each tool takes a report the team already pulls and runs in the browser (no file leaves the PC). Has a feedback form that emails Leo",
+        "Leo's Copart Dealer Services Hub is live: one page for the sales floor's day-to-day tools. Each tool takes a report the team already pulls and runs in the browser (no file leaves the PC). Has a feedback form that emails Leo",
         "Leo, live: Title Chase Dashboard. Upload the InventoryTool export; aging buckets, seller rollups, follow-up drafts, week-over-week movement",
         "Leo, live: Owner Retain Pickup Tracker. Daily Lots Pending Owner Retained report, filtered by team, worked seller by seller around the day-8 storage clock",
         "Leo, live: Copart Locations. Nearest 3 yards for any address or ZIP, tow cost estimate, heavy-duty toggle, international directory",
-        "Leo, live: Counterbid Management. Drop in the Copart Dealer Sales Portal counterbid PDF, work the top 3 bidders per lot, prefilled call, text and email, expiry tracking",
+        "Leo, live: Counterbid Management. Drop in the Copart Dealer Services Portal counterbid PDF, work the top 3 bidders per lot, prefilled call, text and email, expiry tracking",
+        "Leo, live: MAO Offers Worklist. Drop in the admin's \"Offer Made On Lot\" emails (.eml), call, text or email the member in one click, jump to their Member S&M account, mark each offer sold, not sold or no answer before it expires, daily manager report",
+        "Leo, live: VIN Type Tool. Photo or screenshot of a title, VIN tag or paper VIN list back as text, check-digit verified with suggested fixes, copy or CSV, nothing leaves the browser",
         "Leo, in build on his hub: Route Tracker, Facilities Tracker, Proceeds Follow Up",
         "Leo, separate site: SEMA Show 2026 lead capture for the Las Vegas event",
         "Chase: Route Tracker (in build, also listed on Leo's hub), Copart Dealer Digital, US Dealer Map (in build), PM Board, Plaud setup"
       ],
       "links": [
         {
-          "label": "Leo's Copart Dealer Sales Hub",
+          "label": "Leo's Copart Dealer Services Hub",
           "where": "Leo's hosted site (URL not recorded yet)"
         }
       ],
@@ -224,11 +226,11 @@
     },
     {
       "id": "audit",
-      "name": "Copart Dealer Sales Digital Presence Audit",
+      "name": "Copart Dealer Services Digital Presence Audit",
       "category": "Marketing Efforts",
       "status": "Backlog",
       "idea": true,
-      "summary": "Full review of what Copart Dealer Sales is doing digitally today, and where we should put effort to increase visibility. Idea in progress; nothing committed yet.",
+      "summary": "Full review of what Copart Dealer Services is doing digitally today, and where we should put effort to increase visibility. Idea in progress; nothing committed yet.",
       "built": [
         "FullStory click maps of the landing page, desktop and mobile, with findings (n-18)",
         "Digital audit tab rebuilt as an overview page plus easier-to-read section pages (Oct 8)",
@@ -305,7 +307,7 @@
       "name": "Campaign setup",
       "category": "Campaigns",
       "status": "In Progress",
-      "summary": "The groundwork every Copart Dealer Sales campaign shares: tools (Salesforce), rules (Kyle reviews every campaign, Creative needs 2 weeks, Tech owns forms and pages, legal on contact data), the dealer and member campaign calendar, paid media, offers and collateral.",
+      "summary": "The groundwork every Copart Dealer Services campaign shares: tools (Salesforce), rules (Kyle reviews every campaign, Creative needs 2 weeks, Tech owns forms and pages, legal on contact data), the dealer and member campaign calendar, paid media, offers and collateral.",
       "built": [
         "Campaign ground rules, in the Digital audit's Campaign ideas page (docs/audit/08-campaigns.md in Copart Dealer Digital)"
       ],
@@ -347,7 +349,7 @@
       "blockers": [],
       "next_steps": [
         "Confirm the free run offer with Ken (q-14)",
-        "Ask Ken which campaigns stay with Dealer Sales (gen-23)",
+        "Ask Ken which campaigns stay with Dealer Sales (q-15)",
         "Review the ideas with Kyle (pdo-01)",
         "Take the pre-visit tab spec to the Route Tracker build (rt-44)",
         "Clear the gates: legal (cdd-02), prospects-only match (udm-01), campaign calendar (cmp-03), form lead baseline (q-08, q-12)"
@@ -614,7 +616,7 @@
       "owner": "Me",
       "due": "2026-10-01",
       "priority": "high",
-      "notes": "Copart Dealer Sales and Marketing sync. With Kyle Cochran (Director of Business Development) and Noelle Goodman (Director of Marketing). Summary in note n-08.",
+      "notes": "Copart Dealer Services and Marketing sync. With Kyle Cochran (Director of Business Development) and Noelle Goodman (Director of Marketing). Summary in note n-08.",
       "created": "2026-09-29",
       "updated": "2026-10-01",
       "completed": "2026-10-01"
@@ -676,7 +678,7 @@
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Start with how hard Copart Dealer Sales is to find on the site (flagged in the Sep 29 meeting with Rama and Leo). Formerly gen-06.",
+      "notes": "Start with how hard Copart Dealer Services is to find on the site (flagged in the Sep 29 meeting with Rama and Leo). Formerly gen-06.",
       "created": "2026-09-29",
       "updated": "2026-10-06",
       "completed": "2026-10-06"
@@ -714,26 +716,26 @@
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "normal",
-      "notes": "Starting list: Route Tracker, Copart Dealer Digital, this PM Board. Idea stage. Oct 2: draft it from the list made with Leo (hub-02). Oct 6: it is a Copart Dealer Sales tools hub. Chase is sending the list of what exists now. Oct 6: Leo's hub already has 4 live tools and 3 in build (see the hub project's built list). Chase's tools are not on it yet except the Route Tracker. The Connecticut app became the Route Tracker. Leo's lead setup and landing pages stay off the hub. Oct 6: Chase's tools go on Leo's hub (d-hub-01), once the Coolify admin adds Chase as a collaborator on Leo's repos (w-07). Oct 9: have Leo's list of tools from his hub.",
+      "notes": "Starting list: Route Tracker, Copart Dealer Digital, this PM Board. Idea stage. Oct 2: draft it from the list made with Leo (hub-02). Oct 6: it is a Copart Dealer Services tools hub. Chase is sending the list of what exists now. Oct 6: Leo's hub already has 4 live tools and 3 in build (see the hub project's built list). Chase's tools are not on it yet except the Route Tracker. The Connecticut app became the Route Tracker. Leo's lead setup and landing pages stay off the hub. Oct 6: Chase's tools go on Leo's hub (d-hub-01), once the Coolify admin adds Chase as a collaborator on Leo's repos (w-07). Oct 9: have Leo's list of tools from his hub. Leo's six live tools are in the hub project's built list.",
       "created": "2026-09-29",
       "updated": "2026-10-09"
     },
     {
       "id": "audit-01",
       "project_id": "audit",
-      "title": "Email: inventory current Copart Dealer Sales email campaigns",
+      "title": "Email: inventory current Copart Dealer Services email campaigns",
       "status": "Next",
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Who sends them, audience, frequency, content, results if available. Needs Marketing contacts (gen-05) and Salesforce campaign history (cmp-01). Oct 8, Lauren: no campaigns are aimed at prospective dealers. Copart Dealer Sales marketing is mostly reactive and ad hoc; her campaigns are mostly for members (n-19). Oct 9: waits on Salesforce access or a walkthrough, week of Oct 12 (cmp-01).",
+      "notes": "Who sends them, audience, frequency, content, results if available. Needs Marketing contacts (gen-05) and Salesforce campaign history (cmp-01). Oct 8, Lauren: no campaigns are aimed at prospective dealers. Copart Dealer Services marketing is mostly reactive and ad hoc; her campaigns are mostly for members (n-19). Oct 9: waits on Salesforce access or a walkthrough, week of Oct 12 (cmp-01).",
       "created": "2026-09-29",
       "updated": "2026-10-09"
     },
     {
       "id": "audit-02",
       "project_id": "audit",
-      "title": "Social: inventory Copart Dealer Sales activity on each channel",
+      "title": "Social: inventory Copart Dealer Services activity on each channel",
       "status": "Done",
       "owner": "Me",
       "due": "2026-10-09",
@@ -759,7 +761,7 @@
     {
       "id": "audit-05",
       "project_id": "audit",
-      "title": "Gaps and opportunities: summarize where Copart Dealer Sales is weak and recommend where to focus",
+      "title": "Gaps and opportunities: summarize where Copart Dealer Services is weak and recommend where to focus",
       "status": "Backlog",
       "owner": "Me",
       "due": null,
@@ -788,7 +790,7 @@
       "owner": "Claude Code",
       "due": null,
       "priority": "normal",
-      "notes": "Gemini free tier caps at about 20 answers a day, so a run needs a paid key or two days (see d-cdd-04). Add Perplexity if we get a key. Oct 8: added to the Digital audit's next steps. Also run aeo/fee_check.py (stale 2017 CDS fees) so the December comparison holds.",
+      "notes": "Gemini free tier caps at about 20 answers a day, so a run needs a paid key or two days (see d-cdd-04). Add Perplexity if we get a key. Oct 8: added to the Digital audit's next steps. Also run aeo/fee_check.py (stale 2017 Copart Dealer Services fees) so the December comparison holds.",
       "created": "2026-09-29",
       "updated": "2026-10-08"
     },
@@ -884,14 +886,14 @@
     {
       "id": "cmp-04",
       "project_id": "cmp",
-      "title": "Find out if there is a one pager for what CDS does and separates CDS from the Pack. If not one, work to create one",
+      "title": "Create a one pager on what Copart Dealer Services does and what sets it apart",
       "status": "Next",
       "owner": "Me",
-      "due": "2026-10-09",
+      "due": null,
       "priority": "normal",
-      "notes": "Oct 2: week of Oct 5, if time. Formerly gen-09.",
+      "notes": "Oct 2: week of Oct 5, if time. Formerly gen-09. Oct 9: none exists, so create one. Ties into the website remake (audit-09, audit-12), so the page and the one pager tell the same story.",
       "created": "2026-09-30",
-      "updated": "2026-10-08"
+      "updated": "2026-10-09"
     },
     {
       "id": "rt-13",
@@ -948,7 +950,7 @@
     {
       "id": "gen-10",
       "project_id": "general",
-      "title": "Get with to compare lead sites, route tracker updates, any CDS materials",
+      "title": "Get with to compare lead sites, route tracker updates, any Copart Dealer Services materials",
       "status": "Done",
       "owner": "Leo",
       "due": "2026-10-01",
@@ -1398,7 +1400,7 @@
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "The seller app dealers use to list vehicles. Copart Dealer Sales agent reviews of it on the App Store came up in my research. Oct 2: week of Oct 5. Helps with the field offers outline (cmp-02). Oct 9: general reading done. Still need to use the app hands-on.",
+      "notes": "The seller app dealers use to list vehicles. Copart Dealer Services agent reviews of it on the App Store came up in my research. Oct 2: week of Oct 5. Helps with the field offers outline (cmp-02). Oct 9: general reading done. Still need to use the app hands-on.",
       "created": "2026-10-01",
       "updated": "2026-10-09"
     },
@@ -1508,12 +1510,12 @@
     {
       "id": "audit-07",
       "project_id": "audit",
-      "title": "Dig into FullStory: how dealers use the Copart Dealer Sales pages",
+      "title": "Dig into FullStory: how dealers use the Copart Dealer Services pages",
       "status": "Done",
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "high",
-      "notes": "Follow-up to the Oct 1 Marketing and Copart Dealer Sales sync (n-08). Watch session recordings and heatmaps: where dealers scroll, click, and drop off on sign-up and the dealer pages. Write the top 3 to 5 findings for the Friday debrief (gen-23). Needs access from Justin Alexander (gen-15). Feeds the website audit (audit-03). Oct 6: Ken approved IT access. It will take time to come through (w-06), so this likely slips past Friday. Oct 7: access came through. Desktop and mobile click maps for the landing page done; findings in n-18. Still to pull: mobile scroll map (percent who reach the form), confirm mobile form taps (search Mobile + clicked #first_name), Journeys from the page, Abandoned Form search. Oct 8: findings feed the remake brief (audit-12).",
+      "notes": "Follow-up to the Oct 1 Marketing and Copart Dealer Services sync (n-08). Watch session recordings and heatmaps: where dealers scroll, click, and drop off on sign-up and the dealer pages. Write the top 3 to 5 findings for the Friday debrief (gen-23). Needs access from Justin Alexander (gen-15). Feeds the website audit (audit-03). Oct 6: Ken approved IT access. It will take time to come through (w-06), so this likely slips past Friday. Oct 7: access came through. Desktop and mobile click maps for the landing page done; findings in n-18. Still to pull: mobile scroll map (percent who reach the form), confirm mobile form taps (search Mobile + clicked #first_name), Journeys from the page, Abandoned Form search. Oct 8: findings feed the remake brief (audit-12).",
       "created": "2026-10-02",
       "updated": "2026-10-09",
       "completed": "2026-10-09"
@@ -1539,7 +1541,7 @@
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "high",
-      "notes": "Friday Oct 9. Route Tracker field feedback (rt-42), lead match by Copart dealer status (udm-01), FullStory findings (audit-07), tools hub list with Leo (hub-01, hub-02), field offers outline (cmp-02), and q-04 (third prong). Oct 7: FullStory findings ready (n-18). Oct 8: also bring audit-10 (where the mobile \"Sell your car\" button goes), q-10 (Copart Dealer Services or Copart Dealer Sales, needed for the page remake), d-pdo-01 (Austin, Nov 1 to 3) and which campaigns stay with Dealer Sales before anything goes to Kyle (pdo-01). Oct 9: also bring q-14 (can reps still offer the free run, and which tow terms) and the Pre-Visit Campaign Drafts doc, so the Kyle note (n-22) can go out. Oct 9: done. Debriefed Ken.",
+      "notes": "Friday Oct 9. Route Tracker field feedback (rt-42), lead match by Copart dealer status (udm-01), FullStory findings (audit-07), tools hub list with Leo (hub-01, hub-02), field offers outline (cmp-02), and q-04 (third prong). Oct 7: FullStory findings ready (n-18). Oct 8: also bring audit-10 (where the mobile \"Sell your car\" button goes), q-10 (Copart Dealer Services or Copart Dealer Services, needed for the page remake), d-pdo-01 (Austin, Nov 1 to 3) and which campaigns stay with Dealer Sales before anything goes to Kyle (pdo-01). Oct 9: also bring q-14 (can reps still offer the free run, and which tow terms) and the Pre-Visit Campaign Drafts doc, so the Kyle note (n-22) can go out. Oct 9: done. Debriefed Ken.",
       "created": "2026-10-02",
       "updated": "2026-10-09",
       "completed": "2026-10-09"
@@ -1586,7 +1588,7 @@
     {
       "id": "audit-08",
       "project_id": "audit",
-      "title": "Make the phone number on the Copart Dealer Sales landing page tap-to-call",
+      "title": "Make the phone number on the Copart Dealer Services landing page tap-to-call",
       "status": "Next",
       "owner": "Me",
       "due": null,
@@ -1598,7 +1600,7 @@
     {
       "id": "audit-09",
       "project_id": "audit",
-      "title": "Remake the Copart Dealer Sales landing page (SEO and AEO friendly) and the nav to it",
+      "title": "Remake the Copart Dealer Services landing page (SEO and AEO friendly) and the nav to it",
       "status": "Next",
       "owner": "Me",
       "due": null,
@@ -1634,7 +1636,7 @@
     {
       "id": "gen-27",
       "project_id": "general",
-      "title": "Write up the Copart Dealer Sales process from Leo's recording",
+      "title": "Write up the Copart Dealer Services process from Leo's recording",
       "status": "Done",
       "owner": "Me",
       "due": null,
@@ -1690,7 +1692,7 @@
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Kyle asked on Oct 8 to be looped in on any digital campaign (brand, messaging, saturation). Ideas in the Digital audit, docs/audit/08-campaigns.md (n-20). Check with Ken first which campaigns stay with Dealer Sales. Draft note to Kyle is in docs/audit/asks.md. Oct 8: ask Ken first which campaigns stay with Dealer Sales (gen-23). Gates before anything runs: legal (cdd-02), prospects-only match (udm-01), the campaign calendar from Kyle or Lauren (cmp-03), and a form lead baseline (q-08, q-12). Formerly audit-11. Oct 9: drafts for the first three campaigns, built around the free run offer, are in the Pre-Visit Campaign Drafts doc. Draft note to Kyle is n-22 (replaces the one in docs/audit/asks.md). Oct 9: campaign work picks up the week of Oct 12. Drafts are made.",
+      "notes": "Kyle asked on Oct 8 to be looped in on any digital campaign (brand, messaging, saturation). Ideas in the Digital audit, docs/audit/08-campaigns.md (n-20). Check with Ken first which campaigns stay with Dealer Sales. Draft note to Kyle is in docs/audit/asks.md. Oct 8: ask Ken first which campaigns stay with Dealer Sales (gen-23). Gates before anything runs: legal (cdd-02), prospects-only match (udm-01), the campaign calendar from Kyle or Lauren (cmp-03), and a form lead baseline (q-08, q-12). Formerly audit-11. Oct 9: drafts for the first three campaigns, built around the free run offer, are in the Pre-Visit Campaign Drafts doc. Draft note to Kyle is n-22 (replaces the one in docs/audit/asks.md). Oct 9: campaign work picks up the week of Oct 12. Drafts are made. Oct 9: neither q-14 (free run) nor q-15 (which campaigns stay with Dealer Sales) came up with Ken.",
       "created": "2026-10-08",
       "updated": "2026-10-09"
     },
@@ -1906,7 +1908,7 @@
     },
     {
       "id": "q-09",
-      "question": "Can Product define the Copart Dealer Sales landing page as a Page in FullStory, and which Copart domains does FullStory capture (are the QA sites like c-g2-auction-qa4.copart.com captured)?",
+      "question": "Can Product define the Copart Dealer Services landing page as a Page in FullStory, and which Copart domains does FullStory capture (are the QA sites like c-g2-auction-qa4.copart.com captured)?",
       "ask": "Justin Alexander",
       "project_id": "audit",
       "status": "open",
@@ -1926,7 +1928,7 @@
     },
     {
       "id": "q-11",
-      "question": "Where does each seller form send its submissions (the Copart Dealer Sales landing page form and How to Sell Business)? Why is \"Email Source\" blank on them, and do QA test submissions reach the real lead inbox?",
+      "question": "Where does each seller form send its submissions (the Copart Dealer Services landing page form and How to Sell Business)? Why is \"Email Source\" blank on them, and do QA test submissions reach the real lead inbox?",
       "ask": "Lauren Harrington",
       "project_id": "audit",
       "status": "answered",
@@ -1936,7 +1938,7 @@
     },
     {
       "id": "q-12",
-      "question": "Who on Tech owns the forms on the Copart Dealer Sales website pages? Where does each seller form send its submissions, why is \"Email Source\" blank, and do QA test submissions reach the real lead inbox?",
+      "question": "Who on Tech owns the forms on the Copart Dealer Services website pages? Where does each seller form send its submissions, why is \"Email Source\" blank, and do QA test submissions reach the real lead inbox?",
       "ask": "IT",
       "project_id": "audit",
       "status": "open",
@@ -1957,6 +1959,16 @@
     {
       "id": "q-14",
       "question": "Can reps still offer the one complimentary full-service run (one run and two reruns, ten photos, rinse and vacuum, free tow within 25 air miles on a clean title)? Who approves it, how many per rep, and is \"more than 750,000 members in 185 countries\" still the current line? The Field Offers Outline says pickup is $25 for the first 25 miles, so which tow terms do reps quote?",
+      "ask": "Ken Rion",
+      "project_id": "pdo",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-09",
+      "answered": null
+    },
+    {
+      "id": "q-15",
+      "question": "Which campaigns stay with Dealer Sales, and which go to Marketing?",
       "ask": "Ken Rion",
       "project_id": "pdo",
       "status": "open",
@@ -2099,7 +2111,7 @@
     {
       "id": "d-cdd-05",
       "project_id": "cdd",
-      "question": "Rebuild the lead score from license data only, once we know what Copart Dealer Sales actually wins?",
+      "question": "Rebuild the lead score from license data only, once we know what Copart Dealer Services actually wins?",
       "options": [
         "Rebuild from license data only",
         "Keep the current score"
@@ -2138,7 +2150,7 @@
     {
       "id": "d-hub-01",
       "project_id": "hub",
-      "question": "Use Leo's Copart Dealer Sales Hub as the one home and add Chase's tools to it, or build a separate hub?",
+      "question": "Use Leo's Copart Dealer Services Hub as the one home and add Chase's tools to it, or build a separate hub?",
       "options": [
         "Add Chase's tools to Leo's hub",
         "Build a separate hub that links to Leo's",
@@ -2175,7 +2187,7 @@
       "name": "Kyle Cochran",
       "title": "Director of Business Development",
       "department": "Marketing",
-      "relationship": "Met Oct 1 in the Copart Dealer Sales and Marketing sync. Oct 8: asked to be looped in on any digital campaign Chase wants to run, to stay on brand and on message and avoid saturating dealers",
+      "relationship": "Met Oct 1 in the Copart Dealer Services and Marketing sync. Oct 8: asked to be looped in on any digital campaign Chase wants to run, to stay on brand and on message and avoid saturating dealers",
       "contact": ""
     },
     {
@@ -2189,13 +2201,13 @@
       "name": "Leo",
       "title": "",
       "department": "",
-      "relationship": "Built the original Route Tracker (now Chase's project) and runs the Copart Dealer Sales Hub",
+      "relationship": "Built the original Route Tracker (now Chase's project) and runs the Copart Dealer Services Hub",
       "contact": ""
     },
     {
       "name": "Keon Moore",
       "title": "Field Sales Manager",
-      "department": "CDS",
+      "department": "Copart Dealer Services",
       "relationship": "",
       "contact": ""
     },
@@ -2210,7 +2222,7 @@
       "name": "Lauren Harrington",
       "title": "Brand Manager",
       "department": "Marketing",
-      "relationship": "Runs digital campaigns, mostly for members; handles Copart Dealer Sales only reactively, ad hoc, with no campaigns aimed at prospective dealers (Oct 8). Knows what's been tried; great for copy and brand messaging; in charge of the website forms list (confirmed Oct 7)",
+      "relationship": "Runs digital campaigns, mostly for members; handles Copart Dealer Services only reactively, ad hoc, with no campaigns aimed at prospective dealers (Oct 8). Knows what's been tried; great for copy and brand messaging; in charge of the website forms list (confirmed Oct 7)",
       "contact": ""
     },
     {
@@ -2236,7 +2248,7 @@
     },
     {
       "name": "Susan Truett",
-      "title": "CDS Strategic Analyst/Admin",
+      "title": "Copart Dealer Services Strategic Analyst/Admin",
       "department": "",
       "relationship": "Susan can send me any reports needed",
       "contact": ""
@@ -2299,7 +2311,7 @@
       "project_id": "audit",
       "body": [
         "Plan is to get me onto Salesforce for digital campaigns. I set up the campaign and how I want it, and it delegates the jobs to people on the Marketing team.",
-        "Leo and I found that Copart Dealer Sales is very hard to find on the Copart website. We'll need to work on that.",
+        "Leo and I found that Copart Dealer Services is very hard to find on the Copart website. We'll need to work on that.",
         "Kyle, Director of Marketing, wants to meet with me this week. Ken wants to be in that meeting.",
         "I need to talk to IT about elevating access on my tools and getting more Claude tokens per week."
       ]
@@ -2331,7 +2343,7 @@
       "body": [
         "Pre-visit briefing agent. Each morning, it builds a short card for each stop on today's leg: past notes, who to ask for, which pitch to lead with, and what's on the dealer's lot from their own website. It saves reps from scrolling notes in the parking lot.",
         "Weekly digest agent. It reads the sync log and emails Ken or the team lead a summary of stops visited per rep, hot leads, dealers that went quiet, and anything flagged for a return visit. It's cheap to build because the data already exists.",
-        "CDS handoff agent. When a visit is marked as interested, it drafts the handoff to the CDS rep with everything gathered so far. It can also draft a follow-up text for the field rep to send.",
+        "Copart Dealer Services handoff agent. When a visit is marked as interested, it drafts the handoff to the Copart Dealer Services rep with everything gathered so far. It can also draft a follow-up text for the field rep to send.",
         "For scaling to new yards",
         "Route builder agent. You give it a yard address and it researches about 30 dealers, checks each address and phone against real sources, groups them into legs, and outputs the dealer list with confidence flags and caveats. This replaces the most manual part of the project. It has to follow the \"never invent dealer data\" rule: every entry cites its source, and a person approves the list before it ships.",
         "Freshness checker. Once a month, it re-verifies every dealer on active routes for closures, phone changes, or new owners, then flags changes for review instead of overwriting them. The sourcing doc already says lists go stale.",
@@ -2383,7 +2395,7 @@
     },
     {
       "id": "n-08",
-      "title": "Copart Dealer Sales and Marketing sync: meeting summary",
+      "title": "Copart Dealer Services and Marketing sync: meeting summary",
       "body": [
         "Attendees: Ken Rion (Dealer Sales), Kyle Cochran (Director of Business Development), Noelle Goodman (Director of Marketing), Chase Vandiver (Digital Engagement Manager).",
         "Purpose: introductions, how my role works with Marketing, and what access I need.",
@@ -2393,7 +2405,7 @@
         "SMS and email: a three-prong approach, using data to build the communications journey and ad hoc messaging. The third prong wasn't named (field offers?).",
         "Marketing infrastructure: set up groundwork with the Marketing team to support this approach.",
         "Video and paid social: product videos plus paid social with targeted searches, covering the full range up to broad brand advertising.",
-        "Influencers: look into how social media influencers could work for Copart Dealer Sales.",
+        "Influencers: look into how social media influencers could work for Copart Dealer Services.",
         "Speed: partner with people in Marketing to move faster. Different teams own events, content and creative.",
         "Brand standards aren't very deep. Marketing will check work against them as we go.",
         "Action items: gen-15 to gen-20. Open questions: q-04 to q-06."
@@ -2409,7 +2421,7 @@
       "body": [
         "Took the Leads section from 16 states to 28 states plus DC, with 92,492 dealer leads. Every state and DC checked and logged. Live at dfw-dealer-digital.vercel.app.",
         "Six research agents re-checked the 35 states and DC not yet built. 13 added; 22 have no usable public list (9 none, 6 one-at-a-time lookup, 5 sold by the state, 2 too old).",
-        "Leads pages reworked around what Copart Dealer Sales wants: car and wholesale dealers. License types replace \"play\", scores and tiers hidden, new filters and sorts.",
+        "Leads pages reworked around what Copart Dealer Services wants: car and wholesale dealers. License types replace \"play\", scores and tiers hidden, new filters and sorts.",
         "Indiana: compared and merged Leo's lists. 3,865 to 4,396 leads.",
         "Open: New Mexico and other by-hand states, Colorado salvage and powersports, Leo's extra Indiana columns, score rebuild decision, IT or Legal check on phones and emails before moving to the work setup.",
         "Separately: several design-plugin connectors (Asana, Atlassian, Figma, Intercom, Linear, Notion, Slack) need authorizing in claude.ai connector settings. Asana fails to connect. Not needed for this work."
@@ -2439,11 +2451,11 @@
         "Before Monday: Coolify certificate and walkthrough fixes deployed so Ken has the latest app (rt-40, rt-41).",
         "Route Tracker: check in with Ken during the week and log his feedback (rt-42).",
         "Leads: get the active and inactive Copart dealer list from Tyler Amos or Pushkaraj Jadhav (gen-16), then match US leads to active, inactive or no status (udm-01). Copart dealer data stays on the work setup.",
-        "FullStory: get access from Justin Alexander (gen-15), then review how dealers use the Copart Dealer Sales pages and write the top findings (audit-07).",
+        "FullStory: get access from Justin Alexander (gen-15), then review how dealers use the Copart Dealer Services pages and write the top findings (audit-07).",
         "Tools hub: meet Leo to list every tool we've each built (hub-02), then draft the hub definition (hub-01).",
-        "Marketing groundwork: meet Lauren Harrington (gen-17), get Noelle's contacts for events, content and creative (gen-20), inventory Copart Dealer Sales email and social (audit-01, audit-02).",
+        "Marketing groundwork: meet Lauren Harrington (gen-17), get Noelle's contacts for events, content and creative (gen-20), inventory Copart Dealer Services email and social (audit-01, audit-02).",
         "Field offers: learn the Copart GO app (gen-18) and draft the field offers plus SMS and email outline (cmp-02).",
-        "If time: one pager on what Copart Dealer Sales does and how it differs (cmp-04).",
+        "If time: one pager on what Copart Dealer Services does and how it differs (cmp-04).",
         "Friday: debrief Ken on all of the above (gen-23)."
       ]
     },
@@ -2499,10 +2511,10 @@
     {
       "id": "n-15",
       "date": "2026-10-06",
-      "title": "Copart Dealer Sales process, from Leo's recording",
+      "title": "Copart Dealer Services process, from Leo's recording",
       "project_id": "general",
       "body": [
-        "The Copart Dealer Sales process, from Leo's walkthrough.",
+        "The Copart Dealer Services process, from Leo's walkthrough.",
         "Where leads come from today: the seller hotline, the website form (Brad prints these and walks them to the teams), field referrals, Edmunds, and cold calls. Beyond that, teams find their own.",
         "First call: ask if they've done business with Copart. Many have a buyer account but have never sold. Then the pitch, then pricing, then what it takes to open an account.",
         "Opening an account is free and needs one car to list. Ask what kind of business they run (for example trailers only) so the setup fits them.",
@@ -2540,7 +2552,7 @@
     {
       "id": "n-18",
       "date": "2026-10-07",
-      "title": "FullStory: Copart Dealer Sales landing page, Sep 8 to Oct 7",
+      "title": "FullStory: Copart Dealer Services landing page, Sep 8 to Oct 7",
       "project_id": "audit",
       "body": [
         "Traffic: about 6.2K people a month (200 to 260 a day). 69% mobile (4.3K), 30% desktop (1.9K). 77% arrive from Google; some arrive from Google and Apple sign-in (likely existing members).",
@@ -2561,8 +2573,8 @@
       "title": "Lauren Harrington call 10/8",
       "project_id": "audit",
       "body": [
-        "Lauren runs Copart's digital campaigns, mostly for members. She works on Copart Dealer Sales only reactively, as one-off asks. There are no campaigns aimed at prospective dealers.",
-        "Copart Dealer Sales marketing is mostly reactive, and less of it reaches dealers.",
+        "Lauren runs Copart's digital campaigns, mostly for members. She works on Copart Dealer Services only reactively, as one-off asks. There are no campaigns aimed at prospective dealers.",
+        "Copart Dealer Services marketing is mostly reactive, and less of it reaches dealers.",
         "Tech owns the forms on the website pages.",
         "Any change to the dealer page should look at the whole page, not piecemeal fixes.",
         "Remake the page to be SEO and AEO friendly.",
@@ -2576,7 +2588,7 @@
       "title": "Marketing: the prospective dealer opening",
       "project_id": "pdo",
       "body": [
-        "Huge opportunity for prospective dealer leads. Per Lauren Harrington (Oct 8), Copart runs no campaigns aimed at prospective dealers; campaigns are mostly for members and Copart Dealer Sales gets help only reactively.",
+        "Huge opportunity for prospective dealer leads. Per Lauren Harrington (Oct 8), Copart runs no campaigns aimed at prospective dealers; campaigns are mostly for members and Copart Dealer Services gets help only reactively.",
         "The dealer list Chase is building (public license leads in Copart Dealer Digital, plus the US Dealer Map) is a prospect list nobody is marketing to yet.",
         "Kyle Cochran (Oct 8): loop him in on any digital campaign before it runs, for brand, messaging and saturation.",
         "Campaign ideas drafted in the Digital audit (docs/audit/08-campaigns.md). Start with rep-led, one-to-one ones: a heads-up before a rep's route day, a welcome for newly licensed dealers, and calls to dealers with aged units.",
@@ -2601,7 +2613,7 @@
       "title": "Draft note to Kyle Cochran: prospective dealer campaigns",
       "project_id": "pdo",
       "body": [
-        "Send after Ken agrees which campaigns stay with Dealer Sales (gen-23) and OKs the free run (q-14). Share the Pre-Visit Campaign Drafts doc first, or attach it as a PDF if Kyle can't open claude.ai links.",
+        "Send after Ken agrees which campaigns stay with Dealer Sales (q-15) and OKs the free run (q-14). Share the Pre-Visit Campaign Drafts doc first, or attach it as a PDF if Kyle can't open claude.ai links.",
         "Subject: Prospective dealer campaigns, for your review before anything runs",
         "Hi Kyle, as promised, here's what I'd like to try with prospective dealers, the ones who don't work with Copart yet. Lauren mentioned nothing is aimed at them today, so I want to run it by you first for brand, messaging and saturation. The drafts are here: [Pre-Visit Campaign Drafts link]",
         "The first campaign is rep-led and one to one. Before a route day, the rep calls each dealer on next week's route and asks for 10 minutes in person, then builds the day around who will be there. The offer is the one complimentary full-service run Copart Dealer Services has used before (I'm confirming with Ken it's still current). No cold texts or bulk email: calls to business lines, email only to business addresses, texts only to dealers who say yes.",
