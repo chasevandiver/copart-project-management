@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-09 (Brenda date, FullStory findings)
+- Source: Chase set the Brenda follow-up for Monday and chose findings only for FullStory on the Digital audit
+- Changed: hub-03 due 2026-10-12
+- Changed: audit-14 Next -> Done, retitled "Add the FullStory findings to the Digital audit" (findings only, numbers stay in n-18)
+
 ## 2026-10-09 (Ken and Keon debriefs)
 - Source: Chase's notes from the morning debrief with Ken and a Route Tracker debrief with Keon
 - Added: n-23 "Ken debrief (Oct 9 morning)", n-24 "Keon debrief: Route Tracker"

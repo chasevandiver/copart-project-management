@@ -1750,14 +1750,15 @@
     {
       "id": "audit-14",
       "project_id": "audit",
-      "title": "Add the FullStory numbers to the Digital audit",
-      "status": "Next",
+      "title": "Add the FullStory findings to the Digital audit",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "FullStory findings are done (audit-07, n-18). Put all the numbers into the Digital audit in Copart Dealer Digital (the website section and the gaps page).",
+      "notes": "FullStory findings are done (audit-07, n-18). Put all the numbers into the Digital audit in Copart Dealer Digital (the website section and the gaps page). Oct 9: added as findings only, no numbers (Chase's call). The numbers stay here in n-18. In Copart Dealer Digital: 03-website.md \"How dealers use the page\", the audit README and the Digital audit tab. Ken's \"Request a meeting\" button added to the remake brief too.",
       "created": "2026-10-09",
-      "updated": "2026-10-09"
+      "updated": "2026-10-09",
+      "completed": "2026-10-09"
     },
     {
       "id": "hub-03",
@@ -1765,9 +1766,9 @@
       "title": "Build a tool with Brenda to track the new commission setup",
       "status": "Next",
       "owner": "Me",
-      "due": null,
+      "due": "2026-10-12",
       "priority": "high",
-      "notes": "Ken, Oct 9: get with Brenda to build a tool that tracks the new commission setup, which launches the week of Oct 12. Sent Brenda a Teams message Oct 9 (w-09); follow up. Commission data stays on the work setup, never in this repo.",
+      "notes": "Ken, Oct 9: get with Brenda to build a tool that tracks the new commission setup, which launches the week of Oct 12. Sent Brenda a Teams message Oct 9 (w-09); follow up. Commission data stays on the work setup, never in this repo. Follow up with Brenda Monday Oct 12.",
       "created": "2026-10-09",
       "updated": "2026-10-09"
     },
