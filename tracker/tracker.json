@@ -58,7 +58,7 @@
       "id": "rt",
       "name": "Route Tracker",
       "status": "In Progress",
-      "summary": "Chase's project now (it started as Leo's Route Tracker). Rebuilt with a real server side so data is captured securely. Lives on my Coolify in the app/ folder. Started building VIN capture (Price Check). Walkthrough fixes live Oct 6; live field test with Ken and Keon in Indianapolis the week of Oct 5.",
+      "summary": "Chase's project now (it started as Leo's Route Tracker). Rebuilt with a real server side so data is captured securely. Lives on my Coolify in the app/ folder. Walkthrough fixes live Oct 6; live field test with Ken and Keon in Indianapolis the week of Oct 5. Oct 9: Route Tracker v.Next (Phases 1a, 1b, 2, 3 and 5) built on staging only (route-tracker-staging, its own repo). Live is untouched until Chase tests staging and says \"deploy to live\".",
       "built": [
         "Name sign-in with team passcode; admin, rep and viewer roles enforced by the server",
         "One shared database so notes and visits sync across phones",
@@ -70,7 +70,12 @@
         "Automatic pipeline stages, editable and deletable notes, and teams 1 to 26 (Oct 1)",
         "Fixed two phone-size bugs: the search box text and the Team 2 sort order (Oct 1)",
         "Walkthrough fixes (live Oct 6): hot dealer, title front and back, license photos, sales.NN team emails, live \"N sent\" counts",
-        "51 automated tests, all passing; 375px preview checked"
+        "51 automated tests, all passing; 375px preview checked",
+        "Staging v.Next, Phase 1a and 1b (Oct 9, 168 tests): Federal Tax ID on the visit screen, team emails and CSV (kept out of Zapier); photo access scoped per dealer; one-tap PLAUD paste with phone, email and tax ID held for the rep to confirm; visit logged on first capture with a \"Who you met\" block; seller code chip, contact editing and 44 px tap targets on dealer cards; four switchable visit layouts (Classic, A, B, C) with timing on Pulse; server-stamped pipeline stage; PLAUD intake log and admin backup downloads",
+        "Staging v.Next, Phase 2 (Oct 9, 191 tests): first car records and handoff units feed one Cars list (originals kept as backup); Seller codes view on the Handoff tab by state with days waited; follow-up outcomes and rescheduling with \"Done or move\"",
+        "Staging v.Next, Phase 3 (Oct 9, 195 tests): Home \"Tonight\" card (PLAUD waiting, today's dealers with no follow-up, Set follow-up), Send assignments button and an \"Email me my day\" draft with no tax ID or PLAUD text",
+        "Staging v.Next, Phase 5 daily route builder (Oct 9, 203 tests): More > Day plans. Admin picks rep, day, start yard and end point; up to 14 scored stops in an 8 to 5 window; move or remove stops; Assign shows \"Today's plan\" on the rep's Home (n-25)",
+        "LIVE-RELEASE-PLAN.md written (plan only) for Phases 1a, 1b, 2, 3 and 5"
       ],
       "links": [
         {
@@ -80,17 +85,29 @@
         {
           "label": "Build repo",
           "where": "Copart GitHub, connected directly to Coolify. No direct access for me; Work Claude creates and edits files there."
+        },
+        {
+          "label": "Staging app",
+          "where": "route-tracker-staging on Coolify, its own repo (separate repo, tracked only)"
+        },
+        {
+          "label": "Live release plan",
+          "where": "LIVE-RELEASE-PLAN.md in the Route Tracker build"
         }
       ],
       "blockers": [
         "App URL only resolves on the Copart VPN, so Zapier can't reach it. PLAUD summaries get pasted in for now (d-rt-08)",
         "IT servers block the PLAUD API, so full PLAUD to Zapier automation does not run",
         "No real weekly sales file yet, which blocks Price Check",
-        "Zapier can't connect to Google Sheets or Excel on my machine"
+        "Zapier can't connect to Google Sheets or Excel on my machine",
+        "Phase 4 lead hub needs the real marketing files and the Copart members list (rt-59, w-08). The CSVs in Downloads are not those"
       ],
       "next_steps": [
+        "Test staging on my phone: pick the visit layout (d-rt-10) and decide on the tax ID box (d-rt-11) (rt-53)",
+        "Pick the next phase (d-rt-12). Work Claude suggests Phase 6 outreach templates (rt-58), since Phase 4 is blocked",
+        "Send Work Claude Brenda's seller code request email(s) and her list of Copart Dealer Services steps (rt-56)",
+        "Go live: back up the live data volume first (rt-55), then say \"deploy to live\" (rt-57)",
         "Pre-visit, at-dealer and follow-up upgrade on Work Claude (rt-44), plus Keon's asks (rt-45 to rt-50)",
-        "Work Claude is building fixes from Ken and Keon's field test feedback",
         "Phone test and data-loss check (rt-28); confirm hot send and the office tracker (rt-21, rt-23)",
         "Decide on Google Places for \"Dealers near you\" (d-rt-07)",
         "Price Check milestone 1: sales importer plus backtest (rt-02)",
@@ -407,9 +424,9 @@
       "owner": "Work Claude",
       "due": null,
       "priority": "high",
-      "notes": "VIN tool: scan, decode, comparable sales, price range, counter and outcome. Milestone 1 proves whether past sales predict prices well enough before building screens. Needs the weekly sales file (rt-06) and approval to use sales data (rt-07).",
+      "notes": "VIN tool: scan, decode, comparable sales, price range, counter and outcome. Milestone 1 proves whether past sales predict prices well enough before building screens. Needs the weekly sales file (rt-06) and approval to use sales data (rt-07). Oct 9: Price Check is parked in the v.Next plan.",
       "created": "2026-09-29",
-      "updated": "2026-09-29"
+      "updated": "2026-10-09"
     },
     {
       "id": "rt-03",
@@ -505,9 +522,9 @@
       "owner": "IT",
       "due": null,
       "priority": "normal",
-      "notes": "IT servers block the PLAUD API. Workaround today: PLAUD fills the Zapier Table using the keyword \"Dealer Visit\" to log the summary. PLAUD intake tab in the app is parked. Oct 1: Zapier also can't reach the app URL (VPN only). Agreed path for now is pasting the PLAUD summary into the app, so sensitive PLAUD data is not exposed publicly (d-rt-08).",
+      "notes": "IT servers block the PLAUD API. Workaround today: PLAUD fills the Zapier Table using the keyword \"Dealer Visit\" to log the summary. PLAUD intake tab in the app is parked. Oct 1: Zapier also can't reach the app URL (VPN only). Agreed path for now is pasting the PLAUD summary into the app, so sensitive PLAUD data is not exposed publicly (d-rt-08). Oct 9: staging has a one-tap PLAUD paste and a PLAUD intake log (Phase 1a and 1b).",
       "created": "2026-09-29",
-      "updated": "2026-10-01"
+      "updated": "2026-10-09"
     },
     {
       "id": "cdd-01",
@@ -1225,9 +1242,9 @@
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Nothing deleted. Covered by migration tests (rt-28).",
+      "notes": "Nothing deleted. Covered by migration tests (rt-28). Oct 9: built on staging in Phase 2. First car records and handoff units feed one Cars list, originals kept as backup. Done once v.Next is live (rt-57).",
       "created": "2026-10-01",
-      "updated": "2026-10-01"
+      "updated": "2026-10-09"
     },
     {
       "id": "rt-33",
@@ -1249,9 +1266,9 @@
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Share sheet works for now (d-rt-04). SMTP is the later step.",
+      "notes": "Share sheet works for now (d-rt-04). SMTP is the later step. Oct 9: still parked in the v.Next plan.",
       "created": "2026-10-01",
-      "updated": "2026-10-01"
+      "updated": "2026-10-09"
     },
     {
       "id": "rt-35",
@@ -1852,7 +1869,7 @@
       "owner": "Work Claude",
       "due": null,
       "priority": "normal",
-      "notes": "Keon, Oct 9 Route Tracker debrief (n-24). One place to see which dealers need a follow-up and how each is moving.",
+      "notes": "Keon, Oct 9 Route Tracker debrief (n-24). One place to see which dealers need a follow-up and how each is moving. Oct 9: staging covers part of this: follow-up outcomes and \"Done or move\" rescheduling (Phase 2) and the Home \"Tonight\" card (Phase 3).",
       "created": "2026-10-09",
       "updated": "2026-10-09"
     },
@@ -1894,6 +1911,115 @@
       "updated": "2026-10-09"
     },
     {
+      "id": "rt-53",
+      "project_id": "rt",
+      "title": "Test the staging app on my phone",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Route Tracker v.Next on route-tracker-staging (n-25). Report which visit layout wins (d-rt-10) and whether the tax ID box on the dealer card ships live (d-rt-11). Staging uses real Fort Worth and Grand Prairie dealer names, so results aren't a field test.",
+      "created": "2026-10-09",
+      "updated": "2026-10-09"
+    },
+    {
+      "id": "rt-54",
+      "project_id": "rt",
+      "title": "Confirm staging is serving the Phase 3 and Phase 5 pages",
+      "status": "Next",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "normal",
+      "notes": "Post-deploy page checks for Phases 3 and 5 were blocked by the permission check. Builds finished and containers were healthy, but the new pages aren't confirmed.",
+      "created": "2026-10-09",
+      "updated": "2026-10-09"
+    },
+    {
+      "id": "rt-55",
+      "project_id": "rt",
+      "title": "Back up the live data volume before the v.Next release",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "urgent",
+      "notes": "Must be confirmed before go-live (rt-57). Needs me or the Coolify team; Work Claude's tools can't do it. Backup destination is open with IT (w-04).",
+      "created": "2026-10-09",
+      "updated": "2026-10-09"
+    },
+    {
+      "id": "rt-56",
+      "project_id": "rt",
+      "title": "Send Work Claude Brenda's seller code request email(s) and her list of Copart Dealer Services steps",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "For the seller code flow on staging (Seller codes view, seller code chip).",
+      "created": "2026-10-09",
+      "updated": "2026-10-09"
+    },
+    {
+      "id": "rt-57",
+      "project_id": "rt",
+      "title": "Deploy Route Tracker v.Next to live",
+      "status": "Backlog",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "high",
+      "notes": "Only when Chase says \"deploy to live\". After field hours, not on a working day, and only after the live backup is confirmed (rt-55). Follows LIVE-RELEASE-PLAN.md: push server.js, lib/stage.js, lib/planner.js, public/index.html, public/sw.js and the two test files to the live repo root, check the live page, then tell Ken and Keon what changed. Reps default to the Classic layout.",
+      "created": "2026-10-09",
+      "updated": "2026-10-09"
+    },
+    {
+      "id": "rt-58",
+      "project_id": "rt",
+      "title": "Draft Phase 6 outreach templates: independent and franchise call and email wording",
+      "status": "Backlog",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "normal",
+      "notes": "Work Claude's pick for the next phase (d-rt-12). Drafts come to Chase for approval before anything is built. Tie in with the pre-visit campaign drafts (pdo).",
+      "created": "2026-10-09",
+      "updated": "2026-10-09"
+    },
+    {
+      "id": "rt-59",
+      "project_id": "rt",
+      "title": "Build Phase 4, the lead hub",
+      "status": "Blocked",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "normal",
+      "notes": "Blocked until Chase has the real marketing files and the Copart members list (w-08). The CSVs in Downloads are not those.",
+      "created": "2026-10-09",
+      "updated": "2026-10-09"
+    },
+    {
+      "id": "rt-60",
+      "project_id": "rt",
+      "title": "Build the Excel exports",
+      "status": "Waiting",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "normal",
+      "notes": "Waiting on the columns from Keon and Ken (w-10).",
+      "created": "2026-10-09",
+      "updated": "2026-10-09"
+    },
+    {
+      "id": "rt-61",
+      "project_id": "rt",
+      "title": "Route builder extras: drag to reorder, draw the plan on the Route map, a screen to change the 8 to 5 window",
+      "status": "Backlog",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "low",
+      "notes": "Left out of Phase 5. Drive times are straight-line x 1.3 at 30 mph for now.",
+      "created": "2026-10-09",
+      "updated": "2026-10-09",
+      "idea": true
+    },
+    {
       "id": "ww-01",
       "project_id": "ww",
       "title": "Build the weekly wins email template",
@@ -1924,7 +2050,7 @@
       "project_id": "rt",
       "since": "2026-09-29",
       "priority": "high",
-      "notes": "Priority because passcodes are coming out. Oct 6: holding until Ken's field week ends. No automation changes while the team is in the field."
+      "notes": "Priority because passcodes are coming out. Oct 6: holding until Ken's field week ends. No automation changes while the team is in the field. Oct 9: staging puts the Federal Tax ID on the visit screen, team emails and CSV, and keeps it out of Zapier (d-rt-11)."
     },
     {
       "id": "w-03",
@@ -1942,7 +2068,7 @@
       "project_id": "rt",
       "since": "2026-09-29",
       "priority": "normal",
-      "notes": "Oct 6: holding until Ken's field week ends. No automation changes while the team is in the field."
+      "notes": "Oct 6: holding until Ken's field week ends. No automation changes while the team is in the field. Oct 9: also need the IT backup destination before the v.Next go-live (rt-55)."
     },
     {
       "id": "w-05",
@@ -1990,6 +2116,15 @@
       "since": "2026-10-09",
       "priority": "high",
       "notes": "Teams message sent Oct 9. Commission setup launches the week of Oct 12 (hub-03)."
+    },
+    {
+      "id": "w-10",
+      "what": "Columns for the Route Tracker Excel exports",
+      "from_whom": "Keon Moore and Ken Rion",
+      "project_id": "rt",
+      "since": "2026-10-09",
+      "priority": "normal",
+      "notes": "Blocks rt-60."
     }
   ],
   "questions": [
@@ -2138,6 +2273,16 @@
       "question": "Who takes the meetings dealers book from the page's \"Request a meeting\" button, and which booking tool should it use (for example Microsoft Bookings)?",
       "ask": "Ken Rion",
       "project_id": "audit",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-09",
+      "answered": null
+    },
+    {
+      "id": "q-17",
+      "question": "What should happen with hot cars that are missing items?",
+      "ask": "Assignment team",
+      "project_id": "rt",
       "status": "open",
       "answer": null,
       "raised": "2026-10-09",
@@ -2349,6 +2494,48 @@
         "Build it in the Route Tracker now, with an export that can feed Salesforce later",
         "Wait for Salesforce access and build it there",
         "Both: Route Tracker for the field, synced to Salesforce"
+      ],
+      "raised": "2026-10-09",
+      "status": "open",
+      "answer": null,
+      "resolved": null
+    },
+    {
+      "id": "d-rt-10",
+      "project_id": "rt",
+      "question": "Which visit layout ships to reps?",
+      "options": [
+        "Classic",
+        "A",
+        "B",
+        "C (dealer card)"
+      ],
+      "raised": "2026-10-09",
+      "status": "open",
+      "answer": null,
+      "resolved": null
+    },
+    {
+      "id": "d-rt-11",
+      "project_id": "rt",
+      "question": "Does the tax ID box on the dealer card ship live?",
+      "options": [
+        "Yes, ship it",
+        "No, keep it on staging until IT OKs Tax IDs (w-02)"
+      ],
+      "raised": "2026-10-09",
+      "status": "open",
+      "answer": null,
+      "resolved": null
+    },
+    {
+      "id": "d-rt-12",
+      "project_id": "rt",
+      "question": "Which Route Tracker phase is next?",
+      "options": [
+        "Phase 6 outreach templates (Work Claude's pick, since Phase 4 is blocked)",
+        "Phase 4 lead hub, once the files arrive",
+        "Something else"
       ],
       "raised": "2026-10-09",
       "status": "open",
@@ -2832,6 +3019,25 @@
         "Idea: a video sales pitch in the pre-visit email that tells dealers he'll be in the area and stopping by (rt-51).",
         "Idea: a CRM built for the dealers he hits on routes (rt-52).",
         "Later the same day: put dealers who aren't ready yet on a weekly wins email, highlighting what Copart is doing well, to win them over as sellers (ww, its own campaign). Tag them \"not ready, weekly wins\" in the CRM (rt-52)."
+      ]
+    },
+    {
+      "id": "n-25",
+      "date": "2026-10-09",
+      "title": "Route Tracker v.Next staging build (Oct 9)",
+      "project_id": "rt",
+      "body": [
+        "Chase gave \"APPROVED TO BUILD\" on the condition that nothing reaches live until Chase tests it and says so. Everything is on route-tracker-staging (its own repo). Live was never touched.",
+        "Phase 1a and 1b (commit d60405b, 168 tests): tax ID, per-dealer photo access, one-tap PLAUD paste, visit on first capture with \"Who you met\", seller code chip, contact editing, 44 px tap targets, four visit layouts with timing on Pulse, server-stamped stage, price tests in the build, PLAUD intake log, admin backup downloads.",
+        "Phase 2 (commit 90bbdb7, 191 tests): one Cars list, Seller codes view on the Handoff tab, follow-up outcomes and \"Done or move\". The first push was blocked by the permission check, then went through.",
+        "Phase 3 (commit 3e5c282, 195 tests): Home \"Tonight\" card, Send assignments, \"Email me my day\" draft (no tax ID, no PLAUD text).",
+        "Phase 5 (commit de95278, 203 tests): daily route builder under More > Day plans. End point can be a yard, a hotel pin (location read only when tapped) or open. Skips dealers visited in the last 14 days or already today.",
+        "Route builder scoring: 40 hot, 30 follow-up due, 25 come back, 20 never visited, 10 nobody in last time, plus up to 15 for weeks since the last visit.",
+        "Testing: every new test was broken once to prove it can fail; two weak tests strengthened. Phone-size browser checks passed, including a rep seeing only their own plan.",
+        "Caveats: Phase 3 and 5 post-deploy page checks were blocked (rt-54). Staging uses real Fort Worth and Grand Prairie dealer names, so it isn't a field test. Not in Phase 5: drag to reorder, plan on the Route map, a screen to change the 8 to 5 window (rt-61). Drive times are straight-line x 1.3 at 30 mph.",
+        "Not built yet: Phase 4 lead hub (rt-59, blocked), Phase 6 outreach templates (rt-58), Excel exports (rt-60, w-10). Parked: server email (SMTP, rt-34), document extraction (needs written IT OK), Price Check (rt-02).",
+        "Go-live: after field hours, not on a working day, after a confirmed backup of the live data volume (rt-55, rt-57). Reps default to the Classic layout.",
+        "Source: Work Claude's summary from its notes file, the release plan and the transcript tails. It didn't read all 2,380 messages of the audit session, so small early details may be missing."
       ]
     }
   ],

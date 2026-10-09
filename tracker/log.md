@@ -2,6 +2,15 @@
 
 Newest entry first.
 
+## 2026-10-09 (Route Tracker v.Next on staging)
+- Source: Work Claude's summary of today's Route Tracker v.Next build (Phases 1a, 1b, 2, 3 and 5 on staging only)
+- Added: n-25 "Route Tracker v.Next staging build (Oct 9)"; rt built list, staging and release plan links, Phase 4 blocker, new next steps
+- Added: rt-53 "Test the staging app on my phone" (Me, high), rt-54 confirm staging serves Phase 3 and 5 pages (Work Claude), rt-55 back up the live data volume (Me, urgent), rt-56 send Work Claude Brenda's seller code emails and Copart Dealer Services steps (Me, high), rt-57 deploy v.Next to live (Work Claude, Backlog, only on "deploy to live"), rt-58 Phase 6 outreach templates (Backlog), rt-59 Phase 4 lead hub (Blocked), rt-60 Excel exports (Waiting), idea rt-61 route builder extras
+- Added: d-rt-10 which visit layout ships, d-rt-11 does the tax ID box ship live, d-rt-12 which phase is next
+- Added: q-17 Assignment team, what happens with hot cars missing items
+- Waiting on: added w-10 Keon and Ken, Excel export columns; w-02 and w-04 notes (tax ID on staging, IT backup destination)
+- Changed: rt-32, rt-49, rt-10 notes (covered on staging); rt-34 and rt-02 notes (parked)
+
 ## 2026-10-09 (weekly wins campaign)
 - Source: Chase wants the on-the-fence dealers email as its own campaign, with Creative images and a prefilled body
 - Added: project ww "Weekly wins for on-the-fence dealers" (Campaigns, idea), added to g-03
