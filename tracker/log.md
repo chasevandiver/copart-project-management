@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-09 (Kyle note)
+- Source: Chase asked to add the draft note to Kyle to the prospective dealer outreach project
+- Added: note n-22 "Draft note to Kyle Cochran: prospective dealer campaigns"
+- Changed: pdo-01 notes point to n-22; gen-23 notes add q-14 and the campaign drafts to today's Ken debrief
+
 ## 2026-10-09 (pre-visit campaign drafts)
 - Source: Chase asked for drafts of the campaigns, focused on the pre-visit route campaign, plus a past offer (one complimentary full-service run)
 - Changed: pdo summary, built, links (Pre-Visit Campaign Drafts doc) and next steps

@@ -1540,9 +1540,9 @@
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "high",
-      "notes": "Friday Oct 9. Route Tracker field feedback (rt-42), lead match by Copart dealer status (udm-01), FullStory findings (audit-07), tools hub list with Leo (hub-01, hub-02), field offers outline (cmp-02), and q-04 (third prong). Oct 7: FullStory findings ready (n-18). Oct 8: also bring audit-10 (where the mobile \"Sell your car\" button goes), q-10 (Copart Dealer Services or Copart Dealer Sales, needed for the page remake), d-pdo-01 (Austin, Nov 1 to 3) and which campaigns stay with Dealer Sales before anything goes to Kyle (pdo-01).",
+      "notes": "Friday Oct 9. Route Tracker field feedback (rt-42), lead match by Copart dealer status (udm-01), FullStory findings (audit-07), tools hub list with Leo (hub-01, hub-02), field offers outline (cmp-02), and q-04 (third prong). Oct 7: FullStory findings ready (n-18). Oct 8: also bring audit-10 (where the mobile \"Sell your car\" button goes), q-10 (Copart Dealer Services or Copart Dealer Sales, needed for the page remake), d-pdo-01 (Austin, Nov 1 to 3) and which campaigns stay with Dealer Sales before anything goes to Kyle (pdo-01). Oct 9: also bring q-14 (can reps still offer the free run, and which tow terms) and the Pre-Visit Campaign Drafts doc, so the Kyle note (n-22) can go out.",
       "created": "2026-10-02",
-      "updated": "2026-10-08"
+      "updated": "2026-10-09"
     },
     {
       "id": "gen-24",
@@ -1690,7 +1690,7 @@
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Kyle asked on Oct 8 to be looped in on any digital campaign (brand, messaging, saturation). Ideas in the Digital audit, docs/audit/08-campaigns.md (n-20). Check with Ken first which campaigns stay with Dealer Sales. Draft note to Kyle is in docs/audit/asks.md. Oct 8: ask Ken first which campaigns stay with Dealer Sales (gen-23). Gates before anything runs: legal (cdd-02), prospects-only match (udm-01), the campaign calendar from Kyle or Lauren (cmp-03), and a form lead baseline (q-08, q-12). Formerly audit-11. Oct 9: drafts for the first three campaigns, built around the free run offer, are in the Pre-Visit Campaign Drafts doc. Send Kyle the doc with the note.",
+      "notes": "Kyle asked on Oct 8 to be looped in on any digital campaign (brand, messaging, saturation). Ideas in the Digital audit, docs/audit/08-campaigns.md (n-20). Check with Ken first which campaigns stay with Dealer Sales. Draft note to Kyle is in docs/audit/asks.md. Oct 8: ask Ken first which campaigns stay with Dealer Sales (gen-23). Gates before anything runs: legal (cdd-02), prospects-only match (udm-01), the campaign calendar from Kyle or Lauren (cmp-03), and a form lead baseline (q-08, q-12). Formerly audit-11. Oct 9: drafts for the first three campaigns, built around the free run offer, are in the Pre-Visit Campaign Drafts doc. Draft note to Kyle is n-22 (replaces the one in docs/audit/asks.md).",
       "created": "2026-10-08",
       "updated": "2026-10-09"
     },
@@ -2572,6 +2572,21 @@
         "An offer Copart Dealer Services has run before: place one vehicle on Copart's auction at no cost and let more than 750,000 members in 185 countries decide what it's worth. No obligation.",
         "Included: full concierge service with one run and two reruns, ten photos, a rinse and vacuum before it lists, and a free tow within 25 air miles on clean titles.",
         "Now the hook in every pre-visit campaign message (Pre-Visit Campaign Drafts doc). Ken to confirm it can still be offered (q-14)."
+      ]
+    },
+    {
+      "id": "n-22",
+      "date": "2026-10-09",
+      "title": "Draft note to Kyle Cochran: prospective dealer campaigns",
+      "project_id": "pdo",
+      "body": [
+        "Send after Ken agrees which campaigns stay with Dealer Sales (gen-23) and OKs the free run (q-14). Share the Pre-Visit Campaign Drafts doc first, or attach it as a PDF if Kyle can't open claude.ai links.",
+        "Subject: Prospective dealer campaigns, for your review before anything runs",
+        "Hi Kyle, as promised, here's what I'd like to try with prospective dealers, the ones who don't work with Copart yet. Lauren mentioned nothing is aimed at them today, so I want to run it by you first for brand, messaging and saturation. The drafts are here: [Pre-Visit Campaign Drafts link]",
+        "The first campaign is rep-led and one to one. Before a route day, the rep calls each dealer on next week's route and asks for 10 minutes in person, then builds the day around who will be there. The offer is the one complimentary full-service run Copart Dealer Services has used before (I'm confirming with Ken it's still current). No cold texts or bulk email: calls to business lines, email only to business addresses, texts only to dealers who say yes.",
+        "Two shorter drafts follow: a welcome for newly licensed dealers, and a call to dealers whose cars have been listed 30 days or more.",
+        "Could you help with three things? 1) Mark up anything off brand or off message (you can comment right in the doc). 2) Tell me what else is going out to dealers and members in the next couple of months, so we don't stack messages. 3) Confirm \"more than 750,000 members in 185 countries\" is still the current line.",
+        "Nothing designed is planned yet. If we add a leave-behind, it goes to Creative 2 weeks ahead. Thanks, Chase"
       ]
     }
   ],
