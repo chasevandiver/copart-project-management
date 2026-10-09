@@ -2,7 +2,7 @@
   "meta": {
     "owner": "Chase",
     "role": "Digital Engagement Manager, supporting Ken Rion (SVP of Dealer Sales)",
-    "last_updated": "2026-10-08"
+    "last_updated": "2026-10-09"
   },
   "categories": [
     "AI Tools",
@@ -1503,13 +1503,14 @@
       "id": "audit-07",
       "project_id": "audit",
       "title": "Dig into FullStory: how dealers use the Copart Dealer Sales pages",
-      "status": "In Progress",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-09",
       "priority": "high",
       "notes": "Follow-up to the Oct 1 Marketing and Copart Dealer Sales sync (n-08). Watch session recordings and heatmaps: where dealers scroll, click, and drop off on sign-up and the dealer pages. Write the top 3 to 5 findings for the Friday debrief (gen-23). Needs access from Justin Alexander (gen-15). Feeds the website audit (audit-03). Oct 6: Ken approved IT access. It will take time to come through (w-06), so this likely slips past Friday. Oct 7: access came through. Desktop and mobile click maps for the landing page done; findings in n-18. Still to pull: mobile scroll map (percent who reach the form), confirm mobile form taps (search Mobile + clicked #first_name), Journeys from the page, Abandoned Form search. Oct 8: findings feed the remake brief (audit-12).",
       "created": "2026-10-02",
-      "updated": "2026-10-08"
+      "updated": "2026-10-09",
+      "completed": "2026-10-09"
     },
     {
       "id": "hub-02",
