@@ -1861,15 +1861,27 @@
     {
       "id": "rt-52",
       "project_id": "rt",
-      "title": "Build a CRM for Route Tracker dealers",
+      "title": "Build a CRM for the dealers reps capture on Route Tracker visits",
+      "status": "Next",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "high",
+      "notes": "Keon, Oct 9 Route Tracker debrief (n-24). A CRM just for the dealers reps hit on routes. The dealer profile (rt-50) is the first step. Check what Salesforce already covers first (cmp-01). Oct 9: Keon's main request, now committed work. Phase 1 is the dealer profile (rt-50) with contacts, touch log and next step. Plan: one dealer record with contacts, every touch (pre-visit, visit, follow-up), heat, stage and next step, a follow-up screen, a nurture list for the weekly wins email (pdo-02), and an export that could feed Salesforce later (d-rt-09).",
+      "created": "2026-10-09",
+      "updated": "2026-10-09"
+    },
+    {
+      "id": "pdo-02",
+      "project_id": "pdo",
+      "title": "Start a weekly wins email for dealers who aren't ready yet",
       "status": "Backlog",
       "owner": "Me",
       "due": null,
-      "priority": "low",
-      "notes": "Keon, Oct 9 Route Tracker debrief (n-24). A CRM just for the dealers reps hit on routes. The dealer profile (rt-50) is the first step. Check what Salesforce already covers first (cmp-01).",
+      "priority": "normal",
+      "idea": true,
+      "notes": "Keon, Oct 9: dealers he visits who aren't ready to sell get a weekly email that highlights what Copart is doing well, to win them over. The list comes from the Route Tracker CRM (\"not ready, weekly wins\" tag, rt-52), with email consent asked at the visit. Needs Kyle on brand and saturation, Legal on consent (q-06), and approval before any Copart results or sales figures go in (rt-07).",
       "created": "2026-10-09",
-      "updated": "2026-10-09",
-      "idea": true
+      "updated": "2026-10-09"
     }
   ],
   "waiting_on": [
@@ -2306,6 +2318,20 @@
       "status": "resolved",
       "answer": "Not going for now. Nothing is planned for Austin that Chase knows of (Oct 9).",
       "resolved": "2026-10-09"
+    },
+    {
+      "id": "d-rt-09",
+      "project_id": "rt",
+      "question": "Where does the dealer CRM live: inside the Route Tracker, or in Salesforce?",
+      "options": [
+        "Build it in the Route Tracker now, with an export that can feed Salesforce later",
+        "Wait for Salesforce access and build it there",
+        "Both: Route Tracker for the field, synced to Salesforce"
+      ],
+      "raised": "2026-10-09",
+      "status": "open",
+      "answer": null,
+      "resolved": null
     }
   ],
   "people": [
@@ -2782,7 +2808,8 @@
         "A follow-up and progress screen (rt-49).",
         "One dealer profile that holds the full cycle, pre-visit to follow-up, lead to finish (rt-50).",
         "Idea: a video sales pitch in the pre-visit email that tells dealers he'll be in the area and stopping by (rt-51).",
-        "Idea: a CRM built for the dealers he hits on routes (rt-52)."
+        "Idea: a CRM built for the dealers he hits on routes (rt-52).",
+        "Later the same day: put dealers who aren't ready yet on a weekly wins email, highlighting what Copart is doing well, to win them over as sellers (pdo-02). Tag them \"not ready, weekly wins\" in the CRM (rt-52)."
       ]
     }
   ],

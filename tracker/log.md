@@ -2,6 +2,12 @@
 
 Newest entry first.
 
+## 2026-10-09 (Route Tracker CRM)
+- Source: Chase is adding Keon's asks to Work Claude; the CRM is Keon's main request, plus a weekly wins email idea
+- Changed: rt-52 idea -> Next, Work Claude, high, retitled "Build a CRM for the dealers reps capture on Route Tracker visits"
+- Added: pdo-02 idea "Start a weekly wins email for dealers who aren't ready yet"; n-24 notes the request
+- Added: d-rt-09 Where does the dealer CRM live: Route Tracker or Salesforce?
+
 ## 2026-10-09 (end of day)
 - Source: Chase's phone check of the "Sell your car" button and end-of-day status
 - Changed: audit-10 Next -> Done (lands on the Copart Dealer Services page; the full-screen logo hero hides the form). Finding added to the Digital audit; audit-12 notes updated
