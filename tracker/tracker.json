@@ -329,20 +329,27 @@
       "category": "Campaigns",
       "status": "Next",
       "idea": true,
-      "summary": "First campaign: rep-led, one-to-one outreach to dealers who don't work with Copart yet, built on the dealer leads list. Nobody at Copart markets to them today (Lauren, Oct 8). Eight ideas ranked in the Digital audit's Campaign ideas page; start with a heads-up before route days, a welcome for newly licensed dealers, and aged-unit calls. Nothing runs until Ken and Kyle agree.",
+      "summary": "First campaign: rep-led, one-to-one outreach to dealers who don't work with Copart yet, built on the dealer leads list. Nobody at Copart markets to them today (Lauren, Oct 8). Leads with the pre-visit route campaign (\"Your rep is in town\"): call each dealer on next week's route, offer one complimentary full-service run, and build each day around who will be there. Then a welcome for newly licensed dealers and aged-unit calls. Nothing runs until Ken and Kyle agree.",
       "built": [
-        "Campaign ideas, ranked (docs/audit/08-campaigns.md in Copart Dealer Digital, Oct 8)"
+        "Campaign ideas, ranked (docs/audit/08-campaigns.md in Copart Dealer Digital, Oct 8)",
+        "Pre-Visit Campaign Drafts doc (Oct 9): pre-visit sequence and copy (call script, voicemail, emails, texts), the Route Tracker pre-visit tab spec, new license welcome, aged units script, measures and a one-week pilot"
       ],
       "links": [
         {
           "label": "Campaign ideas",
           "where": "Copart Dealer Digital site, Digital audit tab, Campaign ideas (/audit/campaigns)"
+        },
+        {
+          "label": "Pre-Visit Campaign Drafts",
+          "url": "https://claude.ai/code/artifact/80e02559-644c-4ff2-a5a5-3366653723b6"
         }
       ],
       "blockers": [],
       "next_steps": [
+        "Confirm the free run offer with Ken (q-14)",
         "Ask Ken which campaigns stay with Dealer Sales (gen-23)",
         "Review the ideas with Kyle (pdo-01)",
+        "Take the pre-visit tab spec to the Route Tracker build (rt-44)",
         "Clear the gates: legal (cdd-02), prospects-only match (udm-01), campaign calendar (cmp-03), form lead baseline (q-08, q-12)",
         "Decide on Austin, Nov 1 to 3 (d-pdo-01)"
       ],
@@ -1683,9 +1690,9 @@
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Kyle asked on Oct 8 to be looped in on any digital campaign (brand, messaging, saturation). Ideas in the Digital audit, docs/audit/08-campaigns.md (n-20). Check with Ken first which campaigns stay with Dealer Sales. Draft note to Kyle is in docs/audit/asks.md. Oct 8: ask Ken first which campaigns stay with Dealer Sales (gen-23). Gates before anything runs: legal (cdd-02), prospects-only match (udm-01), the campaign calendar from Kyle or Lauren (cmp-03), and a form lead baseline (q-08, q-12). Formerly audit-11.",
+      "notes": "Kyle asked on Oct 8 to be looped in on any digital campaign (brand, messaging, saturation). Ideas in the Digital audit, docs/audit/08-campaigns.md (n-20). Check with Ken first which campaigns stay with Dealer Sales. Draft note to Kyle is in docs/audit/asks.md. Oct 8: ask Ken first which campaigns stay with Dealer Sales (gen-23). Gates before anything runs: legal (cdd-02), prospects-only match (udm-01), the campaign calendar from Kyle or Lauren (cmp-03), and a form lead baseline (q-08, q-12). Formerly audit-11. Oct 9: drafts for the first three campaigns, built around the free run offer, are in the Pre-Visit Campaign Drafts doc. Send Kyle the doc with the note.",
       "created": "2026-10-08",
-      "updated": "2026-10-08"
+      "updated": "2026-10-09"
     },
     {
       "id": "udm-05",
@@ -1723,6 +1730,18 @@
       "notes": "So prospective dealer campaigns don't stack on messages dealers already get (Kyle's saturation point, Oct 8). Gate for pdo-01. Formerly audit-13.",
       "created": "2026-10-08",
       "updated": "2026-10-08"
+    },
+    {
+      "id": "rt-44",
+      "project_id": "rt",
+      "title": "Build a Pre-visit tab: touch log, status and route from confirmations",
+      "status": "Backlog",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "normal",
+      "notes": "For the pre-visit route campaign (pdo). Spec in the Pre-Visit Campaign Drafts doc: pre-visit status per dealer, touch log (date, channel, campaign tag, rep, outcome, contact), visit window, text and email permission, offer and expiry, tap-to-open message drafts (share sheet, like d-rt-04), day-before list, weekly export for Ken. This is the smart prospecting tab from n-17. Waits on Ken and Kyle agreeing to the campaign.",
+      "created": "2026-10-09",
+      "updated": "2026-10-09"
     }
   ],
   "waiting_on": [
@@ -1912,6 +1931,16 @@
       "status": "open",
       "answer": null,
       "raised": "2026-10-08",
+      "answered": null
+    },
+    {
+      "id": "q-14",
+      "question": "Can reps still offer the one complimentary full-service run (one run and two reruns, ten photos, rinse and vacuum, free tow within 25 air miles on a clean title)? Who approves it, how many per rep, and is \"more than 750,000 members in 185 countries\" still the current line? The Field Offers Outline says pickup is $25 for the first 25 miles, so which tow terms do reps quote?",
+      "ask": "Ken Rion",
+      "project_id": "pdo",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-09",
       "answered": null
     }
   ],
@@ -2532,6 +2561,17 @@
         "Campaign ideas drafted in the Digital audit (docs/audit/08-campaigns.md). Start with rep-led, one-to-one ones: a heads-up before a rep's route day, a welcome for newly licensed dealers, and calls to dealers with aged units.",
         "Ground rules: Kyle first, Creative needs 2 weeks, Tech owns forms and pages, legal before any bulk email (cdd-02), take current Copart dealers off prospect lists in the work setup.",
         "Later: connect the dealer map and the Route Tracker so prospecting, outreach, lead and route suggestions, route building, route tracking, live tracking of visited routes, visit summaries and follow-up work as one loop (udm-05)."
+      ]
+    },
+    {
+      "id": "n-21",
+      "date": "2026-10-09",
+      "title": "Past offer: one complimentary full-service run",
+      "project_id": "pdo",
+      "body": [
+        "An offer Copart Dealer Services has run before: place one vehicle on Copart's auction at no cost and let more than 750,000 members in 185 countries decide what it's worth. No obligation.",
+        "Included: full concierge service with one run and two reruns, ten photos, a rinse and vacuum before it lists, and a free tow within 25 air miles on clean titles.",
+        "Now the hook in every pre-visit campaign message (Pre-Visit Campaign Drafts doc). Ken to confirm it can still be offered (q-14)."
       ]
     }
   ],

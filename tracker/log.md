@@ -2,6 +2,14 @@
 
 Newest entry first.
 
+## 2026-10-09 (pre-visit campaign drafts)
+- Source: Chase asked for drafts of the campaigns, focused on the pre-visit route campaign, plus a past offer (one complimentary full-service run)
+- Changed: pdo summary, built, links (Pre-Visit Campaign Drafts doc) and next steps
+- Changed: pdo-01 notes (drafts ready to send Kyle)
+- Added: rt-44 "Build a Pre-visit tab: touch log, status and route from confirmations" (Work Claude, Backlog)
+- Added: q-14 Ken Rion, can reps still offer the free run, who approves it, and which tow terms
+- Added: note n-21 "Past offer: one complimentary full-service run"
+
 ## 2026-10-08 (Campaigns section)
 - Source: Chase expects several campaign projects and wants them in their own section, apart from AI tools and marketing
 - Added: category Campaigns; goal g-03 "Win prospective dealers through campaigns"
