@@ -2,6 +2,12 @@
 
 Newest entry first.
 
+## 2026-10-09 (weekly wins campaign)
+- Source: Chase wants the on-the-fence dealers email as its own campaign, with Creative images and a prefilled body
+- Added: project ww "Weekly wins for on-the-fence dealers" (Campaigns, idea), added to g-03
+- Moved and renumbered: pdo-02 -> ww-01 "Build the weekly wins email template" (no longer an idea)
+- Changed: rt-44 notes (offer email not built in the app yet)
+
 ## 2026-10-09 (Route Tracker CRM)
 - Source: Chase is adding Keon's asks to Work Claude; the CRM is Keon's main request, plus a weekly wins email idea
 - Changed: rt-52 idea -> Next, Work Claude, high, retitled "Build a CRM for the dealers reps capture on Route Tracker visits"
