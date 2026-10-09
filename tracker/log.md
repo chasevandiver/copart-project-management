@@ -2,6 +2,16 @@
 
 Newest entry first.
 
+## 2026-10-09 (Ken and Keon debriefs)
+- Source: Chase's notes from the morning debrief with Ken and a Route Tracker debrief with Keon
+- Added: n-23 "Ken debrief (Oct 9 morning)", n-24 "Keon debrief: Route Tracker"
+- Added: q-16 Ken Rion, who takes meetings booked from the page and which booking tool
+- Added: hub-03 "Build a tool with Brenda to track the new commission setup" (Me, high)
+- Added: rt-45 heat levels, rt-46 closed or gone buttons, rt-47 fix weekly tracker percentages, rt-48 weekly counts for Ken, rt-49 follow-up and progress screen, rt-50 dealer profile with the full cycle (all Work Claude); ideas rt-51 video pitch in the pre-visit email, rt-52 CRM for Route Tracker dealers
+- Changed: rt-44 Backlog -> In Progress (Ken: add the exclusive offer email to pre-visit)
+- Changed: audit-09 and audit-12 notes (meeting request button, Ken's 100K visitor target); g-02 summary (100K target); q-14 notes; pdo and rt next steps
+- Waiting on: added w-09 Brenda, reply on the commission tracking tool
+
 ## 2026-10-09 (Copart Dealer Services rename)
 - Source: Chase confirmed the official name and asked to rename it everywhere; Leo's tool list; one pager; Ken debrief gaps
 - Changed: "Copart Dealer Sales" and "CDS" -> "Copart Dealer Services" across tracker.json (54 fields; q-10 keeps its original wording). CLAUDE.md terms updated. Earlier log entries are left as written.

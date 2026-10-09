@@ -29,13 +29,13 @@
       "id": "g-02",
       "category": "Marketing Efforts",
       "title": "Increase Copart Dealer Services digital visibility",
-      "summary": "Know what Copart Dealer Services does digitally today and put effort where it raises visibility.",
+      "summary": "Know what Copart Dealer Services does digitally today and put effort where it raises visibility. Ken's target (Oct 9): grow the Copart Dealer Services page from about 6K monthly visitors to 100K.",
       "status": "Backlog",
       "project_ids": [
         "audit"
       ],
       "created": "2026-09-29",
-      "updated": "2026-10-08"
+      "updated": "2026-10-09"
     },
     {
       "id": "g-03",
@@ -88,6 +88,7 @@
         "Zapier can't connect to Google Sheets or Excel on my machine"
       ],
       "next_steps": [
+        "Pre-visit, at-dealer and follow-up upgrade on Work Claude (rt-44), plus Keon's asks (rt-45 to rt-50)",
         "Work Claude is building fixes from Ken and Keon's field test feedback",
         "Phone test and data-loss check (rt-28); confirm hot send and the office tracker (rt-21, rt-23)",
         "Decide on Google Places for \"Dealers near you\" (d-rt-07)",
@@ -352,7 +353,8 @@
         "Ask Ken which campaigns stay with Dealer Sales (q-15)",
         "Review the ideas with Kyle (pdo-01)",
         "Take the pre-visit tab spec to the Route Tracker build (rt-44)",
-        "Clear the gates: legal (cdd-02), prospects-only match (udm-01), campaign calendar (cmp-03), form lead baseline (q-08, q-12)"
+        "Clear the gates: legal (cdd-02), prospects-only match (udm-01), campaign calendar (cmp-03), form lead baseline (q-08, q-12)",
+        "Link every campaign message to the Copart Dealer Services page and its meeting request button, with a campaign tag, to drive traffic to the page"
       ],
       "dependencies": [
         "Dealer leads list (cdd, udm)",
@@ -1605,9 +1607,9 @@
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Oct 7 FullStory (n-18): median visit 9 to 12 seconds, form almost unused on mobile (69% of visitors). Ideas: on mobile, a \"Get a call back\" button in the hero that jumps to the form; cut the form to name, phone and zip (plus dealer name); point the header \"Sell your car\" button on this page at the form; tap-to-call number (audit-08); a dealer-only line at the top so buyers self-select out; 3-step \"how it works\" (list one car, pickup in 24 hours, paid after the sale) and proof (results, a dealer quote) above the fold; sticky call and call-back bar on mobile. Oct 8, Lauren (n-19): look at the whole page, not piecemeal changes; remake it to be SEO and AEO friendly; Tech owns the forms; the Creative team needs 2 weeks lead time. Oct 8: starts with a one-page remake brief (audit-12). Needs the name settled (q-10) and the FullStory review finished (audit-07).",
+      "notes": "Oct 7 FullStory (n-18): median visit 9 to 12 seconds, form almost unused on mobile (69% of visitors). Ideas: on mobile, a \"Get a call back\" button in the hero that jumps to the form; cut the form to name, phone and zip (plus dealer name); point the header \"Sell your car\" button on this page at the form; tap-to-call number (audit-08); a dealer-only line at the top so buyers self-select out; 3-step \"how it works\" (list one car, pickup in 24 hours, paid after the sale) and proof (results, a dealer quote) above the fold; sticky call and call-back bar on mobile. Oct 8, Lauren (n-19): look at the whole page, not piecemeal changes; remake it to be SEO and AEO friendly; Tech owns the forms; the Creative team needs 2 weeks lead time. Oct 8: starts with a one-page remake brief (audit-12). Needs the name settled (q-10) and the FullStory review finished (audit-07). Oct 9, Ken: add a meeting request button (see audit-12). Ken wants the page to grow from about 6K monthly visitors to 100K; a stretch, but every campaign should drive traffic here.",
       "created": "2026-10-02",
-      "updated": "2026-10-08"
+      "updated": "2026-10-09"
     },
     {
       "id": "gen-26",
@@ -1717,9 +1719,9 @@
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Pulls the landing page fixes into one page, per Lauren (change the page as a whole): crawler-readable, no \"Salvage\" title, FAQ schema, a short form that routes to a rep, tap-to-call (audit-08), a top nav entry, the mobile \"Sell your car\" button (audit-10), and the field agent and global buyers story. Uses FullStory (audit-07, n-18) and docs/audit/03-website.md and 06-positioning-brief.md. Needs the name settled (q-10). Creative needs 2 weeks.",
+      "notes": "Pulls the landing page fixes into one page, per Lauren (change the page as a whole): crawler-readable, no \"Salvage\" title, FAQ schema, a short form that routes to a rep, tap-to-call (audit-08), a top nav entry, the mobile \"Sell your car\" button (audit-10), and the field agent and global buyers story. Uses FullStory (audit-07, n-18) and docs/audit/03-website.md and 06-positioning-brief.md. Needs the name settled (q-10). Creative needs 2 weeks. Oct 9, Ken: add a \"Request a meeting\" button so a prospective dealer can book a call with a Copart Dealer Services manager or senior person to learn more or become a seller (q-16).",
       "created": "2026-10-08",
-      "updated": "2026-10-08"
+      "updated": "2026-10-09"
     },
     {
       "id": "cmp-03",
@@ -1737,11 +1739,11 @@
       "id": "rt-44",
       "project_id": "rt",
       "title": "Build a Pre-visit tab: touch log, status and route from confirmations",
-      "status": "Backlog",
+      "status": "In Progress",
       "owner": "Work Claude",
       "due": null,
       "priority": "normal",
-      "notes": "For the pre-visit route campaign (pdo). Spec in the Pre-Visit Campaign Drafts doc: pre-visit status per dealer, touch log (date, channel, campaign tag, rep, outcome, contact), visit window, text and email permission, offer and expiry, tap-to-open message drafts (share sheet, like d-rt-04), day-before list, weekly export for Ken. This is the smart prospecting tab from n-17. Waits on Ken and Kyle agreeing to the campaign.",
+      "notes": "For the pre-visit route campaign (pdo). Spec in the Pre-Visit Campaign Drafts doc: pre-visit status per dealer, touch log (date, channel, campaign tag, rep, outcome, contact), visit window, text and email permission, offer and expiry, tap-to-open message drafts (share sheet, like d-rt-04), day-before list, weekly export for Ken. This is the smart prospecting tab from n-17. Waits on Ken and Kyle agreeing to the campaign. Oct 9: Chase is building the pre-visit, at-dealer and follow-up upgrade on Work Claude now. Ken: add the exclusive offer email Copart Dealer Services already has (the free run, n-21) to the pre-visit step. Keon: a video sales pitch in the pre-visit email (rt-51).",
       "created": "2026-10-09",
       "updated": "2026-10-09"
     },
@@ -1756,6 +1758,116 @@
       "notes": "FullStory findings are done (audit-07, n-18). Put all the numbers into the Digital audit in Copart Dealer Digital (the website section and the gaps page).",
       "created": "2026-10-09",
       "updated": "2026-10-09"
+    },
+    {
+      "id": "hub-03",
+      "project_id": "hub",
+      "title": "Build a tool with Brenda to track the new commission setup",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Ken, Oct 9: get with Brenda to build a tool that tracks the new commission setup, which launches the week of Oct 12. Sent Brenda a Teams message Oct 9 (w-09); follow up. Commission data stays on the work setup, never in this repo.",
+      "created": "2026-10-09",
+      "updated": "2026-10-09"
+    },
+    {
+      "id": "rt-45",
+      "project_id": "rt",
+      "title": "Add dealer heat levels: cold, mild, hot",
+      "status": "Next",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "high",
+      "notes": "Keon, Oct 9 Route Tracker debrief (n-24). Replaces the single hot flag.",
+      "created": "2026-10-09",
+      "updated": "2026-10-09"
+    },
+    {
+      "id": "rt-46",
+      "project_id": "rt",
+      "title": "Add \"Closed\" and \"Not there anymore\" buttons at a stop",
+      "status": "Next",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "high",
+      "notes": "Keon, Oct 9 Route Tracker debrief (n-24). For when the route sends a rep to a dealer that is closed or gone. Should take the dealer off future routes and flag it on the map, like the pre-visit \"not a dealer or closed\" outcome (rt-44).",
+      "created": "2026-10-09",
+      "updated": "2026-10-09"
+    },
+    {
+      "id": "rt-47",
+      "project_id": "rt",
+      "title": "Fix the percentages on the weekly tracker",
+      "status": "Next",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "high",
+      "notes": "Keon, Oct 9 Route Tracker debrief (n-24). Keon stressed this one.",
+      "created": "2026-10-09",
+      "updated": "2026-10-09"
+    },
+    {
+      "id": "rt-48",
+      "project_id": "rt",
+      "title": "Add weekly counts for Ken: visits, hot dealers, assignments created, cars logged, handoffs sent",
+      "status": "Next",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "high",
+      "notes": "Keon, Oct 9 Route Tracker debrief (n-24). It's a sales job, so Keon wants as many numbers as possible to show Ken.",
+      "created": "2026-10-09",
+      "updated": "2026-10-09"
+    },
+    {
+      "id": "rt-49",
+      "project_id": "rt",
+      "title": "Add a follow-up and progress screen",
+      "status": "Next",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "normal",
+      "notes": "Keon, Oct 9 Route Tracker debrief (n-24). One place to see which dealers need a follow-up and how each is moving.",
+      "created": "2026-10-09",
+      "updated": "2026-10-09"
+    },
+    {
+      "id": "rt-50",
+      "project_id": "rt",
+      "title": "Build a dealer profile that holds the full cycle, pre-visit to follow-up",
+      "status": "Next",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "normal",
+      "notes": "Keon, Oct 9 Route Tracker debrief (n-24). Lead to finish on one profile: pre-visit touches, visit, offer, assignments, handoffs, follow-ups. Same idea as the shared dealer record (udm-05).",
+      "created": "2026-10-09",
+      "updated": "2026-10-09"
+    },
+    {
+      "id": "rt-51",
+      "project_id": "rt",
+      "title": "Embed a video sales pitch in the pre-visit email",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "low",
+      "notes": "Keon, Oct 9 Route Tracker debrief (n-24). A short video from the rep in the email that says he'll be in the area. Needs Kyle and brand review before it goes out.",
+      "created": "2026-10-09",
+      "updated": "2026-10-09",
+      "idea": true
+    },
+    {
+      "id": "rt-52",
+      "project_id": "rt",
+      "title": "Build a CRM for Route Tracker dealers",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "low",
+      "notes": "Keon, Oct 9 Route Tracker debrief (n-24). A CRM just for the dealers reps hit on routes. The dealer profile (rt-50) is the first step. Check what Salesforce already covers first (cmp-01).",
+      "created": "2026-10-09",
+      "updated": "2026-10-09",
+      "idea": true
     }
   ],
   "waiting_on": [
@@ -1833,6 +1945,15 @@
       "since": "2026-10-07",
       "priority": "high",
       "notes": "Feeds gen-26, udm-01 and cdd-03. Oct 9: still waiting."
+    },
+    {
+      "id": "w-09",
+      "what": "Reply on building the commission tracking tool",
+      "from_whom": "Brenda",
+      "project_id": "hub",
+      "since": "2026-10-09",
+      "priority": "high",
+      "notes": "Teams message sent Oct 9. Commission setup launches the week of Oct 12 (hub-03)."
     }
   ],
   "questions": [
@@ -1958,7 +2079,7 @@
     },
     {
       "id": "q-14",
-      "question": "Can reps still offer the one complimentary full-service run (one run and two reruns, ten photos, rinse and vacuum, free tow within 25 air miles on a clean title)? Who approves it, how many per rep, and is \"more than 750,000 members in 185 countries\" still the current line? The Field Offers Outline says pickup is $25 for the first 25 miles, so which tow terms do reps quote?",
+      "question": "Can reps still offer the one complimentary full-service run (one run and two reruns, ten photos, rinse and vacuum, free tow within 25 air miles on a clean title)? Who approves it, how many per rep, and is \"more than 750,000 members in 185 countries\" still the current line? The Field Offers Outline says pickup is $25 for the first 25 miles, so which tow terms do reps quote? (Oct 9: Ken suggested adding the existing exclusive offer email to the pre-visit workflow, so it is in use. Approver, limit per rep and tow terms are still open.)",
       "ask": "Ken Rion",
       "project_id": "pdo",
       "status": "open",
@@ -1971,6 +2092,16 @@
       "question": "Which campaigns stay with Dealer Sales, and which go to Marketing?",
       "ask": "Ken Rion",
       "project_id": "pdo",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-09",
+      "answered": null
+    },
+    {
+      "id": "q-16",
+      "question": "Who takes the meetings dealers book from the page's \"Request a meeting\" button, and which booking tool should it use (for example Microsoft Bookings)?",
+      "ask": "Ken Rion",
+      "project_id": "audit",
       "status": "open",
       "answer": null,
       "raised": "2026-10-09",
@@ -2620,6 +2751,36 @@
         "Two shorter drafts follow: a welcome for newly licensed dealers, and a call to dealers whose cars have been listed 30 days or more.",
         "Could you help with three things? 1) Mark up anything off brand or off message (you can comment right in the doc). 2) Tell me what else is going out to dealers and members in the next couple of months, so we don't stack messages. 3) Confirm \"more than 750,000 members in 185 countries\" is still the current line.",
         "Nothing designed is planned yet. If we add a leave-behind, it goes to Creative 2 weeks ahead. Thanks, Chase"
+      ]
+    },
+    {
+      "id": "n-23",
+      "date": "2026-10-09",
+      "title": "Ken debrief (Oct 9 morning)",
+      "project_id": "general",
+      "body": [
+        "Website: add a \"Request a meeting\" button on the Copart Dealer Services page so a prospective dealer can book a call with a manager or senior person on the team to learn more or become a seller (audit-12, q-16).",
+        "Campaigns: every email and campaign links to the Copart Dealer Services page and the meeting button, to drive traffic there.",
+        "Traffic: Ken wants the page to grow from about 6K monthly visitors to 100K. A stretch, but the direction is right (g-02).",
+        "Commission: get with Brenda to build a tool that tracks the new commission setup launching the week of Oct 12. Teams message sent; follow up (hub-03, w-09).",
+        "Route Tracker: went over the pre-visit, at-dealer and follow-up upgrade Chase is building on Work Claude. Ken suggested adding the existing exclusive offer email (the free run) to the pre-visit step (rt-44, q-14).",
+        "Didn't come up: which campaigns stay with Dealer Sales (q-15), and the free run approver, limit and tow terms (q-14)."
+      ]
+    },
+    {
+      "id": "n-24",
+      "date": "2026-10-09",
+      "title": "Keon debrief: Route Tracker",
+      "project_id": "rt",
+      "body": [
+        "Heat levels: cold, mild, hot, not just hot (rt-45).",
+        "Buttons for when the route sends him to a dealer that is closed or not there anymore (rt-46).",
+        "Fix the percentages on the weekly tracker (rt-47).",
+        "It's a sales job, so he wants as many numbers as possible for Ken: visits, hot dealers, assignments created, cars logged, handoffs sent (rt-48).",
+        "A follow-up and progress screen (rt-49).",
+        "One dealer profile that holds the full cycle, pre-visit to follow-up, lead to finish (rt-50).",
+        "Idea: a video sales pitch in the pre-visit email that tells dealers he'll be in the area and stopping by (rt-51).",
+        "Idea: a CRM built for the dealers he hits on routes (rt-52)."
       ]
     }
   ],
