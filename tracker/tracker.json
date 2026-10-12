@@ -2540,9 +2540,9 @@
         "Something else"
       ],
       "raised": "2026-10-09",
-      "status": "open",
-      "answer": null,
-      "resolved": null
+      "status": "resolved",
+      "answer": "Phase 6 outreach templates (Work Claude's pick, since Phase 4 is blocked)",
+      "resolved": "2026-10-12"
     }
   ],
   "people": [
