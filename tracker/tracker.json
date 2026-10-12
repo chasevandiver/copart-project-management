@@ -2001,13 +2001,14 @@
       "id": "rt-60",
       "project_id": "rt",
       "title": "Build the Excel exports",
-      "status": "Waiting",
+      "status": "Done",
       "owner": "Work Claude",
       "due": null,
       "priority": "normal",
       "notes": "Waiting on the columns from Keon and Ken (w-10).",
       "created": "2026-10-09",
-      "updated": "2026-10-09"
+      "updated": "2026-10-12",
+      "completed": "2026-10-12"
     },
     {
       "id": "rt-61",
