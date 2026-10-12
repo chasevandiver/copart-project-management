@@ -2,7 +2,7 @@
   "meta": {
     "owner": "Chase",
     "role": "Digital Engagement Manager, supporting Ken Rion (SVP of Dealer Sales)",
-    "last_updated": "2026-10-09"
+    "last_updated": "2026-10-12"
   },
   "categories": [
     "AI Tools",
@@ -2243,10 +2243,10 @@
       "question": "Are the old event pages being taken down?",
       "ask": "Lauren Harrington",
       "project_id": "audit",
-      "status": "open",
-      "answer": null,
+      "status": "answered",
+      "answer": "I could not find any old events for CDS on FullStory.",
       "raised": "2026-10-08",
-      "answered": null
+      "answered": "2026-10-12"
     },
     {
       "id": "q-14",
