@@ -1829,13 +1829,14 @@
       "id": "rt-46",
       "project_id": "rt",
       "title": "Add \"Closed\" and \"Not there anymore\" buttons at a stop",
-      "status": "Next",
+      "status": "Done",
       "owner": "Work Claude",
       "due": null,
       "priority": "high",
       "notes": "Keon, Oct 9 Route Tracker debrief (n-24). For when the route sends a rep to a dealer that is closed or gone. Should take the dealer off future routes and flag it on the map, like the pre-visit \"not a dealer or closed\" outcome (rt-44).",
       "created": "2026-10-09",
-      "updated": "2026-10-09"
+      "updated": "2026-10-12",
+      "completed": "2026-10-12"
     },
     {
       "id": "rt-47",
