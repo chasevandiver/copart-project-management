@@ -2498,9 +2498,9 @@
         "Both: Route Tracker for the field, synced to Salesforce"
       ],
       "raised": "2026-10-09",
-      "status": "open",
-      "answer": null,
-      "resolved": null
+      "status": "resolved",
+      "answer": "Build it in the Route Tracker now, with an export that can feed Salesforce later",
+      "resolved": "2026-10-12"
     },
     {
       "id": "d-rt-10",
