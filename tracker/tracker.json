@@ -2315,9 +2315,9 @@
         "Replace with a stronger sign-in"
       ],
       "raised": "2026-09-29",
-      "status": "open",
-      "answer": null,
-      "resolved": null
+      "status": "resolved",
+      "answer": "Keep the passcode",
+      "resolved": "2026-10-12"
     },
     {
       "id": "d-rt-03",
