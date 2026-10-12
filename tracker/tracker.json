@@ -2328,9 +2328,9 @@
         "No, use another geocoder"
       ],
       "raised": "2026-09-29",
-      "status": "open",
-      "answer": null,
-      "resolved": null
+      "status": "resolved",
+      "answer": "Yes",
+      "resolved": "2026-10-12"
     },
     {
       "id": "d-cdd-01",
