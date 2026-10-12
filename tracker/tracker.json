@@ -1841,13 +1841,14 @@
       "id": "rt-47",
       "project_id": "rt",
       "title": "Fix the percentages on the weekly tracker",
-      "status": "Next",
+      "status": "Done",
       "owner": "Work Claude",
       "due": null,
       "priority": "high",
       "notes": "Keon, Oct 9 Route Tracker debrief (n-24). Keon stressed this one.",
       "created": "2026-10-09",
-      "updated": "2026-10-09"
+      "updated": "2026-10-12",
+      "completed": "2026-10-12"
     },
     {
       "id": "rt-48",
