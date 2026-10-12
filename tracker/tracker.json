@@ -1817,13 +1817,14 @@
       "id": "rt-45",
       "project_id": "rt",
       "title": "Add dealer heat levels: cold, mild, hot",
-      "status": "Next",
+      "status": "Done",
       "owner": "Work Claude",
       "due": null,
       "priority": "high",
       "notes": "Keon, Oct 9 Route Tracker debrief (n-24). Replaces the single hot flag.",
       "created": "2026-10-09",
-      "updated": "2026-10-09"
+      "updated": "2026-10-12",
+      "completed": "2026-10-12"
     },
     {
       "id": "rt-46",
