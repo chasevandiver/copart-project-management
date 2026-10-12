@@ -2,6 +2,13 @@
 
 Newest entry first.
 
+## 2026-10-12 (Marketing plan)
+- Source: Chase asked to add the marketing plan's tasks as their own project
+- Added: project mkt "Marketing Plan" (Marketing Efforts, In Progress), linked to g-02 and g-03, with the plan doc and the Digital audit page as links
+- Added: mkt-01 to mkt-28, the 90-day plan's tasks with owners and due dates (Oct 16 to Dec 22); mkt-08 weekly scorecard is recurring
+- Changed: due dates set by the plan on gen-22 (notes only), cdd-12 Oct 16, cdd-03 Oct 20, audit-12 Oct 20, cmp-01 Oct 21, cmp-03 Oct 23, pdo-01 Oct 23, cdd-02 Oct 27, udm-01 Oct 27, audit-08 Nov 14, audit-09 Dec 15; each note says it is part of the Marketing Plan
+- Added: n-26 "Marketing plan drafted"
+
 ## 2026-10-09 (Route Tracker v.Next on staging)
 - Source: Work Claude's summary of today's Route Tracker v.Next build (Phases 1a, 1b, 2, 3 and 5 on staging only)
 - Added: n-25 "Route Tracker v.Next staging build (Oct 9)"; rt built list, staging and release plan links, Phase 4 blocker, new next steps

@@ -32,10 +32,11 @@
       "summary": "Know what Copart Dealer Services does digitally today and put effort where it raises visibility. Ken's target (Oct 9): grow the Copart Dealer Services page from about 6K monthly visitors to 100K.",
       "status": "Backlog",
       "project_ids": [
-        "audit"
+        "audit",
+        "mkt"
       ],
       "created": "2026-09-29",
-      "updated": "2026-10-09"
+      "updated": "2026-10-12"
     },
     {
       "id": "g-03",
@@ -47,10 +48,11 @@
         "cmp",
         "pdo",
         "cceib",
-        "ww"
+        "ww",
+        "mkt"
       ],
       "created": "2026-10-08",
-      "updated": "2026-10-09"
+      "updated": "2026-10-12"
     }
   ],
   "projects": [
@@ -400,6 +402,40 @@
         "Kyle and Legal, as with every campaign",
         "Approval before any Copart results or sales figures go in (rt-07)"
       ]
+    },
+    {
+      "id": "mkt",
+      "name": "Marketing Plan",
+      "category": "Marketing Efforts",
+      "status": "In Progress",
+      "summary": "The 90-day marketing plan from the Digital audit, to the day 90 report on 2026-12-27. Three bets: rep-led outreach to prospective dealers (meetings and first sales), a Copart Dealer Services page that converts better, and Copart named in more AI answers to dealer selling questions. Targets in [brackets] are placeholders to set with Ken. Dealer Sales leads the sales-side work; Marketing keeps brand, content and channels, and Kyle reviews every campaign.",
+      "built": [
+        "Marketing plan doc (Oct 12): findings, goals, audience and message, ranked gaps, opportunities, the 90-day plan with targets, owners, due dates, a weekly scorecard and fallbacks for each gate, tools and access needed, risks and questions for Ken",
+        "Orion drafts tab (Oct 12): six SEO page briefs, a CDS page remake draft, an aged inventory guide, two rep LinkedIn posts, the rep-in-town text and a 3-email new license welcome, with unconfirmed claims cut",
+        "Marketing plan page on the Digital audit site (findings only, no Copart analytics numbers)"
+      ],
+      "links": [
+        {
+          "label": "Marketing plan doc",
+          "url": "https://claude.ai/code/artifact/5368deda-c2a3-4720-944f-028300b9c3c5"
+        },
+        {
+          "label": "Digital audit: Marketing plan",
+          "where": "Copart Dealer Digital site, /audit/marketing-plan (docs/audit/09-marketing-plan.md)"
+        }
+      ],
+      "blockers": [],
+      "next_steps": [
+        "Ask Keon, Ken or Tyler Amos, and Brad for the numbers behind the targets (mkt-03)",
+        "Put q-14, q-15 and q-16 in the Oct 16 update to Ken (gen-22)",
+        "Send Tech and IT the one-package ask (mkt-01) and write the remake brief (audit-12)",
+        "Clear the gates by Oct 27: legal (cdd-02), prospects-only match (udm-01), Kyle's calendar and review (cmp-03, pdo-01)",
+        "Pilot week Nov 3 to 7 (mkt-09), pilot review and target reset Nov 11 (mkt-15)"
+      ],
+      "dependencies": [
+        "Linked tasks in other projects, with due dates set by this plan: gen-22, cdd-12, cdd-03, audit-12, cmp-01, cmp-03, pdo-01, cdd-02, udm-01, audit-08, audit-09",
+        "Questions for Ken: q-14, q-15, q-16; form lead count from Brad: q-08; Tech owner: q-12"
+      ]
     }
   ],
   "tasks": [
@@ -545,11 +581,11 @@
       "title": "Legal check before any bulk email",
       "status": "Next",
       "owner": "Legal",
-      "due": null,
+      "due": "2026-10-27",
       "priority": "urgent",
-      "notes": "Many TxDMV emails are owners' personal addresses. Kept off the site and git, but they are in the Excel books. No bulk email until Legal clears it. Oct 6: holding until after the marketing sync (Oct 7) and the Lauren Harrington meeting (Oct 8, gen-17). Oct 8: also gates the prospective dealer campaigns (pdo-01).",
+      "notes": "Many TxDMV emails are owners' personal addresses. Kept off the site and git, but they are in the Excel books. No bulk email until Legal clears it. Oct 6: holding until after the marketing sync (Oct 7) and the Lauren Harrington meeting (Oct 8, gen-17). Oct 8: also gates the prospective dealer campaigns (pdo-01). Marketing Plan (mkt) gate: if no answer by Oct 27, the pilot runs as calls to business lines and visits only.",
       "created": "2026-09-29",
-      "updated": "2026-10-08"
+      "updated": "2026-10-12"
     },
     {
       "id": "cdd-03",
@@ -557,11 +593,11 @@
       "title": "Take the second DFW inventory snapshot",
       "status": "Waiting",
       "owner": "Claude Code",
-      "due": null,
+      "due": "2026-10-20",
       "priority": "urgent",
-      "notes": "On or after Oct 4. Turns on the \"aged inventory\" signal, the biggest seller-fit weight. Pin colors are relative until then. Oct 6: on hold. No second run until the prospecting spreadsheets arrive from marketing (gen-26).",
+      "notes": "On or after Oct 4. Turns on the \"aged inventory\" signal, the biggest seller-fit weight. Pin colors are relative until then. Oct 6: on hold. No second run until the prospecting spreadsheets arrive from marketing (gen-26). Marketing Plan (mkt): needed for aged-unit calls from Nov 10.",
       "created": "2026-09-29",
-      "updated": "2026-10-06"
+      "updated": "2026-10-12"
     },
     {
       "id": "cdd-04",
@@ -693,11 +729,11 @@
       "title": "Get onto Salesforce for digital campaigns",
       "status": "Next",
       "owner": "Me",
-      "due": null,
+      "due": "2026-10-21",
       "priority": "normal",
-      "notes": "Plan from Sep 29 meeting with Rama and Leo: I set up the campaign and how I want it, and it delegates the jobs to people on the Marketing team. Formerly gen-04. Oct 9: getting access or a walkthrough the week of Oct 12.",
+      "notes": "Plan from Sep 29 meeting with Rama and Leo: I set up the campaign and how I want it, and it delegates the jobs to people on the Marketing team. Formerly gen-04. Oct 9: getting access or a walkthrough the week of Oct 12. Marketing Plan (mkt): fallback if no access by Nov 1 is counting meetings from the Route Tracker only.",
       "created": "2026-09-29",
-      "updated": "2026-10-09"
+      "updated": "2026-10-12"
     },
     {
       "id": "gen-05",
@@ -830,11 +866,11 @@
       "title": "Set up a weekly AEO re-run",
       "status": "Next",
       "owner": "Claude Code",
-      "due": null,
+      "due": "2026-10-16",
       "priority": "normal",
-      "notes": "Gemini free tier caps at about 20 answers a day, so a run needs a paid key or two days (see d-cdd-04). Add Perplexity if we get a key. Oct 8: added to the Digital audit's next steps. Also run aeo/fee_check.py (stale 2017 Copart Dealer Services fees) so the December comparison holds.",
+      "notes": "Gemini free tier caps at about 20 answers a day, so a run needs a paid key or two days (see d-cdd-04). Add Perplexity if we get a key. Oct 8: added to the Digital audit's next steps. Also run aeo/fee_check.py (stale 2017 Copart Dealer Services fees) so the December comparison holds. Marketing Plan (mkt): weekly re-run with Perplexity and the fee check, on by Oct 16.",
       "created": "2026-09-29",
-      "updated": "2026-10-08"
+      "updated": "2026-10-12"
     },
     {
       "id": "cdd-13",
@@ -1518,10 +1554,10 @@
       "owner": "Me",
       "due": "2026-10-16",
       "priority": "high",
-      "notes": "Board > Weekly update. Check the highlights with Edit, then Copy text into an email or use Print or PDF.",
+      "notes": "Board > Weekly update. Check the highlights with Edit, then Copy text into an email or use Print or PDF. Include q-14, q-15 and q-16 this week (Marketing Plan, mkt).",
       "recurring": "weekly",
       "created": "2026-10-01",
-      "updated": "2026-10-02",
+      "updated": "2026-10-12",
       "completed": "2026-10-02"
     },
     {
@@ -1543,11 +1579,11 @@
       "title": "Match US leads to Copart dealer status: active, inactive, or no status",
       "status": "Waiting",
       "owner": "Me",
-      "due": null,
+      "due": "2026-10-27",
       "priority": "high",
-      "notes": "Three buckets so leads don't overlap: active Copart dealers (exclude or upsell), inactive (win-back), no status (new prospects). Needs the Copart dealer list from Tyler Amos or Pushkaraj Jadhav (gen-16). Copart dealer data stays on the work setup: do not put it in this repo or on the public dfw-dealer-digital site (see q-03). Picks up the active-dealer exclusion from gen-14. Oct 6: the dealer list comes from the marketing sync Oct 7 (gen-26). Oct 8: also makes campaign lists prospects only (pdo-01). Oct 9: waiting on the Copart member reports (gen-26, w-08).",
+      "notes": "Three buckets so leads don't overlap: active Copart dealers (exclude or upsell), inactive (win-back), no status (new prospects). Needs the Copart dealer list from Tyler Amos or Pushkaraj Jadhav (gen-16). Copart dealer data stays on the work setup: do not put it in this repo or on the public dfw-dealer-digital site (see q-03). Picks up the active-dealer exclusion from gen-14. Oct 6: the dealer list comes from the marketing sync Oct 7 (gen-26). Oct 8: also makes campaign lists prospects only (pdo-01). Oct 9: waiting on the Copart member reports (gen-26, w-08). Marketing Plan (mkt) gate: if not done by Oct 27, the pilot list is capped at [50] dealers checked by hand.",
       "created": "2026-10-02",
-      "updated": "2026-10-09"
+      "updated": "2026-10-12"
     },
     {
       "id": "audit-07",
@@ -1633,11 +1669,11 @@
       "title": "Make the phone number on the Copart Dealer Services landing page tap-to-call",
       "status": "Next",
       "owner": "Me",
-      "due": null,
+      "due": "2026-11-14",
       "priority": "normal",
-      "notes": "Oct 7 FullStory (n-18): the number (888-616-1237, in the form header and Contact Us Now) got no taps on mobile in 30 days and 9 people clicked it on desktop. Likely plain text, not tap-to-call. Oct 7: Chase called it from the form. The number is right (rang to the right place), but the line was a little crackly, and on mobile it is not tap-to-call (had to highlight, copy, then dial). Fix: make it a tap-to-call link (tel:). Oct 8, Lauren: Tech owns the forms on the website pages, and changes to the dealer page should look at the whole page. Do this as part of the remake (audit-09), not as a one-off.",
+      "notes": "Oct 7 FullStory (n-18): the number (888-616-1237, in the form header and Contact Us Now) got no taps on mobile in 30 days and 9 people clicked it on desktop. Likely plain text, not tap-to-call. Oct 7: Chase called it from the form. The number is right (rang to the right place), but the line was a little crackly, and on mobile it is not tap-to-call (had to highlight, copy, then dial). Fix: make it a tap-to-call link (tel:). Oct 8, Lauren: Tech owns the forms on the website pages, and changes to the dealer page should look at the whole page. Do this as part of the remake (audit-09), not as a one-off. Marketing Plan (mkt): part of the quick page fixes with mkt-16.",
       "created": "2026-10-02",
-      "updated": "2026-10-08"
+      "updated": "2026-10-12"
     },
     {
       "id": "audit-09",
@@ -1645,11 +1681,11 @@
       "title": "Remake the Copart Dealer Services landing page (SEO and AEO friendly) and the nav to it",
       "status": "Next",
       "owner": "Me",
-      "due": null,
+      "due": "2026-12-15",
       "priority": "normal",
-      "notes": "Oct 7 FullStory (n-18): median visit 9 to 12 seconds, form almost unused on mobile (69% of visitors). Ideas: on mobile, a \"Get a call back\" button in the hero that jumps to the form; cut the form to name, phone and zip (plus dealer name); point the header \"Sell your car\" button on this page at the form; tap-to-call number (audit-08); a dealer-only line at the top so buyers self-select out; 3-step \"how it works\" (list one car, pickup in 24 hours, paid after the sale) and proof (results, a dealer quote) above the fold; sticky call and call-back bar on mobile. Oct 8, Lauren (n-19): look at the whole page, not piecemeal changes; remake it to be SEO and AEO friendly; Tech owns the forms; the Creative team needs 2 weeks lead time. Oct 8: starts with a one-page remake brief (audit-12). Needs the name settled (q-10) and the FullStory review finished (audit-07). Oct 9, Ken: add a meeting request button (see audit-12). Ken wants the page to grow from about 6K monthly visitors to 100K; a stretch, but every campaign should drive traffic here.",
+      "notes": "Oct 7 FullStory (n-18): median visit 9 to 12 seconds, form almost unused on mobile (69% of visitors). Ideas: on mobile, a \"Get a call back\" button in the hero that jumps to the form; cut the form to name, phone and zip (plus dealer name); point the header \"Sell your car\" button on this page at the form; tap-to-call number (audit-08); a dealer-only line at the top so buyers self-select out; 3-step \"how it works\" (list one car, pickup in 24 hours, paid after the sale) and proof (results, a dealer quote) above the fold; sticky call and call-back bar on mobile. Oct 8, Lauren (n-19): look at the whole page, not piecemeal changes; remake it to be SEO and AEO friendly; Tech owns the forms; the Creative team needs 2 weeks lead time. Oct 8: starts with a one-page remake brief (audit-12). Needs the name settled (q-10) and the FullStory review finished (audit-07). Oct 9, Ken: add a meeting request button (see audit-12). Ken wants the page to grow from about 6K monthly visitors to 100K; a stretch, but every campaign should drive traffic here. Marketing Plan (mkt): remade page live, or a dated commitment from Tech.",
       "created": "2026-10-02",
-      "updated": "2026-10-09"
+      "updated": "2026-10-12"
     },
     {
       "id": "gen-26",
@@ -1733,11 +1769,11 @@
       "title": "Review prospective dealer campaign ideas with Kyle Cochran",
       "status": "Next",
       "owner": "Me",
-      "due": null,
+      "due": "2026-10-23",
       "priority": "high",
-      "notes": "Kyle asked on Oct 8 to be looped in on any digital campaign (brand, messaging, saturation). Ideas in the Digital audit, docs/audit/08-campaigns.md (n-20). Check with Ken first which campaigns stay with Dealer Sales. Draft note to Kyle is in docs/audit/asks.md. Oct 8: ask Ken first which campaigns stay with Dealer Sales (gen-23). Gates before anything runs: legal (cdd-02), prospects-only match (udm-01), the campaign calendar from Kyle or Lauren (cmp-03), and a form lead baseline (q-08, q-12). Formerly audit-11. Oct 9: drafts for the first three campaigns, built around the free run offer, are in the Pre-Visit Campaign Drafts doc. Draft note to Kyle is n-22 (replaces the one in docs/audit/asks.md). Oct 9: campaign work picks up the week of Oct 12. Drafts are made. Oct 9: neither q-14 (free run) nor q-15 (which campaigns stay with Dealer Sales) came up with Ken.",
+      "notes": "Kyle asked on Oct 8 to be looped in on any digital campaign (brand, messaging, saturation). Ideas in the Digital audit, docs/audit/08-campaigns.md (n-20). Check with Ken first which campaigns stay with Dealer Sales. Draft note to Kyle is in docs/audit/asks.md. Oct 8: ask Ken first which campaigns stay with Dealer Sales (gen-23). Gates before anything runs: legal (cdd-02), prospects-only match (udm-01), the campaign calendar from Kyle or Lauren (cmp-03), and a form lead baseline (q-08, q-12). Formerly audit-11. Oct 9: drafts for the first three campaigns, built around the free run offer, are in the Pre-Visit Campaign Drafts doc. Draft note to Kyle is n-22 (replaces the one in docs/audit/asks.md). Oct 9: campaign work picks up the week of Oct 12. Drafts are made. Oct 9: neither q-14 (free run) nor q-15 (which campaigns stay with Dealer Sales) came up with Ken. Marketing Plan (mkt): once Ken says go, send Kyle the Pre-Visit drafts, the rep text, LinkedIn posts and welcome emails.",
       "created": "2026-10-08",
-      "updated": "2026-10-09"
+      "updated": "2026-10-12"
     },
     {
       "id": "udm-05",
@@ -1758,11 +1794,11 @@
       "title": "Write a one-page remake brief for Tech and Creative",
       "status": "Next",
       "owner": "Me",
-      "due": null,
+      "due": "2026-10-20",
       "priority": "high",
-      "notes": "Pulls the landing page fixes into one page, per Lauren (change the page as a whole): crawler-readable, no \"Salvage\" title, FAQ schema, a short form that routes to a rep, tap-to-call (audit-08), a top nav entry, the mobile \"Sell your car\" button (audit-10), and the field agent and global buyers story. Uses FullStory (audit-07, n-18) and docs/audit/03-website.md and 06-positioning-brief.md. Needs the name settled (q-10). Creative needs 2 weeks. Oct 9, Ken: add a \"Request a meeting\" button so a prospective dealer can book a call with a Copart Dealer Services manager or senior person to learn more or become a seller (q-16). Oct 9: lead with the first screen. Replace the full-screen logo hero with what the page is for, plus the short form, call-back and meeting buttons (or a clear cue to scroll), and have the mobile \"Sell your car\" button jump to the form (audit-10).",
+      "notes": "Pulls the landing page fixes into one page, per Lauren (change the page as a whole): crawler-readable, no \"Salvage\" title, FAQ schema, a short form that routes to a rep, tap-to-call (audit-08), a top nav entry, the mobile \"Sell your car\" button (audit-10), and the field agent and global buyers story. Uses FullStory (audit-07, n-18) and docs/audit/03-website.md and 06-positioning-brief.md. Needs the name settled (q-10). Creative needs 2 weeks. Oct 9, Ken: add a \"Request a meeting\" button so a prospective dealer can book a call with a Copart Dealer Services manager or senior person to learn more or become a seller (q-16). Oct 9: lead with the first screen. Replace the full-screen logo hero with what the page is for, plus the short form, call-back and meeting buttons (or a clear cue to scroll), and have the mobile \"Sell your car\" button jump to the form (audit-10). Marketing Plan (mkt): attach the Orion page draft as the appendix.",
       "created": "2026-10-08",
-      "updated": "2026-10-09"
+      "updated": "2026-10-12"
     },
     {
       "id": "cmp-03",
@@ -1770,11 +1806,11 @@
       "title": "Get the dealer and member campaign calendar from Kyle or Lauren",
       "status": "Next",
       "owner": "Me",
-      "due": null,
+      "due": "2026-10-23",
       "priority": "normal",
-      "notes": "So prospective dealer campaigns don't stack on messages dealers already get (Kyle's saturation point, Oct 8). Gate for pdo-01. Formerly audit-13.",
+      "notes": "So prospective dealer campaigns don't stack on messages dealers already get (Kyle's saturation point, Oct 8). Gate for pdo-01. Formerly audit-13. Marketing Plan (mkt).",
       "created": "2026-10-08",
-      "updated": "2026-10-08"
+      "updated": "2026-10-12"
     },
     {
       "id": "rt-44",
@@ -2034,6 +2070,343 @@
       "notes": "Keon, Oct 9: dealers who aren't ready to sell get a weekly email that highlights what Copart is doing well. Its own campaign (ww). Creative feeds in the images; the rest of the body is prefilled each week. List from the Route Tracker CRM (rt-52). Formerly pdo-02.",
       "created": "2026-10-09",
       "updated": "2026-10-09"
+    },
+    {
+      "id": "mkt-01",
+      "project_id": "mkt",
+      "title": "Send Tech and IT the one-package ask: bot wall, page title, redirects, old fee PDF, tap-to-call, Email Source",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-16",
+      "priority": "high",
+      "notes": "Wording is in the Digital audit's ready-to-send asks. Send as one package for the page remake (Lauren, Oct 8).",
+      "created": "2026-10-12",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "mkt-02",
+      "project_id": "mkt",
+      "title": "Pick the pilot rep and route week",
+      "status": "Next",
+      "owner": "Keon",
+      "due": "2026-10-20",
+      "priority": "high",
+      "notes": "Pilot week is Nov 3 to 7. If the rep works outside DFW there is no inventory data, so aged-unit calls won't apply.",
+      "created": "2026-10-12",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "mkt-03",
+      "project_id": "mkt",
+      "title": "Ask for the numbers behind the plan's targets",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-20",
+      "priority": "high",
+      "notes": "Keon: reps available, visits per rep per week, Route Tracker counts so far. Ken or Tyler Amos: visit-to-seller rate from Salesforce. Brad: monthly form leads (q-08). Then recalculate the bracketed targets in the plan.",
+      "created": "2026-10-12",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "mkt-04",
+      "project_id": "mkt",
+      "title": "Book Creative 2 weeks out for the Copart Dealer Services page",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-23",
+      "priority": "normal",
+      "notes": "After the remake brief (audit-12).",
+      "created": "2026-10-12",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "mkt-05",
+      "project_id": "mkt",
+      "title": "Ask Ken or Keon to confirm hauling, how listing works and how reserves work",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-23",
+      "priority": "normal",
+      "notes": "The Orion drafts and page copy need these before anything is used. Unconfirmed lines are bracketed in the plan's Orion drafts tab.",
+      "created": "2026-10-12",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "mkt-06",
+      "project_id": "mkt",
+      "title": "Ask for Search Console access and a campaign call-tracking number",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-23",
+      "priority": "normal",
+      "notes": "Search Console from the data team or web; call tracking from IT or Marketing.",
+      "created": "2026-10-12",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "mkt-07",
+      "project_id": "mkt",
+      "title": "Set up the weekly scorecard with day 0 numbers",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-27",
+      "priority": "high",
+      "notes": "Dealers touched, visits, meetings and first sales by campaign tag (Route Tracker); form leads and meeting requests (Salesforce); page visitors and form starts (FullStory); Selling-stage AI mention rate; pilot rep hours.",
+      "created": "2026-10-12",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "mkt-08",
+      "project_id": "mkt",
+      "title": "Pull the weekly scorecard for the Thursday update to Ken",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": "2026-10-29",
+      "priority": "normal",
+      "notes": "Goes into gen-22 each week.",
+      "created": "2026-10-12",
+      "updated": "2026-10-12",
+      "recurring": "weekly"
+    },
+    {
+      "id": "mkt-09",
+      "project_id": "mkt",
+      "title": "Run the pilot week: one rep, [15] visits, every touch tagged",
+      "status": "Backlog",
+      "owner": "Keon",
+      "due": "2026-11-07",
+      "priority": "high",
+      "notes": "Nov 3 to 7. Pre-visit calls with the Pre-Visit Campaign Drafts once Ken and Kyle say go. If legal hasn't answered, calls to business lines and visits only.",
+      "created": "2026-10-12",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "mkt-10",
+      "project_id": "mkt",
+      "title": "Start the rep question log with the pilot",
+      "status": "Backlog",
+      "owner": "Keon",
+      "due": "2026-11-03",
+      "priority": "normal",
+      "notes": "Reps note what dealers ask on visits; those questions pick the next content topics.",
+      "created": "2026-10-12",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "mkt-11",
+      "project_id": "mkt",
+      "title": "Start the new license welcome: Monday list, rep call within 7 days, 3-email sequence",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": "2026-11-03",
+      "priority": "high",
+      "notes": "Business addresses only. Email drafts are in the plan's Orion drafts tab. Texas has the weekly feed, so start there.",
+      "created": "2026-10-12",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "mkt-12",
+      "project_id": "mkt",
+      "title": "Send the six page briefs to the web owner",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": "2026-11-07",
+      "priority": "normal",
+      "notes": "Trade-ins and international buyers first. SEO briefs are in the plan's Orion drafts tab.",
+      "created": "2026-10-12",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "mkt-13",
+      "project_id": "mkt",
+      "title": "Send correction asks to brokers, dealer101 and DealerCenter",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": "2026-11-07",
+      "priority": "normal",
+      "notes": "Ask them to stop describing Copart as salvage only.",
+      "created": "2026-10-12",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "mkt-14",
+      "project_id": "mkt",
+      "title": "Start aged-unit calls with A4 briefs",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": "2026-11-10",
+      "priority": "normal",
+      "notes": "DFW only until other markets have inventory snapshots. Needs the second snapshot (cdd-03).",
+      "created": "2026-10-12",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "mkt-15",
+      "project_id": "mkt",
+      "title": "Review the pilot and reset the day 60 and 90 targets",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": "2026-11-11",
+      "priority": "high",
+      "notes": "With Keon. Use the pilot's real meeting and close rates.",
+      "created": "2026-10-12",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "mkt-16",
+      "project_id": "mkt",
+      "title": "Get the quick page fixes live: page title without Salvage, old fee PDF down",
+      "status": "Backlog",
+      "owner": "IT",
+      "due": "2026-11-14",
+      "priority": "high",
+      "notes": "Tap-to-call is audit-08. If Tech has no owner by Nov 14, the day 90 page target becomes quick fixes only.",
+      "created": "2026-10-12",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "mkt-17",
+      "project_id": "mkt",
+      "title": "Ask [5] dealers who praise their CDS rep for a testimonial and a referral",
+      "status": "Backlog",
+      "owner": "Keon",
+      "due": "2026-11-14",
+      "priority": "normal",
+      "notes": "Real quotes only, with a signed release.",
+      "created": "2026-10-12",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "mkt-18",
+      "project_id": "mkt",
+      "title": "Pitch The Independent Dealer Podcast",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": "2026-11-14",
+      "priority": "low",
+      "notes": "Only with Ken's OK. First to drop if time runs short.",
+      "created": "2026-10-12",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "mkt-19",
+      "project_id": "mkt",
+      "title": "Expand outreach to [3] reps",
+      "status": "Backlog",
+      "owner": "Keon",
+      "due": "2026-11-17",
+      "priority": "high",
+      "notes": "",
+      "created": "2026-10-12",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "mkt-20",
+      "project_id": "mkt",
+      "title": "Get rep LinkedIn posts A and B out, if Marketing OKs the series",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": "2026-11-18",
+      "priority": "low",
+      "notes": "Drafts in the plan's Orion drafts tab. Reps post as themselves.",
+      "created": "2026-10-12",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "mkt-21",
+      "project_id": "mkt",
+      "title": "Get the page design from Creative",
+      "status": "Backlog",
+      "owner": "Darren",
+      "due": "2026-11-21",
+      "priority": "normal",
+      "notes": "",
+      "created": "2026-10-12",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "mkt-22",
+      "project_id": "mkt",
+      "title": "Hold the gate review with Ken: meetings by tag, page status",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": "2026-11-24",
+      "priority": "high",
+      "notes": "",
+      "created": "2026-10-12",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "mkt-23",
+      "project_id": "mkt",
+      "title": "Get every outreach rep running the route, new license and aged-unit plays weekly",
+      "status": "Backlog",
+      "owner": "Keon",
+      "due": "2026-11-30",
+      "priority": "normal",
+      "notes": "",
+      "created": "2026-10-12",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "mkt-24",
+      "project_id": "mkt",
+      "title": "Draft the what-happens-after-the-sale page and the buy here pay here repo page and email",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": "2026-12-04",
+      "priority": "normal",
+      "notes": "Dealer Sales confirms each step before anything is used.",
+      "created": "2026-10-12",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "mkt-25",
+      "project_id": "mkt",
+      "title": "Take the monthly dealer note plan to Marketing, with the aged inventory guide as the sign-up",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": "2026-12-11",
+      "priority": "normal",
+      "notes": "",
+      "created": "2026-10-12",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "mkt-26",
+      "project_id": "mkt",
+      "title": "Run the full AEO rerun on all engines",
+      "status": "Backlog",
+      "owner": "Claude Code",
+      "due": "2026-12-14",
+      "priority": "normal",
+      "notes": "Compare with the Sep 27 baseline for the day 90 report.",
+      "created": "2026-10-12",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "mkt-27",
+      "project_id": "mkt",
+      "title": "Write the Q1 2027 plan: inventory snapshots for the next markets, TIADA 2027 decision",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": "2026-12-18",
+      "priority": "normal",
+      "notes": "With Ken.",
+      "created": "2026-10-12",
+      "updated": "2026-10-12"
+    },
+    {
+      "id": "mkt-28",
+      "project_id": "mkt",
+      "title": "Send Ken the day 90 report: the targets table, filled in",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": "2026-12-22",
+      "priority": "high",
+      "notes": "Leads, meetings, hours saved and AEO mention rate against Sep 27.",
+      "created": "2026-10-12",
+      "updated": "2026-10-12"
     }
   ],
   "waiting_on": [
@@ -3042,6 +3415,20 @@
         "Not built yet: Phase 4 lead hub (rt-59, blocked), Phase 6 outreach templates (rt-58), Excel exports (rt-60, w-10). Parked: server email (SMTP, rt-34), document extraction (needs written IT OK), Price Check (rt-02).",
         "Go-live: after field hours, not on a working day, after a confirmed backup of the live data volume (rt-55, rt-57). Reps default to the Classic layout.",
         "Source: Work Claude's summary from its notes file, the release plan and the transcript tails. It didn't read all 2,380 messages of the audit session, so small early details may be missing."
+      ]
+    },
+    {
+      "id": "n-26",
+      "date": "2026-10-12",
+      "title": "Marketing plan drafted",
+      "project_id": "mkt",
+      "body": [
+        "Plan doc: https://claude.ai/code/artifact/5368deda-c2a3-4720-944f-028300b9c3c5 (main tab plus an Orion drafts tab). A copy without Copart analytics numbers is on the Digital audit site as Marketing plan.",
+        "Three bets to day 90 (Dec 27): rep-led outreach booking [40] meetings and [12] first sales, the CDS page converting better (Submit rate target, not traffic), and the Selling-stage AI mention rate from 33% to [40 to 50%].",
+        "Targets are placeholders for [3] reps making [15] visits a week. The numbers come from Keon, Ken or Tyler Amos, and Brad (mkt-03).",
+        "Ken's 100K visitors a month is treated as a 2027 number; without paid traffic, December traffic will be close to today's.",
+        "The leads map covers the whole country, so outreach is national from the start. Aged-unit calls stay DFW-only until other markets have inventory snapshots.",
+        "Orion agents (Sonnet 5.5, public facts, no web) drafted SEO briefs, page copy, a guide, LinkedIn posts, a text and welcome emails. Unconfirmed claims about how Copart Dealer Services works were cut or bracketed for Ken or Keon."
       ]
     }
   ],
