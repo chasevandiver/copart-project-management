@@ -3456,7 +3456,7 @@
         "Using Workflows and Agents along with PowerAutomate. Copilot Studios where you build a workflow with the connections to the Agents on Copilot.",
         "Have ability on Memory for the copilot agents. Copilot agents can do multiple breakout into subagents - one agent be knowledge based - have each agent ask each other questions. Agents deploying subagents on Copilot - can have as many complex agents in each workflow. Can bring Claude MDs into Copilot. \\",
         "Powerautomate is better with the workflow on copilotstudios - build basically what powerapps would do so that I can use the management hub building for Ken with a powerautomate that can follow exactly what I would do after a call. Using workflow and copilot agents to accomplish this build.",
-        "Omni analytics does a lot of what they do with Tabloo - Connected to all of the data within the CDS side - can upload excel files also. You can ask it a question like an LLM and it will ask a question. Power of this tool can understand the meta data based on the questions. Can set up routines, build skills, automate reports. Combine all of this data with omni analytics. Future build. On how to make this fully connected."
+        "Omni analytics does a lot of what they do with Tabloo - Connected to all of the data within the CDS side - can upload excel files also. You can ask it a question like an LLM and it will ask a question. Power of this tool can understand the meta data based on the questions. Can set up routines, build skills, automate reports. Combine all of this data with omni analytics. Future build. On how to make this fully connected. Can set conditional report tracking."
       ],
       "project_id": "general",
       "date": "2026-10-13"
