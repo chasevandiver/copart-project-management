@@ -2,6 +2,19 @@
 
 Newest entry first.
 
+## 2026-10-13 (Lead Tracker and Agentic Workflow)
+- Source: Chase's chat with Claude Code on the lead flow and agents (CRM on the lead list, office and field teams, Copilot inbound flow, uniting tools with Leo)
+- Changed: project udm renamed "US Dealer Map" -> "Lead Tracker", new summary, next steps and dependencies
+- Moved and renumbered: rt-52 -> udm-06 "Build the dealer CRM on the Lead Tracker"; ww references updated
+- Changed: udm-04 idea -> Next, Work Claude, "Build a lead page per team (office and field), 20 leads at a time"; udm-05 idea -> Next, Work Claude, "Connect the Route Tracker to the Lead Tracker"
+- Changed: rt-50 and rt-59 notes (the profile and leads come from the Lead Tracker)
+- Resolved: d-udm-01 The CRM lives on the Lead Tracker, not the Route Tracker
+- Added: decisions d-udm-02 to d-udm-07 (lead hold time, team overlap, what counts as converted, who approves weekly books, owner after first car, can field reps pull their own leads)
+- Added: q-18 for Ken Rion (who the 26 teams are), q-19 for Rama Manyam (what Salesforce holds for sellers)
+- Added: project agents "Agentic Workflow" (AI Tools, Next), linked to g-01
+- Added: agents-01 "Build a Copilot flow that flags hot website form leads in the Admin inbox" (Me, high), agents-02 "Gather the inputs to rank the agent list" (Me, high), hub-04 "Meet Leo to put every tool on one dealer record and one lead list" (Me)
+- Added: n-29 "Lead Tracker design", n-30 "Agent map, first draft"
+
 ## 2026-10-12 (Marketing plan)
 - Source: Chase asked to add the marketing plan's tasks as their own project
 - Added: project mkt "Marketing Plan" (Marketing Efforts, In Progress), linked to g-02 and g-03, with the plan doc and the Digital audit page as links

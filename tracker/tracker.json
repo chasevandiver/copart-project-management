@@ -20,10 +20,11 @@
         "hub",
         "rt",
         "cdd",
-        "pm"
+        "pm",
+        "agents"
       ],
       "created": "2026-09-29",
-      "updated": "2026-09-29"
+      "updated": "2026-10-13"
     },
     {
       "id": "g-02",
@@ -294,10 +295,10 @@
     },
     {
       "id": "udm",
-      "name": "US Dealer Map",
+      "name": "Lead Tracker",
       "category": "AI Tools",
       "status": "In Progress",
-      "summary": "Get all of the dealers that I've been pulling on the Dealer Digital Page and compare that with Leo's current Lead Setup page. Make custom landing pages and sign-ins for different teams to give a certain number of leads per day/week/etc. Also compare with current copart business to look at inactive dealers, dealers that are only sellers, current copart dealers so leads don't overlap.",
+      "summary": "The lead list for the whole Copart Dealer Services sales team, office and field, built on Work Claude from the US dealer map. It is the CRM: one record per dealer with sources, Copart status, owner, stage and every touch. Teams get their leads here, and the Route Tracker reads from it and writes back to it. Copart dealer data stays in the work setup.",
       "built": [
         "Copart Dealer Digital Leads section covers 28 states plus DC (92,492 leads), every state logged on the All states page (Oct 1)",
         "Indiana compared and merged with Leo's lists (Oct 1)"
@@ -305,10 +306,18 @@
       "links": [],
       "blockers": [],
       "next_steps": [
-        "Get the Copart and non-Copart dealer spreadsheets at the marketing sync Oct 7 (gen-26)",
-        "Build the US leads dealer map on Work Claude (udm-02)",
+        "Get the Copart and non-Copart dealer spreadsheets (gen-26)",
+        "Keep building the lead list on Work Claude (udm-02)",
+        "Lock the lead record, stages and lead ID (n-29)",
         "Match leads to Copart dealer status: active, inactive, no status (udm-01)",
-        "Idea: connect the dealer map and the Route Tracker into one loop (udm-05)"
+        "Lead page per team, office and field (udm-04)",
+        "Connect the Route Tracker by lead ID (udm-05)",
+        "Build the CRM on the Lead Tracker (udm-06)",
+        "Settle the lead rules: hold time, overlap, conversion, approvals (d-udm-02 to d-udm-07)"
+      ],
+      "dependencies": [
+        "Who the 26 teams are (q-18)",
+        "What Salesforce already holds for sellers (q-19)"
       ]
     },
     {
@@ -392,12 +401,12 @@
       "links": [],
       "blockers": [],
       "next_steps": [
-        "Tag on-the-fence dealers in the Route Tracker CRM, with email consent asked at the visit (rt-52)",
+        "Tag on-the-fence dealers in the Lead Tracker CRM, with email consent asked at the visit (udm-06)",
         "Outline the email template: which parts are prefilled each week and which images Creative supplies",
         "Pick who sends it and from what tool"
       ],
       "dependencies": [
-        "Route Tracker CRM (rt-52)",
+        "Lead Tracker CRM (udm-06)",
         "Creative for images (2 weeks lead time)",
         "Kyle and Legal, as with every campaign",
         "Approval before any Copart results or sales figures go in (rt-07)"
@@ -435,6 +444,30 @@
       "dependencies": [
         "Linked tasks in other projects, with due dates set by this plan: gen-22, cdd-12, cdd-03, audit-12, cmp-01, cmp-03, pdo-01, cdd-02, udm-01, audit-08, audit-09",
         "Questions for Ken: q-14, q-15, q-16; form lead count from Brad: q-08; Tech owner: q-12"
+      ]
+    },
+    {
+      "id": "agents",
+      "name": "Agentic Workflow",
+      "category": "AI Tools",
+      "status": "Next",
+      "summary": "The agents that keep the Lead Tracker full and help the Copart Dealer Services office and field teams work it: lead building, inbound, office sales, field and manager agents. Built on approved work tools (Copilot Studio, Power Automate, Work Claude). Every agent output is a draft a person approves, and Copart data stays in the work setup.",
+      "built": [
+        "First draft agent map (n-30)"
+      ],
+      "links": [],
+      "blockers": [],
+      "next_steps": [
+        "Gather the inputs to rank the agent list (agents-02)",
+        "Build the Copilot flow for website form leads in the Admin inbox (agents-01)",
+        "Meet Leo to put every tool on one dealer record (hub-04)",
+        "Score each agent on hours saved, leads and meetings, ease and risk, then pick the first three"
+      ],
+      "dependencies": [
+        "Lead Tracker record and stages (udm)",
+        "Form routing and Email Source fix (q-12)",
+        "Legal rules on email and SMS (q-06)",
+        "Copilot Studio and Power Automate access"
       ]
     }
   ],
@@ -1740,15 +1773,14 @@
     {
       "id": "udm-04",
       "project_id": "udm",
-      "title": "Build a lead page per team, 20 leads at a time",
-      "status": "Backlog",
-      "owner": "Me",
+      "title": "Build a lead page per team (office and field), 20 leads at a time",
+      "status": "Next",
+      "owner": "Work Claude",
       "due": null,
       "priority": "normal",
-      "idea": true,
-      "notes": "Leo's suggestion (n-15), not decided. Status per lead (called, contacted, interested, not interested), notes, car count.",
+      "notes": "Leo's suggestion (n-15), not decided. Status per lead (called, contacted, interested, not interested), notes, car count. Oct 13: committed. Office and field teams both get their leads here. The dispatcher tops each team up and returns untouched leads to the pool (rules in d-udm-02 to d-udm-07).",
       "created": "2026-10-06",
-      "updated": "2026-10-06"
+      "updated": "2026-10-13"
     },
     {
       "id": "audit-10",
@@ -1778,15 +1810,14 @@
     {
       "id": "udm-05",
       "project_id": "udm",
-      "title": "Connect the dealer map and the Route Tracker",
-      "status": "Backlog",
-      "owner": "Me",
+      "title": "Connect the Route Tracker to the Lead Tracker",
+      "status": "Next",
+      "owner": "Work Claude",
       "due": null,
       "priority": "normal",
-      "idea": true,
-      "notes": "Getting ahead of things. One loop from the dealer map to the Route Tracker: outreach, prospecting, lead and route suggestions, route building, route tracking, live tracking of visited routes, and a summary and follow-up for each visited dealer. First step is one shared dealer record both tools can read (sketch in docs/audit/08-campaigns.md in Copart Dealer Digital). Touches rt and cdd too.",
+      "notes": "Getting ahead of things. One loop from the dealer map to the Route Tracker: outreach, prospecting, lead and route suggestions, route building, route tracking, live tracking of visited routes, and a summary and follow-up for each visited dealer. First step is one shared dealer record both tools can read (sketch in docs/audit/08-campaigns.md in Copart Dealer Digital). Touches rt and cdd too. Oct 13: committed. The Lead Tracker is the record. The Route Tracker pulls each rep's assigned leads and sends visit events back by lead ID; events are added, never overwritten.",
       "created": "2026-10-08",
-      "updated": "2026-10-08"
+      "updated": "2026-10-13"
     },
     {
       "id": "audit-12",
@@ -1920,9 +1951,9 @@
       "owner": "Work Claude",
       "due": null,
       "priority": "normal",
-      "notes": "Keon, Oct 9 Route Tracker debrief (n-24). Lead to finish on one profile: pre-visit touches, visit, offer, assignments, handoffs, follow-ups. Same idea as the shared dealer record (udm-05).",
+      "notes": "Keon, Oct 9 Route Tracker debrief (n-24). Lead to finish on one profile: pre-visit touches, visit, offer, assignments, handoffs, follow-ups. Same idea as the shared dealer record (udm-05). Oct 13: the profile reads from the Lead Tracker CRM (udm-06). The Route Tracker shows it and adds visit events.",
       "created": "2026-10-09",
-      "updated": "2026-10-09"
+      "updated": "2026-10-13"
     },
     {
       "id": "rt-51",
@@ -1938,16 +1969,16 @@
       "idea": true
     },
     {
-      "id": "rt-52",
-      "project_id": "rt",
-      "title": "Build a CRM for the dealers reps capture on Route Tracker visits",
+      "id": "udm-06",
+      "project_id": "udm",
+      "title": "Build the dealer CRM on the Lead Tracker",
       "status": "Next",
       "owner": "Work Claude",
       "due": null,
       "priority": "high",
-      "notes": "Keon, Oct 9 Route Tracker debrief (n-24). A CRM just for the dealers reps hit on routes. The dealer profile (rt-50) is the first step. Check what Salesforce already covers first (cmp-01). Oct 9: Keon's main request, now committed work. Phase 1 is the dealer profile (rt-50) with contacts, touch log and next step. Plan: one dealer record with contacts, every touch (pre-visit, visit, follow-up), heat, stage and next step, a follow-up screen, a nurture list for the weekly wins email (ww), and an export that could feed Salesforce later (d-rt-09).",
+      "notes": "Oct 13: moved from the Route Tracker (was rt-52). The CRM lives on the Lead Tracker, not the Route Tracker (d-udm-01), so office and field work from the same record. Keon, Oct 9 Route Tracker debrief (n-24). A CRM just for the dealers reps hit on routes. The dealer profile (rt-50) is the first step. Check what Salesforce already covers first (cmp-01). Oct 9: Keon's main request, now committed work. Phase 1 is the dealer profile (rt-50) with contacts, touch log and next step. Plan: one dealer record with contacts, every touch (pre-visit, visit, follow-up), heat, stage and next step, a follow-up screen, a nurture list for the weekly wins email (ww), and an export that could feed Salesforce later (d-rt-09).",
       "created": "2026-10-09",
-      "updated": "2026-10-09"
+      "updated": "2026-10-13"
     },
     {
       "id": "rt-53",
@@ -2029,9 +2060,9 @@
       "owner": "Work Claude",
       "due": null,
       "priority": "normal",
-      "notes": "Blocked until Chase has the real marketing files and the Copart members list (w-08). The CSVs in Downloads are not those.",
+      "notes": "Blocked until Chase has the real marketing files and the Copart members list (w-08). The CSVs in Downloads are not those. Oct 13: leads now come from the Lead Tracker (udm). This phase becomes pulling each rep's assigned leads from it (udm-05).",
       "created": "2026-10-09",
-      "updated": "2026-10-09"
+      "updated": "2026-10-13"
     },
     {
       "id": "rt-60",
@@ -2067,7 +2098,7 @@
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Keon, Oct 9: dealers who aren't ready to sell get a weekly email that highlights what Copart is doing well. Its own campaign (ww). Creative feeds in the images; the rest of the body is prefilled each week. List from the Route Tracker CRM (rt-52). Formerly pdo-02.",
+      "notes": "Keon, Oct 9: dealers who aren't ready to sell get a weekly email that highlights what Copart is doing well. Its own campaign (ww). Creative feeds in the images; the rest of the body is prefilled each week. List from the Lead Tracker CRM (udm-06). Formerly pdo-02.",
       "created": "2026-10-09",
       "updated": "2026-10-09"
     },
@@ -2419,6 +2450,42 @@
       "notes": "",
       "created": "2026-10-13",
       "updated": "2026-10-13"
+    },
+    {
+      "id": "agents-01",
+      "project_id": "agents",
+      "title": "Build a Copilot flow that flags hot website form leads in the Admin inbox",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Power Automate or Copilot Studio on the Admin inbox. Reads each form email, matches it to the Lead Tracker, flags it hot, warm or not a dealer with a reason, prefills as much of the seller setup as it can and lists what is missing, creates or updates the lead, then alerts the admin and the lead owner. The admin reviews before any seller code. Needs: form fields and routing (q-12), Brenda's seller setup fields (rt-56), what makes a lead hot (Ken and the admins), and Copilot access to the Admin inbox.",
+      "created": "2026-10-13",
+      "updated": "2026-10-13"
+    },
+    {
+      "id": "agents-02",
+      "project_id": "agents",
+      "title": "Gather the inputs to rank the agent list",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Oct 13 list from Claude Code: top repeated tasks and minutes per role (office, field, admins, Ken); funnel counts and where leads stall; weekly volumes; what Ken wants to see each week; tools and licenses IT approves; which systems an agent can read or write and how; what Leo and others already built; Legal and IT rules; who approves each kind of output. Details in n-30.",
+      "created": "2026-10-13",
+      "updated": "2026-10-13"
+    },
+    {
+      "id": "hub-04",
+      "project_id": "hub",
+      "title": "Meet Leo to put every tool on one dealer record and one lead list",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Oct 13: so the Lead Tracker, Route Tracker and Leo's hub tools read the same dealer and the agent ideas fit together. Bring the agent map (n-30).",
+      "created": "2026-10-13",
+      "updated": "2026-10-13"
     }
   ],
   "waiting_on": [
@@ -2676,6 +2743,26 @@
       "answer": null,
       "raised": "2026-10-09",
       "answered": null
+    },
+    {
+      "id": "q-18",
+      "question": "Are the 26 teams in the Route Tracker office sales, field sales or both, and how many people are on each?",
+      "ask": "Ken Rion",
+      "project_id": "udm",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-13",
+      "answered": null
+    },
+    {
+      "id": "q-19",
+      "question": "Does Copart Dealer Services keep sellers in Salesforce today? Which objects and fields, and do reps work in it? (So the Lead Tracker CRM hands off to Salesforce instead of copying it. See cmp-01.)",
+      "ask": "Rama Manyam",
+      "project_id": "udm",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-13",
+      "answered": null
     }
   ],
   "decisions": [
@@ -2930,6 +3017,101 @@
       "status": "resolved",
       "answer": "Phase 6 outreach templates (Work Claude's pick, since Phase 4 is blocked)",
       "resolved": "2026-10-12"
+    },
+    {
+      "id": "d-udm-01",
+      "project_id": "udm",
+      "question": "Where does the dealer CRM live: the Route Tracker or the Lead Tracker?",
+      "options": [
+        "Route Tracker",
+        "Lead Tracker"
+      ],
+      "raised": "2026-10-13",
+      "status": "resolved",
+      "answer": "Lead Tracker. The Route Tracker reads from it and writes visits back.",
+      "resolved": "2026-10-13"
+    },
+    {
+      "id": "d-udm-02",
+      "project_id": "udm",
+      "question": "How long does a rep hold a lead with no touch before it goes back to the pool?",
+      "options": [
+        "7 days",
+        "14 days",
+        "30 days"
+      ],
+      "raised": "2026-10-13",
+      "status": "open",
+      "answer": null,
+      "resolved": null
+    },
+    {
+      "id": "d-udm-03",
+      "project_id": "udm",
+      "question": "Who gets a dealer two teams both want, including multi-rooftop groups?",
+      "options": [
+        "Whoever claimed it first",
+        "The team whose territory it is in",
+        "One account owner for the whole group"
+      ],
+      "raised": "2026-10-13",
+      "status": "open",
+      "answer": null,
+      "resolved": null
+    },
+    {
+      "id": "d-udm-04",
+      "project_id": "udm",
+      "question": "What counts as a converted lead?",
+      "options": [
+        "Account open (seller code created)",
+        "First car received"
+      ],
+      "raised": "2026-10-13",
+      "status": "open",
+      "answer": null,
+      "resolved": null
+    },
+    {
+      "id": "d-udm-05",
+      "project_id": "udm",
+      "question": "Who approves each team's weekly lead book?",
+      "options": [
+        "Ken",
+        "Each team lead",
+        "No approval, it fills on its own"
+      ],
+      "raised": "2026-10-13",
+      "status": "open",
+      "answer": null,
+      "resolved": null
+    },
+    {
+      "id": "d-udm-06",
+      "project_id": "udm",
+      "question": "Who owns a dealer after the first car?",
+      "options": [
+        "The rep who found it",
+        "An account owner in the office"
+      ],
+      "raised": "2026-10-13",
+      "status": "open",
+      "answer": null,
+      "resolved": null
+    },
+    {
+      "id": "d-udm-07",
+      "project_id": "udm",
+      "question": "Can field reps pull their own leads from the pool, or only take what the office sends them?",
+      "options": [
+        "Pull their own",
+        "Only from the office",
+        "Both"
+      ],
+      "raised": "2026-10-13",
+      "status": "open",
+      "answer": null,
+      "resolved": null
     }
   ],
   "people": [
@@ -3472,6 +3654,41 @@
       ],
       "project_id": "general",
       "date": "2026-10-13"
+    },
+    {
+      "id": "n-29",
+      "date": "2026-10-13",
+      "title": "Lead Tracker design",
+      "project_id": "udm",
+      "body": [
+        "The Lead Tracker is the lead list for the whole Copart Dealer Services sales team, office and field. Built on Work Claude from the US dealer map. It is the CRM (d-udm-01).",
+        "Who owns what: the Lead Tracker owns who the dealer is (identity, sources, Copart status, score, owner, stage, every touch). The Route Tracker is the field screen. It pulls each rep's assigned leads and sends visit events back by lead ID. Events are added, never overwritten.",
+        "Lead record: lead ID; name, address, pin, phone, email, website, each with a source, date collected and verified flag; play, score, one-line reason, Copart status (active, inactive, none); team, owner, channel, claimed date, return date; stage, last touch, next action and date, outcome reason; event log.",
+        "Stages: New, Qualified, Assigned, Contacted, Meeting set, Visited, Seller form sent, Account open, First car, Active seller. Off-ramps: Not a fit, Closed business, Snoozed, Returned to pool. Meeting set is the meetings-booked number and the point where office hands to field.",
+        "Two roles: office sales works by phone and email (inbound leads, the long tail across 28 states, qualifying, booking visits, onboarding). Field reps work by visit (dense territories, key accounts, visits the office booked).",
+        "Each lead gets a channel: office first (the default), field direct (dealer groups, tier A near a yard, dealers already on a route) or office only (outside any field territory). One owner at a time; ownership changes only through a handoff.",
+        "Lead sources: state license pulls and new licenses, Marketing's dealer list, website form leads, the hotline, Ken's new-license leads, and dealers reps add from the road. Every lead keeps its source.",
+        "Active Copart sellers come off prospect lists, inactive dealers go to win-back, no status are prospects (udm-01).",
+        "Build order: lead record and stages, a lead page per team (udm-04), the Route Tracker connection (udm-05), then the CRM screens (udm-06). The agents that fill and work the list are in the Agentic Workflow project.",
+        "Open: the lead rules (d-udm-02 to d-udm-07), who the 26 teams are (q-18), what Salesforce already holds (q-19)."
+      ]
+    },
+    {
+      "id": "n-30",
+      "date": "2026-10-13",
+      "title": "Agent map, first draft",
+      "project_id": "agents",
+      "body": [
+        "Goal: a ranked list of agents that keep the Lead Tracker full and help the office and field teams work it. Every output is a draft a person approves. Copart data stays in the work setup. Don't rebuild what Leo's hub already does (counterbids, MAO offers, title chase).",
+        "Lead building (on a schedule, mostly scripts): Source, Match and dedupe (with Copart status), Enrich and verify (monthly freshness check that flags changes instead of overwriting), Score and play, Dispatcher (tops each team up to 20, returns untouched leads, never puts two teams on one dealer).",
+        "Inbound: Copilot flow on the Admin inbox (agents-01). Matches each website form lead to the Lead Tracker, flags hot, warm or not a dealer, prefills the seller setup and lists what's missing, alerts the admin and owner. The admin reviews before any seller code.",
+        "Office sales: call queue builder (inbound first, then follow-ups due, then new leads, by time zone), call prep card, call outcome logger with follow-up drafts, meeting setter that fits visits into the field rep's route, seller onboarding tracker that flags anything stuck past 48 hours.",
+        "Field: pre-visit touch drafter, route builder (Phase 5 on staging), stop card each morning, visit capture (business card photo, short prefilled form), handoff drafter with Brenda's seller form prefilled.",
+        "Managers: Friday pipeline digest per role for Ken and team leads (feeds rt-48 and the weekly update), and a monthly learning loop that re-weights the score on real wins (d-cdd-05).",
+        "Where they run: Copilot Studio and Power Automate for anything in Outlook, Teams and the Admin inbox (n-28). Work Claude for the Lead Tracker and Route Tracker. Public lead pulls can stay in Copart Dealer Digital.",
+        "To rank the list (agents-02): for each role, the top repeated tasks with minutes and how often; funnel counts and where leads stall; weekly volumes (form leads, calls, visits, seller setups); what Ken wants to see each week; which tools IT approves and the licenses Chase has; which systems an agent can read or write, and how (connector, export, email); what Leo and others already built or are building; Legal and IT rules for contact data and AI; who approves each kind of output.",
+        "Then score each agent on hours saved, leads and meetings, ease to build and risk, and pick the first three."
+      ]
     }
   ],
   "reports": [
