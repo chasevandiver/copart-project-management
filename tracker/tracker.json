@@ -2407,6 +2407,18 @@
       "notes": "Leads, meetings, hours saved and AEO mention rate against Sep 27.",
       "created": "2026-10-12",
       "updated": "2026-10-12"
+    },
+    {
+      "id": "gen-28",
+      "project_id": "general",
+      "title": "Reach out to Lauren about Tech team webpage updates",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-14",
+      "priority": "urgent",
+      "notes": "",
+      "created": "2026-10-13",
+      "updated": "2026-10-13"
     }
   ],
   "waiting_on": [
