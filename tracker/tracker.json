@@ -2,7 +2,7 @@
   "meta": {
     "owner": "Chase",
     "role": "Digital Engagement Manager, supporting Ken Rion (SVP of Dealer Sales)",
-    "last_updated": "2026-10-12"
+    "last_updated": "2026-10-13"
   },
   "categories": [
     "AI Tools",
@@ -3045,6 +3045,13 @@
       "title": "",
       "department": "",
       "relationship": "Prints website lead forms and walks them to the teams",
+      "contact": ""
+    },
+    {
+      "name": "Sai Ravula",
+      "title": "Performance Marketing",
+      "department": "Marketing",
+      "relationship": "",
       "contact": ""
     }
   ],
