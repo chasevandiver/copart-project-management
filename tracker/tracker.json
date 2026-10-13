@@ -451,14 +451,14 @@
       "name": "Agentic Workflow",
       "category": "AI Tools",
       "status": "Next",
-      "summary": "The agents that keep the Lead Tracker full and help the Copart Dealer Services office and field teams work it: lead building, inbound, office sales, field and manager agents. Built on approved work tools (Copilot Studio, Power Automate, Work Claude). Every agent output is a draft a person approves, and Copart data stays in the work setup.",
+      "summary": "The agents that keep the Lead Tracker full and help the Copart Dealer Services office and field teams work it: lead building, inbound, office sales, field and manager agents. Built through Work Claude, Copilot Studio and Power Automate, connected to Outlook and Microsoft 365. Ranked on hours saved, leads and meetings, ease and risk. Every agent output is a draft a person approves.",
       "built": [
         "First draft agent map (n-30)"
       ],
       "links": [],
       "blockers": [],
       "next_steps": [
-        "Gather the inputs to rank the agent list (agents-02)",
+        "Gather the hours saved and leads and meetings inputs (agents-03, q-20 to q-24)",
         "Build the Copilot flow for website form leads in the Admin inbox (agents-01)",
         "Meet Leo to put every tool on one dealer record (hub-04)",
         "Score each agent on hours saved, leads and meetings, ease and risk, then pick the first three"
@@ -467,7 +467,8 @@
         "Lead Tracker record and stages (udm)",
         "Form routing and Email Source fix (q-12)",
         "Legal rules on email and SMS (q-06)",
-        "Copilot Studio and Power Automate access"
+        "Omni Analytics access (w-11)",
+        "About $200 a week in API credits"
       ]
     }
   ],
@@ -553,9 +554,9 @@
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Internal only until approved. Approver not yet named.",
+      "notes": "Internal only until approved. Approver not yet named. Oct 13: Chase can use sales data in Work Claude and Copilot (n-31). Confirm before it goes into the live Route Tracker.",
       "created": "2026-09-29",
-      "updated": "2026-09-29"
+      "updated": "2026-10-13"
     },
     {
       "id": "rt-08",
@@ -2471,7 +2472,7 @@
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Oct 13 list from Claude Code: top repeated tasks and minutes per role (office, field, admins, Ken); funnel counts and where leads stall; weekly volumes; what Ken wants to see each week; tools and licenses IT approves; which systems an agent can read or write and how; what Leo and others already built; Legal and IT rules; who approves each kind of output. Details in n-30.",
+      "notes": "Oct 13 list from Claude Code: top repeated tasks and minutes per role (office, field, admins, Ken); funnel counts and where leads stall; weekly volumes; what Ken wants to see each week; tools and licenses IT approves; which systems an agent can read or write and how; what Leo and others already built; Legal and IT rules; who approves each kind of output. Details in n-30. Oct 13: tools, budget, data access and approvals answered (n-31). Hours saved and leads and meetings inputs moved to agents-03.",
       "created": "2026-10-13",
       "updated": "2026-10-13"
     },
@@ -2484,6 +2485,18 @@
       "due": null,
       "priority": "normal",
       "notes": "Oct 13: so the Lead Tracker, Route Tracker and Leo's hub tools read the same dealer and the agent ideas fit together. Bring the agent map (n-30).",
+      "created": "2026-10-13",
+      "updated": "2026-10-13"
+    },
+    {
+      "id": "agents-03",
+      "project_id": "agents",
+      "title": "Gather the hours saved and leads and meetings inputs for the agent list",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Hours saved: 20 minutes each with Keon (q-21), Brenda (q-22) and one office rep (q-23). Ask for the five most repeated tasks, minutes each and how often. Leads and meetings: what Ken wants weekly and where leads stall (q-20), stage counts and weekly volumes from Susan Truett (q-24). Overlaps mkt-03 (visits per rep, visit-to-seller rate, form leads q-08), so ask once for both. Numbers stay in the work setup; log only where they live.",
       "created": "2026-10-13",
       "updated": "2026-10-13"
     }
@@ -2581,6 +2594,15 @@
       "since": "2026-10-09",
       "priority": "normal",
       "notes": "Blocks rt-60."
+    },
+    {
+      "id": "w-11",
+      "what": "Omni Analytics access",
+      "from_whom": "Not named yet",
+      "project_id": "agents",
+      "since": "2026-10-13",
+      "priority": "normal",
+      "notes": "Connects the agents to Copart Dealer Services data. Not granted yet (Oct 13). See n-28."
     }
   ],
   "questions": [
@@ -2759,6 +2781,56 @@
       "question": "Does Copart Dealer Services keep sellers in Salesforce today? Which objects and fields, and do reps work in it? (So the Lead Tracker CRM hands off to Salesforce instead of copying it. See cmp-01.)",
       "ask": "Rama Manyam",
       "project_id": "udm",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-13",
+      "answered": null
+    },
+    {
+      "id": "q-20",
+      "question": "What numbers do you want on your desk each week, and where do leads stall between first contact and first car?",
+      "ask": "Ken Rion",
+      "project_id": "agents",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-13",
+      "answered": null
+    },
+    {
+      "id": "q-21",
+      "question": "What are your five most repeated tasks in a week, about how many minutes each, and how often? (Field rep time, for ranking agents by hours saved)",
+      "ask": "Keon Moore",
+      "project_id": "agents",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-13",
+      "answered": null
+    },
+    {
+      "id": "q-22",
+      "question": "What are the five most repeated tasks in setting up a seller, about how many minutes each and how often, and how many seller setups come in a week?",
+      "ask": "Brenda",
+      "project_id": "agents",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-13",
+      "answered": null
+    },
+    {
+      "id": "q-23",
+      "question": "What are your five most repeated tasks in a week, about how many minutes each, and how often? (Office sales time, for ranking agents by hours saved. Ken to name the rep.)",
+      "ask": "Office sales rep",
+      "project_id": "agents",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-13",
+      "answered": null
+    },
+    {
+      "id": "q-24",
+      "question": "Can you send monthly counts at each stage (leads, contacted, seller form sent, account open, first car) and weekly volumes (hotline calls, outbound calls, form leads)? Numbers stay in the work setup; log only where they live.",
+      "ask": "Susan Truett",
+      "project_id": "agents",
       "status": "open",
       "answer": null,
       "raised": "2026-10-13",
@@ -3082,9 +3154,9 @@
         "No approval, it fills on its own"
       ],
       "raised": "2026-10-13",
-      "status": "open",
-      "answer": null,
-      "resolved": null
+      "status": "resolved",
+      "answer": "Ken approves lead assignments, at least at first.",
+      "resolved": "2026-10-13"
     },
     {
       "id": "d-udm-06",
@@ -3688,6 +3760,20 @@
         "Where they run: Copilot Studio and Power Automate for anything in Outlook, Teams and the Admin inbox (n-28). Work Claude for the Lead Tracker and Route Tracker. Public lead pulls can stay in Copart Dealer Digital.",
         "To rank the list (agents-02): for each role, the top repeated tasks with minutes and how often; funnel counts and where leads stall; weekly volumes (form leads, calls, visits, seller setups); what Ken wants to see each week; which tools IT approves and the licenses Chase has; which systems an agent can read or write, and how (connector, export, email); what Leo and others already built or are building; Legal and IT rules for contact data and AI; who approves each kind of output.",
         "Then score each agent on hours saved, leads and meetings, ease to build and risk, and pick the first three."
+      ]
+    },
+    {
+      "id": "n-31",
+      "date": "2026-10-13",
+      "title": "What the agents can be built with",
+      "project_id": "agents",
+      "body": [
+        "Tools: Copilot Studio, almost all of the Copilot and Microsoft 365 tools, and Power Automate. Agents can connect to Outlook and the rest of Microsoft 365.",
+        "Building is approved as long as it goes through Work Claude.",
+        "Budget: about $200 a week in API credits.",
+        "Data: Chase can use Copart sales data in Work Claude and Copilot. Omni Analytics would connect the agents to all of the Copart Dealer Services data, but access isn't granted yet (w-11).",
+        "Approvals: Ken gives the first approval on lead assignments (d-udm-05). Kyle Cochran approves digital campaigns.",
+        "Leo has already built supplementary tools (see the hub project). Build around them, not over them."
       ]
     }
   ],

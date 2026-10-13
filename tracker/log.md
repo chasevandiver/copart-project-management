@@ -2,6 +2,15 @@
 
 Newest entry first.
 
+## 2026-10-13 (agent inputs and build limits)
+- Source: Chase on what the agents can be built with, and asked to track the hours saved and leads and meetings inputs
+- Added: agents-03 "Gather the hours saved and leads and meetings inputs for the agent list" (Me, high)
+- Added: q-20 for Ken Rion (weekly numbers, where leads stall), q-21 for Keon Moore and q-23 for an office sales rep (top tasks and minutes), q-22 for Brenda (seller setup tasks and weekly volume), q-24 for Susan Truett (stage counts and weekly volumes)
+- Resolved: d-udm-05 Ken approves lead assignments, at least at first
+- Waiting on: added w-11 Omni Analytics access
+- Added: n-31 "What the agents can be built with" (Copilot Studio, Power Automate, Microsoft 365, about $200 a week in API credits, sales data OK in Work Claude and Copilot, Kyle approves campaigns)
+- Changed: agents project summary, next steps and dependencies; agents-02 and rt-07 notes
+
 ## 2026-10-13 (Lead Tracker and Agentic Workflow)
 - Source: Chase's chat with Claude Code on the lead flow and agents (CRM on the lead list, office and field teams, Copilot inbound flow, uniting tools with Leo)
 - Changed: project udm renamed "US Dealer Map" -> "Lead Tracker", new summary, next steps and dependencies
