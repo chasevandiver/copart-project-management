@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-15 (Route Tracker live)
+- Source: Chase confirmed the Route Tracker is live, the web briefs went with an HTML mockup, and Plaud could feed the meeting report
+- Changed: rt-57 Backlog -> Done (v.Next live); rt summary and next steps
+- Changed: mkt-12, pa-02 and agents-04 notes
+
 ## 2026-10-15 (week recap)
 - Source: Chase's recap of the week (Lead Tracker, Route Tracker link, meeting report, Marketing meetings, website briefs, AI survey)
 - Changed: udm-02, udm-04, udm-05 -> Done (Lead Tracker built, claim codes and admin view, connected to the Route Tracker both ways); udm-06 Next -> In Progress (dealer profiles build from touches and notes)

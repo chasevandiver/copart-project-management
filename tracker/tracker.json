@@ -61,7 +61,7 @@
       "id": "rt",
       "name": "Route Tracker",
       "status": "In Progress",
-      "summary": "Chase's project now (it started as Leo's Route Tracker). Rebuilt with a real server side so data is captured securely. Lives on my Coolify in the app/ folder. Walkthrough fixes live Oct 6; live field test with Ken and Keon in Indianapolis the week of Oct 5. Oct 9: Route Tracker v.Next (Phases 1a, 1b, 2, 3 and 5) built on staging only (route-tracker-staging, its own repo). Live is untouched until Chase tests staging and says \"deploy to live\".",
+      "summary": "Chase's project now (it started as Leo's Route Tracker). Rebuilt with a real server side so data is captured securely. Lives on my Coolify in the app/ folder. Walkthrough fixes live Oct 6; live field test with Ken and Keon in Indianapolis the week of Oct 5. Oct 9: Route Tracker v.Next (Phases 1a, 1b, 2, 3 and 5) built on staging only (route-tracker-staging, its own repo). Live is untouched until Chase tests staging and says \"deploy to live\". Oct 15: v.Next is live and connected to the Lead Tracker.",
       "built": [
         "Name sign-in with team passcode; admin, rep and viewer roles enforced by the server",
         "One shared database so notes and visits sync across phones",
@@ -110,7 +110,6 @@
         "Test staging on my phone: pick the visit layout (d-rt-10) and decide on the tax ID box (d-rt-11) (rt-53)",
         "Pick the next phase (d-rt-12). Work Claude suggests Phase 6 outreach templates (rt-58), since Phase 4 is blocked",
         "Send Work Claude Brenda's seller code request email(s) and her list of Copart Dealer Services steps (rt-56)",
-        "Go live: back up the live data volume first (rt-55), then say \"deploy to live\" (rt-57)",
         "Pre-visit, at-dealer and follow-up upgrade on Work Claude (rt-44), plus Keon's asks (rt-45 to rt-50)",
         "Phone test and data-loss check (rt-28); confirm hot send and the office tracker (rt-21, rt-23)",
         "Decide on Google Places for \"Dealers near you\" (d-rt-07)",
@@ -1087,7 +1086,7 @@
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Oct 9: working on it with Copilot. Oct 15: the automated meeting report (agents) now turns transcripts into email drafts and meeting invites.",
+      "notes": "Oct 9: working on it with Copilot. Oct 15: the automated meeting report (agents) now turns transcripts into email drafts and meeting invites. Oct 15: Plaud could feed the meeting report's transcripts (agents-04).",
       "created": "2026-10-01",
       "updated": "2026-10-15"
     },
@@ -2045,13 +2044,14 @@
       "id": "rt-57",
       "project_id": "rt",
       "title": "Deploy Route Tracker v.Next to live",
-      "status": "Backlog",
+      "status": "Done",
       "owner": "Work Claude",
       "due": null,
       "priority": "high",
-      "notes": "Only when Chase says \"deploy to live\". After field hours, not on a working day, and only after the live backup is confirmed (rt-55). Follows LIVE-RELEASE-PLAN.md: push server.js, lib/stage.js, lib/planner.js, public/index.html, public/sw.js and the two test files to the live repo root, check the live page, then tell Ken and Keon what changed. Reps default to the Classic layout.",
+      "notes": "Only when Chase says \"deploy to live\". After field hours, not on a working day, and only after the live backup is confirmed (rt-55). Follows LIVE-RELEASE-PLAN.md: push server.js, lib/stage.js, lib/planner.js, public/index.html, public/sw.js and the two test files to the live repo root, check the live page, then tell Ken and Keon what changed. Reps default to the Classic layout. Oct 15: Route Tracker v.Next is live, connected to the Lead Tracker.",
       "created": "2026-10-09",
-      "updated": "2026-10-09"
+      "updated": "2026-10-15",
+      "completed": "2026-10-15"
     },
     {
       "id": "rt-58",
@@ -2256,7 +2256,7 @@
       "owner": "Me",
       "due": "2026-11-07",
       "priority": "normal",
-      "notes": "Trade-ins and international buyers first. SEO briefs are in the plan's Orion drafts tab. Oct 15: sent early with the website briefs and HTML to Marketing and Tech. Manny Ortiz is the contact (w-13).",
+      "notes": "Trade-ins and international buyers first. SEO briefs are in the plan's Orion drafts tab. Oct 15: sent early with the website briefs and HTML to Marketing and Tech. Manny Ortiz is the contact (w-13). Oct 15: confirmed. Sent the web page briefs and an HTML mockup.",
       "created": "2026-10-12",
       "updated": "2026-10-15",
       "completed": "2026-10-15"
@@ -2534,7 +2534,7 @@
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Oct 15: the automated meeting report already turns transcripts into email drafts and meeting invites and uploads them to a knowledge base. Next is a chat in Teams on top of it. Copilot Studio and Power Automate notes in n-28.",
+      "notes": "Oct 15: the automated meeting report already turns transcripts into email drafts and meeting invites and uploads them to a knowledge base. Next is a chat in Teams on top of it. Copilot Studio and Power Automate notes in n-28. Oct 15: Plaud could be tied in as the transcript source (pa-02).",
       "created": "2026-10-15",
       "updated": "2026-10-15"
     },
