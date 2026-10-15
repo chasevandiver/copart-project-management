@@ -78,7 +78,8 @@
         "Staging v.Next, Phase 2 (Oct 9, 191 tests): first car records and handoff units feed one Cars list (originals kept as backup); Seller codes view on the Handoff tab by state with days waited; follow-up outcomes and rescheduling with \"Done or move\"",
         "Staging v.Next, Phase 3 (Oct 9, 195 tests): Home \"Tonight\" card (PLAUD waiting, today's dealers with no follow-up, Set follow-up), Send assignments button and an \"Email me my day\" draft with no tax ID or PLAUD text",
         "Staging v.Next, Phase 5 daily route builder (Oct 9, 203 tests): More > Day plans. Admin picks rep, day, start yard and end point; up to 14 scored stops in an 8 to 5 window; move or remove stops; Assign shows \"Today's plan\" on the rep's Home (n-25)",
-        "LIVE-RELEASE-PLAN.md written (plan only) for Phases 1a, 1b, 2, 3 and 5"
+        "LIVE-RELEASE-PLAN.md written (plan only) for Phases 1a, 1b, 2, 3 and 5",
+        "Updated this week and connected to the Lead Tracker: routes build from Lead Tracker leads and visit results go back to it (Oct 15)"
       ],
       "links": [
         {
@@ -266,10 +267,10 @@
       ],
       "blockers": [],
       "next_steps": [
+        "Hear back from Manny Ortiz on which website changes the team can make (w-13), then plan the remake (audit-09, audit-08)",
         "Check where the mobile \"Sell your car\" button goes (audit-10)",
         "Ken at the Friday debrief: the name (q-10), Austin (d-pdo-01), which campaigns stay with Dealer Sales (gen-23)",
         "Finish the FullStory review: mobile scroll map, form check, Journeys (audit-07)",
-        "Write the one-page remake brief for Tech and Creative (audit-12), then plan the remake (audit-09, audit-08)",
         "Ask IT who on Tech owns the website forms and where submissions go (q-12)",
         "Turn on the weekly AEO re-run and the fee check (cdd-12)",
         "Campaign work now lives in the Campaigns section (cmp, pdo)"
@@ -301,18 +302,20 @@
       "summary": "The lead list for the whole Copart Dealer Services sales team, office and field, built on Work Claude from the US dealer map. It is the CRM: one record per dealer with sources, Copart status, owner, stage and every touch. Teams get their leads here, and the Route Tracker reads from it and writes back to it. Copart dealer data stays in the work setup.",
       "built": [
         "Copart Dealer Digital Leads section covers 28 states plus DC (92,492 leads), every state logged on the All states page (Oct 1)",
-        "Indiana compared and merged with Leo's lists (Oct 1)"
+        "Indiana compared and merged with Leo's lists (Oct 1)",
+        "Lead Tracker built on Work Claude (formerly the US dealer map, week of Oct 12)",
+        "Connected to the Route Tracker both ways: leads build routes, and route results feed back into the lead record (Oct 15)",
+        "Claim codes so the team can claim leads, with an admin view that keeps teams from being overloaded (Oct 15)",
+        "Dealer profiles build as reps log touches and notes (Oct 15)"
       ],
       "links": [],
       "blockers": [],
       "next_steps": [
+        "Learn how the team tracks calls and outreach today, and tie it in (udm-07)",
+        "Build out the CRM once the processes are known (udm-06)",
         "Get the Copart and non-Copart dealer spreadsheets (gen-26)",
-        "Keep building the lead list on Work Claude (udm-02)",
         "Lock the lead record, stages and lead ID (n-29)",
         "Match leads to Copart dealer status: active, inactive, no status (udm-01)",
-        "Lead page per team, office and field (udm-04)",
-        "Connect the Route Tracker by lead ID (udm-05)",
-        "Build the CRM on the Lead Tracker (udm-06)",
         "Settle the lead rules: hold time, overlap, conversion, approvals (d-udm-02 to d-udm-07)"
       ],
       "dependencies": [
@@ -336,7 +339,7 @@
       "name": "Campaign setup",
       "category": "Campaigns",
       "status": "In Progress",
-      "summary": "The groundwork every Copart Dealer Services campaign shares: tools (Salesforce), rules (Kyle reviews every campaign, Creative needs 2 weeks, Tech owns forms and pages, legal on contact data), the dealer and member campaign calendar, paid media, offers and collateral.",
+      "summary": "The groundwork every Copart Dealer Services campaign shares: tools (Salesforce), rules (Kyle reviews every campaign, Creative needs 2 weeks, Tech owns forms and pages, legal on contact data), the dealer and member campaign calendar, paid media, offers and collateral. Process (Oct 15): I give Marketing a brief, an outline and an email list; Marketing splits it into copy, creative design and so on, then sends it. Website changes run the same way through Manny Ortiz.",
       "built": [
         "Campaign ground rules, in the Digital audit's Campaign ideas page (docs/audit/08-campaigns.md in Copart Dealer Digital)"
       ],
@@ -345,8 +348,8 @@
       "next_steps": [
         "Draft the field offers plus SMS and email outline and review it with Ken (cmp-02)",
         "Get the dealer and member campaign calendar from Kyle or Lauren (cmp-03)",
-        "Get onto Salesforce for digital campaigns (cmp-01)",
-        "Find out who owns paid media and the budget (q-05) and the data rules for SMS and email (q-06)"
+        "Get Salesforce access from Rama (cmp-01, w-12)",
+        "Ask Sai about paid media for prospective dealers (q-25) and get the data rules for SMS and email (q-06)"
       ],
       "dependencies": [
         "Kyle Cochran reviews every digital campaign before it runs (brand, messaging, saturation)",
@@ -453,11 +456,15 @@
       "status": "Next",
       "summary": "The agents that keep the Lead Tracker full and help the Copart Dealer Services office and field teams work it: lead building, inbound, office sales, field and manager agents. Built through Work Claude, Copilot Studio and Power Automate, connected to Outlook and Microsoft 365. Ranked on hours saved, leads and meetings, ease and risk. Every agent output is a draft a person approves.",
       "built": [
-        "First draft agent map (n-30)"
+        "First draft agent map (n-30)",
+        "Automated meeting report: meeting transcripts become email drafts and meeting invites, and everything goes into a knowledge base (Oct 15)",
+        "AI use survey for the whole Copart Dealer Services team, covering AI and Leo's tools (Oct 15, waiting on approval to send)"
       ],
       "links": [],
       "blockers": [],
       "next_steps": [
+        "Turn the meeting knowledge base into a Teams chat that automates updates, pre-call briefs and follow-ups (agents-04)",
+        "Send the AI use survey once it is approved (agents-05)",
         "Gather the hours saved and leads and meetings inputs (agents-03, q-20 to q-24)",
         "Build the Copilot flow for website form leads in the Admin inbox (agents-01)",
         "Meet Leo to put every tool on one dealer record (hub-04)",
@@ -761,13 +768,13 @@
       "id": "cmp-01",
       "project_id": "cmp",
       "title": "Get onto Salesforce for digital campaigns",
-      "status": "Next",
+      "status": "Waiting",
       "owner": "Me",
       "due": "2026-10-21",
       "priority": "normal",
-      "notes": "Plan from Sep 29 meeting with Rama and Leo: I set up the campaign and how I want it, and it delegates the jobs to people on the Marketing team. Formerly gen-04. Oct 9: getting access or a walkthrough the week of Oct 12. Marketing Plan (mkt): fallback if no access by Nov 1 is counting meetings from the Route Tracker only.",
+      "notes": "Plan from Sep 29 meeting with Rama and Leo: I set up the campaign and how I want it, and it delegates the jobs to people on the Marketing team. Formerly gen-04. Oct 9: getting access or a walkthrough the week of Oct 12. Marketing Plan (mkt): fallback if no access by Nov 1 is counting meetings from the Route Tracker only. Oct 15: Rama walked me through Salesforce. Access is coming (w-12).",
       "created": "2026-09-29",
-      "updated": "2026-10-12"
+      "updated": "2026-10-15"
     },
     {
       "id": "gen-05",
@@ -1080,9 +1087,9 @@
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Oct 9: working on it with Copilot.",
+      "notes": "Oct 9: working on it with Copilot. Oct 15: the automated meeting report (agents) now turns transcripts into email drafts and meeting invites.",
       "created": "2026-10-01",
-      "updated": "2026-10-09"
+      "updated": "2026-10-15"
     },
     {
       "id": "pa-01",
@@ -1738,13 +1745,14 @@
       "id": "udm-02",
       "project_id": "udm",
       "title": "Build the US leads dealer map",
-      "status": "In Progress",
+      "status": "Done",
       "owner": "Work Claude",
       "due": null,
       "priority": "high",
-      "notes": "Oct 6: Chase is building it on Work Claude.",
+      "notes": "Oct 6: Chase is building it on Work Claude. Oct 15: built. The Lead Tracker (formerly the US dealer map) is live on Work Claude.",
       "created": "2026-10-06",
-      "updated": "2026-10-06"
+      "updated": "2026-10-15",
+      "completed": "2026-10-15"
     },
     {
       "id": "gen-27",
@@ -1776,13 +1784,14 @@
       "id": "udm-04",
       "project_id": "udm",
       "title": "Build a lead page per team (office and field), 20 leads at a time",
-      "status": "Next",
+      "status": "Done",
       "owner": "Work Claude",
       "due": null,
       "priority": "normal",
-      "notes": "Leo's suggestion (n-15), not decided. Status per lead (called, contacted, interested, not interested), notes, car count. Oct 13: committed. Office and field teams both get their leads here. The dispatcher tops each team up and returns untouched leads to the pool (rules in d-udm-02 to d-udm-07).",
+      "notes": "Leo's suggestion (n-15), not decided. Status per lead (called, contacted, interested, not interested), notes, car count. Oct 13: committed. Office and field teams both get their leads here. The dispatcher tops each team up and returns untouched leads to the pool (rules in d-udm-02 to d-udm-07). Oct 15: built as claim codes. The team claims leads with a code, and an admin view keeps any team from getting more leads than it can work. More to build once the processes are known (udm-07).",
       "created": "2026-10-06",
-      "updated": "2026-10-13"
+      "updated": "2026-10-15",
+      "completed": "2026-10-15"
     },
     {
       "id": "audit-10",
@@ -1813,25 +1822,27 @@
       "id": "udm-05",
       "project_id": "udm",
       "title": "Connect the Route Tracker to the Lead Tracker",
-      "status": "Next",
+      "status": "Done",
       "owner": "Work Claude",
       "due": null,
       "priority": "normal",
-      "notes": "Getting ahead of things. One loop from the dealer map to the Route Tracker: outreach, prospecting, lead and route suggestions, route building, route tracking, live tracking of visited routes, and a summary and follow-up for each visited dealer. First step is one shared dealer record both tools can read (sketch in docs/audit/08-campaigns.md in Copart Dealer Digital). Touches rt and cdd too. Oct 13: committed. The Lead Tracker is the record. The Route Tracker pulls each rep's assigned leads and sends visit events back by lead ID; events are added, never overwritten.",
+      "notes": "Getting ahead of things. One loop from the dealer map to the Route Tracker: outreach, prospecting, lead and route suggestions, route building, route tracking, live tracking of visited routes, and a summary and follow-up for each visited dealer. First step is one shared dealer record both tools can read (sketch in docs/audit/08-campaigns.md in Copart Dealer Digital). Touches rt and cdd too. Oct 13: committed. The Lead Tracker is the record. The Route Tracker pulls each rep's assigned leads and sends visit events back by lead ID; events are added, never overwritten. Oct 15: connected both ways. Leads build routes in the Route Tracker, and route results feed back into the Lead Tracker.",
       "created": "2026-10-08",
-      "updated": "2026-10-13"
+      "updated": "2026-10-15",
+      "completed": "2026-10-15"
     },
     {
       "id": "audit-12",
       "project_id": "audit",
       "title": "Write a one-page remake brief for Tech and Creative",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-20",
       "priority": "high",
-      "notes": "Pulls the landing page fixes into one page, per Lauren (change the page as a whole): crawler-readable, no \"Salvage\" title, FAQ schema, a short form that routes to a rep, tap-to-call (audit-08), a top nav entry, the mobile \"Sell your car\" button (audit-10), and the field agent and global buyers story. Uses FullStory (audit-07, n-18) and docs/audit/03-website.md and 06-positioning-brief.md. Needs the name settled (q-10). Creative needs 2 weeks. Oct 9, Ken: add a \"Request a meeting\" button so a prospective dealer can book a call with a Copart Dealer Services manager or senior person to learn more or become a seller (q-16). Oct 9: lead with the first screen. Replace the full-screen logo hero with what the page is for, plus the short form, call-back and meeting buttons (or a clear cue to scroll), and have the mobile \"Sell your car\" button jump to the form (audit-10). Marketing Plan (mkt): attach the Orion page draft as the appendix.",
+      "notes": "Pulls the landing page fixes into one page, per Lauren (change the page as a whole): crawler-readable, no \"Salvage\" title, FAQ schema, a short form that routes to a rep, tap-to-call (audit-08), a top nav entry, the mobile \"Sell your car\" button (audit-10), and the field agent and global buyers story. Uses FullStory (audit-07, n-18) and docs/audit/03-website.md and 06-positioning-brief.md. Needs the name settled (q-10). Creative needs 2 weeks. Oct 9, Ken: add a \"Request a meeting\" button so a prospective dealer can book a call with a Copart Dealer Services manager or senior person to learn more or become a seller (q-16). Oct 9: lead with the first screen. Replace the full-screen logo hero with what the page is for, plus the short form, call-back and meeting buttons (or a clear cue to scroll), and have the mobile \"Sell your car\" button jump to the form (audit-10). Marketing Plan (mkt): attach the Orion page draft as the appendix. Oct 15: sent the website briefs and HTML to the Marketing and Tech team, and had a call on the process. Manny Ortiz is the contact (w-13).",
       "created": "2026-10-08",
-      "updated": "2026-10-12"
+      "updated": "2026-10-15",
+      "completed": "2026-10-15"
     },
     {
       "id": "cmp-03",
@@ -1953,9 +1964,9 @@
       "owner": "Work Claude",
       "due": null,
       "priority": "normal",
-      "notes": "Keon, Oct 9 Route Tracker debrief (n-24). Lead to finish on one profile: pre-visit touches, visit, offer, assignments, handoffs, follow-ups. Same idea as the shared dealer record (udm-05). Oct 13: the profile reads from the Lead Tracker CRM (udm-06). The Route Tracker shows it and adds visit events.",
+      "notes": "Keon, Oct 9 Route Tracker debrief (n-24). Lead to finish on one profile: pre-visit touches, visit, offer, assignments, handoffs, follow-ups. Same idea as the shared dealer record (udm-05). Oct 13: the profile reads from the Lead Tracker CRM (udm-06). The Route Tracker shows it and adds visit events. Oct 15: dealer profiles build on the Lead Tracker as reps log touches and notes (udm-06).",
       "created": "2026-10-09",
-      "updated": "2026-10-13"
+      "updated": "2026-10-15"
     },
     {
       "id": "rt-51",
@@ -1974,13 +1985,13 @@
       "id": "udm-06",
       "project_id": "udm",
       "title": "Build the dealer CRM on the Lead Tracker",
-      "status": "Next",
+      "status": "In Progress",
       "owner": "Work Claude",
       "due": null,
       "priority": "high",
-      "notes": "Oct 13: moved from the Route Tracker (was rt-52). The CRM lives on the Lead Tracker, not the Route Tracker (d-udm-01), so office and field work from the same record. Keon, Oct 9 Route Tracker debrief (n-24). A CRM just for the dealers reps hit on routes. The dealer profile (rt-50) is the first step. Check what Salesforce already covers first (cmp-01). Oct 9: Keon's main request, now committed work. Phase 1 is the dealer profile (rt-50) with contacts, touch log and next step. Plan: one dealer record with contacts, every touch (pre-visit, visit, follow-up), heat, stage and next step, a follow-up screen, a nurture list for the weekly wins email (ww), and an export that could feed Salesforce later (d-rt-09).",
+      "notes": "Oct 13: moved from the Route Tracker (was rt-52). The CRM lives on the Lead Tracker, not the Route Tracker (d-udm-01), so office and field work from the same record. Keon, Oct 9 Route Tracker debrief (n-24). A CRM just for the dealers reps hit on routes. The dealer profile (rt-50) is the first step. Check what Salesforce already covers first (cmp-01). Oct 9: Keon's main request, now committed work. Phase 1 is the dealer profile (rt-50) with contacts, touch log and next step. Plan: one dealer record with contacts, every touch (pre-visit, visit, follow-up), heat, stage and next step, a follow-up screen, a nurture list for the weekly wins email (ww), and an export that could feed Salesforce later (d-rt-09). Oct 15: dealer profiles now build as reps log touches and notes. Building out more once the processes are known (udm-07).",
       "created": "2026-10-09",
-      "updated": "2026-10-13"
+      "updated": "2026-10-15"
     },
     {
       "id": "rt-53",
@@ -2241,13 +2252,14 @@
       "id": "mkt-12",
       "project_id": "mkt",
       "title": "Send the six page briefs to the web owner",
-      "status": "Backlog",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-11-07",
       "priority": "normal",
-      "notes": "Trade-ins and international buyers first. SEO briefs are in the plan's Orion drafts tab.",
+      "notes": "Trade-ins and international buyers first. SEO briefs are in the plan's Orion drafts tab. Oct 15: sent early with the website briefs and HTML to Marketing and Tech. Manny Ortiz is the contact (w-13).",
       "created": "2026-10-12",
-      "updated": "2026-10-12"
+      "updated": "2026-10-15",
+      "completed": "2026-10-15"
     },
     {
       "id": "mkt-13",
@@ -2501,6 +2513,42 @@
       "notes": "Hours saved: 20 minutes each with Keon (q-21), Brenda (q-22) and one office rep (q-23). Ask for the five most repeated tasks, minutes each and how often. Leads and meetings: what Ken wants weekly and where leads stall (q-20), stage counts and weekly volumes from Susan Truett (q-24). Overlaps mkt-03 (visits per rep, visit-to-seller rate, form leads q-08), so ask once for both. Numbers stay in the work setup; log only where they live.",
       "created": "2026-10-13",
       "updated": "2026-10-13"
+    },
+    {
+      "id": "udm-07",
+      "project_id": "udm",
+      "title": "Learn how the team tracks calls and outreach to prospective dealers, and tie it into the Lead Tracker",
+      "status": "In Progress",
+      "owner": "Me",
+      "due": "2026-10-15",
+      "priority": "high",
+      "notes": "Oct 15: next step today. Shapes how the Lead Tracker CRM grows (udm-06) and the lead rules (d-udm-02 to d-udm-07).",
+      "created": "2026-10-15",
+      "updated": "2026-10-15"
+    },
+    {
+      "id": "agents-04",
+      "project_id": "agents",
+      "title": "Turn the meeting knowledge base into a Teams chat for updates, pre-call briefs and follow-ups",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Oct 15: the automated meeting report already turns transcripts into email drafts and meeting invites and uploads them to a knowledge base. Next is a chat in Teams on top of it. Copilot Studio and Power Automate notes in n-28.",
+      "created": "2026-10-15",
+      "updated": "2026-10-15"
+    },
+    {
+      "id": "agents-05",
+      "project_id": "agents",
+      "title": "Send the AI use survey to the Copart Dealer Services team",
+      "status": "Waiting",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Oct 15: survey drafted on how the team uses AI today and Leo's tools. Send once approved. Answers also feed the agent ranking (agents-02, agents-03).",
+      "created": "2026-10-15",
+      "updated": "2026-10-15"
     }
   ],
   "waiting_on": [
@@ -2605,6 +2653,24 @@
       "since": "2026-10-13",
       "priority": "normal",
       "notes": "Connects the agents to Copart Dealer Services data. Not granted yet (Oct 13). See n-28."
+    },
+    {
+      "id": "w-12",
+      "what": "Salesforce access",
+      "from_whom": "Rama Manyam",
+      "project_id": "cmp",
+      "since": "2026-10-15",
+      "priority": "normal",
+      "notes": "Walkthrough done week of Oct 12; access should be coming now (cmp-01)."
+    },
+    {
+      "id": "w-13",
+      "what": "Which website changes the team can implement",
+      "from_whom": "Manny Ortiz",
+      "project_id": "audit",
+      "since": "2026-10-15",
+      "priority": "high",
+      "notes": "Manny meets his team Monday Oct 19 to go over the website briefs and HTML (audit-12, mkt-12). Feeds the remake (audit-09) and tap-to-call (audit-08)."
     }
   ],
   "questions": [
@@ -2653,10 +2719,10 @@
       "question": "Who owns paid media and paid social access, and is there a budget?",
       "ask": "Noelle Goodman",
       "project_id": "cmp",
-      "status": "open",
-      "answer": null,
+      "status": "answered",
+      "answer": "Sai Ravula owns paid media. It supports Copart as a whole and could carry targeted messaging to prospective dealers. Budget not covered yet (q-25).",
       "raised": "2026-10-01",
-      "answered": null
+      "answered": "2026-10-15"
     },
     {
       "id": "q-06",
@@ -2836,6 +2902,16 @@
       "status": "open",
       "answer": null,
       "raised": "2026-10-13",
+      "answered": null
+    },
+    {
+      "id": "q-25",
+      "question": "Can paid media run targeted messaging to prospective dealers, is there budget for it, and what do you need from me (audience, brief)?",
+      "ask": "Sai Ravula",
+      "project_id": "cmp",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-15",
       "answered": null
     }
   ],
@@ -3207,7 +3283,7 @@
       "name": "Rama Manyam",
       "title": "",
       "department": "Marketing",
-      "relationship": "Analytics; marketing tools; Salesforce onboarding",
+      "relationship": "Analytics; marketing tools; Salesforce onboarding. Walked me through Salesforce week of Oct 12; access is coming",
       "contact": ""
     },
     {
@@ -3319,7 +3395,14 @@
       "name": "Sai Ravula",
       "title": "Performance Marketing",
       "department": "Marketing",
-      "relationship": "Paid Media and Performance Manager - Focuses on Paid Ads and how Paid Ads bring in more Members to Copart",
+      "relationship": "Paid Media and Performance Manager - Focuses on Paid Ads and how Paid Ads bring in more Members to Copart. Met week of Oct 12: owns paid media, which supports Copart as a whole; could use it for targeted messaging to prospective dealers",
+      "contact": ""
+    },
+    {
+      "name": "Manny Ortiz",
+      "title": "Senior Marketing Specialist",
+      "department": "Marketing",
+      "relationship": "My contact for Copart Dealer Services website changes. Has the website briefs and HTML (Oct 15)",
       "contact": ""
     }
   ],
@@ -3777,6 +3860,19 @@
         "Approvals: Ken gives the first approval on lead assignments (d-udm-05). Kyle Cochran approves digital campaigns.",
         "Leo has already built supplementary tools (see the hub project). Build around them, not over them."
       ]
+    },
+    {
+      "id": "n-32",
+      "date": "2026-10-15",
+      "title": "Marketing process for campaigns and website changes",
+      "project_id": "cmp",
+      "body": [
+        "Sai Ravula owns paid media. It supports Copart as a whole and could carry targeted messaging to prospective dealers.",
+        "Rama Manyam walked me through Salesforce. Access should be coming.",
+        "Campaigns: I give the Marketing team a brief, an outline and an email list. Marketing divides it into copy, creative design and so on, then sends it out.",
+        "Website changes work the same way. Sent the website briefs and HTML to Marketing and Tech. Manny Ortiz (Senior Marketing Specialist) is my contact and meets his team Monday Oct 19 to see which changes they can implement.",
+        "After the Copilot Champions meeting, went deeper on Copilot agents and workflows to help the Copart Dealer Services team use Copilot (n-28)."
+      ]
     }
   ],
   "reports": [
@@ -3798,6 +3894,31 @@
       ],
       "asks": [
         "Point me to who can approve using Copart sales data in a field tool (Route Tracker Price Check)"
+      ]
+    },
+    {
+      "week_ending": "2026-10-15",
+      "headline": "The Lead Tracker is live and talking to the Route Tracker, meeting follow-up is automated, and I mapped how Marketing runs campaigns and website changes.",
+      "wins": [
+        "Built the Lead Tracker (formerly the US dealer map) and connected it to the Route Tracker both ways: leads build routes, and what happens on the route feeds back into the lead.",
+        "Reps claim leads with a code, and an admin view keeps any team from getting more leads than it can work. Dealer profiles build as reps log touches and notes.",
+        "Updated the Route Tracker to work with the Lead Tracker.",
+        "Built an automated meeting report: transcripts turn into email drafts and meeting invites, and everything goes into a knowledge base.",
+        "Went deeper on Copilot agents and workflows after the Copilot Champions meeting, to help the team use Copilot.",
+        "Met Marketing: Sai Ravula owns paid media, which we could use for targeted messaging to prospective dealers, and Rama Manyam walked me through Salesforce (access coming). For campaigns, I give Marketing a brief, outline and email list, and they handle copy, creative and the send.",
+        "Sent the website briefs and HTML to Marketing and Tech. Manny Ortiz is my contact for website changes and meets his team Monday to see which ones they can make.",
+        "Drafted a survey for the whole team on how they use AI today and Leo's tools."
+      ],
+      "next": [
+        "Learn how the team tracks calls and outreach to prospective dealers today, and tie it into the Lead Tracker",
+        "Build out the Lead Tracker once the processes are clear",
+        "Hear back from Manny on which website changes the team can make",
+        "Turn the meeting knowledge base into a Teams chat for updates, pre-call briefs and follow-ups",
+        "Get into Salesforce",
+        "Send the AI survey once it is approved"
+      ],
+      "asks": [
+        "Approve the AI and tools survey for the team, or tell me who should"
       ]
     }
   ]

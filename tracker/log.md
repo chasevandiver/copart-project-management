@@ -2,6 +2,18 @@
 
 Newest entry first.
 
+## 2026-10-15 (week recap)
+- Source: Chase's recap of the week (Lead Tracker, Route Tracker link, meeting report, Marketing meetings, website briefs, AI survey)
+- Changed: udm-02, udm-04, udm-05 -> Done (Lead Tracker built, claim codes and admin view, connected to the Route Tracker both ways); udm-06 Next -> In Progress (dealer profiles build from touches and notes)
+- Changed: audit-12 and mkt-12 -> Done (website briefs and HTML sent to Marketing and Tech); cmp-01 Next -> Waiting (Salesforce walkthrough done, access coming)
+- Added: udm-07 "Learn how the team tracks calls and outreach to prospective dealers, and tie it into the Lead Tracker" (Me, In Progress, due 2026-10-15)
+- Added: agents-04 "Turn the meeting knowledge base into a Teams chat for updates, pre-call briefs and follow-ups" (Me), agents-05 "Send the AI use survey to the Copart Dealer Services team" (Me, Waiting on approval)
+- Answered: q-05 Sai Ravula owns paid media. Added q-25 for Sai (paid media for prospective dealers, budget)
+- Waiting on: added w-12 Salesforce access (Rama Manyam), w-13 which website changes the team can make (Manny Ortiz, meets his team Oct 19)
+- People: added Manny Ortiz (Senior Marketing Specialist, website changes); Sai and Rama notes
+- Added: n-32 "Marketing process for campaigns and website changes"; built items on udm, rt and agents; rt-50 and pa-02 notes; cmp summary has the campaign process
+- Added: weekly report for 2026-10-15
+
 ## 2026-10-13 (agent inputs and build limits)
 - Source: Chase on what the agents can be built with, and asked to track the hours saved and leads and meetings inputs
 - Added: agents-03 "Gather the hours saved and leads and meetings inputs for the agent list" (Me, high)
