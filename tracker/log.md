@@ -2,6 +2,14 @@
 
 Newest entry first.
 
+## 2026-10-15 (win-back added to the plan)
+- Source: Chase asked to add the win-back campaign to the marketing plan and the tracker
+- Added: project wb "Inactive seller win-back" (Campaigns, Next), under g-03; g-03 summary now includes dealers who have gone quiet
+- Added: wb-01 "Bring the win-back plan to Ken" (Me, due 2026-10-16) through wb-10 "Send Ken the 60-day win-back readout" (Me, due 2027-01-04)
+- Added: q-26 for Ken Rion (win-back first, inactive rule, follow-up owner, holdout), q-27 for Kyle Cochran (send logs and unsubscribes, Creative lead time)
+- Changed: mkt-11 due 2026-11-03 -> 2026-11-16; rt-58 Backlog -> Next (template spec written); mkt-09 and mkt notes
+- Added: n-33 "Inactive seller win-back proposed as the first campaign"
+
 ## 2026-10-15 (first campaign plan)
 - Source: Chase asked to add the win-back campaign plan to the weekly update
 - Changed: 2026-10-15 weekly report: added a win, a next item and an ask for Ken on the inactive seller win-back plan (plan doc is in Claude Docs, private until shared)

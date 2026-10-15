@@ -43,9 +43,10 @@
       "id": "g-03",
       "category": "Campaigns",
       "title": "Win prospective dealers through campaigns",
-      "summary": "Run campaigns that reach dealers who don't work with Copart yet, reviewed by Kyle, and measured by leads and meetings booked.",
+      "summary": "Run campaigns that reach dealers who don't work with Copart yet, or who have gone quiet, reviewed by Kyle, and measured by leads, meetings booked and sellers won back.",
       "status": "Next",
       "project_ids": [
+        "wb",
         "cmp",
         "pdo",
         "cceib",
@@ -53,7 +54,7 @@
         "mkt"
       ],
       "created": "2026-10-08",
-      "updated": "2026-10-12"
+      "updated": "2026-10-15"
     }
   ],
   "projects": [
@@ -357,6 +358,40 @@
       ]
     },
     {
+      "id": "wb",
+      "name": "Inactive seller win-back",
+      "category": "Campaigns",
+      "status": "Next",
+      "summary": "Proposed first campaign, pending Ken: win back Copart Dealer Services sellers who have gone quiet. Sold at least [2] units in the [24] months before going quiet, nothing in the last [120] days. Marketing sends three plain-text emails in the rep's name (Nov 3, 10, 17); reps call tier A (top [50] by past volume) and follow up with the same Kyle-approved copy from the Lead Tracker. Measured by sellers won back: accounts that send a car within 60 days of the first email. Newly licensed prospects follow about two weeks later. The list comes from Salesforce and stays in the work setup.",
+      "built": [
+        "Campaign plan doc (Oct 15): why inactive first, audience and tiers, sequence, message and offer, who does what, how rep emails fit, measures and holdout, dates to first send, wave 2, risks, asks for Ken",
+        "Lead Tracker outreach template spec for Work Claude (docs/lead-tracker-templates-spec.md in Copart Dealer Digital, Oct 15)",
+        "Proposed first campaign section in the marketing plan doc, docs/audit/09-marketing-plan.md and the Digital audit site (Oct 15)"
+      ],
+      "links": [
+        {
+          "label": "First campaign: inactive seller win-back",
+          "url": "https://claude.ai/code/artifact/6d4514a3-885d-4dda-bbd5-90a6f1b48f6e"
+        },
+        {
+          "label": "Lead Tracker template spec",
+          "where": "Copart Dealer Digital repo, docs/lead-tracker-templates-spec.md"
+        }
+      ],
+      "blockers": [],
+      "next_steps": [
+        "Bring the plan to Ken (wb-01, q-26)",
+        "Pull the inactive list once Salesforce access lands (wb-02, w-12)",
+        "Send Kyle the brief and check the member calendar (wb-03)"
+      ],
+      "dependencies": [
+        "Ken's yes on audience, offer and follow-up owners (q-26, q-14)",
+        "Salesforce access (w-12)",
+        "Kyle Cochran reviews the copy and finds a calendar slot",
+        "Lead Tracker outreach templates (rt-58) for rep follow-up"
+      ]
+    },
+    {
       "id": "pdo",
       "name": "Prospective dealer outreach",
       "category": "Campaigns",
@@ -423,7 +458,8 @@
       "built": [
         "Marketing plan doc (Oct 12): findings, goals, audience and message, ranked gaps, opportunities, the 90-day plan with targets, owners, due dates, a weekly scorecard and fallbacks for each gate, tools and access needed, risks and questions for Ken",
         "Orion drafts tab (Oct 12): six SEO page briefs, a CDS page remake draft, an aged inventory guide, two rep LinkedIn posts, the rep-in-town text and a 3-email new license welcome, with unconfirmed claims cut",
-        "Marketing plan page on the Digital audit site (findings only, no Copart analytics numbers)"
+        "Marketing plan page on the Digital audit site (findings only, no Copart analytics numbers)",
+        "Proposed first campaign section (Oct 15): inactive seller win-back, pending Ken, in the plan doc, docs/audit/09-marketing-plan.md and the Digital audit site. New license welcome moved to Nov 16 (mkt-11)"
       ],
       "links": [
         {
@@ -1857,6 +1893,126 @@
       "updated": "2026-10-12"
     },
     {
+      "id": "wb-01",
+      "project_id": "wb",
+      "title": "Bring the win-back plan to Ken",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-16",
+      "priority": "high",
+      "notes": "Decisions in q-26 and q-14. Plan doc: First campaign: inactive seller win-back.",
+      "created": "2026-10-15",
+      "updated": "2026-10-15"
+    },
+    {
+      "id": "wb-02",
+      "project_id": "wb",
+      "title": "Pull the inactive seller list from Salesforce",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-21",
+      "priority": "high",
+      "notes": "Needs Salesforce access (w-12). The list stays in the work setup. Same pull that keeps prospect lists clean (udm-01).",
+      "created": "2026-10-15",
+      "updated": "2026-10-15"
+    },
+    {
+      "id": "wb-03",
+      "project_id": "wb",
+      "title": "Send Kyle the win-back brief and outline, and check the member campaign calendar",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-23",
+      "priority": "high",
+      "notes": "Ties to pdo-01 and cmp-03. Ask whether plain-text emails in the rep's name skip the 2-week Creative lead time (q-27).",
+      "created": "2026-10-15",
+      "updated": "2026-10-15"
+    },
+    {
+      "id": "wb-04",
+      "project_id": "wb",
+      "title": "Confirm the offer and one or two real changes since these dealers left",
+      "status": "Next",
+      "owner": "Ken",
+      "due": "2026-10-23",
+      "priority": "normal",
+      "notes": "Offer is q-14. If nothing has changed, the emails leave that line out.",
+      "created": "2026-10-15",
+      "updated": "2026-10-15"
+    },
+    {
+      "id": "wb-05",
+      "project_id": "wb",
+      "title": "Finalize the win-back list: exclusions, tiers, tier A assigned in the Lead Tracker",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-27",
+      "priority": "high",
+      "notes": "Leave off disputes, unpaid balances, dealers a rep is working, lapsed licenses and opt-outs. Ken approves assignments (d-udm-05).",
+      "created": "2026-10-15",
+      "updated": "2026-10-15"
+    },
+    {
+      "id": "wb-06",
+      "project_id": "wb",
+      "title": "Send Marketing the brief, outline and list; set up the campaign tag in Salesforce",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-27",
+      "priority": "high",
+      "notes": "Process from n-32. Campaign tag with Rama Manyam.",
+      "created": "2026-10-15",
+      "updated": "2026-10-15"
+    },
+    {
+      "id": "wb-07",
+      "project_id": "wb",
+      "title": "Run A6 win-back drafts for tier A for rep review",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-30",
+      "priority": "normal",
+      "notes": "Work Claude, Copart data stays in the work setup. Every draft reviewed by the rep.",
+      "created": "2026-10-15",
+      "updated": "2026-10-15"
+    },
+    {
+      "id": "wb-08",
+      "project_id": "wb",
+      "title": "Confirm win-back email 1 went out and tier A calls are logged",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-11-03",
+      "priority": "high",
+      "notes": "Marketing sends Nov 3, 10 and 17. Tier A calls Nov 4 to 6. If Marketing needs more lead time, the first send moves to Nov 10.",
+      "created": "2026-10-15",
+      "updated": "2026-10-15"
+    },
+    {
+      "id": "wb-09",
+      "project_id": "wb",
+      "title": "Review the win-back with Ken: replies, meetings, first cars, why they left",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-11-24",
+      "priority": "normal",
+      "notes": "Same meeting as the marketing plan gate review (mkt-22).",
+      "created": "2026-10-15",
+      "updated": "2026-10-15"
+    },
+    {
+      "id": "wb-10",
+      "project_id": "wb",
+      "title": "Send Ken the 60-day win-back readout: sellers won back",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2027-01-04",
+      "priority": "normal",
+      "notes": "Compare with the holdout group if Ken approved one.",
+      "created": "2026-10-15",
+      "updated": "2026-10-15"
+    },
+    {
       "id": "rt-44",
       "project_id": "rt",
       "title": "Build a Pre-visit tab: touch log, status and route from confirmations",
@@ -2060,13 +2216,13 @@
       "id": "rt-58",
       "project_id": "rt",
       "title": "Draft Phase 6 outreach templates: independent and franchise call and email wording",
-      "status": "Backlog",
+      "status": "Next",
       "owner": "Work Claude",
       "due": null,
       "priority": "normal",
-      "notes": "Work Claude's pick for the next phase (d-rt-12). Drafts come to Chase for approval before anything is built. Tie in with the pre-visit campaign drafts (pdo).",
+      "notes": "Work Claude's pick for the next phase (d-rt-12). Drafts come to Chase for approval before anything is built. Tie in with the pre-visit campaign drafts (pdo). Oct 15: build spec written (docs/lead-tracker-templates-spec.md in Copart Dealer Digital). Templates live on the Lead Tracker by Copart status and stage; the Route Tracker reads them. Copy comes from Marketing and Kyle; Work Claude builds the structure.",
       "created": "2026-10-09",
-      "updated": "2026-10-09"
+      "updated": "2026-10-15"
     },
     {
       "id": "rt-59",
@@ -2223,9 +2379,9 @@
       "owner": "Keon",
       "due": "2026-11-07",
       "priority": "high",
-      "notes": "Nov 3 to 7. Pre-visit calls with the Pre-Visit Campaign Drafts once Ken and Kyle say go. If legal hasn't answered, calls to business lines and visits only.",
+      "notes": "Nov 3 to 7. Pre-visit calls with the Pre-Visit Campaign Drafts once Ken and Kyle say go. If legal hasn't answered, calls to business lines and visits only. Oct 15: tier A win-back dealers on the pilot rep's route can be visited the same week (wb).",
       "created": "2026-10-12",
-      "updated": "2026-10-12"
+      "updated": "2026-10-15"
     },
     {
       "id": "mkt-10",
@@ -2245,11 +2401,11 @@
       "title": "Start the new license welcome: Monday list, rep call within 7 days, 3-email sequence",
       "status": "Backlog",
       "owner": "Me",
-      "due": "2026-11-03",
+      "due": "2026-11-16",
       "priority": "high",
-      "notes": "Business addresses only. Email drafts are in the plan's Orion drafts tab. Texas has the weekly feed, so start there.",
+      "notes": "Business addresses only. Email drafts are in the plan's Orion drafts tab. Texas has the weekly feed, so start there. Oct 15: moved from Nov 3 to Nov 16 so the inactive seller win-back (wb) goes first, pending Ken.",
       "created": "2026-10-12",
-      "updated": "2026-10-12"
+      "updated": "2026-10-15"
     },
     {
       "id": "mkt-12",
@@ -2927,6 +3083,26 @@
       "project_id": "cmp",
       "status": "open",
       "answer": null,
+      "raised": "2026-10-15",
+      "answered": null
+    },
+    {
+      "id": "q-26",
+      "question": "Win-back first, prospects second? What counts as inactive (quiet days and past volume), who follows up (field, office or both), and is a small holdout group OK to prove the lift?",
+      "ask": "Ken Rion",
+      "project_id": "wb",
+      "status": "open",
+      "answer": "",
+      "raised": "2026-10-15",
+      "answered": null
+    },
+    {
+      "id": "q-27",
+      "question": "For the win-back: how does Marketing share send logs and unsubscribes back to us, and do plain-text emails in the rep's name still need the 2-week Creative lead time?",
+      "ask": "Kyle Cochran",
+      "project_id": "wb",
+      "status": "open",
+      "answer": "",
       "raised": "2026-10-15",
       "answered": null
     }
@@ -3888,6 +4064,18 @@
         "Campaigns: I give the Marketing team a brief, an outline and an email list. Marketing divides it into copy, creative design and so on, then sends it out.",
         "Website changes work the same way. Sent the website briefs and HTML to Marketing and Tech. Manny Ortiz (Senior Marketing Specialist) is my contact and meets his team Monday Oct 19 to see which changes they can implement.",
         "After the Copilot Champions meeting, went deeper on Copilot agents and workflows to help the Copart Dealer Services team use Copilot (n-28)."
+      ]
+    },
+    {
+      "id": "n-33",
+      "date": "2026-10-15",
+      "title": "Inactive seller win-back proposed as the first campaign",
+      "project_id": "wb",
+      "body": [
+        "Why inactive first: they know how selling with us works, the path to a first car is shortest, results show in Salesforce, and the email rides a process Marketing already runs for members. Prospects still wait on legal (cdd-02) and the prospects-only match (udm-01).",
+        "One campaign, two lanes: Marketing sends the scheduled emails in the rep's name; reps follow up with the same Kyle-approved copy as templates in the Lead Tracker (rt-58).",
+        "Measure: sellers won back, accounts that send a car within 60 days of the first email. Optional holdout in tier B.",
+        "Plan doc: https://claude.ai/code/artifact/6d4514a3-885d-4dda-bbd5-90a6f1b48f6e. Template spec: docs/lead-tracker-templates-spec.md in Copart Dealer Digital."
       ]
     }
   ],
