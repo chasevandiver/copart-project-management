@@ -2,6 +2,14 @@
 
 Newest entry first.
 
+## 2026-10-15 (go-live details and team feedback)
+- Source: Chase on the Route Tracker go-live, Brenda, Leo and the plan for the next week
+- Changed: rt-55, rt-36, rt-53 -> Done (backed up; VPN needed to send, stores on the phone offline; tested); hub-04 -> Done (met Leo)
+- Changed: hub-03 Next -> Waiting (no reply from Brenda, commission setup not live)
+- Resolved: d-rt-10 Layout C (dealer card); d-rt-11 Yes, the tax ID box is live
+- Added: gen-29 "Get feedback from the teams on the Route Tracker, Lead Tracker and meeting report" (Me, In Progress)
+- Waiting on: w-07 co-collaborator setup with Leo; w-09 and w-02 notes
+
 ## 2026-10-15 (Route Tracker live)
 - Source: Chase confirmed the Route Tracker is live, the web briefs went with an HTML mockup, and Plaud could feed the meeting report
 - Changed: rt-57 Backlog -> Done (v.Next live); rt summary and next steps

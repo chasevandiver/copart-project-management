@@ -61,7 +61,7 @@
       "id": "rt",
       "name": "Route Tracker",
       "status": "In Progress",
-      "summary": "Chase's project now (it started as Leo's Route Tracker). Rebuilt with a real server side so data is captured securely. Lives on my Coolify in the app/ folder. Walkthrough fixes live Oct 6; live field test with Ken and Keon in Indianapolis the week of Oct 5. Oct 9: Route Tracker v.Next (Phases 1a, 1b, 2, 3 and 5) built on staging only (route-tracker-staging, its own repo). Live is untouched until Chase tests staging and says \"deploy to live\". Oct 15: v.Next is live and connected to the Lead Tracker.",
+      "summary": "Chase's project now (it started as Leo's Route Tracker). Rebuilt with a real server side so data is captured securely. Lives on my Coolify in the app/ folder. Walkthrough fixes live Oct 6; live field test with Ken and Keon in Indianapolis the week of Oct 5. Oct 9: Route Tracker v.Next (Phases 1a, 1b, 2, 3 and 5) built on staging only (route-tracker-staging, its own repo). Live is untouched until Chase tests staging and says \"deploy to live\". Oct 15: v.Next is live and connected to the Lead Tracker. Live with layout C and the tax ID box. Reps need the VPN to send; offline, the app stores on the phone until they reconnect.",
       "built": [
         "Name sign-in with team passcode; admin, rep and viewer roles enforced by the server",
         "One shared database so notes and visits sync across phones",
@@ -107,7 +107,7 @@
         "Phase 4 lead hub needs the real marketing files and the Copart members list (rt-59, w-08). The CSVs in Downloads are not those"
       ],
       "next_steps": [
-        "Test staging on my phone: pick the visit layout (d-rt-10) and decide on the tax ID box (d-rt-11) (rt-53)",
+        "Get rep feedback on the live app (gen-29)",
         "Pick the next phase (d-rt-12). Work Claude suggests Phase 6 outreach templates (rt-58), since Phase 4 is blocked",
         "Send Work Claude Brenda's seller code request email(s) and her list of Copart Dealer Services steps (rt-56)",
         "Pre-visit, at-dealer and follow-up upgrade on Work Claude (rt-44), plus Keon's asks (rt-45 to rt-50)",
@@ -240,7 +240,7 @@
         "Need collaborator access on Leo's repos from the Coolify admin to add my tools (w-07)"
       ],
       "next_steps": [
-        "Get collaborator access on Leo's repos (w-07)",
+        "Get co-collaborator access on Leo's repos (w-07, met Leo Oct 15)",
         "Add my tools to Leo's hub: Copart Dealer Digital, US Dealer Map, PM Board, Route Tracker"
       ],
       "dependencies": []
@@ -1363,13 +1363,14 @@
       "id": "rt-36",
       "project_id": "rt",
       "title": "Confirm reps can reach the app on cell data without VPN",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Check against the network/VPN-only access from IT (w-01). Oct 1: the app URL only resolves on the Copart VPN (Zapier got ENOTFOUND), so reps on cell data likely need the VPN.",
+      "notes": "Check against the network/VPN-only access from IT (w-01). Oct 1: the app URL only resolves on the Copart VPN (Zapier got ENOTFOUND), so reps on cell data likely need the VPN. Oct 15: reps need the VPN to send. Without it the app still works and stores everything on the phone until they are back on the VPN.",
       "created": "2026-10-01",
-      "updated": "2026-10-01"
+      "updated": "2026-10-15",
+      "completed": "2026-10-15"
     },
     {
       "id": "rt-37",
@@ -1884,13 +1885,13 @@
       "id": "hub-03",
       "project_id": "hub",
       "title": "Build a tool with Brenda to track the new commission setup",
-      "status": "Next",
+      "status": "Waiting",
       "owner": "Me",
       "due": "2026-10-12",
       "priority": "high",
-      "notes": "Ken, Oct 9: get with Brenda to build a tool that tracks the new commission setup, which launches the week of Oct 12. Sent Brenda a Teams message Oct 9 (w-09); follow up. Commission data stays on the work setup, never in this repo. Follow up with Brenda Monday Oct 12.",
+      "notes": "Ken, Oct 9: get with Brenda to build a tool that tracks the new commission setup, which launches the week of Oct 12. Sent Brenda a Teams message Oct 9 (w-09); follow up. Commission data stays on the work setup, never in this repo. Follow up with Brenda Monday Oct 12. Oct 15: no reply from Brenda yet (w-09). On hold while the commission setup is not live.",
       "created": "2026-10-09",
-      "updated": "2026-10-09"
+      "updated": "2026-10-15"
     },
     {
       "id": "rt-45",
@@ -1996,13 +1997,14 @@
       "id": "rt-53",
       "project_id": "rt",
       "title": "Test the staging app on my phone",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Route Tracker v.Next on route-tracker-staging (n-25). Report which visit layout wins (d-rt-10) and whether the tax ID box on the dealer card ships live (d-rt-11). Staging uses real Fort Worth and Grand Prairie dealer names, so results aren't a field test.",
+      "notes": "Route Tracker v.Next on route-tracker-staging (n-25). Report which visit layout wins (d-rt-10) and whether the tax ID box on the dealer card ships live (d-rt-11). Staging uses real Fort Worth and Grand Prairie dealer names, so results aren't a field test. Oct 15: tested; v.Next is live with layout C (d-rt-10).",
       "created": "2026-10-09",
-      "updated": "2026-10-09"
+      "updated": "2026-10-15",
+      "completed": "2026-10-15"
     },
     {
       "id": "rt-54",
@@ -2020,13 +2022,14 @@
       "id": "rt-55",
       "project_id": "rt",
       "title": "Back up the live data volume before the v.Next release",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "urgent",
-      "notes": "Must be confirmed before go-live (rt-57). Needs me or the Coolify team; Work Claude's tools can't do it. Backup destination is open with IT (w-04).",
+      "notes": "Must be confirmed before go-live (rt-57). Needs me or the Coolify team; Work Claude's tools can't do it. Backup destination is open with IT (w-04). Oct 15: live data backed up before the v.Next release.",
       "created": "2026-10-09",
-      "updated": "2026-10-09"
+      "updated": "2026-10-15",
+      "completed": "2026-10-15"
     },
     {
       "id": "rt-56",
@@ -2494,13 +2497,14 @@
       "id": "hub-04",
       "project_id": "hub",
       "title": "Meet Leo to put every tool on one dealer record and one lead list",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Oct 13: so the Lead Tracker, Route Tracker and Leo's hub tools read the same dealer and the agent ideas fit together. Bring the agent map (n-30).",
+      "notes": "Oct 13: so the Lead Tracker, Route Tracker and Leo's hub tools read the same dealer and the agent ideas fit together. Bring the agent map (n-30). Oct 15: met Leo about connecting all the tools. Waiting to hear if we can be co-collaborators on his repos (w-07).",
       "created": "2026-10-13",
-      "updated": "2026-10-13"
+      "updated": "2026-10-15",
+      "completed": "2026-10-15"
     },
     {
       "id": "agents-03",
@@ -2549,6 +2553,18 @@
       "notes": "Oct 15: survey drafted on how the team uses AI today and Leo's tools. Send once approved. Answers also feed the agent ranking (agents-02, agents-03).",
       "created": "2026-10-15",
       "updated": "2026-10-15"
+    },
+    {
+      "id": "gen-29",
+      "project_id": "general",
+      "title": "Get feedback from the teams on the Route Tracker, Lead Tracker and meeting report",
+      "status": "In Progress",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Oct 15: plan for today, tomorrow and next week. Use it to tighten the details on each project (udm-07 covers how calls and outreach are tracked today). Good moment to note who is using each tool and how often, for the update to Ken.",
+      "created": "2026-10-15",
+      "updated": "2026-10-15"
     }
   ],
   "waiting_on": [
@@ -2569,7 +2585,7 @@
       "project_id": "rt",
       "since": "2026-09-29",
       "priority": "high",
-      "notes": "Priority because passcodes are coming out. Oct 6: holding until Ken's field week ends. No automation changes while the team is in the field. Oct 9: staging puts the Federal Tax ID on the visit screen, team emails and CSV, and keeps it out of Zapier (d-rt-11)."
+      "notes": "Priority because passcodes are coming out. Oct 6: holding until Ken's field week ends. No automation changes while the team is in the field. Oct 9: staging puts the Federal Tax ID on the visit screen, team emails and CSV, and keeps it out of Zapier (d-rt-11). Oct 15: the tax ID box went live with v.Next (d-rt-11). Mark this received once IT's OK is on record."
     },
     {
       "id": "w-03",
@@ -2616,7 +2632,7 @@
       "project_id": "hub",
       "since": "2026-10-06",
       "priority": "normal",
-      "notes": ""
+      "notes": "Oct 15: met Leo about connecting all the tools. Waiting on the co-collaborator setup."
     },
     {
       "id": "w-08",
@@ -2634,7 +2650,7 @@
       "project_id": "hub",
       "since": "2026-10-09",
       "priority": "high",
-      "notes": "Teams message sent Oct 9. Commission setup launches the week of Oct 12 (hub-03)."
+      "notes": "Teams message sent Oct 9. Commission setup launches the week of Oct 12 (hub-03). Oct 15: no reply yet. Holding until the commission setup is live."
     },
     {
       "id": "w-10",
@@ -3137,9 +3153,9 @@
         "C (dealer card)"
       ],
       "raised": "2026-10-09",
-      "status": "open",
-      "answer": null,
-      "resolved": null
+      "status": "resolved",
+      "answer": "C (dealer card)",
+      "resolved": "2026-10-15"
     },
     {
       "id": "d-rt-11",
@@ -3150,9 +3166,9 @@
         "No, keep it on staging until IT OKs Tax IDs (w-02)"
       ],
       "raised": "2026-10-09",
-      "status": "open",
-      "answer": null,
-      "resolved": null
+      "status": "resolved",
+      "answer": "Yes, ship it. The tax ID box is live.",
+      "resolved": "2026-10-15"
     },
     {
       "id": "d-rt-12",
