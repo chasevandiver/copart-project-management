@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-10-15 (first campaign plan)
+- Source: Chase asked to add the win-back campaign plan to the weekly update
+- Changed: 2026-10-15 weekly report: added a win, a next item and an ask for Ken on the inactive seller win-back plan (plan doc is in Claude Docs, private until shared)
+
 ## 2026-10-15 (go-live details and team feedback)
 - Source: Chase on the Route Tracker go-live, Brenda, Leo and the plan for the next week
 - Changed: rt-55, rt-36, rt-53 -> Done (backed up; VPN needed to send, stores on the phone offline; tested); hub-04 -> Done (met Leo)
