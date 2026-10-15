@@ -2,7 +2,7 @@
   "meta": {
     "owner": "Chase",
     "role": "Digital Engagement Manager, supporting Ken Rion (SVP of Dealer Sales)",
-    "last_updated": "2026-10-13"
+    "last_updated": "2026-10-15"
   },
   "categories": [
     "AI Tools",
@@ -2444,13 +2444,14 @@
       "id": "gen-28",
       "project_id": "general",
       "title": "Reach out to Lauren about Tech team webpage updates",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-14",
       "priority": "urgent",
       "notes": "",
       "created": "2026-10-13",
-      "updated": "2026-10-13"
+      "updated": "2026-10-15",
+      "completed": "2026-10-15"
     },
     {
       "id": "agents-01",
