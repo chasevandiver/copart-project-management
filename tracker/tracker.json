@@ -1725,13 +1725,14 @@
       "id": "gen-26",
       "project_id": "general",
       "title": "Get a spreadsheet of all copart dealers and non copart dealers for each state",
-      "status": "Waiting",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "urgent",
       "notes": "Oct 6: coming from the marketing sync Wed Oct 7 (afternoon). Feeds udm-01 and cdd-03. Oct 9: still waiting on the Copart member reports from several people (w-08).",
       "created": "2026-10-05",
-      "updated": "2026-10-09"
+      "updated": "2026-10-15",
+      "completed": "2026-10-15"
     },
     {
       "id": "udm-02",
