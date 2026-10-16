@@ -3184,9 +3184,9 @@
         "No, keep region books"
       ],
       "raised": "2026-09-29",
-      "status": "open",
-      "answer": null,
-      "resolved": null
+      "status": "resolved",
+      "answer": "Yes, one book per rep",
+      "resolved": "2026-10-16"
     },
     {
       "id": "d-cdd-04",
