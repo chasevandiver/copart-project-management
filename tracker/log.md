@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-16 (weekly update held)
+- Source: Chase: weekly update waits for Ken to return; Omni Analytics owner name comes at the next Copilot champion meeting
+- Changed: gen-22 due 2026-10-16 -> 2026-10-20 (Ken out)
+- Waiting on: w-11 note (owner name at the next Copilot champion meeting)
+
 ## 2026-10-16 (Oct 16 check-in)
 - Source: Chase's check-in: Ken out since Tuesday afternoon, Salesforce access and the Copart dealer lists arrived, Lead Tracker updated for a pilot team, AEO run on hold until the webpage updates land
 - Changed: udm-07 In Progress -> Done (Lead Tracker matches how the team tracks calls and outreach; pilot team testing it); cmp-01 Waiting -> Done (Salesforce access)
