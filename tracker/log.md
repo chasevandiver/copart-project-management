@@ -2,6 +2,17 @@
 
 Newest entry first.
 
+## 2026-10-16 (workflow restructure)
+- Source: Chase's whiteboard photo of how everything fits together, with the promotion leads, DJ, Ben, slump and top sellers lists left off on request
+- Added: docs/sales-workflow.md, the four blocks every project sits in
+- Changed: g-01 renamed "Lead Tracker at the center, Route Tracker and agents around it" (In Progress; projects udm, rt, agents, cdd, hub, pm); g-02 renamed "Get found: AEO, SEO and the Copart Dealer Services page" (In Progress); g-03 renamed "Go get 'em and convert 'em: campaigns to prospective and inactive dealers" (In Progress)
+- Added: g-04 "Copilot and Power Automate tools for the team" (AI Tools, In Progress; projects cdsai, mm, pa), separate from the prospective and inactive approach
+- Added: project cdsai "Copart Dealer Services AI" (Next) with cdsai-01 "Scope the Teams agent" (Me) and ideas cdsai-02 (track the full process), cdsai-03 (manager view)
+- Added: project mm "Meeting management" (In Progress; built: transcript reader, auto draft email, auto schedule meeting, knowledge base, PLAUD autoflow to email) with mm-01 memory bank, mm-02 chief of staff agent, mm-03 PLAUD folder in Outlook (all Me)
+- Changed: agents-04 moved from agents to mm (id kept); agents summary, built and next steps now name the four board agents A1 to A4; the meeting report built line moved to mm
+- Changed: udm and rt summaries describe their place in the flow; pa summary points at mm
+- Added: n-35 "Sales workflow, from the whiteboard"
+
 ## 2026-10-16 (weekly update held)
 - Source: Chase: weekly update waits for Ken to return; Omni Analytics owner name comes at the next Copilot champion meeting
 - Changed: gen-22 due 2026-10-16 -> 2026-10-20 (Ken out)

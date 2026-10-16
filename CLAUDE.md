@@ -8,6 +8,10 @@ Project tracker for Chase, Digital Engagement Manager at Copart, supporting Ken 
 - Tracker updates commit straight to `main`. **Always `git pull origin main` before editing tracker.json**, because the board may have committed since your last pull.
 - `npm run validate` checks tracker.json. Run it before every commit. It also runs before every build.
 
+## Workflow
+
+`docs/sales-workflow.md` is how Chase places every project: the prospective and inactive approach (get found, go get 'em, convert 'em), the Lead Tracker with CRM at the center with the agents and the Route Tracker around it, and the Copilot and Power Automate tools (Copart Dealer Services AI, meeting management) kept separate. Goals g-01 to g-04 are those blocks. A new project goes under one of them. When Chase sends a new board photo, update the doc and the goals together.
+
 ## Writing style
 
 Plain and direct. No em dashes (use a period, comma, colon or parentheses). Short task titles that start with a verb where possible.
@@ -98,6 +102,7 @@ Sidebar views (`app/(app)/`):
 - Today (`/`): my overdue, due today, coming up this week, urgent or in progress
 - Upcoming (`/upcoming`): my dated to-dos for 14 days, then undated by project
 - Weekly update (`/report?week=`): the Thursday update for Ken. Week runs Friday to Thursday. Chase's highlights, next week and asks (Edit, stored in `reports[]`), plus counts, project cards, decisions and open questions for Ken built from the tracker. Copy text and Print or PDF. Built in `lib/report.ts`
+- Workflow (`/workflow`): the sales workflow web from `docs/sales-workflow.md`, drawn by `lib/workflow.ts` with each box tied to its projects. Click a box for the project summary, next steps and open to-dos; Present walks it one step at a time (arrow keys, Esc ends). `node scripts/workflow-page.mjs out.html` builds the standalone copy for sharing outside the board. Change the nodes, edges and presenter steps in `lib/workflow.ts`; both pages follow
 - Ask, Waiting on, Decide, Delegated (`/ask`, `/waiting`, `/decide`, `/delegated`): open loops. Delegated is open tasks owned by anyone but `Me`; they stay out of Today and Upcoming.
 - Ideas, Notes, Logbook (`/ideas`, `/notes`, `/logbook`)
 - People (`/people/[slug]`, slug from the name, e.g. `ken-rion`): one page per person in `people`: questions to ask them, waiting on them, what they own, to-dos and notes that mention their first name, then answered and done. `/people` lists everyone. Add a person from New (Person) or the Add person button; edit (including rename and contact) with Edit on their page. A rename moves their tasks, questions and waiting-on items to the new name.
