@@ -13,38 +13,39 @@
     {
       "id": "g-01",
       "category": "AI Tools",
-      "title": "Build a Copart Dealer Services Tools and Agents hub",
-      "summary": "One cohesive spot for every tool and agent that Leo, I and anyone else build, with redirects to each tool.",
-      "status": "Backlog",
+      "title": "Lead Tracker at the center, Route Tracker and agents around it",
+      "summary": "The center of the flow. The Lead Tracker with CRM supplies dealer profiles by state and Copart status and assigns leads to teams: field reps by ZIP and city for in-person visits through the Route Tracker, office sales for all leads with follow-up. The agents keep it full and loop with each other. Campaigns take their audience from it and log recommended touch dates and tracked responses back to the dealer profile. The Route Tracker and the Lead Tracker talk to each other. The hub is where every tool lives.",
+      "status": "In Progress",
       "project_ids": [
-        "hub",
+        "udm",
         "rt",
+        "agents",
         "cdd",
-        "pm",
-        "agents"
+        "hub",
+        "pm"
       ],
       "created": "2026-09-29",
-      "updated": "2026-10-13"
+      "updated": "2026-10-16"
     },
     {
       "id": "g-02",
       "category": "Marketing Efforts",
-      "title": "Increase Copart Dealer Services digital visibility",
-      "summary": "Know what Copart Dealer Services does digitally today and put effort where it raises visibility. Ken's target (Oct 9): grow the Copart Dealer Services page from about 6K monthly visitors to 100K.",
-      "status": "Backlog",
+      "title": "Get found: AEO, SEO and the Copart Dealer Services page",
+      "summary": "First branch of the prospective and inactive approach: a dealer who searches or asks an AI finds Copart Dealer Services. AEO and SEO, webpage changes, and the digital presence audit behind them. Ken's target (Oct 9): grow the Copart Dealer Services page from about 6K monthly visitors to 100K.",
+      "status": "In Progress",
       "project_ids": [
         "audit",
         "mkt"
       ],
       "created": "2026-09-29",
-      "updated": "2026-10-12"
+      "updated": "2026-10-16"
     },
     {
       "id": "g-03",
       "category": "Campaigns",
-      "title": "Win prospective dealers through campaigns",
-      "summary": "Run campaigns that reach dealers who don't work with Copart yet, or who have gone quiet, reviewed by Kyle, and measured by leads, meetings booked and sellers won back.",
-      "status": "Next",
+      "title": "Go get 'em and convert 'em: campaigns to prospective and inactive dealers",
+      "summary": "Second and third branches of the prospective and inactive approach. Go get 'em: digital campaigns split new vs inactive and direct vs indirect (email, call, text, paid ads, SEO and AEO), with the marketing tools and apps behind them. Convert 'em: web forms and the prospective and inactive dealer outreach campaigns turn interest into leads. The audience comes from the Lead Tracker, and every campaign logs recommended touch dates and tracked responses back to the dealer profile. Reviewed by Kyle, measured by leads, meetings booked and sellers won back.",
+      "status": "In Progress",
       "project_ids": [
         "wb",
         "cmp",
@@ -54,7 +55,21 @@
         "mkt"
       ],
       "created": "2026-10-08",
-      "updated": "2026-10-15"
+      "updated": "2026-10-16"
+    },
+    {
+      "id": "g-04",
+      "category": "AI Tools",
+      "title": "Copilot and Power Automate tools for the team",
+      "summary": "Separate from the prospective and inactive approach. Copart Dealer Services AI (a Teams agent for pre-call briefs, updates and follow-up) and meeting management (memory bank, chief of staff agent, PLAUD into Outlook, one automated workflow that connects everything). Built in Copilot Studio and Power Automate.",
+      "status": "In Progress",
+      "project_ids": [
+        "cdsai",
+        "mm",
+        "pa"
+      ],
+      "created": "2026-10-16",
+      "updated": "2026-10-16"
     }
   ],
   "projects": [
@@ -62,7 +77,7 @@
       "id": "rt",
       "name": "Route Tracker",
       "status": "In Progress",
-      "summary": "Chase's project now (it started as Leo's Route Tracker). Rebuilt with a real server side so data is captured securely. Lives on my Coolify in the app/ folder. Walkthrough fixes live Oct 6; live field test with Ken and Keon in Indianapolis the week of Oct 5. Oct 9: Route Tracker v.Next (Phases 1a, 1b, 2, 3 and 5) built on staging only (route-tracker-staging, its own repo). Live is untouched until Chase tests staging and says \"deploy to live\". Oct 15: v.Next is live and connected to the Lead Tracker. Live with layout C and the tax ID box. Reps need the VPN to send; offline, the app stores on the phone until they reconnect.",
+      "summary": "Chase's project now (it started as Leo's Route Tracker). Rebuilt with a real server side so data is captured securely. Lives on my Coolify in the app/ folder. Walkthrough fixes live Oct 6; live field test with Ken and Keon in Indianapolis the week of Oct 5. Oct 9: Route Tracker v.Next (Phases 1a, 1b, 2, 3 and 5) built on staging only (route-tracker-staging, its own repo). Live is untouched until Chase tests staging and says \"deploy to live\". Oct 15: v.Next is live and connected to the Lead Tracker. Live with layout C and the tax ID box. Reps need the VPN to send; offline, the app stores on the phone until they reconnect. Flow on the board (Oct 16): pre-visit (route building, dealer profile, outreach with the exclusive offer email template, team roster), dealer visit (contact, profile fields, assignments), follow-up (handoff, hot, mild or cold, send to team), with results going back to the Lead Tracker CRM. The call script runs on the Route Tracker with the dealer profile.",
       "built": [
         "Name sign-in with team passcode; admin, rep and viewer roles enforced by the server",
         "One shared database so notes and visits sync across phones",
@@ -288,7 +303,7 @@
       "name": "Plaud AI",
       "category": "AI Tools",
       "status": "Next",
-      "summary": "AI notetaking app to be connected with other apps",
+      "summary": "AI notetaking app to be connected with other apps. On the board it is part of meeting management (mm): PLAUD sends email to an Outlook PLAUD folder, and the automated workflow picks it up from there.",
       "built": [],
       "links": [],
       "blockers": [],
@@ -299,7 +314,7 @@
       "name": "Lead Tracker",
       "category": "AI Tools",
       "status": "In Progress",
-      "summary": "The lead list for the whole Copart Dealer Services sales team, office and field, built on Work Claude from the US dealer map. It is the CRM: one record per dealer with sources, Copart status, owner, stage and every touch. Teams get their leads here, and the Route Tracker reads from it and writes back to it. Copart dealer data stays in the work setup.",
+      "summary": "The lead list for the whole Copart Dealer Services sales team, office and field, built on Work Claude from the US dealer map. It is the CRM: one record per dealer with sources, Copart status, owner, stage and every touch. Teams get their leads here, and the Route Tracker reads from it and writes back to it. Copart dealer data stays in the work setup. On the board (Oct 16) it is the center of the flow: it supplies dealer profiles by state and Copart status, assigns leads to teams (field by ZIP and city for in-person visits, office for all leads with follow-up), logs recommended touch dates and tracked responses from campaigns, and talks to the Route Tracker both ways.",
       "built": [
         "Copart Dealer Digital Leads section covers 28 states plus DC (92,492 leads), every state logged on the All states page (Oct 1)",
         "Indiana compared and merged with Leo's lists (Oct 1)",
@@ -488,21 +503,20 @@
       "name": "Agentic Workflow",
       "category": "AI Tools",
       "status": "Next",
-      "summary": "The agents that keep the Lead Tracker full and help the Copart Dealer Services office and field teams work it: lead building, inbound, office sales, field and manager agents. Built through Work Claude, Copilot Studio and Power Automate, connected to Outlook and Microsoft 365. Ranked on hours saved, leads and meetings, ease and risk. Every agent output is a draft a person approves.",
+      "summary": "The agents in the sales flow (board, Oct 16): A1 Dealer profile pulls info from the dealer's site; A2 AEO and dealer listening; A3 pre-call and follow-up drafter; A4 dormant dealer activation. They all loop with each other and feed one agent pipeline into the Lead Tracker, which breaks the dealer map into segments and leads by team. The wider agent map (n-30) covers lead building, inbound, office sales, field and manager agents. Built through Work Claude, Copilot Studio and Power Automate. Ranked on hours saved, leads and meetings, ease and risk. Every agent output is a draft a person approves. The Copilot tools for meetings and the Teams agent are their own projects (mm, cdsai).",
       "built": [
         "First draft agent map (n-30)",
-        "Automated meeting report: meeting transcripts become email drafts and meeting invites, and everything goes into a knowledge base (Oct 15)",
+        "Agent set on the board (Oct 16): A1 Dealer profile, A2 AEO and dealer listening, A3 pre-call and follow-up drafter, A4 dormant dealer activation, all looping into one pipeline",
         "AI use survey for the whole Copart Dealer Services team, covering AI and Leo's tools (Oct 15, waiting on approval to send)"
       ],
       "links": [],
       "blockers": [],
       "next_steps": [
-        "Turn the meeting knowledge base into a Teams chat that automates updates, pre-call briefs and follow-ups (agents-04)",
         "Send the AI use survey once it is approved (agents-05)",
         "Gather the hours saved and leads and meetings inputs (agents-03, q-20 to q-24)",
         "Build the Copilot flow for website form leads in the Admin inbox (agents-01)",
         "Meet Leo to put every tool on one dealer record (hub-04)",
-        "Score each agent on hours saved, leads and meetings, ease and risk, then pick the first three"
+        "Score each agent on hours saved, leads and meetings, ease and risk, starting with the four on the board (A1 to A4), then pick the first three"
       ],
       "dependencies": [
         "Lead Tracker record and stages (udm)",
@@ -510,6 +524,49 @@
         "Legal rules on email and SMS (q-06)",
         "Omni Analytics access (w-11)",
         "About $200 a week in API credits"
+      ]
+    },
+    {
+      "id": "cdsai",
+      "name": "Copart Dealer Services AI",
+      "category": "AI Tools",
+      "status": "Next",
+      "summary": "CDS AI on the board: a Copilot agent in Teams for the Copart Dealer Services team. Reps and managers ask it for a pre-call brief, updates and follow-up. Built in Copilot Studio and Power Automate. Separate from the prospective and inactive approach; it sits with meeting management (mm) and Plaud (pa) under the Copilot and Power Automate goal.",
+      "built": [],
+      "links": [],
+      "blockers": [],
+      "next_steps": [
+        "Scope what the Teams agent answers first: pre-call brief, updates, follow-up (cdsai-01)",
+        "Ideas on the board: track the full process end to end (cdsai-02) and a manager view (cdsai-03)"
+      ],
+      "dependencies": [
+        "Meeting management memory bank for transcripts and meeting notes (mm)",
+        "Lead Tracker dealer record for the pre-call brief (udm)"
+      ]
+    },
+    {
+      "id": "mm",
+      "name": "Meeting management",
+      "category": "AI Tools",
+      "status": "In Progress",
+      "summary": "Copilot and Power Automate flows around meetings. Memory bank: transcripts of calls and a SharePoint site for meetings. Chief of staff agent: messages on Teams, automated messages and updates, connected to the weekly session. PLAUD sends its email to an Outlook PLAUD folder and one automated workflow connects everything. Separate from the prospective and inactive approach.",
+      "built": [
+        "Meeting transcript reader (Oct 15)",
+        "Auto draft email from a meeting transcript (Oct 15)",
+        "Auto schedule meeting from a meeting transcript (Oct 15)",
+        "Everything from a meeting goes into a knowledge base (Oct 15)",
+        "PLAUD autoflow to email"
+      ],
+      "links": [],
+      "blockers": [],
+      "next_steps": [
+        "Turn the meeting knowledge base into a Teams chat for updates, pre-call briefs and follow-ups (agents-04)",
+        "Set up the memory bank: call transcripts plus a SharePoint site for meetings (mm-01)",
+        "Build the chief of staff agent: Teams messages, automated updates, connected to the weekly session (mm-02)",
+        "Route PLAUD email into an Outlook PLAUD folder that the workflow picks up (mm-03, pa-02)"
+      ],
+      "dependencies": [
+        "Plaud as the transcript source (pa-02)"
       ]
     }
   ],
@@ -2690,15 +2747,15 @@
     },
     {
       "id": "agents-04",
-      "project_id": "agents",
+      "project_id": "mm",
       "title": "Turn the meeting knowledge base into a Teams chat for updates, pre-call briefs and follow-ups",
       "status": "Next",
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Oct 15: the automated meeting report already turns transcripts into email drafts and meeting invites and uploads them to a knowledge base. Next is a chat in Teams on top of it. Copilot Studio and Power Automate notes in n-28. Oct 15: Plaud could be tied in as the transcript source (pa-02).",
+      "notes": "Oct 15: the automated meeting report already turns transcripts into email drafts and meeting invites and uploads them to a knowledge base. Next is a chat in Teams on top of it. Copilot Studio and Power Automate notes in n-28. Oct 15: Plaud could be tied in as the transcript source (pa-02). Oct 16: moved to Meeting management (mm) in the workflow restructure; id kept.",
       "created": "2026-10-15",
-      "updated": "2026-10-15"
+      "updated": "2026-10-16"
     },
     {
       "id": "agents-05",
@@ -2769,6 +2826,80 @@
       "due": null,
       "priority": "high",
       "notes": "From d-udm-02 to d-udm-07 (resolved Oct 16): 60-day hold with no touch before a lead returns to the pool; no territories, first claim wins; a lead converts at first car received; the rep who found the dealer owns it after the first car; field reps take leads only from the office. Fold \"Decision-maker identified\" and \"Account open\" into existing stages (d-rt-06).",
+      "created": "2026-10-16",
+      "updated": "2026-10-16"
+    },
+    {
+      "id": "cdsai-01",
+      "project_id": "cdsai",
+      "title": "Scope the Teams agent: pre-call brief, updates and follow-up",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "From the Oct 16 board (CDS AI). Decide what the Copilot agent in Teams answers first and what it reads: the meeting memory bank (mm) and the Lead Tracker record (udm).",
+      "created": "2026-10-16",
+      "updated": "2026-10-16"
+    },
+    {
+      "id": "cdsai-02",
+      "project_id": "cdsai",
+      "title": "Track the full process in the Teams agent",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Idea on the board. The agent follows a dealer from first touch to first car.",
+      "created": "2026-10-16",
+      "updated": "2026-10-16",
+      "idea": true
+    },
+    {
+      "id": "cdsai-03",
+      "project_id": "cdsai",
+      "title": "Manager view in the Teams agent",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Idea on the board. What Ken and team leads see.",
+      "created": "2026-10-16",
+      "updated": "2026-10-16",
+      "idea": true
+    },
+    {
+      "id": "mm-01",
+      "project_id": "mm",
+      "title": "Set up the memory bank: call transcripts and a SharePoint site for meetings",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "From the Oct 16 board. Transcripts of calls plus a SharePoint site for meetings, so the chief of staff agent and the Teams agent have something to read.",
+      "created": "2026-10-16",
+      "updated": "2026-10-16"
+    },
+    {
+      "id": "mm-02",
+      "project_id": "mm",
+      "title": "Build the chief of staff agent: Teams messages, automated updates, connected to the weekly session",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "From the Oct 16 board. Messages on Teams, automated messages and updates, tied to the weekly session. Builds on the meeting knowledge base (agents-04).",
+      "created": "2026-10-16",
+      "updated": "2026-10-16"
+    },
+    {
+      "id": "mm-03",
+      "project_id": "mm",
+      "title": "Route PLAUD email into an Outlook PLAUD folder the workflow picks up",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "From the Oct 16 board: PLAUD sends email to an Outlook PLAUD folder, and the automated workflow connects everything from there. Pairs with pa-02.",
       "created": "2026-10-16",
       "updated": "2026-10-16"
     }
@@ -4143,6 +4274,23 @@
         "Lead Tracker updated to match how the team tracks calls and outreach; a pilot team is testing it (udm-07 done, gen-29).",
         "Weekly AEO re-run waits until the webpage updates go live (cdd-12). Commission setup is not live yet (hub-03). Omni Analytics is in its infancy (w-11).",
         "Chase resolved every open decision on the board today (d-cdd-03, d-cdd-04, d-cdd-05, d-rt-06, d-rt-07, d-udm-02, d-udm-03, d-udm-04, d-udm-06, d-udm-07). Follow-up tasks added: rt-62, cdd-18, cdd-19, udm-08."
+      ]
+    },
+    {
+      "id": "n-35",
+      "date": "2026-10-16",
+      "title": "Sales workflow, from the whiteboard",
+      "project_id": "general",
+      "body": [
+        "Chase's board (Oct 16) is how every project is placed from now on. Full write-up in docs/sales-workflow.md.",
+        "Prospective and inactive approach, three branches: get found (AEO and SEO, webpage changes), go get 'em (digital campaigns: new vs inactive, direct vs indirect, email, call, text, paid ads; marketing tools and apps), convert 'em (web forms, the prospective and inactive dealer outreach campaigns).",
+        "Lead Tracker with CRM at the center: supplies dealer profiles by state and status, assigns leads to teams, is the audience for campaigns, and logs recommended touch dates and tracked responses back to the dealer profile.",
+        "Agents: A1 Dealer profile (pulls info from the dealer site), A2 AEO and dealer listening, A3 pre-call and follow-up drafter, A4 dormant dealer activation. All loop with each other and feed one agent pipeline. Break the dealer map into segments: leads by team.",
+        "Leads by team: field reps by ZIP code and city with in-person visits on the Route Tracker; office (inside) sales works all leads with follow-up.",
+        "Route Tracker: pre-visit (route building, dealer profile, outreach with the exclusive offer email template, team roster), dealer visit (contact, profile fields, assignments), follow-up (handoff, hot, mild or cold, send to team), then CRM for Route Tracker leads. The Route Tracker and the Lead Tracker talk to each other.",
+        "Separate from that approach, the Copilot and Power Automate tools: Copart Dealer Services AI (Teams agent: pre-call brief, updates, follow-up; ideas: track the full process, manager view) and meeting management (memory bank with call transcripts and a SharePoint meetings site; chief of staff agent with Teams messages, automated updates and the weekly session; PLAUD email to an Outlook PLAUD folder; one automated workflow connecting everything). Built so far: meeting transcript reader, auto draft email, auto schedule meeting, PLAUD autoflow to email.",
+        "Left off the tracker on purpose: the promotion leads list, the DJ and Ben team lists, the slump list and the top sellers questions.",
+        "Changes: goals renamed to the four blocks (g-01 to g-04), new projects cdsai and mm, agents-04 moved to mm, pa placed under g-04."
       ]
     }
   ],

@@ -8,6 +8,10 @@ Project tracker for Chase, Digital Engagement Manager at Copart, supporting Ken 
 - Tracker updates commit straight to `main`. **Always `git pull origin main` before editing tracker.json**, because the board may have committed since your last pull.
 - `npm run validate` checks tracker.json. Run it before every commit. It also runs before every build.
 
+## Workflow
+
+`docs/sales-workflow.md` is how Chase places every project: the prospective and inactive approach (get found, go get 'em, convert 'em), the Lead Tracker with CRM at the center with the agents and the Route Tracker around it, and the Copilot and Power Automate tools (Copart Dealer Services AI, meeting management) kept separate. Goals g-01 to g-04 are those blocks. A new project goes under one of them. When Chase sends a new board photo, update the doc and the goals together.
+
 ## Writing style
 
 Plain and direct. No em dashes (use a period, comma, colon or parentheses). Short task titles that start with a verb where possible.

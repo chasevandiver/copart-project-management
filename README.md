@@ -27,6 +27,7 @@ Code pushes to `main` redeploy the board in about a minute. Edits made on the bo
 
 - `tracker/tracker.json` source of truth
 - `tracker/log.md` change log, newest first
+- `docs/sales-workflow.md` the four blocks every project sits in (from the Oct 16 whiteboard)
 - `scripts/validate.mjs` schema and guardrail checks (runs before every build)
 - `app/` pages, `components/` UI, `middleware.ts` password gate
 - `lib/store.ts` reads and saves tracker.json (GitHub in production, disk locally)
