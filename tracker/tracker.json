@@ -3261,9 +3261,9 @@
         "No, drop the idea for now"
       ],
       "raised": "2026-10-01",
-      "status": "open",
-      "answer": null,
-      "resolved": null
+      "status": "resolved",
+      "answer": "Yes, get a Google Cloud key and check with Copart first",
+      "resolved": "2026-10-16"
     },
     {
       "id": "d-rt-08",
