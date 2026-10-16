@@ -2,7 +2,7 @@
   "meta": {
     "owner": "Chase",
     "role": "Digital Engagement Manager, supporting Ken Rion (SVP of Dealer Sales)",
-    "last_updated": "2026-10-15"
+    "last_updated": "2026-10-16"
   },
   "categories": [
     "AI Tools",
@@ -2278,13 +2278,14 @@
       "id": "mkt-01",
       "project_id": "mkt",
       "title": "Send Tech and IT the one-package ask: bot wall, page title, redirects, old fee PDF, tap-to-call, Email Source",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-16",
       "priority": "high",
       "notes": "Wording is in the Digital audit's ready-to-send asks. Send as one package for the page remake (Lauren, Oct 8).",
       "created": "2026-10-12",
-      "updated": "2026-10-12"
+      "updated": "2026-10-16",
+      "completed": "2026-10-16"
     },
     {
       "id": "mkt-02",
