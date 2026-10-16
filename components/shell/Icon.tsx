@@ -77,6 +77,7 @@ const PATHS: Record<string, React.ReactNode> = {
       <path d="M2.8 14c.6-2.8 2.7-4.3 5.2-4.3s4.6 1.5 5.2 4.3" />
     </>
   ),
+  workflow: <path d="M2 2.5h4v3H2zM10 2.5h4v3h-4zM6 10.5h4v3H6zM4 5.5v2.5h8V5.5M8 8v2.5" />,
   grid: (
     <>
       <rect x="2" y="2" width="5" height="5" rx="1" />
