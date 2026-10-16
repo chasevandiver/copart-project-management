@@ -2,6 +2,15 @@
 
 Newest entry first.
 
+## 2026-10-16 (Oct 16 check-in)
+- Source: Chase's check-in: Ken out since Tuesday afternoon, Salesforce access and the Copart dealer lists arrived, Lead Tracker updated for a pilot team, AEO run on hold until the webpage updates land
+- Changed: udm-07 In Progress -> Done (Lead Tracker matches how the team tracks calls and outreach; pilot team testing it); cmp-01 Waiting -> Done (Salesforce access)
+- Changed: udm-01 Waiting -> Next and cdd-03 Waiting -> Next (dealer lists arrived); cdd-12 Next -> Waiting, due cleared (wait for the webpage updates); wb-01 due 2026-10-16 -> 2026-10-20 (Ken out); hub-03 due cleared (commission setup not live)
+- Added: rt-62 "Get a Google Cloud key for Places and check with Copart first" (Me, Backlog), cdd-18 "Split the region books into one per rep" (Work Claude, Backlog, needs q-18), cdd-19 "Rebuild the lead score from license data on Work Claude" (Work Claude, Backlog), udm-08 "Put the lead rules into the Lead Tracker" (Work Claude, Next, high)
+- Waiting on: received w-12 (Salesforce access), w-08 (Copart active and inactive seller lists plus the full dealership list), w-02 (IT OK on tax IDs), w-10 (export columns, exports live); w-11 note (Omni Analytics in its infancy)
+- Decisions: all open decisions resolved by Chase on the board today (see `git log --grep '^Board: resolve'`); follow-up tasks above
+- Added: n-34 "Oct 16 check-in: Ken out, lists and access arrived"; rt blocker, udm, cdd and cmp next steps updated
+
 ## 2026-10-15 (win-back added to the plan)
 - Source: Chase asked to add the win-back campaign to the marketing plan and the tracker
 - Added: project wb "Inactive seller win-back" (Campaigns, Next), under g-03; g-03 summary now includes dealers who have gone quiet

@@ -105,7 +105,7 @@
         "IT servers block the PLAUD API, so full PLAUD to Zapier automation does not run",
         "No real weekly sales file yet, which blocks Price Check",
         "Zapier can't connect to Google Sheets or Excel on my machine",
-        "Phase 4 lead hub needs the real marketing files and the Copart members list (rt-59, w-08). The CSVs in Downloads are not those"
+        "Phase 4 lead hub still needs the real marketing files (rt-59). The Copart seller lists arrived Oct 16 (w-08)"
       ],
       "next_steps": [
         "Get rep feedback on the live app (gen-29)",
@@ -179,7 +179,7 @@
       "next_steps": [
         "Legal check before any bulk email (cdd-02, urgent)",
         "Check with IT or Legal on business phones and emails in the repo before the leads move to the work setup (q-03)",
-        "Second DFW inventory snapshot once the marketing prospecting spreadsheets arrive (cdd-03)",
+        "Second DFW inventory snapshot on or after Oct 20, now that the dealer lists arrived (cdd-03)",
         "More states by hand, starting with New Mexico (cdd-14, cdd-15)",
         "Decide on the lead score rebuild (d-cdd-05)",
         "Weekly TxDMV refresh (cdd-04) and weekly AEO re-run (cdd-12)"
@@ -306,17 +306,17 @@
         "Lead Tracker built on Work Claude (formerly the US dealer map, week of Oct 12)",
         "Connected to the Route Tracker both ways: leads build routes, and route results feed back into the lead record (Oct 15)",
         "Claim codes so the team can claim leads, with an admin view that keeps teams from being overloaded (Oct 15)",
-        "Dealer profiles build as reps log touches and notes (Oct 15)"
+        "Dealer profiles build as reps log touches and notes (Oct 15)",
+        "Lead Tracker updated to match how the team tracks calls and outreach; a pilot team is using it and giving feedback (Oct 16)"
       ],
       "links": [],
       "blockers": [],
       "next_steps": [
-        "Learn how the team tracks calls and outreach today, and tie it in (udm-07)",
+        "Collect pilot team feedback on the Lead Tracker (gen-29)",
         "Build out the CRM once the processes are known (udm-06)",
-        "Get the Copart and non-Copart dealer spreadsheets (gen-26)",
         "Lock the lead record, stages and lead ID (n-29)",
         "Match leads to Copart dealer status: active, inactive, no status (udm-01)",
-        "Settle the lead rules: hold time, overlap, conversion, approvals (d-udm-02 to d-udm-07)"
+        "Put the resolved lead rules into the app (udm-08)"
       ],
       "dependencies": [
         "Who the 26 teams are (q-18)",
@@ -348,7 +348,6 @@
       "next_steps": [
         "Draft the field offers plus SMS and email outline and review it with Ken (cmp-02)",
         "Get the dealer and member campaign calendar from Kyle or Lauren (cmp-03)",
-        "Get Salesforce access from Rama (cmp-01, w-12)",
         "Ask Sai about paid media for prospective dealers (q-25) and get the data rules for SMS and email (q-06)"
       ],
       "dependencies": [
@@ -667,13 +666,13 @@
       "id": "cdd-03",
       "project_id": "cdd",
       "title": "Take the second DFW inventory snapshot",
-      "status": "Waiting",
+      "status": "Next",
       "owner": "Claude Code",
       "due": "2026-10-20",
       "priority": "urgent",
-      "notes": "On or after Oct 4. Turns on the \"aged inventory\" signal, the biggest seller-fit weight. Pin colors are relative until then. Oct 6: on hold. No second run until the prospecting spreadsheets arrive from marketing (gen-26). Marketing Plan (mkt): needed for aged-unit calls from Nov 10.",
+      "notes": "On or after Oct 4. Turns on the \"aged inventory\" signal, the biggest seller-fit weight. Pin colors are relative until then. Oct 6: on hold. No second run until the prospecting spreadsheets arrive from marketing (gen-26). Marketing Plan (mkt): needed for aged-unit calls from Nov 10. Oct 16: the dealer lists arrived (w-08), so the hold is off. Run on or after Oct 20.",
       "created": "2026-09-29",
-      "updated": "2026-10-12"
+      "updated": "2026-10-16"
     },
     {
       "id": "cdd-04",
@@ -803,13 +802,14 @@
       "id": "cmp-01",
       "project_id": "cmp",
       "title": "Get onto Salesforce for digital campaigns",
-      "status": "Waiting",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-21",
       "priority": "normal",
-      "notes": "Plan from Sep 29 meeting with Rama and Leo: I set up the campaign and how I want it, and it delegates the jobs to people on the Marketing team. Formerly gen-04. Oct 9: getting access or a walkthrough the week of Oct 12. Marketing Plan (mkt): fallback if no access by Nov 1 is counting meetings from the Route Tracker only. Oct 15: Rama walked me through Salesforce. Access is coming (w-12).",
+      "notes": "Plan from Sep 29 meeting with Rama and Leo: I set up the campaign and how I want it, and it delegates the jobs to people on the Marketing team. Formerly gen-04. Oct 9: getting access or a walkthrough the week of Oct 12. Marketing Plan (mkt): fallback if no access by Nov 1 is counting meetings from the Route Tracker only. Oct 15: Rama walked me through Salesforce. Access is coming (w-12). Oct 16: Salesforce access granted (w-12). Campaign setup in Salesforce continues under cmp-02 and the win-back pull (wb-02).",
       "created": "2026-09-29",
-      "updated": "2026-10-15"
+      "updated": "2026-10-16",
+      "completed": "2026-10-16"
     },
     {
       "id": "gen-05",
@@ -940,13 +940,13 @@
       "id": "cdd-12",
       "project_id": "cdd",
       "title": "Set up a weekly AEO re-run",
-      "status": "Next",
+      "status": "Waiting",
       "owner": "Claude Code",
-      "due": "2026-10-16",
+      "due": null,
       "priority": "normal",
-      "notes": "Gemini free tier caps at about 20 answers a day, so a run needs a paid key or two days (see d-cdd-04). Add Perplexity if we get a key. Oct 8: added to the Digital audit's next steps. Also run aeo/fee_check.py (stale 2017 Copart Dealer Services fees) so the December comparison holds. Marketing Plan (mkt): weekly re-run with Perplexity and the fee check, on by Oct 16.",
+      "notes": "Gemini free tier caps at about 20 answers a day, so a run needs a paid key or two days (see d-cdd-04). Add Perplexity if we get a key. Oct 8: added to the Digital audit's next steps. Also run aeo/fee_check.py (stale 2017 Copart Dealer Services fees) so the December comparison holds. Marketing Plan (mkt): weekly re-run with Perplexity and the fee check, on by Oct 16. Oct 16: on hold until the webpage updates go live, so the re-run measures the new pages. d-cdd-04 resolved: split each run over two days on the free Gemini tier.",
       "created": "2026-09-29",
-      "updated": "2026-10-12"
+      "updated": "2026-10-16"
     },
     {
       "id": "cdd-13",
@@ -1654,13 +1654,13 @@
       "id": "udm-01",
       "project_id": "udm",
       "title": "Match US leads to Copart dealer status: active, inactive, or no status",
-      "status": "Waiting",
+      "status": "Next",
       "owner": "Me",
       "due": "2026-10-27",
       "priority": "high",
-      "notes": "Three buckets so leads don't overlap: active Copart dealers (exclude or upsell), inactive (win-back), no status (new prospects). Needs the Copart dealer list from Tyler Amos or Pushkaraj Jadhav (gen-16). Copart dealer data stays on the work setup: do not put it in this repo or on the public dfw-dealer-digital site (see q-03). Picks up the active-dealer exclusion from gen-14. Oct 6: the dealer list comes from the marketing sync Oct 7 (gen-26). Oct 8: also makes campaign lists prospects only (pdo-01). Oct 9: waiting on the Copart member reports (gen-26, w-08). Marketing Plan (mkt) gate: if not done by Oct 27, the pilot list is capped at [50] dealers checked by hand.",
+      "notes": "Three buckets so leads don't overlap: active Copart dealers (exclude or upsell), inactive (win-back), no status (new prospects). Needs the Copart dealer list from Tyler Amos or Pushkaraj Jadhav (gen-16). Copart dealer data stays on the work setup: do not put it in this repo or on the public dfw-dealer-digital site (see q-03). Picks up the active-dealer exclusion from gen-14. Oct 6: the dealer list comes from the marketing sync Oct 7 (gen-26). Oct 8: also makes campaign lists prospects only (pdo-01). Oct 9: waiting on the Copart member reports (gen-26, w-08). Marketing Plan (mkt) gate: if not done by Oct 27, the pilot list is capped at [50] dealers checked by hand. Oct 16: the Copart active and inactive seller lists and the full dealership list arrived (w-08), so this can start. Lists stay in the work setup.",
       "created": "2026-10-02",
-      "updated": "2026-10-12"
+      "updated": "2026-10-16"
     },
     {
       "id": "audit-07",
@@ -1898,11 +1898,11 @@
       "title": "Bring the win-back plan to Ken",
       "status": "Next",
       "owner": "Me",
-      "due": "2026-10-16",
+      "due": "2026-10-20",
       "priority": "high",
-      "notes": "Decisions in q-26 and q-14. Plan doc: First campaign: inactive seller win-back.",
+      "notes": "Decisions in q-26 and q-14. Plan doc: First campaign: inactive seller win-back. Oct 16: Ken out since Tuesday Oct 13 afternoon. Moved to Monday.",
       "created": "2026-10-15",
-      "updated": "2026-10-15"
+      "updated": "2026-10-16"
     },
     {
       "id": "wb-02",
@@ -2043,11 +2043,11 @@
       "title": "Build a tool with Brenda to track the new commission setup",
       "status": "Waiting",
       "owner": "Me",
-      "due": "2026-10-12",
+      "due": null,
       "priority": "high",
-      "notes": "Ken, Oct 9: get with Brenda to build a tool that tracks the new commission setup, which launches the week of Oct 12. Sent Brenda a Teams message Oct 9 (w-09); follow up. Commission data stays on the work setup, never in this repo. Follow up with Brenda Monday Oct 12. Oct 15: no reply from Brenda yet (w-09). On hold while the commission setup is not live.",
+      "notes": "Ken, Oct 9: get with Brenda to build a tool that tracks the new commission setup, which launches the week of Oct 12. Sent Brenda a Teams message Oct 9 (w-09); follow up. Commission data stays on the work setup, never in this repo. Follow up with Brenda Monday Oct 12. Oct 15: no reply from Brenda yet (w-09). On hold while the commission setup is not live. Oct 16: commission setup is not live yet. No date; pick this up when it launches and Brenda replies (w-09).",
       "created": "2026-10-09",
-      "updated": "2026-10-15"
+      "updated": "2026-10-16"
     },
     {
       "id": "rt-45",
@@ -2232,9 +2232,9 @@
       "owner": "Work Claude",
       "due": null,
       "priority": "normal",
-      "notes": "Blocked until Chase has the real marketing files and the Copart members list (w-08). The CSVs in Downloads are not those. Oct 13: leads now come from the Lead Tracker (udm). This phase becomes pulling each rep's assigned leads from it (udm-05).",
+      "notes": "Blocked until Chase has the real marketing files and the Copart members list (w-08). The CSVs in Downloads are not those. Oct 13: leads now come from the Lead Tracker (udm). This phase becomes pulling each rep's assigned leads from it (udm-05). Oct 16: the Copart seller lists and full dealership list arrived (w-08). Still blocked on the real marketing files; otherwise this is the pull from the Lead Tracker.",
       "created": "2026-10-09",
-      "updated": "2026-10-13"
+      "updated": "2026-10-16"
     },
     {
       "id": "rt-60",
@@ -2679,13 +2679,14 @@
       "id": "udm-07",
       "project_id": "udm",
       "title": "Learn how the team tracks calls and outreach to prospective dealers, and tie it into the Lead Tracker",
-      "status": "In Progress",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-15",
       "priority": "high",
-      "notes": "Oct 15: next step today. Shapes how the Lead Tracker CRM grows (udm-06) and the lead rules (d-udm-02 to d-udm-07).",
+      "notes": "Oct 15: next step today. Shapes how the Lead Tracker CRM grows (udm-06) and the lead rules (d-udm-02 to d-udm-07). Oct 16: done. Lead Tracker changed to match how the team tracks calls and outreach. A pilot team is using it now and giving feedback (gen-29).",
       "created": "2026-10-15",
-      "updated": "2026-10-15"
+      "updated": "2026-10-16",
+      "completed": "2026-10-16"
     },
     {
       "id": "agents-04",
@@ -2707,9 +2708,9 @@
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Oct 15: survey drafted on how the team uses AI today and Leo's tools. Send once approved. Answers also feed the agent ranking (agents-02, agents-03).",
+      "notes": "Oct 15: survey drafted on how the team uses AI today and Leo's tools. Send once approved. Answers also feed the agent ranking (agents-02, agents-03). Oct 16: Ken still out, so not approved yet.",
       "created": "2026-10-15",
-      "updated": "2026-10-15"
+      "updated": "2026-10-16"
     },
     {
       "id": "gen-29",
@@ -2719,9 +2720,57 @@
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Oct 15: plan for today, tomorrow and next week. Use it to tighten the details on each project (udm-07 covers how calls and outreach are tracked today). Good moment to note who is using each tool and how often, for the update to Ken.",
+      "notes": "Oct 15: plan for today, tomorrow and next week. Use it to tighten the details on each project (udm-07 covers how calls and outreach are tracked today). Good moment to note who is using each tool and how often, for the update to Ken. Oct 16: a pilot team is trying the updated Lead Tracker and will give feedback.",
       "created": "2026-10-15",
-      "updated": "2026-10-15"
+      "updated": "2026-10-16"
+    },
+    {
+      "id": "rt-62",
+      "project_id": "rt",
+      "title": "Get a Google Cloud key for Places and check with Copart first",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "From d-rt-07 (resolved Oct 16): use Google Places for the \"Dealers near you\" list in Add a stop. Check with Copart before any key is used. Key lives in the Route Tracker env, never in a repo.",
+      "created": "2026-10-16",
+      "updated": "2026-10-16"
+    },
+    {
+      "id": "cdd-18",
+      "project_id": "cdd",
+      "title": "Split the region books into one per rep",
+      "status": "Backlog",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "normal",
+      "notes": "From d-cdd-03 (resolved Oct 16): one book per rep. Needs team sizes first (q-18, Ken).",
+      "created": "2026-10-16",
+      "updated": "2026-10-16"
+    },
+    {
+      "id": "cdd-19",
+      "project_id": "cdd",
+      "title": "Rebuild the lead score from license data on Work Claude",
+      "status": "Backlog",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "normal",
+      "notes": "From d-cdd-05 (resolved Oct 16): Chase will build a better score on Work Claude. Use what Copart Dealer Services actually wins once the seller lists are matched (udm-01).",
+      "created": "2026-10-16",
+      "updated": "2026-10-16"
+    },
+    {
+      "id": "udm-08",
+      "project_id": "udm",
+      "title": "Put the lead rules into the Lead Tracker",
+      "status": "Next",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "high",
+      "notes": "From d-udm-02 to d-udm-07 (resolved Oct 16): 60-day hold with no touch before a lead returns to the pool; no territories, first claim wins; a lead converts at first car received; the rep who found the dealer owns it after the first car; field reps take leads only from the office. Fold \"Decision-maker identified\" and \"Account open\" into existing stages (d-rt-06).",
+      "created": "2026-10-16",
+      "updated": "2026-10-16"
     }
   ],
   "waiting_on": [
@@ -2742,7 +2791,8 @@
       "project_id": "rt",
       "since": "2026-09-29",
       "priority": "high",
-      "notes": "Priority because passcodes are coming out. Oct 6: holding until Ken's field week ends. No automation changes while the team is in the field. Oct 9: staging puts the Federal Tax ID on the visit screen, team emails and CSV, and keeps it out of Zapier (d-rt-11). Oct 15: the tax ID box went live with v.Next (d-rt-11). Mark this received once IT's OK is on record."
+      "notes": "Priority because passcodes are coming out. Oct 6: holding until Ken's field week ends. No automation changes while the team is in the field. Oct 9: staging puts the Federal Tax ID on the visit screen, team emails and CSV, and keeps it out of Zapier (d-rt-11). Oct 15: the tax ID box went live with v.Next (d-rt-11). Mark this received once IT's OK is on record. Oct 16: IT OK on record.",
+      "received": "2026-10-16"
     },
     {
       "id": "w-03",
@@ -2798,7 +2848,8 @@
       "project_id": "udm",
       "since": "2026-10-07",
       "priority": "high",
-      "notes": "Feeds gen-26, udm-01 and cdd-03. Oct 9: still waiting. Oct 9: both people asked are out of the office. Nudge when they are back."
+      "notes": "Feeds gen-26, udm-01 and cdd-03. Oct 9: still waiting. Oct 9: both people asked are out of the office. Nudge when they are back. Oct 16: received the Copart active and inactive seller lists and the full dealership list. They stay in the work setup.",
+      "received": "2026-10-16"
     },
     {
       "id": "w-09",
@@ -2816,7 +2867,8 @@
       "project_id": "rt",
       "since": "2026-10-09",
       "priority": "normal",
-      "notes": "Blocks rt-60."
+      "notes": "Blocks rt-60. Oct 16: columns received, exports live (rt-60 done).",
+      "received": "2026-10-16"
     },
     {
       "id": "w-11",
@@ -2825,7 +2877,7 @@
       "project_id": "agents",
       "since": "2026-10-13",
       "priority": "normal",
-      "notes": "Connects the agents to Copart Dealer Services data. Not granted yet (Oct 13). See n-28."
+      "notes": "Connects the agents to Copart Dealer Services data. Not granted yet (Oct 13). See n-28. Oct 16: Omni Analytics is in its infancy, so no access yet. Keep this open and check back later."
     },
     {
       "id": "w-12",
@@ -2834,7 +2886,8 @@
       "project_id": "cmp",
       "since": "2026-10-15",
       "priority": "normal",
-      "notes": "Walkthrough done week of Oct 12; access should be coming now (cmp-01)."
+      "notes": "Walkthrough done week of Oct 12; access should be coming now (cmp-01). Oct 16: access granted.",
+      "received": "2026-10-16"
     },
     {
       "id": "w-13",
@@ -4077,6 +4130,19 @@
         "One campaign, two lanes: Marketing sends the scheduled emails in the rep's name; reps follow up with the same Kyle-approved copy as templates in the Lead Tracker (rt-58).",
         "Measure: sellers won back, accounts that send a car within 60 days of the first email. Optional holdout in tier B.",
         "Plan doc: https://claude.ai/code/artifact/6d4514a3-885d-4dda-bbd5-90a6f1b48f6e. Template spec: docs/lead-tracker-templates-spec.md in Copart Dealer Digital."
+      ]
+    },
+    {
+      "id": "n-34",
+      "date": "2026-10-16",
+      "title": "Oct 16 check-in: Ken out, lists and access arrived",
+      "project_id": "general",
+      "body": [
+        "Ken has been out since Tuesday Oct 13 afternoon. No answers yet on q-14, q-15, q-16, q-18, q-20 or q-26, and the AI use survey (agents-05) is not approved. Ken-dependent items wait for his return.",
+        "Arrived this week: Salesforce access (w-12), the Copart active and inactive seller lists plus the full dealership list (w-08), IT OK on tax IDs (w-02), export columns (w-10). All data stays in the work setup.",
+        "Lead Tracker updated to match how the team tracks calls and outreach; a pilot team is testing it (udm-07 done, gen-29).",
+        "Weekly AEO re-run waits until the webpage updates go live (cdd-12). Commission setup is not live yet (hub-03). Omni Analytics is in its infancy (w-11).",
+        "Chase resolved every open decision on the board today (d-cdd-03, d-cdd-04, d-cdd-05, d-rt-06, d-rt-07, d-udm-02, d-udm-03, d-udm-04, d-udm-06, d-udm-07). Follow-up tasks added: rt-62, cdd-18, cdd-19, udm-08."
       ]
     }
   ],
