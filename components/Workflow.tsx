@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { NODES, STEPS, nodeById, renderWorkflowSvg, type NodeDef, type WorkflowData } from "@/lib/workflow";
+import { NODES, STEPS, nodeById, nodeHeading, renderWorkflowSvg, type NodeDef, type WorkflowData } from "@/lib/workflow";
 import { statusSlug } from "@/lib/tracker";
 import { shortDate } from "@/lib/dates";
 import { Icon } from "./shell/Icon";
@@ -107,8 +107,8 @@ export default function Workflow({ data }: { data: WorkflowData }) {
               <Icon name="close" />
             </button>
             <div className="s-detail-body">
-              <span className="s-detail-kind">{node.step ?? "Workflow"}</span>
-              <h2 className="wf-d-title">{node.title ?? node.step}</h2>
+              <span className="s-detail-kind">{nodeHeading(node).kind}</span>
+              <h2 className="wf-d-title">{nodeHeading(node).title}</h2>
               <ul className="wf-d-lines">
                 {joinLines(node.lines).map((l, i) => (
                   <li key={i} className={l.dim ? "muted" : undefined}>{l.code && l.code !== "•" ? `${l.code}. ` : ""}{l.t}</li>

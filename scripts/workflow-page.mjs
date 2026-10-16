@@ -4,7 +4,7 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
-import { NODES, STEPS, buildWorkflow, renderWorkflowSvg } from "../lib/workflow.ts";
+import { NODES, STEPS, buildWorkflow, nodeHeading, renderWorkflowSvg } from "../lib/workflow.ts";
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const out = process.argv[2];
@@ -22,8 +22,8 @@ const detail = Object.fromEntries(
   NODES.map((n) => [
     n.id,
     {
-      step: n.step ?? null,
-      title: n.title ?? n.step ?? n.id,
+      step: nodeHeading(n).kind,
+      title: nodeHeading(n).title,
       lines: joinLines(n.lines),
       about: n.about ?? null,
       projects: n.projects.map((id) => data.projects[id]).filter(Boolean).map((p) => ({

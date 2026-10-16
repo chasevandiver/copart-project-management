@@ -12,6 +12,7 @@ export type NodeDef = {
   h: number;
   step?: string;
   title?: string;
+  name?: string; // drawer title when the box has no title of its own
   lines: Line[];
   projects: string[];
   hot?: boolean;
@@ -93,7 +94,7 @@ export const NODES: NodeDef[] = [
     projects: ["cdsai"],
   },
   {
-    id: "mm", k: "separate", x: 440, y: 916, w: 340, h: 124, step: "MEETING MANAGEMENT", amber: true,
+    id: "mm", k: "separate", x: 440, y: 916, w: 340, h: 124, step: "MEETING MANAGEMENT", name: "Meeting management", amber: true,
     lines: [
       { t: "Memory bank: call transcripts, SharePoint meetings site" },
       { t: "Chief of staff agent: Teams messages, automated" },
@@ -103,7 +104,7 @@ export const NODES: NodeDef[] = [
     projects: ["mm", "pa"],
   },
   {
-    id: "built", k: "separate", x: 810, y: 916, w: 320, h: 124, step: "BUILT SO FAR", amber: true,
+    id: "built", k: "separate", x: 810, y: 916, w: 320, h: 124, step: "BUILT SO FAR", name: "Built so far", amber: true,
     lines: [{ t: "Meeting transcript reader" }, { t: "Auto draft email" }, { t: "Auto schedule meeting" }, { t: "PLAUD autoflow to email" }],
     projects: ["mm"],
   },
@@ -241,6 +242,11 @@ export function renderWorkflowSvg(data: WorkflowData, opts: RenderOpts = {}): st
   }
   out.push(`</svg>`);
   return out.join("");
+}
+
+/** What the drawer calls a node: the small label above and the title. */
+export function nodeHeading(n: NodeDef): { kind: string; title: string } {
+  return { kind: n.title ? n.step ?? "Workflow" : n.amber ? "Copilot and Power Automate" : "Workflow", title: n.title ?? n.name ?? n.step ?? n.id };
 }
 
 export function nodeById(id: string): NodeDef | undefined {
