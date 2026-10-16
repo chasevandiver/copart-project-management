@@ -3235,9 +3235,9 @@
         "Give \"Account open\" its own stage"
       ],
       "raised": "2026-10-01",
-      "status": "open",
-      "answer": null,
-      "resolved": null
+      "status": "resolved",
+      "answer": "Fold both into existing stages",
+      "resolved": "2026-10-16"
     },
     {
       "id": "d-cdd-05",
