@@ -3197,9 +3197,9 @@
         "Split each run over two days"
       ],
       "raised": "2026-09-29",
-      "status": "open",
-      "answer": null,
-      "resolved": null
+      "status": "resolved",
+      "answer": "Split each run over two days",
+      "resolved": "2026-10-16"
     },
     {
       "id": "d-rt-04",
