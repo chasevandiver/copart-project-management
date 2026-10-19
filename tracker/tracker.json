@@ -2903,6 +2903,18 @@
       "notes": "From the Oct 16 board: PLAUD sends email to an Outlook PLAUD folder, and the automated workflow connects everything from there. Pairs with pa-02.",
       "created": "2026-10-16",
       "updated": "2026-10-16"
+    },
+    {
+      "id": "gen-30",
+      "project_id": "general",
+      "title": "Brenda - Commission Tool to auto fill the new payplan - currently using data drop and editing marcos and summary.",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "",
+      "created": "2026-10-19",
+      "updated": "2026-10-19"
     }
   ],
   "waiting_on": [
