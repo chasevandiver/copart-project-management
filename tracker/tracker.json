@@ -4305,6 +4305,15 @@
         "Left off the tracker on purpose: the promotion leads list, the DJ and Ben team lists, the slump list and the top sellers questions.",
         "Changes: goals renamed to the four blocks (g-01 to g-04), new projects cdsai and mm, agents-04 moved to mm, pa placed under g-04."
       ]
+    },
+    {
+      "id": "n-36",
+      "title": "Meeting Request Link goes to Admin like the form currently - to the admins to give to managers or team.",
+      "body": [
+        "Meeting Request Link goes to Admin like the form currently - to the admins to give to managers or team."
+      ],
+      "project_id": "general",
+      "date": "2026-10-19"
     }
   ],
   "reports": [
