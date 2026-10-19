@@ -2,7 +2,7 @@
   "meta": {
     "owner": "Chase",
     "role": "Digital Engagement Manager, supporting Ken Rion (SVP of Dealer Sales)",
-    "last_updated": "2026-10-16"
+    "last_updated": "2026-10-19"
   },
   "categories": [
     "AI Tools",
@@ -1965,13 +1965,14 @@
       "id": "wb-02",
       "project_id": "wb",
       "title": "Pull the inactive seller list from Salesforce",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-21",
       "priority": "high",
       "notes": "Needs Salesforce access (w-12). The list stays in the work setup. Same pull that keeps prospect lists clean (udm-01).",
       "created": "2026-10-15",
-      "updated": "2026-10-15"
+      "updated": "2026-10-19",
+      "completed": "2026-10-19"
     },
     {
       "id": "wb-03",
