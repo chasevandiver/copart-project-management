@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-20 (Commission Tool project)
+- Source: Chase: the commission tool is its own project
+- Added: project comm "Commission Tool" (AI Tools, In Progress), under g-04
+- Changed: hub-03 -> comm-01 and hub-05 -> comm-02 (moved from hub); w-09 moved to comm; commission next step removed from hub
+
 ## 2026-10-20 (commission tool and Lead Tracker redo)
 - Source: Chase's update: commission spreadsheet is this week's focus, Lead Tracker UX and UI redo from Keon's feedback
 - Changed: hub-03 Waiting -> In Progress (rules and macros per payout structure; 8 to 10 hours a round down to about 1; test numbers match Brenda's; fake sample data in progress)
