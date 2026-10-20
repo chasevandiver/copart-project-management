@@ -2,6 +2,12 @@
 
 Newest entry first.
 
+## 2026-10-20 (Ken's priorities)
+- Source: Chase: Ken set the commission tool as this week's focus and wants the Lead Tracker launched to the team next week; shout-out at the team gather up
+- Changed: comm-01 priority high -> urgent; udm-10 note (lands before launch)
+- Added: udm-11 "Launch the Lead Tracker to the team" (Me, Next, high, due 2026-10-30)
+- Added: n-38 "Team gather up: Ken's priorities and a shout-out"
+
 ## 2026-10-20 (Commission Tool project)
 - Source: Chase: the commission tool is its own project
 - Added: project comm "Commission Tool" (AI Tools, In Progress), under g-04

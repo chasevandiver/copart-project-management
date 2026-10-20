@@ -267,7 +267,7 @@
       "name": "Commission Tool",
       "category": "AI Tools",
       "status": "In Progress",
-      "summary": "An automated commission workbook for Brenda. Rules and macros cover each person's payout structure, so the new pay plan fills in from the data drop instead of hand-edited macros and summary. Mostly manual today, about 8 to 10 hours a round; the target is about 1 hour. Commission data stays on the work setup, never in this repo.",
+      "summary": "An automated commission workbook for Brenda. Rules and macros cover each person's payout structure, so the new pay plan fills in from the data drop instead of hand-edited macros and summary. Mostly manual today, about 8 to 10 hours a round; the target is about 1 hour. Commission data stays on the work setup, never in this repo. Ken's main focus for me the week of Oct 19.",
       "built": [
         "Test workbook with rules and macros per payout structure; its numbers match Brenda's (Oct 20)"
       ],
@@ -353,6 +353,7 @@
       "blockers": [],
       "next_steps": [
         "Redo the Lead Tracker UX and UI from Keon's feedback: search, cleaner dashboard (udm-10)",
+        "Launch the Lead Tracker to the team next week (udm-11)",
         "Collect pilot team feedback on the Lead Tracker (gen-29)",
         "Build out the CRM once the processes are known (udm-06)",
         "Lock the lead record, stages and lead ID (n-29)",
@@ -2129,8 +2130,8 @@
       "status": "In Progress",
       "owner": "Me",
       "due": null,
-      "priority": "high",
-      "notes": "Ken, Oct 9: get with Brenda to build a tool that tracks the new commission setup, which launches the week of Oct 12. Sent Brenda a Teams message Oct 9 (w-09); follow up. Commission data stays on the work setup, never in this repo. Follow up with Brenda Monday Oct 12. Oct 15: no reply from Brenda yet (w-09). On hold while the commission setup is not live. Oct 16: commission setup is not live yet. No date; pick this up when it launches and Brenda replies (w-09). Oct 20: main focus this week (n-37). Brenda replied (w-09) and I'm rebuilding her commission spreadsheet with rules and macros for each person's payout structure, so the new pay plan fills in from the data drop instead of hand-edited macros and summary (was gen-30). Mostly manual today: about 8 to 10 hours a round, target about 1 hour. My test workbook matches Brenda's numbers. Building fake sample data to test now; the real check is the next two-week commission data (comm-02). Oct 20: moved to its own project, Commission Tool (was hub-03).",
+      "priority": "urgent",
+      "notes": "Ken, Oct 9: get with Brenda to build a tool that tracks the new commission setup, which launches the week of Oct 12. Sent Brenda a Teams message Oct 9 (w-09); follow up. Commission data stays on the work setup, never in this repo. Follow up with Brenda Monday Oct 12. Oct 15: no reply from Brenda yet (w-09). On hold while the commission setup is not live. Oct 16: commission setup is not live yet. No date; pick this up when it launches and Brenda replies (w-09). Oct 20: main focus this week (n-37). Brenda replied (w-09) and I'm rebuilding her commission spreadsheet with rules and macros for each person's payout structure, so the new pay plan fills in from the data drop instead of hand-edited macros and summary (was gen-30). Mostly manual today: about 8 to 10 hours a round, target about 1 hour. My test workbook matches Brenda's numbers. Building fake sample data to test now; the real check is the next two-week commission data (comm-02). Oct 20: moved to its own project, Commission Tool (was hub-03). Oct 20: Ken set tightening up the commission tool as my main focus this week.",
       "created": "2026-10-09",
       "updated": "2026-10-20"
     },
@@ -2977,7 +2978,19 @@
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Oct 20: full UX and UI update from Keon's feedback, plus my own calls on what makes it faster and easier to use and track. From the Oct 20 managers meeting (n-37): a search feature, a cleaner dashboard, and dossiers from reps feeding their dashboards (udm-09).",
+      "notes": "Oct 20: full UX and UI update from Keon's feedback, plus my own calls on what makes it faster and easier to use and track. From the Oct 20 managers meeting (n-37): a search feature, a cleaner dashboard, and dossiers from reps feeding their dashboards (udm-09). Oct 20: needs to land before the team launch next week (udm-11).",
+      "created": "2026-10-20",
+      "updated": "2026-10-20"
+    },
+    {
+      "id": "udm-11",
+      "project_id": "udm",
+      "title": "Launch the Lead Tracker to the team",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-30",
+      "priority": "high",
+      "notes": "Oct 20: Ken wants the Lead Tracker launched to the team next week. Due set to the end of that week; move it when the day is set. The UX and UI redo (udm-10) and the lead rules (udm-08) come first. Ken called it out to the whole floor at today's team gather up (n-38).",
       "created": "2026-10-20",
       "updated": "2026-10-20"
     }
@@ -4393,6 +4406,17 @@
       ],
       "project_id": "general",
       "date": "2026-10-20"
+    },
+    {
+      "id": "n-38",
+      "date": "2026-10-20",
+      "title": "Team gather up: Ken's priorities and a shout-out",
+      "project_id": "general",
+      "body": [
+        "Ken: main focus this week is tightening up the commission tool (comm-01).",
+        "Ken wants the Lead Tracker launched to the team next week (udm-11).",
+        "At the gather up with the whole team, Ken called me out in front of the floor for a round of applause on what's coming with the Lead Tracker."
+      ]
     }
   ],
   "reports": [
