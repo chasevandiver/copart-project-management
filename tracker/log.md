@@ -2,6 +2,14 @@
 
 Newest entry first.
 
+## 2026-10-20 (commission tool and Lead Tracker redo)
+- Source: Chase's update: commission spreadsheet is this week's focus, Lead Tracker UX and UI redo from Keon's feedback
+- Changed: hub-03 Waiting -> In Progress (rules and macros per payout structure; 8 to 10 hours a round down to about 1; test numbers match Brenda's; fake sample data in progress)
+- Changed: gen-30 merged into hub-03 and closed; gen-29 note (Keon's feedback in)
+- Added: hub-05 "Run the commission tool on the first real two-week data drop and check it against Brenda's numbers" (Me, Next, high, no date)
+- Added: udm-10 "Redo the Lead Tracker UX and UI from Keon's feedback" (Me, In Progress, high)
+- Waiting on: received w-09 (Brenda replied on the commission tool)
+
 ## 2026-10-16 (workflow restructure)
 - Source: Chase's whiteboard photo of how everything fits together, with the promotion leads, DJ, Ben, slump and top sellers lists left off on request
 - Added: docs/sales-workflow.md, the four blocks every project sits in

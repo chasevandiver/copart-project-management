@@ -257,7 +257,8 @@
       ],
       "next_steps": [
         "Get co-collaborator access on Leo's repos (w-07, met Leo Oct 15)",
-        "Add my tools to Leo's hub: Copart Dealer Digital, US Dealer Map, PM Board, Route Tracker"
+        "Add my tools to Leo's hub: Copart Dealer Digital, US Dealer Map, PM Board, Route Tracker",
+        "Finish the commission tool with Brenda and check it on the next real data drop (hub-03, hub-05)"
       ],
       "dependencies": []
     },
@@ -327,6 +328,7 @@
       "links": [],
       "blockers": [],
       "next_steps": [
+        "Redo the Lead Tracker UX and UI from Keon's feedback: search, cleaner dashboard (udm-10)",
         "Collect pilot team feedback on the Lead Tracker (gen-29)",
         "Build out the CRM once the processes are known (udm-06)",
         "Lock the lead record, stages and lead ID (n-29)",
@@ -2100,13 +2102,13 @@
       "id": "hub-03",
       "project_id": "hub",
       "title": "Build a tool with Brenda to track the new commission setup",
-      "status": "Waiting",
+      "status": "In Progress",
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Ken, Oct 9: get with Brenda to build a tool that tracks the new commission setup, which launches the week of Oct 12. Sent Brenda a Teams message Oct 9 (w-09); follow up. Commission data stays on the work setup, never in this repo. Follow up with Brenda Monday Oct 12. Oct 15: no reply from Brenda yet (w-09). On hold while the commission setup is not live. Oct 16: commission setup is not live yet. No date; pick this up when it launches and Brenda replies (w-09).",
+      "notes": "Ken, Oct 9: get with Brenda to build a tool that tracks the new commission setup, which launches the week of Oct 12. Sent Brenda a Teams message Oct 9 (w-09); follow up. Commission data stays on the work setup, never in this repo. Follow up with Brenda Monday Oct 12. Oct 15: no reply from Brenda yet (w-09). On hold while the commission setup is not live. Oct 16: commission setup is not live yet. No date; pick this up when it launches and Brenda replies (w-09). Oct 20: main focus this week (n-37). Brenda replied (w-09) and I'm rebuilding her commission spreadsheet with rules and macros for each person's payout structure, so the new pay plan fills in from the data drop instead of hand-edited macros and summary (was gen-30). Mostly manual today: about 8 to 10 hours a round, target about 1 hour. My test workbook matches Brenda's numbers. Building fake sample data to test now; the real check is the next two-week commission data (hub-05).",
       "created": "2026-10-09",
-      "updated": "2026-10-16"
+      "updated": "2026-10-20"
     },
     {
       "id": "rt-45",
@@ -2779,9 +2781,9 @@
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Oct 15: plan for today, tomorrow and next week. Use it to tighten the details on each project (udm-07 covers how calls and outreach are tracked today). Good moment to note who is using each tool and how often, for the update to Ken. Oct 16: a pilot team is trying the updated Lead Tracker and will give feedback.",
+      "notes": "Oct 15: plan for today, tomorrow and next week. Use it to tighten the details on each project (udm-07 covers how calls and outreach are tracked today). Good moment to note who is using each tool and how often, for the update to Ken. Oct 16: a pilot team is trying the updated Lead Tracker and will give feedback. Oct 20: Keon's feedback on the Lead Tracker is in; the UX and UI redo is udm-10.",
       "created": "2026-10-15",
-      "updated": "2026-10-16"
+      "updated": "2026-10-20"
     },
     {
       "id": "rt-62",
@@ -2909,13 +2911,14 @@
       "id": "gen-30",
       "project_id": "general",
       "title": "Brenda - Commission Tool to auto fill the new payplan - currently using data drop and editing marcos and summary.",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "",
+      "notes": "Oct 20: merged into hub-03, which tracks the commission tool from here.",
       "created": "2026-10-19",
-      "updated": "2026-10-19"
+      "updated": "2026-10-20",
+      "completed": "2026-10-20"
     },
     {
       "id": "udm-09",
@@ -2929,6 +2932,30 @@
       "idea": true,
       "created": "2026-10-19",
       "updated": "2026-10-19"
+    },
+    {
+      "id": "hub-05",
+      "project_id": "hub",
+      "title": "Run the commission tool on the first real two-week data drop and check it against Brenda's numbers",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Oct 20: test workbook matches Brenda's numbers on her data and fake sample data. Real raw data comes after the current two-week period. Commission data stays on the work setup.",
+      "created": "2026-10-20",
+      "updated": "2026-10-20"
+    },
+    {
+      "id": "udm-10",
+      "project_id": "udm",
+      "title": "Redo the Lead Tracker UX and UI from Keon's feedback",
+      "status": "In Progress",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Oct 20: full UX and UI update from Keon's feedback, plus my own calls on what makes it faster and easier to use and track. From the Oct 20 managers meeting (n-37): a search feature, a cleaner dashboard, and dossiers from reps feeding their dashboards (udm-09).",
+      "created": "2026-10-20",
+      "updated": "2026-10-20"
     }
   ],
   "waiting_on": [
@@ -3016,7 +3043,8 @@
       "project_id": "hub",
       "since": "2026-10-09",
       "priority": "high",
-      "notes": "Teams message sent Oct 9. Commission setup launches the week of Oct 12 (hub-03). Oct 15: no reply yet. Holding until the commission setup is live."
+      "notes": "Teams message sent Oct 9. Commission setup launches the week of Oct 12 (hub-03). Oct 15: no reply yet. Holding until the commission setup is live. Oct 20: Brenda replied; building the commission tool with her data (hub-03).",
+      "received": "2026-10-20"
     },
     {
       "id": "w-10",
