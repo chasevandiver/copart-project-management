@@ -2,7 +2,7 @@
   "meta": {
     "owner": "Chase",
     "role": "Digital Engagement Manager, supporting Ken Rion (SVP of Dealer Sales)",
-    "last_updated": "2026-10-19"
+    "last_updated": "2026-10-20"
   },
   "categories": [
     "AI Tools",
@@ -1711,13 +1711,14 @@
       "id": "udm-01",
       "project_id": "udm",
       "title": "Match US leads to Copart dealer status: active, inactive, or no status",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-27",
       "priority": "high",
       "notes": "Three buckets so leads don't overlap: active Copart dealers (exclude or upsell), inactive (win-back), no status (new prospects). Needs the Copart dealer list from Tyler Amos or Pushkaraj Jadhav (gen-16). Copart dealer data stays on the work setup: do not put it in this repo or on the public dfw-dealer-digital site (see q-03). Picks up the active-dealer exclusion from gen-14. Oct 6: the dealer list comes from the marketing sync Oct 7 (gen-26). Oct 8: also makes campaign lists prospects only (pdo-01). Oct 9: waiting on the Copart member reports (gen-26, w-08). Marketing Plan (mkt) gate: if not done by Oct 27, the pilot list is capped at [50] dealers checked by hand. Oct 16: the Copart active and inactive seller lists and the full dealership list arrived (w-08), so this can start. Lists stay in the work setup.",
       "created": "2026-10-02",
-      "updated": "2026-10-16"
+      "updated": "2026-10-20",
+      "completed": "2026-10-20"
     },
     {
       "id": "audit-07",
