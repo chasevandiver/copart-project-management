@@ -16,6 +16,7 @@ Newest entry first.
 - Changed: comm-02 and udm-10 priority high -> urgent (this week's three priorities: commission spreadsheet, Lead Tracker, video shoot)
 - Added: n-40 "Social video series: answers from Chase"
 - Changed: shoot is in the office, not the yard; vid-03 retitled, vid summary and brief updated, cutaways from Marketing footage added as a dependency
+- Added: vid-09 LinkedIn and Facebook cross-post (Me, high), vid-10 phone test clip with Ken (Me, high, due 2026-10-27), vid-11 comment and DM owner (Me), vid-12 fact cards through Legal (Me, high), vid-13 "Agree with Ken what a win looks like for the series before post one" (Me, urgent, due 2026-10-24), vid-14 results readout (Me); vid-04 note (social playbook and baseline views); risks section added to the brief
 - Added: vid-08 "Add a Social video lead source to the Lead Tracker" (Me, Backlog); vid-01 note (brief reshaped around what, why, organic reach, conversion tracking, what it takes)
 
 ## 2026-10-20 (Ken's priorities)

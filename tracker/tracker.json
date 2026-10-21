@@ -615,16 +615,19 @@
       "blockers": [],
       "next_steps": [
         "Finish the brief and outline for Ken and Michelle by Friday (vid-01)",
+        "Agree with Ken what a win looks like before post one (vid-13)",
         "Get the Copart Dealer Services facts from Ken for the fun-fact cards (vid-02, q-28)",
         "Set the shoot date, office space and who joins Ken on camera (vid-03)",
-        "Loop in Marketing's social team on posting to the corporate accounts (vid-04, q-29)"
+        "Loop in Marketing's social team on posting to the corporate accounts (vid-04, q-29)",
+        "Phone test clip with Ken before the shoot (vid-10); fact cards through Legal (vid-12)"
       ],
       "dependencies": [
         "Marketing's social team posts and reviews on the corporate accounts; they do not know about the series yet",
         "Ken has the facts; nothing goes on camera unverified",
         "Campaign call-tracking number and tagged link for attribution (mkt-06)",
         "Reps sharing posts to their route lists for early views (Route Tracker pre-visit flow)",
-        "Yard and auction footage from Marketing's library for cutaways, since the shoot is in the office"
+        "Yard and auction footage from Marketing's library for cutaways, since the shoot is in the office",
+        "The videos also feed rt-51 (video pitch in the pre-visit email), the Boston event (cceib) and the Copart Dealer Services page remake"
       ]
     }
   ],
@@ -3069,7 +3072,7 @@
       "owner": "Me",
       "due": "2026-10-28",
       "priority": "high",
-      "notes": "Posts go on the corporate Copart TikTok and Instagram. Marketing does not know yet; Ken's initiative overrides, but they post and review (q-29).",
+      "notes": "Posts go on the corporate Copart TikTok and Instagram. Marketing does not know yet; Ken's initiative overrides, but they post and review (q-29). Oct 21: also ask for Marketing's social playbook (who posts, what Legal reviews, scheduling tool, caption and cover rules) and the corporate accounts' average views per post as a baseline. First corporate post: follow their mechanics exactly once.",
       "created": "2026-10-21",
       "updated": "2026-10-21"
     },
@@ -3118,6 +3121,78 @@
       "due": null,
       "priority": "normal",
       "notes": "Needed before the first post so leads from the series can be counted through to meetings and sales. From the brief's tracking section. Lands in the Lead Tracker (udm) work.",
+      "created": "2026-10-21",
+      "updated": "2026-10-21"
+    },
+    {
+      "id": "vid-09",
+      "project_id": "vid",
+      "title": "Post each video on Ken's and the sales managers' LinkedIn, and ask Marketing to cross-post Reels to Facebook",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Dealer owners are on LinkedIn and in Facebook groups more than on TikTok. Same-day as each post. The channel Dealer Sales controls without a gatekeeper.",
+      "created": "2026-10-21",
+      "updated": "2026-10-21"
+    },
+    {
+      "id": "vid-10",
+      "project_id": "vid",
+      "title": "Do a two-minute phone test clip with Ken before the shoot",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-27",
+      "priority": "high",
+      "notes": "One idea, conversational, facts on cards not in his mouth. Scripted bullet reads die on these apps. Before Michelle's shoot day.",
+      "created": "2026-10-21",
+      "updated": "2026-10-21"
+    },
+    {
+      "id": "vid-11",
+      "project_id": "vid",
+      "title": "Set who answers comments and DMs for 48 hours after each post, with three approved answers",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Dealers will ask about fees and payment timing in public; unhappy sellers may show up. One rep or sales manager owns replies.",
+      "created": "2026-10-21",
+      "updated": "2026-10-21"
+    },
+    {
+      "id": "vid-12",
+      "project_id": "vid",
+      "title": "Send the fact cards through Legal with Ken's sign-off",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Fees, days to sale and the free run offer on a corporate account are public marketing claims. Legal gate is cdd-02.",
+      "created": "2026-10-21",
+      "updated": "2026-10-21"
+    },
+    {
+      "id": "vid-13",
+      "project_id": "vid",
+      "title": "Agree with Ken what a win looks like for the series before post one",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-24",
+      "priority": "urgent",
+      "notes": "One sentence. 'Learn which hook dealers watch and get the first tagged lead, then decide paid' beats 'go viral'. Do it in the facts sitting (vid-02).",
+      "created": "2026-10-21",
+      "updated": "2026-10-21"
+    },
+    {
+      "id": "vid-14",
+      "project_id": "vid",
+      "title": "Write the results readout for Ken after post 2 and after post 6",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "One page: the funnel numbers from the scorecard and a recommendation on paid. This is how Ken sees we got in front of dealers organically.",
       "created": "2026-10-21",
       "updated": "2026-10-21"
     }
