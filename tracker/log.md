@@ -4,7 +4,8 @@ Newest entry first.
 
 ## 2026-10-21 (David Bansigan call)
 - Source: Chase: series not raised at the Marketing sync; call set with David Bansigan at 4pm
-- Changed: vid-04 Next -> In Progress (note: call with David Oct 21)
+- Changed: vid-04 Next -> In Progress (note: call with David Oct 21; David confirmed in Teams he is the right person)
+- Changed: David Bansigan relationship (handles posting for the series); q-29 note
 
 ## 2026-10-21 (social video research)
 - Source: Chase's research ask on how the six videos reach new independent dealers organically
