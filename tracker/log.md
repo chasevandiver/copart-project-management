@@ -2,6 +2,12 @@
 
 Newest entry first.
 
+## 2026-10-21 (David Bansigan call outcome)
+- Source: Chase: David is on board, wants a one-pager; we hand over videos, B-roll is available, he schedules
+- Changed: vid-04 -> Done; call outcome added to Chase's board note n-41
+- Answered: q-29 (David posts and schedules; Noelle sign-off not raised)
+- Added: vid-15 "Send David Bansigan the one-pager on the series" (Me, In Progress, high), vid-16 "Get access to Marketing's B-roll footage for Michelle" (Me, Next, high); one-pager doc linked on project vid
+
 ## 2026-10-21 (David Bansigan call)
 - Source: Chase: series not raised at the Marketing sync; call set with David Bansigan at 4pm
 - Changed: vid-04 Next -> In Progress (note: call with David Oct 21; David confirmed in Teams he is the right person)
@@ -10,7 +16,7 @@ Newest entry first.
 ## 2026-10-21 (social video research)
 - Source: Chase's research ask on how the six videos reach new independent dealers organically
 - Added: docs/social/research-brief.md, content-calendar.md and measurement-plan.md in the copart-dealer-digital repo (drafts); linked on project vid; vid-01 note
-- Added: n-42 "Copart completed the ACV Auctions acquisition on Oct 16"
+- Added: n-43 "Copart completed the ACV Auctions acquisition on Oct 16"
 - Raised: d-vid-02 whether the ACV acquisition changes the dealer plans and the repo rule
 
 ## 2026-10-21 (social video series)
@@ -25,7 +31,7 @@ Newest entry first.
 - Added: q-28 for Ken (which facts can go on camera), q-29 for Noelle (who posts to the corporate accounts and what review)
 - Raised: d-vid-01 video length (Chase leans 45 to 60 seconds)
 - Changed: comm-02 and udm-10 priority high -> urgent (this week's three priorities: commission spreadsheet, Lead Tracker, video shoot)
-- Added: n-41 "Social video series: answers from Chase" (renumbered from n-40 after the board added n-40)
+- Added: n-42 "Social video series: answers from Chase" (renumbered twice after the board added n-40 and n-41)
 - Changed: shoot is in the office, not the yard; vid-03 retitled, vid summary and brief updated, cutaways from Marketing footage added as a dependency
 - Added: vid-09 LinkedIn and Facebook cross-post (Me, high), vid-10 phone test clip with Ken (Me, high, due 2026-10-27), vid-11 comment and DM owner (Me), vid-12 fact cards through Legal (Me, high), vid-13 "Agree with Ken what a win looks like for the series before post one" (Me, urgent, due 2026-10-24), vid-14 results readout (Me); vid-04 note (social playbook and baseline views); risks section added to the brief
 - Added: vid-08 "Add a Social video lead source to the Lead Tracker" (Me, Backlog); vid-01 note (brief reshaped around what, why, organic reach, conversion tracking, what it takes)

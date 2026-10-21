@@ -623,6 +623,10 @@
         {
           "label": "Measurement plan (UTMs, KPIs, paid thresholds)",
           "where": "copart-dealer-digital repo, docs/social/measurement-plan.md"
+        },
+        {
+          "label": "One-pager for Marketing (David Bansigan)",
+          "url": "https://claude.ai/artifact/WXGitH8fYwqmuWxG3wc97o"
         }
       ],
       "blockers": [],
@@ -632,11 +636,11 @@
         "Agree with Ken what a win looks like before post one (vid-13)",
         "Get the Copart Dealer Services facts from Ken for the fun-fact cards (vid-02, q-28)",
         "Set the shoot date, office space and who joins Ken on camera (vid-03)",
-        "Loop in Marketing's social team on posting to the corporate accounts (vid-04, q-29)",
-        "Phone test clip with Ken before the shoot (vid-10); fact cards through Legal (vid-12)"
+        "Phone test clip with Ken before the shoot (vid-10); fact cards through Legal (vid-12)",
+        "Send David the one-pager (vid-15) and get B-roll access for Michelle (vid-16)"
       ],
       "dependencies": [
-        "Marketing's social team posts and reviews on the corporate accounts; they do not know about the series yet",
+        "David Bansigan schedules the posts on the corporate accounts once we hand over finished videos (Oct 21)",
         "Ken has the facts; nothing goes on camera unverified",
         "Campaign call-tracking number and tagged link for attribution (mkt-06)",
         "Reps sharing posts to their route lists for early views (Route Tracker pre-visit flow)",
@@ -3082,13 +3086,14 @@
       "id": "vid-04",
       "project_id": "vid",
       "title": "Loop in Marketing's social team on the series and posting to the corporate accounts",
-      "status": "In Progress",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-28",
       "priority": "high",
-      "notes": "Posts go on the corporate Copart TikTok and Instagram. Marketing does not know yet; Ken's initiative overrides, but they post and review (q-29). Oct 21: also ask for Marketing's social playbook (who posts, what Legal reviews, scheduling tool, caption and cover rules) and the corporate accounts' average views per post as a baseline. First corporate post: follow their mechanics exactly once. Oct 21: not raised at the Marketing sync (the group VP had other matters). Call set with David Bansigan (social contact) at 4pm Oct 21. David confirmed in Teams he is the right person ('let me know what you need').",
+      "notes": "Posts go on the corporate Copart TikTok and Instagram. Marketing does not know yet; Ken's initiative overrides, but they post and review (q-29). Oct 21: also ask for Marketing's social playbook (who posts, what Legal reviews, scheduling tool, caption and cover rules) and the corporate accounts' average views per post as a baseline. First corporate post: follow their mechanics exactly once. Oct 21: not raised at the Marketing sync (the group VP had other matters). Call set with David Bansigan (social contact) at 4pm Oct 21. David confirmed in Teams he is the right person ('let me know what you need'). Oct 21 call: David is on board. Marketing wants more faces on social, so the series fits. Process: we give him the finished videos, B-roll footage is available, and he fits the posts on the calendar. He wants a one-pager (vid-15). Notes in n-41.",
       "created": "2026-10-21",
-      "updated": "2026-10-21"
+      "updated": "2026-10-21",
+      "completed": "2026-10-21"
     },
     {
       "id": "vid-05",
@@ -3207,6 +3212,30 @@
       "due": null,
       "priority": "normal",
       "notes": "One page: the funnel numbers from the scorecard and a recommendation on paid. This is how Ken sees we got in front of dealers organically.",
+      "created": "2026-10-21",
+      "updated": "2026-10-21"
+    },
+    {
+      "id": "vid-15",
+      "project_id": "vid",
+      "title": "Send David Bansigan the one-pager on the series",
+      "status": "In Progress",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "From the Oct 21 call: what we want to accomplish and how it's done. Draft doc linked on the project. Send once Ken's shoot date and facts are set.",
+      "created": "2026-10-21",
+      "updated": "2026-10-21"
+    },
+    {
+      "id": "vid-16",
+      "project_id": "vid",
+      "title": "Get access to Marketing's B-roll footage for Michelle",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "David says B-roll footage is available (Oct 21). Find out where it lives and get it to Michelle before the edit, since Ken is filming in the office.",
       "created": "2026-10-21",
       "updated": "2026-10-21"
     }
@@ -3614,10 +3643,10 @@
       "question": "Who posts to the corporate TikTok and Instagram, and what review does a Dealer Sales video need before it goes up? (Oct 21: David Bansigan confirmed he handles posting; review path still to confirm on the call.)",
       "ask": "Noelle Goodman",
       "project_id": "vid",
-      "status": "open",
-      "answer": "",
+      "status": "answered",
+      "answer": "David Bansigan handles it. We give him the finished videos, B-roll is available, and he fits them on the calendar. He wants a one-pager. Whether Noelle signs off was not raised.",
       "raised": "2026-10-21",
-      "answered": null
+      "answered": "2026-10-21"
     }
   ],
   "decisions": [
@@ -4100,7 +4129,7 @@
       "name": "David Bansigan",
       "title": "",
       "department": "Marketing",
-      "relationship": "Social media. Confirmed Oct 21 he is the right person for posting the Copart Dealer Services videos on the corporate TikTok and Instagram.",
+      "relationship": "Social media. Confirmed Oct 21 he is the right person for posting the Copart Dealer Services videos on the corporate TikTok and Instagram. Oct 21 call: on board; we hand him finished videos and he schedules them. Marketing wants more faces on social.",
       "contact": ""
     },
     {
@@ -4722,6 +4751,19 @@
     },
     {
       "id": "n-41",
+      "title": "David Social Media Contact Marketing",
+      "body": [
+        "Going over video series idea",
+        "Call outcome: David is on board and confirmed he is the right person for the corporate TikTok and Instagram.",
+        "Marketing wants more faces on social media, so Ken on camera fits what they want.",
+        "Process: we give him the finished videos, there is access to B-roll footage, and he fits the posts on the calendar.",
+        "He wants a one-pager on what we want to accomplish and how it's done (vid-15)."
+      ],
+      "project_id": "general",
+      "date": "2026-10-21"
+    },
+    {
+      "id": "n-42",
       "date": "2026-10-21",
       "title": "Social video series: answers from Chase",
       "project_id": "vid",
@@ -4737,7 +4779,7 @@
       ]
     },
     {
-      "id": "n-42",
+      "id": "n-43",
       "date": "2026-10-21",
       "title": "Copart completed the ACV Auctions acquisition on Oct 16",
       "project_id": "vid",
