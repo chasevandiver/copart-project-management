@@ -35,10 +35,11 @@
       "status": "In Progress",
       "project_ids": [
         "audit",
-        "mkt"
+        "mkt",
+        "vid"
       ],
       "created": "2026-09-29",
-      "updated": "2026-10-16"
+      "updated": "2026-10-21"
     },
     {
       "id": "g-03",
@@ -594,6 +595,35 @@
       ],
       "dependencies": [
         "Plaud as the transcript source (pa-02)"
+      ]
+    },
+    {
+      "id": "vid",
+      "name": "Copart Dealer Services social video series",
+      "category": "Marketing Efforts",
+      "status": "In Progress",
+      "summary": "Ken's initiative: a series of 45 to 60 second commercial-style videos, filmed with Michelle (videographer), posted on the corporate Copart TikTok and Instagram accounts. Ken on camera with a walk and talk, maybe a sales manager, bullet-style fun facts about Copart Dealer Services. The main goal is getting the posts picked up by dealers' algorithms to drive leads. Organic first; paid is a separate roadmap later.",
+      "built": [
+        "Video brief and series outline for Ken and Michelle, draft (Oct 21)"
+      ],
+      "links": [
+        {
+          "label": "Video brief and series outline",
+          "url": "https://claude.ai/artifact/DdPRFwHDq9x65oWcLmvEdo"
+        }
+      ],
+      "blockers": [],
+      "next_steps": [
+        "Finish the brief and outline for Ken and Michelle by Friday (vid-01)",
+        "Get the Copart Dealer Services facts from Ken for the fun-fact cards (vid-02, q-28)",
+        "Set the shoot date, yard and who joins Ken on camera (vid-03)",
+        "Loop in Marketing's social team on posting to the corporate accounts (vid-04, q-29)"
+      ],
+      "dependencies": [
+        "Marketing's social team posts and reviews on the corporate accounts; they do not know about the series yet",
+        "Ken has the facts; nothing goes on camera unverified",
+        "Campaign call-tracking number and tagged link for attribution (mkt-06)",
+        "Reps sharing posts to their route lists for early views (Route Tracker pre-visit flow)"
       ]
     }
   ],
@@ -2965,10 +2995,10 @@
       "status": "Next",
       "owner": "Me",
       "due": null,
-      "priority": "high",
-      "notes": "Oct 20: test workbook matches Brenda's numbers on her data and fake sample data. Real raw data comes after the current two-week period. Commission data stays on the work setup. Was hub-05.",
+      "priority": "urgent",
+      "notes": "Oct 20: test workbook matches Brenda's numbers on her data and fake sample data. Real raw data comes after the current two-week period. Commission data stays on the work setup. Was hub-05. Oct 21: urgent, this week (commission spreadsheet, Lead Tracker and the video shoot are the week's three priorities).",
       "created": "2026-10-20",
-      "updated": "2026-10-20"
+      "updated": "2026-10-21"
     },
     {
       "id": "udm-10",
@@ -2977,10 +3007,10 @@
       "status": "In Progress",
       "owner": "Me",
       "due": null,
-      "priority": "high",
-      "notes": "Oct 20: full UX and UI update from Keon's feedback, plus my own calls on what makes it faster and easier to use and track. From the Oct 20 managers meeting (n-37): a search feature, a cleaner dashboard, and dossiers from reps feeding their dashboards (udm-09). Oct 20: needs to land before the team launch next week (udm-11).",
+      "priority": "urgent",
+      "notes": "Oct 20: full UX and UI update from Keon's feedback, plus my own calls on what makes it faster and easier to use and track. From the Oct 20 managers meeting (n-37): a search feature, a cleaner dashboard, and dossiers from reps feeding their dashboards (udm-09). Oct 20: needs to land before the team launch next week (udm-11). Oct 21: urgent, this week (commission spreadsheet, Lead Tracker and the video shoot are the week's three priorities).",
       "created": "2026-10-20",
-      "updated": "2026-10-20"
+      "updated": "2026-10-21"
     },
     {
       "id": "udm-11",
@@ -2993,6 +3023,90 @@
       "notes": "Oct 20: Ken wants the Lead Tracker launched to the team next week. Due set to the end of that week; move it when the day is set. The UX and UI redo (udm-10) and the lead rules (udm-08) come first. Ken called it out to the whole floor at today's team gather up (n-38).",
       "created": "2026-10-20",
       "updated": "2026-10-20"
+    },
+    {
+      "id": "vid-01",
+      "project_id": "vid",
+      "title": "Write the video brief and series outline for Ken and Michelle",
+      "status": "In Progress",
+      "owner": "Me",
+      "due": "2026-10-24",
+      "priority": "urgent",
+      "notes": "Oct 21 managers meeting (n-39). Commercial style, pitch plus bullet-style fun facts, walk and talk with Ken. Main focus: how the videos get picked up by dealers' algorithms. Draft doc linked on the project.",
+      "created": "2026-10-21",
+      "updated": "2026-10-21"
+    },
+    {
+      "id": "vid-02",
+      "project_id": "vid",
+      "title": "Get the Copart Dealer Services facts from Ken for the fun-fact cards",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-24",
+      "priority": "urgent",
+      "notes": "Facts are specific to Copart Dealer Services, not Copart as a whole. Ken has them. Nothing goes on camera unverified (q-28).",
+      "created": "2026-10-21",
+      "updated": "2026-10-21"
+    },
+    {
+      "id": "vid-03",
+      "project_id": "vid",
+      "title": "Set the shoot date, yard and who joins Ken on camera",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-24",
+      "priority": "urgent",
+      "notes": "Filming is next week with Michelle. Ken on camera, maybe one of the sales managers. No date yet (Oct 21).",
+      "created": "2026-10-21",
+      "updated": "2026-10-21"
+    },
+    {
+      "id": "vid-04",
+      "project_id": "vid",
+      "title": "Loop in Marketing's social team on the series and posting to the corporate accounts",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-28",
+      "priority": "high",
+      "notes": "Posts go on the corporate Copart TikTok and Instagram. Marketing does not know yet; Ken's initiative overrides, but they post and review (q-29).",
+      "created": "2026-10-21",
+      "updated": "2026-10-21"
+    },
+    {
+      "id": "vid-05",
+      "project_id": "vid",
+      "title": "Film the series with Michelle",
+      "status": "Next",
+      "owner": "Michelle",
+      "due": null,
+      "priority": "high",
+      "notes": "Next week, date to set (vid-03). Shot list and deliverables are in the brief.",
+      "created": "2026-10-21",
+      "updated": "2026-10-21"
+    },
+    {
+      "id": "vid-06",
+      "project_id": "vid",
+      "title": "Set up the landing link and tracking before the first post",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Tagged link to the Copart Dealer Services page, and the campaign call-tracking number if mkt-06 lands in time, so leads from the series show in the Lead Tracker.",
+      "created": "2026-10-21",
+      "updated": "2026-10-21"
+    },
+    {
+      "id": "vid-07",
+      "project_id": "vid",
+      "title": "Write the paid roadmap for the series",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Separate track once organic is running. Depends on who owns paid social and the budget (q-05).",
+      "created": "2026-10-21",
+      "updated": "2026-10-21"
     }
   ],
   "waiting_on": [
@@ -3382,6 +3496,26 @@
       "answer": "",
       "raised": "2026-10-15",
       "answered": null
+    },
+    {
+      "id": "q-28",
+      "question": "Which Copart Dealer Services facts and numbers can go on camera in the social video series, and who signs them off?",
+      "ask": "Ken Rion",
+      "project_id": "vid",
+      "status": "open",
+      "answer": "",
+      "raised": "2026-10-21",
+      "answered": null
+    },
+    {
+      "id": "q-29",
+      "question": "Who posts to the corporate TikTok and Instagram, and what review does a Dealer Sales video need before it goes up?",
+      "ask": "Noelle Goodman",
+      "project_id": "vid",
+      "status": "open",
+      "answer": "",
+      "raised": "2026-10-21",
+      "answered": null
     }
   ],
   "decisions": [
@@ -3731,6 +3865,20 @@
       "status": "resolved",
       "answer": "Only from the office",
       "resolved": "2026-10-16"
+    },
+    {
+      "id": "d-vid-01",
+      "project_id": "vid",
+      "question": "How long is each video in the series?",
+      "options": [
+        "45 to 60 seconds, pitch style (Chase's lean)",
+        "45 seconds or under, 60 as the ceiling (brief's default)",
+        "30 seconds or under, one fact per post, more posts"
+      ],
+      "raised": "2026-10-21",
+      "status": "open",
+      "answer": "",
+      "resolved": null
     }
   ],
   "people": [
@@ -3872,6 +4020,13 @@
       "title": "Senior Marketing Specialist",
       "department": "Marketing",
       "relationship": "My contact for Copart Dealer Services website changes. Has the website briefs and HTML (Oct 15)",
+      "contact": ""
+    },
+    {
+      "name": "Michelle",
+      "title": "Videographer",
+      "department": "",
+      "relationship": "Shooting the Copart Dealer Services social video series with Ken (Ken's initiative, Oct 21)",
       "contact": ""
     }
   ],
@@ -4432,6 +4587,22 @@
       ],
       "project_id": "general",
       "date": "2026-10-21"
+    },
+    {
+      "id": "n-40",
+      "date": "2026-10-21",
+      "title": "Social video series: answers from Chase",
+      "project_id": "vid",
+      "body": [
+        "Michelle is the videographer. Marketing does not know about the series yet; it is Ken's initiative, which overrides.",
+        "No shoot date yet. Ken on camera, maybe one of the sales managers.",
+        "A series is best. Chase leans 45 to 60 seconds per video since they are pitchy; the brief argues for 45 or under with 60 as the ceiling (d-vid-01).",
+        "Posts go on the corporate Copart accounts.",
+        "'Figure out what happens' means Ken wants the videos to show up on dealers' algorithms to drive leads. That is the brief's main job.",
+        "Facts are specific to Copart Dealer Services, not Copart as a whole. Ken has all the facts.",
+        "Organic first, with a separate roadmap for paid.",
+        "Brief is for Ken and Michelle, due end of this week. Week's three urgent priorities: commission spreadsheet, Lead Tracker, video shoot."
+      ]
     }
   ],
   "reports": [

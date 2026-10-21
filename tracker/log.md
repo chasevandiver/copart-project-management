@@ -2,6 +2,20 @@
 
 Newest entry first.
 
+## 2026-10-21 (social video series)
+- Source: Chase's answers on the TikTok and Instagram series from the Oct 21 managers meeting (n-39)
+- Added: project vid "Copart Dealer Services social video series" (Marketing Efforts, In Progress), under g-02; brief doc linked
+- Added: Michelle (Videographer) to people
+- Added: vid-01 "Write the video brief and series outline for Ken and Michelle" (Me, In Progress, urgent, due 2026-10-24)
+- Added: vid-02 "Get the Copart Dealer Services facts from Ken for the fun-fact cards" (Me, urgent, due 2026-10-24)
+- Added: vid-03 "Set the shoot date, yard and who joins Ken on camera" (Me, urgent, due 2026-10-24)
+- Added: vid-04 "Loop in Marketing's social team on the series and posting to the corporate accounts" (Me, high, due 2026-10-28)
+- Added: vid-05 "Film the series with Michelle" (Michelle, Next), vid-06 landing link and tracking, vid-07 paid roadmap (Me, Backlog)
+- Added: q-28 for Ken (which facts can go on camera), q-29 for Noelle (who posts to the corporate accounts and what review)
+- Raised: d-vid-01 video length (Chase leans 45 to 60 seconds)
+- Changed: comm-02 and udm-10 priority high -> urgent (this week's three priorities: commission spreadsheet, Lead Tracker, video shoot)
+- Added: n-40 "Social video series: answers from Chase"
+
 ## 2026-10-20 (Ken's priorities)
 - Source: Chase: Ken set the commission tool as this week's focus and wants the Lead Tracker launched to the team next week; shout-out at the team gather up
 - Changed: comm-01 priority high -> urgent; udm-10 note (lands before launch)
