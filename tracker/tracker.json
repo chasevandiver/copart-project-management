@@ -291,9 +291,8 @@
       "id": "audit",
       "name": "Copart Dealer Services Digital Presence Audit",
       "category": "Marketing Efforts",
-      "status": "Backlog",
-      "idea": true,
-      "summary": "Full review of what Copart Dealer Services is doing digitally today, and where we should put effort to increase visibility. Idea in progress; nothing committed yet.",
+      "status": "In Progress",
+      "summary": "Full review of what Copart Dealer Services is doing digitally today, and where we should put effort to increase visibility.",
       "built": [
         "FullStory click maps of the landing page, desktop and mobile, with findings (n-18)",
         "Digital audit tab rebuilt as an overview page plus easier-to-read section pages (Oct 8)",
@@ -370,7 +369,7 @@
       "id": "cceib",
       "name": "Cars & Cocktails Event in Boston",
       "category": "Campaigns",
-      "status": "Next",
+      "status": "Done",
       "summary": "Email going out on the event in Boston for Dealers. On the current flyer get something like a pre-event survey on any questions they would want to ask at the event, when they last worked with Copart if so - any other survey questions to gather information and materials from an event perspective since most of cds team will be there.",
       "built": [],
       "links": [],
@@ -403,8 +402,8 @@
       "id": "wb",
       "name": "Inactive seller win-back",
       "category": "Campaigns",
-      "status": "Next",
-      "summary": "Proposed first campaign, pending Ken: win back Copart Dealer Services sellers who have gone quiet. Sold at least [2] units in the [24] months before going quiet, nothing in the last [120] days. Marketing sends three plain-text emails in the rep's name (Nov 3, 10, 17); reps call tier A (top [50] by past volume) and follow up with the same Kyle-approved copy from the Lead Tracker. Measured by sellers won back: accounts that send a car within 60 days of the first email. Newly licensed prospects follow about two weeks later. The list comes from Salesforce and stays in the work setup.",
+      "status": "Backlog",
+      "summary": "On hold from Oct 21: no formal pitch to Ken yet, since he has Chase on the commission tool, Lead Tracker and video series. Proposed first campaign, pending Ken: win back Copart Dealer Services sellers who have gone quiet. Sold at least [2] units in the [24] months before going quiet, nothing in the last [120] days. Marketing sends three plain-text emails in the rep's name (Nov 3, 10, 17); reps call tier A (top [50] by past volume) and follow up with the same Kyle-approved copy from the Lead Tracker. Measured by sellers won back: accounts that send a car within 60 days of the first email. Newly licensed prospects follow about two weeks later. The list comes from Salesforce and stays in the work setup.",
       "built": [
         "Campaign plan doc (Oct 15): why inactive first, audience and tiers, sequence, message and offer, who does what, how rep emails fit, measures and holdout, dates to first send, wave 2, risks, asks for Ken",
         "Lead Tracker outreach template spec for Work Claude (docs/lead-tracker-templates-spec.md in Copart Dealer Digital, Oct 15)",
@@ -422,6 +421,7 @@
       ],
       "blockers": [],
       "next_steps": [
+        "On hold until Ken frees Chase from the current priorities; then bring him the plan (wb-01)",
         "Bring the plan to Ken (wb-01, q-26)",
         "Pull the inactive list once Salesforce access lands (wb-02, w-12)",
         "Send Kyle the brief and check the member calendar (wb-03)"
@@ -495,8 +495,8 @@
       "id": "mkt",
       "name": "Marketing Plan",
       "category": "Marketing Efforts",
-      "status": "In Progress",
-      "summary": "The 90-day marketing plan from the Digital audit, to the day 90 report on 2026-12-27. Three bets: rep-led outreach to prospective dealers (meetings and first sales), a Copart Dealer Services page that converts better, and Copart named in more AI answers to dealer selling questions. Targets in [brackets] are placeholders to set with Ken. Dealer Sales leads the sales-side work; Marketing keeps brand, content and channels, and Kyle reviews every campaign.",
+      "status": "Backlog",
+      "summary": "On hold from Oct 21: Chase's current projects (commission tool, Lead Tracker) and the Social Media Videos come first. The 90-day marketing plan from the Digital audit, to the day 90 report on 2026-12-27. Three bets: rep-led outreach to prospective dealers (meetings and first sales), a Copart Dealer Services page that converts better, and Copart named in more AI answers to dealer selling questions. Targets in [brackets] are placeholders to set with Ken. Dealer Sales leads the sales-side work; Marketing keeps brand, content and channels, and Kyle reviews every campaign.",
       "built": [
         "Marketing plan doc (Oct 12): findings, goals, audience and message, ranked gaps, opportunities, the 90-day plan with targets, owners, due dates, a weekly scorecard and fallbacks for each gate, tools and access needed, risks and questions for Ken",
         "Orion drafts tab (Oct 12): six SEO page briefs, a CDS page remake draft, an aged inventory guide, two rep LinkedIn posts, the rep-in-town text and a 3-email new license welcome, with unconfirmed claims cut",
@@ -515,6 +515,7 @@
       ],
       "blockers": [],
       "next_steps": [
+        "On hold until the commission tool, Lead Tracker launch and video series are through",
         "Ask Keon, Ken or Tyler Amos, and Brad for the numbers behind the targets (mkt-03)",
         "Put q-14, q-15 and q-16 in the Oct 16 update to Ken (gen-22)",
         "Send Tech and IT the one-package ask (mkt-01) and write the remake brief (audit-12)",
@@ -792,25 +793,25 @@
       "id": "cdd-02",
       "project_id": "cdd",
       "title": "Legal check before any bulk email",
-      "status": "Next",
+      "status": "Backlog",
       "owner": "Legal",
-      "due": "2026-10-27",
+      "due": null,
       "priority": "urgent",
-      "notes": "Many TxDMV emails are owners' personal addresses. Kept off the site and git, but they are in the Excel books. No bulk email until Legal clears it. Oct 6: holding until after the marketing sync (Oct 7) and the Lauren Harrington meeting (Oct 8, gen-17). Oct 8: also gates the prospective dealer campaigns (pdo-01). Marketing Plan (mkt) gate: if no answer by Oct 27, the pilot runs as calls to business lines and visits only.",
+      "notes": "Many TxDMV emails are owners' personal addresses. Kept off the site and git, but they are in the Excel books. No bulk email until Legal clears it. Oct 6: holding until after the marketing sync (Oct 7) and the Lauren Harrington meeting (Oct 8, gen-17). Oct 8: also gates the prospective dealer campaigns (pdo-01). Marketing Plan (mkt) gate: if no answer by Oct 27, the pilot runs as calls to business lines and visits only. Oct 21: on hold with the marketing and campaign work (was due 2026-10-27).",
       "created": "2026-09-29",
-      "updated": "2026-10-12"
+      "updated": "2026-10-21"
     },
     {
       "id": "cdd-03",
       "project_id": "cdd",
       "title": "Take the second DFW inventory snapshot",
-      "status": "Next",
+      "status": "Waiting",
       "owner": "Claude Code",
-      "due": "2026-10-20",
+      "due": null,
       "priority": "urgent",
-      "notes": "On or after Oct 4. Turns on the \"aged inventory\" signal, the biggest seller-fit weight. Pin colors are relative until then. Oct 6: on hold. No second run until the prospecting spreadsheets arrive from marketing (gen-26). Marketing Plan (mkt): needed for aged-unit calls from Nov 10. Oct 16: the dealer lists arrived (w-08), so the hold is off. Run on or after Oct 20.",
+      "notes": "On or after Oct 4. Turns on the \"aged inventory\" signal, the biggest seller-fit weight. Pin colors are relative until then. Oct 6: on hold. No second run until the prospecting spreadsheets arrive from marketing (gen-26). Marketing Plan (mkt): needed for aged-unit calls from Nov 10. Oct 16: the dealer lists arrived (w-08), so the hold is off. Run on or after Oct 20. Oct 21: hold until the website changes go through (Chase).",
       "created": "2026-09-29",
-      "updated": "2026-10-16"
+      "updated": "2026-10-21"
     },
     {
       "id": "cdd-04",
@@ -1767,12 +1768,12 @@
       "title": "Send Ken the weekly update",
       "status": "Next",
       "owner": "Me",
-      "due": "2026-11-03",
+      "due": "2026-10-23",
       "priority": "high",
-      "notes": "Board > Weekly update. Check the highlights with Edit, then Copy text into an email or use Print or PDF. Include q-14, q-15 and q-16 this week (Marketing Plan, mkt). Oct 16: not sent. Ken has been out since Tuesday afternoon; send when he is back.",
+      "notes": "Board > Weekly update. Check the highlights with Edit, then Copy text into an email or use Print or PDF. Include q-14, q-15 and q-16 this week (Marketing Plan, mkt). Oct 16: not sent. Ken has been out since Tuesday afternoon; send when he is back. Oct 21: the Oct 23 update has not gone out; due reset to Oct 23 (it had been checked off twice on Oct 20).",
       "recurring": "weekly",
       "created": "2026-10-01",
-      "updated": "2026-10-20",
+      "updated": "2026-10-21",
       "completed": "2026-10-20"
     },
     {
@@ -1985,13 +1986,13 @@
       "id": "pdo-01",
       "project_id": "pdo",
       "title": "Review prospective dealer campaign ideas with Kyle Cochran",
-      "status": "Next",
+      "status": "Backlog",
       "owner": "Me",
-      "due": "2026-10-23",
+      "due": null,
       "priority": "high",
-      "notes": "Kyle asked on Oct 8 to be looped in on any digital campaign (brand, messaging, saturation). Ideas in the Digital audit, docs/audit/08-campaigns.md (n-20). Check with Ken first which campaigns stay with Dealer Sales. Draft note to Kyle is in docs/audit/asks.md. Oct 8: ask Ken first which campaigns stay with Dealer Sales (gen-23). Gates before anything runs: legal (cdd-02), prospects-only match (udm-01), the campaign calendar from Kyle or Lauren (cmp-03), and a form lead baseline (q-08, q-12). Formerly audit-11. Oct 9: drafts for the first three campaigns, built around the free run offer, are in the Pre-Visit Campaign Drafts doc. Draft note to Kyle is n-22 (replaces the one in docs/audit/asks.md). Oct 9: campaign work picks up the week of Oct 12. Drafts are made. Oct 9: neither q-14 (free run) nor q-15 (which campaigns stay with Dealer Sales) came up with Ken. Marketing Plan (mkt): once Ken says go, send Kyle the Pre-Visit drafts, the rep text, LinkedIn posts and welcome emails.",
+      "notes": "Kyle asked on Oct 8 to be looped in on any digital campaign (brand, messaging, saturation). Ideas in the Digital audit, docs/audit/08-campaigns.md (n-20). Check with Ken first which campaigns stay with Dealer Sales. Draft note to Kyle is in docs/audit/asks.md. Oct 8: ask Ken first which campaigns stay with Dealer Sales (gen-23). Gates before anything runs: legal (cdd-02), prospects-only match (udm-01), the campaign calendar from Kyle or Lauren (cmp-03), and a form lead baseline (q-08, q-12). Formerly audit-11. Oct 9: drafts for the first three campaigns, built around the free run offer, are in the Pre-Visit Campaign Drafts doc. Draft note to Kyle is n-22 (replaces the one in docs/audit/asks.md). Oct 9: campaign work picks up the week of Oct 12. Drafts are made. Oct 9: neither q-14 (free run) nor q-15 (which campaigns stay with Dealer Sales) came up with Ken. Marketing Plan (mkt): once Ken says go, send Kyle the Pre-Visit drafts, the rep text, LinkedIn posts and welcome emails. Oct 21: on hold with the marketing and campaign work (was due 2026-10-23).",
       "created": "2026-10-08",
-      "updated": "2026-10-12"
+      "updated": "2026-10-21"
     },
     {
       "id": "udm-05",
@@ -2023,25 +2024,25 @@
       "id": "cmp-03",
       "project_id": "cmp",
       "title": "Get the dealer and member campaign calendar from Kyle or Lauren",
-      "status": "Next",
+      "status": "Backlog",
       "owner": "Me",
-      "due": "2026-10-23",
+      "due": null,
       "priority": "normal",
-      "notes": "So prospective dealer campaigns don't stack on messages dealers already get (Kyle's saturation point, Oct 8). Gate for pdo-01. Formerly audit-13. Marketing Plan (mkt).",
+      "notes": "So prospective dealer campaigns don't stack on messages dealers already get (Kyle's saturation point, Oct 8). Gate for pdo-01. Formerly audit-13. Marketing Plan (mkt). Oct 21: on hold with the marketing and campaign work (was due 2026-10-23).",
       "created": "2026-10-08",
-      "updated": "2026-10-12"
+      "updated": "2026-10-21"
     },
     {
       "id": "wb-01",
       "project_id": "wb",
       "title": "Bring the win-back plan to Ken",
-      "status": "Next",
+      "status": "Backlog",
       "owner": "Me",
-      "due": "2026-10-20",
+      "due": null,
       "priority": "high",
-      "notes": "Decisions in q-26 and q-14. Plan doc: First campaign: inactive seller win-back. Oct 16: Ken out since Tuesday Oct 13 afternoon. Moved to Monday.",
+      "notes": "Decisions in q-26 and q-14. Plan doc: First campaign: inactive seller win-back. Oct 16: Ken out since Tuesday Oct 13 afternoon. Moved to Monday. Oct 21: on hold, no formal pitch to Ken yet (was due 2026-10-20).",
       "created": "2026-10-15",
-      "updated": "2026-10-16"
+      "updated": "2026-10-21"
     },
     {
       "id": "wb-02",
@@ -2060,97 +2061,97 @@
       "id": "wb-03",
       "project_id": "wb",
       "title": "Send Kyle the win-back brief and outline, and check the member campaign calendar",
-      "status": "Next",
+      "status": "Backlog",
       "owner": "Me",
-      "due": "2026-10-23",
+      "due": null,
       "priority": "high",
-      "notes": "Ties to pdo-01 and cmp-03. Ask whether plain-text emails in the rep's name skip the 2-week Creative lead time (q-27).",
+      "notes": "Ties to pdo-01 and cmp-03. Ask whether plain-text emails in the rep's name skip the 2-week Creative lead time (q-27). Oct 21: on hold, no formal pitch to Ken yet (was due 2026-10-23).",
       "created": "2026-10-15",
-      "updated": "2026-10-15"
+      "updated": "2026-10-21"
     },
     {
       "id": "wb-04",
       "project_id": "wb",
       "title": "Confirm the offer and one or two real changes since these dealers left",
-      "status": "Next",
+      "status": "Backlog",
       "owner": "Ken",
-      "due": "2026-10-23",
+      "due": null,
       "priority": "normal",
-      "notes": "Offer is q-14. If nothing has changed, the emails leave that line out.",
+      "notes": "Offer is q-14. If nothing has changed, the emails leave that line out. Oct 21: on hold, no formal pitch to Ken yet (was due 2026-10-23).",
       "created": "2026-10-15",
-      "updated": "2026-10-15"
+      "updated": "2026-10-21"
     },
     {
       "id": "wb-05",
       "project_id": "wb",
       "title": "Finalize the win-back list: exclusions, tiers, tier A assigned in the Lead Tracker",
-      "status": "Next",
+      "status": "Backlog",
       "owner": "Me",
-      "due": "2026-10-27",
+      "due": null,
       "priority": "high",
-      "notes": "Leave off disputes, unpaid balances, dealers a rep is working, lapsed licenses and opt-outs. Ken approves assignments (d-udm-05).",
+      "notes": "Leave off disputes, unpaid balances, dealers a rep is working, lapsed licenses and opt-outs. Ken approves assignments (d-udm-05). Oct 21: on hold, no formal pitch to Ken yet (was due 2026-10-27).",
       "created": "2026-10-15",
-      "updated": "2026-10-15"
+      "updated": "2026-10-21"
     },
     {
       "id": "wb-06",
       "project_id": "wb",
       "title": "Send Marketing the brief, outline and list; set up the campaign tag in Salesforce",
-      "status": "Next",
+      "status": "Backlog",
       "owner": "Me",
-      "due": "2026-10-27",
+      "due": null,
       "priority": "high",
-      "notes": "Process from n-32. Campaign tag with Rama Manyam.",
+      "notes": "Process from n-32. Campaign tag with Rama Manyam. Oct 21: on hold, no formal pitch to Ken yet (was due 2026-10-27).",
       "created": "2026-10-15",
-      "updated": "2026-10-15"
+      "updated": "2026-10-21"
     },
     {
       "id": "wb-07",
       "project_id": "wb",
       "title": "Run A6 win-back drafts for tier A for rep review",
-      "status": "Next",
+      "status": "Backlog",
       "owner": "Me",
-      "due": "2026-10-30",
+      "due": null,
       "priority": "normal",
-      "notes": "Work Claude, Copart data stays in the work setup. Every draft reviewed by the rep.",
+      "notes": "Work Claude, Copart data stays in the work setup. Every draft reviewed by the rep. Oct 21: on hold, no formal pitch to Ken yet (was due 2026-10-30).",
       "created": "2026-10-15",
-      "updated": "2026-10-15"
+      "updated": "2026-10-21"
     },
     {
       "id": "wb-08",
       "project_id": "wb",
       "title": "Confirm win-back email 1 went out and tier A calls are logged",
-      "status": "Next",
+      "status": "Backlog",
       "owner": "Me",
-      "due": "2026-11-03",
+      "due": null,
       "priority": "high",
-      "notes": "Marketing sends Nov 3, 10 and 17. Tier A calls Nov 4 to 6. If Marketing needs more lead time, the first send moves to Nov 10.",
+      "notes": "Marketing sends Nov 3, 10 and 17. Tier A calls Nov 4 to 6. If Marketing needs more lead time, the first send moves to Nov 10. Oct 21: on hold, no formal pitch to Ken yet (was due 2026-11-03).",
       "created": "2026-10-15",
-      "updated": "2026-10-15"
+      "updated": "2026-10-21"
     },
     {
       "id": "wb-09",
       "project_id": "wb",
       "title": "Review the win-back with Ken: replies, meetings, first cars, why they left",
-      "status": "Next",
+      "status": "Backlog",
       "owner": "Me",
-      "due": "2026-11-24",
+      "due": null,
       "priority": "normal",
-      "notes": "Same meeting as the marketing plan gate review (mkt-22).",
+      "notes": "Same meeting as the marketing plan gate review (mkt-22). Oct 21: on hold, no formal pitch to Ken yet (was due 2026-11-24).",
       "created": "2026-10-15",
-      "updated": "2026-10-15"
+      "updated": "2026-10-21"
     },
     {
       "id": "wb-10",
       "project_id": "wb",
       "title": "Send Ken the 60-day win-back readout: sellers won back",
-      "status": "Next",
+      "status": "Backlog",
       "owner": "Me",
-      "due": "2027-01-04",
+      "due": null,
       "priority": "normal",
-      "notes": "Compare with the holdout group if Ken approved one.",
+      "notes": "Compare with the holdout group if Ken approved one. Oct 21: on hold, no formal pitch to Ken yet (was due 2027-01-04).",
       "created": "2026-10-15",
-      "updated": "2026-10-15"
+      "updated": "2026-10-21"
     },
     {
       "id": "rt-44",
@@ -2185,9 +2186,9 @@
       "owner": "Me",
       "due": null,
       "priority": "urgent",
-      "notes": "Ken, Oct 9: get with Brenda to build a tool that tracks the new commission setup, which launches the week of Oct 12. Sent Brenda a Teams message Oct 9 (w-09); follow up. Commission data stays on the work setup, never in this repo. Follow up with Brenda Monday Oct 12. Oct 15: no reply from Brenda yet (w-09). On hold while the commission setup is not live. Oct 16: commission setup is not live yet. No date; pick this up when it launches and Brenda replies (w-09). Oct 20: main focus this week (n-37). Brenda replied (w-09) and I'm rebuilding her commission spreadsheet with rules and macros for each person's payout structure, so the new pay plan fills in from the data drop instead of hand-edited macros and summary (was gen-30). Mostly manual today: about 8 to 10 hours a round, target about 1 hour. My test workbook matches Brenda's numbers. Building fake sample data to test now; the real check is the next two-week commission data (comm-02). Oct 20: moved to its own project, Commission Tool (was hub-03). Oct 20: Ken set tightening up the commission tool as my main focus this week.",
+      "notes": "Ken, Oct 9: get with Brenda to build a tool that tracks the new commission setup, which launches the week of Oct 12. Sent Brenda a Teams message Oct 9 (w-09); follow up. Commission data stays on the work setup, never in this repo. Follow up with Brenda Monday Oct 12. Oct 15: no reply from Brenda yet (w-09). On hold while the commission setup is not live. Oct 16: commission setup is not live yet. No date; pick this up when it launches and Brenda replies (w-09). Oct 20: main focus this week (n-37). Brenda replied (w-09) and I'm rebuilding her commission spreadsheet with rules and macros for each person's payout structure, so the new pay plan fills in from the data drop instead of hand-edited macros and summary (was gen-30). Mostly manual today: about 8 to 10 hours a round, target about 1 hour. My test workbook matches Brenda's numbers. Building fake sample data to test now; the real check is the next two-week commission data (comm-02). Oct 20: moved to its own project, Commission Tool (was hub-03). Oct 20: Ken set tightening up the commission tool as my main focus this week. Oct 21: meeting with Brenda and the tech team moved to Oct 22.",
       "created": "2026-10-09",
-      "updated": "2026-10-20"
+      "updated": "2026-10-21"
     },
     {
       "id": "rt-45",
@@ -2431,73 +2432,73 @@
       "id": "mkt-02",
       "project_id": "mkt",
       "title": "Pick the pilot rep and route week",
-      "status": "Next",
+      "status": "Backlog",
       "owner": "Keon",
-      "due": "2026-10-20",
+      "due": null,
       "priority": "high",
-      "notes": "Pilot week is Nov 3 to 7. If the rep works outside DFW there is no inventory data, so aged-unit calls won't apply.",
+      "notes": "Pilot week is Nov 3 to 7. If the rep works outside DFW there is no inventory data, so aged-unit calls won't apply. Oct 21: marketing work on hold (was due 2026-10-20).",
       "created": "2026-10-12",
-      "updated": "2026-10-12"
+      "updated": "2026-10-21"
     },
     {
       "id": "mkt-03",
       "project_id": "mkt",
       "title": "Ask for the numbers behind the plan's targets",
-      "status": "Next",
+      "status": "Backlog",
       "owner": "Me",
-      "due": "2026-10-20",
+      "due": null,
       "priority": "high",
-      "notes": "Keon: reps available, visits per rep per week, Route Tracker counts so far. Ken or Tyler Amos: visit-to-seller rate from Salesforce. Brad: monthly form leads (q-08). Then recalculate the bracketed targets in the plan.",
+      "notes": "Keon: reps available, visits per rep per week, Route Tracker counts so far. Ken or Tyler Amos: visit-to-seller rate from Salesforce. Brad: monthly form leads (q-08). Then recalculate the bracketed targets in the plan. Oct 21: marketing work on hold (was due 2026-10-20). No numbers yet (Oct 21).",
       "created": "2026-10-12",
-      "updated": "2026-10-12"
+      "updated": "2026-10-21"
     },
     {
       "id": "mkt-04",
       "project_id": "mkt",
       "title": "Book Creative 2 weeks out for the Copart Dealer Services page",
-      "status": "Next",
+      "status": "Backlog",
       "owner": "Me",
-      "due": "2026-10-23",
+      "due": null,
       "priority": "normal",
-      "notes": "After the remake brief (audit-12).",
+      "notes": "After the remake brief (audit-12). Oct 21: marketing work on hold (was due 2026-10-23).",
       "created": "2026-10-12",
-      "updated": "2026-10-12"
+      "updated": "2026-10-21"
     },
     {
       "id": "mkt-05",
       "project_id": "mkt",
       "title": "Ask Ken or Keon to confirm hauling, how listing works and how reserves work",
-      "status": "Next",
+      "status": "Backlog",
       "owner": "Me",
-      "due": "2026-10-23",
+      "due": null,
       "priority": "normal",
-      "notes": "The Orion drafts and page copy need these before anything is used. Unconfirmed lines are bracketed in the plan's Orion drafts tab.",
+      "notes": "The Orion drafts and page copy need these before anything is used. Unconfirmed lines are bracketed in the plan's Orion drafts tab. Oct 21: marketing work on hold (was due 2026-10-23).",
       "created": "2026-10-12",
-      "updated": "2026-10-12"
+      "updated": "2026-10-21"
     },
     {
       "id": "mkt-06",
       "project_id": "mkt",
       "title": "Ask for Search Console access and a campaign call-tracking number",
-      "status": "Next",
+      "status": "Backlog",
       "owner": "Me",
-      "due": "2026-10-23",
+      "due": null,
       "priority": "normal",
-      "notes": "Search Console from the data team or web; call tracking from IT or Marketing.",
+      "notes": "Search Console from the data team or web; call tracking from IT or Marketing. Oct 21: marketing work on hold (was due 2026-10-23).",
       "created": "2026-10-12",
-      "updated": "2026-10-12"
+      "updated": "2026-10-21"
     },
     {
       "id": "mkt-07",
       "project_id": "mkt",
       "title": "Set up the weekly scorecard with day 0 numbers",
-      "status": "Next",
+      "status": "Backlog",
       "owner": "Me",
-      "due": "2026-10-27",
+      "due": null,
       "priority": "high",
-      "notes": "Dealers touched, visits, meetings and first sales by campaign tag (Route Tracker); form leads and meeting requests (Salesforce); page visitors and form starts (FullStory); Selling-stage AI mention rate; pilot rep hours.",
+      "notes": "Dealers touched, visits, meetings and first sales by campaign tag (Route Tracker); form leads and meeting requests (Salesforce); page visitors and form starts (FullStory); Selling-stage AI mention rate; pilot rep hours. Oct 21: marketing work on hold (was due 2026-10-27).",
       "created": "2026-10-12",
-      "updated": "2026-10-12"
+      "updated": "2026-10-21"
     },
     {
       "id": "mkt-08",
@@ -2505,11 +2506,11 @@
       "title": "Pull the weekly scorecard for the Thursday update to Ken",
       "status": "Backlog",
       "owner": "Me",
-      "due": "2026-10-29",
+      "due": null,
       "priority": "normal",
-      "notes": "Goes into gen-22 each week.",
+      "notes": "Goes into gen-22 each week. Oct 21: marketing work on hold (was due 2026-10-29).",
       "created": "2026-10-12",
-      "updated": "2026-10-12",
+      "updated": "2026-10-21",
       "recurring": "weekly"
     },
     {
@@ -2518,11 +2519,11 @@
       "title": "Run the pilot week: one rep, [15] visits, every touch tagged",
       "status": "Backlog",
       "owner": "Keon",
-      "due": "2026-11-07",
+      "due": null,
       "priority": "high",
-      "notes": "Nov 3 to 7. Pre-visit calls with the Pre-Visit Campaign Drafts once Ken and Kyle say go. If legal hasn't answered, calls to business lines and visits only. Oct 15: tier A win-back dealers on the pilot rep's route can be visited the same week (wb).",
+      "notes": "Nov 3 to 7. Pre-visit calls with the Pre-Visit Campaign Drafts once Ken and Kyle say go. If legal hasn't answered, calls to business lines and visits only. Oct 15: tier A win-back dealers on the pilot rep's route can be visited the same week (wb). Oct 21: marketing work on hold (was due 2026-11-07).",
       "created": "2026-10-12",
-      "updated": "2026-10-15"
+      "updated": "2026-10-21"
     },
     {
       "id": "mkt-10",
@@ -2530,11 +2531,11 @@
       "title": "Start the rep question log with the pilot",
       "status": "Backlog",
       "owner": "Keon",
-      "due": "2026-11-03",
+      "due": null,
       "priority": "normal",
-      "notes": "Reps note what dealers ask on visits; those questions pick the next content topics.",
+      "notes": "Reps note what dealers ask on visits; those questions pick the next content topics. Oct 21: marketing work on hold (was due 2026-11-03).",
       "created": "2026-10-12",
-      "updated": "2026-10-12"
+      "updated": "2026-10-21"
     },
     {
       "id": "mkt-11",
@@ -2567,11 +2568,11 @@
       "title": "Send correction asks to brokers, dealer101 and DealerCenter",
       "status": "Backlog",
       "owner": "Me",
-      "due": "2026-11-07",
+      "due": null,
       "priority": "normal",
-      "notes": "Ask them to stop describing Copart as salvage only.",
+      "notes": "Ask them to stop describing Copart as salvage only. Oct 21: marketing work on hold (was due 2026-11-07).",
       "created": "2026-10-12",
-      "updated": "2026-10-12"
+      "updated": "2026-10-21"
     },
     {
       "id": "mkt-14",
@@ -2844,13 +2845,14 @@
       "id": "agents-05",
       "project_id": "agents",
       "title": "Send the AI use survey to the Copart Dealer Services team",
-      "status": "Waiting",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Oct 15: survey drafted on how the team uses AI today and Leo's tools. Send once approved. Answers also feed the agent ranking (agents-02, agents-03). Oct 16: Ken still out, so not approved yet.",
+      "notes": "Oct 15: survey drafted on how the team uses AI today and Leo's tools. Send once approved. Answers also feed the agent ranking (agents-02, agents-03). Oct 16: Ken still out, so not approved yet. Oct 21: sent to the team with Leo.",
       "created": "2026-10-15",
-      "updated": "2026-10-16"
+      "updated": "2026-10-21",
+      "completed": "2026-10-21"
     },
     {
       "id": "gen-29",
@@ -2860,9 +2862,9 @@
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Oct 15: plan for today, tomorrow and next week. Use it to tighten the details on each project (udm-07 covers how calls and outreach are tracked today). Good moment to note who is using each tool and how often, for the update to Ken. Oct 16: a pilot team is trying the updated Lead Tracker and will give feedback. Oct 20: Keon's feedback on the Lead Tracker is in; the UX and UI redo is udm-10.",
+      "notes": "Oct 15: plan for today, tomorrow and next week. Use it to tighten the details on each project (udm-07 covers how calls and outreach are tracked today). Good moment to note who is using each tool and how often, for the update to Ken. Oct 16: a pilot team is trying the updated Lead Tracker and will give feedback. Oct 20: Keon's feedback on the Lead Tracker is in; the UX and UI redo is udm-10. Oct 21: Keon is piloting the Lead Tracker while he cold calls in the office. Leo, a more experienced sales rep, tried the layout and thinks it's really slick.",
       "created": "2026-10-15",
-      "updated": "2026-10-20"
+      "updated": "2026-10-21"
     },
     {
       "id": "rt-62",
@@ -3020,7 +3022,7 @@
       "owner": "Me",
       "due": null,
       "priority": "urgent",
-      "notes": "Oct 20: test workbook matches Brenda's numbers on her data and fake sample data. Real raw data comes after the current two-week period. Commission data stays on the work setup. Was hub-05. Oct 21: urgent, this week (commission spreadsheet, Lead Tracker and the video shoot are the week's three priorities).",
+      "notes": "Oct 20: test workbook matches Brenda's numbers on her data and fake sample data. Real raw data comes after the current two-week period. Commission data stays on the work setup. Was hub-05. Oct 21: urgent, this week (commission spreadsheet, Lead Tracker and the video shoot are the week's three priorities). Oct 21: second set of commission reports not in yet.",
       "created": "2026-10-20",
       "updated": "2026-10-21"
     },
@@ -3032,7 +3034,7 @@
       "owner": "Me",
       "due": null,
       "priority": "urgent",
-      "notes": "Oct 20: full UX and UI update from Keon's feedback, plus my own calls on what makes it faster and easier to use and track. From the Oct 20 managers meeting (n-37): a search feature, a cleaner dashboard, and dossiers from reps feeding their dashboards (udm-09). Oct 20: needs to land before the team launch next week (udm-11). Oct 21: urgent, this week (commission spreadsheet, Lead Tracker and the video shoot are the week's three priorities).",
+      "notes": "Oct 20: full UX and UI update from Keon's feedback, plus my own calls on what makes it faster and easier to use and track. From the Oct 20 managers meeting (n-37): a search feature, a cleaner dashboard, and dossiers from reps feeding their dashboards (udm-09). Oct 20: needs to land before the team launch next week (udm-11). Oct 21: urgent, this week (commission spreadsheet, Lead Tracker and the video shoot are the week's three priorities). Oct 21: Keon is piloting it while cold calling in the office; Leo likes the layout.",
       "created": "2026-10-20",
       "updated": "2026-10-21"
     },
@@ -3044,9 +3046,9 @@
       "owner": "Me",
       "due": "2026-10-30",
       "priority": "high",
-      "notes": "Oct 20: Ken wants the Lead Tracker launched to the team next week. Due set to the end of that week; move it when the day is set. The UX and UI redo (udm-10) and the lead rules (udm-08) come first. Ken called it out to the whole floor at today's team gather up (n-38).",
+      "notes": "Oct 20: Ken wants the Lead Tracker launched to the team next week. Due set to the end of that week; move it when the day is set. The UX and UI redo (udm-10) and the lead rules (udm-08) come first. Ken called it out to the whole floor at today's team gather up (n-38). Oct 21: launch could be as early as Mon Oct 26.",
       "created": "2026-10-20",
-      "updated": "2026-10-20"
+      "updated": "2026-10-21"
     },
     {
       "id": "vid-01",
@@ -3117,7 +3119,7 @@
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Tagged link to the Copart Dealer Services page, and the campaign call-tracking number if mkt-06 lands in time, so leads from the series show in the Lead Tracker.",
+      "notes": "Tagged link to the Copart Dealer Services page, and the campaign call-tracking number if mkt-06 lands in time, so leads from the series show in the Lead Tracker. Oct 21: mkt-06 (call-tracking number) is on hold, so ask for the number as part of this task if the series needs it.",
       "created": "2026-10-21",
       "updated": "2026-10-21"
     },
@@ -3293,8 +3295,8 @@
       "from_whom": "IT",
       "project_id": "rt",
       "since": "2026-09-29",
-      "priority": "normal",
-      "notes": "Oct 6: holding until Ken's field week ends. No automation changes while the team is in the field."
+      "priority": "low",
+      "notes": "Oct 6: holding until Ken's field week ends. No automation changes while the team is in the field. Oct 21: not relevant right now (Chase)."
     },
     {
       "id": "w-04",
@@ -3332,7 +3334,7 @@
       "project_id": "hub",
       "since": "2026-10-06",
       "priority": "normal",
-      "notes": "Oct 15: met Leo about connecting all the tools. Waiting on the co-collaborator setup."
+      "notes": "Oct 15: met Leo about connecting all the tools. Waiting on the co-collaborator setup. Oct 21: no movement."
     },
     {
       "id": "w-08",
@@ -3371,7 +3373,7 @@
       "project_id": "agents",
       "since": "2026-10-13",
       "priority": "normal",
-      "notes": "Connects the agents to Copart Dealer Services data. Not granted yet (Oct 13). See n-28. Oct 16: Omni Analytics is in its infancy, so no access yet. Keep this open and check back later. Oct 16: Chase will get the owner name at the next Copilot champion meeting."
+      "notes": "Connects the agents to Copart Dealer Services data. Not granted yet (Oct 13). See n-28. Oct 16: Omni Analytics is in its infancy, so no access yet. Keep this open and check back later. Oct 16: Chase will get the owner name at the next Copilot champion meeting. Oct 21: no movement."
     },
     {
       "id": "w-12",
@@ -4047,9 +4049,9 @@
         "Ask Ken"
       ],
       "raised": "2026-10-21",
-      "status": "open",
-      "answer": "",
-      "resolved": null
+      "status": "resolved",
+      "answer": "Rule stays; no ACV work until told otherwise (not yet)",
+      "resolved": "2026-10-21"
     }
   ],
   "people": [

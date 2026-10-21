@@ -2,6 +2,20 @@
 
 Newest entry first.
 
+## 2026-10-21 (answers to tracker questions)
+- Source: Chase's answers to the tracker cleanup questions
+- Changed: cceib Next -> Done
+- Changed: wb Next -> Backlog (on hold, no formal pitch to Ken yet); wb-01, wb-03 to wb-10 -> Backlog, dates cleared
+- Changed: gen-22 due 2026-11-03 -> 2026-10-23 (Oct 23 update not sent yet)
+- Changed: comm-01 note (Brenda and Tech meeting moved to Oct 22); comm-02 note (second commission reports not in)
+- Changed: agents-05 Waiting -> Done (AI survey sent with Leo)
+- Changed: udm-11 note (launch could be Mon Oct 26); gen-29 and udm-10 notes (Keon piloting while cold calling, Leo likes the layout)
+- Changed: cdd-03 Next -> Waiting, date cleared (hold until the website changes go through)
+- Changed: mkt In Progress -> Backlog (on hold behind current projects and videos); mkt-02, mkt-03, mkt-04, mkt-05, mkt-06, mkt-07, mkt-08, mkt-09, mkt-10, mkt-13, pdo-01, cmp-03, cdd-02 -> Backlog, dates cleared
+- Changed: w-03 priority low (Zapier not relevant now); w-07, w-11 notes (no movement)
+- Resolved: d-vid-02 Rule stays; no ACV work yet
+- Changed: audit Backlog (idea) -> In Progress
+
 ## 2026-10-21 (Social Media Videos project)
 - Source: Chase: put the video work in a Marketing project called "Social Media Videos", move the inbox note "CDS Social Media connect. 10.21" there, push to main
 - Changed: project vid renamed "Copart Dealer Services social video series" -> "Social Media Videos" (Marketing Efforts, under g-02); summary updated (David posts, B-roll available, Marketing can boost, editor open)
