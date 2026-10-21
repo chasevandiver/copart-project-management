@@ -2,7 +2,7 @@
   "meta": {
     "owner": "Chase",
     "role": "Digital Engagement Manager, supporting Ken Rion (SVP of Dealer Sales)",
-    "last_updated": "2026-10-20"
+    "last_updated": "2026-10-21"
   },
   "categories": [
     "AI Tools",
@@ -4417,6 +4417,19 @@
         "Ken wants the Lead Tracker launched to the team next week (udm-11).",
         "At the gather up with the whole team, Ken called me out in front of the floor for a round of applause on what's coming with the Lead Tracker."
       ]
+    },
+    {
+      "id": "n-39",
+      "title": "Meeting with Ken 10.21",
+      "body": [
+        "CV Today:",
+        "-Continuing to test with sample files on the Commission Spreadsheet and get the second set of commission reports",
+        "-On meeting with Brenda this afternoon with tech team so probably will need to make updates to that list as they go through",
+        "-Make layout/quality of life updates to lead tracker app as Keon goes through leads list.",
+        "-"
+      ],
+      "project_id": "general",
+      "date": "2026-10-21"
     }
   ],
   "reports": [
