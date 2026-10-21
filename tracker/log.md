@@ -2,6 +2,12 @@
 
 Newest entry first.
 
+## 2026-10-21 (social video research)
+- Source: Chase's research ask on how the six videos reach new independent dealers organically
+- Added: docs/social/research-brief.md, content-calendar.md and measurement-plan.md in the copart-dealer-digital repo (drafts); linked on project vid; vid-01 note
+- Added: n-41 "Copart completed the ACV Auctions acquisition on Oct 16"
+- Raised: d-vid-02 whether the ACV acquisition changes the dealer plans and the repo rule
+
 ## 2026-10-21 (social video series)
 - Source: Chase's answers on the TikTok and Instagram series from the Oct 21 managers meeting (n-39)
 - Added: project vid "Copart Dealer Services social video series" (Marketing Efforts, In Progress), under g-02; brief doc linked

@@ -604,16 +604,30 @@
       "status": "In Progress",
       "summary": "Ken's initiative: a series of 45 to 60 second commercial-style videos, filmed with Michelle (videographer), posted on the corporate Copart TikTok and Instagram accounts. Ken on camera in the office (not the yard), maybe a sales manager, bullet-style fun facts about Copart Dealer Services. The main goal is getting the posts picked up by dealers' algorithms to drive leads. Organic first; paid is a separate roadmap later.",
       "built": [
-        "Video brief and series outline for Ken and Michelle, draft (Oct 21)"
+        "Video brief and series outline for Ken and Michelle, draft (Oct 21)",
+        "Research brief, content calendar and measurement plan, drafts (Oct 21): Copart's social footprint, where dealers pay attention, competitor playbook, 3-week calendar, UTMs, paid graduation rule and paid targeting per platform"
       ],
       "links": [
         {
           "label": "Video brief and series outline",
           "url": "https://claude.ai/artifact/DdPRFwHDq9x65oWcLmvEdo"
+        },
+        {
+          "label": "Research brief: reaching dealers organically",
+          "where": "copart-dealer-digital repo, docs/social/research-brief.md"
+        },
+        {
+          "label": "Content calendar (6 videos, 3 weeks)",
+          "where": "copart-dealer-digital repo, docs/social/content-calendar.md"
+        },
+        {
+          "label": "Measurement plan (UTMs, KPIs, paid thresholds)",
+          "where": "copart-dealer-digital repo, docs/social/measurement-plan.md"
         }
       ],
       "blockers": [],
       "next_steps": [
+        "Read the research: TikTok and Instagram do not measurably reach dealer owners; LinkedIn, YouTube, Facebook cross-posts, rep route lists and NIADA or Auto Remarketing newsletters are the dealer distribution",
         "Finish the brief and outline for Ken and Michelle by Friday (vid-01)",
         "Agree with Ken what a win looks like before post one (vid-13)",
         "Get the Copart Dealer Services facts from Ken for the fun-fact cards (vid-02, q-28)",
@@ -3036,7 +3050,7 @@
       "owner": "Me",
       "due": "2026-10-24",
       "priority": "urgent",
-      "notes": "Oct 21 managers meeting (n-39). Commercial style, pitch plus bullet-style fun facts, walk and talk with Ken. Main focus: how the videos get picked up by dealers' algorithms. Draft doc linked on the project. Oct 21: reshaped around what, why, how we get in front of dealers organically, how we track conversion, and what it takes (three gates: before the shoot, before the first post, every post week). Shoot moved to the office; shot list now calls for cutaways from Marketing's footage.",
+      "notes": "Oct 21 managers meeting (n-39). Commercial style, pitch plus bullet-style fun facts, walk and talk with Ken. Main focus: how the videos get picked up by dealers' algorithms. Draft doc linked on the project. Oct 21: reshaped around what, why, how we get in front of dealers organically, how we track conversion, and what it takes (three gates: before the shoot, before the first post, every post week). Shoot moved to the office; shot list now calls for cutaways from Marketing's footage. Oct 21 (later): research brief, content calendar and measurement plan drafted in copart-dealer-digital docs/social. Calendar proposes first post Tue Nov 10, video 6 on Dec 1 (Thanksgiving), pending Ken's facts.",
       "created": "2026-10-21",
       "updated": "2026-10-21"
     },
@@ -3967,6 +3981,20 @@
       "status": "open",
       "answer": "",
       "resolved": null
+    },
+    {
+      "id": "d-vid-02",
+      "project_id": "vid",
+      "question": "Does Copart's acquisition of ACV Auctions (closed Oct 16) change the dealer social or campaign plans, and does the 'ACV is a competitor name only' repo rule stay?",
+      "options": [
+        "Rule stays; no ACV work until told otherwise",
+        "Lift the rule; look at ACV's dealer channel presence (TIADA, Used Car Week) for Copart Dealer Services",
+        "Ask Ken"
+      ],
+      "raised": "2026-10-21",
+      "status": "open",
+      "answer": "",
+      "resolved": null
     }
   ],
   "people": [
@@ -4690,6 +4718,17 @@
         "Facts are specific to Copart Dealer Services, not Copart as a whole. Ken has all the facts.",
         "Organic first, with a separate roadmap for paid.",
         "Brief is for Ken and Michelle, due end of this week. Week's three urgent priorities: commission spreadsheet, Lead Tracker, video shoot."
+      ]
+    },
+    {
+      "id": "n-41",
+      "date": "2026-10-21",
+      "title": "Copart completed the ACV Auctions acquisition on Oct 16",
+      "project_id": "vid",
+      "body": [
+        "Copart's 8-K and Auto Remarketing report the tender offer closed Oct 15 and the merger completed Oct 16, 2026; ACV runs as an independent subsidiary.",
+        "The copart-dealer-digital repo rule 'ACV is a competitor name only, no ACV-specific strategy work' predates this and still applies until Chase changes it.",
+        "Research found ACV is a TIADA Business Partner and sponsor, so Copart now owns a brand already inside the Texas independent dealer channel. Decision needed from Chase and Ken on whether that changes the social or campaign plans (d-vid-02)."
       ]
     }
   ],
