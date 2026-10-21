@@ -15,6 +15,7 @@ Newest entry first.
 - Raised: d-vid-01 video length (Chase leans 45 to 60 seconds)
 - Changed: comm-02 and udm-10 priority high -> urgent (this week's three priorities: commission spreadsheet, Lead Tracker, video shoot)
 - Added: n-40 "Social video series: answers from Chase"
+- Added: vid-08 "Add a Social video lead source to the Lead Tracker" (Me, Backlog); vid-01 note (brief reshaped around what, why, organic reach, conversion tracking, what it takes)
 
 ## 2026-10-20 (Ken's priorities)
 - Source: Chase: Ken set the commission tool as this week's focus and wants the Lead Tracker launched to the team next week; shout-out at the team gather up

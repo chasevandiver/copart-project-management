@@ -3032,7 +3032,7 @@
       "owner": "Me",
       "due": "2026-10-24",
       "priority": "urgent",
-      "notes": "Oct 21 managers meeting (n-39). Commercial style, pitch plus bullet-style fun facts, walk and talk with Ken. Main focus: how the videos get picked up by dealers' algorithms. Draft doc linked on the project.",
+      "notes": "Oct 21 managers meeting (n-39). Commercial style, pitch plus bullet-style fun facts, walk and talk with Ken. Main focus: how the videos get picked up by dealers' algorithms. Draft doc linked on the project. Oct 21: reshaped around what, why, how we get in front of dealers organically, how we track conversion, and what it takes (three gates: before the shoot, before the first post, every post week).",
       "created": "2026-10-21",
       "updated": "2026-10-21"
     },
@@ -3105,6 +3105,18 @@
       "due": null,
       "priority": "normal",
       "notes": "Separate track once organic is running. Depends on who owns paid social and the budget (q-05).",
+      "created": "2026-10-21",
+      "updated": "2026-10-21"
+    },
+    {
+      "id": "vid-08",
+      "project_id": "vid",
+      "title": "Add a Social video lead source to the Lead Tracker and tell reps to ask how dealers heard about us",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Needed before the first post so leads from the series can be counted through to meetings and sales. From the brief's tracking section. Lands in the Lead Tracker (udm) work.",
       "created": "2026-10-21",
       "updated": "2026-10-21"
     }
