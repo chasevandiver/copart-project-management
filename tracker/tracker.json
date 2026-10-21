@@ -599,10 +599,10 @@
     },
     {
       "id": "vid",
-      "name": "Copart Dealer Services social video series",
+      "name": "Social Media Videos",
       "category": "Marketing Efforts",
       "status": "In Progress",
-      "summary": "Ken's initiative: a series of 45 to 60 second commercial-style videos, filmed with Michelle (videographer), posted on the corporate Copart TikTok and Instagram accounts. Ken on camera in the office (not the yard), maybe a sales manager, bullet-style fun facts about Copart Dealer Services. The main goal is getting the posts picked up by dealers' algorithms to drive leads. Organic first; paid is a separate roadmap later.",
+      "summary": "Ken's initiative: a six-video series over three weeks, filmed in the office with Michelle (videographer), Ken on camera and a sales manager in two. Commercial-style pitch with fun-fact cards about Copart Dealer Services, aimed at independent dealers who want to sell. David Bansigan posts on Copart's corporate TikTok and Instagram; we hand him finished videos and a one-pager, B-roll is available, and he fits them on the calendar. Marketing wants more faces on social, and can boost the posts that do well organically to target dealers. Current audience is mostly consumers. Who edits the videos is still open.",
       "built": [
         "Video brief and series outline for Ken and Michelle, draft (Oct 21)",
         "Research brief, content calendar and measurement plan, drafts (Oct 21): Copart's social footprint, where dealers pay attention, competitor playbook, 3-week calendar, UTMs, paid graduation rule and paid targeting per platform"
@@ -631,6 +631,8 @@
       ],
       "blockers": [],
       "next_steps": [
+        "Get Ken's words for the script and his decisions in one 15-minute session (vid-17)",
+        "Find out who edits the videos (vid-18)",
         "Read the research: TikTok and Instagram do not measurably reach dealer owners; LinkedIn, YouTube, Facebook cross-posts, rep route lists and NIADA or Auto Remarketing newsletters are the dealer distribution",
         "Finish the brief and outline for Ken and Michelle by Friday (vid-01)",
         "Agree with Ken what a win looks like before post one (vid-13)",
@@ -3103,7 +3105,7 @@
       "owner": "Michelle",
       "due": null,
       "priority": "high",
-      "notes": "Next week, date to set (vid-03). Shot list and deliverables are in the brief.",
+      "notes": "Next week, date to set (vid-03). Shot list and deliverables are in the brief. Oct 21: who edits the videos is still open (vid-18).",
       "created": "2026-10-21",
       "updated": "2026-10-21"
     },
@@ -3127,7 +3129,7 @@
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Separate track once organic is running. Depends on who owns paid social and the budget (q-05).",
+      "notes": "Separate track once organic is running. Depends on who owns paid social and the budget (q-05). Oct 21: Marketing can boost posts, so a strong organic post can be boosted to target dealers (n-42).",
       "created": "2026-10-21",
       "updated": "2026-10-21"
     },
@@ -3236,6 +3238,30 @@
       "due": null,
       "priority": "high",
       "notes": "David says B-roll footage is available (Oct 21). Find out where it lives and get it to Michelle before the edit, since Ken is filming in the office.",
+      "created": "2026-10-21",
+      "updated": "2026-10-21"
+    },
+    {
+      "id": "vid-17",
+      "project_id": "vid",
+      "title": "Walk Ken through the outline and get his words for the script",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-24",
+      "priority": "urgent",
+      "notes": "Bring the draft and ask him to fill in his words, not 'what's your goal'. Opener: the structure is done, it needs to sound like you; can I ask you a few questions the way a dealer would? Questions, one per video: (1) first thing you say to a dealer who has never used us (hook, video 1); (2) what dealers get wrong about Copart (likely 'just salvage', the spine of the series); (3) what happens to a dealer's car from the call to getting paid (video 2: days, hauling, payment); (4) the three numbers you use to win a dealer over (fact cards, video 3); (5) what you tell a dealer with a car that has been sitting (video 4); (6) the objection you hear most and your answer (decides video 6). Close with: shoot date and which sales manager (vid-03), he signs off the facts (vid-02, q-28), length 45 s target with 60 ceiling (d-vid-01), what a win looks like after three weeks (vid-13), posting each video on his LinkedIn (vid-09). Record with Plaud if Ken is okay with it; his phrasing becomes the hooks. 15 minutes. Send him the outline back with his answers in it.",
+      "created": "2026-10-21",
+      "updated": "2026-10-21"
+    },
+    {
+      "id": "vid-18",
+      "project_id": "vid",
+      "title": "Find out who edits the videos",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "From the Oct 21 David call (n-42): we shoot, someone edits, then David gets the final videos. Ask Michelle whether she edits, or ask David whether Marketing or Creative has an editor. Needed before the shoot so the deliverables are clear.",
       "created": "2026-10-21",
       "updated": "2026-10-21"
     }
@@ -4759,11 +4785,21 @@
         "Process: we give him the finished videos, there is access to B-roll footage, and he fits the posts on the calendar.",
         "He wants a one-pager on what we want to accomplish and how it's done (vid-15)."
       ],
-      "project_id": "general",
+      "project_id": "vid",
       "date": "2026-10-21"
     },
     {
       "id": "n-42",
+      "title": "CDS Social Media connect. 10.21",
+      "body": [
+        "David is the one that posts on all of Copart's social media. Basically we just need to give him a one pager explaining what we're doing. We shoot the videos, *Need to figure out who can edit them* then send him the final videos to get onto the social calendar.",
+        "I suggested a 6 video series over a three week span. Marketing is wanting to have more faces on their pages so this aligns very well. They can boost posts so that when we do have a popular organic post - we can highlight that and target these dealers more accurately. The current audience is mostly consumers and not dealers."
+      ],
+      "project_id": "vid",
+      "date": "2026-10-21"
+    },
+    {
+      "id": "n-43",
       "date": "2026-10-21",
       "title": "Social video series: answers from Chase",
       "project_id": "vid",
@@ -4779,7 +4815,7 @@
       ]
     },
     {
-      "id": "n-43",
+      "id": "n-44",
       "date": "2026-10-21",
       "title": "Copart completed the ACV Auctions acquisition on Oct 16",
       "project_id": "vid",
