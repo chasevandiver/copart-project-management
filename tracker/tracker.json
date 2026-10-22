@@ -53,10 +53,11 @@
         "pdo",
         "cceib",
         "ww",
-        "mkt"
+        "mkt",
+        "pts"
       ],
       "created": "2026-10-08",
-      "updated": "2026-10-16"
+      "updated": "2026-10-22"
     },
     {
       "id": "g-04",
@@ -672,6 +673,38 @@
         "Reps sharing posts to their route lists for early views (Route Tracker pre-visit flow)",
         "Yard and auction footage from Marketing's library for cutaways, since the shoot is in the office",
         "The videos also feed rt-51 (video pitch in the pre-visit email), the Boston event (cceib) and the Copart Dealer Services page remake"
+      ]
+    },
+    {
+      "id": "pts",
+      "name": "Perfect time to sell",
+      "category": "Campaigns",
+      "status": "Next",
+      "summary": "Year-end campaign, pitched to Ken Oct 22 from his push to give dealers a reason to sell now. Reps send it, one to one from their own Outlook, out of the Lead Tracker, using email templates keyed to each dealer's hot, mild or cold rating. One message (cars sitting now can be cash before year end and before tax season) and one ask (the VIN on one car), from Oct 26 to the year-end assignment deadline. Rep-sent so it skips Marketing's lead time; Kyle still reads the words. Call scripts stay with the Copart Dealer Services managers and Ken. Marketing's win-back send and the video series join in November.",
+      "built": [
+        "Pitch doc with the message, how it runs, dates, the weekly number and asks for Ken, plus an Email templates tab with seven templates (Oct 22)",
+        "Perfect time to sell play in the Lead Tracker template spec, docs/lead-tracker-templates-spec.md in Copart Dealer Digital (Oct 22)"
+      ],
+      "links": [
+        {
+          "label": "Perfect time to sell: year-end campaign pitch",
+          "url": "https://claude.ai/artifact/DYBCWkGnifMjjQpzoJB5BQ"
+        },
+        {
+          "label": "Sell now: year-end messaging (reasons, proof points, Marketing's pieces)",
+          "url": "https://claude.ai/artifact/LSF6ToFXAhHvkTcY23qX2W"
+        },
+        {
+          "label": "Lead Tracker template spec",
+          "where": "Copart Dealer Digital repo, docs/lead-tracker-templates-spec.md"
+        }
+      ],
+      "blockers": [],
+      "next_steps": [
+        "Pitch it to Ken today: yes, the deadline date, any year-end offer, Leo's new-license leads (pts-01, q-30, q-14, q-32)",
+        "Templates to Kyle for a read (pts-02)",
+        "Templates live in the Lead Tracker by Mon Oct 26 (pts-03)",
+        "Cars assigned by rep in every Thursday update (pts-04)"
       ]
     }
   ],
@@ -3311,7 +3344,7 @@
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "One take, no cards: the reason, the deadline, the ask. Script is at the bottom of the starter scripts doc. Same shoot day as the series (vid-05). Goes on Ken's LinkedIn the day video 1 posts and next to the templates in the Lead Tracker so reps forward it.",
+      "notes": "One take, no cards: the reason, the deadline, the ask. Script is at the bottom of the starter scripts doc. Same shoot day as the series (vid-05). Goes on Ken's LinkedIn the day video 1 posts and next to the templates in the Lead Tracker so reps forward it. The clip also goes into the Perfect time to sell templates once posted.",
       "created": "2026-10-22",
       "updated": "2026-10-22"
     },
@@ -3348,7 +3381,7 @@
       "owner": "Me",
       "due": "2026-11-12",
       "priority": "high",
-      "notes": "The number Ken asked for on Oct 22: assignments in now, next to sellers won back in 60 days. From Salesforce by the campaign tag Rama sets up (wb-06).",
+      "notes": "The number Ken asked for on Oct 22: assignments in now, next to sellers won back in 60 days. From Salesforce by the campaign tag Rama sets up (wb-06). Oct 22: folded into pts-04 if Ken says yes to Perfect time to sell; the count then starts Oct 26.",
       "created": "2026-10-22",
       "updated": "2026-10-22"
     },
@@ -3360,7 +3393,7 @@
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "A banner on every list (\"Cars assigned by [date] sell this year\"), the same line as the first line of each template and call script, and on the Route Tracker stop card for the few field reps, plus three approved objection replies (wait for tax season, wholesale it locally, what does it cost) from the rep question log. Needs the date from Ken (q-30). Oct 22: most reps work from the office by phone (n-47), so the Lead Tracker is where this lands first.",
+      "notes": "A banner on every list (\"Cars assigned by [date] sell this year\"), the same line as the first line of each template, and on the Route Tracker stop card for the few field reps, plus three approved objection replies (wait for tax season, wholesale it locally, what does it cost) from the rep question log. Needs the date from Ken (q-30). Oct 22: most reps work from the office by phone (n-47), so the Lead Tracker is where this lands first. Oct 22: email templates only; call scripts are set by the managers and Ken (n-50). Built as part of pts-03.",
       "created": "2026-10-22",
       "updated": "2026-10-22"
     },
@@ -3385,6 +3418,55 @@
       "due": "2026-10-27",
       "priority": "high",
       "notes": "Leo emails his inactive sellers every Monday at 8 am through Power Automate (n-48). Leave those accounts off Marketing's send or fold the rep's email in, so no dealer gets two Copart emails in a week.",
+      "created": "2026-10-22",
+      "updated": "2026-10-22"
+    },
+    {
+      "id": "pts-01",
+      "project_id": "pts",
+      "title": "Pitch Perfect time to sell to Ken",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-22",
+      "priority": "urgent",
+      "notes": "Pitch doc linked on the project. Asks: yes to run it from Mon Oct 26, the assignment deadline (q-30), a year-end offer or none (q-14), Leo's new-license leads now or held (q-32), OK to take templates to Kyle as rep email.",
+      "created": "2026-10-22",
+      "updated": "2026-10-22"
+    },
+    {
+      "id": "pts-02",
+      "project_id": "pts",
+      "title": "Send the email templates to Kyle for a read",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-23",
+      "priority": "high",
+      "notes": "Email templates tab in the pitch doc. Frame it as rep one-to-one email from the Lead Tracker, not a Marketing send, so it needs his read on words and saturation, not Creative time.",
+      "created": "2026-10-22",
+      "updated": "2026-10-22"
+    },
+    {
+      "id": "pts-03",
+      "project_id": "pts",
+      "title": "Build the Perfect time to sell templates in the Lead Tracker",
+      "status": "Next",
+      "owner": "Work Claude",
+      "due": "2026-10-26",
+      "priority": "high",
+      "notes": "Spec: the Perfect time to sell section in docs/lead-tracker-templates-spec.md (Copart Dealer Digital). Seven templates by rating and moment, {assign_by} and {setup_form} merge fields, campaign tag pts-2026q4, deadline banner. Live only after Kyle's read (pts-02).",
+      "created": "2026-10-22",
+      "updated": "2026-10-22"
+    },
+    {
+      "id": "pts-04",
+      "project_id": "pts",
+      "title": "Report cars assigned by rep in the Thursday update",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-29",
+      "priority": "high",
+      "notes": "From Salesforce by the campaign tag, plus new seller accounts and Lead Tracker rating moves. Ken's one number.",
+      "recurring": "weekly",
       "created": "2026-10-22",
       "updated": "2026-10-22"
     }
@@ -5041,6 +5123,17 @@
         "Included: rinse and vacuum, 10 pictures, first run plus 2 reruns, professional post-sale negotiations. $35 a run from the 4th run on. Buy It Now and Make An Offer auctionless sales options available.",
         "Chase believes the complimentary full-service run was just an offer, not standard pricing. It is out of the campaign copy and scripts unless Ken runs a year-end offer. Standard pickup is $25 for the first 25 miles (Leo); the free tow came with the promotion.",
         "Used the same day: fee brackets removed in the Sell now doc, video 6 script, win-back plan, content calendar and LinkedIn post 3. The capped fees and Buy It Now are now the hook in place of the offer. Legal still sees the video fact cards (vid-12)."
+      ]
+    },
+    {
+      "id": "n-50",
+      "date": "2026-10-22",
+      "title": "Lead Tracker scope and the Perfect time to sell pitch",
+      "project_id": "pts",
+      "body": [
+        "The Lead Tracker has everything except each team's own inactive sellers: it tracks reps' data, touches, and hot, mild or cold dealers.",
+        "Call scripts are set individually by the Copart Dealer Services managers and Ken. Don't build scripts for reps; build the email templates to carry the message.",
+        "Chase wants to pitch a Perfect time to sell campaign to Ken today, because Marketing's lead time is too long for a year-end push. Plan: rep-sent email from the Lead Tracker by rating, from Oct 26 to the assignment deadline, with Marketing's pieces as a November second wave."
       ]
     }
   ],

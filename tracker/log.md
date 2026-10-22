@@ -2,6 +2,13 @@
 
 Newest entry first.
 
+## 2026-10-22, Perfect time to sell
+- Source: Chase: the Lead Tracker has everything but teams' own inactives; scripts belong to the managers and Ken; pitch a Perfect time to sell campaign to Ken today since Marketing lead time is long
+- Added: project pts "Perfect time to sell" (Campaigns, under g-03), with the pitch doc and template spec linked
+- Added: pts-01 "Pitch Perfect time to sell to Ken" (Me, due 2026-10-22, urgent); pts-02 "Send the email templates to Kyle for a read" (Me, due 2026-10-23); pts-03 "Build the Perfect time to sell templates in the Lead Tracker" (Work Claude, due 2026-10-26); pts-04 "Report cars assigned by rep in the Thursday update" (Me, weekly from 2026-10-29)
+- Added: n-50 "Lead Tracker scope and the Perfect time to sell pitch"
+- Changed: wb-13, udm-12, vid-20 notes
+
 ## 2026-10-22, pricing confirmed
 - Source: Chase: the Copart Dealer Services page pricing, and the free run was likely a one-time offer
 - Added: n-49 "Copart Dealer Services pricing confirmed; free run was a one-time offer"
