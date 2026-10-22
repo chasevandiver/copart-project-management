@@ -403,11 +403,12 @@
       "name": "Inactive seller win-back",
       "category": "Campaigns",
       "status": "Backlog",
-      "summary": "On hold from Oct 21: no formal pitch to Ken yet, since he has Chase on the commission tool, Lead Tracker and video series. Proposed first campaign, pending Ken: win back Copart Dealer Services sellers who have gone quiet. Sold at least [2] units in the [24] months before going quiet, nothing in the last [120] days. Marketing sends three plain-text emails in the rep's name (Nov 3, 10, 17); reps call tier A (top [50] by past volume) and follow up with the same Kyle-approved copy from the Lead Tracker. Measured by sellers won back: accounts that send a car within 60 days of the first email. Newly licensed prospects follow about two weeks later. The list comes from Salesforce and stays in the work setup.",
+      "summary": "On hold from Oct 21: no formal pitch to Ken yet, since he has Chase on the commission tool, Lead Tracker and video series. Proposed first campaign, pending Ken: win back Copart Dealer Services sellers who have gone quiet. Sold at least [2] units in the [24] months before going quiet, nothing in the last [120] days. Marketing sends three plain-text emails in the rep's name (Nov 3, 10, 17); reps call tier A (top [50] by past volume) and follow up with the same Kyle-approved copy from the Lead Tracker. Measured by sellers won back: accounts that send a car within 60 days of the first email. Newly licensed prospects follow about two weeks later. The list comes from Salesforce and stays in the work setup. Oct 22: Ken's push is a reason to sell now through Dec 31, so the emails open on cash before year end and tax season and close on one car by the assignment deadline; a December note and a last call week were added.",
       "built": [
         "Campaign plan doc (Oct 15): why inactive first, audience and tiers, sequence, message and offer, who does what, how rep emails fit, measures and holdout, dates to first send, wave 2, risks, asks for Ken",
         "Lead Tracker outreach template spec for Work Claude (docs/lead-tracker-templates-spec.md in Copart Dealer Digital, Oct 15)",
-        "Proposed first campaign section in the marketing plan doc, docs/audit/09-marketing-plan.md and the Digital audit site (Oct 15)"
+        "Proposed first campaign section in the marketing plan doc, docs/audit/09-marketing-plan.md and the Digital audit site (Oct 15)",
+        "Win-back emails rewritten around the reason to sell now, with a December note and a last call week through the assignment deadline (Oct 22)"
       ],
       "links": [
         {
@@ -417,10 +418,15 @@
         {
           "label": "Lead Tracker template spec",
           "where": "Copart Dealer Digital repo, docs/lead-tracker-templates-spec.md"
+        },
+        {
+          "label": "Sell now: year-end messaging for dealer campaigns",
+          "url": "https://claude.ai/artifact/LSF6ToFXAhHvkTcY23qX2W"
         }
       ],
       "blockers": [],
       "next_steps": [
+        "Get the assignment deadline from Ken (q-30), then bring the plan with the rewritten emails (wb-01)",
         "On hold until Ken frees Chase from the current priorities; then bring him the plan (wb-01)",
         "Bring the plan to Ken (wb-01, q-26)",
         "Pull the inactive list once Salesforce access lands (wb-02, w-12)",
@@ -456,6 +462,7 @@
       ],
       "blockers": [],
       "next_steps": [
+        "Prospect emails and the rep in town text now carry the reason to sell now and the assignment deadline (Sell now doc); one to one to business addresses until Legal answers (cdd-02)",
         "Confirm the free run offer with Ken (q-14)",
         "Ask Ken which campaigns stay with Dealer Sales (q-15)",
         "Review the ideas with Kyle (pdo-01)",
@@ -607,7 +614,8 @@
       "built": [
         "Video brief and series outline for Ken and Michelle, draft (Oct 21)",
         "Research brief, content calendar and measurement plan, drafts (Oct 21): Copart's social footprint, where dealers pay attention, competitor playbook, 3-week calendar, UTMs, paid graduation rule and paid targeting per platform",
-        "Starter scripts for all six videos, with timing, on-screen cards, B-roll and spare hooks; facts in brackets for Ken (Oct 22)"
+        "Starter scripts for all six videos, with timing, on-screen cards, B-roll and spare hooks; facts in brackets for Ken (Oct 22)",
+        "Year-end reason and dated call to action in all six scripts, plus a 20-second Ken cut for LinkedIn and the Lead Tracker (Oct 22, from Ken's floor speech)"
       ],
       "links": [
         {
@@ -633,10 +641,15 @@
         {
           "label": "Starter scripts (all six videos)",
           "url": "https://claude.ai/artifact/GVGBETcJF47wZhVmHHoh61"
+        },
+        {
+          "label": "Sell now: year-end messaging for dealer campaigns",
+          "url": "https://claude.ai/artifact/LSF6ToFXAhHvkTcY23qX2W"
         }
       ],
       "blockers": [],
       "next_steps": [
+        "Get the assignment deadline, the offer and Ken's own words for \"this is the time\" in the Friday session (q-30, q-14, q-31, vid-17)",
         "Get Ken's words for the script and his decisions in one 15-minute session (vid-17)",
         "Find out who edits the videos (vid-18)",
         "Read the research: TikTok and Instagram do not measurably reach dealer owners; LinkedIn, YouTube, Facebook cross-posts, rep route lists and NIADA or Auto Remarketing newsletters are the dealer distribution",
@@ -3271,6 +3284,92 @@
       "notes": "From the Oct 21 David call (n-42): we shoot, someone edits, then David gets the final videos. Ask Michelle whether she edits, or ask David whether Marketing or Creative has an editor. Needed before the shoot so the deliverables are clear.",
       "created": "2026-10-21",
       "updated": "2026-10-21"
+    },
+    {
+      "id": "vid-19",
+      "project_id": "vid",
+      "title": "Add the year-end reason and a dated call to action to the six scripts",
+      "status": "Done",
+      "owner": "Claude Code",
+      "due": null,
+      "priority": "high",
+      "notes": "Oct 22: done in the starter scripts doc. Video 1 opens on the reason to sell now, video 4 gets the tax season close and moves up to post 2 (release order 1, 4, 2, 3, 5, 6), every CTA closes on one car and \"Assigned by [date], sold this year\". Ken fills in the date and his own words on Friday (vid-17).",
+      "completed": "2026-10-22",
+      "created": "2026-10-22",
+      "updated": "2026-10-22"
+    },
+    {
+      "id": "vid-20",
+      "project_id": "vid",
+      "title": "Shoot Ken's 20-second year-end cut for LinkedIn and the Lead Tracker",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "One take, no cards: the reason, the deadline, the ask. Script is at the bottom of the starter scripts doc. Same shoot day as the series (vid-05). Goes on Ken's LinkedIn the day video 1 posts and next to the templates in the Lead Tracker so reps forward it.",
+      "created": "2026-10-22",
+      "updated": "2026-10-22"
+    },
+    {
+      "id": "wb-11",
+      "project_id": "wb",
+      "title": "Rewrite the win-back emails around the reason to sell now",
+      "status": "Done",
+      "owner": "Claude Code",
+      "due": null,
+      "priority": "high",
+      "notes": "Oct 22: done. Emails 1 to 3 open on cash before year end and tax season, close on one car and the assignment deadline; email 2 answers the three objections. Copy in the Sell now doc; the win-back plan doc points at it. Kyle still reviews before anything sends (wb-03).",
+      "completed": "2026-10-22",
+      "created": "2026-10-22",
+      "updated": "2026-10-22"
+    },
+    {
+      "id": "wb-12",
+      "project_id": "wb",
+      "title": "Add the December note and the last call week to the win-back",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Dec 1 note to everyone who has not sent a car (\"[10] days left\"), then Dec 7 to [11] every rep calls their open list. Offer ends on the assignment deadline, not Nov 30. Dates in the Sell now doc. Needs Kyle's calendar slot (cmp-03).",
+      "created": "2026-10-22",
+      "updated": "2026-10-22"
+    },
+    {
+      "id": "wb-13",
+      "project_id": "wb",
+      "title": "Add cars assigned since Nov 3, by rep and campaign tag, to the Thursday update",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-11-12",
+      "priority": "high",
+      "notes": "The number Ken asked for on Oct 22: assignments in now, next to sellers won back in 60 days. From Salesforce by the campaign tag Rama sets up (wb-06).",
+      "created": "2026-10-22",
+      "updated": "2026-10-22"
+    },
+    {
+      "id": "udm-12",
+      "project_id": "udm",
+      "title": "Put the year-end reason and the assignment deadline on the Lead Tracker and in every template",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "A banner on every list (\"Cars assigned by [date] sell this year\"), the same line on the Route Tracker stop card and as the first line of each template, plus three approved objection replies (wait for tax season, wholesale it locally, what does it cost) from the rep question log. Needs the date from Ken (q-30).",
+      "created": "2026-10-22",
+      "updated": "2026-10-22"
+    },
+    {
+      "id": "gen-31",
+      "project_id": "general",
+      "title": "Draft a Monday line from Ken to the floor through December",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-11-02",
+      "priority": "normal",
+      "notes": "One sentence each Monday: assignments so far, the deadline, who is leading. Chase drafts from the scorecard, Ken sends. Keeps the Oct 22 push alive past week two.",
+      "created": "2026-10-22",
+      "updated": "2026-10-22"
     }
   ],
   "waiting_on": [
@@ -3680,6 +3779,26 @@
       "answer": "David Bansigan handles it. We give him the finished videos, B-roll is available, and he fits them on the calendar. He wants a one-pager. Whether Noelle signs off was not raised.",
       "raised": "2026-10-21",
       "answered": "2026-10-21"
+    },
+    {
+      "id": "q-30",
+      "question": "What is the last date a car can be assigned and still sell before Dec 31, and does the offer (q-14) run through that date? Every email, video card and call uses it.",
+      "ask": "Ken Rion",
+      "project_id": "wb",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-22",
+      "answered": null
+    },
+    {
+      "id": "q-31",
+      "question": "Is there a holding-cost number for an aged unit you will stand behind on camera and in email, or do we use the bracketed third-party estimate ($30 to $40 a day) with its source?",
+      "ask": "Ken Rion",
+      "project_id": "vid",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-22",
+      "answered": null
     }
   ],
   "decisions": [
@@ -4844,6 +4963,19 @@
       ],
       "project_id": "general",
       "date": "2026-10-22"
+    },
+    {
+      "id": "n-46",
+      "date": "2026-10-22",
+      "title": "Ken's push: give dealers a reason to sell now (Oct 22)",
+      "project_id": "general",
+      "body": [
+        "Ken's speech to the floor: give the sales team one reason dealers should sell cars now, through the end of the year. Historically this is the best time to liquidate and turn collateral into cash; people have been sitting back and waiting; clearing units now sets a dealer up for tax season. Big focus on the call to action: get assignments in immediately.",
+        "Ken's asks: add this to the video script, redo the campaigns and the script.",
+        "Done the same day (Claude Code): a Sell now doc (link on the win-back and video projects) with the one reason, sourced proof points, a never-say list, the rewritten win-back emails, a prospect sequence, the video changes, the dates through Dec 31, Chase's part and the asks for Ken, Kyle and Legal. The starter scripts and the win-back plan were edited in place. The record is docs/audit/10-sell-now.md in Copart Dealer Digital.",
+        "Calls made: the dealer-facing line is carrying cost and timing (cash before year end, before tax season buyers show up), not price, because public Cox and Wards data put the wholesale price peak in tax season. Nothing touches the dealer's own taxes. Video 4 (aged inventory) moves up to post 2. A December note and a last call week were added so the reason runs to the assignment deadline.",
+        "Open for Friday's session with Ken: the last assignment date that sells before Dec 31 (q-30), the offer through that date (q-14), a holding-cost number (q-31), his own words for \"this is the time\"."
+      ]
     }
   ],
   "reports": [

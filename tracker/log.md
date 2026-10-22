@@ -2,6 +2,14 @@
 
 Newest entry first.
 
+## 2026-10-22, Ken's reason to sell now
+- Source: Chase's notes from Ken's Oct 22 floor speech: give dealers a reason to sell now through year end, get assignments in immediately, redo the campaigns and the video script
+- Added: n-46 "Ken's push: give dealers a reason to sell now (Oct 22)"
+- Added: vid-19 scripts carry the reason and a dated CTA (Claude Code, Done); vid-20 Ken's 20-second cut (Me); wb-11 win-back emails rewritten (Claude Code, Done); wb-12 December note and last call week (Me); wb-13 cars assigned in the Thursday update (Me, due 2026-11-12); udm-12 reason and deadline on the Lead Tracker and templates (Me); gen-31 Monday line from Ken (Me, due 2026-11-02)
+- Added: q-30 Ken, the last assignment date that sells before Dec 31 and whether the offer runs through it; q-31 Ken, a holding-cost number he will stand behind
+- Changed: vid and wb link the Sell now doc; wb summary and next steps; pdo next steps
+- Record: docs/audit/10-sell-now.md in Copart Dealer Digital
+
 ## 2026-10-22 (starter scripts)
 - Source: Chase asked for starter scripts for all six videos
 - Added: starter scripts doc linked on project vid; vid-01 and vid-17 notes
