@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-22, rep email sign-off
+- Source: Chase: rep emails need Ken's approval only, not Kyle's; how call-first and email-first work
+- Added: n-51 "Rep emails need Ken's sign-off, not Kyle's"
+- Changed: pts-02 now "Get Ken's sign-off on the email templates"; pts-01, pts-03 notes; pts summary and next steps
+
 ## 2026-10-22, Perfect time to sell
 - Source: Chase: the Lead Tracker has everything but teams' own inactives; scripts belong to the managers and Ken; pitch a Perfect time to sell campaign to Ken today since Marketing lead time is long
 - Added: project pts "Perfect time to sell" (Campaigns, under g-03), with the pitch doc and template spec linked

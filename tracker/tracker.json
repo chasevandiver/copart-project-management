@@ -680,7 +680,7 @@
       "name": "Perfect time to sell",
       "category": "Campaigns",
       "status": "Next",
-      "summary": "Year-end campaign, pitched to Ken Oct 22 from his push to give dealers a reason to sell now. Reps send it, one to one from their own Outlook, out of the Lead Tracker, using email templates keyed to each dealer's hot, mild or cold rating. One message (cars sitting now can be cash before year end and before tax season) and one ask (the VIN on one car), from Oct 26 to the year-end assignment deadline. Rep-sent so it skips Marketing's lead time; Kyle still reads the words. Call scripts stay with the Copart Dealer Services managers and Ken. Marketing's win-back send and the video series join in November.",
+      "summary": "Year-end campaign, pitched to Ken Oct 22 from his push to give dealers a reason to sell now. Reps send it, one to one from their own Outlook, out of the Lead Tracker, using email templates keyed to each dealer's hot, mild or cold rating. One message (cars sitting now can be cash before year end and before tax season) and one ask (the VIN on one car), from Oct 26 to the year-end assignment deadline. Rep-sent so it skips Marketing's lead time, and rep emails need only Ken's sign-off. Reps call first or email first; each call is followed the same day by the email that matches the outcome, and an unanswered email by a call 2 to 3 days later. Call scripts stay with the Copart Dealer Services managers and Ken. Marketing's win-back send and the video series join in November.",
       "built": [
         "Pitch doc with the message, how it runs, dates, the weekly number and asks for Ken, plus an Email templates tab with seven templates (Oct 22)",
         "Perfect time to sell play in the Lead Tracker template spec, docs/lead-tracker-templates-spec.md in Copart Dealer Digital (Oct 22)"
@@ -702,7 +702,7 @@
       "blockers": [],
       "next_steps": [
         "Pitch it to Ken today: yes, the deadline date, any year-end offer, Leo's new-license leads (pts-01, q-30, q-14, q-32)",
-        "Templates to Kyle for a read (pts-02)",
+        "Ken's sign-off on the templates (pts-02)",
         "Templates live in the Lead Tracker by Mon Oct 26 (pts-03)",
         "Cars assigned by rep in every Thursday update (pts-04)"
       ]
@@ -3429,19 +3429,19 @@
       "owner": "Me",
       "due": "2026-10-22",
       "priority": "urgent",
-      "notes": "Pitch doc linked on the project. Asks: yes to run it from Mon Oct 26, the assignment deadline (q-30), a year-end offer or none (q-14), Leo's new-license leads now or held (q-32), OK to take templates to Kyle as rep email.",
+      "notes": "Pitch doc linked on the project. Asks: yes to run it from Mon Oct 26, the assignment deadline (q-30), a year-end offer or none (q-14), Leo's new-license leads now or held (q-32), sign-off on the email templates.",
       "created": "2026-10-22",
       "updated": "2026-10-22"
     },
     {
       "id": "pts-02",
       "project_id": "pts",
-      "title": "Send the email templates to Kyle for a read",
+      "title": "Get Ken's sign-off on the email templates",
       "status": "Next",
       "owner": "Me",
       "due": "2026-10-23",
       "priority": "high",
-      "notes": "Email templates tab in the pitch doc. Frame it as rep one-to-one email from the Lead Tracker, not a Marketing send, so it needs his read on words and saturation, not Creative time.",
+      "notes": "Email templates tab in the pitch doc. Rep emails need Ken's sign-off only, not Kyle's (n-51). Kyle still reviews Marketing's sends and the videos.",
       "created": "2026-10-22",
       "updated": "2026-10-22"
     },
@@ -3453,7 +3453,7 @@
       "owner": "Work Claude",
       "due": "2026-10-26",
       "priority": "high",
-      "notes": "Spec: the Perfect time to sell section in docs/lead-tracker-templates-spec.md (Copart Dealer Digital). Seven templates by rating and moment, {assign_by} and {setup_form} merge fields, campaign tag pts-2026q4, deadline banner. Live only after Kyle's read (pts-02).",
+      "notes": "Spec: the Perfect time to sell section in docs/lead-tracker-templates-spec.md (Copart Dealer Digital). Seven templates by rating and moment, {assign_by} and {setup_form} merge fields, campaign tag pts-2026q4, deadline banner. Live only after Ken's sign-off (pts-02). Includes the call-first and email-first order: the template offered after each call outcome, and a call prompt 2 to 3 days after an unanswered email.",
       "created": "2026-10-22",
       "updated": "2026-10-22"
     },
@@ -5134,6 +5134,16 @@
         "The Lead Tracker has everything except each team's own inactive sellers: it tracks reps' data, touches, and hot, mild or cold dealers.",
         "Call scripts are set individually by the Copart Dealer Services managers and Ken. Don't build scripts for reps; build the email templates to carry the message.",
         "Chase wants to pitch a Perfect time to sell campaign to Ken today, because Marketing's lead time is too long for a year-end push. Plan: rep-sent email from the Lead Tracker by rating, from Oct 26 to the assignment deadline, with Marketing's pieces as a November second wave."
+      ]
+    },
+    {
+      "id": "n-51",
+      "date": "2026-10-22",
+      "title": "Rep emails need Ken's sign-off, not Kyle's",
+      "project_id": "pts",
+      "body": [
+        "Per Chase: rep emails don't need Kyle's approval, only Ken's. Kyle still reviews Marketing's campaigns and the video series.",
+        "The pitch doc now covers call first and email first: after a call, the same-day email that matches the outcome (ready, interested, not now, voicemail, account made); after an unanswered email, a call 2 to 3 business days later; one campaign email per dealer per week."
       ]
     }
   ],
