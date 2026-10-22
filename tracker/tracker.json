@@ -2,7 +2,7 @@
   "meta": {
     "owner": "Chase",
     "role": "Digital Engagement Manager, supporting Ken Rion (SVP of Dealer Sales)",
-    "last_updated": "2026-10-21"
+    "last_updated": "2026-10-22"
   },
   "categories": [
     "AI Tools",
@@ -606,7 +606,8 @@
       "summary": "Ken's initiative: a six-video series over three weeks, filmed in the office with Michelle (videographer), Ken on camera and a sales manager in two. Commercial-style pitch with fun-fact cards about Copart Dealer Services, aimed at independent dealers who want to sell. David Bansigan posts on Copart's corporate TikTok and Instagram; we hand him finished videos and a one-pager, B-roll is available, and he fits them on the calendar. Marketing wants more faces on social, and can boost the posts that do well organically to target dealers. Current audience is mostly consumers. Who edits the videos is still open.",
       "built": [
         "Video brief and series outline for Ken and Michelle, draft (Oct 21)",
-        "Research brief, content calendar and measurement plan, drafts (Oct 21): Copart's social footprint, where dealers pay attention, competitor playbook, 3-week calendar, UTMs, paid graduation rule and paid targeting per platform"
+        "Research brief, content calendar and measurement plan, drafts (Oct 21): Copart's social footprint, where dealers pay attention, competitor playbook, 3-week calendar, UTMs, paid graduation rule and paid targeting per platform",
+        "Starter scripts for all six videos, with timing, on-screen cards, B-roll and spare hooks; facts in brackets for Ken (Oct 22)"
       ],
       "links": [
         {
@@ -628,6 +629,10 @@
         {
           "label": "One-pager for Marketing (David Bansigan)",
           "url": "https://claude.ai/artifact/WXGitH8fYwqmuWxG3wc97o"
+        },
+        {
+          "label": "Starter scripts (all six videos)",
+          "url": "https://claude.ai/artifact/GVGBETcJF47wZhVmHHoh61"
         }
       ],
       "blockers": [],
@@ -3058,9 +3063,9 @@
       "owner": "Me",
       "due": "2026-10-24",
       "priority": "urgent",
-      "notes": "Oct 21 managers meeting (n-39). Commercial style, pitch plus bullet-style fun facts, walk and talk with Ken. Main focus: how the videos get picked up by dealers' algorithms. Draft doc linked on the project. Oct 21: reshaped around what, why, how we get in front of dealers organically, how we track conversion, and what it takes (three gates: before the shoot, before the first post, every post week). Shoot moved to the office; shot list now calls for cutaways from Marketing's footage. Oct 21 (later): research brief, content calendar and measurement plan drafted in copart-dealer-digital docs/social. Calendar proposes first post Tue Nov 10, video 6 on Dec 1 (Thanksgiving), pending Ken's facts.",
+      "notes": "Oct 21 managers meeting (n-39). Commercial style, pitch plus bullet-style fun facts, walk and talk with Ken. Main focus: how the videos get picked up by dealers' algorithms. Draft doc linked on the project. Oct 21: reshaped around what, why, how we get in front of dealers organically, how we track conversion, and what it takes (three gates: before the shoot, before the first post, every post week). Shoot moved to the office; shot list now calls for cutaways from Marketing's footage. Oct 21 (later): research brief, content calendar and measurement plan drafted in copart-dealer-digital docs/social. Calendar proposes first post Tue Nov 10, video 6 on Dec 1 (Thanksgiving), pending Ken's facts. Oct 22: starter scripts drafted for all six videos (linked on the project); bring them to the Ken session so he edits a draft.",
       "created": "2026-10-21",
-      "updated": "2026-10-21"
+      "updated": "2026-10-22"
     },
     {
       "id": "vid-02",
@@ -3251,9 +3256,9 @@
       "owner": "Me",
       "due": "2026-10-24",
       "priority": "urgent",
-      "notes": "Bring the draft and ask him to fill in his words, not 'what's your goal'. Opener: the structure is done, it needs to sound like you; can I ask you a few questions the way a dealer would? Questions, one per video: (1) first thing you say to a dealer who has never used us (hook, video 1); (2) what dealers get wrong about Copart (likely 'just salvage', the spine of the series); (3) what happens to a dealer's car from the call to getting paid (video 2: days, hauling, payment); (4) the three numbers you use to win a dealer over (fact cards, video 3); (5) what you tell a dealer with a car that has been sitting (video 4); (6) the objection you hear most and your answer (decides video 6). Close with: shoot date and which sales manager (vid-03), he signs off the facts (vid-02, q-28), length 45 s target with 60 ceiling (d-vid-01), what a win looks like after three weeks (vid-13), posting each video on his LinkedIn (vid-09). Record with Plaud if Ken is okay with it; his phrasing becomes the hooks. 15 minutes. Send him the outline back with his answers in it.",
+      "notes": "Bring the draft and ask him to fill in his words, not 'what's your goal'. Opener: the structure is done, it needs to sound like you; can I ask you a few questions the way a dealer would? Questions, one per video: (1) first thing you say to a dealer who has never used us (hook, video 1); (2) what dealers get wrong about Copart (likely 'just salvage', the spine of the series); (3) what happens to a dealer's car from the call to getting paid (video 2: days, hauling, payment); (4) the three numbers you use to win a dealer over (fact cards, video 3); (5) what you tell a dealer with a car that has been sitting (video 4); (6) the objection you hear most and your answer (decides video 6). Close with: shoot date and which sales manager (vid-03), he signs off the facts (vid-02, q-28), length 45 s target with 60 ceiling (d-vid-01), what a win looks like after three weeks (vid-13), posting each video on his LinkedIn (vid-09). Record with Plaud if Ken is okay with it; his phrasing becomes the hooks. 15 minutes. Send him the outline back with his answers in it. Oct 22: starter scripts drafted for all six videos (linked on the project); bring them to the Ken session so he edits a draft.",
       "created": "2026-10-21",
-      "updated": "2026-10-21"
+      "updated": "2026-10-22"
     },
     {
       "id": "vid-18",

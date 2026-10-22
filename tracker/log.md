@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-10-22 (starter scripts)
+- Source: Chase asked for starter scripts for all six videos
+- Added: starter scripts doc linked on project vid; vid-01 and vid-17 notes
+
 ## 2026-10-21 (answers to tracker questions)
 - Source: Chase's answers to the tracker cleanup questions
 - Changed: cceib Next -> Done
