@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-10-22, win-back rebuilt
+- Source: Chase asked for the win-back updated with what we now know about Copart Dealer Services and Ken's push
+- Changed: wb built and next steps; wb and pts link the new doc "Win-back: perfect time to sell"
+
 ## 2026-10-22, Leo's sent emails
 - Source: Leo's hot and mild emails as sent, shared by Chase
 - Changed: n-54 adds the match to the templates; q-30 notes Leo's samples use November 8

@@ -409,9 +409,14 @@
         "Campaign plan doc (Oct 15): why inactive first, audience and tiers, sequence, message and offer, who does what, how rep emails fit, measures and holdout, dates to first send, wave 2, risks, asks for Ken",
         "Lead Tracker outreach template spec for Work Claude (docs/lead-tracker-templates-spec.md in Copart Dealer Digital, Oct 15)",
         "Proposed first campaign section in the marketing plan doc, docs/audit/09-marketing-plan.md and the Digital audit site (Oct 15)",
-        "Win-back emails rewritten around the reason to sell now, with a December note and a last call week through the assignment deadline (Oct 22)"
+        "Win-back emails rewritten around the reason to sell now, with a December note and a last call week through the assignment deadline (Oct 22)",
+        "Win-back rebuilt as \"Win-back: perfect time to sell\" (Oct 22): the 60-day split (rep Check-ins under 60 days, Ken's three-email note for 60 days to 6 months and 6+ months), the message for returning sellers, the follow-ups once a seller responds, routing back to teams, dates for a mid-December or Nov 8 deadline, measures and asks for Ken. The Oct 15 plan is kept for the record"
       ],
       "links": [
+        {
+          "label": "Win-back: perfect time to sell",
+          "url": "https://claude.ai/artifact/3r4TwyHkfioU4xTePVSeQJ"
+        },
         {
           "label": "First campaign: inactive seller win-back",
           "url": "https://claude.ai/code/artifact/6d4514a3-885d-4dda-bbd5-90a6f1b48f6e"
@@ -427,6 +432,7 @@
       ],
       "blockers": [],
       "next_steps": [
+        "Take \"Win-back: perfect time to sell\" to Ken with the Perfect time to sell pitch: deadline (q-30), sender and mailbox (q-33), routing and loading 60+ day inactives (q-34)",
         "Get the assignment deadline from Ken (q-30), then bring the plan with the rewritten emails (wb-01)",
         "On hold until Ken frees Chase from the current priorities; then bring him the plan (wb-01)",
         "Bring the plan to Ken (wb-01, q-26)",
@@ -687,6 +693,10 @@
         "Templates reworked around four buttons: Intro, After a call (hot, mild, cold), Check-in (with a Dec 1 last call version), You're set up (Oct 22)"
       ],
       "links": [
+        {
+          "label": "Win-back: perfect time to sell",
+          "url": "https://claude.ai/artifact/3r4TwyHkfioU4xTePVSeQJ"
+        },
         {
           "label": "Perfect time to sell: year-end campaign pitch",
           "url": "https://claude.ai/artifact/DYBCWkGnifMjjQpzoJB5BQ"
