@@ -3093,9 +3093,9 @@
       "owner": "Me",
       "due": "2026-10-24",
       "priority": "urgent",
-      "notes": "Facts are specific to Copart Dealer Services, not Copart as a whole. Ken has them. Nothing goes on camera unverified (q-28).",
+      "notes": "Facts are specific to Copart Dealer Services, not Copart as a whole. Ken has them. Nothing goes on camera unverified (q-28). Oct 22: fees confirmed from the CDS page (n-49): $89 plus 3%, $75 min, $250 max, first run plus 2 reruns, 10 photos, rinse and vacuum, $35 a run after, Buy It Now and Make An Offer. Video 6 no longer waits on Ken for the fee numbers.",
       "created": "2026-10-21",
-      "updated": "2026-10-21"
+      "updated": "2026-10-22"
     },
     {
       "id": "vid-03",
@@ -3639,7 +3639,7 @@
     },
     {
       "id": "q-14",
-      "question": "Can reps still offer the one complimentary full-service run (one run and two reruns, ten photos, rinse and vacuum, free tow within 25 air miles on a clean title)? Who approves it, how many per rep, and is \"more than 750,000 members in 185 countries\" still the current line? The Field Offers Outline says pickup is $25 for the first 25 miles, so which tow terms do reps quote? (Oct 9: Ken suggested adding the existing exclusive offer email to the pre-visit workflow, so it is in use. Approver, limit per rep and tow terms are still open.) (Oct 22: Leo quotes pickup at $25 for the first 25 miles in his calls, n-48.)",
+      "question": "Can reps still offer the one complimentary full-service run (one run and two reruns, ten photos, rinse and vacuum, free tow within 25 air miles on a clean title)? Who approves it, how many per rep, and is \"more than 750,000 members in 185 countries\" still the current line? The Field Offers Outline says pickup is $25 for the first 25 miles, so which tow terms do reps quote? (Oct 9: Ken suggested adding the existing exclusive offer email to the pre-visit workflow, so it is in use. Approver, limit per rep and tow terms are still open.) (Oct 22: Leo quotes pickup at $25 for the first 25 miles in his calls, n-48.) (Oct 22: Chase believes the free run was a one-time offer, not standard pricing (n-49), so the open part is whether Ken wants to run it again, or another offer, for year end.)",
       "ask": "Ken Rion",
       "project_id": "pdo",
       "status": "open",
@@ -5029,6 +5029,18 @@
         "Leads today: the hotline, website forms (printed and walked to the teams), field and admin leads, and whatever teams find themselves. Leo also sends flyers and business cards to yard GMs to refer sellers, and emails his own inactive sellers every Monday at 8 am through Power Automate.",
         "Leo's ideas: Leo pulled about 250 dealers newly licensed in the last 30 days and gave them to Ken, who may be holding them for a new-dealer bonus under the new commission plan. Compare the Texas active Copart seller list with the 20,000 Texas leads, drop the actives and hand out the rest; flag dealers who are Copart buyers but not sellers as warm prospects; give about 20 leads per team at a time, with a per-team link to mark called, contacted, not interested, interested, notes and cars. Most of this is the Lead Tracker (udm-01 match, the dispatcher idea in n-30); Copart lists stay in the work setup.",
         "Used the same day: the Sell now doc, starter scripts (videos 2 and 5) and the call script now carry Leo's process facts, bracketed until Ken clears them. The $25 tow conflicts with the free tow in the complimentary run (q-14)."
+      ]
+    },
+    {
+      "id": "n-49",
+      "date": "2026-10-22",
+      "title": "Copart Dealer Services pricing confirmed; free run was a one-time offer",
+      "project_id": "general",
+      "body": [
+        "Pricing on the Copart Dealer Services page, confirmed current by Chase: $89 list fee plus 3% sale price fee ($75 minimum, $250 maximum).",
+        "Included: rinse and vacuum, 10 pictures, first run plus 2 reruns, professional post-sale negotiations. $35 a run from the 4th run on. Buy It Now and Make An Offer auctionless sales options available.",
+        "Chase believes the complimentary full-service run was just an offer, not standard pricing. It is out of the campaign copy and scripts unless Ken runs a year-end offer. Standard pickup is $25 for the first 25 miles (Leo); the free tow came with the promotion.",
+        "Used the same day: fee brackets removed in the Sell now doc, video 6 script, win-back plan, content calendar and LinkedIn post 3. The capped fees and Buy It Now are now the hook in place of the offer. Legal still sees the video fact cards (vid-12)."
       ]
     }
   ],

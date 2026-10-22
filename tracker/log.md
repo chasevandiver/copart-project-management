@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-22, pricing confirmed
+- Source: Chase: the Copart Dealer Services page pricing, and the free run was likely a one-time offer
+- Added: n-49 "Copart Dealer Services pricing confirmed; free run was a one-time offer"
+- Changed: q-14 narrowed to whether Ken wants a year-end offer; vid-02 notes the fees are confirmed
+
 ## 2026-10-22, Leo's process memo
 - Source: Leo's voice memo on how Copart Dealer Services works, sent by Chase (transcribed in session, summary only kept)
 - Added: n-48 "Leo on how Copart Dealer Services gets a car assigned"
