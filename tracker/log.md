@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-22, four email buttons
+- Source: Chase: the Lead Tracker has After a call and Check-in buttons; rework the templates around four buttons
+- Added: n-52 "Lead Tracker email buttons"
+- Changed: pts-03 notes (four buttons); pts built list
+
 ## 2026-10-22, rep email sign-off
 - Source: Chase: rep emails need Ken's approval only, not Kyle's; how call-first and email-first work
 - Added: n-51 "Rep emails need Ken's sign-off, not Kyle's"

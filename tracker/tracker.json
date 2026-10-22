@@ -682,8 +682,9 @@
       "status": "Next",
       "summary": "Year-end campaign, pitched to Ken Oct 22 from his push to give dealers a reason to sell now. Reps send it, one to one from their own Outlook, out of the Lead Tracker, using email templates keyed to each dealer's hot, mild or cold rating. One message (cars sitting now can be cash before year end and before tax season) and one ask (the VIN on one car), from Oct 26 to the year-end assignment deadline. Rep-sent so it skips Marketing's lead time, and rep emails need only Ken's sign-off. Reps call first or email first; each call is followed the same day by the email that matches the outcome, and an unanswered email by a call 2 to 3 days later. Call scripts stay with the Copart Dealer Services managers and Ken. Marketing's win-back send and the video series join in November.",
       "built": [
-        "Pitch doc with the message, how it runs, dates, the weekly number and asks for Ken, plus an Email templates tab with seven templates (Oct 22)",
-        "Perfect time to sell play in the Lead Tracker template spec, docs/lead-tracker-templates-spec.md in Copart Dealer Digital (Oct 22)"
+        "Pitch doc with the message, how it runs, dates, the weekly number and asks for Ken, plus an Email templates tab built around four Lead Tracker buttons (Oct 22)",
+        "Perfect time to sell play in the Lead Tracker template spec, docs/lead-tracker-templates-spec.md in Copart Dealer Digital (Oct 22)",
+        "Templates reworked around four buttons: Intro, After a call (hot, mild, cold), Check-in (with a Dec 1 last call version), You're set up (Oct 22)"
       ],
       "links": [
         {
@@ -3453,7 +3454,7 @@
       "owner": "Work Claude",
       "due": "2026-10-26",
       "priority": "high",
-      "notes": "Spec: the Perfect time to sell section in docs/lead-tracker-templates-spec.md (Copart Dealer Digital). Seven templates by rating and moment, {assign_by} and {setup_form} merge fields, campaign tag pts-2026q4, deadline banner. Live only after Ken's sign-off (pts-02). Includes the call-first and email-first order: the template offered after each call outcome, and a call prompt 2 to 3 days after an unanswered email.",
+      "notes": "Spec: the Perfect time to sell section in docs/lead-tracker-templates-spec.md (Copart Dealer Digital). Four email buttons: Intro (new), After a call (version by the hot, mild or cold rating set on the call), Check-in (switches to the last call version on Dec 1; inactive opening line), You're set up (optional, when the seller code is made). {assign_by} and {setup_form} merge fields, campaign tag pts-2026q4, deadline banner. Live only after Ken's sign-off (pts-02).",
       "created": "2026-10-22",
       "updated": "2026-10-22"
     },
@@ -5144,6 +5145,16 @@
       "body": [
         "Per Chase: rep emails don't need Kyle's approval, only Ken's. Kyle still reviews Marketing's campaigns and the video series.",
         "The pitch doc now covers call first and email first: after a call, the same-day email that matches the outcome (ready, interested, not now, voicemail, account made); after an unanswered email, a call 2 to 3 business days later; one campaign email per dealer per week."
+      ]
+    },
+    {
+      "id": "n-52",
+      "date": "2026-10-22",
+      "title": "Lead Tracker email buttons",
+      "project_id": "pts",
+      "body": [
+        "The Lead Tracker has two email buttons today: After a call (right after the call) and Check-in (for a dealer who isn't selling).",
+        "Agreed: four buttons for Perfect time to sell. Add Intro for dealers the rep hasn't reached and after a voicemail; After a call fills in the hot, mild or cold version from the rating set on the call; Check-in switches to the last call version on Dec 1 and has an inactive opening line; You're set up is optional, for when the seller code is made."
       ]
     }
   ],
