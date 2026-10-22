@@ -404,7 +404,7 @@
       "name": "Inactive seller win-back",
       "category": "Campaigns",
       "status": "Backlog",
-      "summary": "On hold from Oct 21: no formal pitch to Ken yet, since he has Chase on the commission tool, Lead Tracker and video series. Proposed first campaign, pending Ken: win back Copart Dealer Services sellers who have gone quiet. Sold at least [2] units in the [24] months before going quiet, nothing in the last [120] days. Marketing sends three plain-text emails in the rep's name (Nov 3, 10, 17); reps call tier A (top [50] by past volume) and follow up with the same Kyle-approved copy from the Lead Tracker. Measured by sellers won back: accounts that send a car within 60 days of the first email. Newly licensed prospects follow about two weeks later. The list comes from Salesforce and stays in the work setup. Oct 22: Ken's push is a reason to sell now through Dec 31, so the emails open on cash before year end and tax season and close on one car by the assignment deadline; a December note and a last call week were added.",
+      "summary": "On hold from Oct 21: no formal pitch to Ken yet, since he has Chase on the commission tool, Lead Tracker and video series. Proposed first campaign, pending Ken: win back Copart Dealer Services sellers who have gone quiet. Sold at least [2] units in the [24] months before going quiet, nothing in the last [120] days. Marketing sends three plain-text emails in the rep's name (Nov 3, 10, 17); reps call tier A (top [50] by past volume) and follow up with the same Kyle-approved copy from the Lead Tracker. Measured by sellers won back: accounts that send a car within 60 days of the first email. Newly licensed prospects follow about two weeks later. The list comes from Salesforce and stays in the work setup. Oct 22: Ken's push is a reason to sell now through Dec 31, so the emails open on cash before year end and tax season and close on one car by the assignment deadline; a December note and a last call week were added. Oct 22: a rep keeps an inactive seller for 60 days, then any team can take it, so the 60+ day group now runs as Ken's note in Perfect time to sell (pts, n-53).",
       "built": [
         "Campaign plan doc (Oct 15): why inactive first, audience and tiers, sequence, message and offer, who does what, how rep emails fit, measures and holdout, dates to first send, wave 2, risks, asks for Ken",
         "Lead Tracker outreach template spec for Work Claude (docs/lead-tracker-templates-spec.md in Copart Dealer Digital, Oct 15)",
@@ -680,7 +680,7 @@
       "name": "Perfect time to sell",
       "category": "Campaigns",
       "status": "Next",
-      "summary": "Year-end campaign, pitched to Ken Oct 22 from his push to give dealers a reason to sell now. Reps send it, one to one from their own Outlook, out of the Lead Tracker, using email templates keyed to each dealer's hot, mild or cold rating. One message (cars sitting now can be cash before year end and before tax season) and one ask (the VIN on one car), from Oct 26 to the year-end assignment deadline. Rep-sent so it skips Marketing's lead time, and rep emails need only Ken's sign-off. Reps call first or email first; each call is followed the same day by the email that matches the outcome, and an unanswered email by a call 2 to 3 days later. Call scripts stay with the Copart Dealer Services managers and Ken. Marketing's win-back send and the video series join in November.",
+      "summary": "Year-end campaign, pitched to Ken Oct 22 from his push to give dealers a reason to sell now. Reps send it, one to one from their own Outlook, out of the Lead Tracker, using email templates keyed to each dealer's hot, mild or cold rating. One message (cars sitting now can be cash before year end and before tax season) and one ask (the VIN on one car), from Oct 26 to the year-end assignment deadline. Rep-sent so it skips Marketing's lead time, and rep emails need only Ken's sign-off. Reps call first or email first; each call is followed the same day by the email that matches the outcome, and an unanswered email by a call 2 to 3 days later. Call scripts stay with the Copart Dealer Services managers and Ken. Marketing's win-back send and the video series join in November. Inactive sellers: a rep keeps them for 60 days; 60+ day inactives have no rep, so they get a note in Ken's name with a reply, a campaign form and a manager booking link, and every response lands in the Lead Tracker as a hot returning-seller lead for the teams.",
       "built": [
         "Pitch doc with the message, how it runs, dates, the weekly number and asks for Ken, plus an Email templates tab built around four Lead Tracker buttons (Oct 22)",
         "Perfect time to sell play in the Lead Tracker template spec, docs/lead-tracker-templates-spec.md in Copart Dealer Digital (Oct 22)",
@@ -705,7 +705,8 @@
         "Pitch it to Ken today: yes, the deadline date, any year-end offer, Leo's new-license leads (pts-01, q-30, q-14, q-32)",
         "Ken's sign-off on the templates (pts-02)",
         "Templates live in the Lead Tracker by Mon Oct 26 (pts-03)",
-        "Cars assigned by rep in every Thursday update (pts-04)"
+        "Cars assigned by rep in every Thursday update (pts-04)",
+        "Ken's note to 60+ day inactives: his name (q-33), routing and loading them into the Lead Tracker (q-34), then the form, booking page and flow (pts-05, pts-06, pts-07)"
       ]
     }
   ],
@@ -3470,6 +3471,42 @@
       "recurring": "weekly",
       "created": "2026-10-22",
       "updated": "2026-10-22"
+    },
+    {
+      "id": "pts-05",
+      "project_id": "pts",
+      "title": "Set up the campaign form and manager booking page for returning sellers",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Microsoft Forms (dealer or seller code, VIN, pickup or drop-off, cell) and a Bookings page for 15 minutes with a manager, plus a Power Automate flow that puts each response, and each reply to the shared mailbox, into the Lead Tracker as a hot returning-seller lead. Spec: the inactive section in docs/lead-tracker-templates-spec.md. Booking tool and who takes meetings is q-16.",
+      "created": "2026-10-22",
+      "updated": "2026-10-22"
+    },
+    {
+      "id": "pts-06",
+      "project_id": "pts",
+      "title": "Agree with the admins how returning-seller leads skip setup and reach a team",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "They already have a seller code. Admins see each one but route it to a team (first claim or rotation, q-34) instead of the setup queue. Same-day call expected.",
+      "created": "2026-10-22",
+      "updated": "2026-10-22"
+    },
+    {
+      "id": "pts-07",
+      "project_id": "pts",
+      "title": "Load sellers inactive 60 days or more into the Lead Tracker as open leads",
+      "status": "Next",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "high",
+      "notes": "Copart status inactive, no owner, seller code and last sale date kept, two groups (60 days to 6 months, 6+ months). Work setup only. Waits on Ken (q-34). Needed before Ken's note so responses match the dealer on file.",
+      "created": "2026-10-22",
+      "updated": "2026-10-22"
     }
   ],
   "waiting_on": [
@@ -3905,6 +3942,26 @@
       "question": "Leo's roughly 250 newly licensed dealers: hand them to the team now for the prospect calls starting the week of Oct 26, or hold them for a new-dealer bonus under the new commission plan?",
       "ask": "Ken Rion",
       "project_id": "pdo",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-22",
+      "answered": null
+    },
+    {
+      "id": "q-33",
+      "question": "Can the note to sellers inactive 60 days or more go out in your name, and from which mailbox (Marketing's tool or a shared Copart Dealer Services mailbox)?",
+      "ask": "Ken Rion",
+      "project_id": "pts",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-22",
+      "answered": null
+    },
+    {
+      "id": "q-34",
+      "question": "Returning-seller leads from the campaign: first team to claim them, or admins assign by team rotation? And can the 60+ day inactives go into the Lead Tracker now as open leads?",
+      "ask": "Ken Rion",
+      "project_id": "pts",
       "status": "open",
       "answer": null,
       "raised": "2026-10-22",
@@ -5158,6 +5215,18 @@
       "body": [
         "The Lead Tracker has two email buttons today: After a call (right after the call) and Check-in (for a dealer who isn't selling).",
         "Agreed: four buttons for Perfect time to sell. Add Intro for dealers the rep hasn't reached and after a voicemail; After a call fills in the hot, mild or cold version from the rating set on the call; Check-in switches to the last call version on Dec 1 and has an inactive opening line; You're set up is optional, for when the seller code is made."
+      ]
+    },
+    {
+      "id": "n-53",
+      "date": "2026-10-22",
+      "title": "Inactive sellers: the 60-day rule and how responses get back to teams",
+      "project_id": "pts",
+      "body": [
+        "A rep keeps an inactive seller for 60 days. After that the account is open to any team, so sellers inactive 6+ months have no rep assigned.",
+        "Plan for Perfect time to sell: under 60 days, the rep uses Check-in with the inactive opening line. 60 days or more: a note in Ken's name, 60 days to 6 months first and 6+ months a week later, three emails (Nov, a week later, Dec 1).",
+        "Chase wants the email to carry a Schedule a meeting with a manager button and a form. Inactives already have a seller code, so they don't need setup. The website form goes to the admins, who divide leads by team, so returning sellers need their own path back.",
+        "Proposed path: a campaign form (Microsoft Forms: dealer or seller code, VIN, pickup or drop-off, cell) and a manager booking page, plus replies to a shared mailbox. Power Automate drops each response into the Lead Tracker as a hot returning-seller lead that skips setup. First team to claim it, or admins assign by rotation, per Ken. The claiming team keeps it under the 60-day rule."
       ]
     }
   ],

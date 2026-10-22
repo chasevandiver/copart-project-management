@@ -2,6 +2,13 @@
 
 Newest entry first.
 
+## 2026-10-22, inactive sellers lane
+- Source: Chase: inactive under 60 days stays with the rep, after 60 days any team can grab it; wants a meeting-with-a-manager button and a form in the email; admins divide form leads by team
+- Added: n-53 "Inactive sellers: the 60-day rule and how responses get back to teams"
+- Added: pts-05 "Set up the campaign form and manager booking page for returning sellers" (Me); pts-06 "Agree with the admins how returning-seller leads skip setup and reach a team" (Me); pts-07 "Load sellers inactive 60 days or more into the Lead Tracker as open leads" (Work Claude)
+- Added: q-33 Ken, send the 60+ day note in his name and from which mailbox; q-34 Ken, first claim or rotation, and load 60+ day inactives now
+- Changed: pts and wb summaries, pts next steps
+
 ## 2026-10-22, four email buttons
 - Source: Chase: the Lead Tracker has After a call and Check-in buttons; rework the templates around four buttons
 - Added: n-52 "Lead Tracker email buttons"
