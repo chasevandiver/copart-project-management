@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-10-22, Leo's sent emails
+- Source: Leo's hot and mild emails as sent, shared by Chase
+- Changed: n-54 adds the match to the templates; q-30 notes Leo's samples use November 8
+
 ## 2026-10-22, VIN received template
 - Source: Leo's note via Chase: hot dealers send the VIN and docs after the call by email or text; follow up once the VIN arrives with next steps and what to expect (up to 48 hours for the yard to receive and upload images)
 - Added: n-54 "Leo on the hot-dealer follow-up"; q-35 Leo, can pickup be scheduled before a new seller's code is ready

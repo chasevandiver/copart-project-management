@@ -3919,7 +3919,7 @@
     },
     {
       "id": "q-30",
-      "question": "What is the last date a car can be assigned and still sell before Dec 31, and does the offer (q-14) run through that date? Every email, video card and call uses it.",
+      "question": "What is the last date a car can be assigned and still sell before Dec 31, and does the offer (q-14) run through that date? Every email, video card and call uses it. (Oct 22: Leo's sample emails use November 8. Is that the date?)",
       "ask": "Ken Rion",
       "project_id": "wb",
       "status": "open",
@@ -5247,7 +5247,8 @@
       "body": [
         "For a hot dealer, the call closes the commitment, but the VIN and docs come in as a follow-up, almost always over email or text, not dictated live on the phone.",
         "So the email that matters is a quick follow-up after the VIN arrives: confirm it, say what the next steps are and what to expect, for example that it can take up to 48 hours for the yard to receive the car and upload the images.",
-        "Done: the fourth button is now VIN received (replacing You're set up), and the hot After a call email is a short, optional thread for the dealer to reply to. These templates also show on the Route Tracker for field reps."
+        "Done: the fourth button is now VIN received (replacing You're set up), and the hot After a call email is a short, optional thread for the dealer to reply to. These templates also show on the Route Tracker for field reps.",
+        "Leo's sent hot and mild emails (shared by Chase) match the templates. Hot is something reps send, not optional, so it's back to Leo's version with a reply-or-text line; the mild meeting link now reads \"book a 10-minute call here: {meeting_link}\". His samples say \"Assigned by November 8\", which may be a placeholder or the real deadline (q-30)."
       ]
     }
   ],
