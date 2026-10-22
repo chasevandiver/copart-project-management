@@ -458,6 +458,10 @@
         {
           "label": "Pre-Visit Campaign Drafts",
           "url": "https://claude.ai/code/artifact/80e02559-644c-4ff2-a5a5-3366653723b6"
+        },
+        {
+          "label": "How Copart Dealer Services gets a car assigned (Leo)",
+          "where": "Copart Dealer Digital repo, docs/cds-process.md"
         }
       ],
       "blockers": [],
@@ -3371,6 +3375,18 @@
       "notes": "One sentence each Monday: assignments so far, the deadline, who is leading. Chase drafts from the scorecard, Ken sends. Keeps the Oct 22 push alive past week two.",
       "created": "2026-10-22",
       "updated": "2026-10-22"
+    },
+    {
+      "id": "wb-14",
+      "project_id": "wb",
+      "title": "Find which reps already email their own inactives before the win-back list goes to Marketing",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-27",
+      "priority": "high",
+      "notes": "Leo emails his inactive sellers every Monday at 8 am through Power Automate (n-48). Leave those accounts off Marketing's send or fold the rep's email in, so no dealer gets two Copart emails in a week.",
+      "created": "2026-10-22",
+      "updated": "2026-10-22"
     }
   ],
   "waiting_on": [
@@ -3623,7 +3639,7 @@
     },
     {
       "id": "q-14",
-      "question": "Can reps still offer the one complimentary full-service run (one run and two reruns, ten photos, rinse and vacuum, free tow within 25 air miles on a clean title)? Who approves it, how many per rep, and is \"more than 750,000 members in 185 countries\" still the current line? The Field Offers Outline says pickup is $25 for the first 25 miles, so which tow terms do reps quote? (Oct 9: Ken suggested adding the existing exclusive offer email to the pre-visit workflow, so it is in use. Approver, limit per rep and tow terms are still open.)",
+      "question": "Can reps still offer the one complimentary full-service run (one run and two reruns, ten photos, rinse and vacuum, free tow within 25 air miles on a clean title)? Who approves it, how many per rep, and is \"more than 750,000 members in 185 countries\" still the current line? The Field Offers Outline says pickup is $25 for the first 25 miles, so which tow terms do reps quote? (Oct 9: Ken suggested adding the existing exclusive offer email to the pre-visit workflow, so it is in use. Approver, limit per rep and tow terms are still open.) (Oct 22: Leo quotes pickup at $25 for the first 25 miles in his calls, n-48.)",
       "ask": "Ken Rion",
       "project_id": "pdo",
       "status": "open",
@@ -3796,6 +3812,16 @@
       "question": "Is there a holding-cost number for an aged unit you will stand behind on camera and in email, or do we use the bracketed third-party estimate ($30 to $40 a day) with its source?",
       "ask": "Ken Rion",
       "project_id": "vid",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-22",
+      "answered": null
+    },
+    {
+      "id": "q-32",
+      "question": "Leo's roughly 250 newly licensed dealers: hand them to the team now for the prospect calls starting the week of Oct 26, or hold them for a new-dealer bonus under the new commission plan?",
+      "ask": "Ken Rion",
+      "project_id": "pdo",
       "status": "open",
       "answer": null,
       "raised": "2026-10-22",
@@ -4989,6 +5015,20 @@
         "The rep does all the setup to get assignments: collects the dealer's information, sets up a seller code, and gets the VIN and titles from the dealer when they're ready.",
         "Changed the same day: the Sell now doc, starter scripts (video 5 is now 'Your rep, one call away'), the win-back plan and the repo docs say reps set dealers up by phone, and the call to action is 'send me the VIN'. Older Route Tracker and pilot plans still assume visits; they apply only to the few field reps.",
         "Next: Leo's voice memo on how Copart Dealer Services works, so the process notes and the copy can be checked against it."
+      ]
+    },
+    {
+      "id": "n-48",
+      "date": "2026-10-22",
+      "title": "Leo on how Copart Dealer Services gets a car assigned",
+      "project_id": "general",
+      "body": [
+        "From Leo's voice memo. Summary in docs/cds-process.md in Copart Dealer Digital; the recording and transcript stay with Chase.",
+        "The call: have you done business with Copart (buyer or seller)? Pitch and pricing. What business are you in? The ask is one car: the seller account is free and needs one car to list. Pickup or drop-off. Get the dealer's cell, because offers expire fast. If no answer, try the next day.",
+        "Setup: the rep emails Brenda's form; admins create the seller code in about 24 hours, up to 48. Pickup usually within 24 hours, $25 for the first 25 miles. The yard photographs the car; a copy of the title starts the sale, the original goes to the yard. No upfront fees, fees come out of the sale. Leo recommends ACH so payment goes straight to the bank once the original title is in. As is, where is, no arbitration.",
+        "Leads today: the hotline, website forms (printed and walked to the teams), field and admin leads, and whatever teams find themselves. Leo also sends flyers and business cards to yard GMs to refer sellers, and emails his own inactive sellers every Monday at 8 am through Power Automate.",
+        "Leo's ideas: Leo pulled about 250 dealers newly licensed in the last 30 days and gave them to Ken, who may be holding them for a new-dealer bonus under the new commission plan. Compare the Texas active Copart seller list with the 20,000 Texas leads, drop the actives and hand out the rest; flag dealers who are Copart buyers but not sellers as warm prospects; give about 20 leads per team at a time, with a per-team link to mark called, contacted, not interested, interested, notes and cars. Most of this is the Lead Tracker (udm-01 match, the dispatcher idea in n-30); Copart lists stay in the work setup.",
+        "Used the same day: the Sell now doc, starter scripts (videos 2 and 5) and the call script now carry Leo's process facts, bracketed until Ken clears them. The $25 tow conflicts with the free tow in the complimentary run (q-14)."
       ]
     }
   ],

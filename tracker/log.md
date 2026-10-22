@@ -2,6 +2,13 @@
 
 Newest entry first.
 
+## 2026-10-22, Leo's process memo
+- Source: Leo's voice memo on how Copart Dealer Services works, sent by Chase (transcribed in session, summary only kept)
+- Added: n-48 "Leo on how Copart Dealer Services gets a car assigned"
+- Added: wb-14 "Find which reps already email their own inactives before the win-back list goes to Marketing" (Me, due 2026-10-27, high)
+- Added: q-32 Ken, hand Leo's ~250 new-license leads to the team now or hold for a new-dealer bonus
+- Changed: q-14 notes Leo's $25 for the first 25 miles; pdo links docs/cds-process.md
+
 ## 2026-10-22, how reps work (correction)
 - Source: Chase: most account reps work from the office by phone (call center setup), only a few visit lots; reps work their own inactives and start on prospects next week; reps do the setup (dealer info, seller code, VIN and titles)
 - Added: n-47 "How Copart Dealer Services reps actually work (correction)"
