@@ -403,16 +403,21 @@
       "id": "wb",
       "name": "Inactive seller win-back",
       "category": "Campaigns",
-      "status": "Backlog",
+      "status": "Next",
       "summary": "On hold from Oct 21: no formal pitch to Ken yet, since he has Chase on the commission tool, Lead Tracker and video series. Proposed first campaign, pending Ken: win back Copart Dealer Services sellers who have gone quiet. Sold at least [2] units in the [24] months before going quiet, nothing in the last [120] days. Marketing sends three plain-text emails in the rep's name (Nov 3, 10, 17); reps call tier A (top [50] by past volume) and follow up with the same Kyle-approved copy from the Lead Tracker. Measured by sellers won back: accounts that send a car within 60 days of the first email. Newly licensed prospects follow about two weeks later. The list comes from Salesforce and stays in the work setup. Oct 22: Ken's push is a reason to sell now through Dec 31, so the emails open on cash before year end and tax season and close on one car by the assignment deadline; a December note and a last call week were added. Oct 22: a rep keeps an inactive seller for 60 days, then any team can take it, so the 60+ day group now runs as Ken's note in Perfect time to sell (pts, n-53).",
       "built": [
         "Campaign plan doc (Oct 15): why inactive first, audience and tiers, sequence, message and offer, who does what, how rep emails fit, measures and holdout, dates to first send, wave 2, risks, asks for Ken",
         "Lead Tracker outreach template spec for Work Claude (docs/lead-tracker-templates-spec.md in Copart Dealer Digital, Oct 15)",
         "Proposed first campaign section in the marketing plan doc, docs/audit/09-marketing-plan.md and the Digital audit site (Oct 15)",
         "Win-back emails rewritten around the reason to sell now, with a December note and a last call week through the assignment deadline (Oct 22)",
-        "Win-back rebuilt as \"Win-back: perfect time to sell\" (Oct 22): the 60-day split (rep Check-ins under 60 days, Ken's three-email note for 60 days to 6 months and 6+ months), the message for returning sellers, the follow-ups once a seller responds, routing back to teams, dates for a mid-December or Nov 8 deadline, measures and asks for Ken. The Oct 15 plan is kept for the record"
+        "Win-back rebuilt as \"Win-back: perfect time to sell\" (Oct 22): the 60-day split (rep Check-ins under 60 days, Ken's three-email note for 60 days to 6 months and 6+ months), the message for returning sellers, the follow-ups once a seller responds, routing back to teams, dates for a mid-December or Nov 8 deadline, measures and asks for Ken. The Oct 15 plan is kept for the record",
+        "Marketing brief for a designed three-email campaign in Ken's name to sellers inactive 6+ months: list and exclusions, message and cleared facts, copy with A/B subject lines, buttons (meeting with a manager, campaign form, reply), routing back to teams, dates with Creative's lead time and a January fallback if the cutoff is early, tracking and sign-offs (Oct 22)"
       ],
       "links": [
+        {
+          "label": "Marketing brief: win-back email to sellers inactive 6+ months",
+          "url": "https://claude.ai/artifact/MvL5A9muyAQ3v74SsM7mfk"
+        },
         {
           "label": "Win-back: perfect time to sell",
           "url": "https://claude.ai/artifact/3r4TwyHkfioU4xTePVSeQJ"
@@ -432,6 +437,7 @@
       ],
       "blockers": [],
       "next_steps": [
+        "Brief to Kyle and Marketing Mon Oct 26 so Creative can make a Nov 10 first send (wb-03); list and campaign tag by Oct 30 (wb-06)",
         "Take \"Win-back: perfect time to sell\" to Ken with the Perfect time to sell pitch: deadline (q-30), sender and mailbox (q-33), routing and loading 60+ day inactives (q-34)",
         "Get the assignment deadline from Ken (q-30), then bring the plan with the rewritten emails (wb-01)",
         "On hold until Ken frees Chase from the current priorities; then bring him the plan (wb-01)",
@@ -2128,14 +2134,14 @@
     {
       "id": "wb-03",
       "project_id": "wb",
-      "title": "Send Kyle the win-back brief and outline, and check the member campaign calendar",
-      "status": "Backlog",
+      "title": "Send Kyle the Marketing brief for the 6+ month win-back email, and check the member campaign calendar",
+      "status": "Next",
       "owner": "Me",
-      "due": null,
+      "due": "2026-10-26",
       "priority": "high",
-      "notes": "Ties to pdo-01 and cmp-03. Ask whether plain-text emails in the rep's name skip the 2-week Creative lead time (q-27). Oct 21: on hold, no formal pitch to Ken yet (was due 2026-10-23).",
+      "notes": "Ties to pdo-01 and cmp-03. Ask whether plain-text emails in the rep's name skip the 2-week Creative lead time (q-27). Oct 21: on hold, no formal pitch to Ken yet (was due 2026-10-23). Oct 22: the brief is \"Marketing brief: win-back email to sellers inactive 6+ months\" (linked on the project). Designed email in Ken's name, three sends Nov 10, 17 and Dec 1; Creative starts Oct 26.",
       "created": "2026-10-15",
-      "updated": "2026-10-21"
+      "updated": "2026-10-22"
     },
     {
       "id": "wb-04",
@@ -2164,14 +2170,14 @@
     {
       "id": "wb-06",
       "project_id": "wb",
-      "title": "Send Marketing the brief, outline and list; set up the campaign tag in Salesforce",
-      "status": "Backlog",
+      "title": "Send Marketing the 6+ month list; set up the Salesforce campaign tag with Rama",
+      "status": "Next",
       "owner": "Me",
-      "due": null,
+      "due": "2026-10-30",
       "priority": "high",
-      "notes": "Process from n-32. Campaign tag with Rama Manyam. Oct 21: on hold, no formal pitch to Ken yet (was due 2026-10-27).",
+      "notes": "Process from n-32. Campaign tag with Rama Manyam. Oct 21: on hold, no formal pitch to Ken yet (was due 2026-10-27). Oct 22: list fields are seller code, dealer name, contact first name, email, state. Suppression file to Marketing before sends 2 and 3 (Nov 16, Nov 30).",
       "created": "2026-10-15",
-      "updated": "2026-10-21"
+      "updated": "2026-10-22"
     },
     {
       "id": "wb-07",
@@ -5259,6 +5265,17 @@
         "So the email that matters is a quick follow-up after the VIN arrives: confirm it, say what the next steps are and what to expect, for example that it can take up to 48 hours for the yard to receive the car and upload the images.",
         "Done: the fourth button is now VIN received (replacing You're set up), and the hot After a call email is a short, optional thread for the dealer to reply to. These templates also show on the Route Tracker for field reps.",
         "Leo's sent hot and mild emails (shared by Chase) match the templates. Hot is something reps send, not optional, so it's back to Leo's version with a reply-or-text line; the mild meeting link now reads \"book a 10-minute call here: {meeting_link}\". His samples say \"Assigned by November 8\", which may be a placeholder or the real deadline (q-30)."
+      ]
+    },
+    {
+      "id": "n-55",
+      "date": "2026-10-22",
+      "title": "6+ month inactives go to Marketing as a digital campaign",
+      "project_id": "wb",
+      "body": [
+        "Chase wants Marketing to run a digital email campaign to sellers inactive 6 months or more.",
+        "Split by group: under 60 days, reps (Lead Tracker Check-in); 60 days to 6 months, Ken's plain-text note from a shared mailbox (fast); 6+ months, Marketing's designed email in Ken's name (bigger and colder list, unsubscribes and volume handled).",
+        "Marketing campaign: three sends Tue Nov 10, Nov 17 and Dec 1, buttons for a manager meeting and the campaign form plus reply with the VIN, responses routed to teams as hot returning-seller leads, suppression file before sends 2 and 3. If Ken sets an early cutoff such as Nov 8, it becomes a January \"start the year with a sale\" campaign."
       ]
     }
   ],

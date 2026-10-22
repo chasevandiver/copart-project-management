@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-22, Marketing win-back brief
+- Source: Chase: Marketing runs a digital email campaign to sellers inactive 6+ months
+- Added: n-55 "6+ month inactives go to Marketing as a digital campaign"
+- Changed: wb Backlog -> Next; wb-03 now the Marketing brief to Kyle (due 2026-10-26); wb-06 list and campaign tag (due 2026-10-30); wb links the brief
+
 ## 2026-10-22, win-back rebuilt
 - Source: Chase asked for the win-back updated with what we now know about Copart Dealer Services and Ken's push
 - Changed: wb built and next steps; wb and pts link the new doc "Win-back: perfect time to sell"
