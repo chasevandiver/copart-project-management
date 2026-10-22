@@ -2,6 +2,12 @@
 
 Newest entry first.
 
+## 2026-10-22, how reps work (correction)
+- Source: Chase: most account reps work from the office by phone (call center setup), only a few visit lots; reps work their own inactives and start on prospects next week; reps do the setup (dealer info, seller code, VIN and titles)
+- Added: n-47 "How Copart Dealer Services reps actually work (correction)"
+- Changed: udm-12, vid-19, wb-11 notes; pdo next steps (prospect calls start week of Oct 26)
+- Docs: Sell now doc, starter scripts (video 5 now "Your rep, one call away"), win-back plan and Copart Dealer Digital audit docs corrected
+
 ## 2026-10-22, Ken's reason to sell now
 - Source: Chase's notes from Ken's Oct 22 floor speech: give dealers a reason to sell now through year end, get assignments in immediately, redo the campaigns and the video script
 - Added: n-46 "Ken's push: give dealers a reason to sell now (Oct 22)"

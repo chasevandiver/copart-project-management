@@ -462,6 +462,7 @@
       ],
       "blockers": [],
       "next_steps": [
+        "Account reps start calling prospective dealers the week of Oct 26, by phone from the office (n-47). The prospect emails in the Sell now doc are the follow-ups to those calls",
         "Prospect emails and the rep in town text now carry the reason to sell now and the assignment deadline (Sell now doc); one to one to business addresses until Legal answers (cdd-02)",
         "Confirm the free run offer with Ken (q-14)",
         "Ask Ken which campaigns stay with Dealer Sales (q-15)",
@@ -3293,7 +3294,7 @@
       "owner": "Claude Code",
       "due": null,
       "priority": "high",
-      "notes": "Oct 22: done in the starter scripts doc. Video 1 opens on the reason to sell now, video 4 gets the tax season close and moves up to post 2 (release order 1, 4, 2, 3, 5, 6), every CTA closes on one car and \"Assigned by [date], sold this year\". Ken fills in the date and his own words on Friday (vid-17).",
+      "notes": "Oct 22: done in the starter scripts doc. Video 1 opens on the reason to sell now, video 4 gets the tax season close and moves up to post 2 (release order 1, 4, 2, 3, 5, 6), every CTA closes on one car and \"Assigned by [date], sold this year\". Ken fills in the date and his own words on Friday (vid-17). Oct 22 later: video 5 changed from a field visit to \"Your rep, one call away\" (the sales manager with the office team), since most reps work by phone (n-47).",
       "completed": "2026-10-22",
       "created": "2026-10-22",
       "updated": "2026-10-22"
@@ -3318,7 +3319,7 @@
       "owner": "Claude Code",
       "due": null,
       "priority": "high",
-      "notes": "Oct 22: done. Emails 1 to 3 open on cash before year end and tax season, close on one car and the assignment deadline; email 2 answers the three objections. Copy in the Sell now doc; the win-back plan doc points at it. Kyle still reviews before anything sends (wb-03).",
+      "notes": "Oct 22: done. Emails 1 to 3 open on cash before year end and tax season, close on one car and the assignment deadline; email 2 answers the three objections. Copy in the Sell now doc; the win-back plan doc points at it. Kyle still reviews before anything sends (wb-03). Oct 22 later: emails and the call script now ask for the VIN, not a visit (n-47).",
       "completed": "2026-10-22",
       "created": "2026-10-22",
       "updated": "2026-10-22"
@@ -3355,7 +3356,7 @@
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "A banner on every list (\"Cars assigned by [date] sell this year\"), the same line on the Route Tracker stop card and as the first line of each template, plus three approved objection replies (wait for tax season, wholesale it locally, what does it cost) from the rep question log. Needs the date from Ken (q-30).",
+      "notes": "A banner on every list (\"Cars assigned by [date] sell this year\"), the same line as the first line of each template and call script, and on the Route Tracker stop card for the few field reps, plus three approved objection replies (wait for tax season, wholesale it locally, what does it cost) from the rep question log. Needs the date from Ken (q-30). Oct 22: most reps work from the office by phone (n-47), so the Lead Tracker is where this lands first.",
       "created": "2026-10-22",
       "updated": "2026-10-22"
     },
@@ -4975,6 +4976,19 @@
         "Done the same day (Claude Code): a Sell now doc (link on the win-back and video projects) with the one reason, sourced proof points, a never-say list, the rewritten win-back emails, a prospect sequence, the video changes, the dates through Dec 31, Chase's part and the asks for Ken, Kyle and Legal. The starter scripts and the win-back plan were edited in place. The record is docs/audit/10-sell-now.md in Copart Dealer Digital.",
         "Calls made: the dealer-facing line is carrying cost and timing (cash before year end, before tax season buyers show up), not price, because public Cox and Wards data put the wholesale price peak in tax season. Nothing touches the dealer's own taxes. Video 4 (aged inventory) moves up to post 2. A December note and a last call week were added so the reason runs to the assignment deadline.",
         "Open for Friday's session with Ken: the last assignment date that sells before Dec 31 (q-30), the offer through that date (q-14), a holding-cost number (q-31), his own words for \"this is the time\"."
+      ]
+    },
+    {
+      "id": "n-47",
+      "date": "2026-10-22",
+      "title": "How Copart Dealer Services reps actually work (correction)",
+      "project_id": "general",
+      "body": [
+        "Not all account reps visit dealers' lots. A very small number do; most of the business is run by account reps in the office, close to a call center setup.",
+        "Each rep handles outreach to their own inactive dealers today and starts reaching out to prospective dealers next week (week of Oct 26).",
+        "The rep does all the setup to get assignments: collects the dealer's information, sets up a seller code, and gets the VIN and titles from the dealer when they're ready.",
+        "Changed the same day: the Sell now doc, starter scripts (video 5 is now 'Your rep, one call away'), the win-back plan and the repo docs say reps set dealers up by phone, and the call to action is 'send me the VIN'. Older Route Tracker and pilot plans still assume visits; they apply only to the few field reps.",
+        "Next: Leo's voice memo on how Copart Dealer Services works, so the process notes and the copy can be checked against it."
       ]
     }
   ],
