@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-22, VIN received template
+- Source: Leo's note via Chase: hot dealers send the VIN and docs after the call by email or text; follow up once the VIN arrives with next steps and what to expect (up to 48 hours for the yard to receive and upload images)
+- Added: n-54 "Leo on the hot-dealer follow-up"; q-35 Leo, can pickup be scheduled before a new seller's code is ready
+- Changed: pts-03 notes (VIN received replaces You're set up; new merge fields)
+
 ## 2026-10-22, inactive sellers lane
 - Source: Chase: inactive under 60 days stays with the rep, after 60 days any team can grab it; wants a meeting-with-a-manager button and a form in the email; admins divide form leads by team
 - Added: n-53 "Inactive sellers: the 60-day rule and how responses get back to teams"

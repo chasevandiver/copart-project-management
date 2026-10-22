@@ -3455,7 +3455,7 @@
       "owner": "Work Claude",
       "due": "2026-10-26",
       "priority": "high",
-      "notes": "Spec: the Perfect time to sell section in docs/lead-tracker-templates-spec.md (Copart Dealer Digital). Four email buttons: Intro (new), After a call (version by the hot, mild or cold rating set on the call), Check-in (switches to the last call version on Dec 1; inactive opening line), You're set up (optional, when the seller code is made). {assign_by} and {setup_form} merge fields, campaign tag pts-2026q4, deadline banner. Live only after Ken's sign-off (pts-02).",
+      "notes": "Spec: the Perfect time to sell section in docs/lead-tracker-templates-spec.md (Copart Dealer Digital). Four email buttons: Intro (new), After a call (version by the hot, mild or cold rating set on the call), Check-in (switches to the last call version on Dec 1; inactive opening line), VIN received (when the VIN and title copy arrive and the car is assigned; per Leo, n-54). {assign_by}, {setup_form}, {vehicle}, {vin_last6} and {yard} merge fields, campaign tag pts-2026q4, deadline banner. Live only after Ken's sign-off (pts-02).",
       "created": "2026-10-22",
       "updated": "2026-10-22"
     },
@@ -3961,6 +3961,16 @@
       "id": "q-34",
       "question": "Returning-seller leads from the campaign: first team to claim them, or admins assign by team rotation? And can the 60+ day inactives go into the Lead Tracker now as open leads?",
       "ask": "Ken Rion",
+      "project_id": "pts",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-22",
+      "answered": null
+    },
+    {
+      "id": "q-35",
+      "question": "Can pickup be scheduled before a new seller's code is ready, or does the car wait for the seller code? (The VIN received email tells new sellers it doesn't hold up pickup.)",
+      "ask": "Leo",
       "project_id": "pts",
       "status": "open",
       "answer": null,
@@ -5227,6 +5237,17 @@
         "Plan for Perfect time to sell: under 60 days, the rep uses Check-in with the inactive opening line. 60 days or more: a note in Ken's name, 60 days to 6 months first and 6+ months a week later, three emails (Nov, a week later, Dec 1).",
         "Chase wants the email to carry a Schedule a meeting with a manager button and a form. Inactives already have a seller code, so they don't need setup. The website form goes to the admins, who divide leads by team, so returning sellers need their own path back.",
         "Proposed path: a campaign form (Microsoft Forms: dealer or seller code, VIN, pickup or drop-off, cell) and a manager booking page, plus replies to a shared mailbox. Power Automate drops each response into the Lead Tracker as a hot returning-seller lead that skips setup. First team to claim it, or admins assign by rotation, per Ken. The claiming team keeps it under the 60-day rule."
+      ]
+    },
+    {
+      "id": "n-54",
+      "date": "2026-10-22",
+      "title": "Leo on the hot-dealer follow-up",
+      "project_id": "pts",
+      "body": [
+        "For a hot dealer, the call closes the commitment, but the VIN and docs come in as a follow-up, almost always over email or text, not dictated live on the phone.",
+        "So the email that matters is a quick follow-up after the VIN arrives: confirm it, say what the next steps are and what to expect, for example that it can take up to 48 hours for the yard to receive the car and upload the images.",
+        "Done: the fourth button is now VIN received (replacing You're set up), and the hot After a call email is a short, optional thread for the dealer to reply to. These templates also show on the Route Tracker for field reps."
       ]
     }
   ],
