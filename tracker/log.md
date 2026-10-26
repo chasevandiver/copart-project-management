@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-10-26, LinkedIn series planned for tomorrow
+- Source: Chase: plan the LinkedIn series tomorrow
+- Changed: gen-32 idea -> task "Plan Ken's LinkedIn series" (Me, high, due 2026-10-27)
+
 ## 2026-10-26, Marketing ideas
 - Source: Chase: add the top three marketing ideas to the ideas list
 - Added ideas: audit-16 "Get Copart Dealer Services into the sources AI engines cite for selling questions"; pdo-02 "Host a 20-minute dealer webinar with Ken in Teams"
