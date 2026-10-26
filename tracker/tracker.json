@@ -630,7 +630,7 @@
       "id": "vid",
       "name": "Social Media Videos",
       "category": "Marketing Efforts",
-      "status": "In Progress",
+      "status": "Waiting",
       "summary": "Ken's initiative: a six-video series over three weeks, filmed in the office with Michelle (videographer), Ken on camera and a sales manager in two. Commercial-style pitch with fun-fact cards about Copart Dealer Services, aimed at independent dealers who want to sell. David Bansigan posts on Copart's corporate TikTok and Instagram; we hand him finished videos and a one-pager, B-roll is available, and he fits them on the calendar. Marketing wants more faces on social, and can boost the posts that do well organically to target dealers. Current audience is mostly consumers. Who edits the videos is still open.",
       "built": [
         "Video brief and series outline for Ken and Michelle, draft (Oct 21)",
@@ -669,12 +669,13 @@
         }
       ],
       "blockers": [
-        "Posting waits on the booking page being live on the Copart Dealer Services page (Ken, Oct 26; audit-15, q-37)"
+        "Posting waits on the booking page being live on the Copart Dealer Services page (Ken, Oct 26; audit-15, q-37)",
+        "Holding pattern until the website changes go through (Oct 26). Chase suggested running the videos and the website changes at the same time; Ken wants the website first."
       ],
       "next_steps": [
         "Get the booking button live on the website before post one (audit-15, q-36, q-37)",
-        "Get the assignment deadline, the offer and Ken's own words for \"this is the time\" in the Friday session (q-30, q-14, q-31, vid-17)",
-        "Get Ken's words for the script and his decisions in one 15-minute session (vid-17)",
+        "Get the assignment deadline, the offer and Ken's own words for \"this is the time\" in the script session (q-30, q-14, q-31, vid-17)",
+        "Be ready for Ken's one-hour script session whenever he sets it (vid-17, w-16)",
         "Find out who edits the videos (vid-18)",
         "Read the research: TikTok and Instagram do not measurably reach dealer owners; LinkedIn, YouTube, Facebook cross-posts, rep route lists and NIADA or Auto Remarketing newsletters are the dealer distribution",
         "Finish the brief and outline for Ken and Michelle by Friday (vid-01)",
@@ -3147,11 +3148,11 @@
       "title": "Get the Copart Dealer Services facts from Ken for the fun-fact cards",
       "status": "Next",
       "owner": "Me",
-      "due": "2026-10-24",
+      "due": null,
       "priority": "urgent",
-      "notes": "Facts are specific to Copart Dealer Services, not Copart as a whole. Ken has them. Nothing goes on camera unverified (q-28). Oct 22: fees confirmed from the CDS page (n-49): $89 plus 3%, $75 min, $250 max, first run plus 2 reruns, 10 photos, rinse and vacuum, $35 a run after, Buy It Now and Make An Offer. Video 6 no longer waits on Ken for the fee numbers.",
+      "notes": "Facts are specific to Copart Dealer Services, not Copart as a whole. Ken has them. Nothing goes on camera unverified (q-28). Oct 22: fees confirmed from the CDS page (n-49): $89 plus 3%, $75 min, $250 max, first run plus 2 reruns, 10 photos, rinse and vacuum, $35 a run after, Buy It Now and Make An Offer. Video 6 no longer waits on Ken for the fee numbers. Oct 26: moves to the one-hour script session with Ken (vid-17), date not set.",
       "created": "2026-10-21",
-      "updated": "2026-10-22"
+      "updated": "2026-10-26"
     },
     {
       "id": "vid-03",
@@ -3280,11 +3281,11 @@
       "title": "Agree with Ken what a win looks like for the series before post one",
       "status": "Next",
       "owner": "Me",
-      "due": "2026-10-24",
+      "due": null,
       "priority": "urgent",
-      "notes": "One sentence. 'Learn which hook dealers watch and get the first tagged lead, then decide paid' beats 'go viral'. Do it in the facts sitting (vid-02).",
+      "notes": "One sentence. 'Learn which hook dealers watch and get the first tagged lead, then decide paid' beats 'go viral'. Do it in the facts sitting (vid-02). Oct 26: moves to the one-hour script session with Ken (vid-17), date not set.",
       "created": "2026-10-21",
-      "updated": "2026-10-21"
+      "updated": "2026-10-26"
     },
     {
       "id": "vid-14",
@@ -3325,14 +3326,14 @@
     {
       "id": "vid-17",
       "project_id": "vid",
-      "title": "Walk Ken through the outline and get his words for the script",
-      "status": "Next",
+      "title": "Run the one-hour script session with Ken",
+      "status": "Waiting",
       "owner": "Me",
-      "due": "2026-10-24",
+      "due": null,
       "priority": "urgent",
-      "notes": "Bring the draft and ask him to fill in his words, not 'what's your goal'. Opener: the structure is done, it needs to sound like you; can I ask you a few questions the way a dealer would? Questions, one per video: (1) first thing you say to a dealer who has never used us (hook, video 1); (2) what dealers get wrong about Copart (likely 'just salvage', the spine of the series); (3) what happens to a dealer's car from the call to getting paid (video 2: days, hauling, payment); (4) the three numbers you use to win a dealer over (fact cards, video 3); (5) what you tell a dealer with a car that has been sitting (video 4); (6) the objection you hear most and your answer (decides video 6). Close with: shoot date and which sales manager (vid-03), he signs off the facts (vid-02, q-28), length 45 s target with 60 ceiling (d-vid-01), what a win looks like after three weeks (vid-13), posting each video on his LinkedIn (vid-09). Record with Plaud if Ken is okay with it; his phrasing becomes the hooks. 15 minutes. Send him the outline back with his answers in it. Oct 22: starter scripts drafted for all six videos (linked on the project); bring them to the Ken session so he edits a draft.",
+      "notes": "Bring the draft and ask him to fill in his words, not 'what's your goal'. Opener: the structure is done, it needs to sound like you; can I ask you a few questions the way a dealer would? Questions, one per video: (1) first thing you say to a dealer who has never used us (hook, video 1); (2) what dealers get wrong about Copart (likely 'just salvage', the spine of the series); (3) what happens to a dealer's car from the call to getting paid (video 2: days, hauling, payment); (4) the three numbers you use to win a dealer over (fact cards, video 3); (5) what you tell a dealer with a car that has been sitting (video 4); (6) the objection you hear most and your answer (decides video 6). Close with: shoot date and which sales manager (vid-03), he signs off the facts (vid-02, q-28), length 45 s target with 60 ceiling (d-vid-01), what a win looks like after three weeks (vid-13), posting each video on his LinkedIn (vid-09). Record with Plaud if Ken is okay with it; his phrasing becomes the hooks. 15 minutes. Send him the outline back with his answers in it. Oct 22: starter scripts drafted for all six videos (linked on the project); bring them to the Ken session so he edits a draft. Oct 26: Ken wants an hour to do the scripts together, not 15 minutes. Date not set (w-16). Agenda for the hour: (1) 5 min, frame it: the structure is done, it needs his voice. (2) 5 min, lock the assignment deadline first, since it decides every close (a Nov 8 date falls before a Nov 10 first post), and the length (d-vid-01). (3) 35 min, the six videos in posting order 1, 4, 2, 3, 5, 6, about 6 minutes each: read the hook, he says it his way, fill the fact cards, record with Plaud. (4) 10 min, the 20-second clip on a phone as the test clip (vid-10, vid-20). (5) 5 min, logistics: sales manager for videos 2 and 5 (vid-03), shoot day, LinkedIn (vid-09), holding cost (q-31), what a win looks like (vid-13). Bring the brief with the pitch summary at the end. Ask to shoot while the website change is pending and post once the booking button is live.",
       "created": "2026-10-21",
-      "updated": "2026-10-22"
+      "updated": "2026-10-26"
     },
     {
       "id": "vid-18",
@@ -3722,6 +3723,15 @@
       "since": "2026-10-26",
       "priority": "urgent",
       "notes": "Chase already pushed for it (Oct 26). The Social Media Videos wait for it (n-56). Tool and setup: audit-15, q-36, q-37."
+    },
+    {
+      "id": "w-16",
+      "what": "A one-hour session with Ken to do the video scripts together",
+      "from_whom": "Ken Rion",
+      "project_id": "vid",
+      "since": "2026-10-26",
+      "priority": "high",
+      "notes": "Ken wants an hour for the scripts (Oct 26). Date not set. Agenda and prep in vid-17."
     }
   ],
   "questions": [
@@ -5381,6 +5391,17 @@
         "Tool: Microsoft Bookings over Calendly, unless Bookings is off at Copart or Copart already pays for Calendly. Bookings is likely in the Microsoft 365 license, reads Outlook, gives the admins a shared page where they can change the host, and has a Power Automate trigger into the Lead Tracker. Calendly has the smoother page but is a new vendor (purchasing, security review, Legal on contact data).",
         "Risk: the full page remake is due Dec 15 (audit-09). If the videos wait for that, the series misses the year-end push. Ask Manny for the button and booking link as a quick change ahead of the remake (q-37).",
         "Chase already pushed Noelle Goodman and Lauren Harrington to get it done as soon as possible (w-15)."
+      ]
+    },
+    {
+      "id": "n-57",
+      "date": "2026-10-26",
+      "title": "Videos in a holding pattern; Ken wants an hour on the scripts",
+      "project_id": "vid",
+      "body": [
+        "Ken wants to take an hour to do the scripts together. That is what Chase is waiting on (w-16), and Chase needs to be ready whenever it lands.",
+        "The series is in a holding pattern until the website changes go through (n-56).",
+        "Chase suggested doing the videos and the website changes at the same time. Ken wants to wait. Shooting does not need the website, only posting does, so the shoot could still happen while the change is pending."
       ]
     }
   ],

@@ -2,6 +2,12 @@
 
 Newest entry first.
 
+## 2026-10-26, Videos on hold, Ken wants an hour on the scripts
+- Source: Chase: Ken wants an hour to do the scripts, so that is what Chase waits on; videos are in a holding pattern for the website changes, though Chase suggested doing both at once
+- Changed: vid In Progress -> Waiting; vid-17 renamed "Run the one-hour script session with Ken", Next -> Waiting, due cleared, agenda for the hour added; vid-02 and vid-13 due cleared (done in that session); vid blocker and next steps
+- Waiting on: added w-16 one-hour script session (Ken Rion)
+- Added: n-57 "Videos in a holding pattern; Ken wants an hour on the scripts"
+
 ## 2026-10-26, Booking button pushed with Noelle and Lauren
 - Source: Chase: already pushed Noelle and Lauren to get the booking button done as soon as possible
 - Waiting on: added w-15 booking button and link live on the Copart Dealer Services page (Noelle Goodman and Lauren Harrington, urgent)
