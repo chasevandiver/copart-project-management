@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-26, Marketing ideas
+- Source: Chase: add the top three marketing ideas to the ideas list
+- Added ideas: audit-16 "Get Copart Dealer Services into the sources AI engines cite for selling questions"; pdo-02 "Host a 20-minute dealer webinar with Ken in Teams"
+- Changed: gen-32 (Ken's LinkedIn) now built around the AI search gap questions
+
 ## 2026-10-26, Early warning idea
 - Source: Chase: put the "flag sellers before they go quiet" idea on the ideas list
 - Added idea: udm-18 "Flag sellers in the Lead Tracker before they go quiet"

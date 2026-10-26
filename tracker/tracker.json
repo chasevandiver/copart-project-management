@@ -3626,7 +3626,7 @@
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Oct 26 brainstorm. Dealer owners are on LinkedIn (video research). Outline approach like the videos: Ken talks it through, Chase shapes it. Personal accounts, not Marketing's channel. Check Copart's social policy for employee accounts first. Keeps the channel warm until the videos post (vid-09).",
+      "notes": "Oct 26 brainstorm. Dealer owners are on LinkedIn (video research). Outline approach like the videos: Ken talks it through, Chase shapes it. Personal accounts, not Marketing's channel. Check Copart's social policy for employee accounts first. Keeps the channel warm until the videos post (vid-09). Oct 26: write the posts around the top 5 AI search gap questions, so each post reaches dealer owners and gives AI engines something to cite (audit-16).",
       "idea": true,
       "created": "2026-10-26",
       "updated": "2026-10-26"
@@ -3679,6 +3679,32 @@
       "due": null,
       "priority": "normal",
       "notes": "Oct 26 brainstorm. Spot sellers whose selling pace drops (for example nothing in 30 days from a dealer who usually sells every week) and flag them to their rep before they reach the 60-day inactive mark. Cheaper than winning them back later and keeps the inactive list from growing. Uses Copart seller data, so it is built in the work setup on Work Claude.",
+      "idea": true,
+      "created": "2026-10-26",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "audit-16",
+      "project_id": "audit",
+      "title": "Get Copart Dealer Services into the sources AI engines cite for selling questions",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Oct 26 brainstorm. The Sep 27 AEO baseline: Copart is named in 60% of answers overall but only 33% at the selling stage (best way to sell trade-ins, online auction vs wholesaler, high-mileage trade-ins), where ACV, Manheim and OPENLANE are named instead. Engines cite third-party sites (dealer101.com, autobidmaster blog, abetter.bid), not only copart.com. Write one plain answer to each of the top 5 gap questions and publish off copart.com: Ken's LinkedIn (gen-32), YouTube with the videos, trade and dealer education sites. Rerun the baseline to measure. Does not wait on the website, Marketing or Tech. Baseline: copart-dealer-digital aeo/runs/2026-09-27/summary.md.",
+      "idea": true,
+      "created": "2026-10-26",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "pdo-02",
+      "project_id": "pdo",
+      "title": "Host a 20-minute dealer webinar with Ken in Teams",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Oct 26 brainstorm. Topic like \"Clear your sitting cars before tax season.\" Reps invite their own leads with a Lead Tracker template; sign-ups and attendees log back to the lead. One session puts many dealers in front of Ken and turns into meetings. No Marketing, website or budget; the recording can become clips. Check Ken is up for it and whether a rep-sent invite needs brand review.",
       "idea": true,
       "created": "2026-10-26",
       "updated": "2026-10-26"
