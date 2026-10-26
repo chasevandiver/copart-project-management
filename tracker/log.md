@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-26, Perfect time to sell pivoted to the rep templates
+- Source: Chase: Perfect time to sell moved to the rep templates, pivoted it a bit, may circle back
+- Changed: pts Next -> Waiting (goes live with the Lead Tracker launch); pts summary, blocker and next steps; pts-05, pts-06, pts-07 Next -> Backlog; pts-04 date cleared
+- Added: n-59 "Perfect time to sell pivoted to the rep templates"
+
 ## 2026-10-26, Prospect to Seller flip done, commission side by side
 - Source: Chase: commission tool runs against Brenda's on Nov 2 until Tech's is done; pay plan waits on HR and leadership; Ken loved the pitch but didn't go through the templates; lead scoring being updated; Prospect to Seller flip complete
 - Changed: udm-13 Done; pts-01 Done (pitched Oct 22); pts-02 date cleared, still needs a template walkthrough; comm-02 notes the side-by-side run

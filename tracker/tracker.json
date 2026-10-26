@@ -702,8 +702,8 @@
       "id": "pts",
       "name": "Perfect time to sell",
       "category": "Campaigns",
-      "status": "Next",
-      "summary": "Year-end campaign, pitched to Ken Oct 22 from his push to give dealers a reason to sell now. Reps send it, one to one from their own Outlook, out of the Lead Tracker, using email templates keyed to each dealer's hot, mild or cold rating. One message (cars sitting now can be cash before year end and before tax season) and one ask (the VIN on one car), from Oct 26 to the year-end assignment deadline. Rep-sent so it skips Marketing's lead time, and rep emails need only Ken's sign-off. Reps call first or email first; each call is followed the same day by the email that matches the outcome, and an unanswered email by a call 2 to 3 days later. Call scripts stay with the Copart Dealer Services managers and Ken. Marketing's win-back send and the video series join in November. Inactive sellers: a rep keeps them for 60 days; 60+ day inactives have no rep, so they get a note in Ken's name with a reply, a campaign form and a manager booking link, and every response lands in the Lead Tracker as a hot returning-seller lead for the teams.",
+      "status": "Waiting",
+      "summary": "Year-end campaign, pitched to Ken Oct 22 from his push to give dealers a reason to sell now. Reps send it, one to one from their own Outlook, out of the Lead Tracker, using email templates keyed to each dealer's hot, mild or cold rating. One message (cars sitting now can be cash before year end and before tax season) and one ask (the VIN on one car), from Oct 26 to the year-end assignment deadline. Rep-sent so it skips Marketing's lead time, and rep emails need only Ken's sign-off. Reps call first or email first; each call is followed the same day by the email that matches the outcome, and an unanswered email by a call 2 to 3 days later. Call scripts stay with the Copart Dealer Services managers and Ken. Marketing's win-back send and the video series join in November. Inactive sellers: a rep keeps them for 60 days; 60+ day inactives have no rep, so they get a note in Ken's name with a reply, a campaign form and a manager booking link, and every response lands in the Lead Tracker as a hot returning-seller lead for the teams. Oct 26: pivoted to the rep templates. The campaign now runs as the email templates reps send from the Lead Tracker, so it goes live with the Lead Tracker launch. Ken's note to 60+ day inactives (form, booking page, routing, loading) is parked; Chase may circle back.",
       "built": [
         "Pitch doc with the message, how it runs, dates, the weekly number and asks for Ken, plus an Email templates tab built around four Lead Tracker buttons (Oct 22)",
         "Perfect time to sell play in the Lead Tracker template spec, docs/lead-tracker-templates-spec.md in Copart Dealer Digital (Oct 22)",
@@ -727,12 +727,14 @@
           "where": "Copart Dealer Digital repo, docs/lead-tracker-templates-spec.md"
         }
       ],
-      "blockers": [],
+      "blockers": [
+        "Goes live with the Lead Tracker launch, which waits on Ken's payment plan (udm-11, w-14)"
+      ],
       "next_steps": [
-        "Pitch it to Ken today: yes, the deadline date, any year-end offer, Leo's new-license leads (pts-01, q-30, q-14, q-32)",
-        "Ken's sign-off on the templates (pts-02)",
-        "Cars assigned by rep in every Thursday update (pts-04)",
-        "Ken's note to 60+ day inactives: his name (q-33), routing and loading them into the Lead Tracker (q-34), then the form, booking page and flow (pts-05, pts-06, pts-07)"
+        "Walk Ken through the templates (pts-02)",
+        "Goes live when the Lead Tracker launches to the team (udm-11)",
+        "Cars assigned by rep in the Thursday update once reps are sending (pts-04)",
+        "Parked, may circle back: Ken's note to 60+ day inactives (q-33, q-34, pts-05, pts-06, pts-07)"
       ]
     }
   ],
@@ -3496,48 +3498,48 @@
       "title": "Report cars assigned by rep in the Thursday update",
       "status": "Next",
       "owner": "Me",
-      "due": "2026-10-29",
+      "due": null,
       "priority": "high",
-      "notes": "From Salesforce by the campaign tag, plus new seller accounts and Lead Tracker rating moves. Ken's one number.",
+      "notes": "From Salesforce by the campaign tag, plus new seller accounts and Lead Tracker rating moves. Ken's one number. Oct 26: starts once reps are sending from the Lead Tracker after launch (udm-11).",
       "recurring": "weekly",
       "created": "2026-10-22",
-      "updated": "2026-10-22"
+      "updated": "2026-10-26"
     },
     {
       "id": "pts-05",
       "project_id": "pts",
       "title": "Set up the campaign form and manager booking page for returning sellers",
-      "status": "Next",
+      "status": "Backlog",
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Microsoft Forms (dealer or seller code, VIN, pickup or drop-off, cell) and a Bookings page for 15 minutes with a manager, plus a Power Automate flow that puts each response, and each reply to the shared mailbox, into the Lead Tracker as a hot returning-seller lead. Spec: the inactive section in docs/lead-tracker-templates-spec.md. Booking tool and who takes meetings is q-16.",
+      "notes": "Microsoft Forms (dealer or seller code, VIN, pickup or drop-off, cell) and a Bookings page for 15 minutes with a manager, plus a Power Automate flow that puts each response, and each reply to the shared mailbox, into the Lead Tracker as a hot returning-seller lead. Spec: the inactive section in docs/lead-tracker-templates-spec.md. Booking tool and who takes meetings is q-16. Oct 26: parked. Perfect time to sell pivoted to the rep templates in the Lead Tracker; Chase may circle back to this.",
       "created": "2026-10-22",
-      "updated": "2026-10-22"
+      "updated": "2026-10-26"
     },
     {
       "id": "pts-06",
       "project_id": "pts",
       "title": "Agree with the admins how returning-seller leads skip setup and reach a team",
-      "status": "Next",
+      "status": "Backlog",
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "They already have a seller code. Admins see each one but route it to a team (first claim or rotation, q-34) instead of the setup queue. Same-day call expected.",
+      "notes": "They already have a seller code. Admins see each one but route it to a team (first claim or rotation, q-34) instead of the setup queue. Same-day call expected. Oct 26: parked. Perfect time to sell pivoted to the rep templates in the Lead Tracker; Chase may circle back to this.",
       "created": "2026-10-22",
-      "updated": "2026-10-22"
+      "updated": "2026-10-26"
     },
     {
       "id": "pts-07",
       "project_id": "pts",
       "title": "Load sellers inactive 60 days or more into the Lead Tracker as open leads",
-      "status": "Next",
+      "status": "Backlog",
       "owner": "Work Claude",
       "due": null,
       "priority": "high",
-      "notes": "Copart status inactive, no owner, seller code and last sale date kept, two groups (60 days to 6 months, 6+ months). Work setup only. Waits on Ken (q-34). Needed before Ken's note so responses match the dealer on file.",
+      "notes": "Copart status inactive, no owner, seller code and last sale date kept, two groups (60 days to 6 months, 6+ months). Work setup only. Waits on Ken (q-34). Needed before Ken's note so responses match the dealer on file. Oct 26: parked. Perfect time to sell pivoted to the rep templates in the Lead Tracker; Chase may circle back to this.",
       "created": "2026-10-22",
-      "updated": "2026-10-22"
+      "updated": "2026-10-26"
     },
     {
       "id": "udm-13",
@@ -5446,6 +5448,17 @@
         "The Lead Tracker is launch ready. Launch waits on Ken's payment plan (w-14) and Chase's pitch to the team.",
         "The commission tool is ready and runs on the next data drop, Mon Nov 2. Tech is now building its own commission tool (q-38).",
         "Parked: the win-back asks to Marketing (wb-03, wb-06, wb-14)."
+      ]
+    },
+    {
+      "id": "n-59",
+      "date": "2026-10-26",
+      "title": "Perfect time to sell pivoted to the rep templates",
+      "project_id": "pts",
+      "body": [
+        "Perfect time to sell moved into the rep email templates in the Lead Tracker, so Chase pivoted the campaign to that.",
+        "It goes live when the Lead Tracker launches to the team.",
+        "Ken's note to 60+ day inactives and its form, booking page, routing and loading are parked. Chase may circle back."
       ]
     }
   ],
