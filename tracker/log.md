@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-10-26, Outline, not a script, for Ken
+- Source: Chase told Ken he will get an outline rather than a script so it sounds natural, since Ken pitches Copart Dealer Services all the time; asked for the session agenda in the brief
+- Changed: vid-17 renamed "Run the one-hour outline session with Ken", agenda reworked for an outline; w-16 and n-57 updated
+
 ## 2026-10-26, Videos on hold, Ken wants an hour on the scripts
 - Source: Chase: Ken wants an hour to do the scripts, so that is what Chase waits on; videos are in a holding pattern for the website changes, though Chase suggested doing both at once
 - Changed: vid In Progress -> Waiting; vid-17 renamed "Run the one-hour script session with Ken", Next -> Waiting, due cleared, agenda for the hour added; vid-02 and vid-13 due cleared (done in that session); vid blocker and next steps
