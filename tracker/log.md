@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-26, Lead Tracker Phase 2
+- Source: Chase: Phase 2 only if Phase 1 goes well; it brings in each rep's full book of business, inactives first; the first week after launch is handling feedback
+- Changed: udm-14 renamed "Map out Phase 2: each rep's full book of business in the Lead Tracker, inactives first"; udm next steps
+- Added: udm-15 "Handle Phase 1 feedback in the first week after launch" (Me)
+
 ## 2026-10-26, Lead Tracker status
 - Source: Chase: templates are in the Lead Tracker, leads release after 60 days, launch waits on Ken's new payment plan and Chase's pitch to the team, Prospect to Seller flip sent to Work Claude, Phase 2 not planned yet
 - Changed: pts-03 Next -> Done; udm-11 Next -> Waiting, due cleared; udm-08 notes the 60-day release is built; udm and pts next steps

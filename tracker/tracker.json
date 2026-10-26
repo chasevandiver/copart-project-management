@@ -361,7 +361,8 @@
         "Lock the lead record, stages and lead ID (n-29)",
         "Match leads to Copart dealer status: active, inactive, no status (udm-01)",
         "Put the resolved lead rules into the app (udm-08)",
-        "Map out Phase 2 from how Phase 1 goes (udm-14)"
+        "First week after launch: handle rep feedback (udm-15)",
+        "If reps get real use out of it, Phase 2: each rep's full book, inactives first (udm-14)"
       ],
       "dependencies": [
         "Who the 26 teams are (q-18)",
@@ -3541,12 +3542,24 @@
     {
       "id": "udm-14",
       "project_id": "udm",
-      "title": "Map out the Lead Tracker Phase 2 changes",
+      "title": "Map out Phase 2: each rep's full book of business in the Lead Tracker, inactives first",
       "status": "Backlog",
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Oct 26: nothing planned for Phase 2 yet. Shape it from how Phase 1 (the team launch, udm-11) goes and the pilot feedback (gen-29).",
+      "notes": "Oct 26: Phase 2 only if Phase 1 goes well and the reps get real use out of the Lead Tracker. Then bring in each rep's full book of business, with the focus on their inactives so reps can start working them from the Lead Tracker. Related: pts-07 loads the 60+ day inactives as open leads; Phase 2 is the inactives and sellers each rep still owns. Copart seller data stays on the work setup.",
+      "created": "2026-10-26",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "udm-15",
+      "project_id": "udm",
+      "title": "Handle Phase 1 feedback in the first week after launch",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Oct 26: the first week or so after the team launch (udm-11) is for fixing what reps report, as much as possible. It also shows whether reps get real use out of the Lead Tracker, which decides Phase 2 (udm-14). Feeds gen-29.",
       "created": "2026-10-26",
       "updated": "2026-10-26"
     }
