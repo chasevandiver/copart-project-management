@@ -282,8 +282,8 @@
       ],
       "blockers": [],
       "next_steps": [
-        "Run the tool on the Nov 2 data drop and check it against Brenda's numbers (comm-02)",
-        "Ask Ken whether ours keeps running until Tech's commission tool is live, and whether to hand Tech the rules and macros (q-38)"
+        "Run it side by side with Brenda's on the Nov 2 commissions and compare (comm-02)",
+        "Keep running it until Tech's commission tool is done (q-38)"
       ],
       "dependencies": [
         "Real raw data after the current two-week commission period",
@@ -351,12 +351,13 @@
         "Claim codes so the team can claim leads, with an admin view that keeps teams from being overloaded (Oct 15)",
         "Dealer profiles build as reps log touches and notes (Oct 15)",
         "Lead Tracker updated to match how the team tracks calls and outreach; a pilot team is using it and giving feedback (Oct 16)",
-        "Launch ready (Oct 26): Keon's UX and UI redo done (udm-10). Launch waits on Ken's payment plan (w-14)."
+        "Launch ready (Oct 26): Keon's UX and UI redo done (udm-10). Launch waits on Ken's payment plan (w-14).",
+        "Prospect to Seller flip on the lead page (Oct 26, udm-13)"
       ],
       "links": [],
       "blockers": [],
       "next_steps": [
-        "Prospect to Seller flip on the lead page (udm-13)",
+        "Finish the lead scoring update (udm-16)",
         "Launch to the team once Ken's new payment plan is in place and Chase pitches it (udm-11, w-14)",
         "Collect pilot team feedback on the Lead Tracker (gen-29)",
         "Build out the CRM once the processes are known (udm-06)",
@@ -3106,7 +3107,7 @@
       "owner": "Me",
       "due": "2026-11-02",
       "priority": "urgent",
-      "notes": "Oct 20: test workbook matches Brenda's numbers on her data and fake sample data. Real raw data comes after the current two-week period. Commission data stays on the work setup. Was hub-05. Oct 21: urgent, this week (commission spreadsheet, Lead Tracker and the video shoot are the week's three priorities). Oct 21: second set of commission reports not in yet. Oct 26: runs Mon Nov 2.",
+      "notes": "Oct 20: test workbook matches Brenda's numbers on her data and fake sample data. Real raw data comes after the current two-week period. Commission data stays on the work setup. Was hub-05. Oct 21: urgent, this week (commission spreadsheet, Lead Tracker and the video shoot are the week's three priorities). Oct 21: second set of commission reports not in yet. Oct 26: runs Mon Nov 2. Oct 26: Chase runs his tool side by side with Brenda's when commissions come out Mon Nov 2, and keeps running it until Tech's tool is done (q-38).",
       "created": "2026-10-20",
       "updated": "2026-10-26"
     },
@@ -3455,13 +3456,14 @@
       "id": "pts-01",
       "project_id": "pts",
       "title": "Pitch Perfect time to sell to Ken",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-22",
       "priority": "urgent",
-      "notes": "Pitch doc linked on the project. Asks: yes to run it from Mon Oct 26, the assignment deadline (q-30), a year-end offer or none (q-14), Leo's new-license leads now or held (q-32), sign-off on the email templates.",
+      "notes": "Pitch doc linked on the project. Asks: yes to run it from Mon Oct 26, the assignment deadline (q-30), a year-end offer or none (q-14), Leo's new-license leads now or held (q-32), sign-off on the email templates. Oct 26: pitched Oct 22. Ken thought it was awesome; he did not walk through each email template (pts-02).",
       "created": "2026-10-22",
-      "updated": "2026-10-22"
+      "updated": "2026-10-26",
+      "completed": "2026-10-22"
     },
     {
       "id": "pts-02",
@@ -3469,11 +3471,11 @@
       "title": "Get Ken's sign-off on the email templates",
       "status": "Next",
       "owner": "Me",
-      "due": "2026-10-23",
+      "due": null,
       "priority": "high",
-      "notes": "Email templates tab in the pitch doc. Rep emails need Ken's sign-off only, not Kyle's (n-51). Kyle still reviews Marketing's sends and the videos.",
+      "notes": "Email templates tab in the pitch doc. Rep emails need Ken's sign-off only, not Kyle's (n-51). Kyle still reviews Marketing's sends and the videos. Oct 26: Ken loved the pitch but did not go through the templates one by one. Walk him through them before reps rely on them, for example at the outline session (vid-17).",
       "created": "2026-10-22",
-      "updated": "2026-10-22"
+      "updated": "2026-10-26"
     },
     {
       "id": "pts-03",
@@ -3541,13 +3543,14 @@
       "id": "udm-13",
       "project_id": "udm",
       "title": "Build the Prospect to Seller flip on the lead page",
-      "status": "In Progress",
+      "status": "Done",
       "owner": "Work Claude",
       "due": null,
       "priority": "high",
-      "notes": "Oct 26: Dealer sent a VIN moves from the Email templates column to a one-line Next step at the top right of the lead, above Owner (Get the VIN, then Car on its way, then The next car). The Prospect chip flips to Seller when the first car is received (d-udm-04). Inactive and other chips stay as they are. Spec: docs/handoff-prospect-to-seller.md in Copart Dealer Digital. Chase sent Work Claude the prompt.",
+      "notes": "Oct 26: Dealer sent a VIN moves from the Email templates column to a one-line Next step at the top right of the lead, above Owner (Get the VIN, then Car on its way, then The next car). The Prospect chip flips to Seller when the first car is received (d-udm-04). Inactive and other chips stay as they are. Spec: docs/handoff-prospect-to-seller.md in Copart Dealer Digital. Chase sent Work Claude the prompt. Oct 26: complete.",
       "created": "2026-10-26",
-      "updated": "2026-10-26"
+      "updated": "2026-10-26",
+      "completed": "2026-10-26"
     },
     {
       "id": "udm-14",
@@ -3582,6 +3585,18 @@
       "due": null,
       "priority": "urgent",
       "notes": "Time-select tool Chase pitched to the website team. Dealer picks a time and gets a confirmation; the booking lands with the admins, who change the host to the right manager or team (n-36). Microsoft Bookings unless it is off at Copart or Copart already pays for Calendly (q-36, q-37). Staff are the people who take meetings, set to any available staff; questions: dealership, cell, state or zip, sells with Copart today. Who takes meetings, length and hours: Ken (q-16). Gates the Social Media Videos (n-56). Oct 26: Chase has pushed Noelle and Lauren to get it done as soon as possible (w-15).",
+      "created": "2026-10-26",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "udm-16",
+      "project_id": "udm",
+      "title": "Update lead scoring in the Lead Tracker",
+      "status": "In Progress",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "high",
+      "notes": "Oct 26: in progress (Chase).",
       "created": "2026-10-26",
       "updated": "2026-10-26"
     }
@@ -3719,7 +3734,7 @@
       "project_id": "udm",
       "since": "2026-10-26",
       "priority": "high",
-      "notes": "The Lead Tracker launch to the team (udm-11) waits on it, then Chase pitches the Lead Tracker to the team."
+      "notes": "The Lead Tracker launch to the team (udm-11) waits on it, then Chase pitches the Lead Tracker to the team. Oct 26: waits on HR and leadership clearing it. Chase thinks it is close."
     },
     {
       "id": "w-15",
@@ -4106,10 +4121,10 @@
       "question": "Tech is building its own commission tool. Does ours keep running until theirs is live, and should I hand Tech the rules and macros?",
       "ask": "Ken Rion",
       "project_id": "comm",
-      "status": "open",
-      "answer": "",
+      "status": "answered",
+      "answer": "Ours runs side by side with Brenda's when commissions come out Mon Nov 2, and keeps running until Tech's tool is done. Whether to hand Tech the rules and macros is still open.",
       "raised": "2026-10-26",
-      "answered": null
+      "answered": "2026-10-26"
     }
   ],
   "decisions": [

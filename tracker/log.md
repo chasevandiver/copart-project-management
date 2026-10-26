@@ -2,6 +2,13 @@
 
 Newest entry first.
 
+## 2026-10-26, Prospect to Seller flip done, commission side by side
+- Source: Chase: commission tool runs against Brenda's on Nov 2 until Tech's is done; pay plan waits on HR and leadership; Ken loved the pitch but didn't go through the templates; lead scoring being updated; Prospect to Seller flip complete
+- Changed: udm-13 Done; pts-01 Done (pitched Oct 22); pts-02 date cleared, still needs a template walkthrough; comm-02 notes the side-by-side run
+- Added: udm-16 "Update lead scoring in the Lead Tracker" (Work Claude, In Progress)
+- Answered: q-38 ours runs with Brenda's until Tech's tool is done
+- Waiting on: w-14 notes HR and leadership sign-off
+
 ## 2026-10-26, Lead Tracker launch ready, Marketing asks parked
 - Source: Chase: can't load Marketing with more, waiting on Tech, focused on the Lead Tracker, which is launch ready; the commission tool runs next Monday; Tech is building its own commission tool
 - Changed: udm-10 Done; vid-01 Done; comm-01 Done; comm-02 due 2026-11-02; vid-03 and vid-10 dates cleared (outline session); wb-03, wb-06, wb-14 Next -> Backlog, dates cleared
