@@ -2,6 +2,12 @@
 
 Newest entry first.
 
+## 2026-10-26, Lead Tracker status
+- Source: Chase: templates are in the Lead Tracker, leads release after 60 days, launch waits on Ken's new payment plan and Chase's pitch to the team, Prospect to Seller flip sent to Work Claude, Phase 2 not planned yet
+- Changed: pts-03 Next -> Done; udm-11 Next -> Waiting, due cleared; udm-08 notes the 60-day release is built; udm and pts next steps
+- Added: udm-13 "Build the Prospect to Seller flip on the lead page" (Work Claude, In Progress); udm-14 "Map out the Lead Tracker Phase 2 changes" (Me, Backlog)
+- Waiting on: added w-14 new payment plan in place (Ken Rion)
+
 ## 2026-10-22, Marketing win-back brief
 - Source: Chase: Marketing runs a digital email campaign to sellers inactive 6+ months
 - Added: n-55 "6+ month inactives go to Marketing as a digital campaign"
