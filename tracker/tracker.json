@@ -352,7 +352,9 @@
         "Dealer profiles build as reps log touches and notes (Oct 15)",
         "Lead Tracker updated to match how the team tracks calls and outreach; a pilot team is using it and giving feedback (Oct 16)",
         "Launch ready (Oct 26): Keon's UX and UI redo done (udm-10). Launch waits on Ken's payment plan (w-14).",
-        "Prospect to Seller flip on the lead page (Oct 26, udm-13)"
+        "Prospect to Seller flip on the lead page (Oct 26, udm-13)",
+        "Scoreboard for Ken: touches, VINs and cars assigned by rep (Oct 26)",
+        "Dealer brief on each lead: facts about the dealer only, no sales suggestions, since reps each have their own pitch (Oct 26)"
       ],
       "links": [],
       "blockers": [],
@@ -575,7 +577,6 @@
       "next_steps": [
         "Send the AI use survey once it is approved (agents-05)",
         "Gather the hours saved and leads and meetings inputs (agents-03, q-20 to q-24)",
-        "Build the Copilot flow for website form leads in the Admin inbox (agents-01)",
         "Meet Leo to put every tool on one dealer record (hub-04)",
         "Score each agent on hours saved, leads and meetings, ease and risk, starting with the four on the board (A1 to A4), then pick the first three"
       ],
@@ -616,15 +617,15 @@
         "Auto draft email from a meeting transcript (Oct 15)",
         "Auto schedule meeting from a meeting transcript (Oct 15)",
         "Everything from a meeting goes into a knowledge base (Oct 15)",
-        "PLAUD autoflow to email"
+        "PLAUD autoflow to email",
+        "Plaud into Outlook, action items and a weekly recap: built and ready to go (Oct 26, mm-02, mm-03)"
       ],
       "links": [],
       "blockers": [],
       "next_steps": [
+        "Turn on the Plaud and weekly recap flow",
         "Turn the meeting knowledge base into a Teams chat for updates, pre-call briefs and follow-ups (agents-04)",
-        "Set up the memory bank: call transcripts plus a SharePoint site for meetings (mm-01)",
-        "Build the chief of staff agent: Teams messages, automated updates, connected to the weekly session (mm-02)",
-        "Route PLAUD email into an Outlook PLAUD folder that the workflow picks up (mm-03, pa-02)"
+        "Set up the memory bank: call transcripts plus a SharePoint site for meetings (mm-01)"
       ],
       "dependencies": [
         "Plaud as the transcript source (pa-02)"
@@ -2858,13 +2859,13 @@
       "id": "agents-01",
       "project_id": "agents",
       "title": "Build a Copilot flow that flags hot website form leads in the Admin inbox",
-      "status": "Next",
+      "status": "Backlog",
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Power Automate or Copilot Studio on the Admin inbox. Reads each form email, matches it to the Lead Tracker, flags it hot, warm or not a dealer with a reason, prefills as much of the seller setup as it can and lists what is missing, creates or updates the lead, then alerts the admin and the lead owner. The admin reviews before any seller code. Needs: form fields and routing (q-12), Brenda's seller setup fields (rt-56), what makes a lead hot (Ken and the admins), and Copilot access to the Admin inbox.",
+      "notes": "Power Automate or Copilot Studio on the Admin inbox. Reads each form email, matches it to the Lead Tracker, flags it hot, warm or not a dealer with a reason, prefills as much of the seller setup as it can and lists what is missing, creates or updates the lead, then alerts the admin and the lead owner. The admin reviews before any seller code. Needs: form fields and routing (q-12), Brenda's seller setup fields (rt-56), what makes a lead hot (Ken and the admins), and Copilot access to the Admin inbox. Oct 26: parked. The admins already send website form leads to the teams, so this would take work from their jobs.",
       "created": "2026-10-13",
-      "updated": "2026-10-13"
+      "updated": "2026-10-26"
     },
     {
       "id": "agents-02",
@@ -3055,25 +3056,27 @@
       "id": "mm-02",
       "project_id": "mm",
       "title": "Build the chief of staff agent: Teams messages, automated updates, connected to the weekly session",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "From the Oct 16 board. Messages on Teams, automated messages and updates, tied to the weekly session. Builds on the meeting knowledge base (agents-04).",
+      "notes": "From the Oct 16 board. Messages on Teams, automated messages and updates, tied to the weekly session. Builds on the meeting knowledge base (agents-04). Oct 26: built and ready to go (Plaud into Outlook, action items and a weekly recap).",
       "created": "2026-10-16",
-      "updated": "2026-10-16"
+      "updated": "2026-10-26",
+      "completed": "2026-10-26"
     },
     {
       "id": "mm-03",
       "project_id": "mm",
       "title": "Route PLAUD email into an Outlook PLAUD folder the workflow picks up",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "From the Oct 16 board: PLAUD sends email to an Outlook PLAUD folder, and the automated workflow connects everything from there. Pairs with pa-02.",
+      "notes": "From the Oct 16 board: PLAUD sends email to an Outlook PLAUD folder, and the automated workflow connects everything from there. Pairs with pa-02. Oct 26: built and ready to go.",
       "created": "2026-10-16",
-      "updated": "2026-10-16"
+      "updated": "2026-10-26",
+      "completed": "2026-10-26"
     },
     {
       "id": "gen-30",
@@ -3599,6 +3602,71 @@
       "due": null,
       "priority": "high",
       "notes": "Oct 26: in progress (Chase).",
+      "created": "2026-10-26",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "cdd-20",
+      "project_id": "cdd",
+      "title": "Build a hot list of dealers with aged inventory for the year-end campaign",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Oct 26 brainstorm. Use the DFW inventory snapshots to find dealers with units listed 30, 60, 90+ days and load them into the Lead Tracker as a hot list, so reps call the dealers with sitting cars first. Matches the Perfect time to sell message. Needs the second DFW snapshot (cdd-03). Public data only. Prove it on DFW before going wider.",
+      "idea": true,
+      "created": "2026-10-26",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "gen-32",
+      "project_id": "general",
+      "title": "Post weekly on Ken's LinkedIn in his voice, with the sales managers resharing",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Oct 26 brainstorm. Dealer owners are on LinkedIn (video research). Outline approach like the videos: Ken talks it through, Chase shapes it. Personal accounts, not Marketing's channel. Check Copart's social policy for employee accounts first. Keeps the channel warm until the videos post (vid-09).",
+      "idea": true,
+      "created": "2026-10-26",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "udm-17",
+      "project_id": "udm",
+      "title": "Add a why-not reason to the Lead Tracker and send Ken the top reasons monthly",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Oct 26 brainstorm. When a dealer says no or not now, the rep picks a reason (fees, wholesaler, waiting for tax season, never heard of us, other). Listening, not coaching the pitch. Tells the videos, the page remake and the win-back what to answer.",
+      "idea": true,
+      "created": "2026-10-26",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "cdsai-04",
+      "project_id": "cdsai",
+      "title": "Start the Teams agent as a process FAQ for reps",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Oct 26 brainstorm. Answers how-to questions, not sales advice: seller code, fees, pickup timing, what a new seller needs. Sources: Brenda's Copart Dealer Services steps (rt-56) and the fee page. Takes repeat questions off the admins instead of taking work from them. A first job for cdsai-01.",
+      "idea": true,
+      "created": "2026-10-26",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "gen-33",
+      "project_id": "general",
+      "title": "Write a one-page impact report on hours saved and leads delivered",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Oct 26 brainstorm. Before and after for each tool: commission tool (8 to 10 hours a round to about 1), Lead Tracker, meeting management, Route Tracker. Helps Ken push Chase's items up HR, leadership, Tech and Marketing queues. Uses the agents-03 inputs.",
+      "idea": true,
       "created": "2026-10-26",
       "updated": "2026-10-26"
     }
@@ -5459,6 +5527,19 @@
         "Perfect time to sell moved into the rep email templates in the Lead Tracker, so Chase pivoted the campaign to that.",
         "It goes live when the Lead Tracker launches to the team.",
         "Ken's note to 60+ day inactives and its form, booking page, routing and loading are parked. Chase may circle back."
+      ]
+    },
+    {
+      "id": "n-60",
+      "date": "2026-10-26",
+      "title": "Next direction brainstorm",
+      "project_id": "general",
+      "body": [
+        "Already built: Ken's scoreboard and a dealer brief inside the Lead Tracker, and meeting management (Plaud into Outlook, weekly recap), ready to go.",
+        "The dealer brief stays facts about the dealer only. No sales suggestions, since every rep has their own pitch.",
+        "Website form leads flow (agents-01) parked: the admins already send those forms to the teams.",
+        "AEO and marketing changes won't show until the website changes or Marketing work goes through.",
+        "New ideas: aged inventory hot list (cdd-20), Ken's LinkedIn (gen-32), why-not log (udm-17), process FAQ agent (cdsai-04), impact report (gen-33). Lean: the aged inventory hot list first, then the why-not log."
       ]
     }
   ],

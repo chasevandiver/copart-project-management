@@ -2,6 +2,12 @@
 
 Newest entry first.
 
+## 2026-10-26, Next direction brainstorm
+- Source: Chase: scoreboard and dealer brief already in the Lead Tracker (no sales suggestions), admins already route form leads, AEO waits on the website, meeting management built and ready
+- Changed: mm-02 and mm-03 Done; agents-01 Next -> Backlog (would take work from the admins); udm and mm built lists; mm, agents next steps
+- Added ideas: cdd-20 aged inventory hot list; gen-32 Ken's LinkedIn; udm-17 why-not log; cdsai-04 process FAQ agent; gen-33 impact report
+- Added: n-60 "Next direction brainstorm"
+
 ## 2026-10-26, Perfect time to sell pivoted to the rep templates
 - Source: Chase: Perfect time to sell moved to the rep templates, pivoted it a bit, may circle back
 - Changed: pts Next -> Waiting (goes live with the Lead Tracker launch); pts summary, blocker and next steps; pts-05, pts-06, pts-07 Next -> Backlog; pts-04 date cleared
