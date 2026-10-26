@@ -668,8 +668,11 @@
           "url": "https://claude.ai/artifact/LSF6ToFXAhHvkTcY23qX2W"
         }
       ],
-      "blockers": [],
+      "blockers": [
+        "Posting waits on the booking page being live on the Copart Dealer Services page (Ken, Oct 26; audit-15, q-37)"
+      ],
       "next_steps": [
+        "Get the booking button live on the website before post one (audit-15, q-36, q-37)",
         "Get the assignment deadline, the offer and Ken's own words for \"this is the time\" in the Friday session (q-30, q-14, q-31, vid-17)",
         "Get Ken's words for the script and his decisions in one 15-minute session (vid-17)",
         "Find out who edits the videos (vid-18)",
@@ -1976,9 +1979,9 @@
       "owner": "Me",
       "due": "2026-12-15",
       "priority": "normal",
-      "notes": "Oct 7 FullStory (n-18): median visit 9 to 12 seconds, form almost unused on mobile (69% of visitors). Ideas: on mobile, a \"Get a call back\" button in the hero that jumps to the form; cut the form to name, phone and zip (plus dealer name); point the header \"Sell your car\" button on this page at the form; tap-to-call number (audit-08); a dealer-only line at the top so buyers self-select out; 3-step \"how it works\" (list one car, pickup in 24 hours, paid after the sale) and proof (results, a dealer quote) above the fold; sticky call and call-back bar on mobile. Oct 8, Lauren (n-19): look at the whole page, not piecemeal changes; remake it to be SEO and AEO friendly; Tech owns the forms; the Creative team needs 2 weeks lead time. Oct 8: starts with a one-page remake brief (audit-12). Needs the name settled (q-10) and the FullStory review finished (audit-07). Oct 9, Ken: add a meeting request button (see audit-12). Ken wants the page to grow from about 6K monthly visitors to 100K; a stretch, but every campaign should drive traffic here. Marketing Plan (mkt): remade page live, or a dated commitment from Tech.",
+      "notes": "Oct 7 FullStory (n-18): median visit 9 to 12 seconds, form almost unused on mobile (69% of visitors). Ideas: on mobile, a \"Get a call back\" button in the hero that jumps to the form; cut the form to name, phone and zip (plus dealer name); point the header \"Sell your car\" button on this page at the form; tap-to-call number (audit-08); a dealer-only line at the top so buyers self-select out; 3-step \"how it works\" (list one car, pickup in 24 hours, paid after the sale) and proof (results, a dealer quote) above the fold; sticky call and call-back bar on mobile. Oct 8, Lauren (n-19): look at the whole page, not piecemeal changes; remake it to be SEO and AEO friendly; Tech owns the forms; the Creative team needs 2 weeks lead time. Oct 8: starts with a one-page remake brief (audit-12). Needs the name settled (q-10) and the FullStory review finished (audit-07). Oct 9, Ken: add a meeting request button (see audit-12). Ken wants the page to grow from about 6K monthly visitors to 100K; a stretch, but every campaign should drive traffic here. Marketing Plan (mkt): remade page live, or a dated commitment from Tech. Oct 26: Ken holds the Social Media Videos until the booking button is live. Ask for the button and booking link ahead of the full remake (q-37).",
       "created": "2026-10-02",
-      "updated": "2026-10-12"
+      "updated": "2026-10-26"
     },
     {
       "id": "gen-26",
@@ -3195,9 +3198,9 @@
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Tagged link to the Copart Dealer Services page, and the campaign call-tracking number if mkt-06 lands in time, so leads from the series show in the Lead Tracker. Oct 21: mkt-06 (call-tracking number) is on hold, so ask for the number as part of this task if the series needs it.",
+      "notes": "Tagged link to the Copart Dealer Services page, and the campaign call-tracking number if mkt-06 lands in time, so leads from the series show in the Lead Tracker. Oct 21: mkt-06 (call-tracking number) is on hold, so ask for the number as part of this task if the series needs it. Oct 26, Ken: the videos go out only after the booking page is live on the Copart Dealer Services page, so every video links to it (audit-15, n-56).",
       "created": "2026-10-21",
-      "updated": "2026-10-21"
+      "updated": "2026-10-26"
     },
     {
       "id": "vid-07",
@@ -3562,6 +3565,18 @@
       "notes": "Oct 26: the first week or so after the team launch (udm-11) is for fixing what reps report, as much as possible. It also shows whether reps get real use out of the Lead Tracker, which decides Phase 2 (udm-14). Feeds gen-29.",
       "created": "2026-10-26",
       "updated": "2026-10-26"
+    },
+    {
+      "id": "audit-15",
+      "project_id": "audit",
+      "title": "Set up the shared booking page for the Request a meeting button",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Time-select tool Chase pitched to the website team. Dealer picks a time and gets a confirmation; the booking lands with the admins, who change the host to the right manager or team (n-36). Microsoft Bookings unless it is off at Copart or Copart already pays for Calendly (q-36, q-37). Staff are the people who take meetings, set to any available staff; questions: dealership, cell, state or zip, sells with Copart today. Who takes meetings, length and hours: Ken (q-16). Gates the Social Media Videos (n-56).",
+      "created": "2026-10-26",
+      "updated": "2026-10-26"
     }
   ],
   "waiting_on": [
@@ -3688,7 +3703,7 @@
       "project_id": "audit",
       "since": "2026-10-15",
       "priority": "high",
-      "notes": "Manny meets his team Monday Oct 19 to go over the website briefs and HTML (audit-12, mkt-12). Feeds the remake (audit-09) and tap-to-call (audit-08)."
+      "notes": "Manny meets his team Monday Oct 19 to go over the website briefs and HTML (audit-12, mkt-12). Feeds the remake (audit-09) and tap-to-call (audit-08). Oct 26: also gates the Social Media Videos, which wait for the booking button (n-56)."
     },
     {
       "id": "w-14",
@@ -4039,6 +4054,26 @@
       "status": "open",
       "answer": null,
       "raised": "2026-10-22",
+      "answered": null
+    },
+    {
+      "id": "q-36",
+      "question": "Is Microsoft Bookings turned on in Copart's Microsoft 365, and can you set up a shared Bookings page the Copart Dealer Services admins own?",
+      "ask": "IT",
+      "project_id": "audit",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-26",
+      "answered": null
+    },
+    {
+      "id": "q-37",
+      "question": "Can the Request a meeting button and booking link go live on the Copart Dealer Services page ahead of the full remake, and which booking tool does the website team expect (does Copart already pay for Calendly)?",
+      "ask": "Manny Ortiz",
+      "project_id": "audit",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-26",
       "answered": null
     }
   ],
@@ -5324,6 +5359,18 @@
         "Chase wants Marketing to run a digital email campaign to sellers inactive 6 months or more.",
         "Split by group: under 60 days, reps (Lead Tracker Check-in); 60 days to 6 months, Ken's plain-text note from a shared mailbox (fast); 6+ months, Marketing's designed email in Ken's name (bigger and colder list, unsubscribes and volume handled).",
         "Marketing campaign: three sends Tue Nov 10, Nov 17 and Dec 1, buttons for a manager meeting and the campaign form plus reply with the VIN, responses routed to teams as hot returning-seller leads, suppression file before sends 2 and 3. If Ken sets an early cutoff such as Nov 8, it becomes a January \"start the year with a sale\" campaign."
+      ]
+    },
+    {
+      "id": "n-56",
+      "date": "2026-10-26",
+      "title": "Videos wait for the booking page on the website",
+      "project_id": "vid",
+      "body": [
+        "Ken: the Social Media Videos go out after the website changes that add the meeting booking form, so every video links to the booking page.",
+        "Booking: Chase pitched the website team a time-select tool. The dealer picks a time and gets a confirmation; the booking lands with the admins, who change the host to the right manager or team (Ken's flow, n-36).",
+        "Tool: Microsoft Bookings over Calendly, unless Bookings is off at Copart or Copart already pays for Calendly. Bookings is likely in the Microsoft 365 license, reads Outlook, gives the admins a shared page where they can change the host, and has a Power Automate trigger into the Lead Tracker. Calendly has the smoother page but is a new vendor (purchasing, security review, Legal on contact data).",
+        "Risk: the full page remake is due Dec 15 (audit-09). If the videos wait for that, the series misses the year-end push. Ask Manny for the button and booking link as a quick change ahead of the remake (q-37)."
       ]
     }
   ],

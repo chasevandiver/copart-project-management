@@ -2,6 +2,12 @@
 
 Newest entry first.
 
+## 2026-10-26, Videos wait for the booking page
+- Source: Chase: Ken wants the Social Media Videos out after the website changes that add the meeting booking form, so the videos link to the booking page; Chase pitched the website team a time-select tool; Bookings vs Calendly
+- Added: audit-15 "Set up the shared booking page for the Request a meeting button" (Me, high); n-56 "Videos wait for the booking page on the website"
+- Added questions: q-36 Bookings turned on and a shared admin page (IT); q-37 button and booking link ahead of the remake, which tool (Manny Ortiz)
+- Changed: vid blocker and first next step (booking button live before post one); vid-06 and audit-09 notes; w-13 now also gates the videos
+
 ## 2026-10-26, Lead Tracker Phase 2
 - Source: Chase: Phase 2 only if Phase 1 goes well; it brings in each rep's full book of business, inactives first; the first week after launch is handling feedback
 - Changed: udm-14 renamed "Map out Phase 2: each rep's full book of business in the Lead Tracker, inactives first"; udm next steps
