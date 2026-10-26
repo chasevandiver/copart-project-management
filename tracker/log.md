@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-10-26, Early warning idea
+- Source: Chase: put the "flag sellers before they go quiet" idea on the ideas list
+- Added idea: udm-18 "Flag sellers in the Lead Tracker before they go quiet"
+
 ## 2026-10-26, Next direction brainstorm
 - Source: Chase: scoreboard and dealer brief already in the Lead Tracker (no sales suggestions), admins already route form leads, AEO waits on the website, meeting management built and ready
 - Changed: mm-02 and mm-03 Done; agents-01 Next -> Backlog (would take work from the admins); udm and mm built lists; mm, agents next steps

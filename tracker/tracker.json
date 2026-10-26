@@ -3669,6 +3669,19 @@
       "idea": true,
       "created": "2026-10-26",
       "updated": "2026-10-26"
+    },
+    {
+      "id": "udm-18",
+      "project_id": "udm",
+      "title": "Flag sellers in the Lead Tracker before they go quiet",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Oct 26 brainstorm. Spot sellers whose selling pace drops (for example nothing in 30 days from a dealer who usually sells every week) and flag them to their rep before they reach the 60-day inactive mark. Cheaper than winning them back later and keeps the inactive list from growing. Uses Copart seller data, so it is built in the work setup on Work Claude.",
+      "idea": true,
+      "created": "2026-10-26",
+      "updated": "2026-10-26"
     }
   ],
   "waiting_on": [
