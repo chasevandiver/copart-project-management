@@ -271,7 +271,8 @@
       "status": "In Progress",
       "summary": "An automated commission workbook for Brenda. Rules and macros cover each person's payout structure, so the new pay plan fills in from the data drop instead of hand-edited macros and summary. Mostly manual today, about 8 to 10 hours a round; the target is about 1 hour. Commission data stays on the work setup, never in this repo. Ken's main focus for me the week of Oct 19.",
       "built": [
-        "Test workbook with rules and macros per payout structure; its numbers match Brenda's (Oct 20)"
+        "Test workbook with rules and macros per payout structure; its numbers match Brenda's (Oct 20)",
+        "Tool built and ready to run on the next data drop, Mon Nov 2 (Oct 26)"
       ],
       "links": [
         {
@@ -281,11 +282,12 @@
       ],
       "blockers": [],
       "next_steps": [
-        "Build fake sample data and test the rules and macros (comm-01)",
-        "Run the tool on the first real two-week data drop and check it against Brenda's numbers (comm-02)"
+        "Run the tool on the Nov 2 data drop and check it against Brenda's numbers (comm-02)",
+        "Ask Ken whether ours keeps running until Tech's commission tool is live, and whether to hand Tech the rules and macros (q-38)"
       ],
       "dependencies": [
-        "Real raw data after the current two-week commission period"
+        "Real raw data after the current two-week commission period",
+        "Tech is building its own commission tool (Oct 26)"
       ]
     },
     {
@@ -348,12 +350,12 @@
         "Connected to the Route Tracker both ways: leads build routes, and route results feed back into the lead record (Oct 15)",
         "Claim codes so the team can claim leads, with an admin view that keeps teams from being overloaded (Oct 15)",
         "Dealer profiles build as reps log touches and notes (Oct 15)",
-        "Lead Tracker updated to match how the team tracks calls and outreach; a pilot team is using it and giving feedback (Oct 16)"
+        "Lead Tracker updated to match how the team tracks calls and outreach; a pilot team is using it and giving feedback (Oct 16)",
+        "Launch ready (Oct 26): Keon's UX and UI redo done (udm-10). Launch waits on Ken's payment plan (w-14)."
       ],
       "links": [],
       "blockers": [],
       "next_steps": [
-        "Redo the Lead Tracker UX and UI from Keon's feedback: search, cleaner dashboard (udm-10)",
         "Prospect to Seller flip on the lead page (udm-13)",
         "Launch to the team once Ken's new payment plan is in place and Chase pitches it (udm-11, w-14)",
         "Collect pilot team feedback on the Lead Tracker (gen-29)",
@@ -440,6 +442,7 @@
       ],
       "blockers": [],
       "next_steps": [
+        "Parked Oct 26: no new Marketing asks until the current ones move (wb-03, wb-06, wb-14 to Backlog)",
         "Brief to Kyle and Marketing Mon Oct 26 so Creative can make a Nov 10 first send (wb-03); list and campaign tag by Oct 30 (wb-06)",
         "Take \"Win-back: perfect time to sell\" to Ken with the Perfect time to sell pitch: deadline (q-30), sender and mailbox (q-33), routing and loading 60+ day inactives (q-34)",
         "Get the assignment deadline from Ken (q-30), then bring the plan with the rewritten emails (wb-01)",
@@ -2141,13 +2144,13 @@
       "id": "wb-03",
       "project_id": "wb",
       "title": "Send Kyle the Marketing brief for the 6+ month win-back email, and check the member campaign calendar",
-      "status": "Next",
+      "status": "Backlog",
       "owner": "Me",
-      "due": "2026-10-26",
+      "due": null,
       "priority": "high",
-      "notes": "Ties to pdo-01 and cmp-03. Ask whether plain-text emails in the rep's name skip the 2-week Creative lead time (q-27). Oct 21: on hold, no formal pitch to Ken yet (was due 2026-10-23). Oct 22: the brief is \"Marketing brief: win-back email to sellers inactive 6+ months\" (linked on the project). Designed email in Ken's name, three sends Nov 10, 17 and Dec 1; Creative starts Oct 26.",
+      "notes": "Ties to pdo-01 and cmp-03. Ask whether plain-text emails in the rep's name skip the 2-week Creative lead time (q-27). Oct 21: on hold, no formal pitch to Ken yet (was due 2026-10-23). Oct 22: the brief is \"Marketing brief: win-back email to sellers inactive 6+ months\" (linked on the project). Designed email in Ken's name, three sends Nov 10, 17 and Dec 1; Creative starts Oct 26. Oct 26: parked. Chase is not adding Marketing asks until the current ones move.",
       "created": "2026-10-15",
-      "updated": "2026-10-22"
+      "updated": "2026-10-26"
     },
     {
       "id": "wb-04",
@@ -2177,13 +2180,13 @@
       "id": "wb-06",
       "project_id": "wb",
       "title": "Send Marketing the 6+ month list; set up the Salesforce campaign tag with Rama",
-      "status": "Next",
+      "status": "Backlog",
       "owner": "Me",
-      "due": "2026-10-30",
+      "due": null,
       "priority": "high",
-      "notes": "Process from n-32. Campaign tag with Rama Manyam. Oct 21: on hold, no formal pitch to Ken yet (was due 2026-10-27). Oct 22: list fields are seller code, dealer name, contact first name, email, state. Suppression file to Marketing before sends 2 and 3 (Nov 16, Nov 30).",
+      "notes": "Process from n-32. Campaign tag with Rama Manyam. Oct 21: on hold, no formal pitch to Ken yet (was due 2026-10-27). Oct 22: list fields are seller code, dealer name, contact first name, email, state. Suppression file to Marketing before sends 2 and 3 (Nov 16, Nov 30). Oct 26: parked. Chase is not adding Marketing asks until the current ones move.",
       "created": "2026-10-15",
-      "updated": "2026-10-22"
+      "updated": "2026-10-26"
     },
     {
       "id": "wb-07",
@@ -2262,13 +2265,14 @@
       "id": "comm-01",
       "project_id": "comm",
       "title": "Build a tool with Brenda to track the new commission setup",
-      "status": "In Progress",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "urgent",
-      "notes": "Ken, Oct 9: get with Brenda to build a tool that tracks the new commission setup, which launches the week of Oct 12. Sent Brenda a Teams message Oct 9 (w-09); follow up. Commission data stays on the work setup, never in this repo. Follow up with Brenda Monday Oct 12. Oct 15: no reply from Brenda yet (w-09). On hold while the commission setup is not live. Oct 16: commission setup is not live yet. No date; pick this up when it launches and Brenda replies (w-09). Oct 20: main focus this week (n-37). Brenda replied (w-09) and I'm rebuilding her commission spreadsheet with rules and macros for each person's payout structure, so the new pay plan fills in from the data drop instead of hand-edited macros and summary (was gen-30). Mostly manual today: about 8 to 10 hours a round, target about 1 hour. My test workbook matches Brenda's numbers. Building fake sample data to test now; the real check is the next two-week commission data (comm-02). Oct 20: moved to its own project, Commission Tool (was hub-03). Oct 20: Ken set tightening up the commission tool as my main focus this week. Oct 21: meeting with Brenda and the tech team moved to Oct 22.",
+      "notes": "Ken, Oct 9: get with Brenda to build a tool that tracks the new commission setup, which launches the week of Oct 12. Sent Brenda a Teams message Oct 9 (w-09); follow up. Commission data stays on the work setup, never in this repo. Follow up with Brenda Monday Oct 12. Oct 15: no reply from Brenda yet (w-09). On hold while the commission setup is not live. Oct 16: commission setup is not live yet. No date; pick this up when it launches and Brenda replies (w-09). Oct 20: main focus this week (n-37). Brenda replied (w-09) and I'm rebuilding her commission spreadsheet with rules and macros for each person's payout structure, so the new pay plan fills in from the data drop instead of hand-edited macros and summary (was gen-30). Mostly manual today: about 8 to 10 hours a round, target about 1 hour. My test workbook matches Brenda's numbers. Building fake sample data to test now; the real check is the next two-week commission data (comm-02). Oct 20: moved to its own project, Commission Tool (was hub-03). Oct 20: Ken set tightening up the commission tool as my main focus this week. Oct 21: meeting with Brenda and the tech team moved to Oct 22. Oct 26: tool built and ready; it runs on the next data drop Mon Nov 2 (comm-02). Tech is building its own commission tool (q-38).",
       "created": "2026-10-09",
-      "updated": "2026-10-21"
+      "updated": "2026-10-26",
+      "completed": "2026-10-26"
     },
     {
       "id": "rt-45",
@@ -3100,23 +3104,24 @@
       "title": "Run the commission tool on the first real two-week data drop and check it against Brenda's numbers",
       "status": "Next",
       "owner": "Me",
-      "due": null,
+      "due": "2026-11-02",
       "priority": "urgent",
-      "notes": "Oct 20: test workbook matches Brenda's numbers on her data and fake sample data. Real raw data comes after the current two-week period. Commission data stays on the work setup. Was hub-05. Oct 21: urgent, this week (commission spreadsheet, Lead Tracker and the video shoot are the week's three priorities). Oct 21: second set of commission reports not in yet.",
+      "notes": "Oct 20: test workbook matches Brenda's numbers on her data and fake sample data. Real raw data comes after the current two-week period. Commission data stays on the work setup. Was hub-05. Oct 21: urgent, this week (commission spreadsheet, Lead Tracker and the video shoot are the week's three priorities). Oct 21: second set of commission reports not in yet. Oct 26: runs Mon Nov 2.",
       "created": "2026-10-20",
-      "updated": "2026-10-21"
+      "updated": "2026-10-26"
     },
     {
       "id": "udm-10",
       "project_id": "udm",
       "title": "Redo the Lead Tracker UX and UI from Keon's feedback",
-      "status": "In Progress",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "urgent",
-      "notes": "Oct 20: full UX and UI update from Keon's feedback, plus my own calls on what makes it faster and easier to use and track. From the Oct 20 managers meeting (n-37): a search feature, a cleaner dashboard, and dossiers from reps feeding their dashboards (udm-09). Oct 20: needs to land before the team launch next week (udm-11). Oct 21: urgent, this week (commission spreadsheet, Lead Tracker and the video shoot are the week's three priorities). Oct 21: Keon is piloting it while cold calling in the office; Leo likes the layout.",
+      "notes": "Oct 20: full UX and UI update from Keon's feedback, plus my own calls on what makes it faster and easier to use and track. From the Oct 20 managers meeting (n-37): a search feature, a cleaner dashboard, and dossiers from reps feeding their dashboards (udm-09). Oct 20: needs to land before the team launch next week (udm-11). Oct 21: urgent, this week (commission spreadsheet, Lead Tracker and the video shoot are the week's three priorities). Oct 21: Keon is piloting it while cold calling in the office; Leo likes the layout. Oct 26: done. The Lead Tracker is launch ready.",
       "created": "2026-10-20",
-      "updated": "2026-10-21"
+      "updated": "2026-10-26",
+      "completed": "2026-10-26"
     },
     {
       "id": "udm-11",
@@ -3126,7 +3131,7 @@
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Oct 20: Ken wants the Lead Tracker launched to the team next week. Due set to the end of that week; move it when the day is set. The UX and UI redo (udm-10) and the lead rules (udm-08) come first. Ken called it out to the whole floor at today's team gather up (n-38). Oct 21: launch could be as early as Mon Oct 26. Oct 26: launches once Ken has the new payment plan in place (w-14) and Chase pitches it to the team. No date yet.",
+      "notes": "Oct 20: Ken wants the Lead Tracker launched to the team next week. Due set to the end of that week; move it when the day is set. The UX and UI redo (udm-10) and the lead rules (udm-08) come first. Ken called it out to the whole floor at today's team gather up (n-38). Oct 21: launch could be as early as Mon Oct 26. Oct 26: launches once Ken has the new payment plan in place (w-14) and Chase pitches it to the team. No date yet. Oct 26: the Lead Tracker is launch ready; only the payment plan (w-14) and Chase's pitch to the team remain.",
       "created": "2026-10-20",
       "updated": "2026-10-26"
     },
@@ -3134,13 +3139,14 @@
       "id": "vid-01",
       "project_id": "vid",
       "title": "Write the video brief and series outline for Ken and Michelle",
-      "status": "In Progress",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-24",
       "priority": "urgent",
-      "notes": "Oct 21 managers meeting (n-39). Commercial style, pitch plus bullet-style fun facts, walk and talk with Ken. Main focus: how the videos get picked up by dealers' algorithms. Draft doc linked on the project. Oct 21: reshaped around what, why, how we get in front of dealers organically, how we track conversion, and what it takes (three gates: before the shoot, before the first post, every post week). Shoot moved to the office; shot list now calls for cutaways from Marketing's footage. Oct 21 (later): research brief, content calendar and measurement plan drafted in copart-dealer-digital docs/social. Calendar proposes first post Tue Nov 10, video 6 on Dec 1 (Thanksgiving), pending Ken's facts. Oct 22: starter scripts drafted for all six videos (linked on the project); bring them to the Ken session so he edits a draft.",
+      "notes": "Oct 21 managers meeting (n-39). Commercial style, pitch plus bullet-style fun facts, walk and talk with Ken. Main focus: how the videos get picked up by dealers' algorithms. Draft doc linked on the project. Oct 21: reshaped around what, why, how we get in front of dealers organically, how we track conversion, and what it takes (three gates: before the shoot, before the first post, every post week). Shoot moved to the office; shot list now calls for cutaways from Marketing's footage. Oct 21 (later): research brief, content calendar and measurement plan drafted in copart-dealer-digital docs/social. Calendar proposes first post Tue Nov 10, video 6 on Dec 1 (Thanksgiving), pending Ken's facts. Oct 22: starter scripts drafted for all six videos (linked on the project); bring them to the Ken session so he edits a draft. Oct 26: brief done, with a pitch summary and the outline session agenda added at the end (Social video series: ideas for Ken, Word doc).",
       "created": "2026-10-21",
-      "updated": "2026-10-22"
+      "updated": "2026-10-26",
+      "completed": "2026-10-26"
     },
     {
       "id": "vid-02",
@@ -3160,11 +3166,11 @@
       "title": "Set the shoot date, office space and who joins Ken on camera",
       "status": "Next",
       "owner": "Me",
-      "due": "2026-10-24",
+      "due": null,
       "priority": "urgent",
-      "notes": "Filming is next week with Michelle. Ken on camera, maybe one of the sales managers. No date yet (Oct 21). Oct 21: filming in the office, not the yard. Need Marketing's yard and auction footage for cutaways.",
+      "notes": "Filming is next week with Michelle. Ken on camera, maybe one of the sales managers. No date yet (Oct 21). Oct 21: filming in the office, not the yard. Need Marketing's yard and auction footage for cutaways. Oct 26: shoot date and sales manager get set in the outline session with Ken (vid-17).",
       "created": "2026-10-21",
-      "updated": "2026-10-21"
+      "updated": "2026-10-26"
     },
     {
       "id": "vid-04",
@@ -3245,11 +3251,11 @@
       "title": "Do a two-minute phone test clip with Ken before the shoot",
       "status": "Next",
       "owner": "Me",
-      "due": "2026-10-27",
+      "due": null,
       "priority": "high",
-      "notes": "One idea, conversational, facts on cards not in his mouth. Scripted bullet reads die on these apps. Before Michelle's shoot day.",
+      "notes": "One idea, conversational, facts on cards not in his mouth. Scripted bullet reads die on these apps. Before Michelle's shoot day. Oct 26: done as the 20-second clip on a phone in the outline session (vid-17).",
       "created": "2026-10-21",
-      "updated": "2026-10-21"
+      "updated": "2026-10-26"
     },
     {
       "id": "vid-11",
@@ -3437,13 +3443,13 @@
       "id": "wb-14",
       "project_id": "wb",
       "title": "Find which reps already email their own inactives before the win-back list goes to Marketing",
-      "status": "Next",
+      "status": "Backlog",
       "owner": "Me",
-      "due": "2026-10-27",
+      "due": null,
       "priority": "high",
-      "notes": "Leo emails his inactive sellers every Monday at 8 am through Power Automate (n-48). Leave those accounts off Marketing's send or fold the rep's email in, so no dealer gets two Copart emails in a week.",
+      "notes": "Leo emails his inactive sellers every Monday at 8 am through Power Automate (n-48). Leave those accounts off Marketing's send or fold the rep's email in, so no dealer gets two Copart emails in a week. Oct 26: parked. Chase is not adding Marketing asks until the current ones move.",
       "created": "2026-10-22",
-      "updated": "2026-10-22"
+      "updated": "2026-10-26"
     },
     {
       "id": "pts-01",
@@ -4092,6 +4098,16 @@
       "project_id": "audit",
       "status": "open",
       "answer": null,
+      "raised": "2026-10-26",
+      "answered": null
+    },
+    {
+      "id": "q-38",
+      "question": "Tech is building its own commission tool. Does ours keep running until theirs is live, and should I hand Tech the rules and macros?",
+      "ask": "Ken Rion",
+      "project_id": "comm",
+      "status": "open",
+      "answer": "",
       "raised": "2026-10-26",
       "answered": null
     }
@@ -5403,6 +5419,18 @@
         "The series is in a holding pattern until the website changes go through (n-56).",
         "Chase suggested doing the videos and the website changes at the same time. Ken wants to wait. Shooting does not need the website, only posting does, so the shoot could still happen while the change is pending.",
         "Chase told Ken he would get an outline rather than a script, so the videos sound natural. Ken pitches Copart Dealer Services all the time."
+      ]
+    },
+    {
+      "id": "n-58",
+      "date": "2026-10-26",
+      "title": "Focus while Marketing and Tech catch up",
+      "project_id": "general",
+      "body": [
+        "Chase can't load Marketing with more asks and is waiting on Tech, so the focus is the Lead Tracker, which covers nearly every campaign.",
+        "The Lead Tracker is launch ready. Launch waits on Ken's payment plan (w-14) and Chase's pitch to the team.",
+        "The commission tool is ready and runs on the next data drop, Mon Nov 2. Tech is now building its own commission tool (q-38).",
+        "Parked: the win-back asks to Marketing (wb-03, wb-06, wb-14)."
       ]
     }
   ],

@@ -2,6 +2,12 @@
 
 Newest entry first.
 
+## 2026-10-26, Lead Tracker launch ready, Marketing asks parked
+- Source: Chase: can't load Marketing with more, waiting on Tech, focused on the Lead Tracker, which is launch ready; the commission tool runs next Monday; Tech is building its own commission tool
+- Changed: udm-10 Done; vid-01 Done; comm-01 Done; comm-02 due 2026-11-02; vid-03 and vid-10 dates cleared (outline session); wb-03, wb-06, wb-14 Next -> Backlog, dates cleared
+- Added question: q-38 does our commission tool run until Tech's is live (Ken Rion)
+- Added: n-58 "Focus while Marketing and Tech catch up"
+
 ## 2026-10-26, Outline, not a script, for Ken
 - Source: Chase told Ken he will get an outline rather than a script so it sounds natural, since Ken pitches Copart Dealer Services all the time; asked for the session agenda in the brief
 - Changed: vid-17 renamed "Run the one-hour outline session with Ken", agenda reworked for an outline; w-16 and n-57 updated
