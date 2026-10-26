@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-26, Booking button pushed with Noelle and Lauren
+- Source: Chase: already pushed Noelle and Lauren to get the booking button done as soon as possible
+- Waiting on: added w-15 booking button and link live on the Copart Dealer Services page (Noelle Goodman and Lauren Harrington, urgent)
+- Changed: audit-15 high -> urgent; n-56 notes the push
+
 ## 2026-10-26, Videos wait for the booking page
 - Source: Chase: Ken wants the Social Media Videos out after the website changes that add the meeting booking form, so the videos link to the booking page; Chase pitched the website team a time-select tool; Bookings vs Calendly
 - Added: audit-15 "Set up the shared booking page for the Request a meeting button" (Me, high); n-56 "Videos wait for the booking page on the website"

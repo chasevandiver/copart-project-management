@@ -3573,8 +3573,8 @@
       "status": "Next",
       "owner": "Me",
       "due": null,
-      "priority": "high",
-      "notes": "Time-select tool Chase pitched to the website team. Dealer picks a time and gets a confirmation; the booking lands with the admins, who change the host to the right manager or team (n-36). Microsoft Bookings unless it is off at Copart or Copart already pays for Calendly (q-36, q-37). Staff are the people who take meetings, set to any available staff; questions: dealership, cell, state or zip, sells with Copart today. Who takes meetings, length and hours: Ken (q-16). Gates the Social Media Videos (n-56).",
+      "priority": "urgent",
+      "notes": "Time-select tool Chase pitched to the website team. Dealer picks a time and gets a confirmation; the booking lands with the admins, who change the host to the right manager or team (n-36). Microsoft Bookings unless it is off at Copart or Copart already pays for Calendly (q-36, q-37). Staff are the people who take meetings, set to any available staff; questions: dealership, cell, state or zip, sells with Copart today. Who takes meetings, length and hours: Ken (q-16). Gates the Social Media Videos (n-56). Oct 26: Chase has pushed Noelle and Lauren to get it done as soon as possible (w-15).",
       "created": "2026-10-26",
       "updated": "2026-10-26"
     }
@@ -3713,6 +3713,15 @@
       "since": "2026-10-26",
       "priority": "high",
       "notes": "The Lead Tracker launch to the team (udm-11) waits on it, then Chase pitches the Lead Tracker to the team."
+    },
+    {
+      "id": "w-15",
+      "what": "Request a meeting button and booking link live on the Copart Dealer Services page, as soon as possible",
+      "from_whom": "Noelle Goodman and Lauren Harrington",
+      "project_id": "audit",
+      "since": "2026-10-26",
+      "priority": "urgent",
+      "notes": "Chase already pushed for it (Oct 26). The Social Media Videos wait for it (n-56). Tool and setup: audit-15, q-36, q-37."
     }
   ],
   "questions": [
@@ -5370,7 +5379,8 @@
         "Ken: the Social Media Videos go out after the website changes that add the meeting booking form, so every video links to the booking page.",
         "Booking: Chase pitched the website team a time-select tool. The dealer picks a time and gets a confirmation; the booking lands with the admins, who change the host to the right manager or team (Ken's flow, n-36).",
         "Tool: Microsoft Bookings over Calendly, unless Bookings is off at Copart or Copart already pays for Calendly. Bookings is likely in the Microsoft 365 license, reads Outlook, gives the admins a shared page where they can change the host, and has a Power Automate trigger into the Lead Tracker. Calendly has the smoother page but is a new vendor (purchasing, security review, Legal on contact data).",
-        "Risk: the full page remake is due Dec 15 (audit-09). If the videos wait for that, the series misses the year-end push. Ask Manny for the button and booking link as a quick change ahead of the remake (q-37)."
+        "Risk: the full page remake is due Dec 15 (audit-09). If the videos wait for that, the series misses the year-end push. Ask Manny for the button and booking link as a quick change ahead of the remake (q-37).",
+        "Chase already pushed Noelle Goodman and Lauren Harrington to get it done as soon as possible (w-15)."
       ]
     }
   ],
