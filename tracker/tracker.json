@@ -2,7 +2,7 @@
   "meta": {
     "owner": "Chase",
     "role": "Digital Engagement Manager, supporting Ken Rion (SVP of Dealer Sales)",
-    "last_updated": "2026-10-22"
+    "last_updated": "2026-10-26"
   },
   "categories": [
     "AI Tools",
@@ -1842,13 +1842,13 @@
       "title": "Send Ken the weekly update",
       "status": "Next",
       "owner": "Me",
-      "due": "2026-10-23",
+      "due": "2026-11-02",
       "priority": "high",
       "notes": "Board > Weekly update. Check the highlights with Edit, then Copy text into an email or use Print or PDF. Include q-14, q-15 and q-16 this week (Marketing Plan, mkt). Oct 16: not sent. Ken has been out since Tuesday afternoon; send when he is back. Oct 21: the Oct 23 update has not gone out; due reset to Oct 23 (it had been checked off twice on Oct 20).",
       "recurring": "weekly",
       "created": "2026-10-01",
-      "updated": "2026-10-21",
-      "completed": "2026-10-20"
+      "updated": "2026-10-26",
+      "completed": "2026-10-26"
     },
     {
       "id": "rt-42",
