@@ -748,7 +748,7 @@
       "category": "AI Tools",
       "status": "Backlog",
       "idea": true,
-      "summary": "Idea from a chat with Leo (Oct 27): a practice-only Copilot agent for the Make An Offer team. Its only knowledge is their playbook and what we give it. Reps go straight to it for two things: role play a call (it plays the person on the other end and pushes back with the playbook's objections), and break down a transcript of one of their own recorded calls against the playbook. Calls are already recorded and disclosed to the customer. Voice role play runs in regular Copilot voice chat until custom agents support voice. Every bit of feedback is a draft coaching note, not a score. Out loud is the goal (Oct 27): nearly all of the team's work is on the phone. Target is a practice phone line: a rep dials a number and the agent answers as the customer (Copilot Studio voice agent, needs IT). Until then, Copilot voice chat for solo practice, and mock calls between reps on the recorded phone system, broken down by the agent.",
+      "summary": "Idea from a chat with Leo (Oct 27): a practice-only Copilot agent for the Make An Offer team. Its only knowledge is their playbook and what we give it. Reps go straight to it for two things: role play a call (it plays the person on the other end and pushes back with the playbook's objections), and break down a transcript of one of their own recorded calls against the playbook. Calls are already recorded and disclosed to the customer. Voice role play runs in regular Copilot voice chat until custom agents support voice. Every bit of feedback is a draft coaching note, not a score. Out loud is the goal (Oct 27): nearly all of the team's work is on the phone. Target is a practice phone line: a rep dials a number and the agent answers as the customer (Copilot Studio voice agent, needs IT). Until then, Copilot voice chat for solo practice, and mock calls between reps on the recorded phone system, broken down by the agent. Decided Oct 27: a Copilot agent, not a phone line (d-mao-01).",
       "built": [],
       "links": [],
       "blockers": [
@@ -4731,6 +4731,19 @@
       "status": "resolved",
       "answer": "Rule stays; no ACV work until told otherwise (not yet)",
       "resolved": "2026-10-21"
+    },
+    {
+      "id": "d-mao-01",
+      "project_id": "mao",
+      "question": "How do Make An Offer reps practice with the agent?",
+      "options": [
+        "Copilot agent (text role play and recorded call breakdowns), plus Copilot voice chat for out loud",
+        "Copilot Studio voice agent on a practice phone line"
+      ],
+      "raised": "2026-10-27",
+      "status": "resolved",
+      "answer": "Copilot agent. The phone line costs per minute and needs IT; revisit only if reps use the agent a lot.",
+      "resolved": "2026-10-27"
     }
   ],
   "people": [

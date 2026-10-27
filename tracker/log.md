@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-10-27, MAO agent decided
+- Source: Chase and Leo: go with a Copilot agent
+- Resolved: d-mao-01 Copilot agent, not a practice phone line
+
 ## 2026-10-27, MAO phone line cost
 - Source: Chase: the practice phone line seems expensive
 - Changed: mao-02 priority normal -> low, parked behind a Copilot voice chat pilot, cost estimate in notes; mao next steps
