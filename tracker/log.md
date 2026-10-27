@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-10-27, Managers meeting
+- Source: Chase: only had time to say the Lead Tracker guides are coming; next managers meeting tomorrow
+- Added: udm-19 "Put together the Lead Tracker guide packages for the team" (Me, high, due 2026-10-30)
+
 ## 2026-10-27, Bookings site created
 - Source: Chase: created a Microsoft Bookings site in his Office 365
 - Changed: audit-15 Next -> In Progress; vid next step to ask Ken about linking the videos straight to Bookings

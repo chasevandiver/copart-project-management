@@ -359,6 +359,7 @@
       "links": [],
       "blockers": [],
       "next_steps": [
+        "Guide packages for the team this week (udm-19)",
         "Finish the lead scoring update (udm-16)",
         "Launch to the team once Ken's new payment plan is in place and Chase pitches it (udm-11, w-14)",
         "Collect pilot team feedback on the Lead Tracker (gen-29)",
@@ -3708,6 +3709,18 @@
       "idea": true,
       "created": "2026-10-26",
       "updated": "2026-10-26"
+    },
+    {
+      "id": "udm-19",
+      "project_id": "udm",
+      "title": "Put together the Lead Tracker guide packages for the team",
+      "status": "In Progress",
+      "owner": "Me",
+      "due": "2026-10-30",
+      "priority": "high",
+      "notes": "Oct 27: told the managers meeting the guides are coming. How each team works the Lead Tracker, ready for the launch (udm-11). Preview at the Oct 28 managers meeting.",
+      "created": "2026-10-27",
+      "updated": "2026-10-27"
     }
   ],
   "waiting_on": [
