@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-10-27, Bookings page set up
+- Source: Chase set up the 5-minute call service on Microsoft Bookings and tested it
+- Changed: audit-15 notes (setup, fields, what is left: staff, admins, routing)
+
 ## 2026-10-27, Managers meeting
 - Source: Chase: only had time to say the Lead Tracker guides are coming; next managers meeting tomorrow
 - Added: udm-19 "Put together the Lead Tracker guide packages for the team" (Me, high, due 2026-10-30)
