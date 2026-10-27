@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-27, MAO practice agent scoped
+- Source: Chase: practice only, the playbook is the only knowledge, calls are already recorded and disclosed
+- Changed: mao summary and next steps; mao-01 and mao-02 notes
+- Added: mao-03 "Build the MAO practice agent with the playbook as its only knowledge" (Me); note n-64
+
 ## 2026-10-27, Leo's MAO tool
 - Source: Chase: Leo is building an MAO tool for the Make An Offer team, sending their playbook, and they talked about a Copilot voice role-play agent for the pitch
 - Added: project mao "MAO pitch practice agent" (idea, AI Tools, under g-04)

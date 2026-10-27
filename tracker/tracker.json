@@ -748,7 +748,7 @@
       "category": "AI Tools",
       "status": "Backlog",
       "idea": true,
-      "summary": "Idea from a chat with Leo (Oct 27): a Copilot agent built on the Make An Offer team's playbook and pitch. Reps use voice to role play a call with it (it plays the member or seller, pushes back, then gives feedback) to tighten their pitch. Leo is building an MAO tool for the same team. Every bit of feedback from the agent is a draft coaching note, not a score.",
+      "summary": "Idea from a chat with Leo (Oct 27): a practice-only Copilot agent for the Make An Offer team. Its only knowledge is their playbook and what we give it. Reps go straight to it for two things: role play a call (it plays the person on the other end and pushes back with the playbook's objections), and break down a transcript of one of their own recorded calls against the playbook. Calls are already recorded and disclosed to the customer. Voice role play runs in regular Copilot voice chat until custom agents support voice. Every bit of feedback is a draft coaching note, not a score.",
       "built": [],
       "links": [],
       "blockers": [
@@ -756,8 +756,9 @@
       ],
       "next_steps": [
         "Get the playbook from Leo (w-17)",
+        "Build the agent with the playbook as its only knowledge, general knowledge and web search off (mao-03)",
+        "Fill the drafted agent instructions with the playbook's pitch steps, objections and scenarios (mao-01)",
         "Check that our Copilot lets a custom agent run in voice mode (mao-02)",
-        "Pull the pitch, objections and talk track out of the playbook into the agent's instructions (mao-01)",
         "Ask Leo how this fits his MAO tool (q-39)"
       ],
       "dependencies": [
@@ -3756,7 +3757,7 @@
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Once the playbook arrives (w-17): pull out the pitch, the common objections and the answers, and the call flow. The agent plays the person on the other end, pushes back with real objections, then says what landed and what to tighten.",
+      "notes": "Once the playbook arrives (w-17). Agent instructions are drafted (Oct 27, Claude chat) with two modes: role play and break down a recorded call. Fill in the pitch steps, objections and answers, and scenarios from the playbook.",
       "idea": true,
       "created": "2026-10-27",
       "updated": "2026-10-27"
@@ -3769,7 +3770,20 @@
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "The role play depends on reps talking to the agent out loud. Confirm with IT whether a Copilot Studio agent can be used in voice on our licenses, and on phone as well as desktop.",
+      "notes": "The role play depends on reps talking to the agent out loud. Confirm with IT whether a Copilot Studio agent can be used in voice on our licenses, and on phone as well as desktop. Until then, reps can practice out loud in regular Copilot voice chat with a saved role-play prompt; voice chats save as text, so they can ask for coaching in the same chat.",
+      "idea": true,
+      "created": "2026-10-27",
+      "updated": "2026-10-27"
+    },
+    {
+      "id": "mao-03",
+      "project_id": "mao",
+      "title": "Build the MAO practice agent with the playbook as its only knowledge",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Copilot agent builder or Copilot Studio. Upload the playbook as the only knowledge source, turn off general knowledge and web search, paste the drafted instructions, test both modes, then share with the Make An Offer team. Practice only.",
       "idea": true,
       "created": "2026-10-27",
       "updated": "2026-10-27"
@@ -5703,6 +5717,18 @@
         "Leo is working on an MAO tool for the Make An Offer team.",
         "He's sending me their playbook.",
         "Idea from our chat: a Copilot agent built on their pitch that reps can role play with by voice to tighten up their pitch."
+      ]
+    },
+    {
+      "id": "n-64",
+      "date": "2026-10-27",
+      "title": "MAO practice agent: how it works",
+      "project_id": "mao",
+      "body": [
+        "Purely for practice. Reps go right to the agent.",
+        "Its only knowledge is the Make An Offer playbook and what we give it.",
+        "All Make An Offer calls are already recorded, and reps tell the customer on the call. So reps can also paste a transcript of their own call for a breakdown against the playbook.",
+        "Voice: custom agents probably can't use Copilot voice chat yet. Regular Copilot voice chat works for spoken practice, and the chat saves as text for coaching after."
       ]
     }
   ],
