@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-27
+- Source: Chase: Ken wants one of the videos purely pitching Copart Dealer Services
+- Changed: video 3 becomes the pure pitch (vid summary, vid-17 notes); brief updated
+- Added: n-61 "One video purely pitches Copart Dealer Services"
+
 ## 2026-10-26, LinkedIn series planned for tomorrow
 - Source: Chase: plan the LinkedIn series tomorrow
 - Changed: gen-32 idea -> task "Plan Ken's LinkedIn series" (Me, high, due 2026-10-27)
