@@ -757,7 +757,8 @@
       "next_steps": [
         "Get the playbook from Leo (w-17)",
         "Build the agent with the playbook as its only knowledge, general knowledge and web search off (mao-03)",
-        "Ask IT about a practice phone line for the agent (q-40)",
+        "Pilot out-loud practice in Copilot voice chat with one or two reps before paying for a practice phone line (mao-02, q-40)",
+        "Ask Leo how many reps are on the team and whether they have Copilot licenses (q-41)",
         "Fill the drafted agent instructions with the playbook's pitch steps, objections and scenarios (mao-01)",
         "Check that our Copilot lets a custom agent run in voice mode (mao-02)",
         "Ask Leo how this fits his MAO tool (q-39)"
@@ -3770,8 +3771,8 @@
       "status": "Backlog",
       "owner": "Me",
       "due": null,
-      "priority": "normal",
-      "notes": "Out loud is the goal: nearly all Make An Offer work is on the phone. Copilot Studio voice agents can answer a phone number (Azure Communication Services number or Teams Phone, preview), so a rep dials in and the agent plays the customer. Needs IT: Copilot Studio license, a number, per-minute voice cost (q-40). Until then, reps use Copilot voice chat with the role-play prompt; voice chats save as text, so they can ask for coaching in the same chat.",
+      "priority": "low",
+      "notes": "Out loud is the goal: nearly all Make An Offer work is on the phone. Copilot Studio voice agents can answer a phone number (Azure Communication Services number or Teams Phone, preview), so a rep dials in and the agent plays the customer. Needs IT: Copilot Studio license, a number, per-minute voice cost (q-40). Until then, reps use Copilot voice chat with the role-play prompt; voice chats save as text, so they can ask for coaching in the same chat. Oct 27 cost check (third-party guides, not Microsoft's rate card): generative voice is about 35 Copilot Credits a minute, roughly $0.28 to $0.35 a minute. 10 reps doing three 8-minute calls a week is about 1,000 minutes, so roughly $300 to $350 a month, more on the premium voice tier. Parked: pilot with Copilot voice chat first and only ask for the line if reps use it.",
       "idea": true,
       "created": "2026-10-27",
       "updated": "2026-10-27"
@@ -4338,6 +4339,16 @@
       "id": "q-40",
       "question": "Can we set up a Copilot Studio voice agent on a phone number (Azure Communication Services or Teams Phone) so Make An Offer reps can dial in and practice calls? What licenses, cost per minute, and who sets it up?",
       "ask": "IT",
+      "project_id": "mao",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-27",
+      "answered": null
+    },
+    {
+      "id": "q-41",
+      "question": "How many reps are on the Make An Offer team, and do they have Microsoft 365 Copilot licenses?",
+      "ask": "Leo",
       "project_id": "mao",
       "status": "open",
       "answer": null,

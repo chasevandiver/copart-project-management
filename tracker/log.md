@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-27, MAO phone line cost
+- Source: Chase: the practice phone line seems expensive
+- Changed: mao-02 priority normal -> low, parked behind a Copilot voice chat pilot, cost estimate in notes; mao next steps
+- Added: q-41 for Leo (team size, Copilot licenses)
+
 ## 2026-10-27, MAO agent out loud
 - Source: Chase: practice should be out loud, the team's work is nearly all on the phone
 - Changed: mao-02 renamed "Get a practice phone line for the MAO agent", notes; mao summary and next steps
