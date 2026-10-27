@@ -678,6 +678,7 @@
         "Holding pattern until the website changes go through (Oct 26). Chase suggested running the videos and the website changes at the same time; Ken wants the website first."
       ],
       "next_steps": [
+        "Ask Ken whether the videos can link straight to the Bookings page, so the series doesn't wait on the website button (Oct 27)",
         "Get the booking button live on the website before post one (audit-15, q-36, q-37)",
         "Get the assignment deadline, the offer and Ken's own words for \"this is the time\" in the script session (q-30, q-14, q-31, vid-17)",
         "Be ready for Ken's one-hour script session whenever he sets it (vid-17, w-16)",
@@ -3585,13 +3586,13 @@
       "id": "audit-15",
       "project_id": "audit",
       "title": "Set up the shared booking page for the Request a meeting button",
-      "status": "Next",
+      "status": "In Progress",
       "owner": "Me",
       "due": null,
       "priority": "urgent",
-      "notes": "Time-select tool Chase pitched to the website team. Dealer picks a time and gets a confirmation; the booking lands with the admins, who change the host to the right manager or team (n-36). Microsoft Bookings unless it is off at Copart or Copart already pays for Calendly (q-36, q-37). Staff are the people who take meetings, set to any available staff; questions: dealership, cell, state or zip, sells with Copart today. Who takes meetings, length and hours: Ken (q-16). Gates the Social Media Videos (n-56). Oct 26: Chase has pushed Noelle and Lauren to get it done as soon as possible (w-15).",
+      "notes": "Time-select tool Chase pitched to the website team. Dealer picks a time and gets a confirmation; the booking lands with the admins, who change the host to the right manager or team (n-36). Microsoft Bookings unless it is off at Copart or Copart already pays for Calendly (q-36, q-37). Staff are the people who take meetings, set to any available staff; questions: dealership, cell, state or zip, sells with Copart today. Who takes meetings, length and hours: Ken (q-16). Gates the Social Media Videos (n-56). Oct 26: Chase has pushed Noelle and Lauren to get it done as soon as possible (w-15). Oct 27: Chase created a Microsoft Bookings site in Office 365. Next: add the managers who take meetings as staff, with length and hours (q-16), and get the website button pointed at it (w-15).",
       "created": "2026-10-26",
-      "updated": "2026-10-26"
+      "updated": "2026-10-27"
     },
     {
       "id": "udm-16",
@@ -4209,10 +4210,10 @@
       "question": "Is Microsoft Bookings turned on in Copart's Microsoft 365, and can you set up a shared Bookings page the Copart Dealer Services admins own?",
       "ask": "IT",
       "project_id": "audit",
-      "status": "open",
-      "answer": null,
+      "status": "answered",
+      "answer": "Yes. Bookings is in Chase's Office 365 and he created a Bookings site (Oct 27). Whether the admins co-own it is still to set up.",
       "raised": "2026-10-26",
-      "answered": null
+      "answered": "2026-10-27"
     },
     {
       "id": "q-37",

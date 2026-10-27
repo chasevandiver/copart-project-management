@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-27, Bookings site created
+- Source: Chase: created a Microsoft Bookings site in his Office 365
+- Changed: audit-15 Next -> In Progress; vid next step to ask Ken about linking the videos straight to Bookings
+- Answered: q-36 Bookings is on, site created
+
 ## 2026-10-27, LinkedIn outlines drafted
 - Source: Chase asked for the five LinkedIn post outlines
 - Changed: gen-32 Next -> In Progress; outlines drafted for Ken's review, Wednesday schedule from Nov 4
