@@ -748,7 +748,7 @@
       "category": "AI Tools",
       "status": "Backlog",
       "idea": true,
-      "summary": "Idea from a chat with Leo (Oct 27): a practice-only Copilot agent for the Make An Offer team. Its only knowledge is their playbook and what we give it. Reps go straight to it for two things: role play a call (it plays the person on the other end and pushes back with the playbook's objections), and break down a transcript of one of their own recorded calls against the playbook. Calls are already recorded and disclosed to the customer. Voice role play runs in regular Copilot voice chat until custom agents support voice. Every bit of feedback is a draft coaching note, not a score.",
+      "summary": "Idea from a chat with Leo (Oct 27): a practice-only Copilot agent for the Make An Offer team. Its only knowledge is their playbook and what we give it. Reps go straight to it for two things: role play a call (it plays the person on the other end and pushes back with the playbook's objections), and break down a transcript of one of their own recorded calls against the playbook. Calls are already recorded and disclosed to the customer. Voice role play runs in regular Copilot voice chat until custom agents support voice. Every bit of feedback is a draft coaching note, not a score. Out loud is the goal (Oct 27): nearly all of the team's work is on the phone. Target is a practice phone line: a rep dials a number and the agent answers as the customer (Copilot Studio voice agent, needs IT). Until then, Copilot voice chat for solo practice, and mock calls between reps on the recorded phone system, broken down by the agent.",
       "built": [],
       "links": [],
       "blockers": [
@@ -757,6 +757,7 @@
       "next_steps": [
         "Get the playbook from Leo (w-17)",
         "Build the agent with the playbook as its only knowledge, general knowledge and web search off (mao-03)",
+        "Ask IT about a practice phone line for the agent (q-40)",
         "Fill the drafted agent instructions with the playbook's pitch steps, objections and scenarios (mao-01)",
         "Check that our Copilot lets a custom agent run in voice mode (mao-02)",
         "Ask Leo how this fits his MAO tool (q-39)"
@@ -3765,12 +3766,12 @@
     {
       "id": "mao-02",
       "project_id": "mao",
-      "title": "Check that our Copilot lets a custom agent run in voice mode",
+      "title": "Get a practice phone line for the MAO agent",
       "status": "Backlog",
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "The role play depends on reps talking to the agent out loud. Confirm with IT whether a Copilot Studio agent can be used in voice on our licenses, and on phone as well as desktop. Until then, reps can practice out loud in regular Copilot voice chat with a saved role-play prompt; voice chats save as text, so they can ask for coaching in the same chat.",
+      "notes": "Out loud is the goal: nearly all Make An Offer work is on the phone. Copilot Studio voice agents can answer a phone number (Azure Communication Services number or Teams Phone, preview), so a rep dials in and the agent plays the customer. Needs IT: Copilot Studio license, a number, per-minute voice cost (q-40). Until then, reps use Copilot voice chat with the role-play prompt; voice chats save as text, so they can ask for coaching in the same chat.",
       "idea": true,
       "created": "2026-10-27",
       "updated": "2026-10-27"
@@ -4327,6 +4328,16 @@
       "id": "q-39",
       "question": "Is the MAO tool you're building the MAO Offers Worklist on your hub or something new, and should the pitch practice agent link to it?",
       "ask": "Leo",
+      "project_id": "mao",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-27",
+      "answered": null
+    },
+    {
+      "id": "q-40",
+      "question": "Can we set up a Copilot Studio voice agent on a phone number (Azure Communication Services or Teams Phone) so Make An Offer reps can dial in and practice calls? What licenses, cost per minute, and who sets it up?",
+      "ask": "IT",
       "project_id": "mao",
       "status": "open",
       "answer": null,

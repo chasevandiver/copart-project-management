@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-27, MAO agent out loud
+- Source: Chase: practice should be out loud, the team's work is nearly all on the phone
+- Changed: mao-02 renamed "Get a practice phone line for the MAO agent", notes; mao summary and next steps
+- Added: q-40 for IT (Copilot Studio voice agent on a phone number: licenses, cost, who sets it up)
+
 ## 2026-10-27, MAO practice agent scoped
 - Source: Chase: practice only, the playbook is the only knowledge, calls are already recorded and disclosed
 - Changed: mao summary and next steps; mao-01 and mao-02 notes
