@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-10-27, LinkedIn outlines drafted
+- Source: Chase asked for the five LinkedIn post outlines
+- Changed: gen-32 Next -> In Progress; outlines drafted for Ken's review, Wednesday schedule from Nov 4
+
 ## 2026-10-27
 - Source: Chase: Ken wants one of the videos purely pitching Copart Dealer Services
 - Changed: video 3 becomes the pure pitch (vid summary, vid-17 notes); brief updated
