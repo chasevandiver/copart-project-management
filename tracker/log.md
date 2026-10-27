@@ -2,6 +2,14 @@
 
 Newest entry first.
 
+## 2026-10-27, Leo's MAO tool
+- Source: Chase: Leo is building an MAO tool for the Make An Offer team, sending their playbook, and they talked about a Copilot voice role-play agent for the pitch
+- Added: project mao "MAO pitch practice agent" (idea, AI Tools, under g-04)
+- Added: mao-01 "Turn the MAO playbook into role-play instructions for the agent" (Me, Waiting on w-17); mao-02 "Check that our Copilot lets a custom agent run in voice mode" (Me)
+- Added: q-39 for Leo (is the MAO tool the MAO Offers Worklist or new); note n-63
+- Changed: Leo relationship; hub built list (Leo, in build: MAO tool)
+- Waiting on: added w-17 Make An Offer playbook from Leo
+
 ## 2026-10-27, Bookings page set up
 - Source: Chase set up the 5-minute call service on Microsoft Bookings and tested it
 - Changed: audit-15 notes (setup, fields, what is left: staff, admins, routing)

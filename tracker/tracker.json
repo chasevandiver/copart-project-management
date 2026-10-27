@@ -69,10 +69,11 @@
         "cdsai",
         "mm",
         "pa",
-        "comm"
+        "comm",
+        "mao"
       ],
       "created": "2026-10-16",
-      "updated": "2026-10-20"
+      "updated": "2026-10-27"
     }
   ],
   "projects": [
@@ -247,7 +248,8 @@
         "Leo, live: VIN Type Tool. Photo or screenshot of a title, VIN tag or paper VIN list back as text, check-digit verified with suggested fixes, copy or CSV, nothing leaves the browser",
         "Leo, in build on his hub: Route Tracker, Facilities Tracker, Proceeds Follow Up",
         "Leo, separate site: SEMA Show 2026 lead capture for the Las Vegas event",
-        "Chase: Route Tracker (in build, also listed on Leo's hub), Copart Dealer Digital, US Dealer Map (in build), PM Board, Plaud setup"
+        "Chase: Route Tracker (in build, also listed on Leo's hub), Copart Dealer Digital, US Dealer Map (in build), PM Board, Plaud setup",
+        "Leo, in build: MAO tool for the Make An Offer team (Oct 27)"
       ],
       "links": [
         {
@@ -738,6 +740,29 @@
         "Goes live when the Lead Tracker launches to the team (udm-11)",
         "Cars assigned by rep in the Thursday update once reps are sending (pts-04)",
         "Parked, may circle back: Ken's note to 60+ day inactives (q-33, q-34, pts-05, pts-06, pts-07)"
+      ]
+    },
+    {
+      "id": "mao",
+      "name": "MAO pitch practice agent",
+      "category": "AI Tools",
+      "status": "Backlog",
+      "idea": true,
+      "summary": "Idea from a chat with Leo (Oct 27): a Copilot agent built on the Make An Offer team's playbook and pitch. Reps use voice to role play a call with it (it plays the member or seller, pushes back, then gives feedback) to tighten their pitch. Leo is building an MAO tool for the same team. Every bit of feedback from the agent is a draft coaching note, not a score.",
+      "built": [],
+      "links": [],
+      "blockers": [
+        "Need the Make An Offer team's playbook from Leo (w-17)"
+      ],
+      "next_steps": [
+        "Get the playbook from Leo (w-17)",
+        "Check that our Copilot lets a custom agent run in voice mode (mao-02)",
+        "Pull the pitch, objections and talk track out of the playbook into the agent's instructions (mao-01)",
+        "Ask Leo how this fits his MAO tool (q-39)"
+      ],
+      "dependencies": [
+        "Leo's MAO tool for the Make An Offer team (hub)",
+        "Copilot Studio, same as Copart Dealer Services AI (cdsai)"
       ]
     }
   ],
@@ -3722,6 +3747,32 @@
       "created": "2026-10-27",
       "updated": "2026-10-27",
       "completed": "2026-10-27"
+    },
+    {
+      "id": "mao-01",
+      "project_id": "mao",
+      "title": "Turn the MAO playbook into role-play instructions for the agent",
+      "status": "Waiting",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Once the playbook arrives (w-17): pull out the pitch, the common objections and the answers, and the call flow. The agent plays the person on the other end, pushes back with real objections, then says what landed and what to tighten.",
+      "idea": true,
+      "created": "2026-10-27",
+      "updated": "2026-10-27"
+    },
+    {
+      "id": "mao-02",
+      "project_id": "mao",
+      "title": "Check that our Copilot lets a custom agent run in voice mode",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "The role play depends on reps talking to the agent out loud. Confirm with IT whether a Copilot Studio agent can be used in voice on our licenses, and on phone as well as desktop.",
+      "idea": true,
+      "created": "2026-10-27",
+      "updated": "2026-10-27"
     }
   ],
   "waiting_on": [
@@ -3876,6 +3927,15 @@
       "since": "2026-10-26",
       "priority": "high",
       "notes": "Ken wants an hour for the scripts (Oct 26). Chase is giving him an outline, not a script, so it sounds natural. Date not set. Agenda and prep in vid-17."
+    },
+    {
+      "id": "w-17",
+      "what": "The Make An Offer team's playbook",
+      "from_whom": "Leo",
+      "project_id": "mao",
+      "since": "2026-10-27",
+      "priority": "normal",
+      "notes": "Leo is sending it (Oct 27). It is the source for the pitch practice agent (mao-01)."
     }
   ],
   "questions": [
@@ -4248,6 +4308,16 @@
       "answer": "Ours runs side by side with Brenda's when commissions come out Mon Nov 2, and keeps running until Tech's tool is done. Whether to hand Tech the rules and macros is still open.",
       "raised": "2026-10-26",
       "answered": "2026-10-26"
+    },
+    {
+      "id": "q-39",
+      "question": "Is the MAO tool you're building the MAO Offers Worklist on your hub or something new, and should the pitch practice agent link to it?",
+      "ask": "Leo",
+      "project_id": "mao",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-27",
+      "answered": null
     }
   ],
   "decisions": [
@@ -4653,7 +4723,7 @@
       "name": "Leo",
       "title": "",
       "department": "",
-      "relationship": "Built the original Route Tracker (now Chase's project) and runs the Copart Dealer Services Hub",
+      "relationship": "Built the original Route Tracker (now Chase's project) and runs the Copart Dealer Services Hub. Oct 27: building an MAO tool for the Make An Offer team; sending me their playbook",
       "contact": ""
     },
     {
@@ -5623,6 +5693,17 @@
       ],
       "project_id": "general",
       "date": "2026-10-27"
+    },
+    {
+      "id": "n-63",
+      "date": "2026-10-27",
+      "title": "Leo: MAO tool and a pitch practice agent",
+      "project_id": "mao",
+      "body": [
+        "Leo is working on an MAO tool for the Make An Offer team.",
+        "He's sending me their playbook.",
+        "Idea from our chat: a Copilot agent built on their pitch that reps can role play with by voice to tighten up their pitch."
+      ]
     }
   ],
   "reports": [
