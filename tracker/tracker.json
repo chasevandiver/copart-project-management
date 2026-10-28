@@ -358,7 +358,8 @@
         "Prospect to Seller flip on the lead page (Oct 26, udm-13)",
         "Scoreboard for Ken: touches, VINs and cars assigned by rep (Oct 26)",
         "Dealer brief on each lead: facts about the dealer only, no sales suggestions, since reps each have their own pitch (Oct 26)",
-        "Light mode that pops, opens in Light by default: Copart blue header, yellow accent, rating chip colors (Oct 28, udm-21)"
+        "Light mode that pops, opens in Light by default: Copart blue header, yellow accent, rating chip colors (Oct 28, udm-21)",
+        "Log cars: several VINs from one dealer at once, each checked, plus a Cars logged card on the lead page (written Oct 28, udm-20)"
       ],
       "links": [],
       "blockers": [],
@@ -3797,11 +3798,11 @@
       "id": "udm-20",
       "project_id": "udm",
       "title": "Build a leaderboard for the office screens: cars assigned by team",
-      "status": "Next",
+      "status": "In Progress",
       "owner": "Work Claude",
       "due": null,
       "priority": "high",
-      "notes": "Oct 28: Ken's ask. A Lead Tracker leaderboard of assignments created (cars assigned to sell) by team, on the office screens that already show the report on how assignments are tracked. Full screen, big type, refreshes itself, counts only (no dealer names). Build spec: docs/handoff-leaderboard-light-mode.md in the copart-dealer-digital repo. Needs answers on the screens (q-42) and the view Ken wants (q-43). Oct 28: dealers can send as many cars as they want, so the handoff now covers logging several cars from one dealer at once (build it if the Lead Tracker doesn't have it yet) and one VIN received email for the batch.",
+      "notes": "Oct 28: Ken's ask. A Lead Tracker leaderboard of assignments created (cars assigned to sell) by team, on the office screens that already show the report on how assignments are tracked. Full screen, big type, refreshes itself, counts only (no dealer names). Build spec: docs/handoff-leaderboard-light-mode.md in the copart-dealer-digital repo. Needs answers on the screens (q-42) and the view Ken wants (q-43). Oct 28: dealers can send as many cars as they want, so the handoff now covers logging several cars from one dealer at once (build it if the Lead Tracker doesn't have it yet) and one VIN received email for the batch. Oct 28 (later): Work Claude wrote it, not pushed or built yet. The Lead Tracker had no multi-car logging (one VIN at a time), so it built Log cars on the lead page, a Cars logged card, one VIN received email per batch, /screen/leaderboard with a display key (New office screen link on the Teams page), and tests that haven't run. Defaults live in map/config/leaderboard.ts. The board counts a car when a rep logs it, for that rep's team; the Year-end report counts it once there's an active seller code, for the lead owner. Ken picks (q-43). The days-left box was built from PTS.end (Dec 14) because there's no assign_by setting; hide it until the deadline is set (q-30).",
       "created": "2026-10-28",
       "updated": "2026-10-28"
     },
@@ -4419,7 +4420,7 @@
     },
     {
       "id": "q-43",
-      "question": "For the screen leaderboard: teams only or reps too, which window (today, this week, since the year-end push started Oct 26), is there a goal line, and does a car count when it is logged in the Lead Tracker or when it shows in Copart's assignment report?",
+      "question": "For the screen leaderboard: teams only or reps too, which window (today, this week, since the year-end push started Oct 26), is there a goal line, and does a car count when it is logged in the Lead Tracker or when it shows in Copart's assignment report? (Oct 28: today the leaderboard counts a car when the rep logs it, for that rep's team. The Year-end report counts it once the seller code is active, for the lead owner. Which one is the real number?)",
       "ask": "Ken Rion",
       "project_id": "udm",
       "status": "open",

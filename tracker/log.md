@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-10-28, leaderboard written
+- Source: Chase: Work Claude's log on the leaderboard and Log cars build
+- Changed: udm-20 Next -> In Progress, notes; q-43 adds the two counting rules; udm built
+
 ## 2026-10-28, light mode live
 - Source: Chase: Work Claude's log, light mode pushed and deployed (commit 8e1a7b5)
 - Changed: udm-21 In Progress -> Done; udm built and next steps
