@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-28, light mode written
+- Source: Chase: Work Claude's chat log on the light mode build (stopped at the push)
+- Changed: udm-21 Next -> In Progress, notes
+- Added: d-udm-08 hot chip yellow and header #1254ff, for Ken to OK
+
 ## 2026-10-28, several cars per dealer
 - Source: Chase: dealers can send as many cars as they want; make sure reps can log several at once
 - Changed: udm-20 notes (multi-car logging and a batch VIN received email added to the handoff)

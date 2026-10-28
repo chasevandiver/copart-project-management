@@ -3808,11 +3808,11 @@
       "id": "udm-21",
       "project_id": "udm",
       "title": "Make light mode pop and make it the default on the Lead Tracker",
-      "status": "Next",
+      "status": "In Progress",
       "owner": "Work Claude",
       "due": null,
       "priority": "high",
-      "notes": "Oct 28: Ken thinks dark mode blends in with every other dark site, and wants light mode to pop. Open in Light for everyone (today it follows the device, so dark-mode phones and laptops open dark), keep Dark as a pick in the header. Brighter white panels, a solid Copart blue header, Copart yellow for highlights and the top team. Token values are in docs/handoff-leaderboard-light-mode.md in the copart-dealer-digital repo.",
+      "notes": "Oct 28: Ken thinks dark mode blends in with every other dark site, and wants light mode to pop. Open in Light for everyone (today it follows the device, so dark-mode phones and laptops open dark), keep Dark as a pick in the header. Brighter white panels, a solid Copart blue header, Copart yellow for highlights and the top team. Token values are in docs/handoff-leaderboard-light-mode.md in the copart-dealer-digital repo. Oct 28 (later): Work Claude wrote the changes: Light by default with a Light, Dark and Auto picker, blue header bar with a yellow underline, new page and card colors, stronger shadow, yellow on the nav underline, rep avatar, hot chip and Save, rating chip colors, dark values for every new token. Chase stopped Work Claude at the push step, so check whether the commit went out. Before it goes live: build, look at it in a browser, and grab the before screenshots from the live site. Two calls for Ken (d-udm-08). First place yellow waits on the leaderboard (udm-20).",
       "created": "2026-10-28",
       "updated": "2026-10-28"
     },
@@ -4812,6 +4812,20 @@
       "status": "resolved",
       "answer": "Copilot agent. The phone line costs per minute and needs IT; revisit only if reps use the agent a lot.",
       "resolved": "2026-10-27"
+    },
+    {
+      "id": "d-udm-08",
+      "project_id": "udm",
+      "question": "Light mode: two calls Work Claude made that differ from the first spec. OK with Ken?",
+      "options": [
+        "Keep both: hot chip yellow with navy text (the Lead Tracker rules say never red), header bar #1254ff (the brand file's guideline blue)",
+        "Hot chip red tint as first specced",
+        "Header bar #005eb8 (PMS 300) as first specced"
+      ],
+      "raised": "2026-10-28",
+      "status": "open",
+      "answer": null,
+      "resolved": null
     }
   ],
   "people": [
