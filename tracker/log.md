@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-28, light mode live
+- Source: Chase: Work Claude's log, light mode pushed and deployed (commit 8e1a7b5)
+- Changed: udm-21 In Progress -> Done; udm built and next steps
+- Added: udm-22 "Check the new light mode on the live Lead Tracker and show Ken" (Me, due 2026-10-29)
+
 ## 2026-10-28, light mode written
 - Source: Chase: Work Claude's chat log on the light mode build (stopped at the push)
 - Changed: udm-21 Next -> In Progress, notes

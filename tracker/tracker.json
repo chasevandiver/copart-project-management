@@ -357,12 +357,13 @@
         "Launch ready (Oct 26): Keon's UX and UI redo done (udm-10). Launch waits on Ken's payment plan (w-14).",
         "Prospect to Seller flip on the lead page (Oct 26, udm-13)",
         "Scoreboard for Ken: touches, VINs and cars assigned by rep (Oct 26)",
-        "Dealer brief on each lead: facts about the dealer only, no sales suggestions, since reps each have their own pitch (Oct 26)"
+        "Dealer brief on each lead: facts about the dealer only, no sales suggestions, since reps each have their own pitch (Oct 26)",
+        "Light mode that pops, opens in Light by default: Copart blue header, yellow accent, rating chip colors (Oct 28, udm-21)"
       ],
       "links": [],
       "blockers": [],
       "next_steps": [
-        "Leaderboard for the office screens (udm-20) and a light mode that pops (udm-21), Ken's asks Oct 28",
+        "Leaderboard for the office screens (udm-20); check the new light mode and show Ken (udm-22)",
         "Guide packages for the team this week (udm-19)",
         "Finish the lead scoring update (udm-16)",
         "Launch to the team once Ken's new payment plan is in place and Chase pitches it (udm-11, w-14)",
@@ -3808,13 +3809,14 @@
       "id": "udm-21",
       "project_id": "udm",
       "title": "Make light mode pop and make it the default on the Lead Tracker",
-      "status": "In Progress",
+      "status": "Done",
       "owner": "Work Claude",
       "due": null,
       "priority": "high",
-      "notes": "Oct 28: Ken thinks dark mode blends in with every other dark site, and wants light mode to pop. Open in Light for everyone (today it follows the device, so dark-mode phones and laptops open dark), keep Dark as a pick in the header. Brighter white panels, a solid Copart blue header, Copart yellow for highlights and the top team. Token values are in docs/handoff-leaderboard-light-mode.md in the copart-dealer-digital repo. Oct 28 (later): Work Claude wrote the changes: Light by default with a Light, Dark and Auto picker, blue header bar with a yellow underline, new page and card colors, stronger shadow, yellow on the nav underline, rep avatar, hot chip and Save, rating chip colors, dark values for every new token. Chase stopped Work Claude at the push step, so check whether the commit went out. Before it goes live: build, look at it in a browser, and grab the before screenshots from the live site. Two calls for Ken (d-udm-08). First place yellow waits on the leaderboard (udm-20).",
+      "notes": "Oct 28: Ken thinks dark mode blends in with every other dark site, and wants light mode to pop. Open in Light for everyone (today it follows the device, so dark-mode phones and laptops open dark), keep Dark as a pick in the header. Brighter white panels, a solid Copart blue header, Copart yellow for highlights and the top team. Token values are in docs/handoff-leaderboard-light-mode.md in the copart-dealer-digital repo. Oct 28 (later): Work Claude wrote the changes: Light by default with a Light, Dark and Auto picker, blue header bar with a yellow underline, new page and card colors, stronger shadow, yellow on the nav underline, rep avatar, hot chip and Save, rating chip colors, dark values for every new token. Chase stopped Work Claude at the push step, so check whether the commit went out. Before it goes live: build, look at it in a browser, and grab the before screenshots from the live site. Two calls for Ken (d-udm-08). First place yellow waits on the leaderboard (udm-20). Oct 28: live on Lead Tracker commit 8e1a7b5, build passed. Deploy triggered by hand (the webhook doesn't fire). Not looked at in a browser yet; Chase's checks are udm-22.",
       "created": "2026-10-28",
-      "updated": "2026-10-28"
+      "updated": "2026-10-28",
+      "completed": "2026-10-28"
     },
     {
       "id": "audit-17",
@@ -3825,6 +3827,18 @@
       "due": "2026-10-28",
       "priority": "urgent",
       "notes": "Oct 28: Ken used to get about ten leads a day from a source that was turned off. He meets Taylor later today and wants Chase on the call. Questions for Taylor are q-44. Afterward: if it can come back, the leads should land in the Lead Tracker with a source tag.",
+      "created": "2026-10-28",
+      "updated": "2026-10-28"
+    },
+    {
+      "id": "udm-22",
+      "project_id": "udm",
+      "title": "Check the new light mode on the live Lead Tracker and show Ken",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-29",
+      "priority": "high",
+      "notes": "Oct 28: light mode went live (udm-21). Check: a fresh browser on a device set to dark opens in Light; blue header with the yellow underline on the active nav item; hot, mild and cold chips on the rep book and lead page; Dark from the picker has no unreadable text (likeliest miss, never seen rendered). Then show Ken before and after of the lead list and a lead page, and get his OK on d-udm-08. Before shots: the live site already changed, so use an older screenshot or have Work Claude run the commit before 8e1a7b5 locally.",
       "created": "2026-10-28",
       "updated": "2026-10-28"
     }
