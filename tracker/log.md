@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-10-28, logging gap
+- Source: Chase: the board only shows cars reps go back and log
+- Added: q-45 for IT (can the Lead Tracker read the assignment report's data); note n-66
+
 ## 2026-10-28, leaderboard redo
 - Source: Chase: screenshot of the live board, looks terrible
 - Changed: udm-20 notes (layout redo sent to Work Claude)

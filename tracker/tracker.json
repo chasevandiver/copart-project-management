@@ -4449,6 +4449,16 @@
       "answer": null,
       "raised": "2026-10-28",
       "answered": null
+    },
+    {
+      "id": "q-45",
+      "question": "The assignment report already on the office screens: where does its data come from, who owns it, and could the Lead Tracker read it daily (so the leaderboard doesn't depend only on reps logging cars)?",
+      "ask": "IT",
+      "project_id": "udm",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-28",
+      "answered": null
     }
   ],
   "decisions": [
@@ -5905,6 +5915,18 @@
       ],
       "project_id": "general",
       "date": "2026-10-28"
+    },
+    {
+      "id": "n-66",
+      "date": "2026-10-28",
+      "title": "Leaderboard only counts what reps log",
+      "project_id": "udm",
+      "body": [
+        "The Lead Tracker only sees a car if the rep logs it, so the leaderboard undercounts any rep who skips it.",
+        "Now: Ken sets the rule at launch, only logged cars count on the board. The VIN received email only shows once the VIN is logged, so the email reps already send is the reason to log.",
+        "Weekly: compare the board to Copart's assignment numbers by team. The gap shows who isn't logging. Numbers stay in the work setup.",
+        "Later: feed the assignment report into the Lead Tracker so cars count without the rep (q-45)."
+      ]
     }
   ],
   "reports": [
