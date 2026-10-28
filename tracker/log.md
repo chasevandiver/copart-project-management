@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-10-28, several cars per dealer
+- Source: Chase: dealers can send as many cars as they want; make sure reps can log several at once
+- Changed: udm-20 notes (multi-car logging and a batch VIN received email added to the handoff)
+
 ## 2026-10-28, Ken's morning asks
 - Source: Chase: Ken came by first thing about the Lead Tracker and a lead source that was turned off
 - Added: udm-20 "Build a leaderboard for the office screens: cars assigned by team" (Work Claude, high); udm-21 "Make light mode pop and make it the default on the Lead Tracker" (Work Claude, high)

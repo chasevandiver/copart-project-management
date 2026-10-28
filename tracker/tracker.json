@@ -3800,7 +3800,7 @@
       "owner": "Work Claude",
       "due": null,
       "priority": "high",
-      "notes": "Oct 28: Ken's ask. A Lead Tracker leaderboard of assignments created (cars assigned to sell) by team, on the office screens that already show the report on how assignments are tracked. Full screen, big type, refreshes itself, counts only (no dealer names). Build spec: docs/handoff-leaderboard-light-mode.md in the copart-dealer-digital repo. Needs answers on the screens (q-42) and the view Ken wants (q-43).",
+      "notes": "Oct 28: Ken's ask. A Lead Tracker leaderboard of assignments created (cars assigned to sell) by team, on the office screens that already show the report on how assignments are tracked. Full screen, big type, refreshes itself, counts only (no dealer names). Build spec: docs/handoff-leaderboard-light-mode.md in the copart-dealer-digital repo. Needs answers on the screens (q-42) and the view Ken wants (q-43). Oct 28: dealers can send as many cars as they want, so the handoff now covers logging several cars from one dealer at once (build it if the Lead Tracker doesn't have it yet) and one VIN received email for the batch.",
       "created": "2026-10-28",
       "updated": "2026-10-28"
     },
