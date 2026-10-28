@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-28, launch audit
+- Source: Chase: Work Claude's launch audit, Keon has left, Team 13 Test stays until go-live, manager maps are fine
+- Added: udm-24 archive Keon, udm-25 Texas release order, udm-26 empty teams, udm-27 release Team 13 Test (all Me); q-46 for Ken (Indiana and Keon's items); note n-68
+- Changed: udm-11 notes; Keon Moore relationship (left the company)
+
 ## 2026-10-28, logging gap
 - Source: Chase: the board only shows cars reps go back and log
 - Added: q-45 for IT (can the Lead Tracker read the assignment report's data); note n-67

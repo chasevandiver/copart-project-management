@@ -3171,7 +3171,7 @@
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Oct 20: Ken wants the Lead Tracker launched to the team next week. Due set to the end of that week; move it when the day is set. The UX and UI redo (udm-10) and the lead rules (udm-08) come first. Ken called it out to the whole floor at today's team gather up (n-38). Oct 21: launch could be as early as Mon Oct 26. Oct 26: launches once Ken has the new payment plan in place (w-14) and Chase pitches it to the team. No date yet. Oct 26: the Lead Tracker is launch ready; only the payment plan (w-14) and Chase's pitch to the team remain. Oct 28: Ken asked first thing whether Chase is confident about releasing it to the team. It matters to him: he said bringing in these leads would be like a match to dry grass. He also asked for a leaderboard for the office screens (udm-20) and a light mode that pops (udm-21).",
+      "notes": "Oct 20: Ken wants the Lead Tracker launched to the team next week. Due set to the end of that week; move it when the day is set. The UX and UI redo (udm-10) and the lead rules (udm-08) come first. Ken called it out to the whole floor at today's team gather up (n-38). Oct 21: launch could be as early as Mon Oct 26. Oct 26: launches once Ken has the new payment plan in place (w-14) and Chase pitches it to the team. No date yet. Oct 26: the Lead Tracker is launch ready; only the payment plan (w-14) and Chase's pitch to the team remain. Oct 28: Ken asked first thing whether Chase is confident about releasing it to the team. It matters to him: he said bringing in these leads would be like a match to dry grass. He also asked for a leaderboard for the office screens (udm-20) and a light mode that pops (udm-21). Oct 28: launch audit by Work Claude says the rep side is ready for 60 people. Before launch: udm-24 to udm-27. The manager state maps are slow on the half-core server; fine, managers will hardly use them.",
       "created": "2026-10-20",
       "updated": "2026-10-28"
     },
@@ -3854,6 +3854,54 @@
       "notes": "Oct 28: from Work Claude's test steps. Use a lead on a test team, not a real dealer, since the cars count on the real board until removed. Log 2 good VINs plus a bad one and a duplicate; check the Cars logged card, the batch VIN received email and +2 on the board; remove the test cars the same day (after that only an admin can). Then make the office screen link from the Teams page (admin on), copy it right away (it shows once), and open it full screen on the TV. Check it reads from 15 feet. The board shows no teams until the first link is made.",
       "created": "2026-10-28",
       "updated": "2026-10-28"
+    },
+    {
+      "id": "udm-24",
+      "project_id": "udm",
+      "title": "Archive Keon in the Lead Tracker and release his Indiana leads",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Oct 28 launch audit: Keon is set up as a field team holding 363 open leads (Indiana) with no people. He has left the company. Archive him, release the leads back to the Indiana pool, keep his touches and notes on each dealer's history. Who works Indiana now is q-46.",
+      "created": "2026-10-28",
+      "updated": "2026-10-28"
+    },
+    {
+      "id": "udm-25",
+      "project_id": "udm",
+      "title": "Decide the Texas release order or give Texas teams their own ZIP areas",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Oct 28 launch audit: every Texas team's area is all of TX, so all teams see the same top leads. Release all is safe (no lead goes to two teams) but goes in name order (Team 10, Team 11 ... Team 2, Team 20), so the Team 1x teams get the best leads and Team 9 gets what's left. Decide before the first release: accept the order, or set each team's Area to ZIP prefixes (for example TX:752).",
+      "created": "2026-10-28",
+      "updated": "2026-10-28"
+    },
+    {
+      "id": "udm-26",
+      "project_id": "udm",
+      "title": "Add people to Team 3, Team 15 and Team 28, or leave them paused",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Oct 28 launch audit: all three are paused with no people. Unpausing them releases nothing.",
+      "created": "2026-10-28",
+      "updated": "2026-10-28"
+    },
+    {
+      "id": "udm-27",
+      "project_id": "udm",
+      "title": "Release Team 13 Test once ready to go live",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Oct 28: Chase is testing on it now. Release it last, right before launch. Audit test touches on F.A AUTOSALES start with TEST:. Chase 2's sign-in link was reset in the audit; the new one is in the team drawer.",
+      "created": "2026-10-28",
+      "updated": "2026-10-28"
     }
   ],
   "waiting_on": [
@@ -4459,6 +4507,16 @@
       "answer": null,
       "raised": "2026-10-28",
       "answered": null
+    },
+    {
+      "id": "q-46",
+      "question": "Keon has left. Who works Indiana now, and who picks up his field and pilot items (mkt-02, mkt-09, mkt-10, mkt-17, mkt-19, mkt-23)?",
+      "ask": "Ken Rion",
+      "project_id": "udm",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-28",
+      "answered": null
     }
   ],
   "decisions": [
@@ -4898,7 +4956,7 @@
       "name": "Keon Moore",
       "title": "Field Sales Manager",
       "department": "Copart Dealer Services",
-      "relationship": "",
+      "relationship": "No longer with the company (Oct 28). Was the field team and Lead Tracker pilot user, covered Indiana",
       "contact": ""
     },
     {
@@ -5926,6 +5984,18 @@
         "Now: Ken sets the rule at launch, only logged cars count on the board. The VIN received email only shows once the VIN is logged, so the email reps already send is the reason to log.",
         "Weekly: compare the board to Copart's assignment numbers by team. The gap shows who isn't logging. Numbers stay in the work setup.",
         "Later: feed the assignment report into the Lead Tracker so cars count without the rep (q-45)."
+      ]
+    },
+    {
+      "id": "n-68",
+      "date": "2026-10-28",
+      "title": "Lead Tracker launch audit and launch morning",
+      "project_id": "udm",
+      "body": [
+        "Work Claude's click-through on commit 90e8f19: rep side ready for 60 people (My book 0.17 s typical, no errors). Manager state maps 4 to 33 s on a half-core server; managers will hardly use them.",
+        "Not tested on purpose: Claim, Release all and Send all now (they'd pull real leads), Open in email into Outlook, the leaderboard on a real TV, field teams and the Route Tracker pull.",
+        "Launch morning: before 8 am Central unpause the live teams and confirm two people each; Release all waiting, then spot check three teams' lists differ; send each person their own link (not team links); one rep claims and logs a touch, check the team Activity tab; no pushes 8 am to 5 pm Central.",
+        "Rep guide line: if a lead disappears, check the search box first. It keeps what you typed after a reload."
       ]
     }
   ],
