@@ -3173,7 +3173,7 @@
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Oct 20: Ken wants the Lead Tracker launched to the team next week. Due set to the end of that week; move it when the day is set. The UX and UI redo (udm-10) and the lead rules (udm-08) come first. Ken called it out to the whole floor at today's team gather up (n-38). Oct 21: launch could be as early as Mon Oct 26. Oct 26: launches once Ken has the new payment plan in place (w-14) and Chase pitches it to the team. No date yet. Oct 26: the Lead Tracker is launch ready; only the payment plan (w-14) and Chase's pitch to the team remain. Oct 28: Ken asked first thing whether Chase is confident about releasing it to the team. It matters to him: he said bringing in these leads would be like a match to dry grass. He also asked for a leaderboard for the office screens (udm-20) and a light mode that pops (udm-21). Oct 28: launch audit by Work Claude says the rep side is ready for 60 people. Before launch: udm-24 to udm-27. The manager state maps are slow on the half-core server; fine, managers will hardly use them. Oct 28: Open in email opens Outlook (Chase checked). Oct 28 (end of day): Chase is ready. The app is done (audit, snake draft, light mode); launch waits only on the payment plan (w-14).",
+      "notes": "Oct 20: Ken wants the Lead Tracker launched to the team next week. Due set to the end of that week; move it when the day is set. The UX and UI redo (udm-10) and the lead rules (udm-08) come first. Ken called it out to the whole floor at today's team gather up (n-38). Oct 21: launch could be as early as Mon Oct 26. Oct 26: launches once Ken has the new payment plan in place (w-14) and Chase pitches it to the team. No date yet. Oct 26: the Lead Tracker is launch ready; only the payment plan (w-14) and Chase's pitch to the team remain. Oct 28: Ken asked first thing whether Chase is confident about releasing it to the team. It matters to him: he said bringing in these leads would be like a match to dry grass. He also asked for a leaderboard for the office screens (udm-20) and a light mode that pops (udm-21). Oct 28: launch audit by Work Claude says the rep side is ready for 60 people. Before launch: udm-24 to udm-27. The manager state maps are slow on the half-core server; fine, managers will hardly use them. Oct 28: Open in email opens Outlook (Chase checked). Oct 28 (end of day): Chase is ready. The app is done (audit, snake draft, light mode); launch waits only on the payment plan (w-14). Oct 28: teams unpaused, each person has their own guide. Team 13 Test gets released right before launch, after Chase's last edits.",
       "created": "2026-10-20",
       "updated": "2026-10-28"
     },
@@ -3891,7 +3891,7 @@
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Oct 28 launch audit: all three are paused with no people. Unpausing them releases nothing.",
+      "notes": "Oct 28 launch audit: all three are paused with no people. Unpausing them releases nothing. Oct 28: Chase unpaused the teams. If Team 3, 15 or 28 still has no people, it just sits empty.",
       "created": "2026-10-28",
       "updated": "2026-10-28"
     },

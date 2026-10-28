@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-10-28, launch prep
+- Source: Chase: teams unpaused, everyone has their own guide, Team 13 Test released right before launch
+- Changed: udm-11 and udm-26 notes
+
 ## 2026-10-28, ready to launch
 - Source: Chase: good to go once the payment plan goes through
 - Changed: udm-11 and w-14 notes; udm blocker is the payment plan only
