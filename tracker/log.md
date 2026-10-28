@@ -2,6 +2,13 @@
 
 Newest entry first.
 
+## 2026-10-28, Ken's morning asks
+- Source: Chase: Ken came by first thing about the Lead Tracker and a lead source that was turned off
+- Added: udm-20 "Build a leaderboard for the office screens: cars assigned by team" (Work Claude, high); udm-21 "Make light mode pop and make it the default on the Lead Tracker" (Work Claude, high)
+- Added: audit-17 "Join Ken's call with Taylor about the lead source that was turned off" (Me, due 2026-10-28, urgent)
+- Added: q-42 for IT (what runs the office screens), q-43 for Ken (leaderboard view), q-44 for Taylor (the ten-a-day lead source); person Taylor; note n-65
+- Changed: udm-11 notes (Ken asked if Chase is confident to release); udm and audit next steps
+
 ## 2026-10-27, MAO agent decided
 - Source: Chase and Leo: go with a Copilot agent
 - Resolved: d-mao-01 Copilot agent, not a practice phone line

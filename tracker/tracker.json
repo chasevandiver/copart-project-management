@@ -2,7 +2,7 @@
   "meta": {
     "owner": "Chase",
     "role": "Digital Engagement Manager, supporting Ken Rion (SVP of Dealer Sales)",
-    "last_updated": "2026-10-27"
+    "last_updated": "2026-10-28"
   },
   "categories": [
     "AI Tools",
@@ -312,6 +312,7 @@
       ],
       "blockers": [],
       "next_steps": [
+        "Find out what turned off Ken's ten-a-day lead source, call with Taylor Oct 28 (audit-17)",
         "Hear back from Manny Ortiz on which website changes the team can make (w-13), then plan the remake (audit-09, audit-08)",
         "Check where the mobile \"Sell your car\" button goes (audit-10)",
         "Ken at the Friday debrief: the name (q-10), Austin (d-pdo-01), which campaigns stay with Dealer Sales (gen-23)",
@@ -361,6 +362,7 @@
       "links": [],
       "blockers": [],
       "next_steps": [
+        "Leaderboard for the office screens (udm-20) and a light mode that pops (udm-21), Ken's asks Oct 28",
         "Guide packages for the team this week (udm-19)",
         "Finish the lead scoring update (udm-16)",
         "Launch to the team once Ken's new payment plan is in place and Chase pitches it (udm-11, w-14)",
@@ -3167,9 +3169,9 @@
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Oct 20: Ken wants the Lead Tracker launched to the team next week. Due set to the end of that week; move it when the day is set. The UX and UI redo (udm-10) and the lead rules (udm-08) come first. Ken called it out to the whole floor at today's team gather up (n-38). Oct 21: launch could be as early as Mon Oct 26. Oct 26: launches once Ken has the new payment plan in place (w-14) and Chase pitches it to the team. No date yet. Oct 26: the Lead Tracker is launch ready; only the payment plan (w-14) and Chase's pitch to the team remain.",
+      "notes": "Oct 20: Ken wants the Lead Tracker launched to the team next week. Due set to the end of that week; move it when the day is set. The UX and UI redo (udm-10) and the lead rules (udm-08) come first. Ken called it out to the whole floor at today's team gather up (n-38). Oct 21: launch could be as early as Mon Oct 26. Oct 26: launches once Ken has the new payment plan in place (w-14) and Chase pitches it to the team. No date yet. Oct 26: the Lead Tracker is launch ready; only the payment plan (w-14) and Chase's pitch to the team remain. Oct 28: Ken asked first thing whether Chase is confident about releasing it to the team. It matters to him: he said bringing in these leads would be like a match to dry grass. He also asked for a leaderboard for the office screens (udm-20) and a light mode that pops (udm-21).",
       "created": "2026-10-20",
-      "updated": "2026-10-26"
+      "updated": "2026-10-28"
     },
     {
       "id": "vid-01",
@@ -3789,6 +3791,42 @@
       "idea": true,
       "created": "2026-10-27",
       "updated": "2026-10-27"
+    },
+    {
+      "id": "udm-20",
+      "project_id": "udm",
+      "title": "Build a leaderboard for the office screens: cars assigned by team",
+      "status": "Next",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "high",
+      "notes": "Oct 28: Ken's ask. A Lead Tracker leaderboard of assignments created (cars assigned to sell) by team, on the office screens that already show the report on how assignments are tracked. Full screen, big type, refreshes itself, counts only (no dealer names). Build spec: docs/handoff-leaderboard-light-mode.md in the copart-dealer-digital repo. Needs answers on the screens (q-42) and the view Ken wants (q-43).",
+      "created": "2026-10-28",
+      "updated": "2026-10-28"
+    },
+    {
+      "id": "udm-21",
+      "project_id": "udm",
+      "title": "Make light mode pop and make it the default on the Lead Tracker",
+      "status": "Next",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "high",
+      "notes": "Oct 28: Ken thinks dark mode blends in with every other dark site, and wants light mode to pop. Open in Light for everyone (today it follows the device, so dark-mode phones and laptops open dark), keep Dark as a pick in the header. Brighter white panels, a solid Copart blue header, Copart yellow for highlights and the top team. Token values are in docs/handoff-leaderboard-light-mode.md in the copart-dealer-digital repo.",
+      "created": "2026-10-28",
+      "updated": "2026-10-28"
+    },
+    {
+      "id": "audit-17",
+      "project_id": "audit",
+      "title": "Join Ken's call with Taylor about the lead source that was turned off",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-28",
+      "priority": "urgent",
+      "notes": "Oct 28: Ken used to get about ten leads a day from a source that was turned off. He meets Taylor later today and wants Chase on the call. Questions for Taylor are q-44. Afterward: if it can come back, the leads should land in the Lead Tracker with a source tag.",
+      "created": "2026-10-28",
+      "updated": "2026-10-28"
     }
   ],
   "waiting_on": [
@@ -4354,6 +4392,36 @@
       "answer": null,
       "raised": "2026-10-27",
       "answered": null
+    },
+    {
+      "id": "q-42",
+      "question": "What runs the office screens that show the assignment report (smart TV browser, a PC, Teams Rooms, Power BI)? Can they show a web page that stays signed in, and who sets them up?",
+      "ask": "IT",
+      "project_id": "udm",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-28",
+      "answered": null
+    },
+    {
+      "id": "q-43",
+      "question": "For the screen leaderboard: teams only or reps too, which window (today, this week, since the year-end push started Oct 26), is there a goal line, and does a car count when it is logged in the Lead Tracker or when it shows in Copart's assignment report?",
+      "ask": "Ken Rion",
+      "project_id": "udm",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-28",
+      "answered": null
+    },
+    {
+      "id": "q-44",
+      "question": "What was the source that sent Ken about ten leads a day? When and why was it turned off, where did the leads go and who worked them, how many became sellers, and what would it take to turn it back on?",
+      "ask": "Taylor",
+      "project_id": "audit",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-28",
+      "answered": null
     }
   ],
   "decisions": [
@@ -4892,6 +4960,13 @@
       "title": "Videographer",
       "department": "",
       "relationship": "Shooting the Copart Dealer Services social video series with Ken (Ken's initiative, Oct 21)",
+      "contact": ""
+    },
+    {
+      "name": "Taylor",
+      "title": "",
+      "department": "",
+      "relationship": "Ken's contact on a lead source (about ten leads a day) that was turned off. Call Oct 28",
       "contact": ""
     }
   ],
@@ -5764,6 +5839,18 @@
         "Its only knowledge is the Make An Offer playbook and what we give it.",
         "All Make An Offer calls are already recorded, and reps tell the customer on the call. So reps can also paste a transcript of their own call for a breakdown against the playbook.",
         "Voice: custom agents probably can't use Copilot voice chat yet. Regular Copilot voice chat works for spoken practice, and the chat saves as text for coaching after."
+      ]
+    },
+    {
+      "id": "n-65",
+      "date": "2026-10-28",
+      "title": "Ken, Oct 28 morning",
+      "project_id": "udm",
+      "body": [
+        "Ken came by first thing. He asked if Chase is confident about releasing the Lead Tracker to the team. It's important to him: bringing in these leads would be like a match to dry grass.",
+        "He wants a Lead Tracker leaderboard of the teams' assignments created (cars assigned to sell), on the screens that already show the report on how assignments are tracked (udm-20).",
+        "Dark mode blends in with all the other dark mode sites. He wants light mode to pop (udm-21).",
+        "Website: Ken used to get about ten leads a day from a source that was turned off. He meets Taylor about it later today and wants Chase on the call (audit-17, q-44)."
       ]
     }
   ],
