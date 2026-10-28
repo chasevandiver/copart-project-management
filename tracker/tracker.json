@@ -3802,7 +3802,7 @@
       "owner": "Work Claude",
       "due": null,
       "priority": "high",
-      "notes": "Oct 28: Ken's ask. A Lead Tracker leaderboard of assignments created (cars assigned to sell) by team, on the office screens that already show the report on how assignments are tracked. Full screen, big type, refreshes itself, counts only (no dealer names). Build spec: docs/handoff-leaderboard-light-mode.md in the copart-dealer-digital repo. Needs answers on the screens (q-42) and the view Ken wants (q-43). Oct 28: dealers can send as many cars as they want, so the handoff now covers logging several cars from one dealer at once (build it if the Lead Tracker doesn't have it yet) and one VIN received email for the batch. Oct 28 (later): Work Claude wrote it, not pushed or built yet. The Lead Tracker had no multi-car logging (one VIN at a time), so it built Log cars on the lead page, a Cars logged card, one VIN received email per batch, /screen/leaderboard with a display key (New office screen link on the Teams page), and tests that haven't run. Defaults live in map/config/leaderboard.ts. The board counts a car when a rep logs it, for that rep's team; the Year-end report counts it once there's an active seller code, for the lead owner. Ken picks (q-43). The days-left box was built from PTS.end (Dec 14) because there's no assign_by setting; hide it until the deadline is set (q-30).",
+      "notes": "Oct 28: Ken's ask. A Lead Tracker leaderboard of assignments created (cars assigned to sell) by team, on the office screens that already show the report on how assignments are tracked. Full screen, big type, refreshes itself, counts only (no dealer names). Build spec: docs/handoff-leaderboard-light-mode.md in the copart-dealer-digital repo. Needs answers on the screens (q-42) and the view Ken wants (q-43). Oct 28: dealers can send as many cars as they want, so the handoff now covers logging several cars from one dealer at once (build it if the Lead Tracker doesn't have it yet) and one VIN received email for the batch. Oct 28 (later): Work Claude wrote it, not pushed or built yet. The Lead Tracker had no multi-car logging (one VIN at a time), so it built Log cars on the lead page, a Cars logged card, one VIN received email per batch, /screen/leaderboard with a display key (New office screen link on the Teams page), and tests that haven't run. Defaults live in map/config/leaderboard.ts. The board counts a car when a rep logs it, for that rep's team; the Year-end report counts it once there's an active seller code, for the lead owner. Ken picks (q-43). The days-left box was built from PTS.end (Dec 14) because there's no assign_by setting; hide it until the deadline is set (q-30). Oct 28 (live): on Lead Tracker commit e555299, Coolify build and type check passed. Days-left box hidden until assignBy is set in map/config/leaderboard.ts (the email buttons have had no assign_by since Oct 26). Dealer sent a VIN now uses the full VIN check. The Lead Tracker's tests (old and new) have never run: the Docker build only runs next build. Chase's checks are udm-23.",
       "created": "2026-10-28",
       "updated": "2026-10-28"
     },
@@ -3840,6 +3840,18 @@
       "due": "2026-10-29",
       "priority": "high",
       "notes": "Oct 28: light mode went live (udm-21). Check: a fresh browser on a device set to dark opens in Light; blue header with the yellow underline on the active nav item; hot, mild and cold chips on the rep book and lead page; Dark from the picker has no unreadable text (likeliest miss, never seen rendered). Then show Ken before and after of the lead list and a lead page, and get his OK on d-udm-08. Before shots: the live site already changed, so use an older screenshot or have Work Claude run the commit before 8e1a7b5 locally.",
+      "created": "2026-10-28",
+      "updated": "2026-10-28"
+    },
+    {
+      "id": "udm-23",
+      "project_id": "udm",
+      "title": "Test Log cars and the leaderboard with a fake lead, then put the screen link on the office TV",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-29",
+      "priority": "high",
+      "notes": "Oct 28: from Work Claude's test steps. Use a lead on a test team, not a real dealer, since the cars count on the real board until removed. Log 2 good VINs plus a bad one and a duplicate; check the Cars logged card, the batch VIN received email and +2 on the board; remove the test cars the same day (after that only an admin can). Then make the office screen link from the Teams page (admin on), copy it right away (it shows once), and open it full screen on the TV. Check it reads from 15 feet. The board shows no teams until the first link is made.",
       "created": "2026-10-28",
       "updated": "2026-10-28"
     }
@@ -4290,7 +4302,7 @@
     },
     {
       "id": "q-30",
-      "question": "What is the last date a car can be assigned and still sell before Dec 31, and does the offer (q-14) run through that date? Every email, video card and call uses it. (Oct 22: Leo's sample emails use November 8. Is that the date?)",
+      "question": "What is the last date a car can be assigned and still sell before Dec 31, and does the offer (q-14) run through that date? Every email, video card and call uses it. (Oct 22: Leo's sample emails use November 8. Is that the date?) (Oct 28: the leaderboard's days-left box stays hidden until this date is set.)",
       "ask": "Ken Rion",
       "project_id": "wb",
       "status": "open",

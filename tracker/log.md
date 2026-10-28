@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-28, leaderboard live
+- Source: Chase: Work Claude's log, leaderboard and Log cars live (commit e555299)
+- Changed: udm-20 notes; q-30 notes (days-left box waits on the deadline)
+- Added: udm-23 "Test Log cars and the leaderboard with a fake lead, then put the screen link on the office TV" (Me, due 2026-10-29)
+
 ## 2026-10-28, leaderboard written
 - Source: Chase: Work Claude's log on the leaderboard and Log cars build
 - Changed: udm-20 Next -> In Progress, notes; q-43 adds the two counting rules; udm built
