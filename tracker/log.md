@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-10-28, leaderboard redo
+- Source: Chase: screenshot of the live board, looks terrible
+- Changed: udm-20 notes (layout redo sent to Work Claude)
+
 ## 2026-10-28, leaderboard live
 - Source: Chase: Work Claude's log, leaderboard and Log cars live (commit e555299)
 - Changed: udm-20 notes; q-30 notes (days-left box waits on the deadline)
