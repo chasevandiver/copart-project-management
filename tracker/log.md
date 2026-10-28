@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-10-28, ready to launch
+- Source: Chase: good to go once the payment plan goes through
+- Changed: udm-11 and w-14 notes; udm blocker is the payment plan only
+
 ## 2026-10-28, snake draft in
 - Source: Chase: snake draft updated, light mode colors updated, small changes
 - Changed: udm-25 Next -> Done
