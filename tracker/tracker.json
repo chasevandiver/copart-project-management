@@ -3872,13 +3872,14 @@
       "id": "udm-25",
       "project_id": "udm",
       "title": "Decide the Texas release order or give Texas teams their own ZIP areas",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Oct 28 launch audit: every Texas team's area is all of TX, so all teams see the same top leads. Release all is safe (no lead goes to two teams) but goes in name order (Team 10, Team 11 ... Team 2, Team 20), so the Team 1x teams get the best leads and Team 9 gets what's left. Decide before the first release: accept the order, or set each team's Area to ZIP prefixes (for example TX:752). Oct 28 recommendation: a snake draft for Release all. Teams take one lead at a time in turn, order reverses each round (1 to N, then N to 1), and the starting team rotates each release. Every team gets a fair mix of top and lower leads. ZIP areas only for a team that visits in person. Oct 28: every team draws from all of Texas to start, no ZIP areas. Snake draft sent to Work Claude.",
+      "notes": "Oct 28 launch audit: every Texas team's area is all of TX, so all teams see the same top leads. Release all is safe (no lead goes to two teams) but goes in name order (Team 10, Team 11 ... Team 2, Team 20), so the Team 1x teams get the best leads and Team 9 gets what's left. Decide before the first release: accept the order, or set each team's Area to ZIP prefixes (for example TX:752). Oct 28 recommendation: a snake draft for Release all. Teams take one lead at a time in turn, order reverses each round (1 to N, then N to 1), and the starting team rotates each release. Every team gets a fair mix of top and lower leads. ZIP areas only for a team that visits in person. Oct 28: every team draws from all of Texas to start, no ZIP areas. Snake draft sent to Work Claude. Oct 28: snake draft built (Chase). Also updated the light mode colors and some small changes.",
       "created": "2026-10-28",
-      "updated": "2026-10-28"
+      "updated": "2026-10-28",
+      "completed": "2026-10-28"
     },
     {
       "id": "udm-26",

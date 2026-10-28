@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-10-28, snake draft in
+- Source: Chase: snake draft updated, light mode colors updated, small changes
+- Changed: udm-25 Next -> Done
+
 ## 2026-10-28, Texas pool
 - Source: Chase: every team draws from all of Texas to start
 - Changed: udm-25 notes
