@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-10-28, launch decisions
+- Source: Chase: leave Keon's leads as they are, Open in email works, the TV isn't needed for launch, how should the Texas release order work
+- Changed: udm-24 Done (leave Keon's leads as the follow-up baseline); udm-25 notes (snake draft recommended); udm-20 and udm-11 notes
+
 ## 2026-10-28, launch audit
 - Source: Chase: Work Claude's launch audit, Keon has left, Team 13 Test stays until go-live, manager maps are fine
 - Added: udm-24 archive Keon, udm-25 Texas release order, udm-26 empty teams, udm-27 release Team 13 Test (all Me); q-46 for Ken (Indiana and Keon's items); note n-68
