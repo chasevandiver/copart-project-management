@@ -2,7 +2,7 @@
   "meta": {
     "owner": "Chase",
     "role": "Digital Engagement Manager, supporting Ken Rion (SVP of Dealer Sales)",
-    "last_updated": "2026-10-28"
+    "last_updated": "2026-10-29"
   },
   "categories": [
     "AI Tools",
@@ -36,10 +36,11 @@
       "project_ids": [
         "audit",
         "mkt",
-        "vid"
+        "vid",
+        "lis"
       ],
       "created": "2026-09-29",
-      "updated": "2026-10-21"
+      "updated": "2026-10-29"
     },
     {
       "id": "g-03",
@@ -772,6 +773,37 @@
       "dependencies": [
         "Leo's MAO tool for the Make An Offer team (hub)",
         "Copilot Studio, same as Copart Dealer Services AI (cdsai)"
+      ]
+    },
+    {
+      "id": "lis",
+      "name": "Leo's LinkedIn series",
+      "category": "Marketing Efforts",
+      "status": "Next",
+      "summary": "Test whether Leo posting on his own LinkedIn does anything. Six posts, one a week on Wednesdays (Nov 4 to Dec 16, skipping Thanksgiving week), called Built from the sales desk: a rep who sold 1,000+ cars in a month and builds his own AI tools. Dealers and other sellers first, reps and Copart second. One post in Spanish. Leo logs his post analytics 7 days after each post. Verdict at week 6: at least 2 dealer or seller conversations or 1 VIN means it works and the format goes to two more reps; reach without conversations means four more weeks of dealer-facing posts; nothing means stop.",
+      "built": [
+        "Series plan, baseline from his activity page and six post drafts, draft (Oct 29)"
+      ],
+      "links": [
+        {
+          "label": "Leo's LinkedIn series (Claude doc for Leo)",
+          "url": "https://claude.ai/artifact/BvoagXrAjTYf5YBoasBSze"
+        },
+        {
+          "label": "Series plan, repo copy",
+          "where": "copart-dealer-digital repo, docs/social/leo-linkedin-series.md (branch claude/modest-davinci-9syafy)"
+        }
+      ],
+      "blockers": [],
+      "next_steps": [
+        "Send Leo the doc (lis-01)",
+        "Leo pulls his baseline analytics (lis-02)",
+        "Kyle sees the plan and post 1, Ken OKs the series (lis-03)",
+        "Agree the verdict rule with Leo (lis-04)"
+      ],
+      "dependencies": [
+        "Ken's year-end cutoff date for posts 3 and 4",
+        "MAO practice agent live by Dec 9 for post 5 (mao)"
       ]
     }
   ],
@@ -3906,6 +3938,91 @@
       "notes": "Oct 28: Chase is testing on it now. Release it last, right before launch. Audit test touches on F.A AUTOSALES start with TEST:. Chase 2's sign-in link was reset in the audit; the new one is in the team drawer.",
       "created": "2026-10-28",
       "updated": "2026-10-28"
+    },
+    {
+      "id": "lis-01",
+      "project_id": "lis",
+      "title": "Send Leo the series doc and walk him through it",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-10-30",
+      "priority": "high",
+      "notes": "He rewrites each post in his own words and fills the bracketed facts.",
+      "created": "2026-10-29",
+      "updated": "2026-10-29"
+    },
+    {
+      "id": "lis-02",
+      "project_id": "lis",
+      "title": "Pull baseline analytics for the last three posts",
+      "status": "Next",
+      "owner": "Leo",
+      "due": "2026-11-03",
+      "priority": "high",
+      "notes": "Oct 28, Oct 20 and May 7 posts: impressions, members reached, profile viewers, followers gained, top viewer job titles and industries. Plus follower count (850 on Oct 29) and 90-day profile views.",
+      "created": "2026-10-29",
+      "updated": "2026-10-29"
+    },
+    {
+      "id": "lis-03",
+      "project_id": "lis",
+      "title": "Get Kyle's review of the plan and post 1, and Ken's OK on the series",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-11-03",
+      "priority": "high",
+      "notes": "Same rule as the rep LinkedIn drafts: Kyle sees every post before it goes up.",
+      "created": "2026-10-29",
+      "updated": "2026-10-29"
+    },
+    {
+      "id": "lis-04",
+      "project_id": "lis",
+      "title": "Agree the week 6 verdict rule with Leo before post 1",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-11-03",
+      "priority": "normal",
+      "notes": "Rule is in the doc's Measurement section.",
+      "created": "2026-10-29",
+      "updated": "2026-10-29"
+    },
+    {
+      "id": "lis-05",
+      "project_id": "lis",
+      "title": "Add LinkedIn, Leo as a lead source in the Lead Tracker",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-11-03",
+      "priority": "normal",
+      "notes": "Next to the Social video source planned in vid-08.",
+      "created": "2026-10-29",
+      "updated": "2026-10-29"
+    },
+    {
+      "id": "lis-06",
+      "project_id": "lis",
+      "title": "Draft next week's post for Leo",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-11-04",
+      "priority": "normal",
+      "notes": "A week ahead of each Wednesday post. Log Leo's numbers from the post 7 days back.",
+      "created": "2026-10-29",
+      "updated": "2026-10-29",
+      "recurring": "weekly"
+    },
+    {
+      "id": "lis-07",
+      "project_id": "lis",
+      "title": "Write the week 6 readout and the verdict",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-12-18",
+      "priority": "normal",
+      "notes": "From Leo's tracking table. Feeds post 6 too.",
+      "created": "2026-10-29",
+      "updated": "2026-10-29"
     }
   ],
   "waiting_on": [
@@ -4521,6 +4638,16 @@
       "answer": null,
       "raised": "2026-10-28",
       "answered": null
+    },
+    {
+      "id": "q-47",
+      "question": "Does Copart have an employee social media policy, and does Leo's LinkedIn series need anything beyond your review?",
+      "ask": "Kyle Cochran",
+      "project_id": "lis",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-10-29",
+      "answered": null
     }
   ],
   "decisions": [
@@ -4951,9 +5078,9 @@
     },
     {
       "name": "Leo",
-      "title": "",
+      "title": "Senior Account Rep",
       "department": "",
-      "relationship": "Built the original Route Tracker (now Chase's project) and runs the Copart Dealer Services Hub. Oct 27: building an MAO tool for the Make An Offer team; sending me their playbook",
+      "relationship": "Built the original Route Tracker (now Chase's project) and runs the Copart Dealer Services Hub. Oct 27: building an MAO tool for the Make An Offer team; sending me their playbook. Oct 29: posting more on LinkedIn; testing a weekly series (lis)",
       "contact": ""
     },
     {
@@ -6000,6 +6127,18 @@
         "Not tested on purpose: Claim, Release all and Send all now (they'd pull real leads), Open in email into Outlook, the leaderboard on a real TV, field teams and the Route Tracker pull.",
         "Launch morning: before 8 am Central unpause the live teams and confirm two people each; Release all waiting, then spot check three teams' lists differ; send each person their own link (not team links); one rep claims and logs a touch, check the team Activity tab; no pushes 8 am to 5 pm Central.",
         "Rep guide line: if a lead disappears, check the search box first. It keeps what you typed after a reload."
+      ]
+    },
+    {
+      "id": "n-69",
+      "date": "2026-10-29",
+      "title": "Leo's LinkedIn: what his activity shows",
+      "project_id": "lis",
+      "body": [
+        "7 of the 20 items on his activity page are his own posts; the rest are reposts or shares, which do nothing measurable for him.",
+        "Story and people posts win: Doyle farewell 130 reactions, six years at Copart 102. Thank-you posts with no story 25 to 31. The San Diego dealer event post did 69.",
+        "Median of six settled posts: 50 reactions. 850 followers. 3 posts in 2026, 2 in the last 10 days.",
+        "His headline says Sales + AI Automation and PT/EN/ES, but no post shows either. The series leans on both."
       ]
     }
   ],

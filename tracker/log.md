@@ -2,6 +2,14 @@
 
 Newest entry first.
 
+## 2026-10-29
+- Source: Chase: a LinkedIn series for Leo, to see if posting on his profile does anything
+- Added: project lis "Leo's LinkedIn series" (Marketing Efforts, under g-02)
+- Added: lis-01 "Send Leo the series doc" (Me, due 2026-10-30), lis-02 baseline analytics (Leo, 2026-11-03), lis-03 Kyle and Ken review (Me, 2026-11-03), lis-04 verdict rule (Me, 2026-11-03), lis-05 lead source (Me, 2026-11-03), lis-06 weekly draft (Me, weekly from 2026-11-04), lis-07 week 6 readout (Me, 2026-12-18)
+- Added: q-47 for Kyle Cochran (employee social media policy)
+- Added: note n-69, what Leo's activity shows
+- Changed: Leo's title set to Senior Account Rep
+
 ## 2026-10-28, launch prep
 - Source: Chase: teams unpaused, everyone has their own guide, Team 13 Test released right before launch
 - Changed: udm-11 and udm-26 notes
