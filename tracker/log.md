@@ -2,6 +2,12 @@
 
 Newest entry first.
 
+## 2026-10-30, launch and commission
+- Source: Chase: launched the Lead Tracker yesterday; on the commission tool today, set until the real data Monday
+- Changed: udm-11 Waiting -> Done (Oct 29); udm-15 Next -> In Progress, due 2026-11-05
+- Changed: udm project built, blockers cleared, next steps; comm-02 notes
+- Waiting on: cleared w-14 (payment plan, received Oct 29)
+
 ## 2026-10-30, fifth pass
 - Source: Chase: the posts sounded like AI, not Leo
 - Changed: project lis summary and built (same six topics, rewritten in his own register)

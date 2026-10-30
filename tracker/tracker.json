@@ -355,28 +355,26 @@
         "Claim codes so the team can claim leads, with an admin view that keeps teams from being overloaded (Oct 15)",
         "Dealer profiles build as reps log touches and notes (Oct 15)",
         "Lead Tracker updated to match how the team tracks calls and outreach; a pilot team is using it and giving feedback (Oct 16)",
-        "Launch ready (Oct 26): Keon's UX and UI redo done (udm-10). Launch waits on Ken's payment plan (w-14).",
+        "Launch ready (Oct 26): Keon's UX and UI redo done (udm-10).",
         "Prospect to Seller flip on the lead page (Oct 26, udm-13)",
         "Scoreboard for Ken: touches, VINs and cars assigned by rep (Oct 26)",
         "Dealer brief on each lead: facts about the dealer only, no sales suggestions, since reps each have their own pitch (Oct 26)",
         "Light mode that pops, opens in Light by default: Copart blue header, yellow accent, rating chip colors (Oct 28, udm-21)",
-        "Log cars: several VINs from one dealer at once, each checked, plus a Cars logged card on the lead page (written Oct 28, udm-20)"
+        "Log cars: several VINs from one dealer at once, each checked, plus a Cars logged card on the lead page (written Oct 28, udm-20)",
+        "Launched to the team (Oct 29, udm-11)"
       ],
       "links": [],
-      "blockers": [
-        "Ken's new payment plan (w-14). The app is launch ready as of Oct 28."
-      ],
+      "blockers": [],
       "next_steps": [
+        "First week after launch: handle rep feedback (udm-15, through about Nov 5)",
         "Leaderboard for the office screens (udm-20); check the new light mode and show Ken (udm-22)",
         "Guide packages for the team this week (udm-19)",
         "Finish the lead scoring update (udm-16)",
-        "Launch to the team once Ken's new payment plan is in place and Chase pitches it (udm-11, w-14)",
         "Collect pilot team feedback on the Lead Tracker (gen-29)",
         "Build out the CRM once the processes are known (udm-06)",
         "Lock the lead record, stages and lead ID (n-29)",
         "Match leads to Copart dealer status: active, inactive, no status (udm-01)",
         "Put the resolved lead rules into the app (udm-08)",
-        "First week after launch: handle rep feedback (udm-15)",
         "If reps get real use out of it, Phase 2: each rep's full book, inactives first (udm-14)"
       ],
       "dependencies": [
@@ -3177,9 +3175,9 @@
       "owner": "Me",
       "due": "2026-11-02",
       "priority": "urgent",
-      "notes": "Oct 20: test workbook matches Brenda's numbers on her data and fake sample data. Real raw data comes after the current two-week period. Commission data stays on the work setup. Was hub-05. Oct 21: urgent, this week (commission spreadsheet, Lead Tracker and the video shoot are the week's three priorities). Oct 21: second set of commission reports not in yet. Oct 26: runs Mon Nov 2. Oct 26: Chase runs his tool side by side with Brenda's when commissions come out Mon Nov 2, and keeps running it until Tech's tool is done (q-38).",
+      "notes": "Oct 20: test workbook matches Brenda's numbers on her data and fake sample data. Real raw data comes after the current two-week period. Commission data stays on the work setup. Was hub-05. Oct 21: urgent, this week (commission spreadsheet, Lead Tracker and the video shoot are the week's three priorities). Oct 21: second set of commission reports not in yet. Oct 26: runs Mon Nov 2. Oct 26: Chase runs his tool side by side with Brenda's when commissions come out Mon Nov 2, and keeps running it until Tech's tool is done (q-38). Oct 30: Chase's focus today. Everything is set; nothing more to do until the real data comes Mon Nov 2.",
       "created": "2026-10-20",
-      "updated": "2026-10-26"
+      "updated": "2026-10-30"
     },
     {
       "id": "udm-10",
@@ -3198,13 +3196,14 @@
       "id": "udm-11",
       "project_id": "udm",
       "title": "Launch the Lead Tracker to the team",
-      "status": "Waiting",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Oct 20: Ken wants the Lead Tracker launched to the team next week. Due set to the end of that week; move it when the day is set. The UX and UI redo (udm-10) and the lead rules (udm-08) come first. Ken called it out to the whole floor at today's team gather up (n-38). Oct 21: launch could be as early as Mon Oct 26. Oct 26: launches once Ken has the new payment plan in place (w-14) and Chase pitches it to the team. No date yet. Oct 26: the Lead Tracker is launch ready; only the payment plan (w-14) and Chase's pitch to the team remain. Oct 28: Ken asked first thing whether Chase is confident about releasing it to the team. It matters to him: he said bringing in these leads would be like a match to dry grass. He also asked for a leaderboard for the office screens (udm-20) and a light mode that pops (udm-21). Oct 28: launch audit by Work Claude says the rep side is ready for 60 people. Before launch: udm-24 to udm-27. The manager state maps are slow on the half-core server; fine, managers will hardly use them. Oct 28: Open in email opens Outlook (Chase checked). Oct 28 (end of day): Chase is ready. The app is done (audit, snake draft, light mode); launch waits only on the payment plan (w-14). Oct 28: teams unpaused, each person has their own guide. Team 13 Test gets released right before launch, after Chase's last edits.",
+      "notes": "Oct 20: Ken wants the Lead Tracker launched to the team next week. Due set to the end of that week; move it when the day is set. The UX and UI redo (udm-10) and the lead rules (udm-08) come first. Ken called it out to the whole floor at today's team gather up (n-38). Oct 21: launch could be as early as Mon Oct 26. Oct 26: launches once Ken has the new payment plan in place (w-14) and Chase pitches it to the team. No date yet. Oct 26: the Lead Tracker is launch ready; only the payment plan (w-14) and Chase's pitch to the team remain. Oct 28: Ken asked first thing whether Chase is confident about releasing it to the team. It matters to him: he said bringing in these leads would be like a match to dry grass. He also asked for a leaderboard for the office screens (udm-20) and a light mode that pops (udm-21). Oct 28: launch audit by Work Claude says the rep side is ready for 60 people. Before launch: udm-24 to udm-27. The manager state maps are slow on the half-core server; fine, managers will hardly use them. Oct 28: Open in email opens Outlook (Chase checked). Oct 28 (end of day): Chase is ready. The app is done (audit, snake draft, light mode); launch waits only on the payment plan (w-14). Oct 28: teams unpaused, each person has their own guide. Team 13 Test gets released right before launch, after Chase's last edits. Oct 29: Chase launched the Lead Tracker to the team.",
       "created": "2026-10-20",
-      "updated": "2026-10-28"
+      "updated": "2026-10-30",
+      "completed": "2026-10-29"
     },
     {
       "id": "vid-01",
@@ -3638,13 +3637,13 @@
       "id": "udm-15",
       "project_id": "udm",
       "title": "Handle Phase 1 feedback in the first week after launch",
-      "status": "Next",
+      "status": "In Progress",
       "owner": "Me",
-      "due": null,
+      "due": "2026-11-05",
       "priority": "high",
-      "notes": "Oct 26: the first week or so after the team launch (udm-11) is for fixing what reps report, as much as possible. It also shows whether reps get real use out of the Lead Tracker, which decides Phase 2 (udm-14). Feeds gen-29.",
+      "notes": "Oct 26: the first week or so after the team launch (udm-11) is for fixing what reps report, as much as possible. It also shows whether reps get real use out of the Lead Tracker, which decides Phase 2 (udm-14). Feeds gen-29. Oct 30: launched Oct 29, so the first week runs to about Nov 5.",
       "created": "2026-10-26",
-      "updated": "2026-10-26"
+      "updated": "2026-10-30"
     },
     {
       "id": "audit-15",
@@ -4082,7 +4081,8 @@
       "project_id": "udm",
       "since": "2026-10-26",
       "priority": "high",
-      "notes": "The Lead Tracker launch to the team (udm-11) waits on it, then Chase pitches the Lead Tracker to the team. Oct 26: waits on HR and leadership clearing it. Chase thinks it is close. Oct 28: the only thing left before the Lead Tracker launch."
+      "notes": "The Lead Tracker launch to the team (udm-11) waits on it, then Chase pitches the Lead Tracker to the team. Oct 26: waits on HR and leadership clearing it. Chase thinks it is close. Oct 28: the only thing left before the Lead Tracker launch. Oct 29: the Lead Tracker launched, so the plan is taken as in place.",
+      "received": "2026-10-29"
     },
     {
       "id": "w-15",
