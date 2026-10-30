@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-30
+- Source: Chase: the Leo plan was wrong, he wants posts in Leo's voice to hand him, for dealers and Copart culture, nothing about reviews or measurement
+- Changed: project lis renamed "Leo's LinkedIn posts", summary and next steps redone; lis-01 now "Send Leo the six posts"
+- Removed: lis-02 to lis-07 and q-47 (added in error yesterday, never acted on)
+
 ## 2026-10-29
 - Source: Chase: a LinkedIn series for Leo, to see if posting on his profile does anything
 - Added: project lis "Leo's LinkedIn series" (Marketing Efforts, under g-02)
