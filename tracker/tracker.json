@@ -313,7 +313,7 @@
       ],
       "blockers": [],
       "next_steps": [
-        "Find out what turned off Ken's ten-a-day lead source, call with Taylor Oct 28 (audit-17)",
+        "Log what the marketing meeting covered on Ken's ten-a-day lead source (q-44)",
         "Hear back from Manny Ortiz on which website changes the team can make (w-13), then plan the remake (audit-09, audit-08)",
         "Check where the mobile \"Sell your car\" button goes (audit-10)",
         "Ken at the Friday debrief: the name (q-10), Austin (d-pdo-01), which campaigns stay with Dealer Sales (gen-23)",
@@ -793,7 +793,8 @@
       ],
       "blockers": [],
       "next_steps": [
-        "Send Leo the posts; he fills the brackets, picks the photos and tags (lis-01)"
+        "Leo fills the brackets, picks the photos and tags, then posts one a week",
+        "Post 6 needs Ken's year-end date (q-30)"
       ],
       "dependencies": [
         "Ken's year-end cutoff date for post 6",
@@ -3640,7 +3641,7 @@
       "owner": "Me",
       "due": "2026-11-05",
       "priority": "high",
-      "notes": "Oct 26: the first week or so after the team launch (udm-11) is for fixing what reps report, as much as possible. It also shows whether reps get real use out of the Lead Tracker, which decides Phase 2 (udm-14). Feeds gen-29. Oct 30: launched Oct 29, so the first week runs to about Nov 5.",
+      "notes": "Oct 26: the first week or so after the team launch (udm-11) is for fixing what reps report, as much as possible. It also shows whether reps get real use out of the Lead Tracker, which decides Phase 2 (udm-14). Feeds gen-29. Oct 30: launched Oct 29, so the first week runs to about Nov 5. Oct 30: Chase went through the first round of feedback.",
       "created": "2026-10-26",
       "updated": "2026-10-30"
     },
@@ -3852,13 +3853,14 @@
       "id": "audit-17",
       "project_id": "audit",
       "title": "Join Ken's call with Taylor about the lead source that was turned off",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-28",
       "priority": "urgent",
-      "notes": "Oct 28: Ken used to get about ten leads a day from a source that was turned off. He meets Taylor later today and wants Chase on the call. Questions for Taylor are q-44. Afterward: if it can come back, the leads should land in the Lead Tracker with a source tag.",
+      "notes": "Oct 28: Ken used to get about ten leads a day from a source that was turned off. He meets Taylor later today and wants Chase on the call. Questions for Taylor are q-44. Afterward: if it can come back, the leads should land in the Lead Tracker with a source tag. Oct 30: the Taylor call didn't happen. The lead source was covered in the marketing meeting instead.",
       "created": "2026-10-28",
-      "updated": "2026-10-28"
+      "updated": "2026-10-30",
+      "completed": "2026-10-30"
     },
     {
       "id": "udm-22",
@@ -3942,13 +3944,14 @@
       "id": "lis-01",
       "project_id": "lis",
       "title": "Send Leo the six posts",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-30",
       "priority": "high",
-      "notes": "He fills the brackets (his tool, teammates, a dealer who agrees to be named, the yard crew), picks the photos and tags everyone named. Post 6 needs Ken's year-end date.",
+      "notes": "He fills the brackets (his tool, teammates, a dealer who agrees to be named, the yard crew), picks the photos and tags everyone named. Post 6 needs Ken's year-end date. Oct 30: sent to Leo.",
       "created": "2026-10-29",
-      "updated": "2026-10-30"
+      "updated": "2026-10-30",
+      "completed": "2026-10-30"
     }
   ],
   "waiting_on": [

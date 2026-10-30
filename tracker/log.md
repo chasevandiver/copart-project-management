@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-30, afternoon
+- Source: Chase: posts sent to Leo, went through Lead Tracker feedback, Taylor call didn't happen but the lead source was covered in the marketing meeting
+- Changed: lis-01 and audit-17 -> Done; udm-15 notes
+- Changed: lis and audit next steps
+
 ## 2026-10-30, Lead Tracker caught up
 - Source: Chase: Team 13 Test released, all caught up on the Lead Tracker, pitched and all teams are using it
 - Changed: udm-22, udm-23, udm-26, udm-27 -> Done
