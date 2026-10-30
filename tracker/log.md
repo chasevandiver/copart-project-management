@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-10-30, fifth pass
+- Source: Chase: the posts sounded like AI, not Leo
+- Changed: project lis summary and built (same six topics, rewritten in his own register)
+
 ## 2026-10-30, fourth pass
 - Source: Chase: rework all six for engagement (photos, tags, hooks, questions); the deli is where Leo worked, not downstairs from Copart
 - Changed: project lis summary, built, next steps and dependencies; lis-01 notes
