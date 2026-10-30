@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-10-30, Lead Tracker caught up
+- Source: Chase: Team 13 Test released, all caught up on the Lead Tracker, pitched and all teams are using it
+- Changed: udm-22, udm-23, udm-26, udm-27 -> Done
+- Changed: udm-11 and gen-29 notes; udm built and next steps
+
 ## 2026-10-30, launch and commission
 - Source: Chase: launched the Lead Tracker yesterday; on the commission tool today, set until the real data Monday
 - Changed: udm-11 Waiting -> Done (Oct 29); udm-15 Next -> In Progress, due 2026-11-05

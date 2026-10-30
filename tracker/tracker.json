@@ -361,14 +361,13 @@
         "Dealer brief on each lead: facts about the dealer only, no sales suggestions, since reps each have their own pitch (Oct 26)",
         "Light mode that pops, opens in Light by default: Copart blue header, yellow accent, rating chip colors (Oct 28, udm-21)",
         "Log cars: several VINs from one dealer at once, each checked, plus a Cars logged card on the lead page (written Oct 28, udm-20)",
-        "Launched to the team (Oct 29, udm-11)"
+        "Pitched and launched to the team; all teams are using it (Oct 29)"
       ],
       "links": [],
       "blockers": [],
       "next_steps": [
         "First week after launch: handle rep feedback (udm-15, through about Nov 5)",
-        "Leaderboard for the office screens (udm-20); check the new light mode and show Ken (udm-22)",
-        "Guide packages for the team this week (udm-19)",
+        "Leaderboard for the office screens (udm-20); Ken's OK on the light mode calls (d-udm-08)",
         "Finish the lead scoring update (udm-16)",
         "Collect pilot team feedback on the Lead Tracker (gen-29)",
         "Build out the CRM once the processes are known (udm-06)",
@@ -3013,9 +3012,9 @@
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Oct 15: plan for today, tomorrow and next week. Use it to tighten the details on each project (udm-07 covers how calls and outreach are tracked today). Good moment to note who is using each tool and how often, for the update to Ken. Oct 16: a pilot team is trying the updated Lead Tracker and will give feedback. Oct 20: Keon's feedback on the Lead Tracker is in; the UX and UI redo is udm-10. Oct 21: Keon is piloting the Lead Tracker while he cold calls in the office. Leo, a more experienced sales rep, tried the layout and thinks it's really slick.",
+      "notes": "Oct 15: plan for today, tomorrow and next week. Use it to tighten the details on each project (udm-07 covers how calls and outreach are tracked today). Good moment to note who is using each tool and how often, for the update to Ken. Oct 16: a pilot team is trying the updated Lead Tracker and will give feedback. Oct 20: Keon's feedback on the Lead Tracker is in; the UX and UI redo is udm-10. Oct 21: Keon is piloting the Lead Tracker while he cold calls in the office. Leo, a more experienced sales rep, tried the layout and thinks it's really slick. Oct 30: all teams are on the Lead Tracker now, so feedback comes from the whole floor (udm-15).",
       "created": "2026-10-15",
-      "updated": "2026-10-21"
+      "updated": "2026-10-30"
     },
     {
       "id": "rt-62",
@@ -3200,7 +3199,7 @@
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Oct 20: Ken wants the Lead Tracker launched to the team next week. Due set to the end of that week; move it when the day is set. The UX and UI redo (udm-10) and the lead rules (udm-08) come first. Ken called it out to the whole floor at today's team gather up (n-38). Oct 21: launch could be as early as Mon Oct 26. Oct 26: launches once Ken has the new payment plan in place (w-14) and Chase pitches it to the team. No date yet. Oct 26: the Lead Tracker is launch ready; only the payment plan (w-14) and Chase's pitch to the team remain. Oct 28: Ken asked first thing whether Chase is confident about releasing it to the team. It matters to him: he said bringing in these leads would be like a match to dry grass. He also asked for a leaderboard for the office screens (udm-20) and a light mode that pops (udm-21). Oct 28: launch audit by Work Claude says the rep side is ready for 60 people. Before launch: udm-24 to udm-27. The manager state maps are slow on the half-core server; fine, managers will hardly use them. Oct 28: Open in email opens Outlook (Chase checked). Oct 28 (end of day): Chase is ready. The app is done (audit, snake draft, light mode); launch waits only on the payment plan (w-14). Oct 28: teams unpaused, each person has their own guide. Team 13 Test gets released right before launch, after Chase's last edits. Oct 29: Chase launched the Lead Tracker to the team.",
+      "notes": "Oct 20: Ken wants the Lead Tracker launched to the team next week. Due set to the end of that week; move it when the day is set. The UX and UI redo (udm-10) and the lead rules (udm-08) come first. Ken called it out to the whole floor at today's team gather up (n-38). Oct 21: launch could be as early as Mon Oct 26. Oct 26: launches once Ken has the new payment plan in place (w-14) and Chase pitches it to the team. No date yet. Oct 26: the Lead Tracker is launch ready; only the payment plan (w-14) and Chase's pitch to the team remain. Oct 28: Ken asked first thing whether Chase is confident about releasing it to the team. It matters to him: he said bringing in these leads would be like a match to dry grass. He also asked for a leaderboard for the office screens (udm-20) and a light mode that pops (udm-21). Oct 28: launch audit by Work Claude says the rep side is ready for 60 people. Before launch: udm-24 to udm-27. The manager state maps are slow on the half-core server; fine, managers will hardly use them. Oct 28: Open in email opens Outlook (Chase checked). Oct 28 (end of day): Chase is ready. The app is done (audit, snake draft, light mode); launch waits only on the payment plan (w-14). Oct 28: teams unpaused, each person has their own guide. Team 13 Test gets released right before launch, after Chase's last edits. Oct 29: Chase launched the Lead Tracker to the team. Oct 30: pitched to the team, and all teams are using it.",
       "created": "2026-10-20",
       "updated": "2026-10-30",
       "completed": "2026-10-29"
@@ -3865,25 +3864,27 @@
       "id": "udm-22",
       "project_id": "udm",
       "title": "Check the new light mode on the live Lead Tracker and show Ken",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-29",
       "priority": "high",
-      "notes": "Oct 28: light mode went live (udm-21). Check: a fresh browser on a device set to dark opens in Light; blue header with the yellow underline on the active nav item; hot, mild and cold chips on the rep book and lead page; Dark from the picker has no unreadable text (likeliest miss, never seen rendered). Then show Ken before and after of the lead list and a lead page, and get his OK on d-udm-08. Before shots: the live site already changed, so use an older screenshot or have Work Claude run the commit before 8e1a7b5 locally.",
+      "notes": "Oct 28: light mode went live (udm-21). Check: a fresh browser on a device set to dark opens in Light; blue header with the yellow underline on the active nav item; hot, mild and cold chips on the rep book and lead page; Dark from the picker has no unreadable text (likeliest miss, never seen rendered). Then show Ken before and after of the lead list and a lead page, and get his OK on d-udm-08. Before shots: the live site already changed, so use an older screenshot or have Work Claude run the commit before 8e1a7b5 locally. Oct 30: Chase is all caught up on the Lead Tracker. Ken's OK on the light mode calls is still d-udm-08.",
       "created": "2026-10-28",
-      "updated": "2026-10-28"
+      "updated": "2026-10-30",
+      "completed": "2026-10-30"
     },
     {
       "id": "udm-23",
       "project_id": "udm",
       "title": "Test Log cars and the leaderboard with a fake lead, then put the screen link on the office TV",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-10-29",
       "priority": "high",
-      "notes": "Oct 28: from Work Claude's test steps. Use a lead on a test team, not a real dealer, since the cars count on the real board until removed. Log 2 good VINs plus a bad one and a duplicate; check the Cars logged card, the batch VIN received email and +2 on the board; remove the test cars the same day (after that only an admin can). Then make the office screen link from the Teams page (admin on), copy it right away (it shows once), and open it full screen on the TV. Check it reads from 15 feet. The board shows no teams until the first link is made.",
+      "notes": "Oct 28: from Work Claude's test steps. Use a lead on a test team, not a real dealer, since the cars count on the real board until removed. Log 2 good VINs plus a bad one and a duplicate; check the Cars logged card, the batch VIN received email and +2 on the board; remove the test cars the same day (after that only an admin can). Then make the office screen link from the Teams page (admin on), copy it right away (it shows once), and open it full screen on the TV. Check it reads from 15 feet. The board shows no teams until the first link is made. Oct 30: Chase is all caught up on the Lead Tracker.",
       "created": "2026-10-28",
-      "updated": "2026-10-28"
+      "updated": "2026-10-30",
+      "completed": "2026-10-30"
     },
     {
       "id": "udm-24",
@@ -3915,25 +3916,27 @@
       "id": "udm-26",
       "project_id": "udm",
       "title": "Add people to Team 3, Team 15 and Team 28, or leave them paused",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Oct 28 launch audit: all three are paused with no people. Unpausing them releases nothing. Oct 28: Chase unpaused the teams. If Team 3, 15 or 28 still has no people, it just sits empty.",
+      "notes": "Oct 28 launch audit: all three are paused with no people. Unpausing them releases nothing. Oct 28: Chase unpaused the teams. If Team 3, 15 or 28 still has no people, it just sits empty. Oct 30: all teams are using the Lead Tracker (Chase).",
       "created": "2026-10-28",
-      "updated": "2026-10-28"
+      "updated": "2026-10-30",
+      "completed": "2026-10-30"
     },
     {
       "id": "udm-27",
       "project_id": "udm",
       "title": "Release Team 13 Test once ready to go live",
-      "status": "Next",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Oct 28: Chase is testing on it now. Release it last, right before launch. Audit test touches on F.A AUTOSALES start with TEST:. Chase 2's sign-in link was reset in the audit; the new one is in the team drawer.",
+      "notes": "Oct 28: Chase is testing on it now. Release it last, right before launch. Audit test touches on F.A AUTOSALES start with TEST:. Chase 2's sign-in link was reset in the audit; the new one is in the team drawer. Oct 30: released (Chase).",
       "created": "2026-10-28",
-      "updated": "2026-10-28"
+      "updated": "2026-10-30",
+      "completed": "2026-10-30"
     },
     {
       "id": "lis-01",
