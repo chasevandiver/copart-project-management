@@ -780,9 +780,9 @@
       "name": "Leo's LinkedIn posts",
       "category": "Marketing Efforts",
       "status": "Next",
-      "summary": "Six LinkedIn posts drafted in Leo's voice for him to make his own and post one a week. Leo is a Senior Account Rep on the Copart Dealer Services team who has started posting more. The posts are stories and thank-yous, not pitches, and none repeats something he has already posted: the title that got stuck, the first tool he built for the team, his languages, going back to the Make An Offer team with the practice tool, the seller who wasn't a dealer, the yard crew a seller never meets. Dealers who follow him learn what working with Copart Dealer Services is like from the work; the culture comes through in who he thanks. Each post has one slot for his own example, filled by six questions at the top of the doc.",
+      "summary": "Six LinkedIn posts drafted in Leo's voice for him to make his own and post one a week. Leo is a Senior Account Rep on the Copart Dealer Services team who has started posting more. Built for engagement the way LinkedIn rewards it (two to four photos, three to six tagged people, a hook in the first two lines, a question anyone can answer fast, no links in the body), which is also what his own two biggest posts had. Posts: the AI tool he built for the team, the team behind 1,000 cars, seller of the month (a dealer named with their OK, repeated monthly), the yard crew a seller never meets, three languages, the oldest car on your lot (year-end). Dealers who follow him see what working with Copart Dealer Services is like; the culture comes through in who he tags.",
       "built": [
-        "Six story posts in Leo's voice with the six questions that fill them, draft (Oct 30, third pass)"
+        "Six posts with photo and tag plans, draft (Oct 30, fourth pass)"
       ],
       "links": [
         {
@@ -796,10 +796,11 @@
       ],
       "blockers": [],
       "next_steps": [
-        "Ask Leo the six questions and send him the posts (lis-01)"
+        "Send Leo the posts; he fills the brackets, picks the photos and tags (lis-01)"
       ],
       "dependencies": [
-        "Make An Offer practice tool live before post 4 (mao)"
+        "Ken's year-end cutoff date for post 6",
+        "A dealer's OK to be named for post 3"
       ]
     }
   ],
@@ -3938,12 +3939,12 @@
     {
       "id": "lis-01",
       "project_id": "lis",
-      "title": "Ask Leo the six questions and send him the posts",
+      "title": "Send Leo the six posts",
       "status": "Next",
       "owner": "Me",
       "due": "2026-10-30",
       "priority": "high",
-      "notes": "Ten minutes. One answer fills the one bracket in each post. Post 4 waits until the practice tool is live.",
+      "notes": "He fills the brackets (his tool, teammates, a dealer who agrees to be named, the yard crew), picks the photos and tags everyone named. Post 6 needs Ken's year-end date.",
       "created": "2026-10-29",
       "updated": "2026-10-30"
     }

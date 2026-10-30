@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-10-30, fourth pass
+- Source: Chase: rework all six for engagement (photos, tags, hooks, questions); the deli is where Leo worked, not downstairs from Copart
+- Changed: project lis summary, built, next steps and dependencies; lis-01 notes
+
 ## 2026-10-30, third pass
 - Source: Chase: still bad, too salesy and recycled his old posts
 - Changed: project lis summary redone (stories only, nothing he has posted); lis-01 now "Ask Leo the six questions and send him the posts"
