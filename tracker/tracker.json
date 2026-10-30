@@ -780,9 +780,9 @@
       "name": "Leo's LinkedIn posts",
       "category": "Marketing Efforts",
       "status": "Next",
-      "summary": "Six LinkedIn posts drafted in Leo's own voice for him to make his own and post one a week. Leo is a Senior Account Rep on the Copart Dealer Services team who has started posting more. Three posts are for the dealers who follow him, to sell more cars with Copart Dealer Services (what we do, what happens after a dealer says yes, day 60 on the lot). Three are about the team and the culture at Copart (from the deli downstairs, building tools for the team, three things six years taught him). Plus post 3 in Spanish. Nothing negative about Copart, only facts Leo has already made public or recorded himself.",
+      "summary": "Six LinkedIn posts drafted in Leo's voice for him to make his own and post one a week. Leo is a Senior Account Rep on the Copart Dealer Services team who has started posting more. The posts are stories and thank-yous, not pitches, and none repeats something he has already posted: the title that got stuck, the first tool he built for the team, his languages, going back to the Make An Offer team with the practice tool, the seller who wasn't a dealer, the yard crew a seller never meets. Dealers who follow him learn what working with Copart Dealer Services is like from the work; the culture comes through in who he thanks. Each post has one slot for his own example, filled by six questions at the top of the doc.",
       "built": [
-        "Six post drafts in Leo's voice plus a Spanish extra, draft (Oct 30)"
+        "Six story posts in Leo's voice with the six questions that fill them, draft (Oct 30, third pass)"
       ],
       "links": [
         {
@@ -796,10 +796,10 @@
       ],
       "blockers": [],
       "next_steps": [
-        "Send Leo the posts (lis-01)"
+        "Ask Leo the six questions and send him the posts (lis-01)"
       ],
       "dependencies": [
-        "Ken's year-end cutoff date for post 5"
+        "Make An Offer practice tool live before post 4 (mao)"
       ]
     }
   ],
@@ -3938,12 +3938,12 @@
     {
       "id": "lis-01",
       "project_id": "lis",
-      "title": "Send Leo the six posts",
+      "title": "Ask Leo the six questions and send him the posts",
       "status": "Next",
       "owner": "Me",
       "due": "2026-10-30",
       "priority": "high",
-      "notes": "He makes them his own. The brackets (his tools in post 4, the year-end date in post 5) are the only fill-ins.",
+      "notes": "Ten minutes. One answer fills the one bracket in each post. Post 4 waits until the practice tool is live.",
       "created": "2026-10-29",
       "updated": "2026-10-30"
     }

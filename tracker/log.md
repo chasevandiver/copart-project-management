@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-10-30, third pass
+- Source: Chase: still bad, too salesy and recycled his old posts
+- Changed: project lis summary redone (stories only, nothing he has posted); lis-01 now "Ask Leo the six questions and send him the posts"
+
 ## 2026-10-30
 - Source: Chase: the Leo plan was wrong, he wants posts in Leo's voice to hand him, for dealers and Copart culture, nothing about reviews or measurement
 - Changed: project lis renamed "Leo's LinkedIn posts", summary and next steps redone; lis-01 now "Send Leo the six posts"
