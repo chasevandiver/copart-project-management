@@ -2,6 +2,12 @@
 
 Newest entry first.
 
+## 2026-11-02, listening
+- Source: Chase picked the dealer listening digest as the marketing AI project to run now
+- Added: project listen "Dealer listening digest" (Marketing Efforts, under g-02); pull and first digest built in Copart Dealer Digital
+- Added: listen-01 "Review the first listening digest" (Me, due 2026-11-03), listen-02 manual notes (Me, weekly from 2026-11-09), listen-03 run and write the digest (Claude Code, weekly from 2026-11-09), listen-04 YouTube channels and Reddit API (Me, backlog)
+- Changed: agents summary (A2 listening now runs as listen)
+
 ## 2026-11-02
 - Source: Chase: on hold with Marketing, Ken says do whatever; run the inactive win-back in Copilot this week, add a new dealer tag to the Lead Tracker, AEO rerun waits for the website, create the one-pager
 - Changed: wb Next -> In Progress; summary, next steps and dependencies redone around the Copilot build

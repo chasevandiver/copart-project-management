@@ -37,10 +37,11 @@
         "audit",
         "mkt",
         "vid",
-        "lis"
+        "lis",
+        "listen"
       ],
       "created": "2026-09-29",
-      "updated": "2026-10-29"
+      "updated": "2026-11-02"
     },
     {
       "id": "g-03",
@@ -577,7 +578,7 @@
       "name": "Agentic Workflow",
       "category": "AI Tools",
       "status": "Next",
-      "summary": "The agents in the sales flow (board, Oct 16): A1 Dealer profile pulls info from the dealer's site; A2 AEO and dealer listening; A3 pre-call and follow-up drafter; A4 dormant dealer activation. They all loop with each other and feed one agent pipeline into the Lead Tracker, which breaks the dealer map into segments and leads by team. The wider agent map (n-30) covers lead building, inbound, office sales, field and manager agents. Built through Work Claude, Copilot Studio and Power Automate. Ranked on hours saved, leads and meetings, ease and risk. Every agent output is a draft a person approves. The Copilot tools for meetings and the Teams agent are their own projects (mm, cdsai).",
+      "summary": "The agents in the sales flow (board, Oct 16): A1 Dealer profile pulls info from the dealer's site; A2 AEO and dealer listening; A3 pre-call and follow-up drafter; A4 dormant dealer activation. They all loop with each other and feed one agent pipeline into the Lead Tracker, which breaks the dealer map into segments and leads by team. The wider agent map (n-30) covers lead building, inbound, office sales, field and manager agents. Built through Work Claude, Copilot Studio and Power Automate. Ranked on hours saved, leads and meetings, ease and risk. Every agent output is a draft a person approves. The Copilot tools for meetings and the Teams agent are their own projects (mm, cdsai). Nov 2: A2's dealer listening half now runs as its own project (listen).",
       "built": [
         "First draft agent map (n-30)",
         "Agent set on the board (Oct 16): A1 Dealer profile, A2 AEO and dealer listening, A3 pre-call and follow-up drafter, A4 dormant dealer activation, all looping into one pipeline",
@@ -803,6 +804,34 @@
       "dependencies": [
         "Ken's year-end cutoff date for post 6",
         "A dealer's OK to be named for post 3"
+      ]
+    },
+    {
+      "id": "listen",
+      "name": "Dealer listening digest",
+      "category": "Marketing Efforts",
+      "status": "In Progress",
+      "summary": "Weekly one-page digest of what dealers are reading and saying about selling wholesale, Copart and the competitors, from public sources. Picked by Chase on Nov 2 as the marketing AI project to run while Marketing is on hold: it needs no channel, feeds the scripts and the win-back openers with this week's objections, and gives Ken a Monday read on the market. Public RSS feeds and dealer podcasts are pulled by script (robots.txt checked, one request every 3 seconds); Reddit, Facebook groups, LinkedIn and the Copart GO reviews are read by hand and pasted in, because they block bots or need a login. The A7 prompt writes the digest from the pull; Chase reviews before it goes to Ken. Lives in Copart Dealer Digital, listening/ and digests/.",
+      "built": [
+        "Listening pull (Nov 2): listening/run_listening.py and sources.json, 12 feeds (The Independent Dealer Podcast, Car Dealership Guy, Auto Remarketing, CBT News, AutoSuccess, Repairer Driven News, NIADA, Auto Dealer Today, Cox Automotive, three Bing News searches), a skip list with reasons, a manual notes folder",
+        "First digest, draft (Nov 2): tax season prep on the Independent Dealer Podcast, Lotlinx on rising days supply and a $4,000 list-to-sale gap, CarMax Auctions sponsoring every Car Dealership Guy episode, one Copart mention (a rebuild video), post ideas and two lines for reps",
+        "A7 prompt rewritten to work from the pull only (Nov 2)"
+      ],
+      "links": [
+        {
+          "label": "Listening pipeline and first digest",
+          "where": "Copart Dealer Digital repo, listening/README.md and digests/2026-11-02.md"
+        }
+      ],
+      "blockers": [],
+      "next_steps": [
+        "Read the first digest; send it to Ken and the managers if it holds up (listen-01)",
+        "Each Monday: paste notes from Reddit, the Copart GO reviews and any groups, run the pull, write the digest (listen-02, listen-03)",
+        "Pick the YouTube dealer channels to add, and decide whether to register a Reddit API app (listen-04)",
+        "After three digests: count objections added to scripts and post ideas used; stop if nobody acts on them"
+      ],
+      "dependencies": [
+        "Reps' LinkedIn posts and the scripts as the places the digest's output lands"
       ]
     }
   ],
@@ -3991,6 +4020,56 @@
       "due": "2026-11-06",
       "priority": "normal",
       "notes": "Nov 2: newly licensed dealers are not biting on Copart; they are dealing with a lot of new things at once. Tag them so reps can tell them from cold prospects, time the follow-up later (for example 60 to 90 days after the license date) and so the Thursday update can report them as a group. The TxDMV new-license feed already marks them in the leads data.",
+      "created": "2026-11-02",
+      "updated": "2026-11-02"
+    },
+    {
+      "id": "listen-01",
+      "title": "Review the first listening digest and send it to Ken if it holds up",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-11-03",
+      "priority": "high",
+      "notes": "digests/2026-11-02.md in Copart Dealer Digital. Thin first week by design: no Reddit or review notes yet. Cut what is wrong before sending.",
+      "project_id": "listen",
+      "created": "2026-11-02",
+      "updated": "2026-11-02"
+    },
+    {
+      "id": "listen-02",
+      "title": "Paste manual listening notes from Reddit, the Copart GO reviews and groups",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-11-09",
+      "priority": "normal",
+      "recurring": "weekly",
+      "notes": "Five minutes in a browser before the run: r/Copartonline, r/askcarsales, the App Store reviews, Facebook groups, LinkedIn. Into listening/manual/<date>.md with links and dates. These sites block bots or need a login, so nothing is fetched from them.",
+      "project_id": "listen",
+      "created": "2026-11-02",
+      "updated": "2026-11-02"
+    },
+    {
+      "id": "listen-03",
+      "title": "Run the listening pull and write the weekly digest",
+      "status": "Next",
+      "owner": "Claude Code",
+      "due": "2026-11-09",
+      "priority": "normal",
+      "recurring": "weekly",
+      "notes": "cd listening && python run_listening.py, then the A7 prompt on runs/<date>/items.md, saved as digests/<date>.md with the draft label. Commit the run folder with it.",
+      "project_id": "listen",
+      "created": "2026-11-02",
+      "updated": "2026-11-02"
+    },
+    {
+      "id": "listen-04",
+      "title": "Pick YouTube dealer channels to add and decide on a Reddit API app",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "low",
+      "notes": "YouTube channel feeds are allowed and work; need channel IDs. Reddit's official API (free registered app, key in .env) is the only allowed automated path; otherwise it stays manual.",
+      "project_id": "listen",
       "created": "2026-11-02",
       "updated": "2026-11-02"
     }
