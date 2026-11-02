@@ -395,7 +395,7 @@
       "name": "Cars & Cocktails Event in Boston",
       "category": "Campaigns",
       "status": "Done",
-      "summary": "Email going out on the event in Boston for Dealers. On the current flyer get something like a pre-event survey on any questions they would want to ask at the event, when they last worked with Copart if so - any other survey questions to gather information and materials from an event perspective since most of cds team will be there.",
+      "summary": "Email going out on the event in Boston for Dealers. On the current flyer get something like a pre-event survey on any questions they would want to ask at the event, when they last worked with Copart if so - any other survey questions to gather information and materials from an event perspective since most of cds team will be there. Nov 2: done. Chase ran the pre-event survey; Marketing has the results.",
       "built": [],
       "links": [],
       "blockers": [],
@@ -653,12 +653,12 @@
         "Auto schedule meeting from a meeting transcript (Oct 15)",
         "Everything from a meeting goes into a knowledge base (Oct 15)",
         "PLAUD autoflow to email",
-        "Plaud into Outlook, action items and a weekly recap: built and ready to go (Oct 26, mm-02, mm-03)"
+        "Plaud into Outlook, action items and a weekly recap: built and ready to go (Oct 26, mm-02, mm-03)",
+        "Plaud and weekly recap flow switched on (by Nov 2). No use case has come through it yet"
       ],
       "links": [],
       "blockers": [],
       "next_steps": [
-        "Turn on the Plaud and weekly recap flow",
         "Turn the meeting knowledge base into a Teams chat for updates, pre-call briefs and follow-ups (agents-04)",
         "Set up the memory bank: call transcripts plus a SharePoint site for meetings (mm-01)"
       ],
@@ -4224,11 +4224,11 @@
     {
       "id": "agents-07",
       "title": "Build the dealer profile agent in Copilot Studio and test it on 10 DFW dealers",
-      "status": "Next",
+      "status": "In Progress",
       "owner": "Me",
       "due": "2026-11-09",
       "priority": "high",
-      "notes": "Spec: docs/copilot-dealer-profile-agent-spec.md in Copart Dealer Digital. Uses the Microsoft 365 Copilot web grounding, no API cost. Compare with data/dealers.json; target website right on 9 of 10, no invented facts.",
+      "notes": "Spec: docs/copilot-dealer-profile-agent-spec.md in Copart Dealer Digital. Uses the Microsoft 365 Copilot web grounding, no API cost. Compare with data/dealers.json; target website right on 9 of 10, no invented facts. Nov 2: started. Spec updated with the no-website path (most Texas independents have none; the agent reads aggregator pages and says \"nothing public\" when that is the truth), a labeled output the flow can parse, and a 15-dealer test set.",
       "project_id": "agents",
       "created": "2026-11-02",
       "updated": "2026-11-02"

@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-11-02, profile agent start
+- Source: Chase: Cars and Cocktails is done (Marketing has the results), Plaud and the weekly recap are on with no use case yet; start the dealer profile agent
+- Changed: cceib -> Done and its open tasks closed; mm built and next steps; agents-07 Next -> In Progress (spec updated with the no-site path and a 15-dealer test set)
+
 ## 2026-11-02, win-back send-anytime
 - Source: Chase: he is not the one contacting dealers; rework the Marketing email campaign to inactives so it can go out whenever, since it may miss the year-end push
 - Changed: wb summary, built, links (new doc "Inactive seller win-back: send-anytime email campaign") and next steps
