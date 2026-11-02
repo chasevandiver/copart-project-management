@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-11-02, demand lab
+- Source: Chase: write the three emails and pull the segment lists; reps are slow on the Lead Tracker and he needs marketing now
+- Added: project dlab "Demand lab" (Campaigns, under g-03): Chase's one-to-one dealer emails, two public-data segments, weekly test plan
+- Added: dlab-01 version A to the 21 aged-unit dealers (Me, due 2026-11-04), dlab-02 version C test (Me, due 2026-11-06), dlab-03 expiring-license segment into the Lead Tracker (Work Claude, due 2026-11-06), dlab-04 Ken's Monday LinkedIn post (Me, weekly from 2026-11-03), dlab-05 podcast pitch (Me, due 2026-11-07)
+
 ## 2026-11-02, agents
 - Source: Chase: next steps for the agents; the follow-up drafter already exists as the Lead Tracker templates
 - Changed: listen renamed "Dealer listening and content agents"; content agent added; listen-03 is now Chase's Monday review, the run itself is a scheduled Claude Code session (Mondays 6:41 am Central)

@@ -57,10 +57,11 @@
         "cceib",
         "ww",
         "mkt",
-        "pts"
+        "pts",
+        "dlab"
       ],
       "created": "2026-10-08",
-      "updated": "2026-10-22"
+      "updated": "2026-11-02"
     },
     {
       "id": "g-04",
@@ -878,6 +879,40 @@
       "dependencies": [
         "Seller-level sales rows and the member list on the work setup (arrived Oct 16, w-08)",
         "Do-not-contact and win-back lists for the exclusions"
+      ]
+    },
+    {
+      "id": "dlab",
+      "name": "Demand lab",
+      "category": "Campaigns",
+      "status": "In Progress",
+      "summary": "Chase runs marketing to dealers himself while reps ramp on the Lead Tracker: twenty one-to-one emails a day from his own Outlook, one message, one question (how many units sitting over 60 days), measured weekly. Replies land in the Lead Tracker as hot leads tagged demand-lab and go to the territory rep, which is also how reps learn the tracker has something in it. Two segments from public data: the 21 DFW dealers with aged-unit reports (their own VINs in the email) and Texas licenses expiring by Dec 31 and not renewed (416 in territory, 1,915 statewide; a call segment for reps, no contact details). Three email versions and a one-variable-a-week test plan in Copart Dealer Digital, docs/demand-lab-emails.md. Copart status checked on the work setup before every send so active sellers are never cold-pitched. Ken's LinkedIn post each Monday and the podcast pitch ride alongside.",
+      "built": [
+        "Three emails (aged VINs, renewal season, one question), follow-up cadence, test plan and the log template (Nov 2)",
+        "Segment lists from public data: 21 DFW aged-unit dealers with phone, site and site-published email; licenses expiring by Dec 31 in territory and statewide (Nov 2)"
+      ],
+      "links": [
+        {
+          "label": "Demand lab emails and test plan",
+          "where": "Copart Dealer Digital repo, docs/demand-lab-emails.md"
+        },
+        {
+          "label": "Segment lists",
+          "where": "Copart Dealer Digital repo, data/demand-lab/2026-11-02/"
+        }
+      ],
+      "blockers": [],
+      "next_steps": [
+        "Check the 21 segment A dealers' Copart status on the work setup, then send version A to the ones with a site email and call the rest (dlab-01)",
+        "Send version C to 20 dealers with a site, same week, to test naming their own cars (dlab-02)",
+        "Load segment B into the Lead Tracker as an expiring-license segment with the expiry date on the record (dlab-03)",
+        "Ken's Monday LinkedIn post from the content drafts (dlab-04)",
+        "Send the podcast guest pitch to The Independent Dealer Podcast (dlab-05)",
+        "Thursday: sent, reply rate by version, leads handed, VINs, cars"
+      ],
+      "dependencies": [
+        "The assignment deadline from Ken (q-30) for the [assign by] line",
+        "Legal on license-record emails before segment B is emailed (cdd-02)"
       ]
     }
   ],
@@ -4214,6 +4249,67 @@
       "priority": "normal",
       "notes": "Gap list from aeo/runs/2026-09-27/summary.md. Engines cite LinkedIn more than copart.com today, so the article moves the number before the page remake lands.",
       "project_id": "agents",
+      "created": "2026-11-02",
+      "updated": "2026-11-02"
+    },
+    {
+      "id": "dlab-01",
+      "title": "Send version A to the 21 aged-unit dealers after the Copart status check",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-11-04",
+      "priority": "high",
+      "notes": "Email the ones with a site-published address, call the rest. Attach their report from reports/aged-units/2026-11-02/. Log every send in tracking/demand-lab.csv and tag demand-lab in the Lead Tracker.",
+      "project_id": "dlab",
+      "created": "2026-11-02",
+      "updated": "2026-11-02"
+    },
+    {
+      "id": "dlab-02",
+      "title": "Send version C to 20 dealers with a site to test naming their own cars",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-11-06",
+      "priority": "normal",
+      "notes": "Week 1 test from docs/demand-lab-emails.md. Same question, no VINs. Compare reply rates Thursday.",
+      "project_id": "dlab",
+      "created": "2026-11-02",
+      "updated": "2026-11-02"
+    },
+    {
+      "id": "dlab-03",
+      "title": "Load the expiring-license segment into the Lead Tracker for reps to call",
+      "status": "Next",
+      "owner": "Work Claude",
+      "due": "2026-11-06",
+      "priority": "normal",
+      "notes": "data/demand-lab/2026-11-02/segment-b-expiring-texas.csv. Expiry date and reason on the record; pending-renewal past expiry first. Reps use version B as the call script.",
+      "project_id": "dlab",
+      "created": "2026-11-02",
+      "updated": "2026-11-02"
+    },
+    {
+      "id": "dlab-04",
+      "title": "Ken's Monday LinkedIn post from the content drafts",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-11-03",
+      "priority": "high",
+      "recurring": "weekly",
+      "notes": "content/<date>.md draft 1 each week. Ninety seconds of Ken's time. Dealers who comment or message go in the Lead Tracker tagged content.",
+      "project_id": "dlab",
+      "created": "2026-11-02",
+      "updated": "2026-11-02"
+    },
+    {
+      "id": "dlab-05",
+      "title": "Send the guest pitch to The Independent Dealer Podcast",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-11-07",
+      "priority": "normal",
+      "notes": "Draft in docs/audit/asks.md (Copart Dealer Digital). Ask of Ken is thirty minutes on a microphone in December; get his yes first.",
+      "project_id": "dlab",
       "created": "2026-11-02",
       "updated": "2026-11-02"
     }
