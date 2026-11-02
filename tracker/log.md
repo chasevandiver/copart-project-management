@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-11-02, phase 2 idea
+- Source: Chase: the website lookup needs Ken's approval and a card, park it as a Lead Tracker phase 2 idea to pitch
+- Added: udm-29 idea "Pitch Lead Tracker phase 2 to Ken: website lookup for every licensed dealer, then weekly inventory snapshots" (Me, backlog, with the cost numbers)
+
 ## 2026-11-02, second snapshot
 - Source: Chase needs a result this week while Lead Tracker usage builds; Claude Code took the second DFW inventory snapshot
 - Changed: cdd-03 Waiting -> Done (35 dealers, 2,691 units, aged signal on); cdd built and links

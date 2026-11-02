@@ -4095,6 +4095,19 @@
       "notes": "reports/aged-units/2026-11-02/README.md ranks them. Copart status check on the work setup only. Active sellers get the full list (\"you sent us 2, you have 39 sitting\"); prospects and inactives get the call with their aged count. Log each call in the Lead Tracker with the campaign tag so Thursday shows cars assigned from it.",
       "created": "2026-11-02",
       "updated": "2026-11-02"
+    },
+    {
+      "id": "udm-29",
+      "project_id": "udm",
+      "title": "Pitch Lead Tracker phase 2 to Ken: website lookup for every licensed dealer, then weekly inventory snapshots",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "idea": true,
+      "notes": "Parked Nov 2: needs Ken's approval and a card. The ask: one Google Places lookup per dealer to find the website (Text Search Enterprise tier, $35 per 1,000, 1,000 free a month; about $400 once for all 12,425 Texas independents, or about $10 a month if only the dealers reps work that week are looked up). Then the free weekly snapshot script reads each site's inventory and produces per-dealer aged unit reports, the way the Nov 2 DFW run did for 21 dealers. Script is ready: data/find_websites.py in Copart Dealer Digital. Pitch it with the DFW aged-report results in hand, not before.",
+      "created": "2026-11-02",
+      "updated": "2026-11-02"
     }
   ],
   "waiting_on": [
