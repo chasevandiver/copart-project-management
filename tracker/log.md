@@ -5,7 +5,7 @@ Newest entry first.
 ## 2026-11-02, second snapshot
 - Source: Chase needs a result this week while Lead Tracker usage builds; Claude Code took the second DFW inventory snapshot
 - Changed: cdd-03 Waiting -> Done (35 dealers, 2,691 units, aged signal on); cdd built and links
-- Added: cdd-18 "Match the 21 aged-unit dealers to Copart status and hand the hot ones to reps" (Me, due 2026-11-04)
+- Added: cdd-21 "Match the 21 aged-unit dealers to Copart status and hand the hot ones to reps" (Me, due 2026-11-04)
 
 ## 2026-11-02, win-back spec
 - Source: Chase: do the win-back Copilot build next
