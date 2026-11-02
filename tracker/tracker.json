@@ -589,15 +589,21 @@
       "name": "Agentic Workflow",
       "category": "AI Tools",
       "status": "Next",
-      "summary": "The agents in the sales flow (board, Oct 16): A1 Dealer profile pulls info from the dealer's site; A2 AEO and dealer listening; A3 pre-call and follow-up drafter; A4 dormant dealer activation. They all loop with each other and feed one agent pipeline into the Lead Tracker, which breaks the dealer map into segments and leads by team. The wider agent map (n-30) covers lead building, inbound, office sales, field and manager agents. Built through Work Claude, Copilot Studio and Power Automate. Ranked on hours saved, leads and meetings, ease and risk. Every agent output is a draft a person approves. The Copilot tools for meetings and the Teams agent are their own projects (mm, cdsai). Nov 2: A2's dealer listening half now runs as its own project (listen).",
+      "summary": "The agents in the sales flow (board, Oct 16): A1 Dealer profile pulls info from the dealer's site; A2 AEO and dealer listening; A3 pre-call and follow-up drafter; A4 dormant dealer activation. They all loop with each other and feed one agent pipeline into the Lead Tracker, which breaks the dealer map into segments and leads by team. The wider agent map (n-30) covers lead building, inbound, office sales, field and manager agents. Built through Work Claude, Copilot Studio and Power Automate. Ranked on hours saved, leads and meetings, ease and risk. Every agent output is a draft a person approves. The Copilot tools for meetings and the Teams agent are their own projects (mm, cdsai). Nov 2: A2's dealer listening half now runs as its own project (listen). Nov 2: the agent desk is the thing Chase builds alone while the Lead Tracker fills: a Teams channel or Loop page where every agent posts on a schedule and Chase edits. Live or specified: A7 listening and A8 content (scheduled Monday loop, project listen), A5 follow-up drafter (already the Lead Tracker email templates), A1 dealer profile (Copilot Studio spec, docs/copilot-dealer-profile-agent-spec.md in Copart Dealer Digital). Next: AEO answers, proof (testimonial asks from public reviews), events.",
       "built": [
         "First draft agent map (n-30)",
         "Agent set on the board (Oct 16): A1 Dealer profile, A2 AEO and dealer listening, A3 pre-call and follow-up drafter, A4 dormant dealer activation, all looping into one pipeline",
-        "AI use survey for the whole Copart Dealer Services team, covering AI and Leo's tools (Oct 15, waiting on approval to send)"
+        "AI use survey for the whole Copart Dealer Services team, covering AI and Leo's tools (Oct 15, waiting on approval to send)",
+        "Agent desk plan (Nov 2): listening and content on a weekly schedule, the dealer profile agent specified for Copilot Studio with web grounding (no per-dealer cost), follow-up drafter counted as done via the Lead Tracker templates"
       ],
       "links": [],
       "blockers": [],
       "next_steps": [
+        "Set up the agent desk: a Teams channel or Loop page where each agent's weekly output lands and Chase marks what shipped (agents-06)",
+        "Build the dealer profile agent in Copilot Studio from the spec; test on 10 DFW dealers against data/dealers.json (agents-07)",
+        "Wire the profile agent to new licenses in the Lead Tracker through Power Automate (agents-08)",
+        "AEO answers agent: one gap question a week as a page draft for Tech and a LinkedIn article for Ken (agents-09)",
+        "Proof agent: watch public reviews for dealer praise, draft the testimonial ask (later)",
         "Send the AI use survey once it is approved (agents-05)",
         "Gather the hours saved and leads and meetings inputs (agents-03, q-20 to q-24)",
         "Meet Leo to put every tool on one dealer record (hub-04)",
@@ -819,14 +825,15 @@
     },
     {
       "id": "listen",
-      "name": "Dealer listening digest",
+      "name": "Dealer listening and content agents",
       "category": "Marketing Efforts",
       "status": "In Progress",
-      "summary": "Weekly one-page digest of what dealers are reading and saying about selling wholesale, Copart and the competitors, from public sources. Picked by Chase on Nov 2 as the marketing AI project to run while Marketing is on hold: it needs no channel, feeds the scripts and the win-back openers with this week's objections, and gives Ken a Monday read on the market. Public RSS feeds and dealer podcasts are pulled by script (robots.txt checked, one request every 3 seconds); Reddit, Facebook groups, LinkedIn and the Copart GO reviews are read by hand and pasted in, because they block bots or need a login. The A7 prompt writes the digest from the pull; Chase reviews before it goes to Ken. Lives in Copart Dealer Digital, listening/ and digests/.",
+      "summary": "Weekly one-page digest of what dealers are reading and saying about selling wholesale, Copart and the competitors, from public sources. Picked by Chase on Nov 2 as the marketing AI project to run while Marketing is on hold: it needs no channel, feeds the scripts and the win-back openers with this week's objections, and gives Ken a Monday read on the market. Public RSS feeds and dealer podcasts are pulled by script (robots.txt checked, one request every 3 seconds); Reddit, Facebook groups, LinkedIn and the Copart GO reviews are read by hand and pasted in, because they block bots or need a login. The A7 prompt writes the digest from the pull; Chase reviews before it goes to Ken. Lives in Copart Dealer Digital, listening/ and digests/. Nov 2 later: the content agent (A8) runs in the same Monday loop and writes content/<date>.md: five drafts for Ken's and reps' own accounts, the rep templates and the video cards, each with the visual and what needs approval. The loop is a scheduled Claude Code session, Mondays 6:41 am Central, with a push to Chase when done.",
       "built": [
         "Listening pull (Nov 2): listening/run_listening.py and sources.json, 12 feeds (The Independent Dealer Podcast, Car Dealership Guy, Auto Remarketing, CBT News, AutoSuccess, Repairer Driven News, NIADA, Auto Dealer Today, Cox Automotive, three Bing News searches), a skip list with reasons, a manual notes folder",
         "First digest, draft (Nov 2): tax season prep on the Independent Dealer Podcast, Lotlinx on rising days supply and a $4,000 list-to-sale gap, CarMax Auctions sponsoring every Car Dealership Guy episode, one Copart mention (a rebuild video), post ideas and two lines for reps",
-        "A7 prompt rewritten to work from the pull only (Nov 2)"
+        "A7 prompt rewritten to work from the pull only (Nov 2)",
+        "Content agent (Nov 2): first five drafts in content/2026-11-02.md (Ken on tax season, a rep on the $4,000 list-to-sale gap, a rep on the short tow, a template opener, a video card). The Monday loop is scheduled and runs on its own"
       ],
       "links": [
         {
@@ -836,6 +843,7 @@
       ],
       "blockers": [],
       "next_steps": [
+        "Each Monday: review the digest and the five drafts the scheduled run produced, send the digest to the managers, hand one draft to its owner (listen-03)",
         "Read the first digest; send it to Ken and the managers if it holds up (listen-01)",
         "Each Monday: paste notes from Reddit, the Copart GO reviews and any groups, run the pull, write the digest (listen-02, listen-03)",
         "Pick the YouTube dealer channels to add, and decide whether to register a Reddit API app (listen-04)",
@@ -4089,13 +4097,13 @@
     },
     {
       "id": "listen-03",
-      "title": "Run the listening pull and write the weekly digest",
+      "title": "Weekly: review the listening digest and content drafts the Monday run produced, merge the branch",
       "status": "Next",
-      "owner": "Claude Code",
+      "owner": "Me",
       "due": "2026-11-09",
       "priority": "normal",
       "recurring": "weekly",
-      "notes": "cd listening && python run_listening.py, then the A7 prompt on runs/<date>/items.md, saved as digests/<date>.md with the draft label. Commit the run folder with it.",
+      "notes": "cd listening && python run_listening.py, then the A7 prompt on runs/<date>/items.md, saved as digests/<date>.md with the draft label. Commit the run folder with it. Nov 2: scheduled. A Claude Code session fires every Monday 6:41 am Central (scheduled task \"Weekly CDS listening and content agents\"), runs the pull, writes the digest and the content drafts, pushes to its own branch and sends Chase a push. Chase reviews and merges. Turn it off from the claude.ai scheduled tasks list.",
       "project_id": "listen",
       "created": "2026-11-02",
       "updated": "2026-11-02"
@@ -4158,6 +4166,54 @@
       "priority": "high",
       "notes": "One manager first. Ask Friday which names they called and which turned into a car. Source tag monday-list in the Lead Tracker.",
       "project_id": "mml",
+      "created": "2026-11-02",
+      "updated": "2026-11-02"
+    },
+    {
+      "id": "agents-06",
+      "title": "Set up the agent desk: one Teams channel or Loop page where every agent's weekly output lands",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-11-06",
+      "priority": "high",
+      "notes": "The visible thing: agents that ran, drafts produced, what shipped, what it touched (posts live, profiles written, cars with a source tag). The page to bring Ken in two weeks.",
+      "project_id": "agents",
+      "created": "2026-11-02",
+      "updated": "2026-11-02"
+    },
+    {
+      "id": "agents-07",
+      "title": "Build the dealer profile agent in Copilot Studio and test it on 10 DFW dealers",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-11-09",
+      "priority": "high",
+      "notes": "Spec: docs/copilot-dealer-profile-agent-spec.md in Copart Dealer Digital. Uses the Microsoft 365 Copilot web grounding, no API cost. Compare with data/dealers.json; target website right on 9 of 10, no invented facts.",
+      "project_id": "agents",
+      "created": "2026-11-02",
+      "updated": "2026-11-02"
+    },
+    {
+      "id": "agents-08",
+      "title": "Run the profile agent on every new license that lands in the Lead Tracker",
+      "status": "Backlog",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "normal",
+      "notes": "Power Automate flow after agents-07 passes. 50 to 100 a week. Writes the profile fields and sources on the record.",
+      "project_id": "agents",
+      "created": "2026-11-02",
+      "updated": "2026-11-02"
+    },
+    {
+      "id": "agents-09",
+      "title": "AEO answers agent: one gap question a week, page draft for Tech and a LinkedIn article for Ken",
+      "status": "Backlog",
+      "owner": "Claude Code",
+      "due": null,
+      "priority": "normal",
+      "notes": "Gap list from aeo/runs/2026-09-27/summary.md. Engines cite LinkedIn more than copart.com today, so the article moves the number before the page remake lands.",
+      "project_id": "agents",
       "created": "2026-11-02",
       "updated": "2026-11-02"
     }

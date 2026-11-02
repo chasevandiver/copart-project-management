@@ -2,6 +2,12 @@
 
 Newest entry first.
 
+## 2026-11-02, agents
+- Source: Chase: next steps for the agents; the follow-up drafter already exists as the Lead Tracker templates
+- Changed: listen renamed "Dealer listening and content agents"; content agent added; listen-03 is now Chase's Monday review, the run itself is a scheduled Claude Code session (Mondays 6:41 am Central)
+- Changed: agents summary, built and next steps (agent desk plan)
+- Added: agents-06 "Set up the agent desk" (Me, due 2026-11-06), agents-07 "Build the dealer profile agent in Copilot Studio" (Me, due 2026-11-09), agents-08 profile agent on new licenses (Work Claude, backlog), agents-09 AEO answers agent (Claude Code, backlog)
+
 ## 2026-11-02, Monday lists
 - Source: Chase: write the definitions for the three manager lists
 - Added: project mml "Manager Monday lists" (AI Tools, under g-01); definitions in Copart Dealer Digital docs/manager-monday-lists-spec.md
