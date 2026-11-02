@@ -173,7 +173,8 @@
         "Lead tables rebuilt around facts: the state's own license types (lines of business) replaced \"play\"; scores and tiers hidden on every Leads page (still calculated for checking against Copart Dealer Services results later); quick filters All, Car dealers, Wholesale, Specialty, plus Has phone and Has email; every column sorts, plus a Sort menu (distance, miles to Copart, newest license, first licensed, units sold, group size); region lists include wholesale-only dealers",
         "Fixed: two leads sharing a license number made rows jump or open in pairs",
         "Look and feel: lead maps on a light gray background, dots colored by type (wholesale gold, car dealers blue, other gray); dark mode across the site with an Auto, Light and Dark picker",
-        "Records: docs/decisions.md and the change log in docs/handoff-leads.md cover every change. Oct 1: 14 commits, 7 production deploys"
+        "Records: docs/decisions.md and the change log in docs/handoff-leads.md cover every change. Oct 1: 14 commits, 7 production deploys",
+        "Second DFW inventory snapshot (Nov 2): 35 dealers, 2,691 units, aged signal on. New data/aged_units.py writes one report per dealer of units listed 36+ days (21 dealers) for reps to call with"
       ],
       "links": [
         {
@@ -194,6 +195,10 @@
           "label": "All states page",
           "url": "https://dfw-dealer-digital.vercel.app",
           "where": "Leads > All states. Same password as the site, in Vercel project settings"
+        },
+        {
+          "label": "Aged unit reports, Nov 2",
+          "where": "Copart Dealer Digital repo, reports/aged-units/2026-11-02/README.md"
         }
       ],
       "blockers": [],
@@ -993,13 +998,14 @@
       "id": "cdd-03",
       "project_id": "cdd",
       "title": "Take the second DFW inventory snapshot",
-      "status": "Waiting",
+      "status": "Done",
       "owner": "Claude Code",
       "due": null,
       "priority": "urgent",
-      "notes": "On or after Oct 4. Turns on the \"aged inventory\" signal, the biggest seller-fit weight. Pin colors are relative until then. Oct 6: on hold. No second run until the prospecting spreadsheets arrive from marketing (gen-26). Marketing Plan (mkt): needed for aged-unit calls from Nov 10. Oct 16: the dealer lists arrived (w-08), so the hold is off. Run on or after Oct 20. Oct 21: hold until the website changes go through (Chase).",
+      "notes": "On or after Oct 4. Turns on the \"aged inventory\" signal, the biggest seller-fit weight. Pin colors are relative until then. Oct 6: on hold. No second run until the prospecting spreadsheets arrive from marketing (gen-26). Marketing Plan (mkt): needed for aged-unit calls from Nov 10. Oct 16: the dealer lists arrived (w-08), so the hold is off. Run on or after Oct 20. Oct 21: hold until the website changes go through (Chase). Nov 2: done. 35 dealers, 2,691 units, 36 days after the first. Aged signal on, 21 of 35 scored. Per-dealer aged unit reports in reports/aged-units/2026-11-02/ (Copart Dealer Digital): every unit still listed since Sep 27 with mileage, price and VIN. Top: Autos of Dallas 398 aged of 625 parsed, Gulliver 259 of 557, Callahan 90 of 132. Next: match the 21 to Copart status on the work setup and hand the hot ones to reps.",
       "created": "2026-09-29",
-      "updated": "2026-10-21"
+      "updated": "2026-11-02",
+      "completed": "2026-11-02"
     },
     {
       "id": "cdd-04",
@@ -4075,6 +4081,18 @@
       "priority": "low",
       "notes": "YouTube channel feeds are allowed and work; need channel IDs. Reddit's official API (free registered app, key in .env) is the only allowed automated path; otherwise it stays manual.",
       "project_id": "listen",
+      "created": "2026-11-02",
+      "updated": "2026-11-02"
+    },
+    {
+      "id": "cdd-18",
+      "project_id": "cdd",
+      "title": "Match the 21 aged-unit dealers to Copart status and hand the hot ones to reps",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-11-04",
+      "priority": "high",
+      "notes": "reports/aged-units/2026-11-02/README.md ranks them. Copart status check on the work setup only. Active sellers get the full list (\"you sent us 2, you have 39 sitting\"); prospects and inactives get the call with their aged count. Log each call in the Lead Tracker with the campaign tag so Thursday shows cars assigned from it.",
       "created": "2026-11-02",
       "updated": "2026-11-02"
     }
