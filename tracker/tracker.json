@@ -22,10 +22,11 @@
         "agents",
         "cdd",
         "hub",
-        "pm"
+        "pm",
+        "mml"
       ],
       "created": "2026-09-29",
-      "updated": "2026-10-16"
+      "updated": "2026-11-02"
     },
     {
       "id": "g-02",
@@ -842,6 +843,33 @@
       ],
       "dependencies": [
         "Reps' LinkedIn posts and the scripts as the places the digest's output lands"
+      ]
+    },
+    {
+      "id": "mml",
+      "name": "Manager Monday lists",
+      "category": "AI Tools",
+      "status": "In Progress",
+      "summary": "Three lists, one page per pod manager every Monday, built on the work setup from seller, sales and member data Chase is already cleared to use: slipping sellers (volume down by half, not yet inactive), one and done (sent one car, never a second), and buyers who never sold (members who buy and have never consigned). No rep workflow changes; the manager hands out the names. Picked Nov 2 as the thing Chase can build alone, with no approval, no card and no Marketing, while the Lead Tracker fills up. Definitions in Copart Dealer Digital, docs/manager-monday-lists-spec.md. Names and pages stay in Microsoft 365; the tracker holds counts only.",
+      "built": [
+        "Definitions for the three lists, the Monday page, the build steps, exclusions and measures (Nov 2)"
+      ],
+      "links": [
+        {
+          "label": "Manager Monday lists: definitions",
+          "where": "Copart Dealer Digital repo, docs/manager-monday-lists-spec.md"
+        }
+      ],
+      "blockers": [],
+      "next_steps": [
+        "Build the three lists in Copilot in Excel from the seller and member exports; check five names by hand (mml-01)",
+        "Send the first page to one pod manager, ask Friday which names they acted on (mml-02)",
+        "Tag cars assigned from the lists as monday-list in the Lead Tracker so Thursday counts them",
+        "After four Mondays, keep the lists that produce cars and drop the rest"
+      ],
+      "dependencies": [
+        "Seller-level sales rows and the member list on the work setup (arrived Oct 16, w-08)",
+        "Do-not-contact and win-back lists for the exclusions"
       ]
     }
   ],
@@ -4106,6 +4134,30 @@
       "priority": "normal",
       "idea": true,
       "notes": "Parked Nov 2: needs Ken's approval and a card. The ask: one Google Places lookup per dealer to find the website (Text Search Enterprise tier, $35 per 1,000, 1,000 free a month; about $400 once for all 12,425 Texas independents, or about $10 a month if only the dealers reps work that week are looked up). Then the free weekly snapshot script reads each site's inventory and produces per-dealer aged unit reports, the way the Nov 2 DFW run did for 21 dealers. Script is ready: data/find_websites.py in Copart Dealer Digital. Pitch it with the DFW aged-report results in hand, not before.",
+      "created": "2026-11-02",
+      "updated": "2026-11-02"
+    },
+    {
+      "id": "mml-01",
+      "title": "Build the three Monday lists in Copilot from the seller and member exports",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-11-05",
+      "priority": "high",
+      "notes": "Definitions in docs/manager-monday-lists-spec.md. Exclusions last. Check five names against Salesforce before trusting the run.",
+      "project_id": "mml",
+      "created": "2026-11-02",
+      "updated": "2026-11-02"
+    },
+    {
+      "id": "mml-02",
+      "title": "Send the first Monday page to one pod manager",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-11-09",
+      "priority": "high",
+      "notes": "One manager first. Ask Friday which names they called and which turned into a car. Source tag monday-list in the Lead Tracker.",
+      "project_id": "mml",
       "created": "2026-11-02",
       "updated": "2026-11-02"
     }

@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-11-02, Monday lists
+- Source: Chase: write the definitions for the three manager lists
+- Added: project mml "Manager Monday lists" (AI Tools, under g-01); definitions in Copart Dealer Digital docs/manager-monday-lists-spec.md
+- Added: mml-01 "Build the three Monday lists in Copilot" (Me, due 2026-11-05), mml-02 "Send the first Monday page to one pod manager" (Me, due 2026-11-09)
+
 ## 2026-11-02, phase 2 idea
 - Source: Chase: the website lookup needs Ken's approval and a card, park it as a Lead Tracker phase 2 idea to pitch
 - Added: udm-29 idea "Pitch Lead Tracker phase 2 to Ken: website lookup for every licensed dealer, then weekly inventory snapshots" (Me, backlog, with the cost numbers)
