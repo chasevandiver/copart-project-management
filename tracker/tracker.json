@@ -477,6 +477,7 @@
       ],
       "blockers": [],
       "next_steps": [
+        "Run the profile agent over the inactive seller list on the work setup, rank by units sitting past 90 days, hand each rep their top 10 inactives with the aged-unit opener (wb-17)",
         "Send Kyle the send-anytime brief and ask for the earliest Tuesday Creative can hit, December or January (wb-03)",
         "Ken: his name as sender, December or January for the first run, the holdout (wb-01 follow-up, q-26)",
         "Campaign tag with the month suffix (wb-06, Rama Manyam)",
@@ -835,7 +836,7 @@
       "name": "Dealer listening and content agents",
       "category": "Marketing Efforts",
       "status": "In Progress",
-      "summary": "Weekly one-page digest of what dealers are reading and saying about selling wholesale, Copart and the competitors, from public sources. Picked by Chase on Nov 2 as the marketing AI project to run while Marketing is on hold: it needs no channel, feeds the scripts and the win-back openers with this week's objections, and gives Ken a Monday read on the market. Public RSS feeds and dealer podcasts are pulled by script (robots.txt checked, one request every 3 seconds); Reddit, Facebook groups, LinkedIn and the Copart GO reviews are read by hand and pasted in, because they block bots or need a login. The A7 prompt writes the digest from the pull; Chase reviews before it goes to Ken. Lives in Copart Dealer Digital, listening/ and digests/. Nov 2 later: the content agent (A8) runs in the same Monday loop and writes content/<date>.md: five drafts for Ken's and reps' own accounts, the rep templates and the video cards, each with the visual and what needs approval. The loop is a scheduled Claude Code session, Mondays 6:41 am Central, with a push to Chase when done.",
+      "summary": "Weekly one-page digest of what dealers are reading and saying about selling wholesale, Copart and the competitors, from public sources. Picked by Chase on Nov 2 as the marketing AI project to run while Marketing is on hold: it needs no channel, feeds the scripts and the win-back openers with this week's objections, and gives Ken a Monday read on the market. Public RSS feeds and dealer podcasts are pulled by script (robots.txt checked, one request every 3 seconds); Reddit, Facebook groups, LinkedIn and the Copart GO reviews are read by hand and pasted in, because they block bots or need a login. The A7 prompt writes the digest from the pull; Chase reviews before it goes to Ken. Lives in Copart Dealer Digital, listening/ and digests/. Nov 2 later: the content agent (A8) runs in the same Monday loop and writes content/<date>.md: five drafts for Ken's and reps' own accounts, the rep templates and the video cards, each with the visual and what needs approval. The loop is a scheduled Claude Code session, Mondays 6:41 am Central, with a push to Chase when done. Nov 2 evening: the pull and the digest run on Chase's personal Claude today, in the prep repo. To count as Copart agents they move to the work setup: Power Automate's RSS connector feeds the 33 sources into a SharePoint list, and Microsoft 365 Copilot writes the digest and the drafts from it with the A7 and A8 prompts. Turn the personal schedule off after the work version has produced two digests.",
       "built": [
         "Listening pull (Nov 2): listening/run_listening.py and sources.json, 12 feeds (The Independent Dealer Podcast, Car Dealership Guy, Auto Remarketing, CBT News, AutoSuccess, Repairer Driven News, NIADA, Auto Dealer Today, Cox Automotive, three Bing News searches), a skip list with reasons, a manual notes folder",
         "First digest, draft (Nov 2): tax season prep on the Independent Dealer Podcast, Lotlinx on rising days supply and a $4,000 list-to-sale gap, CarMax Auctions sponsoring every Car Dealership Guy episode, one Copart mention (a rebuild video), post ideas and two lines for reps",
@@ -851,6 +852,7 @@
       ],
       "blockers": [],
       "next_steps": [
+        "Move the listening pull to Power Automate (RSS connector into a SharePoint list) and the digest to Microsoft 365 Copilot over that list (listen-05)",
         "Each Monday: review the digest and the five drafts the scheduled run produced, send the digest to the managers, hand one draft to its owner (listen-03)",
         "Chase reads by hand what the script cannot: Facebook dealer groups, Reddit, YouTube, LinkedIn, the Copart GO reviews; five minutes before each Monday run into listening/manual/<date>.md",
         "Read the first digest; send it to Ken and the managers if it holds up (listen-01)",
@@ -4343,6 +4345,30 @@
       "priority": "normal",
       "notes": "Ten remaining from the test set in docs/copilot-dealer-profile-agent-spec.md. Score website, units within 20 percent, nothing invented. Fix instructions, not outputs.",
       "project_id": "agents",
+      "created": "2026-11-02",
+      "updated": "2026-11-02"
+    },
+    {
+      "id": "listen-05",
+      "project_id": "listen",
+      "title": "Move the listening pull and digest to the work setup: Power Automate RSS into SharePoint, Copilot writes the digest",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-11-03",
+      "priority": "high",
+      "notes": "Flow: one RSS trigger per feed in listening/sources.json (Copart Dealer Digital), writing title, date, link and summary to a SharePoint list. Monday: Microsoft 365 Copilot over the list with prompts/A7-dealer-social-listening.md, then A8 for the drafts, posted in the Agent desk channel. Standard connector, no credits for the pull; the Copilot step is free under the license. Keep the personal Claude schedule until two digests have come from the work version, then turn it off.",
+      "created": "2026-11-02",
+      "updated": "2026-11-02"
+    },
+    {
+      "id": "wb-17",
+      "project_id": "wb",
+      "title": "Run the profile agent over the inactive seller list and hand each rep their top 10 inactives by aged units",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-11-06",
+      "priority": "high",
+      "notes": "The inactive lists arrived Oct 16 and stay on the work setup. Profile each inactive seller with the Dealer Profile agent (Work Claude for the batch, Copilot for the aged-unit row), rank by units past 90 days, and give each rep a list of ten with the opener: you used to send us cars, and you have N sitting since September. No new data, no rep behavior change, the rep gets a list. Replies and cars tagged win-back in the Lead Tracker.",
       "created": "2026-11-02",
       "updated": "2026-11-02"
     }
