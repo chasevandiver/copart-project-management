@@ -600,13 +600,14 @@
         "First draft agent map (n-30)",
         "Agent set on the board (Oct 16): A1 Dealer profile, A2 AEO and dealer listening, A3 pre-call and follow-up drafter, A4 dormant dealer activation, all looping into one pipeline",
         "AI use survey for the whole Copart Dealer Services team, covering AI and Leo's tools (Oct 15, waiting on approval to send)",
-        "Agent desk plan (Nov 2): listening and content on a weekly schedule, the dealer profile agent specified for Copilot Studio with web grounding (no per-dealer cost), follow-up drafter counted as done via the Lead Tracker templates"
+        "Agent desk plan (Nov 2): listening and content on a weekly schedule, the dealer profile agent specified for Copilot Studio with web grounding (no per-dealer cost), follow-up drafter counted as done via the Lead Tracker templates",
+        "Dealer profile agent live in Teams (Nov 2): name and city in, ten labeled lines out (website, what they sell, units, aggregator days listed, reviews, a two-line read that opens with their oldest unit, sources). Five of five tests passed, three found websites the hand search missed"
       ],
       "links": [],
       "blockers": [],
       "next_steps": [
         "Set up the agent desk: a Teams channel or Loop page where each agent's weekly output lands and Chase marks what shipped (agents-06)",
-        "Build the dealer profile agent in Copilot Studio from the spec; test on 10 DFW dealers against data/dealers.json (agents-07)",
+        "Count website coverage on the 30 random dealers through the agent (agents-10), finish the test set (agents-11), then wire it to new licenses (agents-08)",
         "Wire the profile agent to new licenses in the Lead Tracker through Power Automate (agents-08)",
         "AEO answers agent: one gap question a week as a page draft for Tech and a LinkedIn article for Ken (agents-09)",
         "Proof agent: watch public reviews for dealer praise, draft the testimonial ask (later)",
@@ -4224,14 +4225,15 @@
     {
       "id": "agents-07",
       "title": "Build the dealer profile agent in Copilot Studio and test it on 10 DFW dealers",
-      "status": "In Progress",
+      "status": "Done",
       "owner": "Me",
       "due": "2026-11-09",
       "priority": "high",
-      "notes": "Spec: docs/copilot-dealer-profile-agent-spec.md in Copart Dealer Digital. Uses the Microsoft 365 Copilot web grounding, no API cost. Compare with data/dealers.json; target website right on 9 of 10, no invented facts. Nov 2: started. Spec updated with the no-website path (most Texas independents have none; the agent reads aggregator pages and says \"nothing public\" when that is the truth), a labeled output the flow can parse, and a 15-dealer test set.",
+      "notes": "Spec: docs/copilot-dealer-profile-agent-spec.md in Copart Dealer Digital. Uses the Microsoft 365 Copilot web grounding, no API cost. Compare with data/dealers.json; target website right on 9 of 10, no invented facts. Nov 2: started. Spec updated with the no-website path (most Texas independents have none; the agent reads aggregator pages and says \"nothing public\" when that is the truth), a labeled output the flow can parse, and a 15-dealer test set. Nov 2 later: built and published to Teams the same day. Claude Sonnet 5.5, web search on, Work IQ removed. Five of five tests found a website (three the hand search had missed), unit counts matched ours, nothing invented, every Read opened with a named aged unit. Test log in the spec.",
       "project_id": "agents",
       "created": "2026-11-02",
-      "updated": "2026-11-02"
+      "updated": "2026-11-02",
+      "completed": "2026-11-02"
     },
     {
       "id": "agents-08",
@@ -4315,6 +4317,30 @@
       "priority": "normal",
       "notes": "Draft in docs/audit/asks.md (Copart Dealer Digital). Ask of Ken is thirty minutes on a microphone in December; get his yes first.",
       "project_id": "dlab",
+      "created": "2026-11-02",
+      "updated": "2026-11-02"
+    },
+    {
+      "id": "agents-10",
+      "title": "Run the 30 random Texas dealers through the profile agent and count how many have a website",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-11-04",
+      "priority": "high",
+      "notes": "The list is in Copart Dealer Digital, printed in the Nov 2 session (data/license_universe.csv, seed 20261102). The morning hand search found 3 of 30; the agent found sites for 3 of the first 5 it was given. This number decides how far the aged-unit engine reaches. Free under the Copilot license.",
+      "project_id": "agents",
+      "created": "2026-11-02",
+      "updated": "2026-11-02"
+    },
+    {
+      "id": "agents-11",
+      "title": "Finish the 15-dealer test set on the profile agent and log the scores",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-11-05",
+      "priority": "normal",
+      "notes": "Ten remaining from the test set in docs/copilot-dealer-profile-agent-spec.md. Score website, units within 20 percent, nothing invented. Fix instructions, not outputs.",
+      "project_id": "agents",
       "created": "2026-11-02",
       "updated": "2026-11-02"
     }

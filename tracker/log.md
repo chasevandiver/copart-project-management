@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-11-02, profile agent live
+- Source: Chase built the dealer profile agent in Copilot Studio and ran five tests; all passed; published to Teams
+- Changed: agents-07 -> Done; agents built and next steps
+- Added: agents-10 "Run the 30 random Texas dealers through the profile agent" (Me, due 2026-11-04), agents-11 "Finish the 15-dealer test set" (Me, due 2026-11-05)
+
 ## 2026-11-02, profile agent start
 - Source: Chase: Cars and Cocktails is done (Marketing has the results), Plaud and the weekly recap are on with no use case yet; start the dealer profile agent
 - Changed: cceib -> Done and its open tasks closed; mm built and next steps; agents-07 Next -> In Progress (spec updated with the no-site path and a 15-dealer test set)
