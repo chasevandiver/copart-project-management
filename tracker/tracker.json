@@ -2,7 +2,7 @@
   "meta": {
     "owner": "Chase",
     "role": "Digital Engagement Manager, supporting Ken Rion (SVP of Dealer Sales)",
-    "last_updated": "2026-10-30"
+    "last_updated": "2026-11-02"
   },
   "categories": [
     "AI Tools",
@@ -367,6 +367,7 @@
       "blockers": [],
       "next_steps": [
         "First week after launch: handle rep feedback (udm-15, through about Nov 5)",
+        "Add a new dealer tag so newly licensed dealers get a later follow-up instead of a cold pitch (udm-28)",
         "Leaderboard for the office screens (udm-20); Ken's OK on the light mode calls (d-udm-08)",
         "Finish the lead scoring update (udm-16)",
         "Collect pilot team feedback on the Lead Tracker (gen-29)",
@@ -399,9 +400,15 @@
       "status": "In Progress",
       "summary": "The groundwork every Copart Dealer Services campaign shares: tools (Salesforce), rules (Kyle reviews every campaign, Creative needs 2 weeks, Tech owns forms and pages, legal on contact data), the dealer and member campaign calendar, paid media, offers and collateral. Process (Oct 15): I give Marketing a brief, an outline and an email list; Marketing splits it into copy, creative design and so on, then sends it. Website changes run the same way through Manny Ortiz.",
       "built": [
-        "Campaign ground rules, in the Digital audit's Campaign ideas page (docs/audit/08-campaigns.md in Copart Dealer Digital)"
+        "Campaign ground rules, in the Digital audit's Campaign ideas page (docs/audit/08-campaigns.md in Copart Dealer Digital)",
+        "Copart Dealer Services one-pager for dealers, draft (Nov 2): why now, how it works, fees, who bids and who does the work, the one-car ask, plus a sign-off table for Ken"
       ],
-      "links": [],
+      "links": [
+        {
+          "label": "Copart Dealer Services: one page for dealers",
+          "url": "https://claude.ai/artifact/Ej3Z3vkQkVRFGgFBz5Qnzk"
+        }
+      ],
       "blockers": [],
       "next_steps": [
         "Draft the field offers plus SMS and email outline and review it with Ken (cmp-02)",
@@ -418,8 +425,8 @@
       "id": "wb",
       "name": "Inactive seller win-back",
       "category": "Campaigns",
-      "status": "Next",
-      "summary": "On hold from Oct 21: no formal pitch to Ken yet, since he has Chase on the commission tool, Lead Tracker and video series. Proposed first campaign, pending Ken: win back Copart Dealer Services sellers who have gone quiet. Sold at least [2] units in the [24] months before going quiet, nothing in the last [120] days. Marketing sends three plain-text emails in the rep's name (Nov 3, 10, 17); reps call tier A (top [50] by past volume) and follow up with the same Kyle-approved copy from the Lead Tracker. Measured by sellers won back: accounts that send a car within 60 days of the first email. Newly licensed prospects follow about two weeks later. The list comes from Salesforce and stays in the work setup. Oct 22: Ken's push is a reason to sell now through Dec 31, so the emails open on cash before year end and tax season and close on one car by the assignment deadline; a December note and a last call week were added. Oct 22: a rep keeps an inactive seller for 60 days, then any team can take it, so the 60+ day group now runs as Ken's note in Perfect time to sell (pts, n-53).",
+      "status": "In Progress",
+      "summary": "On hold from Oct 21: no formal pitch to Ken yet, since he has Chase on the commission tool, Lead Tracker and video series. Proposed first campaign, pending Ken: win back Copart Dealer Services sellers who have gone quiet. Sold at least [2] units in the [24] months before going quiet, nothing in the last [120] days. Marketing sends three plain-text emails in the rep's name (Nov 3, 10, 17); reps call tier A (top [50] by past volume) and follow up with the same Kyle-approved copy from the Lead Tracker. Measured by sellers won back: accounts that send a car within 60 days of the first email. Newly licensed prospects follow about two weeks later. The list comes from Salesforce and stays in the work setup. Oct 22: Ken's push is a reason to sell now through Dec 31, so the emails open on cash before year end and tax season and close on one car by the assignment deadline; a December note and a last call week were added. Oct 22: a rep keeps an inactive seller for 60 days, then any team can take it, so the 60+ day group now runs as Ken's note in Perfect time to sell (pts, n-53). Nov 2: Ken said go, and he trumps Marketing, so Chase runs the win-back himself this week: a Copilot agent on the work setup takes the Salesforce inactive list and drafts one opener per dealer in the sell-now message, reps review and send to their own inactives (under 60 days), replies and cars land in the Lead Tracker. Marketing's designed send to 6+ month inactives stays parked.",
       "built": [
         "Campaign plan doc (Oct 15): why inactive first, audience and tiers, sequence, message and offer, who does what, how rep emails fit, measures and holdout, dates to first send, wave 2, risks, asks for Ken",
         "Lead Tracker outreach template spec for Work Claude (docs/lead-tracker-templates-spec.md in Copart Dealer Digital, Oct 15)",
@@ -452,20 +459,17 @@
       ],
       "blockers": [],
       "next_steps": [
-        "Parked Oct 26: no new Marketing asks until the current ones move (wb-03, wb-06, wb-14 to Backlog)",
-        "Brief to Kyle and Marketing Mon Oct 26 so Creative can make a Nov 10 first send (wb-03); list and campaign tag by Oct 30 (wb-06)",
-        "Take \"Win-back: perfect time to sell\" to Ken with the Perfect time to sell pitch: deadline (q-30), sender and mailbox (q-33), routing and loading 60+ day inactives (q-34)",
-        "Get the assignment deadline from Ken (q-30), then bring the plan with the rewritten emails (wb-01)",
-        "On hold until Ken frees Chase from the current priorities; then bring him the plan (wb-01)",
-        "Bring the plan to Ken (wb-01, q-26)",
-        "Pull the inactive list once Salesforce access lands (wb-02, w-12)",
-        "Send Kyle the brief and check the member calendar (wb-03)"
+        "Build the Copilot win-back agent on the work setup this week (wb-15)",
+        "Hand each rep drafted openers for their own inactives and log replies in the Lead Tracker (wb-16)",
+        "Count cars assigned from the win-back in the Thursday update (wb-13)",
+        "Parked: Marketing's designed send to 6+ month inactives (wb-03, wb-06, wb-14) until the current Marketing asks move",
+        "Get the assignment deadline from Ken (q-30)"
       ],
       "dependencies": [
-        "Ken's yes on audience, offer and follow-up owners (q-26, q-14)",
-        "Salesforce access (w-12)",
-        "Kyle Cochran reviews the copy and finds a calendar slot",
-        "Lead Tracker outreach templates (rt-58) for rep follow-up"
+        "The Salesforce inactive list, in the work setup only (wb-02, done)",
+        "Copilot on the work setup",
+        "Lead Tracker to log replies and cars (udm)",
+        "Marketing send only: Kyle's review and a calendar slot (parked)"
       ]
     },
     {
@@ -1233,9 +1237,9 @@
       "owner": "Claude Code",
       "due": null,
       "priority": "normal",
-      "notes": "Gemini free tier caps at about 20 answers a day, so a run needs a paid key or two days (see d-cdd-04). Add Perplexity if we get a key. Oct 8: added to the Digital audit's next steps. Also run aeo/fee_check.py (stale 2017 Copart Dealer Services fees) so the December comparison holds. Marketing Plan (mkt): weekly re-run with Perplexity and the fee check, on by Oct 16. Oct 16: on hold until the webpage updates go live, so the re-run measures the new pages. d-cdd-04 resolved: split each run over two days on the free Gemini tier.",
+      "notes": "Gemini free tier caps at about 20 answers a day, so a run needs a paid key or two days (see d-cdd-04). Add Perplexity if we get a key. Oct 8: added to the Digital audit's next steps. Also run aeo/fee_check.py (stale 2017 Copart Dealer Services fees) so the December comparison holds. Marketing Plan (mkt): weekly re-run with Perplexity and the fee check, on by Oct 16. Oct 16: on hold until the webpage updates go live, so the re-run measures the new pages. d-cdd-04 resolved: split each run over two days on the free Gemini tier. Nov 2: confirmed with Chase, the number will not move until the website changes go live (audit-09), so the rerun waits for them.",
       "created": "2026-09-29",
-      "updated": "2026-10-16"
+      "updated": "2026-11-02"
     },
     {
       "id": "cdd-13",
@@ -1330,13 +1334,13 @@
       "id": "cmp-04",
       "project_id": "cmp",
       "title": "Create a one pager on what Copart Dealer Services does and what sets it apart",
-      "status": "Next",
+      "status": "In Progress",
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Oct 2: week of Oct 5, if time. Formerly gen-09. Oct 9: none exists, so create one. Ties into the website remake (audit-09, audit-12), so the page and the one pager tell the same story.",
+      "notes": "Oct 2: week of Oct 5, if time. Formerly gen-09. Oct 9: none exists, so create one. Ties into the website remake (audit-09, audit-12), so the page and the one pager tell the same story. Nov 2: drafted by Claude Code as a sales leave-behind a rep attaches after a call, in the sell-now message. Shareable doc \"Copart Dealer Services: one page for dealers\" (link on the project); the record with sources is in Copart Dealer Digital, docs/cds-one-pager.md. Needs Ken's review; the 10-K buyer share needs brand (q-28) and the deadline bracket needs q-30.",
       "created": "2026-09-30",
-      "updated": "2026-10-09"
+      "updated": "2026-11-02"
     },
     {
       "id": "rt-13",
@@ -2186,13 +2190,14 @@
       "id": "wb-01",
       "project_id": "wb",
       "title": "Bring the win-back plan to Ken",
-      "status": "Backlog",
+      "status": "Done",
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Decisions in q-26 and q-14. Plan doc: First campaign: inactive seller win-back. Oct 16: Ken out since Tuesday Oct 13 afternoon. Moved to Monday. Oct 21: on hold, no formal pitch to Ken yet (was due 2026-10-20).",
+      "notes": "Decisions in q-26 and q-14. Plan doc: First campaign: inactive seller win-back. Oct 16: Ken out since Tuesday Oct 13 afternoon. Moved to Monday. Oct 21: on hold, no formal pitch to Ken yet (was due 2026-10-20). Nov 2: Ken said go and that he trumps Marketing. Chase runs the win-back himself in Copilot (wb-15, wb-16). Marketing's send stays parked.",
       "created": "2026-10-15",
-      "updated": "2026-10-21"
+      "updated": "2026-11-02",
+      "completed": "2026-11-02"
     },
     {
       "id": "wb-02",
@@ -2263,9 +2268,9 @@
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Work Claude, Copart data stays in the work setup. Every draft reviewed by the rep. Oct 21: on hold, no formal pitch to Ken yet (was due 2026-10-30).",
+      "notes": "Work Claude, Copart data stays in the work setup. Every draft reviewed by the rep. Oct 21: on hold, no formal pitch to Ken yet (was due 2026-10-30). Nov 2: folded into wb-15 and wb-16 (Copilot build on the work setup).",
       "created": "2026-10-15",
-      "updated": "2026-10-21"
+      "updated": "2026-11-02"
     },
     {
       "id": "wb-08",
@@ -3952,6 +3957,42 @@
       "created": "2026-10-29",
       "updated": "2026-10-30",
       "completed": "2026-10-30"
+    },
+    {
+      "id": "wb-15",
+      "project_id": "wb",
+      "title": "Build the win-back agent in Copilot: inactive list in, one drafted opener per dealer out",
+      "status": "In Progress",
+      "owner": "Me",
+      "due": "2026-11-04",
+      "priority": "high",
+      "notes": "Ken's go-ahead Nov 2. Copilot on the work setup; the Salesforce inactive list (wb-02) never leaves it. The opener uses the sell-now message (why now, why us, one car this week, the VIN) and the A6 dormant dealer prompt in Copart Dealer Digital (prompts/A6-dormant-dealer-reactivation.md). Every draft is reviewed by the rep before it goes out.",
+      "created": "2026-11-02",
+      "updated": "2026-11-02"
+    },
+    {
+      "id": "wb-16",
+      "project_id": "wb",
+      "title": "Hand each rep drafted openers for their own inactives and log replies in the Lead Tracker",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-11-06",
+      "priority": "high",
+      "notes": "Inactives under 60 days belong to their rep. Start with each rep's top 10 by past volume. Replies, meetings and VINs go in the Lead Tracker so wb-13 can count them on Thursday.",
+      "created": "2026-11-02",
+      "updated": "2026-11-02"
+    },
+    {
+      "id": "udm-28",
+      "project_id": "udm",
+      "title": "Add a new dealer tag to the Lead Tracker",
+      "status": "Next",
+      "owner": "Work Claude",
+      "due": "2026-11-06",
+      "priority": "normal",
+      "notes": "Nov 2: newly licensed dealers are not biting on Copart; they are dealing with a lot of new things at once. Tag them so reps can tell them from cold prospects, time the follow-up later (for example 60 to 90 days after the license date) and so the Thursday update can report them as a group. The TxDMV new-license feed already marks them in the leads data.",
+      "created": "2026-11-02",
+      "updated": "2026-11-02"
     }
   ],
   "waiting_on": [
@@ -6059,6 +6100,20 @@
         "Story and people posts win: Doyle farewell 130 reactions, six years at Copart 102. Thank-you posts with no story 25 to 31. The San Diego dealer event post did 69.",
         "Median of six settled posts: 50 reactions. 850 followers. 3 posts in 2026, 2 in the last 10 days.",
         "His headline says Sales + AI Automation and PT/EN/ES, but no post shows either. The series leans on both."
+      ]
+    },
+    {
+      "id": "n-70",
+      "date": "2026-11-02",
+      "title": "Marketing on hold: what Chase runs alone this week",
+      "project_id": "general",
+      "body": [
+        "Chase is on hold with Marketing for the digital asks (campaigns, content, the page remake). Ken said Chase can do whatever and he trumps anything else.",
+        "Pre-call briefs from dealer websites are thin for the many small dealers with no site. Fallbacks are the license record, Google Business Profile, third-party listing pages and reviews; a dealer with none of those gets no brief, the call gathers the facts.",
+        "The sell-now scripts are already in reps' hands.",
+        "Newly licensed dealers are not biting; they are dealing with a lot of new things at once. Add a new dealer tag in the Lead Tracker and follow up later (udm-28).",
+        "The AEO baseline will not move until the website changes go live, so the rerun waits (cdd-12).",
+        "This week: the inactive seller win-back built in Copilot on the work setup (wb-15, wb-16), and the Copart Dealer Services one-pager for reps (cmp-04)."
       ]
     }
   ],

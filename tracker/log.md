@@ -2,6 +2,16 @@
 
 Newest entry first.
 
+## 2026-11-02
+- Source: Chase: on hold with Marketing, Ken says do whatever; run the inactive win-back in Copilot this week, add a new dealer tag to the Lead Tracker, AEO rerun waits for the website, create the one-pager
+- Changed: wb Next -> In Progress; summary, next steps and dependencies redone around the Copilot build
+- Added: wb-15 "Build the win-back agent in Copilot" (Me, due 2026-11-04), wb-16 "Hand each rep drafted openers for their own inactives" (Me, due 2026-11-06)
+- Changed: wb-01 -> Done (Ken said go); wb-07 folded into wb-15 and wb-16
+- Added: udm-28 "Add a new dealer tag to the Lead Tracker" (Work Claude, due 2026-11-06); udm next steps
+- Changed: cdd-12 notes (rerun waits for the website changes)
+- Changed: cmp-04 Next -> In Progress; one-pager drafted, doc linked on the project, record in Copart Dealer Digital docs/cds-one-pager.md
+- Added: n-70 "Marketing on hold: what Chase runs alone this week"
+
 ## 2026-10-30, afternoon
 - Source: Chase: posts sent to Leo, went through Lead Tracker feedback, Taylor call didn't happen but the lead source was covered in the marketing meeting
 - Changed: lis-01 and audit-17 -> Done; udm-15 notes
