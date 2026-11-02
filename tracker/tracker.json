@@ -602,7 +602,8 @@
         "Agent set on the board (Oct 16): A1 Dealer profile, A2 AEO and dealer listening, A3 pre-call and follow-up drafter, A4 dormant dealer activation, all looping into one pipeline",
         "AI use survey for the whole Copart Dealer Services team, covering AI and Leo's tools (Oct 15, waiting on approval to send)",
         "Agent desk plan (Nov 2): listening and content on a weekly schedule, the dealer profile agent specified for Copilot Studio with web grounding (no per-dealer cost), follow-up drafter counted as done via the Lead Tracker templates",
-        "Dealer profile agent live in Teams (Nov 2): name and city in, ten labeled lines out (website, what they sell, units, aggregator days listed, reviews, a two-line read that opens with their oldest unit, sources). Five of five tests passed, three found websites the hand search missed"
+        "Dealer profile agent live in Teams (Nov 2): name and city in, ten labeled lines out (website, what they sell, units, aggregator days listed, reviews, a two-line read that opens with their oldest unit, sources). Five of five tests passed, three found websites the hand search missed",
+        "Backfill started on the work setup (Nov 2 evening): Work Claude added a read-only admin export of released leads to the Lead Tracker (commit 2a88a80, deployed clean), profiled the first 20 released leads staged for review (13 with a website, 3 flagged as unconfirmed dealers, 3 with a named aged unit; about 20,600 tokens a lead), and is building the write step: a separate dealer_research table, fill blanks only, source tag, tracker type never changed, admin POST import with a dry run. Leo is testing the Teams agent on his own list"
       ],
       "links": [],
       "blockers": [],
@@ -4369,6 +4370,30 @@
       "due": "2026-11-06",
       "priority": "high",
       "notes": "The inactive lists arrived Oct 16 and stay on the work setup. Profile each inactive seller with the Dealer Profile agent (Work Claude for the batch, Copilot for the aged-unit row), rank by units past 90 days, and give each rep a list of ten with the opener: you used to send us cars, and you have N sitting since September. No new data, no rep behavior change, the rep gets a list. Replies and cars tagged win-back in the Lead Tracker.",
+      "created": "2026-11-02",
+      "updated": "2026-11-02"
+    },
+    {
+      "id": "agents-12",
+      "title": "Review the write step: dry run on the 20, then say go; then the read-only research panel on the lead record",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-11-03",
+      "priority": "high",
+      "notes": "Work Claude's design: dealer_research table separate from reps' profiles, fill blanks only, source tag profile v1, tracker business type untouched with the agent's type stored beside it, admin POST research-import with ?dry=1. The same route is the endpoint the Copilot flow will call one row at a time. Check before go: writes touch only the new table plus a blank website, the dry run counts match the 20, nothing named notes or status in the path. Then the panel diff.",
+      "project_id": "agents",
+      "created": "2026-11-02",
+      "updated": "2026-11-02"
+    },
+    {
+      "id": "agents-13",
+      "title": "Get the total count of released leads and decide the backfill path by cost",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-11-04",
+      "priority": "normal",
+      "notes": "About 20,600 tokens a lead on Work Claude with a 4-search, 4-read budget. A few hundred is a normal job there; a thousand is 20 million tokens and the Copilot route (free when a person runs it, about $50 a month automatic) takes over. Copilot also reads the aggregator pages better, so Open with gets refreshed there either way.",
+      "project_id": "agents",
       "created": "2026-11-02",
       "updated": "2026-11-02"
     }

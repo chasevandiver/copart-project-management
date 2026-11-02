@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-11-02, backfill
+- Source: Work Claude's progress via Chase: admin export route live, 20 released leads profiled and staged, write step designed; Leo testing the Teams agent
+- Changed: agents built
+- Added: agents-12 "Review the write step: dry run, go, then the research panel" (Me, due 2026-11-03), agents-13 "Total released leads and the backfill path by cost" (Me, due 2026-11-04)
+
 ## 2026-11-02, evening
 - Source: Chase: the listening and content agents run on his personal Claude; move them to the work setup tomorrow. Looking for a rep-facing inactive seller project
 - Added: listen-05 "Move the listening pull and digest to the work setup" (Me, due 2026-11-03); listen summary and next steps
