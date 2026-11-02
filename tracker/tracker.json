@@ -840,7 +840,8 @@
         "Listening pull (Nov 2): listening/run_listening.py and sources.json, 12 feeds (The Independent Dealer Podcast, Car Dealership Guy, Auto Remarketing, CBT News, AutoSuccess, Repairer Driven News, NIADA, Auto Dealer Today, Cox Automotive, three Bing News searches), a skip list with reasons, a manual notes folder",
         "First digest, draft (Nov 2): tax season prep on the Independent Dealer Podcast, Lotlinx on rising days supply and a $4,000 list-to-sale gap, CarMax Auctions sponsoring every Car Dealership Guy episode, one Copart mention (a rebuild video), post ideas and two lines for reps",
         "A7 prompt rewritten to work from the pull only (Nov 2)",
-        "Content agent (Nov 2): first five drafts in content/2026-11-02.md (Ken on tax season, a rep on the $4,000 list-to-sale gap, a rep on the short tow, a template opener, a video card). The Monday loop is scheduled and runs on its own"
+        "Content agent (Nov 2): first five drafts in content/2026-11-02.md (Ken on tax season, a rep on the $4,000 list-to-sale gap, a rep on the short tow, a template opener, a video card). The Monday loop is scheduled and runs on its own",
+        "Source set widened to 33 (Nov 2, per Chase): Digital Dealer, DealerRefresh, F&I and Showroom, Black Book, the Auto Remarketing Podcast, OPENLANE's newsroom, TIADA and NIADA feeds, and 16 Bing News searches covering Copart, each competitor, the Manheim index, wholesale prices, BHPH, Texas independents, aged inventory, tax season, floor plan and salvage auctions. Keywords widened to match. YouTube channel feeds are out: robots.txt disallows them"
       ],
       "links": [
         {
@@ -851,6 +852,7 @@
       "blockers": [],
       "next_steps": [
         "Each Monday: review the digest and the five drafts the scheduled run produced, send the digest to the managers, hand one draft to its owner (listen-03)",
+        "Chase reads by hand what the script cannot: Facebook dealer groups, Reddit, YouTube, LinkedIn, the Copart GO reviews; five minutes before each Monday run into listening/manual/<date>.md",
         "Read the first digest; send it to Ken and the managers if it holds up (listen-01)",
         "Each Monday: paste notes from Reddit, the Copart GO reviews and any groups, run the pull, write the digest (listen-02, listen-03)",
         "Pick the YouTube dealer channels to add, and decide whether to register a Reddit API app (listen-04)",

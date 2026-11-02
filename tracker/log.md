@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-11-02, listening sources
+- Source: Chase: widen the listening knowledge base as far as possible
+- Changed: listen built (33 sources, wider keywords, YouTube out by robots.txt) and next steps (manual sources list)
+
 ## 2026-11-02, profile agent live
 - Source: Chase built the dealer profile agent in Copilot Studio and ran five tests; all passed; published to Teams
 - Changed: agents-07 -> Done; agents built and next steps
