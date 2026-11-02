@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-11-02, win-back send-anytime
+- Source: Chase: he is not the one contacting dealers; rework the Marketing email campaign to inactives so it can go out whenever, since it may miss the year-end push
+- Changed: wb summary, built, links (new doc "Inactive seller win-back: send-anytime email campaign") and next steps
+- Changed: wb-03 Backlog -> Next (brief to Kyle, earliest slot); wb-06 Backlog -> Next (month suffix on the tag); wb-14 Backlog -> Next; wb-12 folded into the December variant
+
 ## 2026-11-02, demand lab
 - Source: Chase: write the three emails and pull the segment lists; reps are slow on the Lead Tracker and he needs marketing now
 - Added: project dlab "Demand lab" (Campaigns, under g-03): Chase's one-to-one dealer emails, two public-data segments, weekly test plan
