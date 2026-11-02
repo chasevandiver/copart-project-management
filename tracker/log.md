@@ -2,6 +2,10 @@
 
 Newest entry first.
 
+## 2026-11-02, win-back spec
+- Source: Chase: do the win-back Copilot build next
+- Changed: wb-15 notes (build spec in Copart Dealer Digital docs/win-back-copilot-agent-spec.md); wb links and built
+
 ## 2026-11-02, listening
 - Source: Chase picked the dealer listening digest as the marketing AI project to run now
 - Added: project listen "Dealer listening digest" (Marketing Efforts, under g-02); pull and first digest built in Copart Dealer Digital

@@ -434,7 +434,8 @@
         "Proposed first campaign section in the marketing plan doc, docs/audit/09-marketing-plan.md and the Digital audit site (Oct 15)",
         "Win-back emails rewritten around the reason to sell now, with a December note and a last call week through the assignment deadline (Oct 22)",
         "Win-back rebuilt as \"Win-back: perfect time to sell\" (Oct 22): the 60-day split (rep Check-ins under 60 days, Ken's three-email note for 60 days to 6 months and 6+ months), the message for returning sellers, the follow-ups once a seller responds, routing back to teams, dates for a mid-December or Nov 8 deadline, measures and asks for Ken. The Oct 15 plan is kept for the record",
-        "Marketing brief for a designed three-email campaign in Ken's name to sellers inactive 6+ months: list and exclusions, message and cleared facts, copy with A/B subject lines, buttons (meeting with a manager, campaign form, reply), routing back to teams, dates with Creative's lead time and a January fallback if the cutoff is early, tracking and sign-offs (Oct 22)"
+        "Marketing brief for a designed three-email campaign in Ken's name to sellers inactive 6+ months: list and exclusions, message and cleared facts, copy with A/B subject lines, buttons (meeting with a manager, campaign form, reply), routing back to teams, dates with Creative's lead time and a January fallback if the cutoff is early, tracking and sign-offs (Oct 22)",
+        "Win-back Copilot agent build spec (Nov 2): v1 flow and v2 Teams agent, the prompt, fields, output columns, segments, test, guardrails, measures"
       ],
       "links": [
         {
@@ -456,6 +457,10 @@
         {
           "label": "Sell now: year-end messaging for dealer campaigns",
           "url": "https://claude.ai/artifact/LSF6ToFXAhHvkTcY23qX2W"
+        },
+        {
+          "label": "Win-back Copilot agent build spec",
+          "where": "Copart Dealer Digital repo, docs/win-back-copilot-agent-spec.md"
         }
       ],
       "blockers": [],
@@ -3995,7 +4000,7 @@
       "owner": "Me",
       "due": "2026-11-04",
       "priority": "high",
-      "notes": "Ken's go-ahead Nov 2. Copilot on the work setup; the Salesforce inactive list (wb-02) never leaves it. The opener uses the sell-now message (why now, why us, one car this week, the VIN) and the A6 dormant dealer prompt in Copart Dealer Digital (prompts/A6-dormant-dealer-reactivation.md). Every draft is reviewed by the rep before it goes out.",
+      "notes": "Ken's go-ahead Nov 2. Copilot on the work setup; the Salesforce inactive list (wb-02) never leaves it. The opener uses the sell-now message (why now, why us, one car this week, the VIN) and the A6 dormant dealer prompt in Copart Dealer Digital (prompts/A6-dormant-dealer-reactivation.md). Every draft is reviewed by the rep before it goes out. Nov 2: build spec written (Copart Dealer Digital, docs/win-back-copilot-agent-spec.md): v1 Power Automate flow with an AI Builder prompt over the inactive list in SharePoint by Nov 4, v2 Copilot Studio agent in Teams after the first week; the instructions to paste, inputs, output columns, segments, a three-dealer blind test, guardrails and the Thursday measures.",
       "created": "2026-11-02",
       "updated": "2026-11-02"
     },
