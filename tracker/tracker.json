@@ -371,7 +371,12 @@
         "Log cars: several VINs from one dealer at once, each checked, plus a Cars logged card on the lead page (written Oct 28, udm-20)",
         "Pitched and launched to the team; all teams are using it (Oct 29)"
       ],
-      "links": [],
+      "links": [
+        {
+          "label": "Exclusive offer rerun: brief to Rama and checklist",
+          "where": "Copart Dealer Digital repo, docs/exclusive-offer-rerun-brief.md"
+        }
+      ],
       "blockers": [],
       "next_steps": [
         "Phase 2, qualified leads (n-71): get with Rama on the exclusive offer and pick the state (udm-30, q-47, d-udm-09)",
@@ -4427,7 +4432,7 @@
       "owner": "Me",
       "due": "2026-11-05",
       "priority": "high",
-      "notes": "Nov 3, Ken's ask. Which offer, the exact email, how it did, and whether the same send can go to the prospect list in one state. State is d-udm-09 (Indiana or Florida; Indiana has no owner since Keon left, q-46). Question for Rama is q-47. First step of Phase 2 (n-71).",
+      "notes": "Nov 3, Ken's ask. Which offer, the exact email, how it did, and whether the same send can go to the prospect list in one state. State is d-udm-09 (Indiana or Florida; Indiana has no owner since Keon left, q-46). Question for Rama is q-47. First step of Phase 2 (n-71). Nov 3: brief drafted (link on the project). The Texas email is the Exclusive Invitation from Ken: one free full-service run plus a one-year Buyer Membership, three tap questions, contact form, three Click to schedule options. Today those options post to a third-party form that emails one inbox, so the rerun points them at the Bookings page with RefID per option. Chase has the Bookings intake into the Lead Tracker set up on Work Claude. Before sending: Ken's yes on the offer (q-14), the state (d-udm-09), Legal on license emails (cdd-02), Kyle copied, Bookings staff set (audit-15), a test booking end to end.",
       "created": "2026-11-03",
       "updated": "2026-11-03"
     },
@@ -4463,7 +4468,7 @@
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Nov 3, Ken's ask. After udm-30 and d-udm-09. Same email Marketing ran, sent to the prospect list in the pilot state, with the Bookings link. Bookings come to Chase; he enters each as a meeting on the lead and hands it to the person working that dealer. Copart status checked on the work setup before the send so active sellers are not pitched. Measure: bookings, meetings held, first cars.",
+      "notes": "Nov 3, Ken's ask. After udm-30 and d-udm-09. Same email Marketing ran, sent to the prospect list in the pilot state, with the Bookings link. Bookings come to Chase; he enters each as a meeting on the lead and hands it to the person working that dealer. Copart status checked on the work setup before the send so active sellers are not pitched. Measure: bookings, meetings held, first cars. Nov 3: list rules and fields are in the brief doc.",
       "created": "2026-11-03",
       "updated": "2026-11-03"
     },
@@ -5097,7 +5102,7 @@
     },
     {
       "id": "q-47",
-      "question": "Which exclusive offer did Marketing run as a digital campaign, can I get the exact email and the results (sends, opens, replies, cars), and can the same email go to the prospect list in Indiana or Florida with a booking link? (Ken's Phase 2 pilot, n-71.)",
+      "question": "Which exclusive offer did Marketing run as a digital campaign, can I get the exact email and the results (sends, delivered, opens, clicks, landing page completions, meeting requests) plus the source files for the email and landing page, and can the same email go to the prospect list in Indiana or Florida with a booking link? (Ken's Phase 2 pilot, n-71.)",
       "ask": "Rama Manyam",
       "project_id": "udm",
       "status": "open",

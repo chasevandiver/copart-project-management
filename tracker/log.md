@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-11-03, offer brief
+- Source: Chase: write the brief for Rama; the Texas Exclusive Invitation email link; Bookings intake into the Lead Tracker is set up on Work Claude
+- Added: udm link "Exclusive offer rerun: brief to Rama and checklist" (Copart Dealer Digital, docs/exclusive-offer-rerun-brief.md)
+- Changed: udm-30 and udm-33 notes (what the email does, what changes, gates before the send); q-47 asks for the source files too
+
 ## 2026-11-03, Ken on the Lead Tracker
 - Source: Chase's notes from Ken's meeting on the Lead Tracker: prospects feel like cold calls; Phase 2 is qualified leads
 - Added: n-71 "Ken, Nov 3: Lead Tracker Phase 2 is qualified leads"
