@@ -2,6 +2,14 @@
 
 Newest entry first.
 
+## 2026-11-03, Ken on the Lead Tracker
+- Source: Chase's notes from Ken's meeting on the Lead Tracker: prospects feel like cold calls; Phase 2 is qualified leads
+- Added: n-71 "Ken, Nov 3: Lead Tracker Phase 2 is qualified leads"
+- Added: udm-30 "Get with Rama on the exclusive offer Marketing ran, and pick the pilot state" (Me, due 2026-11-05), udm-31 lead type and chips (Work Claude), udm-32 form capture pipeline (Work Claude), udm-33 exclusive offer email to one state with the booking link (Me), udm-34 routing rule for actual leads (Me)
+- Added: q-47 for Rama Manyam (which offer, the email, results, rerun to one state); d-udm-09 open (Indiana or Florida)
+- Changed: agents-01 Backlog -> Next (website form leads into the Lead Tracker); notes on udm-14, udm-15, pts-05, audit-15; udm summary and next steps
+- Dates: only udm-30 has a due date. The rest wait on Rama and the state.
+
 ## 2026-11-03
 - Source: Chase: turn the agent loop into a one-page roadmap for Ken
 - Changed: agents links and built (Dealer agents roadmap doc)

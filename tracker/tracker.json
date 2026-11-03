@@ -354,7 +354,7 @@
       "name": "Lead Tracker",
       "category": "AI Tools",
       "status": "In Progress",
-      "summary": "The lead list for the whole Copart Dealer Services sales team, office and field, built on Work Claude from the US dealer map. It is the CRM: one record per dealer with sources, Copart status, owner, stage and every touch. Teams get their leads here, and the Route Tracker reads from it and writes back to it. Copart dealer data stays in the work setup. On the board (Oct 16) it is the center of the flow: it supplies dealer profiles by state and Copart status, assigns leads to teams (field by ZIP and city for in-person visits, office for all leads with follow-up), logs recommended touch dates and tracked responses from campaigns, and talks to the Route Tracker both ways.",
+      "summary": "The lead list for the whole Copart Dealer Services sales team, office and field, built on Work Claude from the US dealer map. It is the CRM: one record per dealer with sources, Copart status, owner, stage and every touch. Teams get their leads here, and the Route Tracker reads from it and writes back to it. Copart dealer data stays in the work setup. On the board (Oct 16) it is the center of the flow: it supplies dealer profiles by state and Copart status, assigns leads to teams (field by ZIP and city for in-person visits, office for all leads with follow-up), logs recommended touch dates and tracked responses from campaigns, and talks to the Route Tracker both ways. Nov 3: Phase 2 is qualified leads. Reps say the prospects are cold calls, so Phase 2 marks actual leads (form or booked meeting) apart from cold calls, builds the form capture pipeline so website forms and bookings auto-create leads, and pilots the exclusive offer email with a booking link in one state (n-71).",
       "built": [
         "Copart Dealer Digital Leads section covers 28 states plus DC (92,492 leads), every state logged on the All states page (Oct 1)",
         "Indiana compared and merged with Leo's lists (Oct 1)",
@@ -374,6 +374,10 @@
       "links": [],
       "blockers": [],
       "next_steps": [
+        "Phase 2, qualified leads (n-71): get with Rama on the exclusive offer and pick the state (udm-30, q-47, d-udm-09)",
+        "Add the lead type and change the chips: actual lead vs cold call (udm-31)",
+        "Build the form capture pipeline: website form and bookings auto-create qualified leads (udm-32)",
+        "Send the exclusive offer email to the pilot state with the booking link; feed bookings in and hand them out (udm-33, udm-34)",
         "First week after launch: handle rep feedback (udm-15, through about Nov 5)",
         "Add a new dealer tag so newly licensed dealers get a later follow-up instead of a cold pitch (udm-28)",
         "Leaderboard for the office screens (udm-20); Ken's OK on the light mode calls (d-udm-08)",
@@ -383,7 +387,7 @@
         "Lock the lead record, stages and lead ID (n-29)",
         "Match leads to Copart dealer status: active, inactive, no status (udm-01)",
         "Put the resolved lead rules into the app (udm-08)",
-        "If reps get real use out of it, Phase 2: each rep's full book, inactives first (udm-14)"
+        "Later: each rep's full book of business, inactives first (udm-14)"
       ],
       "dependencies": [
         "Who the 26 teams are (q-18)",
@@ -3055,13 +3059,13 @@
       "id": "agents-01",
       "project_id": "agents",
       "title": "Build a Copilot flow that flags hot website form leads in the Admin inbox",
-      "status": "Backlog",
+      "status": "Next",
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Power Automate or Copilot Studio on the Admin inbox. Reads each form email, matches it to the Lead Tracker, flags it hot, warm or not a dealer with a reason, prefills as much of the seller setup as it can and lists what is missing, creates or updates the lead, then alerts the admin and the lead owner. The admin reviews before any seller code. Needs: form fields and routing (q-12), Brenda's seller setup fields (rt-56), what makes a lead hot (Ken and the admins), and Copilot access to the Admin inbox. Oct 26: parked. The admins already send website form leads to the teams, so this would take work from their jobs.",
+      "notes": "Power Automate or Copilot Studio on the Admin inbox. Reads each form email, matches it to the Lead Tracker, flags it hot, warm or not a dealer with a reason, prefills as much of the seller setup as it can and lists what is missing, creates or updates the lead, then alerts the admin and the lead owner. The admin reviews before any seller code. Needs: form fields and routing (q-12), Brenda's seller setup fields (rt-56), what makes a lead hot (Ken and the admins), and Copilot access to the Admin inbox. Oct 26: parked. The admins already send website form leads to the teams, so this would take work from their jobs. Nov 3: back on. Ken wants website form leads to auto-create qualified leads in the Lead Tracker (n-71). The pipeline is udm-32; this task is the flag and prefill on top of it.",
       "created": "2026-10-13",
-      "updated": "2026-10-26"
+      "updated": "2026-11-03"
     },
     {
       "id": "agents-02",
@@ -3713,9 +3717,9 @@
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Microsoft Forms (dealer or seller code, VIN, pickup or drop-off, cell) and a Bookings page for 15 minutes with a manager, plus a Power Automate flow that puts each response, and each reply to the shared mailbox, into the Lead Tracker as a hot returning-seller lead. Spec: the inactive section in docs/lead-tracker-templates-spec.md. Booking tool and who takes meetings is q-16. Oct 26: parked. Perfect time to sell pivoted to the rep templates in the Lead Tracker; Chase may circle back to this.",
+      "notes": "Microsoft Forms (dealer or seller code, VIN, pickup or drop-off, cell) and a Bookings page for 15 minutes with a manager, plus a Power Automate flow that puts each response, and each reply to the shared mailbox, into the Lead Tracker as a hot returning-seller lead. Spec: the inactive section in docs/lead-tracker-templates-spec.md. Booking tool and who takes meetings is q-16. Oct 26: parked. Perfect time to sell pivoted to the rep templates in the Lead Tracker; Chase may circle back to this. Nov 3: the same build Ken asked for in Lead Tracker Phase 2 (udm-32). Build once; the returning-seller form is one more source into it.",
       "created": "2026-10-22",
-      "updated": "2026-10-26"
+      "updated": "2026-11-03"
     },
     {
       "id": "pts-06",
@@ -3762,9 +3766,9 @@
       "owner": "Me",
       "due": null,
       "priority": "normal",
-      "notes": "Oct 26: Phase 2 only if Phase 1 goes well and the reps get real use out of the Lead Tracker. Then bring in each rep's full book of business, with the focus on their inactives so reps can start working them from the Lead Tracker. Related: pts-07 loads the 60+ day inactives as open leads; Phase 2 is the inactives and sellers each rep still owns. Copart seller data stays on the work setup.",
+      "notes": "Oct 26: Phase 2 only if Phase 1 goes well and the reps get real use out of the Lead Tracker. Then bring in each rep's full book of business, with the focus on their inactives so reps can start working them from the Lead Tracker. Related: pts-07 loads the 60+ day inactives as open leads; Phase 2 is the inactives and sellers each rep still owns. Copart seller data stays on the work setup. Nov 3: Ken set Phase 2 as actual leads and a cold call designation (n-71, udm-30 to udm-34). The full book of business stays here as a later phase.",
       "created": "2026-10-26",
-      "updated": "2026-10-26"
+      "updated": "2026-11-03"
     },
     {
       "id": "udm-15",
@@ -3774,9 +3778,9 @@
       "owner": "Me",
       "due": "2026-11-05",
       "priority": "high",
-      "notes": "Oct 26: the first week or so after the team launch (udm-11) is for fixing what reps report, as much as possible. It also shows whether reps get real use out of the Lead Tracker, which decides Phase 2 (udm-14). Feeds gen-29. Oct 30: launched Oct 29, so the first week runs to about Nov 5. Oct 30: Chase went through the first round of feedback.",
+      "notes": "Oct 26: the first week or so after the team launch (udm-11) is for fixing what reps report, as much as possible. It also shows whether reps get real use out of the Lead Tracker, which decides Phase 2 (udm-14). Feeds gen-29. Oct 30: launched Oct 29, so the first week runs to about Nov 5. Oct 30: Chase went through the first round of feedback. Nov 3: the main feedback is that the prospects feel like cold calls (n-71). Phase 2 answers it.",
       "created": "2026-10-26",
-      "updated": "2026-10-30"
+      "updated": "2026-11-03"
     },
     {
       "id": "audit-15",
@@ -3786,9 +3790,9 @@
       "owner": "Me",
       "due": null,
       "priority": "urgent",
-      "notes": "Time-select tool Chase pitched to the website team. Dealer picks a time and gets a confirmation; the booking lands with the admins, who change the host to the right manager or team (n-36). Microsoft Bookings unless it is off at Copart or Copart already pays for Calendly (q-36, q-37). Staff are the people who take meetings, set to any available staff; questions: dealership, cell, state or zip, sells with Copart today. Who takes meetings, length and hours: Ken (q-16). Gates the Social Media Videos (n-56). Oct 26: Chase has pushed Noelle and Lauren to get it done as soon as possible (w-15). Oct 27: Chase created a Microsoft Bookings site in Office 365. Next: add the managers who take meetings as staff, with length and hours (q-16), and get the website button pointed at it (w-15). Oct 27 (later): working version set up. Service \"5-minute call with a Copart Dealer Services manager\", phone call (no Teams), 5 minutes; fields: name, email and phone (required), State or ZIP, Dealership name. No \"Do you sell with Copart today?\" question, so the form can't become a complaint box; admins check status in the Lead Tracker. Chase is the only staff for testing. Still to do: add managers (Team member) and admins (Scheduler), switch the business email to the admins, decide routing (one service per region or admins reassign) at the managers meeting. Later: hand Manny the Embed code for the website button; Power Automate trigger to post bookings to Teams and the Lead Tracker; ?RefID= links per source.",
+      "notes": "Time-select tool Chase pitched to the website team. Dealer picks a time and gets a confirmation; the booking lands with the admins, who change the host to the right manager or team (n-36). Microsoft Bookings unless it is off at Copart or Copart already pays for Calendly (q-36, q-37). Staff are the people who take meetings, set to any available staff; questions: dealership, cell, state or zip, sells with Copart today. Who takes meetings, length and hours: Ken (q-16). Gates the Social Media Videos (n-56). Oct 26: Chase has pushed Noelle and Lauren to get it done as soon as possible (w-15). Oct 27: Chase created a Microsoft Bookings site in Office 365. Next: add the managers who take meetings as staff, with length and hours (q-16), and get the website button pointed at it (w-15). Oct 27 (later): working version set up. Service \"5-minute call with a Copart Dealer Services manager\", phone call (no Teams), 5 minutes; fields: name, email and phone (required), State or ZIP, Dealership name. No \"Do you sell with Copart today?\" question, so the form can't become a complaint box; admins check status in the Lead Tracker. Chase is the only staff for testing. Still to do: add managers (Team member) and admins (Scheduler), switch the business email to the admins, decide routing (one service per region or admins reassign) at the managers meeting. Later: hand Manny the Embed code for the website button; Power Automate trigger to post bookings to Teams and the Lead Tracker; ?RefID= links per source. Nov 3: Ken's Phase 2 pilot puts this booking link in the exclusive offer email to one state (udm-33). Bookings route to Chase first, then into the Lead Tracker (udm-32).",
       "created": "2026-10-26",
-      "updated": "2026-10-27"
+      "updated": "2026-11-03"
     },
     {
       "id": "udm-16",
@@ -4414,6 +4418,66 @@
       "notes": "Doc linked on the project. Lead with what is live (profile agent, Leo using it, first 20 released leads profiled), then the asks: Copilot licenses for reps, $50 to $150 a month in credits, IT allowing custom agents in Teams, his push on call outcomes from Nov 17.",
       "created": "2026-11-03",
       "updated": "2026-11-03"
+    },
+    {
+      "id": "udm-30",
+      "project_id": "udm",
+      "title": "Get with Rama on the exclusive offer Marketing ran, and pick the pilot state",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-11-05",
+      "priority": "high",
+      "notes": "Nov 3, Ken's ask. Which offer, the exact email, how it did, and whether the same send can go to the prospect list in one state. State is d-udm-09 (Indiana or Florida; Indiana has no owner since Keon left, q-46). Question for Rama is q-47. First step of Phase 2 (n-71).",
+      "created": "2026-11-03",
+      "updated": "2026-11-03"
+    },
+    {
+      "id": "udm-31",
+      "project_id": "udm",
+      "title": "Add a lead type to the Lead Tracker: actual lead vs cold call, and change the chips to show it",
+      "status": "Next",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "high",
+      "notes": "Nov 3, Ken's feedback: the prospects are cold calls, not leads, and dealers don't know we are calling. Actual lead = came in through a website form, the campaign form or a booked meeting; everything from the public list is a cold call. The chip on the list and the lead page shows the type, with the rating kept alongside. Source and date on the record so Ken can count qualified leads. Pairs with the new dealer tag (udm-28).",
+      "created": "2026-11-03",
+      "updated": "2026-11-03"
+    },
+    {
+      "id": "udm-32",
+      "project_id": "udm",
+      "title": "Build the form capture pipeline: website form and booking form auto-create qualified leads in the Lead Tracker",
+      "status": "Next",
+      "owner": "Work Claude",
+      "due": null,
+      "priority": "high",
+      "notes": "Nov 3, Ken's ask. Power Automate on the admin inbox (website form email) and the Bookings page (audit-15): each submission creates or updates the lead as an actual lead with the source, the form fields and the meeting time, then alerts the admin and the owner. Dedupe against the existing dealer record. Same build as the parked campaign form flow (pts-05) and the website form agent (agents-01), so build it once. Needs form fields and routing (q-12) and the Bookings staff setup (audit-15). Chase keys in bookings by hand (udm-33) until this runs.",
+      "created": "2026-11-03",
+      "updated": "2026-11-03"
+    },
+    {
+      "id": "udm-33",
+      "project_id": "udm",
+      "title": "Run the exclusive offer email to the leads list in one state with the booking link, and feed bookings into the Lead Tracker",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Nov 3, Ken's ask. After udm-30 and d-udm-09. Same email Marketing ran, sent to the prospect list in the pilot state, with the Bookings link. Bookings come to Chase; he enters each as a meeting on the lead and hands it to the person working that dealer. Copart status checked on the work setup before the send so active sellers are not pitched. Measure: bookings, meetings held, first cars.",
+      "created": "2026-11-03",
+      "updated": "2026-11-03"
+    },
+    {
+      "id": "udm-34",
+      "project_id": "udm",
+      "title": "Set the routing rule for actual leads and meetings: who gets them",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "Nov 3. Ken: give these leads to the people actually working them, not the pool. Draft: the rep who owns the dealer if claimed; otherwise by state or ZIP to the field team, office for the rest; admins keep sending website forms as today, now from the Lead Tracker. Confirm with Ken, then it goes into udm-32.",
+      "created": "2026-11-03",
+      "updated": "2026-11-03"
     }
   ],
   "waiting_on": [
@@ -5030,6 +5094,16 @@
       "answer": null,
       "raised": "2026-10-28",
       "answered": null
+    },
+    {
+      "id": "q-47",
+      "question": "Which exclusive offer did Marketing run as a digital campaign, can I get the exact email and the results (sends, opens, replies, cars), and can the same email go to the prospect list in Indiana or Florida with a booking link? (Ken's Phase 2 pilot, n-71.)",
+      "ask": "Rama Manyam",
+      "project_id": "udm",
+      "status": "open",
+      "answer": null,
+      "raised": "2026-11-03",
+      "answered": null
     }
   ],
   "decisions": [
@@ -5431,6 +5505,19 @@
         "Header bar #005eb8 (PMS 300) as first specced"
       ],
       "raised": "2026-10-28",
+      "status": "open",
+      "answer": null,
+      "resolved": null
+    },
+    {
+      "id": "d-udm-09",
+      "project_id": "udm",
+      "question": "Which state gets the Phase 2 exclusive offer email with the booking link?",
+      "options": [
+        "Indiana (Leo's lists are merged, but no owner since Keon left, q-46)",
+        "Florida (needs a check that the leads list is complete there)"
+      ],
+      "raised": "2026-11-03",
       "status": "open",
       "answer": null,
       "resolved": null
@@ -6535,6 +6622,21 @@
         "Newly licensed dealers are not biting; they are dealing with a lot of new things at once. Add a new dealer tag in the Lead Tracker and follow up later (udm-28).",
         "The AEO baseline will not move until the website changes go live, so the rerun waits (cdd-12).",
         "This week: the inactive seller win-back built in Copilot on the work setup (wb-15, wb-16), and the Copart Dealer Services one-pager for reps (cmp-04)."
+      ]
+    },
+    {
+      "id": "n-71",
+      "date": "2026-11-03",
+      "title": "Ken, Nov 3: Lead Tracker Phase 2 is qualified leads",
+      "project_id": "udm",
+      "body": [
+        "Rep feedback so far: the prospects in the Lead Tracker are cold calls, not leads. Ken said it is hard on the reps because the dealers don't know we are calling.",
+        "Qualified leads is the goal. Phase 2 is actual leads with a cold call designation, so a rep can tell a dealer who asked to talk from a dealer who has never heard of us.",
+        "Change the chips: today they show the rating. Phase 2 marks actual leads (came in through a form or booked a meeting) apart from cold calls.",
+        "Pilot: get with Rama on the exclusive offer Marketing ran as a digital campaign. Send that exact email to the leads list in one state, Indiana or Florida, with the booking link (the Bookings page from audit-15).",
+        "Bookings come to Chase first. He feeds each one into the Lead Tracker as a meeting and divvies the leads and meetings out to the people actually working them.",
+        "Build the form capture pipeline: the website form the admins get and the booking form both auto-create a qualified lead in the Lead Tracker, no hand entry. Same build as the parked campaign form flow (pts-05) and the website form agent (agents-01).",
+        "Order: Rama and the state first, then the lead type and chips, then the pipeline, then the send."
       ]
     }
   ],
