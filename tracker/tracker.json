@@ -375,6 +375,10 @@
         {
           "label": "Exclusive offer rerun: brief to Rama and checklist",
           "where": "Copart Dealer Digital repo, docs/exclusive-offer-rerun-brief.md"
+        },
+        {
+          "label": "Exclusive offer email and landing page, state as a setting",
+          "where": "Copart Dealer Digital repo, campaigns/exclusive-offer/ (README there)"
         }
       ],
       "blockers": [],
@@ -4432,7 +4436,7 @@
       "owner": "Me",
       "due": "2026-11-05",
       "priority": "high",
-      "notes": "Nov 3, Ken's ask. Which offer, the exact email, how it did, and whether the same send can go to the prospect list in one state. State is d-udm-09 (Indiana or Florida; Indiana has no owner since Keon left, q-46). Question for Rama is q-47. First step of Phase 2 (n-71). Nov 3: brief drafted (link on the project). The Texas email is the Exclusive Invitation from Ken: one free full-service run plus a one-year Buyer Membership, three tap questions, contact form, three Click to schedule options. Today those options post to a third-party form that emails one inbox, so the rerun points them at the Bookings page with RefID per option. Chase has the Bookings intake into the Lead Tracker set up on Work Claude. Before sending: Ken's yes on the offer (q-14), the state (d-udm-09), Legal on license emails (cdd-02), Kyle copied, Bookings staff set (audit-15), a test booking end to end.",
+      "notes": "Nov 3, Ken's ask. Which offer, the exact email, how it did, and whether the same send can go to the prospect list in one state. State is d-udm-09 (Indiana or Florida; Indiana has no owner since Keon left, q-46). Question for Rama is q-47. First step of Phase 2 (n-71). Nov 3: brief drafted (link on the project). The Texas email is the Exclusive Invitation from Ken: one free full-service run plus a one-year Buyer Membership, three tap questions, contact form, three Click to schedule options. Today those options post to a third-party form that emails one inbox, so the rerun points them at the Bookings page with RefID per option. Chase has the Bookings intake into the Lead Tracker set up on Work Claude. Before sending: Ken's yes on the offer (q-14), the state (d-udm-09), Legal on license emails (cdd-02), Kyle copied, Bookings staff set (audit-15), a test booking end to end. Nov 3 (later): Ken told Chase to run it, so q-14 is settled for this send. Florida emails are pulled on the work setup. Indiana's license list has no email (335 of 4,396 records carry one, from Leo's carrier and credit union lists), so an Indiana send needs an email lookup first. Chase is asking Rama about business plus gmail addresses. Brief goes straight to Rama.",
       "created": "2026-11-03",
       "updated": "2026-11-03"
     },
@@ -4463,12 +4467,12 @@
     {
       "id": "udm-33",
       "project_id": "udm",
-      "title": "Run the exclusive offer email to the leads list in one state with the booking link, and feed bookings into the Lead Tracker",
-      "status": "Backlog",
+      "title": "Send the exclusive offer email to the pilot state with the booking link, and feed bookings into the Lead Tracker",
+      "status": "Next",
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Nov 3, Ken's ask. After udm-30 and d-udm-09. Same email Marketing ran, sent to the prospect list in the pilot state, with the Bookings link. Bookings come to Chase; he enters each as a meeting on the lead and hands it to the person working that dealer. Copart status checked on the work setup before the send so active sellers are not pitched. Measure: bookings, meetings held, first cars. Nov 3: list rules and fields are in the brief doc.",
+      "notes": "Nov 3, Ken's ask. After udm-30 and d-udm-09. Same email Marketing ran, sent to the prospect list in the pilot state, with the Bookings link. Bookings come to Chase; he enters each as a meeting on the lead and hands it to the person working that dealer. Copart status checked on the work setup before the send so active sellers are not pitched. Measure: bookings, meetings held, first cars. Nov 3: list rules and fields are in the brief doc. Nov 3 (later): email and landing page rebuilt in Copart Dealer Digital, campaigns/exclusive-offer, with the state as a setting (?st=fl or ?st=in) and the schedule buttons opening the Bookings page with RefID per state and option. Clicked through in a browser: Florida header, headquarters option hidden, booking link opens with fl-offer-teams. Still to do: set BOOKING_URL, deploy as a static site, book a test slot through it, give Marketing email.html with the landing URL. Bookings go to Chase, who routes each into the Lead Tracker and onto the rep's calendar (tested: shows on his calendar).",
       "created": "2026-11-03",
       "updated": "2026-11-03"
     },
@@ -4775,10 +4779,10 @@
       "question": "Can reps still offer the one complimentary full-service run (one run and two reruns, ten photos, rinse and vacuum, free tow within 25 air miles on a clean title)? Who approves it, how many per rep, and is \"more than 750,000 members in 185 countries\" still the current line? The Field Offers Outline says pickup is $25 for the first 25 miles, so which tow terms do reps quote? (Oct 9: Ken suggested adding the existing exclusive offer email to the pre-visit workflow, so it is in use. Approver, limit per rep and tow terms are still open.) (Oct 22: Leo quotes pickup at $25 for the first 25 miles in his calls, n-48.) (Oct 22: Chase believes the free run was a one-time offer, not standard pricing (n-49), so the open part is whether Ken wants to run it again, or another offer, for year end.)",
       "ask": "Ken Rion",
       "project_id": "pdo",
-      "status": "open",
-      "answer": null,
+      "status": "answered",
+      "answer": "Nov 3: Ken told Chase to run the exclusive offer (free full-service run plus the one-year Buyer Membership) as the Phase 2 email to one state. Approver, limit per rep and tow terms for rep use stay as they were. The members line is still unconfirmed.",
       "raised": "2026-10-09",
-      "answered": null
+      "answered": "2026-11-03"
     },
     {
       "id": "q-15",
@@ -5519,8 +5523,8 @@
       "project_id": "udm",
       "question": "Which state gets the Phase 2 exclusive offer email with the booking link?",
       "options": [
-        "Indiana (Leo's lists are merged, but no owner since Keon left, q-46)",
-        "Florida (needs a check that the leads list is complete there)"
+        "Florida (13,153 licensed dealers, email on every license, emails pulled on the work setup)",
+        "Indiana (4,396, phone on every license, no email on the license list; needs an email lookup first)"
       ],
       "raised": "2026-11-03",
       "status": "open",

@@ -2,6 +2,13 @@
 
 Newest entry first.
 
+## 2026-11-03, offer rebuilt
+- Source: Chase: Ken told him to run it; Florida emails pulled; bookings come to Chase and show on his calendar; asking Rama about gmail; brief goes to Rama first; rebuild the email
+- Added: udm link "Exclusive offer email and landing page, state as a setting" (Copart Dealer Digital, campaigns/exclusive-offer/)
+- Changed: udm-33 Backlog -> Next (page and email rebuilt, booking link tested in a browser); udm-30 notes (Indiana has no license emails, Florida does)
+- Answered: q-14 Ken said run the exclusive offer for the Phase 2 email
+- Changed: d-udm-09 options now carry the email facts for each state
+
 ## 2026-11-03, offer brief
 - Source: Chase: write the brief for Rama; the Texas Exclusive Invitation email link; Bookings intake into the Lead Tracker is set up on Work Claude
 - Added: udm link "Exclusive offer rerun: brief to Rama and checklist" (Copart Dealer Digital, docs/exclusive-offer-rerun-brief.md)
