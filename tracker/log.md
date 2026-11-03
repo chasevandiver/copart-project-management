@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-11-03
+- Source: Chase: turn the agent loop into a one-page roadmap for Ken
+- Changed: agents links and built (Dealer agents roadmap doc)
+- Added: agents-14 "Walk Ken through the dealer agents roadmap and get the four asks" (Me, due 2026-11-05)
+
 ## 2026-11-02, backfill
 - Source: Work Claude's progress via Chase: admin export route live, 20 released leads profiled and staged, write step designed; Leo testing the Teams agent
 - Changed: agents built

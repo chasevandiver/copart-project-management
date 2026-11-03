@@ -2,7 +2,7 @@
   "meta": {
     "owner": "Chase",
     "role": "Digital Engagement Manager, supporting Ken Rion (SVP of Dealer Sales)",
-    "last_updated": "2026-11-02"
+    "last_updated": "2026-11-03"
   },
   "categories": [
     "AI Tools",
@@ -603,9 +603,15 @@
         "AI use survey for the whole Copart Dealer Services team, covering AI and Leo's tools (Oct 15, waiting on approval to send)",
         "Agent desk plan (Nov 2): listening and content on a weekly schedule, the dealer profile agent specified for Copilot Studio with web grounding (no per-dealer cost), follow-up drafter counted as done via the Lead Tracker templates",
         "Dealer profile agent live in Teams (Nov 2): name and city in, ten labeled lines out (website, what they sell, units, aggregator days listed, reviews, a two-line read that opens with their oldest unit, sources). Five of five tests passed, three found websites the hand search missed",
-        "Backfill started on the work setup (Nov 2 evening): Work Claude added a read-only admin export of released leads to the Lead Tracker (commit 2a88a80, deployed clean), profiled the first 20 released leads staged for review (13 with a website, 3 flagged as unconfirmed dealers, 3 with a named aged unit; about 20,600 tokens a lead), and is building the write step: a separate dealer_research table, fill blanks only, source tag, tracker type never changed, admin POST import with a dry run. Leo is testing the Teams agent on his own list"
+        "Backfill started on the work setup (Nov 2 evening): Work Claude added a read-only admin export of released leads to the Lead Tracker (commit 2a88a80, deployed clean), profiled the first 20 released leads staged for review (13 with a website, 3 flagged as unconfirmed dealers, 3 with a named aged unit; about 20,600 tokens a lead), and is building the write step: a separate dealer_research table, fill blanks only, source tag, tracker type never changed, admin POST import with a dry run. Leo is testing the Teams agent on his own list",
+        "Roadmap for Ken (Nov 3): the loop through the Lead Tracker (find, know, prioritize, call, capture, follow up, learn), what ships each week to Dec 22, and the asks: Copilot licenses for reps, a $50 to $150 monthly credit budget, IT allowing custom agents in Teams, and Ken's push on logging call outcomes from Nov 17"
       ],
-      "links": [],
+      "links": [
+        {
+          "label": "Dealer agents roadmap (for Ken)",
+          "url": "https://claude.ai/artifact/VcRFh6EkWFNvrGxpeaJknC"
+        }
+      ],
       "blockers": [],
       "next_steps": [
         "Set up the agent desk: a Teams channel or Loop page where each agent's weekly output lands and Chase marks what shipped (agents-06)",
@@ -4396,6 +4402,18 @@
       "project_id": "agents",
       "created": "2026-11-02",
       "updated": "2026-11-02"
+    },
+    {
+      "id": "agents-14",
+      "project_id": "agents",
+      "title": "Walk Ken through the dealer agents roadmap and get the four asks",
+      "status": "Next",
+      "owner": "Me",
+      "due": "2026-11-05",
+      "priority": "high",
+      "notes": "Doc linked on the project. Lead with what is live (profile agent, Leo using it, first 20 released leads profiled), then the asks: Copilot licenses for reps, $50 to $150 a month in credits, IT allowing custom agents in Teams, his push on call outcomes from Nov 17.",
+      "created": "2026-11-03",
+      "updated": "2026-11-03"
     }
   ],
   "waiting_on": [
