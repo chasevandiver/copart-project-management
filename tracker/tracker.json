@@ -369,7 +369,8 @@
         "Dealer brief on each lead: facts about the dealer only, no sales suggestions, since reps each have their own pitch (Oct 26)",
         "Light mode that pops, opens in Light by default: Copart blue header, yellow accent, rating chip colors (Oct 28, udm-21)",
         "Log cars: several VINs from one dealer at once, each checked, plus a Cars logged card on the lead page (written Oct 28, udm-20)",
-        "Pitched and launched to the team; all teams are using it (Oct 29)"
+        "Pitched and launched to the team; all teams are using it (Oct 29)",
+        "Exclusive offer landing page live on Cloudflare Pages with the Bookings link and state switch; Florida email for Salesforce filled with the live URLs (Nov 3, udm-33)"
       ],
       "links": [
         {
@@ -379,6 +380,10 @@
         {
           "label": "Exclusive offer email and landing page, state as a setting",
           "where": "Copart Dealer Digital repo, campaigns/exclusive-offer/ (README there)"
+        },
+        {
+          "label": "Exclusive offer landing page (live)",
+          "url": "https://exclusiveoffers.pages.dev/?st=fl"
         }
       ],
       "blockers": [],
@@ -4468,11 +4473,11 @@
       "id": "udm-33",
       "project_id": "udm",
       "title": "Send the exclusive offer email to the pilot state with the booking link, and feed bookings into the Lead Tracker",
-      "status": "Next",
+      "status": "In Progress",
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Nov 3, Ken's ask. After udm-30 and d-udm-09. Same email Marketing ran, sent to the prospect list in the pilot state, with the Bookings link. Bookings come to Chase; he enters each as a meeting on the lead and hands it to the person working that dealer. Copart status checked on the work setup before the send so active sellers are not pitched. Measure: bookings, meetings held, first cars. Nov 3: list rules and fields are in the brief doc. Nov 3 (later): email and landing page rebuilt in Copart Dealer Digital, campaigns/exclusive-offer, with the state as a setting (?st=fl or ?st=in) and the schedule buttons opening the Bookings page with RefID per state and option. Clicked through in a browser: Florida header, headquarters option hidden, booking link opens with fl-offer-teams. Still to do: set BOOKING_URL, deploy as a static site, book a test slot through it, give Marketing email.html with the landing URL. Bookings go to Chase, who routes each into the Lead Tracker and onto the rep's calendar (tested: shows on his calendar).",
+      "notes": "Nov 3, Ken's ask. After udm-30 and d-udm-09. Same email Marketing ran, sent to the prospect list in the pilot state, with the Bookings link. Bookings come to Chase; he enters each as a meeting on the lead and hands it to the person working that dealer. Copart status checked on the work setup before the send so active sellers are not pitched. Measure: bookings, meetings held, first cars. Nov 3: list rules and fields are in the brief doc. Nov 3 (later): email and landing page rebuilt in Copart Dealer Digital, campaigns/exclusive-offer, with the state as a setting (?st=fl or ?st=in) and the schedule buttons opening the Bookings page with RefID per state and option. Clicked through in a browser: Florida header, headquarters option hidden, booking link opens with fl-offer-teams. Still to do: set BOOKING_URL, deploy as a static site, book a test slot through it, give Marketing email.html with the landing URL. Bookings go to Chase, who routes each into the Lead Tracker and onto the rep's calendar (tested: shows on his calendar). Nov 3 (evening): deployed by Chase to https://exclusiveoffers.pages.dev/ on Leo's Cloudflare. Checked live: Florida header, images load, schedule button opens Bookings with RefID fl-offer-teams. Florida email with the live URLs is in campaigns/exclusive-offer/final/ for Rama. Left: Rama's answer on gmail addresses, the list CSV, the Salesforce tag, send date.",
       "created": "2026-11-03",
       "updated": "2026-11-03"
     },

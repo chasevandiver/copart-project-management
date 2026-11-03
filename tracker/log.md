@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-11-03, offer live
+- Source: Chase deployed the exclusive offer page to Cloudflare Pages (exclusiveoffers.pages.dev) and sent the Bookings link
+- Changed: udm-33 Next -> In Progress; udm built and links (live page)
+- Note: Florida email for Salesforce, placeholders filled, in Copart Dealer Digital campaigns/exclusive-offer/final/
+
 ## 2026-11-03, offer rebuilt
 - Source: Chase: Ken told him to run it; Florida emails pulled; bookings come to Chase and show on his calendar; asking Rama about gmail; brief goes to Rama first; rebuild the email
 - Added: udm link "Exclusive offer email and landing page, state as a setting" (Copart Dealer Digital, campaigns/exclusive-offer/)
