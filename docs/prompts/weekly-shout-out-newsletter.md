@@ -2,6 +2,10 @@
 
 How to use: paste everything between the two `=====` lines into a work Claude Project as the project instructions. Each week upload the leaderboard Excel and say "Build this week's edition." Fix the roster at the bottom first: spellings come from Chase's meeting notes and some are wrong.
 
+The design is the CDS Shout Out card set in `shout-out-card/` (see its README): a hero card for the shout out of the week on a Copart blue background with a photo Chase picks each week, six smaller white cards, the board in brief, Keep pushing. Work Claude writes the words and outputs them as a content file; the generator renders the cards and the email mock. Headshots and the hero photo are added by Chase, never by work Claude.
+
+=====` lines into a work Claude Project as the project instructions. Each week upload the leaderboard Excel and say "Build this week's edition." Fix the roster at the bottom first: spellings come from Chase's meeting notes and some are wrong.
+
 The design lives in Gamma, not in the prompt. The first edition (Week 39 sample, https://gamma.app/docs/d56t32i6rowrp5y) is saved in Gamma as the template: three letter pages, light, Copart blue, seven shout-out cards, the board in brief, Keep pushing. Work Claude writes the words; Gamma lays them out. Each week: take the Gamma content block from work Claude's output, open the template in Gamma, choose Generate from template, paste the block, and tell Gamma to keep the layout and replace the content. Export PDF for the email attachment and copy the share link for Teams. Chase can also paste the block to Claude Code, which has the Gamma connector and can run the generation and export.
 
 =====
@@ -68,50 +72,13 @@ Whole thing, cards plus intro plus close, runs 250 to 400 words. The email shoul
 ## Step 5. Output, every week, in this order
 
 1. **Plain text version**, subject line first. The intro, the seven shout-outs as short paragraphs (label, name, number, sentence), then Keep pushing and the sign-off. This is the email body and the fallback for phones.
-2. **Gamma content block**, in a code block, in exactly this shape and nothing else. Gamma fills the saved design from it, so keep the labels, the order and the line breaks:
-
-```
-CDS Shout Out
-Copart Dealer Services · Week [n] · [Mon d] to [d] · No. [n]
-
-Team,
-[intro, two or three lines]
-
-SHOUT OUT OF THE WEEK · [group] · [why]
-[Nickname or team]
-[Real name, or the two names]
-[number] [caption]
-[one or two sentences]
-
-[LABEL · why]
-[Nickname or team]
-[Real name, or the two names]
-[number] [caption]
-[one or two sentences]
-
-(five more cards in the same shape)
-
-THE BOARD, IN BRIEF
-
-Account Managers, sold MTD: [Nickname (Real name) number] · [five entries]
-
-Making moves, projected assignments vs prior month: [Name ▲nn%] · [five entries]
-
-Inside teams, sold MTD. A Team: [Team n First & First number] · [three]. B Team: [three]. C Team: [three]
-
-Make An Offer, week of [dates]: [Name number] · [five entries]
-
-KEEP PUSHING
-[two sentences] There is still plenty of month left.
-
-ELEVATE and Ignite your Passion!!!!!!!!!
-Ken Rion, SVP of Dealer Sales
-```
+2. **Content file**, as JSON in a code block, in exactly the shape of `content.sample.json` in the card folder. Keys: `week_label`, `issue`, `week_short`, `hero_image` (leave as `""`, Chase fills it), `intro`, `hero` (label, tag like "Lot #1", nick, name, photo as `""`, three stats as [number, caption] pairs, line), `cards` (six, each with label, nick, name, photo as `""`, big, cap, line), `board` (four titled lists of [name, detail, number]), `close`, `signoff`, `from`. Numbers are strings with commas. Captions are short: "Sold MTD", "Assignments MTD", "projected assignments vs prior month".
+   Under the code block add one line, **Hero image idea:** a one-sentence suggestion for this week's hero photo that fits the number one card (a yard lane, a transport truck loading, a lot in the honoree's region, a car type they sell a lot of). Chase picks the real photo.
 
 3. A line, then **CHECK BEFORE SENDING**: nickname matches not confident, people not on the roster, which slot rule you bent and why, data oddities, data-as-of dates.
 4. One line listing the seven names carded this week, for Chase to paste back next week.
 
-Do not design anything. No HTML, no PDF, no colors, no layout. Gamma does that from the content block.
+Do not design anything. No HTML, no PDF, no colors, no layout. The card generator does that from the content file.
 
 ## Nickname roster
 

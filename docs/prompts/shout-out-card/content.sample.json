@@ -1,0 +1,33 @@
+{
+  "week_label": "Week 39 · Sep 22 to 26",
+  "issue": "No. 2",
+  "week_short": "Week 39",
+  "hero_image": "hero-images/yard-lane.jpg",
+  "intro": "Seven names this week. Some of them you expected. A couple you did not. Every one of them earned it.",
+  "hero": {
+    "label": "Shout out of the week · Account Manager · No. 1 on the board",
+    "tag": "Lot #1",
+    "nick": "Big Bear",
+    "name": "James Bradley",
+    "photo": "",
+    "stats": [["1,619", "Sold MTD"], ["1,691", "Assignments MTD"], ["80", "Assignments WTD"]],
+    "line": "1,691 assignments on the month and 80 this week alone. That is not a hot start. That is a workload."
+  },
+  "cards": [
+    {"label": "Making moves", "nick": "Carlos Florez", "name": "", "photo": "", "big": "▲ 149%", "cap": "projected assignments vs prior month", "line": "More than doubled his pace in a month. Somebody check what he is drinking."},
+    {"label": "A Team · Top of the board", "nick": "Team 17", "name": "Christina & Rob", "photo": "", "big": "667", "cap": "sold MTD", "line": "Most of any team, A, B or C. They are setting the pace for the whole floor."},
+    {"label": "B Team · Most activity on the floor", "nick": "Leo Gets Cars", "name": "Team 13, Kevin & Leo", "photo": "", "big": "681", "cap": "assignments MTD", "line": "Plus 35 this week and 436 sold. The nickname is earning its keep."},
+    {"label": "Make An Offer · Week of Sep 14 to 18", "nick": "Austin Oddo", "name": "", "photo": "", "big": "86", "cap": "assignments for the week", "line": "Led the MAO board. Jonathan Jerry was three back at 83, so this one is a race."},
+    {"label": "Making moves", "nick": "The Englishman", "name": "Ian Baxter", "photo": "", "big": "▲ 62%", "cap": "projected assignments vs prior month", "line": "Up 62% on last month and did it quietly, which is exactly how you would expect him to do it."},
+    {"label": "C Team · Keep climbing", "nick": "Team 20", "name": "Isaiah & Elijah", "photo": "", "big": "50", "cap": "assignments MTD", "line": "31 sold so far and the pipeline to keep going. Watch this one next month."}
+  ],
+  "board": {
+    "Account Managers · sold MTD": [["Big Bear", "James Bradley", "1,619"], ["The Joker", "George Ercolono", "803"], ["Nature Boy", "Timothy Delahunt", "341"], ["The Captain", "Martin Pouliot", "305"], ["Showtime", "Albert Gedge", "302"]],
+    "Making moves · projected vs prior month": [["Carlos Florez", "", "▲ 149%"], ["Ian Baxter", "", "▲ 62%"], ["Kenny Garcia", "", "▲ 26%"], ["Michael Chapin", "", "▲ 24%"], ["Liliana Infante", "", "331 proj."]],
+    "Inside teams · sold MTD": [["Team 17", "Christina & Rob", "667"], ["Team 13", "Kevin & Leo", "436"], ["Team 9", "Gabe & Callie", "170"]],
+    "Make An Offer · week of Sep 14 to 18": [["Austin Oddo", "", "86"], ["Jonathan Jerry", "", "83"], ["Michael McNeill", "", "75"]]
+  },
+  "close": "If you are on this list, keep setting the pace. If you are not, you are one big week away. There is still plenty of month left.",
+  "signoff": "ELEVATE and Ignite your Passion!!!!!!!!!",
+  "from": "Ken Rion, SVP of Dealer Sales"
+}
