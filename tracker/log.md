@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-11-06
+- Source: Chase: Ken likes the sell-global pitch and wants the videos fun and AI-heavy; do the AI concepts, big first, scale back later
+- Changed: vid summary, built, links (AI video concepts doc in copart-dealer-digital docs/social/ai-concepts.md), next steps
+- Added: vid-21 "Pitch Ken the AI video concepts and have him pick three" (Me, high)
+
 ## 2026-11-03
 - Source: Chase: turn the agent loop into a one-page roadmap for Ken
 - Changed: agents links and built (Dealer agents roadmap doc)

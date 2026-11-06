@@ -2,7 +2,7 @@
   "meta": {
     "owner": "Chase",
     "role": "Digital Engagement Manager, supporting Ken Rion (SVP of Dealer Sales)",
-    "last_updated": "2026-11-03"
+    "last_updated": "2026-11-06"
   },
   "categories": [
     "AI Tools",
@@ -680,12 +680,13 @@
       "name": "Social Media Videos",
       "category": "Marketing Efforts",
       "status": "Waiting",
-      "summary": "Ken's initiative: a six-video series over three weeks, filmed in the office with Michelle (videographer), Ken on camera and a sales manager in two. Commercial-style pitch with fun-fact cards about Copart Dealer Services, aimed at independent dealers who want to sell. David Bansigan posts on Copart's corporate TikTok and Instagram; we hand him finished videos and a one-pager, B-roll is available, and he fits them on the calendar. Marketing wants more faces on social, and can boost the posts that do well organically to target dealers. Current audience is mostly consumers. Who edits the videos is still open. Oct 27: Ken wants one video that purely pitches Copart Dealer Services. It replaces video 3 (Numbers a dealer should know) in the Nov 19 slot, keeps those numbers as fact cards, and has no deadline in the close so it keeps working after Dec 31 (pin on Ken's LinkedIn, reps' intro emails, the Copart Dealer Services page).",
+      "summary": "Ken's initiative: a six-video series over three weeks, filmed in the office with Michelle (videographer), Ken on camera and a sales manager in two. Commercial-style pitch with fun-fact cards about Copart Dealer Services, aimed at independent dealers who want to sell. David Bansigan posts on Copart's corporate TikTok and Instagram; we hand him finished videos and a one-pager, B-roll is available, and he fits them on the calendar. Marketing wants more faces on social, and can boost the posts that do well organically to target dealers. Current audience is mostly consumers. Who edits the videos is still open. Oct 27: Ken wants one video that purely pitches Copart Dealer Services. It replaces video 3 (Numbers a dealer should know) in the Nov 19 slot, keeps those numbers as fact cards, and has no deadline in the close so it keeps working after Dec 31 (pin on Ken's LinkedIn, reps' intro emails, the Copart Dealer Services page). Nov 6: Ken likes the pitch that dealers can sell a car to the whole world and it is easy, and wants the videos fun and AI-heavy (TikTok audiences enjoy AI content). AI concepts drafted, written big to pitch and scale back: Ken stays real on camera, AI generates the world around him (passport, departures board, the car's travel vlog, the Georgia joke, a recurring car across the six videos). Never a generated yard, dealer, testimonial or number.",
       "built": [
         "Video brief and series outline for Ken and Michelle, draft (Oct 21)",
         "Research brief, content calendar and measurement plan, drafts (Oct 21): Copart's social footprint, where dealers pay attention, competitor playbook, 3-week calendar, UTMs, paid graduation rule and paid targeting per platform",
         "Starter scripts for all six videos, with timing, on-screen cards, B-roll and spare hooks; facts in brackets for Ken (Oct 22)",
-        "Year-end reason and dated call to action in all six scripts, plus a 20-second Ken cut for LinkedIn and the Lead Tracker (Oct 22, from Ken's floor speech)"
+        "Year-end reason and dated call to action in all six scripts, plus a 20-second Ken cut for LinkedIn and the Lead Tracker (Oct 22, from Ken's floor speech)",
+        "AI video concepts (Nov 6): 15 fun, AI-heavy concepts for the sell-global pitch, each mapped to a calendar slot with a scaled-back version, plus production notes (tools, labels, Legal, trial reels)"
       ],
       "links": [
         {
@@ -715,6 +716,10 @@
         {
           "label": "Sell now: year-end messaging for dealer campaigns",
           "url": "https://claude.ai/artifact/LSF6ToFXAhHvkTcY23qX2W"
+        },
+        {
+          "label": "AI video concepts (sell global, super easy)",
+          "where": "copart-dealer-digital repo, docs/social/ai-concepts.md"
         }
       ],
       "blockers": [
@@ -722,6 +727,7 @@
         "Holding pattern until the website changes go through (Oct 26). Chase suggested running the videos and the website changes at the same time; Ken wants the website first."
       ],
       "next_steps": [
+        "Pitch Ken the AI concepts and have him pick three, plus a name for the recurring car (vid-21)",
         "Ask Ken whether the videos can link straight to the Bookings page, so the series doesn't wait on the website button (Oct 27)",
         "Get the booking button live on the website before post one (audit-15, q-36, q-37)",
         "Get the assignment deadline, the offer and Ken's own words for \"this is the time\" in the script session (q-30, q-14, q-31, vid-17)",
@@ -4414,6 +4420,18 @@
       "notes": "Doc linked on the project. Lead with what is live (profile agent, Leo using it, first 20 released leads profiled), then the asks: Copilot licenses for reps, $50 to $150 a month in credits, IT allowing custom agents in Teams, his push on call outcomes from Nov 17.",
       "created": "2026-11-03",
       "updated": "2026-11-03"
+    },
+    {
+      "id": "vid-21",
+      "project_id": "vid",
+      "title": "Pitch Ken the AI video concepts and have him pick three",
+      "status": "Next",
+      "owner": "Me",
+      "due": null,
+      "priority": "high",
+      "notes": "Nov 6: Ken wants the series fun and AI-heavy around the sell-global pitch. Concepts doc in copart-dealer-digital docs/social/ai-concepts.md: 15 ideas written big (passport, departures board, the car's travel vlog, the UN of bidders, the Georgia joke, swipe right, Ken reacts to AI getting it wrong, postcards, the button, sit or ship split screen, Ken over the world, 90s infomercial, the counteroffer desk, rough trade's second life, Spanish cut later), each with a scaled-back version and a calendar slot. Bring the five-line pitch at the end of the doc to the outline session (vid-17): one idea, one recurring car he names, Ken real and AI around him, big cuts for TikTok and plain cuts for LinkedIn, pick three. Then ask David Bansigan which AI generators Marketing already uses on the corporate accounts (vid-15) and add the generated-shot list to the Legal pass (vid-12).",
+      "created": "2026-11-06",
+      "updated": "2026-11-06"
     }
   ],
   "waiting_on": [
