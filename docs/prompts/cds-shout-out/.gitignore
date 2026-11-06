@@ -1,0 +1,11 @@
+inbox/*
+!inbox/.gitkeep
+hero-images/*
+!hero-images/.gitkeep
+headshots/*
+!headshots/.gitkeep
+editions/*
+!editions/.gitkeep
+node_modules/
+*.png
+out.html

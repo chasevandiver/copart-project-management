@@ -1,8 +1,8 @@
 // CDS Shout Out card generator.
-// Usage: node card.js content.json out.html
+// Usage: node card.js editions/<week>/content.json editions/<week>/email.html
 // Renders the email (hero card + six cards + board + close) as HTML. Screenshot it with
 // shoot.js for the PNGs. hero_image in the JSON is the weekly hero background (a path
-// relative to this folder, or a URL). Leave it empty for a plain Copart blue hero.
+// relative to this folder, like hero-images/yard.jpg, or a URL). Leave it empty for a plain Copart blue hero.
 // photo fields are optional headshot paths; empty shows the placeholder circle.
 const fs = require('fs');
 const path = require('path');
@@ -12,7 +12,7 @@ const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
 const C = { blue:'#0A4DA3', navy:'#082E63', sky:'#CFE0F7', white:'#FFFFFF', ink:'#111418', body:'#2E333B', muted:'#5B6470', page:'#EEF1F5', line:'#DCE1E8' };
 const HEAD = "'Inter Display','Inter','Arial Black',Arial,sans-serif";
 const BODY = "'Inter',Arial,sans-serif";
-const src = p => !p ? '' : (/^https?:/.test(p) ? p : 'file://' + path.resolve(path.dirname(process.argv[2]), p));
+const src = p => !p ? '' : (/^https?:/.test(p) ? p : 'file://' + path.resolve(__dirname, p));
 const photo = (p, size) => p
   ? `<div style="width:${size}px;height:${size}px;border-radius:50%;border:4px solid ${C.white};box-shadow:0 8px 24px rgba(0,0,0,.25);overflow:hidden;background:${C.sky}"><img src="${src(p)}" style="width:100%;height:100%;object-fit:cover"></div>`
   : `<div style="width:${size}px;height:${size}px;border-radius:50%;background:${C.sky};border:4px solid ${C.white};box-shadow:0 8px 24px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center"><svg width="${size*0.7}" height="${size*0.7}" viewBox="0 0 100 100"><circle cx="50" cy="36" r="20" fill="${C.blue}" opacity=".55"/><path d="M12 96c3-24 20-36 38-36s35 12 38 36z" fill="${C.blue}" opacity=".55"/></svg></div>`;
