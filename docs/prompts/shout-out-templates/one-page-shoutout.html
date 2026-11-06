@@ -1,85 +1,50 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><title>CDS Shout Out</title><style>
   @page { size: letter; margin: 0 }
   * { box-sizing:border-box }
-  body { margin:0; width:8.5in; height:11in; background:#0A0A0B; color:#D6D6DB; font-family:'Inter', 'Helvetica Neue', Arial, sans-serif; font-size:9.5px; line-height:1.3; -webkit-print-color-adjust:exact; print-color-adjust:exact }
-  .page { width:8.5in; height:11in; padding:.35in .5in .28in; display:flex; flex-direction:column; gap:9px; overflow:hidden }
-  .top { display:flex; justify-content:space-between; align-items:flex-end; border-bottom:1px solid #2A2A2E; padding-bottom:8px }
-  .kick { font-size:9px; font-weight:700; letter-spacing:2.5px; text-transform:uppercase; color:#2F7CF6 }
-  h1 { margin:3px 0 0; font-family:'Inter Display', 'Arial Black', 'Helvetica Neue', Arial, sans-serif; font-weight:900; font-size:30px; line-height:1; letter-spacing:-1.5px; color:#FFFFFF }
-  .meta { font-size:9px; letter-spacing:1.5px; text-transform:uppercase; color:#8E8E96; text-align:right }
-  .intro { font-size:11px; line-height:1.5; color:#D6D6DB }
-  .lbl { display:flex; align-items:center; gap:8px; font-size:9px; font-weight:700; letter-spacing:2.5px; text-transform:uppercase; color:#2F7CF6; margin-bottom:6px }
-  .lbl:before { content:''; width:16px; height:2px; background:#2F7CF6 }
-  .hero { background:#131315; border-radius:4px; padding:12px 20px; display:grid; grid-template-columns:1.2fr 1fr; align-items:center; gap:16px }
-  .hero .nick { font-family:'Inter Display', 'Arial Black', 'Helvetica Neue', Arial, sans-serif; font-weight:900; font-size:46px; line-height:.95; letter-spacing:-3px; color:#FFFFFF }
-  .hero .nm { font-size:10px; color:#8E8E96; margin-top:6px }
-  .hero .nm b { color:#2F7CF6 }
-  .stats { display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px }
-  .stats .n { font-family:'Inter Display', 'Arial Black', 'Helvetica Neue', Arial, sans-serif; font-weight:900; font-size:26px; line-height:1; letter-spacing:-1px; color:#FFFFFF }
-  .stats .l { font-size:7.5px; letter-spacing:1.2px; text-transform:uppercase; color:#8E8E96; margin-top:5px; white-space:nowrap }
-  .grid { display:grid; grid-template-columns:1fr 1fr; gap:20px }
+  body { margin:0; width:8.5in; height:11in; background:#F3F4F6; color:#3A3A42; font-family:'Inter', 'Helvetica Neue', Arial, sans-serif; font-size:9.5px; line-height:1.35; -webkit-print-color-adjust:exact; print-color-adjust:exact }
+  .page { width:8.5in; height:11in; padding:.4in .45in .3in; display:flex; flex-direction:column; gap:10px; overflow:hidden }
+  .top { display:flex; justify-content:space-between; align-items:flex-end }
+  .kick { font-size:9px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#0F5FD6 }
+  h1 { margin:3px 0 0; font-family:'Inter Display', 'Arial Black', 'Helvetica Neue', Arial, sans-serif; font-weight:900; font-size:30px; line-height:1; letter-spacing:-1.5px; color:#111114 }
+  .meta { font-size:9px; letter-spacing:1.5px; text-transform:uppercase; color:#74747E; text-align:right }
+  .intro { font-size:11px; line-height:1.5 } .intro b { color:#111114 }
+  .cards { display:grid; grid-template-columns:repeat(6,1fr); gap:10px }
+  .card { grid-column:span 2 }
+  .card:nth-last-child(-n+2) { grid-column:span 3 }
+  .card { background:#FFFFFF; border:1px solid #E2E3E8; border-radius:8px; padding:12px 14px; display:flex; flex-direction:column }
+  .card.wide { grid-column:span 4; flex-direction:row; justify-content:space-between; gap:16px }
+  .card .lbl { font-size:8px; font-weight:700; letter-spacing:1.8px; text-transform:uppercase; color:#0F5FD6 }
+  .card .nick { font-family:'Inter Display', 'Arial Black', 'Helvetica Neue', Arial, sans-serif; font-weight:900; font-size:22px; line-height:1; letter-spacing:-1px; color:#111114; margin-top:6px }
+  .card.wide .nick { font-size:36px; letter-spacing:-1.5px }
+  .card .nm { font-size:9.5px; color:#74747E; margin-top:3px }
+  .card .big { font-family:'Inter Display', 'Arial Black', 'Helvetica Neue', Arial, sans-serif; font-weight:900; font-size:26px; line-height:1; letter-spacing:-1px; color:#0F5FD6; margin-top:10px; white-space:nowrap }
+  .card.wide .big { font-size:40px; margin-top:0; text-align:right }
+  .card .cap { font-size:8.5px; color:#74747E; margin-top:3px }
+  .card.wide .cap { text-align:right }
+  .card .line { font-size:10px; line-height:1.45; color:#3A3A42; margin-top:8px }
+  .card.wide .line { font-size:11px }
+  .board { background:#FFFFFF; border:1px solid #E2E3E8; border-radius:8px; padding:12px 14px 6px; margin-top:auto }
+  .board h2 { margin:0 0 8px; font-size:9px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#0F5FD6 }
+  .cols { display:grid; grid-template-columns:repeat(4,1fr); gap:0 18px }
+  .col h3 { margin:0 0 3px; font-size:8px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:#74747E }
   table { width:100%; border-collapse:collapse }
-  td { padding:3.5px 0; border-top:1px solid #2A2A2E; vertical-align:middle }
-  td.rk { width:26px; font-family:'Inter Display', 'Arial Black', 'Helvetica Neue', Arial, sans-serif; font-weight:900; font-size:14px; color:#2F7CF6 }
-  td.nm b { color:#FFFFFF; font-size:11.5px } td.nm span { color:#8E8E96; font-size:9px; margin-left:6px }
-  td.n { text-align:right; font-family:'Inter Display', 'Arial Black', 'Helvetica Neue', Arial, sans-serif; font-weight:900; font-size:16px; letter-spacing:-.5px; color:#FFFFFF; white-space:nowrap }
-  td.n small, .sm { font-family:'Inter', 'Helvetica Neue', Arial, sans-serif; font-weight:400; font-size:8px; letter-spacing:1.5px; text-transform:uppercase; color:#8E8E96; padding-left:4px }
-  td.a { text-align:right; width:52px; font-size:9px; color:#8E8E96; white-space:nowrap; padding-left:10px }
-  .note { font-size:9px; color:#8E8E96; margin-top:4px; line-height:1.4 }
-  .mv { display:grid; grid-template-columns:1fr 1fr; gap:0 18px }
-  .mv div.c { border-top:1px solid #2A2A2E; padding:6px 0 }
-  .mv .p { font-family:'Inter Display', 'Arial Black', 'Helvetica Neue', Arial, sans-serif; font-weight:900; font-size:20px; line-height:1; letter-spacing:-1px; color:#2F7CF6 }
-  .mv .w { font-size:11px; font-weight:700; color:#FFFFFF; margin-top:4px }
-  .mv .s { font-size:8.5px; color:#8E8E96 }
-  .grp { font-size:8.5px; font-weight:700; letter-spacing:2.5px; text-transform:uppercase; color:#FFFFFF; margin:7px 0 2px }
-  .grp span { color:#8E8E96; font-weight:400; letter-spacing:1px; margin-left:6px }
-  .grp:first-child { margin-top:0 }
-  td.t { width:56px; white-space:nowrap; font-family:'Inter Display', 'Arial Black', 'Helvetica Neue', Arial, sans-serif; font-weight:900; font-size:11.5px; color:#FFFFFF } tr.lead td.t { color:#2F7CF6 }
-  td.w { font-size:10px; color:#D6D6DB }
-  .tiles { display:grid; grid-template-columns:repeat(3,1fr); gap:0 18px }
-  .tile { border-top:1px solid #2A2A2E; padding:6px 0 }
-  .tile .b { font-family:'Inter Display', 'Arial Black', 'Helvetica Neue', Arial, sans-serif; font-weight:900; font-size:21px; line-height:1; letter-spacing:-1px; color:#FFFFFF }
-  .tile .s { font-size:7.5px; letter-spacing:1.5px; text-transform:uppercase; color:#2F7CF6; margin-top:5px }
-  .tile .w { font-size:10px; font-weight:700; color:#FFFFFF; margin-top:2px }
-  .bottom { display:grid; grid-template-columns:1.15fr 1fr; gap:20px }
-  .maotop { display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-bottom:6px }
-  .mt .k { font-size:8.5px; font-weight:700; letter-spacing:2px; color:#2F7CF6 }
-  .mt .n { font-family:'Inter Display', 'Arial Black', 'Helvetica Neue', Arial, sans-serif; font-weight:900; font-size:24px; line-height:1; letter-spacing:-1px; color:#FFFFFF; margin-top:4px }
-  .mt .w { font-size:10px; font-weight:700; color:#FFFFFF; margin-top:4px }
-  .maorest { display:grid; grid-template-columns:1fr 1fr; gap:0 18px; font-size:9.5px }
-  .maorest div { border-top:1px solid #2A2A2E; padding:4px 0; display:flex; justify-content:space-between; color:#D6D6DB }
-  .maorest b { font-family:'Inter Display', 'Arial Black', 'Helvetica Neue', Arial, sans-serif; font-weight:900; color:#FFFFFF; font-size:12px }
-  .maorest i { font-style:normal; color:#8E8E96; font-size:8.5px; letter-spacing:1px; margin-right:6px }
-  .close { font-size:10.5px; line-height:1.5; color:#D6D6DB }
-  .sign { font-family:'Inter Display', 'Arial Black', 'Helvetica Neue', Arial, sans-serif; font-weight:900; font-size:16px; letter-spacing:-.5px; color:#FFFFFF; margin-top:10px; line-height:1.15 }
-  .foot { font-size:8px; color:#8E8E96; border-top:1px solid #2A2A2E; padding-top:5px; margin-top:auto; display:flex; justify-content:space-between }</style></head><body><div class="page">
+  td { padding:3px 0; border-top:1px solid #E2E3E8; font-size:9px; color:#111114; vertical-align:middle }
+  td b { font-weight:700 } td span { color:#74747E; margin-left:4px }
+  td.n { text-align:right; font-family:'Inter Display', 'Arial Black', 'Helvetica Neue', Arial, sans-serif; font-weight:900; font-size:11px; white-space:nowrap }
+  td.g { font-size:8px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:#74747E; padding-top:6px }
+  .close { display:flex; justify-content:space-between; align-items:flex-end; gap:24px; font-size:10.5px; line-height:1.5 }
+  .sign { font-family:'Inter Display', 'Arial Black', 'Helvetica Neue', Arial, sans-serif; font-weight:900; font-size:15px; letter-spacing:-.5px; color:#111114; white-space:nowrap; text-align:right }
+  .sign small { display:block; font-family:'Inter', 'Helvetica Neue', Arial, sans-serif; font-weight:400; font-size:9px; color:#74747E; letter-spacing:0; margin-top:2px }
+  .foot { font-size:8px; color:#74747E; border-top:1px solid #E2E3E8; padding-top:5px; display:flex; justify-content:space-between }</style></head><body><div class="page">
   <div class="top"><div><div class="kick">Copart Dealer Services</div><h1>CDS Shout Out</h1></div><div class="meta">Week [n] · [dates]<br>No. [n]</div></div>
-  <div class="intro"><b style="color:#FFFFFF">Team,</b> [Two or three lines on what the board says this week.]</div>
-  <div>
-    <div class="lbl">Shout out of the week</div>
-    <div class="hero"><div><div class="nick">[Nickname]</div><div class="nm">[First Last] &nbsp;·&nbsp; Account Manager &nbsp;·&nbsp; <b>No. 1 on the board</b></div></div>
-    <div class="stats"><div><div class="n">[0,000]</div><div class="l">Sold MTD</div></div><div><div class="n">[0,000]</div><div class="l">Assignments MTD</div></div><div><div class="n">[00]</div><div class="l">Assignments WTD</div></div></div></div>
-  </div>
-  <div class="grid">
-    <div>
-      <div class="lbl">Top of the board</div>
-      <table><tr><td class="rk">02</td><td class="nm"><b>[Nickname]</b><span>[First Last]</span></td><td class="n">[000]<small>sold</small></td><td class="a">[000] asg</td></tr><tr><td class="rk">03</td><td class="nm"><b>[Nickname]</b><span>[First Last]</span></td><td class="n">[000]<small>sold</small></td><td class="a">[000] asg</td></tr><tr><td class="rk">04</td><td class="nm"><b>[Nickname]</b><span>[First Last]</span></td><td class="n">[000]<small>sold</small></td><td class="a">[000] asg</td></tr><tr><td class="rk">05</td><td class="nm"><b>[First Last]</b></td><td class="n">[000]<small>sold</small></td><td class="a">[000] asg</td></tr></table>
-      <div class="note">That is a lot of production at the top of the board. Great work.</div>
-      <div class="lbl" style="margin-top:10px">Making moves</div>
-      <div class="mv"><div class="c"><div class="p">&#9650;&#8201;[00]%</div><div class="w">[First Last]</div><div class="s">projected assignments vs prior month</div></div><div class="c"><div class="p">&#9650;&#8201;[00]%</div><div class="w">[Nickname]</div><div class="s">[First Last] · projected assignments vs prior month</div></div><div class="c"><div class="p">&#9650;&#8201;[00]%</div><div class="w">[First Last]</div><div class="s">projected assignments vs prior month</div></div><div class="c"><div class="p">[000]</div><div class="w">[Nickname]</div><div class="s">[First Last] · projected finish, [000] assignments MTD</div></div></div>
-    </div>
-    <div>
-      <div class="lbl">Inside teams</div>
-      <div class="grp">A Team<span>top of the board</span></div><table><tr class="lead"><td class="t">Team [n]</td><td class="w">[First] & [First]</td><td class="n">[000]<small>sold</small></td></tr><tr class=""><td class="t">Team [n]</td><td class="w">[First] & [First] AKA "[Nickname]"</td><td class="n">[000]<small>sold</small></td></tr><tr class=""><td class="t">Team [n]</td><td class="w">[First] & [First]</td><td class="n">[000]<small>sold</small></td></tr></table><div class="note">Team [n], [First] & [First]: [00] assignments WTD, the highest weekly number in A Team.</div><div class="grp">B Team<span>top of the board</span></div><table><tr class="lead"><td class="t">Team [n]</td><td class="w">[First] & [First]</td><td class="n">[000]<small>sold</small></td></tr><tr class=""><td class="t">Team [n]</td><td class="w">[First] & [First]</td><td class="n">[000]<small>sold</small></td></tr><tr class=""><td class="t">Team [n]</td><td class="w">[First] & [First]</td><td class="n">[000]<small>sold</small></td></tr></table><div class="note">Team [n], [First] & [First]: [000] assignments MTD and [00] WTD.</div><div class="grp">C Team<span>keep climbing</span></div><table><tr class="lead"><td class="t">Team [n]</td><td class="w">[First] & [First]</td><td class="n">[000]<small>sold</small></td></tr><tr class=""><td class="t">Team [n]</td><td class="w">[First] & [First]</td><td class="n">[00]<small>sold</small></td></tr><tr class=""><td class="t">Team [n]</td><td class="w">[First] & [First]</td><td class="n">[00]<small>sold</small></td></tr></table><div class="note">Team [n], [First] & [First]: [00] assignments MTD, a solid foundation to keep climbing.</div>
-    </div>
-  </div>
-  <div><div class="lbl">Jumped off the page</div><div class="tiles"><div class="tile"><div class="b">[0,000]</div><div class="s">assignments MTD</div><div class="w">[Name]</div></div><div class="tile"><div class="b">[000]</div><div class="s">sold MTD, most of any team</div><div class="w">Team [n]</div></div><div class="tile"><div class="b">[000]</div><div class="s">assignments MTD</div><div class="w">Team [n]</div></div><div class="tile"><div class="b">[00]</div><div class="s">assignments WTD</div><div class="w">[Name]</div></div><div class="tile"><div class="b">+[00]%</div><div class="s">projected vs prior month</div><div class="w">[Name]</div></div><div class="tile"><div class="b">[00]</div><div class="s">assignments WTD</div><div class="w">Team [n]</div></div></div></div>
-  <div class="bottom">
-    <div><div class="lbl">MAO shout out <span class="sm" style="letter-spacing:1px;text-transform:none">&nbsp; Make An Offer team, week of [Mon] to [Fri]</span></div>
-      <div class="maotop"><div class="mt"><div class="k">01</div><div class="n">[00]</div><div class="w">[First Last]</div></div><div class="mt"><div class="k">02</div><div class="n">[00]</div><div class="w">[First Last]</div></div><div class="mt"><div class="k">03</div><div class="n">[00]</div><div class="w">[First Last]</div></div></div>
-      <div class="maorest"><div><span><i>04</i>[First Last]</span><b>[00]</b></div><div><span><i>05</i>[First Last]</span><b>[00]</b></div><div><span><i>06</i>[First Last]</span><b>[00]</b></div><div><span><i>07</i>[First Last]</span><b>[00]</b></div></div>
-    </div>
-    <div><div class="lbl">Keep pushing</div><div class="close"><div>If you're at the top, keep setting the pace.</div><div>If you're in the middle, keep climbing.</div><div>If you're one of the people or teams showing big movement, keep attacking it. Momentum compounds.</div><div>There is still plenty of month left.</div></div><div class="sign">ELEVATE and Ignite your Passion!!!!!!!!!</div><div class="sm" style="padding:4px 0 0;letter-spacing:0;text-transform:none;font-size:9px">Ken Rion, SVP of Dealer Sales</div></div>
-  </div>
+  <div class="intro"><b>Team,</b> [Two or three lines from Ken on what the board says this week.]</div>
+  <div class="cards"><div class="card wide"><div><div class="lbl">[Group · why they are here]</div><div class="nick">[Nickname or team]</div><div class="nm">[Real name, or the two names on the team]</div><div class="line">[One or two sentences from Ken on why this one matters.]</div></div><div><div class="big">[0,000]</div><div class="cap">[what the number is]</div></div></div><div class="card"><div class="lbl">[Group · why they are here]</div><div class="nick">[Nickname or team]</div><div class="nm">[Real name, or the two names on the team]</div><div class="big">[0,000]</div><div class="cap">[what the number is]</div><div class="line">[One or two sentences from Ken on why this one matters.]</div></div><div class="card"><div class="lbl">[Group · why they are here]</div><div class="nick">[Nickname or team]</div><div class="nm">[Real name, or the two names on the team]</div><div class="big">[0,000]</div><div class="cap">[what the number is]</div><div class="line">[One or two sentences from Ken on why this one matters.]</div></div><div class="card"><div class="lbl">[Group · why they are here]</div><div class="nick">[Nickname or team]</div><div class="nm">[Real name, or the two names on the team]</div><div class="big">[0,000]</div><div class="cap">[what the number is]</div><div class="line">[One or two sentences from Ken on why this one matters.]</div></div><div class="card"><div class="lbl">[Group · why they are here]</div><div class="nick">[Nickname or team]</div><div class="nm">[Real name, or the two names on the team]</div><div class="big">[0,000]</div><div class="cap">[what the number is]</div><div class="line">[One or two sentences from Ken on why this one matters.]</div></div><div class="card"><div class="lbl">[Group · why they are here]</div><div class="nick">[Nickname or team]</div><div class="nm">[Real name, or the two names on the team]</div><div class="big">[0,000]</div><div class="cap">[what the number is]</div><div class="line">[One or two sentences from Ken on why this one matters.]</div></div><div class="card"><div class="lbl">[Group · why they are here]</div><div class="nick">[Nickname or team]</div><div class="nm">[Real name, or the two names on the team]</div><div class="big">[0,000]</div><div class="cap">[what the number is]</div><div class="line">[One or two sentences from Ken on why this one matters.]</div></div></div>
+  <div class="board"><h2>The board, in brief</h2><div class="cols">
+    <div class="col"><h3>Account Managers · sold MTD</h3><table><tr><td><b>[Nickname]</b><span>[Name]</span></td><td class="n">[000]</td></tr><tr><td><b>[Nickname]</b><span>[Name]</span></td><td class="n">[000]</td></tr><tr><td><b>[Nickname]</b><span>[Name]</span></td><td class="n">[000]</td></tr><tr><td><b>[Nickname]</b><span>[Name]</span></td><td class="n">[000]</td></tr><tr><td><b>[Nickname]</b><span>[Name]</span></td><td class="n">[000]</td></tr></table></div>
+    <div class="col"><h3>Making moves</h3><table><tr><td><b>[Name]</b></td><td class="n">▲ [00]%</td></tr><tr><td><b>[Name]</b></td><td class="n">▲ [00]%</td></tr><tr><td><b>[Name]</b></td><td class="n">▲ [00]%</td></tr><tr><td><b>[Name]</b></td><td class="n">▲ [00]%</td></tr><tr><td><b>[Name]</b></td><td class="n">▲ [00]%</td></tr></table></div>
+    <div class="col"><h3>Inside teams · sold MTD</h3><table><tr><td class="g" colspan="2">A Team</td></tr><tr><td><b>Team [n]</b><span>[First] &amp; [First]</span></td><td class="n">[000]</td></tr><tr><td><b>Team [n]</b><span>[First] &amp; [First]</span></td><td class="n">[000]</td></tr><tr><td><b>Team [n]</b><span>[First] &amp; [First]</span></td><td class="n">[000]</td></tr><tr><td class="g" colspan="2">B Team</td></tr><tr><td><b>Team [n]</b><span>[First] &amp; [First]</span></td><td class="n">[000]</td></tr><tr><td><b>Team [n]</b><span>[First] &amp; [First]</span></td><td class="n">[000]</td></tr><tr><td><b>Team [n]</b><span>[First] &amp; [First]</span></td><td class="n">[000]</td></tr><tr><td class="g" colspan="2">C Team</td></tr><tr><td><b>Team [n]</b><span>[First] &amp; [First]</span></td><td class="n">[00]</td></tr><tr><td><b>Team [n]</b><span>[First] &amp; [First]</span></td><td class="n">[00]</td></tr><tr><td><b>Team [n]</b><span>[First] &amp; [First]</span></td><td class="n">[00]</td></tr></table></div>
+    <div class="col"><h3>Make An Offer · Sep 14 to 18</h3><table><tr><td><b>[Name]</b></td><td class="n">[00]</td></tr><tr><td><b>[Name]</b></td><td class="n">[00]</td></tr><tr><td><b>[Name]</b></td><td class="n">[00]</td></tr><tr><td><b>[Name]</b></td><td class="n">[00]</td></tr><tr><td><b>[Name]</b></td><td class="n">[00]</td></tr></table></div>
+  </div></div>
+  <div class="close"><div>[Two sentences to close. Then: There is still plenty of month left.]</div><div class="sign">ELEVATE and Ignite your Passion!!!!!!!!!<small>Ken Rion, SVP of Dealer Sales</small></div></div>
   <div class="foot"><span>Numbers come from the weekly leaderboards. Reply to Chase with corrections.</span><span>CDS Shout Out · No. [n]</span></div>
 </div></body></html>
