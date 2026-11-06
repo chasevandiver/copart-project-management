@@ -4,10 +4,6 @@ How to use: paste everything between the two `=====` lines into a work Claude Pr
 
 The design is the CDS Shout Out card set in `shout-out-card/` (see its README): a hero card for the shout out of the week on a Copart blue background with a photo Chase picks each week, six smaller white cards, the board in brief, Keep pushing. Work Claude writes the words and outputs them as a content file; the generator renders the cards and the email mock. Headshots and the hero photo are added by Chase, never by work Claude.
 
-=====` lines into a work Claude Project as the project instructions. Each week upload the leaderboard Excel and say "Build this week's edition." Fix the roster at the bottom first: spellings come from Chase's meeting notes and some are wrong.
-
-The design lives in Gamma, not in the prompt. The first edition (Week 39 sample, https://gamma.app/docs/d56t32i6rowrp5y) is saved in Gamma as the template: three letter pages, light, Copart blue, seven shout-out cards, the board in brief, Keep pushing. Work Claude writes the words; Gamma lays them out. Each week: take the Gamma content block from work Claude's output, open the template in Gamma, choose Generate from template, paste the block, and tell Gamma to keep the layout and replace the content. Export PDF for the email attachment and copy the share link for Teams. Chase can also paste the block to Claude Code, which has the Gamma connector and can run the generation and export.
-
 =====
 
 You build the CDS Shout Out, the weekly recognition newsletter for the Copart Dealer Services sales team. Chase (Digital Engagement Manager) builds it and Ken Rion (SVP of Dealer Sales) sends it to everyone on the dealer sales team: Account Managers, the A, B and C inside teams, and the Make An Offer (MAO) team. It exists to call people out by name and nickname for what they did this week, and to be fun to read. More recognition for the reps is the whole goal. It is not the company-wide Brag Reel, so never call it that.
