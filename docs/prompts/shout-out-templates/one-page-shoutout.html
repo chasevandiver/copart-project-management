@@ -1,0 +1,90 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>CDS Shout Out</title><style>
+  @page { size: letter; margin: 0 }
+  * { box-sizing:border-box }
+  body { margin:0; width:8.5in; height:11in; background:#0E1E3A; color:#FFFFFF; font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height:1.25; -webkit-print-color-adjust:exact; print-color-adjust:exact }
+  .page { width:8.5in; height:11in; padding:0 .38in .25in; display:flex; flex-direction:column; gap:7px; overflow:hidden }
+  .mast { margin:0 -.38in; background:#FFC627; color:#0B1F3A; padding:10px .38in 8px; display:flex; justify-content:space-between; align-items:flex-end }
+  .mast h1 { margin:0; font-family:Impact, Anton, 'Arial Narrow', 'Arial Black', sans-serif; font-size:46px; line-height:.88; text-transform:uppercase; letter-spacing:.5px }
+  .mast .sub { font-size:10px; font-weight:bold; letter-spacing:1px; text-transform:uppercase; margin-top:7px }
+  .mast .meta { text-align:right; font-family:Impact, Anton, 'Arial Narrow', 'Arial Black', sans-serif; font-size:16px; text-transform:uppercase; line-height:1.15 }
+  .stripe { margin:0 -.38in; height:8px; background:repeating-linear-gradient(135deg,#0B1F3A 0 12px,#FFC627 12px 24px) }
+  h2 { margin:0 0 4px; font-family:Impact, Anton, 'Arial Narrow', 'Arial Black', sans-serif; font-size:15px; color:#FFC627; text-transform:uppercase; letter-spacing:.5px; font-weight:normal }
+  .disp { font-family:Impact, Anton, 'Arial Narrow', 'Arial Black', sans-serif; font-weight:normal }
+  .intro { font-size:11px }
+  .hero { background:#15284A; border-left:8px solid #FFC627; border-radius:8px; padding:7px 14px; display:grid; grid-template-columns: 1.2fr 1fr; gap:10px; align-items:center }
+  .hero .lbl { font-size:9.5px; font-weight:bold; color:#FFC627; letter-spacing:1.2px; text-transform:uppercase }
+  .hero .tag { display:inline-block; background:#FF3B30; color:#fff; font-family:Impact, Anton, 'Arial Narrow', 'Arial Black', sans-serif; font-size:10px; padding:1px 7px; border-radius:3px; margin-left:6px; letter-spacing:.5px }
+  .hero .nick { font-family:Impact, Anton, 'Arial Narrow', 'Arial Black', sans-serif; font-size:42px; line-height:.92; text-transform:uppercase; margin:4px 0 2px }
+  .hero .nm { font-size:11px; color:#9FB0CC }
+  .stats { display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px }
+  .stats .n { font-family:Impact, Anton, 'Arial Narrow', 'Arial Black', sans-serif; font-size:28px; line-height:1 }
+  .stats .l { font-size:8.5px; color:#9FB0CC; text-transform:uppercase; letter-spacing:.7px; margin-top:3px }
+  .grid { display:grid; grid-template-columns: 1fr 1fr; gap:8px }
+  .box { background:#15284A; border-radius:8px; padding:6px 10px 7px }
+  .pods { display:grid; grid-template-columns:1fr 1fr; gap:6px; margin-bottom:6px }
+  .pod { background:#0E1E3A; border-radius:6px; padding:5px 9px; display:flex; gap:8px; align-items:flex-start }
+  .pod .r { font-family:Impact, Anton, 'Arial Narrow', 'Arial Black', sans-serif; font-size:28px; line-height:1; color:#FFC627 }
+  .pod .k { font-family:Impact, Anton, 'Arial Narrow', 'Arial Black', sans-serif; font-size:16px; text-transform:uppercase; line-height:1 }
+  .pod .nm { font-size:9px; color:#9FB0CC; margin:2px 0 3px }
+  .pod .n { font-family:Impact, Anton, 'Arial Narrow', 'Arial Black', sans-serif; font-size:20px; line-height:1; color:#FFC627 }
+  .pod .n small, .sm { font-family:Arial, Helvetica, sans-serif; font-size:8.5px; color:#9FB0CC; text-transform:uppercase }
+  table { width:100%; border-collapse:collapse }
+  td { padding:2.5px 4px; border-top:1px solid #27406B; vertical-align:middle }
+  td.n { text-align:right; font-family:Impact, Anton, 'Arial Narrow', 'Arial Black', sans-serif; font-size:15px; color:#FFC627; white-space:nowrap }
+  td.r { font-family:Impact, Anton, 'Arial Narrow', 'Arial Black', sans-serif; font-size:17px; color:#9FB0CC; width:22px }
+  td.mv { text-align:right; font-family:Impact, Anton, 'Arial Narrow', 'Arial Black', sans-serif; font-size:22px; color:#FF3B30; white-space:nowrap; line-height:1 }
+  .grp { background:#FFC627; color:#0B1F3A; font-family:Impact, Anton, 'Arial Narrow', 'Arial Black', sans-serif; font-size:12px; text-transform:uppercase; padding:2px 8px; margin:5px -10px 0; letter-spacing:.4px }
+  .grp small { font-family:Arial, Helvetica, sans-serif; font-size:8.5px; font-weight:bold; letter-spacing:.8px; margin-left:6px }
+  .grp:first-of-type { margin-top:0 }
+  .badge { display:inline-block; font-family:Impact, Anton, 'Arial Narrow', 'Arial Black', sans-serif; font-size:10px; padding:0 5px; border-radius:3px; background:#0E1E3A; color:#FFFFFF }
+  .badge.top { background:#FFC627; color:#0B1F3A }
+  .note { font-size:8.5px; padding:3px 0 1px; border-top:1px solid #27406B }
+  .note b { color:#FFC627 }
+  .tiles { display:grid; grid-template-columns:repeat(6,1fr); gap:6px }
+  .tile { background:#0E1E3A; border-left:4px solid #FF3B30; border-radius:5px; padding:5px 8px }
+  .tile .b { font-family:Impact, Anton, 'Arial Narrow', 'Arial Black', sans-serif; font-size:21px; color:#FFC627; line-height:1 }
+  .tile .s { font-size:8px; color:#9FB0CC; text-transform:uppercase; letter-spacing:.4px; margin:2px 0 }
+  .tile .w { font-size:9.5px; font-weight:bold }
+  .bottom { display:grid; grid-template-columns: 1.15fr 1fr; gap:8px }
+  .maotop { display:grid; grid-template-columns:1fr 1fr 1fr; gap:6px; margin-bottom:5px }
+  .mt { background:#0E1E3A; border-radius:6px; border-top:3px solid #27406B; padding:4px 8px }
+  .mt.first { border-top-color:#FFC627 }
+  .mt .n { font-family:Impact, Anton, 'Arial Narrow', 'Arial Black', sans-serif; font-size:22px; color:#FFC627; line-height:1 }
+  .mt .w { font-size:9.5px; font-weight:bold; margin-top:2px }
+  .maorest { display:grid; grid-template-columns:1fr 1fr; gap:2px 10px; font-size:9.5px }
+  .maorest span { font-family:Impact, Anton, 'Arial Narrow', 'Arial Black', sans-serif; color:#FFC627; font-size:13px }
+  .close .big { font-family:Impact, Anton, 'Arial Narrow', 'Arial Black', sans-serif; font-size:30px; line-height:.92; color:#FFC627; text-transform:uppercase; margin-bottom:6px }
+  .close { font-size:10.5px }
+  .sign { font-family:Impact, Anton, 'Arial Narrow', 'Arial Black', sans-serif; font-size:17px; color:#FF3B30; text-transform:uppercase; margin-top:8px; line-height:1.1 }
+  .foot { font-size:8.5px; color:#9FB0CC; margin-top:auto; border-top:1px solid #27406B; padding-top:5px; display:flex; justify-content:space-between }</style></head><body><div class="page">
+  <div class="mast"><div><h1>CDS Shout Out</h1><div class="sub">Copart Dealer Sales &middot; who's putting up numbers right now</div></div><div class="meta">No. [n]<br>Week [n] · [dates]</div></div>
+  <div class="stripe"></div>
+  <div class="intro"><b>Team,</b> [Two or three lines on what the board says this week.]</div>
+  <div class="hero">
+    <div><div class="lbl">🔥 Shout out of the week <span class="tag">ON FIRE</span></div><div class="nick">[Nickname]</div><div class="nm">[First Last] &middot; Account Manager &middot; #1 on the board</div></div>
+    <div class="stats"><div><div class="n">[0,000]</div><div class="l">sold MTD</div></div><div><div class="n">[0,000]</div><div class="l">assignments MTD</div></div><div><div class="n">[00]</div><div class="l">assignments WTD</div></div></div>
+  </div>
+  <div class="grid">
+    <div>
+      <div class="box"><h2>🏆 Top of the board</h2>
+        <div class="pods"><div class="pod"><div class="r">2</div><div><div class="k">[Nickname]</div><div class="nm">[First Last]</div><div class="n">[000] <small>sold MTD</small></div><div class="sm">[000] assignments MTD</div></div></div><div class="pod"><div class="r">3</div><div><div class="k">[Nickname]</div><div class="nm">[First Last]</div><div class="n">[000] <small>sold MTD</small></div><div class="sm">[000] assignments MTD</div></div></div></div>
+        <table><tr><td class="r">4</td><td>[First Last] <span style="opacity:.7">AKA</span> <b>&ldquo;[Nickname]&rdquo;</b></td><td class="n">[000] <span class="sm">sold</span></td></tr><tr><td class="r">5</td><td><b>[First Last]</b></td><td class="n">[000] <span class="sm">sold</span></td></tr></table>
+      </div>
+      <div class="box" style="margin-top:10px"><h2>📈 Making moves</h2>
+        <table><tr><td><b>[First Last]</b><br><span class="sm" style="text-transform:none">projected assignments vs prior month</span></td><td class="mv">&#9650; [00]%</td></tr><tr><td>[First Last] <span style="opacity:.7">AKA</span> <b>&ldquo;[Nickname]&rdquo;</b><br><span class="sm" style="text-transform:none">projected assignments vs prior month</span></td><td class="mv">&#9650; [00]%</td></tr><tr><td><b>[First Last]</b><br><span class="sm" style="text-transform:none">projected assignments vs prior month</span></td><td class="mv">&#9650; [00]%</td></tr><tr><td>[First Last] <span style="opacity:.7">AKA</span> <b>&ldquo;[Nickname]&rdquo;</b><br><span class="sm" style="text-transform:none">projected finish, [000] assignments MTD</span></td><td class="mv">[000]</td></tr></table>
+      </div>
+    </div>
+    <div class="box"><h2>🏆 Inside teams</h2>
+      <div class="grp">A Team<small>TOP OF THE BOARD</small></div><table><tr><td style="width:30px"><span class="badge top">T[n]</span></td><td>👑 [First] & [First]</td><td class="n">[000] <span class="sm">sold</span></td></tr><tr><td style="width:30px"><span class="badge">T[n]</span></td><td>[First] & [First] AKA "[Nickname]"</td><td class="n">[000] <span class="sm">sold</span></td></tr><tr><td style="width:30px"><span class="badge">T[n]</span></td><td>[First] & [First]</td><td class="n">[000] <span class="sm">sold</span></td></tr></table><div class="note"><b>DON'T OVERLOOK:</b> Team [n], [First] & [First]: [00] assignments WTD, the highest weekly number in A Team.</div><div class="grp">B Team<small>TOP OF THE BOARD</small></div><table><tr><td style="width:30px"><span class="badge top">T[n]</span></td><td>👑 [First] & [First]</td><td class="n">[000] <span class="sm">sold</span></td></tr><tr><td style="width:30px"><span class="badge">T[n]</span></td><td>[First] & [First]</td><td class="n">[000] <span class="sm">sold</span></td></tr><tr><td style="width:30px"><span class="badge">T[n]</span></td><td>[First] & [First]</td><td class="n">[000] <span class="sm">sold</span></td></tr></table><div class="note"><b>DON'T OVERLOOK:</b> Team [n], [First] & [First]: [000] assignments MTD and [00] WTD.</div><div class="grp">C Team<small>KEEP CLIMBING</small></div><table><tr><td style="width:30px"><span class="badge top">T[n]</span></td><td>👑 [First] & [First]</td><td class="n">[000] <span class="sm">sold</span></td></tr><tr><td style="width:30px"><span class="badge">T[n]</span></td><td>[First] & [First]</td><td class="n">[00] <span class="sm">sold</span></td></tr><tr><td style="width:30px"><span class="badge">T[n]</span></td><td>[First] & [First]</td><td class="n">[00] <span class="sm">sold</span></td></tr></table><div class="note"><b>DON'T OVERLOOK:</b> Team [n], [First] & [First]: [00] assignments MTD, a solid foundation to keep climbing.</div>
+    </div>
+  </div>
+  <div class="box"><h2>👀 Jumped off the page</h2><div class="tiles"><div class="tile"><div class="b">[0,000]</div><div class="s">assignments MTD</div><div class="w">[Name]</div></div><div class="tile"><div class="b">[000]</div><div class="s">sold MTD, most of any team</div><div class="w">Team [n]</div></div><div class="tile"><div class="b">[000]</div><div class="s">assignments MTD</div><div class="w">Team [n]</div></div><div class="tile"><div class="b">[00]</div><div class="s">assignments WTD</div><div class="w">[Name]</div></div><div class="tile"><div class="b">+[00]%</div><div class="s">projected vs prior month</div><div class="w">[Name]</div></div><div class="tile"><div class="b">[00]</div><div class="s">assignments WTD</div><div class="w">Team [n]</div></div></div></div>
+  <div class="bottom">
+    <div class="box"><h2>💥 MAO shout out <span class="sm" style="letter-spacing:0">&nbsp; Make An Offer team, week of [Mon] to [Fri]</span></h2>
+      <div class="maotop"><div class="mt first"><div class="n">🥇 [00]</div><div class="w">[First Last]</div></div><div class="mt"><div class="n">🥈 [00]</div><div class="w">[First Last]</div></div><div class="mt"><div class="n">🥉 [00]</div><div class="w">[First Last]</div></div></div>
+      <div class="maorest"><div><span>4</span>&nbsp; [First Last] &nbsp;<span>[00]</span></div><div><span>5</span>&nbsp; [First Last] &nbsp;<span>[00]</span></div><div><span>6</span>&nbsp; [First Last] &nbsp;<span>[00]</span></div><div><span>7</span>&nbsp; [First Last] &nbsp;<span>[00]</span></div></div>
+    </div>
+    <div class="box close"><div class="big">Keep<br>pushing.</div><div>If you're at the top, keep setting the pace.</div><div>If you're in the middle, keep climbing.</div><div>If you're one of the people or teams showing big movement, keep attacking it. Momentum compounds.</div><div>There is still plenty of month left.</div><div class="sign">ELEVATE and Ignite your Passion!!!!!!!!!</div><div class="sm" style="text-transform:none;margin-top:3px">Ken Rion, SVP of Dealer Sales</div></div>
+  </div>
+  <div class="foot"><span>Numbers come from the weekly leaderboards. Reply to Chase with corrections.</span><span>CDS Shout Out &middot; No. [n]</span></div>
+</div></body></html>
