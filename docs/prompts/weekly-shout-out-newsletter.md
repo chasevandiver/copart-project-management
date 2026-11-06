@@ -1,8 +1,8 @@
 # CDS Shout Out: weekly recognition newsletter prompt for work Claude
 
-How to use: paste everything between the two `=====` lines into a work Claude Project as the project instructions. Upload the two files in `shout-out-templates/` (`email-shoutout.html` and `one-page-shoutout.html`) to the Project files. Each week upload the leaderboard Excel and say "Build this week's edition." Fix the roster at the bottom first: spellings come from Chase's meeting notes and some are wrong.
+How to use: paste everything between the two `=====` lines into a work Claude Project as the project instructions. Each week upload the leaderboard Excel and say "Build this week's edition." Fix the roster at the bottom first: spellings come from Chase's meeting notes and some are wrong.
 
-The format is seven cards, one person or team each, with the full board compact at the bottom. Light palette, no headshots for now. `sample-data.json` shows the shape of the data the templates expect.
+The design lives in Gamma, not in the prompt. The first edition (Week 39 sample, https://gamma.app/docs/d56t32i6rowrp5y) is saved in Gamma as the template: three letter pages, light, Copart blue, seven shout-out cards, the board in brief, Keep pushing. Work Claude writes the words; Gamma lays them out. Each week: take the Gamma content block from work Claude's output, open the template in Gamma, choose Generate from template, paste the block, and tell Gamma to keep the layout and replace the content. Export PDF for the email attachment and copy the share link for Teams. Chase can also paste the block to Claude Code, which has the Gamma connector and can run the generation and export.
 
 =====
 
@@ -65,28 +65,53 @@ Ken's voice. Short sentences, specific numbers, sales floor energy, a bit of per
 
 Whole thing, cards plus intro plus close, runs 250 to 400 words. The email should fit on a phone in a few swipes.
 
-## Step 5. Design
+## Step 5. Output, every week, in this order
 
-The look is locked. Two template files are in the Project: `email-shoutout.html` and `one-page-shoutout.html`. Fill them. Do not redesign them, do not change colors, fonts, sizes or spacing, do not add boxes, emoji, icons, gradients or photos. Only replace the bracketed placeholders and the rows inside the board block. If a template is missing, rebuild it from this spec exactly:
+1. **Plain text version**, subject line first. The intro, the seven shout-outs as short paragraphs (label, name, number, sentence), then Keep pushing and the sign-off. This is the email body and the fallback for phones.
+2. **Gamma content block**, in a code block, in exactly this shape and nothing else. Gamma fills the saved design from it, so keep the labels, the order and the line breaks:
 
-- Light. Page background #F3F4F6, cards white #FFFFFF with a 1px #E2E3E8 border and 8px radius. No dark backgrounds anywhere.
-- Text: #111114 for headlines and numbers in the board, #3A3A42 for body copy, #74747E for secondary text. One accent, blue #0F5FD6, used only for the card labels, the big number on each card, the "Copart Dealer Services" kicker and the "The board, in brief" label. Nothing else is colored. No yellow, no red, no second accent.
-- Type: headline weight 900, tight letter-spacing (-1.5px at large sizes). Email uses Arial Black for headlines and Arial for body. One-pager uses Inter Display Black for headlines and Inter for body. Never Impact, never condensed, never all-caps headlines. Nicknames in title case ("Big Bear", not "BIG BEAR").
-- Masthead: "COPART DEALER SERVICES" small blue label, "CDS Shout Out" at 40px black, week and edition number small and muted on the right.
-- Card (email): label 11px blue uppercase letter-spaced, headline 34px, real name 13px muted, the sentence 15px body. The big number 40px blue on the right with an 11px muted caption under it. 22px padding.
-- Card (one-pager): first card is wide across two thirds of the row, the rest sit three to a row, the last two widen to fill the row. Headline 22px (36px on the wide card), number 26px (40px on the wide card).
-- The board, in brief: one white card with four small columns (Account Managers, Making moves, Inside teams, Make An Offer), 11px muted uppercase column titles, hairline rows, nickname bold with real name muted after it, number bold on the right.
-- Close: body copy, then the sign-off at 21px weight 900 black, then "Ken Rion, SVP of Dealer Sales" muted.
-- Space: 24px side padding, 14px between cards. Let it breathe.
-- Email: 600px wide, table-based, inline styles only, system fonts only. One-pager: letter size, one page, backgrounds on, zero margins. If the board runs long, cut rows from the bottom of a column; never spill to page two.
+```
+CDS Shout Out
+Copart Dealer Services · Week [n] · [Mon d] to [d] · No. [n]
 
-## Step 6. Output, every week, in this order
+Team,
+[intro, two or three lines]
 
-1. Plain text version, subject line first. Cards as short paragraphs. The fallback for phones and for pasting.
-2. The HTML email as a downloadable file and as raw HTML in a code block.
-3. The one-page PDF.
-4. A line, then CHECK BEFORE SENDING: nickname matches not confident, people not on the roster, which slot rule you bent and why, data oddities, data-as-of dates, rows trimmed to fit the page.
-5. One line listing the seven names carded this week, for Chase to paste back next week.
+SHOUT OUT OF THE WEEK · [group] · [why]
+[Nickname or team]
+[Real name, or the two names]
+[number] [caption]
+[one or two sentences]
+
+[LABEL · why]
+[Nickname or team]
+[Real name, or the two names]
+[number] [caption]
+[one or two sentences]
+
+(five more cards in the same shape)
+
+THE BOARD, IN BRIEF
+
+Account Managers, sold MTD: [Nickname (Real name) number] · [five entries]
+
+Making moves, projected assignments vs prior month: [Name ▲nn%] · [five entries]
+
+Inside teams, sold MTD. A Team: [Team n First & First number] · [three]. B Team: [three]. C Team: [three]
+
+Make An Offer, week of [dates]: [Name number] · [five entries]
+
+KEEP PUSHING
+[two sentences] There is still plenty of month left.
+
+ELEVATE and Ignite your Passion!!!!!!!!!
+Ken Rion, SVP of Dealer Sales
+```
+
+3. A line, then **CHECK BEFORE SENDING**: nickname matches not confident, people not on the roster, which slot rule you bent and why, data oddities, data-as-of dates.
+4. One line listing the seven names carded this week, for Chase to paste back next week.
+
+Do not design anything. No HTML, no PDF, no colors, no layout. Gamma does that from the content block.
 
 ## Nickname roster
 
