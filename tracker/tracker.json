@@ -680,13 +680,13 @@
       "name": "Social Media Videos",
       "category": "Marketing Efforts",
       "status": "Waiting",
-      "summary": "Ken's initiative: a six-video series over three weeks, filmed in the office with Michelle (videographer), Ken on camera and a sales manager in two. Commercial-style pitch with fun-fact cards about Copart Dealer Services, aimed at independent dealers who want to sell. David Bansigan posts on Copart's corporate TikTok and Instagram; we hand him finished videos and a one-pager, B-roll is available, and he fits them on the calendar. Marketing wants more faces on social, and can boost the posts that do well organically to target dealers. Current audience is mostly consumers. Who edits the videos is still open. Oct 27: Ken wants one video that purely pitches Copart Dealer Services. It replaces video 3 (Numbers a dealer should know) in the Nov 19 slot, keeps those numbers as fact cards, and has no deadline in the close so it keeps working after Dec 31 (pin on Ken's LinkedIn, reps' intro emails, the Copart Dealer Services page). Nov 6: Ken likes the pitch that dealers can sell a car to the whole world and it is easy, and wants the videos fun and AI-heavy (TikTok audiences enjoy AI content). AI concepts drafted, written big to pitch and scale back: Ken stays real on camera, AI generates the world around him (passport, departures board, the car's travel vlog, the Georgia joke, a recurring car across the six videos). Never a generated yard, dealer, testimonial or number.",
+      "summary": "Ken's initiative: a six-video series over three weeks, filmed in the office with Michelle (videographer), Ken on camera and a sales manager in two. Commercial-style pitch with fun-fact cards about Copart Dealer Services, aimed at independent dealers who want to sell. David Bansigan posts on Copart's corporate TikTok and Instagram; we hand him finished videos and a one-pager, B-roll is available, and he fits them on the calendar. Marketing wants more faces on social, and can boost the posts that do well organically to target dealers. Current audience is mostly consumers. Who edits the videos is still open. Oct 27: Ken wants one video that purely pitches Copart Dealer Services. It replaces video 3 (Numbers a dealer should know) in the Nov 19 slot, keeps those numbers as fact cards, and has no deadline in the close so it keeps working after Dec 31 (pin on Ken's LinkedIn, reps' intro emails, the Copart Dealer Services page). Nov 6: Ken likes the pitch that dealers can sell a car to the whole world and it is easy, and wants the videos fun and AI-heavy (TikTok audiences enjoy AI content). Nov 6 (round three): every video is hook, then an AI ride (generated Ken drives that car out of a Dallas lot and across the world, bids ticking up on the dash), then real Ken with the Copart GO app (list from the app, the world bids), then the sale on a card. Six rides, one per real win, starting with a salvage-title Porsche that sold for $85,000. AI Ken is in with his consent and the label; every spoken word is real Ken.",
       "built": [
         "Video brief and series outline for Ken and Michelle, draft (Oct 21)",
         "Research brief, content calendar and measurement plan, drafts (Oct 21): Copart's social footprint, where dealers pay attention, competitor playbook, 3-week calendar, UTMs, paid graduation rule and paid targeting per platform",
         "Starter scripts for all six videos, with timing, on-screen cards, B-roll and spare hooks; facts in brackets for Ken (Oct 22)",
         "Year-end reason and dated call to action in all six scripts, plus a 20-second Ken cut for LinkedIn and the Lead Tracker (Oct 22, from Ken's floor speech)",
-        "AI video concepts (Nov 6): 15 fun, AI-heavy concepts for the sell-global pitch, each mapped to a calendar slot with a scaled-back version, plus production notes (tools, labels, Legal, trial reels)"
+        "AI video concepts, round three (Nov 6): one repeatable format (hook, AI ride, real beat on the Copart GO app, sale card) and six rides, one per real sale, with the AI Ken consent and Legal steps"
       ],
       "links": [
         {
@@ -727,7 +727,7 @@
         "Holding pattern until the website changes go through (Oct 26). Chase suggested running the videos and the website changes at the same time; Ken wants the website first."
       ],
       "next_steps": [
-        "Pitch Ken the AI concepts and have him pick three, plus a name for the recurring car (vid-21)",
+        "Pitch Ken the Ken-drives-the-world format and get the six real sales, the GO app steps and his consent for AI Ken (vid-21, q-47, q-48, q-49)",
         "Ask Ken whether the videos can link straight to the Bookings page, so the series doesn't wait on the website button (Oct 27)",
         "Get the booking button live on the website before post one (audit-15, q-36, q-37)",
         "Get the assignment deadline, the offer and Ken's own words for \"this is the time\" in the script session (q-30, q-14, q-31, vid-17)",
@@ -4424,12 +4424,12 @@
     {
       "id": "vid-21",
       "project_id": "vid",
-      "title": "Pitch Ken the AI video concepts and have him pick three",
+      "title": "Pitch Ken the Ken-drives-the-world format and get the six real sales",
       "status": "Next",
       "owner": "Me",
       "due": null,
       "priority": "high",
-      "notes": "Nov 6: Ken wants the series fun and AI-heavy around the sell-global pitch. Concepts doc in copart-dealer-digital docs/social/ai-concepts.md (round two; round one was metaphors and Chase passed on it). The rule: the AI is the comedian, Ken is the straight man who says how it really works. Eight concepts: the Great Migration (nature documentary about the back-row car), AI made our commercial and it got weird (one per video, escalating), lot cam (cars sneak off at night), THE TRADE (horror trailer for the car that will not leave), the whole world showed up to your lot (a million bidders on a Dallas lot), Bid-cast (Ken does the bid weather, green screen), things harder than one call, and Big Dave the wholesaler (the one Legal will cut). Pitch five, expect three. Bring the four-line pitch at the end of the doc to the outline session (vid-17). Then ask David Bansigan which AI generators Marketing already uses (vid-15) and add the generated-shot list to the Legal pass (vid-12).",
+      "notes": "Nov 6: Ken wants the series fun and AI-heavy around the sell-global pitch: hook first, AI Ken driving a car across the world, a dealer lists from the Copart GO app and the world bids, proved with real wins like the $85,000 salvage-title Porsche. Chase passed on rounds one and two except the million-bidders-on-a-Dallas-lot shot. Round three is in copart-dealer-digital docs/social/ai-concepts.md: one format (0 to 2 s hook, 2 to 18 s the AI ride, 18 to 32 s real Ken with the app, 32 to 40 s the sale card) and six rides: the $85,000 Porsche, Georgia the other one, Day 90 into a stadium of bidders, the whole world showed up to your lot (the pure pitch), the truck across the desert, the toll booth for fees. At the outline session (vid-17): walk the format, get the Porsche record and five more sales (q-47), what a dealer does in the GO app (q-48), and his OK on AI Ken (q-49). Then David Bansigan on which generators Marketing uses (vid-15) and the sale records plus consent in the Legal pass (vid-12).",
       "created": "2026-11-06",
       "updated": "2026-11-06"
     }
@@ -5047,6 +5047,36 @@
       "status": "open",
       "answer": null,
       "raised": "2026-10-28",
+      "answered": null
+    },
+    {
+      "id": "q-47",
+      "question": "Which six real sales go on the video cards, starting with the salvage-title Porsche that sold for $85,000? Each needs the record (car, date, sale price, buyer country) for Legal, and no dealer named without consent.",
+      "ask": "Ken Rion",
+      "project_id": "vid",
+      "status": "open",
+      "answer": "",
+      "raised": "2026-11-06",
+      "answered": null
+    },
+    {
+      "id": "q-48",
+      "question": "What exactly does a dealer do in the Copart GO app (assign a car, photos, bids, counteroffers), and does first-time setup still go through a rep? The real beat in every video shows those screens. Process notes say the rep gets the seller code made and the VIN comes by email.",
+      "ask": "Ken Rion",
+      "project_id": "vid",
+      "status": "open",
+      "answer": "",
+      "raised": "2026-11-06",
+      "answered": null
+    },
+    {
+      "id": "q-49",
+      "question": "Is Ken OK with a generated Ken (his likeness, not his voice) in the AI rides, with a short consent Legal sees once and the AI label on every post?",
+      "ask": "Ken Rion",
+      "project_id": "vid",
+      "status": "open",
+      "answer": "",
+      "raised": "2026-11-06",
       "answered": null
     }
   ],
@@ -6553,6 +6583,19 @@
         "Newly licensed dealers are not biting; they are dealing with a lot of new things at once. Add a new dealer tag in the Lead Tracker and follow up later (udm-28).",
         "The AEO baseline will not move until the website changes go live, so the rerun waits (cdd-12).",
         "This week: the inactive seller win-back built in Copilot on the work setup (wb-15, wb-16), and the Copart Dealer Services one-pager for reps (cmp-04)."
+      ]
+    },
+    {
+      "id": "n-71",
+      "date": "2026-11-06",
+      "title": "Video series direction from Ken: hook, AI ride, the GO app, real wins",
+      "project_id": "vid",
+      "body": [
+        "Ken likes pitching that dealers can sell a car to the whole world and it is easy. He wants the videos fun, engaging and AI-heavy, since TikTok audiences enjoy AI content.",
+        "The shape he described: start with a hook, then AI-generated Ken doing something epic (driving a car across the world), then the point: a dealer lists a car right from the Copart GO app and everyone across the world bids on it.",
+        "Proof is real wins. His example: a salvage-title Porsche that sold for $85,000. Each highlighted sale needs its record for Legal (q-47).",
+        "Chase passed on two earlier rounds of concepts (metaphors, then AI-as-comedian bits). The one keeper was the million bidders standing on a small Dallas lot, which is now the pure pitch video (video 4).",
+        "Round three is one repeatable format and six rides, in copart-dealer-digital docs/social/ai-concepts.md. AI Ken is in with his consent (q-49); every spoken word stays real Ken on camera."
       ]
     }
   ],
