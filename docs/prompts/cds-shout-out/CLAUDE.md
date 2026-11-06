@@ -4,12 +4,21 @@ You build the CDS Shout Out, the weekly recognition newsletter for the Copart De
 
 It is not a leaderboard. The leaderboard is one compact block at the bottom. The newsletter is seven cards, each one a person or a team, one number, and one or two sentences from Ken on why it matters.
 
-When Chase says "Build this week's edition", do every step below in order. Ask only the questions listed. Do not redesign anything.
+Chase does not run commands. You run everything. When Chase says "Build this week's edition", do every step below in order. Ask only the questions listed. Do not redesign anything.
+
+## First run: "Set up this folder"
+
+When Chase says "Set up this folder", or on the first build if `editions/` is empty:
+
+1. Run `node -v`. Node is required and should already be there because Claude Code runs on it.
+2. Try `npm install` then `npx playwright install chromium`. If either fails (no network, blocked by IT), say so in one line and move on. The renderer falls back to the Edge or Chrome already on the machine, and needs nothing else.
+3. Test render: copy `content.sample.json` to `editions/test/content.json`, set its `hero_image` to the first file in `hero-images/` or `""`, run the two render commands from Step 6, and tell Chase whether `editions/test/hero.png` and `editions/test/card-1.png` exist. Then delete `editions/test/`.
+4. Report in three lines: what works, what was blocked, what Chase still owes (roster fixes, hero photos, headshots).
 
 ## This folder
 
 - `inbox/` is where Chase drops the leaderboard Excel. Use the newest file.
-- `read_excel.py` dumps every sheet to text. Always read the Excel through it: `python read_excel.py inbox/<file>.xlsx`.
+- `read_excel.js` dumps every sheet to text and needs nothing but Node. Always read the Excel through it: `node read_excel.js inbox/<file>.xlsx`.
 - `content.sample.json` is the exact shape of the content file you write.
 - `card.js` and `shoot.js` render the cards. Never edit them unless Chase asks for a design change.
 - `hero-images/` holds photos Chase has cleared for the hero card. `headshots/` holds rep photos named `firstname-lastname.jpg`.
@@ -18,7 +27,7 @@ When Chase says "Build this week's edition", do every step below in order. Ask o
 
 ## Step 1. Read the file and report what you found
 
-Run `read_excel.py` on the newest file in `inbox/`. Before writing anything, tell Chase every sheet, its columns, the row count, and the dates the data covers. Say which column you will use for each metric. If a metric is missing, work without it. Never calculate a number the file does not give you. Never estimate. If something looks off (blank names, duplicates, negatives, totals rows mixed in with people), say so in the check list and leave it out.
+Run `node read_excel.js` on the newest file in `inbox/`. Before writing anything, tell Chase every sheet, its columns, the row count, and the dates the data covers. Say which column you will use for each metric. If a metric is missing, work without it. Never calculate a number the file does not give you. Never estimate. If something looks off (blank names, duplicates, negatives, totals rows mixed in with people), say so in the check list and leave it out.
 
 Expect some of:
 - Account Manager board: Sold MTD, Assignments MTD, Assignments WTD, Projected assignments, Prior month, % change vs prior month
@@ -90,7 +99,7 @@ node card.js editions/<week>/content.json editions/<week>/email.html
 node shoot.js editions/<week>/email.html editions/<week>
 ```
 
-If Playwright is not installed, run `npm install` and `npx playwright install chromium` once. If that is blocked, stop after `email.html` and tell Chase to open it in Edge and print or screenshot it.
+`shoot.js` uses Playwright if it is installed, otherwise the Edge or Chrome already on the machine. If it prints "No browser found", tell Chase to open `email.html` in Edge and screenshot it, and set `BROWSER_EXE` to the browser path next time.
 
 ## Step 7. Finish
 
