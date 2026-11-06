@@ -1,6 +1,14 @@
 # Weekly Copart Dealer Sales recognition newsletter: prompt for work Claude
 
-How to use: paste everything between the two `=====` lines into a work Claude Project as the project instructions (or at the top of a new chat). Each week upload the leaderboard Excel and say "Build this week's edition." Fix the roster at the bottom first: spellings come from Chase's meeting notes and some are wrong.
+How to use: paste everything between the two `=====` lines into a work Claude Project as the project instructions (or at the top of a new chat). Upload the chosen email and one-page templates from `brag-reel-templates/` to the Project's files. Each week upload the leaderboard Excel and say "Build this week's edition." Fix the roster at the bottom first: spellings come from Chase's meeting notes and some are wrong.
+
+Templates (`brag-reel-templates/`): three looks, each as a 600px table-based email and a letter-size one-pager. Placeholders are in square brackets. `sample-data.json` shows the shape of the data each template expects.
+
+- `scoreboard`: dark navy, yellow headlines, red movers pills. Sports scoreboard feel.
+- `yardsign`: white, Copart blue bars, yellow tags. Most Outlook-safe and prints clean.
+- `cards`: light grey page, blue card borders with a red stripe, nickname in big red type. Trading card feel.
+
+Delete the two styles Ken does not pick so work Claude only ever sees one.
 
 =====
 
@@ -65,9 +73,25 @@ Also give a subject line, like `Copart Dealer Sales Brag Reel: week of Nov 3`.
 
 ## Step 5. Output
 
-1. The newsletter, ready to paste into an email, subject line first.
-2. A line, then **Check before sending**: names where the nickname match was not confident, people not on the roster, sections dropped and why, anything odd in the data, and the data-as-of dates.
-3. One line listing everyone who got a call-out this week, so Chase can paste it back next week for rotation.
+Produce all three every week, in this order:
+
+1. **Plain text version.** The newsletter as text, subject line first. This is the fallback for phones and for anyone whose mail client strips formatting, and it is what gets pasted if the HTML fails.
+2. **Designed email.** Fill the email template in the Project files (`email-[style].html`, the style Chase picked). Keep every table, color, font and spacing exactly as the template has them. Only replace the bracketed placeholders and add or remove rows inside a section. Do not redesign, do not add sections, do not change the masthead. The template is table-based with inline styles so it survives Outlook; keep it that way. Output it as an HTML file Chase can download, and as the raw HTML in a code block.
+3. **One-page PDF.** Fill the one-page template (`one-page-[style].html`) the same way and render it to a letter-size PDF with backgrounds on and zero margins. Everything must fit on one page. If a section runs long, cut rows from the bottom of that section rather than letting it spill to a second page.
+
+Then, after a line, **Check before sending**: names where the nickname match was not confident, people not on the roster, sections dropped and why, anything odd in the data, the data-as-of dates, and which rows you trimmed to fit the PDF.
+
+Finally one line listing everyone who got a call-out this week, so Chase can paste it back next week for rotation.
+
+Template rules for the designed versions:
+
+- Podium: top 3 Account Managers, nickname is the headline, real name underneath, sold MTD as the big number, assignments MTD under it.
+- Ranks 4 and 5 go in the rows under the podium.
+- Movers get a pill with the percent or the number. Always say the comparison in the small line under the name.
+- Teams: crown on the first row of each group. The "Don't overlook" line stays, one per group.
+- Numbers that jumped off the page: six tiles, big number, what it is, who. Fewer than six only if the file does not support six.
+- MAO: medals on first, second and third, then #4 to #7.
+- Sign-off line stays exactly as written in the template.
 
 ## Nickname roster
 

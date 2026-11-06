@@ -1,0 +1,56 @@
+{
+  "edition": "Week of [date]",
+  "issue": "No. [n]",
+  "intro": "[Two or three lines on what the board says this week.]",
+  "am_top": [
+    {"name": "[First Last]", "nick": "[Nickname]", "sold": "[0,000]", "asg": "[0,000]"},
+    {"name": "[First Last]", "nick": "[Nickname]", "sold": "[000]", "asg": "[000]"},
+    {"name": "[First Last]", "nick": "[Nickname]", "sold": "[000]", "asg": "[000]"},
+    {"name": "[First Last]", "nick": "[Nickname]", "sold": "[000]", "asg": "[000]"},
+    {"name": "[First Last]", "nick": "", "sold": "[000]", "asg": "[000]"}
+  ],
+  "movers": [
+    {"name": "[First Last]", "nick": "", "stat": "+[00]%", "label": "projected assignments vs prior month"},
+    {"name": "[First Last]", "nick": "[Nickname]", "stat": "+[00]%", "label": "projected assignments vs prior month"},
+    {"name": "[First Last]", "nick": "", "stat": "+[00]%", "label": "projected assignments vs prior month"},
+    {"name": "[First Last]", "nick": "[Nickname]", "stat": "[000]", "label": "projected finish, [000] assignments MTD"}
+  ],
+  "teams": [
+    {"group": "A Team", "rows": [
+      {"team": "Team [n]", "who": "[First] & [First]", "sold": "[000]"},
+      {"team": "Team [n]", "who": "[First] & [First] AKA \"[Nickname]\"", "sold": "[000]"},
+      {"team": "Team [n]", "who": "[First] & [First]", "sold": "[000]"}
+    ], "note": "Team [n], [First] & [First]: [00] assignments WTD, the highest weekly number in A Team."},
+    {"group": "B Team", "rows": [
+      {"team": "Team [n]", "who": "[First] & [First]", "sold": "[000]"},
+      {"team": "Team [n]", "who": "[First] & [First]", "sold": "[000]"},
+      {"team": "Team [n]", "who": "[First] & [First]", "sold": "[000]"}
+    ], "note": "Team [n], [First] & [First]: [000] assignments MTD and [00] WTD."},
+    {"group": "C Team", "rows": [
+      {"team": "Team [n]", "who": "[First] & [First]", "sold": "[000]"},
+      {"team": "Team [n]", "who": "[First] & [First]", "sold": "[00]"},
+      {"team": "Team [n]", "who": "[First] & [First]", "sold": "[00]"}
+    ], "note": "Team [n], [First] & [First]: [00] assignments MTD, a solid foundation to keep climbing."}
+  ],
+  "jumped": [
+    {"big": "[0,000]", "small": "assignments MTD", "who": "[Name]"},
+    {"big": "[000]", "small": "sold MTD, most of any team", "who": "Team [n]"},
+    {"big": "[000]", "small": "assignments MTD", "who": "Team [n]"},
+    {"big": "[00]", "small": "assignments WTD", "who": "[Name]"},
+    {"big": "+[00]%", "small": "projected vs prior month", "who": "[Name]"},
+    {"big": "[00]", "small": "assignments WTD", "who": "Team [n]"}
+  ],
+  "mao_week": "[Mon] to [Fri]",
+  "mao": [
+    {"name": "[First Last]", "n": "[00]"},
+    {"name": "[First Last]", "n": "[00]"},
+    {"name": "[First Last]", "n": "[00]"},
+    {"name": "[First Last]", "n": "[00]"},
+    {"name": "[First Last]", "n": "[00]"},
+    {"name": "[First Last]", "n": "[00]"},
+    {"name": "[First Last]", "n": "[00]"}
+  ],
+  "close": ["If you're at the top, keep setting the pace.", "If you're in the middle, keep climbing.", "If you're one of the people or teams showing big movement, keep attacking it. Momentum compounds.", "There is still plenty of month left."],
+  "signoff": "ELEVATE and Ignite your Passion!!!!!!!!!",
+  "from": "Ken Rion, SVP of Dealer Sales"
+}
