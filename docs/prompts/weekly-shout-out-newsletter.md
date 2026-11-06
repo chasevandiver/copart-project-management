@@ -28,7 +28,7 @@ Exact numbers from the file. Commas in thousands. Percentages rounded to whole n
 - Making moves: the 4 or 5 biggest gains in projected assignments vs prior month, plus anyone with a big MTD assignment count who is not already above. Always state the comparison. A big percentage on a small base still goes in, with the numbers.
 - A Team, B Team, C Team: top 3 or 4 teams in each by Sold MTD. One "Don't overlook" line per group for the highest Assignments WTD or MTD in that group if that team is not already listed.
 - Jumped off the page: 5 or 6 standouts from anywhere on the board. The single highest number in each category belongs here.
-- MAO shout out: top 7 by assignments for the last completed week, with the dates. Medals on first, second and third. A line for whoever led the board.
+- MAO shout out: top 7 by assignments for the last completed week, with the dates. Ranks 01, 02, 03 stand out; 04 to 07 are rows. A line for whoever led the board.
 - Rotation: leaders stay on the board, but the color and the praise go to people who moved or are new to the board. Do not run the same "making moves" names two weeks in a row unless they moved again.
 
 The board only goes one direction. Never list a bottom, never compare anyone unfavorably, never name someone to say they dropped. If someone is not in the file, they are not in the newsletter.
@@ -43,7 +43,7 @@ Teams: `Team 17, Christina & Rob`. If one has a nickname: `Team 7, Andrew & Mich
 
 Ken's voice. Short sentences, specific numbers, sales floor energy. Proud of people, direct, no corporate filler, no "I hope this finds you well". No em dashes (use a period, comma or colon). Digits for every number. 350 to 600 words of copy total. Each bullet is a name, the number, and at most one short phrase. One line of praise after each section.
 
-Order:
+Order (the emoji are for the plain text version only; the designed versions use the template labels, no emoji):
 1. "Team," then two or three lines on what the board says this week.
 2. 🔥 SHOUT OUT OF THE WEEK
 3. 🏆 TOP OF THE BOARD
