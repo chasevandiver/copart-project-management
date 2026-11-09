@@ -2,6 +2,11 @@
 
 Newest entry first.
 
+## 2026-11-09
+- Source: Chase: add the setup fast lane as an idea project
+- Added: project setup "Setup fast lane" (idea, AI Tools, under g-04)
+- Added: setup-01 "Count last month's setups by hand with Brenda" (Me, idea, no due date)
+
 ## 2026-11-03
 - Source: Chase: turn the agent loop into a one-page roadmap for Ken
 - Changed: agents links and built (Dealer agents roadmap doc)

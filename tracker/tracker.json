@@ -2,7 +2,7 @@
   "meta": {
     "owner": "Chase",
     "role": "Digital Engagement Manager, supporting Ken Rion (SVP of Dealer Sales)",
-    "last_updated": "2026-11-03"
+    "last_updated": "2026-11-09"
   },
   "categories": [
     "AI Tools",
@@ -74,10 +74,11 @@
         "mm",
         "pa",
         "comm",
-        "mao"
+        "mao",
+        "setup"
       ],
       "created": "2026-10-16",
-      "updated": "2026-10-27"
+      "updated": "2026-11-09"
     }
   ],
   "projects": [
@@ -930,6 +931,27 @@
       "dependencies": [
         "The assignment deadline from Ken (q-30) for the [assign by] line",
         "Legal on license-record emails before segment B is emailed (cdd-02)"
+      ]
+    },
+    {
+      "id": "setup",
+      "name": "Setup fast lane",
+      "category": "AI Tools",
+      "status": "Backlog",
+      "idea": true,
+      "summary": "Idea (Nov 9): track and speed up the stretch from a dealer's yes to their first car. Today the seller form goes out by email, admins create the seller code in 24 to 48 hours, the rep chases the VIN and title, and nobody measures the drop-off (n-15, n-47, q-24). The fast lane runs inside Microsoft 365: one setup form the rep sends while on the phone, an admin queue with a clock, an automatic note to the rep and the dealer when the seller code is ready, a stalled list of dealers with a code and no car, and a weekly funnel for Ken (yes, form back, code created, first car). Copart data stays in the work setup; nothing public. It is the admins' process, so it is built with Brenda or not at all.",
+      "built": [],
+      "links": [],
+      "blockers": [],
+      "next_steps": [
+        "Count last month's setups by hand with Brenda: forms sent, forms returned, codes created, first cars (setup-01)",
+        "If the drop-off or the wait is real, sketch the form and the admin queue with Brenda before building",
+        "Ask IT and Legal whether a Microsoft Form with setup details can go to dealers outside Copart"
+      ],
+      "dependencies": [
+        "Brenda and the admins want it",
+        "Forms and Power Automate covered by Copart's Microsoft 365 licences",
+        "Related pieces: returning-seller form (pts-05), hot web form flag (agents-01), Brenda's seller code emails (rt-56), stage counts (q-24)"
       ]
     }
   ],
@@ -4414,6 +4436,19 @@
       "notes": "Doc linked on the project. Lead with what is live (profile agent, Leo using it, first 20 released leads profiled), then the asks: Copilot licenses for reps, $50 to $150 a month in credits, IT allowing custom agents in Teams, his push on call outcomes from Nov 17.",
       "created": "2026-11-03",
       "updated": "2026-11-03"
+    },
+    {
+      "id": "setup-01",
+      "project_id": "setup",
+      "title": "Count last month's setups by hand with Brenda",
+      "status": "Backlog",
+      "owner": "Me",
+      "due": null,
+      "priority": "normal",
+      "notes": "30 minutes. Forms sent, forms returned, seller codes created, first cars, and the days between each. Shows whether the fast lane is worth building. Counts stay in the work setup; log only where they live.",
+      "idea": true,
+      "created": "2026-11-09",
+      "updated": "2026-11-09"
     }
   ],
   "waiting_on": [
